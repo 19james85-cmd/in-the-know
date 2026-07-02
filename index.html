@@ -229,7 +229,7 @@ function linkTerms(text){
       segs=next;
     }catch(e){}
   });
-  return segs.map(s=>typeof s==='string'?s:`<button class="gterm" onclick="gd('${s.t.replace(/'/g,"\\'")}'">${s.m}</button>`).join('');
+  return segs.map(s=>typeof s==='string'?s:`<button class="gterm" onclick="gd('${s.t.replace(/'/g,"\\'")}')">${s.m}</button>`).join('');
 }
 
 function renderCard(s,isLead){
