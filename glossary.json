@@ -138,10 +138,28 @@
   "e": "Emails mimicking the company's IT department captured 200 employee passwords in a single day."
  },
  {
+  "t": "Prompt Injection",
+  "c": "General",
+  "d": "An attack against an AI system where hidden or malicious text tricks the model into ignoring its instructions and taking unintended actions, such as leaking data or running commands.",
+  "e": "A single crafted prompt let attackers escape an AI code editor's safety sandbox and execute commands, with no click or approval needed from the victim."
+ },
+ {
+  "t": "Proof-of-Concept (PoC)",
+  "c": "Vulnerability",
+  "d": "Sample code or a demonstration that researchers publish to prove a vulnerability is real and exploitable, usually shared so defenders can verify and patch it.",
+  "e": "Attackers hid a password-stealing trojan inside a fake proof-of-concept exploit posted to GitHub, targeting researchers who ran it to test the claimed vulnerability."
+ },
+ {
   "t": "Ransomware",
   "c": "Malware",
   "d": "Malware that encrypts a victim's files, making them inaccessible, then demands payment (usually cryptocurrency) in exchange for the decryption key to restore access.",
   "e": "A hospital chain paid a $4.5M ransom after ransomware encrypted records across 50 facilities, halting surgeries."
+ },
+ {
+  "t": "Remote Code Execution (RCE)",
+  "c": "Vulnerability",
+  "d": "A vulnerability that lets an attacker run their own commands or programs on a victim's device or server from across a network, often without needing a password.",
+  "e": "A pre-authentication RCE flaw in a load balancer let attackers run arbitrary commands on the device without ever logging in."
  },
  {
   "t": "Social Engineering",

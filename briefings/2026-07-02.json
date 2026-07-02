@@ -1,0 +1,200 @@
+{
+ "leadStory": {
+  "headline": "CISA confirms active exploitation of Microsoft SharePoint deserialization flaw (CVE-2026-45659), adds it to KEV catalog",
+  "source": "The Hacker News",
+  "sourceUrl": "https://thehackernews.com",
+  "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
+  "tags": [
+   {"label": "CVE-2026-45659", "type": "d"},
+   {"label": "Actively Exploited", "type": "d"},
+   {"label": "KEV", "type": "d"}
+  ],
+  "body": "CISA added CVE-2026-45659, a high-severity remote code execution flaw in Microsoft SharePoint Server, to its Known Exploited Vulnerabilities (KEV) catalog after confirming active exploitation. The bug, rated 8.8 on the CVSS scale, stems from deserialization of untrusted data and allows remote code execution. Federal civilian agencies must remediate KEV-listed flaws on CISA's mandated timeline, and any organization running on-premises SharePoint Server should treat this listing as an urgent signal to patch immediately.",
+  "beginnerTip": "The <strong>KEV catalog</strong> is CISA's running list of vulnerabilities attackers are exploiting in the real world right now, not just theoretical risks. If your organization runs SharePoint on its own servers rather than Microsoft 365, check with IT that this patch has been applied."
+ },
+ "cves": [
+  {
+   "headline": "Over 900 exposed Oracle E-Business Suite instances face ongoing attacks on critical flaw",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/critical-flaw-oracle-e-business-suite-threat/824230/",
+   "tags": [
+    {"label": "Actively Exploited", "type": "d"},
+    {"label": "900+ Exposed", "type": "d"}
+   ],
+   "body": "Researchers warn that a critical vulnerability in Oracle E-Business Suite remains under active, ongoing attack, with successful exploitation capable of compromising Oracle Payments. Scans have found more than 900 EBS instances still exposed to the internet even as attacks continue. Oracle's business suite has been a favorite target of mass-exploitation campaigns before, so unpatched, internet-facing instances should be treated as compromised until proven otherwise.",
+   "beginnerTip": "<strong>Oracle E-Business Suite</strong> runs core back-office functions like payments and HR for large companies, so a flaw here gives attackers a direct line to financial data rather than making them work through the rest of the network."
+  },
+  {
+   "headline": "Adobe patches seven maximum-severity (CVSS 10.0) flaws in ColdFusion and Campaign Classic",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/adobe-patches-7-cvss-100-flaws-in.html",
+   "tags": [
+    {"label": "CVSS 10.0", "type": "d"},
+    {"label": "Patch Available", "type": "a"}
+   ],
+   "body": "Adobe shipped fixes for seven maximum-severity vulnerabilities across ColdFusion and Campaign Classic that could lead to arbitrary code execution, privilege escalation, arbitrary file-system reads, and security-feature bypass. A CVSS score of 10.0 is the highest possible severity rating, and ColdFusion in particular has a long history of being targeted quickly once technical details circulate. Administrators running either product should apply Adobe's updates without delay.",
+   "beginnerTip": "A <strong>CVSS 10.0</strong> score means a flaw is remotely exploitable, requires no login, and can fully compromise a system — the worst possible combination. Seven of them landing in one advisory is unusual and worth prioritizing."
+  },
+  {
+   "headline": "Progress Kemp LoadMaster pre-auth RCE flaw (CVE-2026-8037) sees active exploitation attempts",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
+   "tags": [
+    {"label": "CVE-2026-8037", "type": "d"},
+    {"label": "Pre-auth RCE", "type": "d"}
+   ],
+   "body": "A critical operating-system command injection flaw in the Progress Kemp LoadMaster load balancer, tracked as CVE-2026-8037 with a CVSS score of 9.6, is seeing active exploitation attempts according to eSentire's Threat Response Unit. The vulnerability requires no authentication, meaning an attacker only needs network access to the device to run arbitrary commands. Load balancers sit in front of many backend servers, so a compromised device can expose a wide slice of an organization's traffic.",
+   "beginnerTip": "<strong>Pre-auth RCE</strong> means an attacker can run their own commands on a device without ever logging in — the most dangerous category of flaw. If your organization uses Kemp LoadMaster, check for the vendor's patch today."
+  },
+  {
+   "headline": "Critical Cursor flaws ('DuneSlide') could let prompt injection escape the sandbox and run commands",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+   "tags": [
+    {"label": "CVE-2026-50548", "type": "d"},
+    {"label": "Prompt Injection", "type": "d"}
+   ],
+   "body": "Two flaws in the Cursor AI code editor, dubbed DuneSlide and tracked as CVE-2026-50548 and CVE-2026-50549 with CVSS scores up to 9.8, could let a single crafted prompt break out of Cursor's safety sandbox and execute arbitrary commands on a developer's machine. Cato AI Labs, which discovered the pair, says exploitation requires no click and no approval prompt from the victim. The flaws show how prompt injection is becoming a direct path to remote code execution in AI-assisted development tools.",
+   "beginnerTip": "<strong>Prompt injection</strong> is when hidden or malicious text tricks an AI tool into taking actions its user never intended. Here, that trick alone was enough to escape the editor's sandbox — no accidental click required."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "New ChocoPoC RAT targets vulnerability researchers via fake proof-of-concept exploit repos",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/new-chocopoc-rat-targets-vulnerability.html",
+   "tags": [
+    {"label": "Malware", "type": "d"},
+    {"label": "Supply Chain", "type": "w"}
+   ],
+   "body": "Attackers are hiding a data-stealing trojan called ChocoPoC inside fake exploit code aimed at security researchers and bug hunters. The malware travels in Python proof-of-concept repositories on GitHub that claim to exploit newly disclosed CVEs; running one quietly steals saved passwords, browser cookies, and files before handing the attacker a shell on the victim's machine. Researchers at YesWeHack and others are tracking the campaign, which preys on the community's habit of testing PoC code before official patches are fully analyzed.",
+   "beginnerTip": "A <strong>proof-of-concept (PoC)</strong> is sample code researchers publish to demonstrate a vulnerability is real. Attackers are now weaponizing fake PoCs themselves — always review exploit code in an isolated sandbox before running it, especially from unfamiliar GitHub accounts."
+  },
+  {
+   "headline": "FortiBleed credential-theft campaign linked to INC and Lynx ransomware operations",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
+   "tags": [
+    {"label": "Ransomware", "type": "d"},
+    {"label": "Credential Theft", "type": "d"}
+   ],
+   "body": "The large-scale FortiBleed credential-theft campaign has been linked to the INC and Lynx ransomware operations, suggesting the stolen Fortinet credentials were harvested to fuel future network intrusions rather than for immediate use. Organizations with Fortinet devices exposed during the campaign window should assume credentials were captured, reset them, and enforce multi-factor authentication rather than waiting for signs of misuse.",
+   "beginnerTip": "Stolen VPN credentials act like a <strong>skeleton key</strong> — ransomware crews often sit on them for weeks before logging in like a normal employee. A credential-theft headline today can quietly become a ransomware headline next month."
+  },
+  {
+   "headline": "19-year-old Scattered Spider suspect extradited from Finland to face U.S. hacking charges",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/19-year-old-scattered-spider-suspect.html",
+   "tags": [
+    {"label": "Law Enforcement", "type": "g"},
+    {"label": "Scattered Spider", "type": "a"}
+   ],
+   "body": "A teenager accused of belonging to the Scattered Spider hacking group has been extradited from Finland to face U.S. charges of conspiracy, computer intrusion, and fraud. Peter Stokes, 19, a dual U.S.-Estonian citizen, appeared in a Chicago federal court after Finnish police detained him. The extradition reflects continued international law-enforcement pressure on a group known for aggressive social-engineering attacks against corporate help desks.",
+   "beginnerTip": "<strong>Scattered Spider</strong> gained notoriety by calling company help desks and talking their way into employee accounts rather than using technical hacking. Many suspected members are teenagers, which has complicated — but not stopped — international prosecutions."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "FTC fines Amazon $2.25M for withholding transaction records from identity-theft victims",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/amazon-fined-225m-for-withholding-evidence-from-fraud-victims/",
+   "tags": [
+    {"label": "Enforcement", "type": "a"},
+    {"label": "Consumer Protection", "type": "a"}
+   ],
+   "body": "The U.S. Federal Trade Commission says Amazon will pay a $2.25 million civil penalty to settle charges that it blocked identity-theft victims from accessing transaction records made in their name. Victims need those records to prove fraud to banks, credit bureaus, and police, so withholding them compounds the original harm. The settlement is a reminder that consumer-protection law applies directly to how companies handle fraud victims, not just to how they secure data.",
+   "beginnerTip": "U.S. law gives <strong>identity-theft victims</strong> the right to request business records tied to fraudulent transactions made in their name. If you're ever a victim, requesting those records early is one of the first recovery steps."
+  },
+  {
+   "headline": "U.S. lifts export control restrictions on Anthropic's Mythos and Fable AI models",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/us-lifting-export-control-restrictions-anthropic-mythos-fable/",
+   "tags": [
+    {"label": "Export Control", "type": "a"},
+    {"label": "AI Policy", "type": "a"}
+   ],
+   "body": "The U.S. Commerce Department and Anthropic have reached an agreement lifting export control restrictions that had blocked public release of the company's Mythos and Fable frontier models. The models return with new guardrails and safety classifiers required as part of the deal, though vetting questions that triggered the original restrictions remain unresolved. The episode illustrates how frontier AI models are increasingly being treated as a national-security export-control category rather than an ordinary commercial product.",
+   "beginnerTip": "<strong>Export controls</strong> are government rules restricting which technologies can be sold or released to certain countries or parties. Applying them to AI models is relatively new territory, and this case shows regulators using them as leverage to demand extra safety guardrails before public release."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "Researchers flag first documented AI-generated browser ransomware, built with DeepSeek",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/ai-generated-browser-ransomware-abuses.html",
+   "tags": [
+    {"label": "AI-Generated Malware", "type": "w"},
+    {"label": "Ransomware", "type": "w"}
+   ],
+   "body": "Researchers identified a malware sample constructed using the DeepSeek AI model that combines previously theoretical browser-malware concepts with a real browser capability to create a functioning ransomware technique running entirely inside the browser on Windows, Linux, macOS, and Android. It's described as the first documented case of a frontier AI model producing a genuinely novel attack path rather than just rewriting known malware. The finding raises the bar on what defenders need to anticipate from AI-assisted malware development.",
+   "beginnerTip": "<strong>Browser ransomware</strong> encrypts or locks content using only features already built into a web browser, so it can run on any device without installing traditional malware. Keeping browsers updated and being cautious about permissions granted to websites both help limit this risk."
+  },
+  {
+   "headline": "2026 industry survey finds a widening gap between cyber-risk awareness and actual resilience",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/2026-cybersecurity-assessment-gap.html",
+   "tags": [
+    {"label": "Industry Report", "type": "a"},
+    {"label": "Trend", "type": "a"}
+   ],
+   "body": "A new industry survey of 1,200 IT and cybersecurity professionals finds that organizations have never had greater awareness of cyber risk, yet turning that awareness into operational resilience has never been more difficult. The report highlights contradictions between how prepared organizations believe they are and how they actually perform when incidents occur. The gap underscores that budget and awareness alone don't guarantee readiness without matching investment in response capability.",
+   "beginnerTip": "<strong>Cyber resilience</strong> is an organization's ability to keep operating and recover quickly during an attack — different from simply knowing risks exist. A company can score well on awareness training while still lacking the incident-response muscle to act fast when something actually happens."
+  },
+  {
+   "headline": "Dawnguard raises $6.3M to automate security architecture design for cloud systems",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/dawnguard-raises-6-3-million-for-security-architecture-automation-platform/",
+   "tags": [
+    {"label": "Funding", "type": "a"},
+    {"label": "Cloud Security", "type": "a"}
+   ],
+   "body": "Security architecture automation startup Dawnguard has raised $6.3 million and publicly launched its platform, designed to help organizations design, build, and operate secure cloud systems. The funding round reflects continued investor appetite for tools that bake security into cloud infrastructure design rather than bolting it on afterward. Smaller funding rounds like this one are a useful signal of where the broader security tooling market is placing its bets.",
+   "beginnerTip": "<strong>Security architecture</strong> is the upfront design work that decides how systems are built to resist attacks, rather than security added after the fact. Automating that design work is meant to help smaller teams get secure defaults without needing a large in-house architecture team."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "text": "DHS confirmed hackers breached the Homeland Security Information Network (HSIN), the sensitive information-sharing platform used by federal, state, local, and private-sector partners."
+  },
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "text": "Kubota North America disclosed that hackers had access to some of its network systems for more than a month earlier this year."
+  },
+  {
+   "color": "warn",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "text": "Citrix patched six NetScaler vulnerabilities, including a novel 'HTTP/2 Bomb' denial-of-service flaw and a high-severity information-disclosure bug reminiscent of CitrixBleed."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "text": "An unpatched flaw in Argo CD's repo-server component could let an unauthenticated attacker take over an entire Kubernetes cluster; there is no fix and no CVE yet."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "text": "SEO-poisoned software download sites are abusing the ScreenConnect remote-access tool to deploy AsyncRAT via installers spoofing popular apps like OBS Studio and Bandicam."
+  }
+ ],
+ "analystFooter": "Prioritize patching the actively exploited SharePoint (CVE-2026-45659), Progress Kemp LoadMaster (CVE-2026-8037), and Oracle E-Business Suite flaws today, and route Cursor AI-editor exposure checks right behind them given how easily the DuneSlide flaws can be triggered."
+}
