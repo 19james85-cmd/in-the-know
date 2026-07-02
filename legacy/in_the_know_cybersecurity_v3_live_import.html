@@ -1,0 +1,449 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
+<style>
+body{background:#0b0b10;margin:0;padding:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.itk{--bg:#0b0b10;--s1:#12111a;--s2:#161522;--tp:#f7f8f8;--ts:#b4b3c0;--tm:#706f7e;--ta:#5e6ad2;--bd:rgba(255,255,255,.07);--bds:rgba(255,255,255,.12);--r:8px;--dng:#ff6b6b;--wrn:#ffb84d;background:var(--bg);color:var(--tp);font-family:"Inter",system-ui,sans-serif;border-radius:12px;-webkit-font-smoothing:antialiased}
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:0.5px solid var(--bd)}
+.brand{font-size:10px;font-weight:500;color:var(--ta);letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px}
+.main-t{font-size:17px;font-weight:500;color:var(--tp);margin:0 0 2px}
+.itk-d{font-size:12px;color:var(--tm)}
+.hdr-btns{display:flex;gap:8px}
+.btn{background:var(--s2);border:0.5px solid var(--bds);color:var(--ts);border-radius:var(--r);padding:6px 12px;font-size:12px;font-family:inherit;cursor:pointer;transition:color .15s;white-space:nowrap}
+.btn:hover{color:var(--tp)}
+.btn.ac{background:var(--ta);border-color:var(--ta);color:#fff;transition:background .2s,opacity .15s}
+.btn.ac:hover{opacity:.85}
+.btn.ok{background:#1a4a35;border-color:#34d399;color:#34d399}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:0.5px solid var(--bd)}
+.metric{padding:12px 20px;border-right:0.5px solid var(--bd)}
+.metric:last-child{border-right:none}
+.mv{display:block;font-size:22px;font-weight:500;color:var(--tp);transition:color .4s}
+.ml{display:block;font-size:10px;color:var(--tm);text-transform:uppercase;letter-spacing:.07em;margin-top:2px}
+.live-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#34d399;background:rgba(52,211,153,.1);border:0.5px solid rgba(52,211,153,.3);border-radius:4px;padding:3px 8px;margin-left:10px;vertical-align:middle}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#34d399;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.tabs{display:flex;border-bottom:0.5px solid var(--bd);padding:0 16px;overflow-x:auto;gap:2px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--tm);font-size:13px;font-family:inherit;padding:11px 12px;cursor:pointer;white-space:nowrap;margin-bottom:-0.5px;transition:color .15s}
+.tab:hover{color:var(--ts)}
+.tab.active{color:var(--tp);border-bottom-color:var(--ta)}
+.panel{display:none;padding:18px 20px}
+.panel.show{display:block}
+.slbl{font-size:10px;font-weight:500;color:var(--tm);text-transform:uppercase;letter-spacing:.09em;margin:0 0 11px}
+.card{background:var(--s2);border:0.5px solid var(--bd);border-radius:10px;padding:15px;margin-bottom:11px}
+.card.lead{border-color:rgba(226,75,74,.4)}
+.cm{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:9px}
+.sb{font-size:11px;color:var(--ta);background:rgba(94,106,210,.1);border:0.5px solid rgba(94,106,210,.25);border-radius:4px;padding:2px 7px;text-decoration:none;transition:opacity .15s}
+.sb:hover{opacity:.75}
+.tag{font-size:11px;padding:2px 7px;border-radius:4px;border:0.5px solid transparent}
+.tag.d{background:rgba(226,75,74,.1);color:var(--dng);border-color:rgba(226,75,74,.3)}
+.tag.w{background:rgba(239,159,39,.1);color:var(--wrn);border-color:rgba(239,159,39,.3)}
+.tag.a{background:rgba(94,106,210,.12);color:#9aa5ff;border-color:rgba(94,106,210,.35)}
+.tag.g{background:rgba(52,211,153,.1);color:#34d399;border-color:rgba(52,211,153,.3)}
+.ch{font-size:14px;font-weight:500;color:var(--tp);margin:0 0 8px;line-height:1.45}
+.cb{font-size:13px;color:var(--ts);line-height:1.7}
+.gterm{background:none;border:none;border-bottom:1px dotted rgba(94,106,210,.5);color:var(--ta);font:inherit;padding:0;cursor:pointer;display:inline}
+.gterm:hover{opacity:.75}
+.acc{margin-top:11px;padding-top:11px;border-top:0.5px solid var(--bd)}
+.acc-btn{display:flex;align-items:center;gap:7px;background:none;border:none;color:var(--tm);font-size:12px;font-family:inherit;cursor:pointer;padding:0;text-align:left;width:100%}
+.acc-btn:hover{color:var(--ts)}
+.cv{display:inline-block;transition:transform .2s;font-size:10px;line-height:1}
+.cv.open{transform:rotate(180deg)}
+.acc-body{display:none;font-size:12px;color:var(--ts);line-height:1.7;margin-top:9px;padding:10px 12px;background:var(--s1);border-radius:6px;border-left:2px solid rgba(94,106,210,.5)}
+.acc-body.open{display:block}
+.qh{list-style:none;margin:0 0 14px;padding:0}
+.qh li{font-size:13px;color:var(--ts);padding:9px 0;border-bottom:0.5px solid var(--bd);line-height:1.55}
+.qh li:last-child{border-bottom:none}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.fnote{padding:12px 14px;background:var(--s1);border-radius:var(--r);border-left:2px solid var(--ta);font-size:12px;color:var(--ts);line-height:1.65}
+.imp{background:var(--s1);border:0.5px solid var(--bds);border-radius:10px;padding:14px;margin-bottom:16px;display:none}
+.imp-row{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.imp-lbl{font-size:12px;color:var(--ts);flex:1;line-height:1.5}
+.imp-schema{font-size:11px;color:var(--tm);background:var(--s2);border:0.5px solid var(--bd);border-radius:6px;padding:8px 10px;font-family:monospace;margin-bottom:9px;line-height:1.6;white-space:pre-wrap}
+.imp-ta{width:100%;background:var(--s2);border:0.5px solid var(--bds);color:var(--tp);border-radius:var(--r);padding:9px 11px;font-size:12px;font-family:monospace;resize:vertical;min-height:100px;box-sizing:border-box}
+.imp-ta::placeholder{color:var(--tm)}
+.imp-actions{display:flex;gap:8px;margin-top:9px;align-items:center}
+.imp-status{font-size:12px;color:var(--tm);flex:1}
+.gc{display:flex;gap:8px;margin-bottom:13px;flex-wrap:wrap}
+.gc input,.gc select{background:var(--s2);border:0.5px solid var(--bds);color:var(--tp);border-radius:var(--r);padding:7px 11px;font-size:13px;font-family:inherit}
+.gc input{flex:1;min-width:130px}
+.gc input::placeholder{color:var(--tm)}
+.gc select{color:var(--ts)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:9px;margin-bottom:16px}
+.gcard{background:var(--s2);border:0.5px solid var(--bd);border-radius:10px;padding:13px}
+.gcard-h{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:7px}
+.gcard-t{font-size:13px;font-weight:500;color:var(--tp)}
+.gcard-c{font-size:10px;color:var(--tm);background:var(--s1);border:0.5px solid var(--bd);border-radius:4px;padding:2px 6px;white-space:nowrap;flex-shrink:0}
+.gcard-d{font-size:12px;color:var(--ts);line-height:1.6;margin-bottom:7px}
+.gcard-e{font-size:11px;color:var(--tm);padding:7px 9px;background:var(--s1);border-radius:5px;border-left:2px solid rgba(94,106,210,.4)}
+.abox{background:var(--s1);border:0.5px solid var(--bds);border-radius:10px;padding:14px}
+.abox-t{font-size:12px;font-weight:500;color:var(--tp);margin-bottom:10px}
+.arow{display:flex;gap:8px;flex-wrap:wrap}
+.arow input,.arow select{background:var(--s2);border:0.5px solid var(--bds);color:var(--tp);border-radius:var(--r);padding:7px 11px;font-size:13px;font-family:inherit}
+.arow input{flex:1;min-width:130px}
+.arow input::placeholder{color:var(--tm)}
+.arow select{color:var(--ts)}
+.add-btn{background:var(--ta);border:none;color:#fff;border-radius:var(--r);padding:7px 14px;font-size:13px;font-family:inherit;cursor:pointer;transition:opacity .15s;white-space:nowrap}
+.add-btn:hover{opacity:.85}
+.ast{font-size:11px;color:var(--tm);margin-top:8px;min-height:16px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:9px}
+.scard{background:var(--s2);border:0.5px solid var(--bd);border-radius:10px;padding:14px}
+.sc-name{font-size:14px;font-weight:500;color:var(--tp);margin-bottom:2px}
+.sc-str{font-size:11px;color:var(--ta);font-weight:500;margin-bottom:4px}
+.sc-best{font-size:12px;color:var(--ts);margin-bottom:8px;line-height:1.5}
+.sc-cats{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.sc-url{font-size:11px;color:var(--ta);text-decoration:none}
+.sc-url:hover{text-decoration:underline}
+.dov{display:none;position:absolute;inset:0;background:rgba(0,0,0,.72);border-radius:12px;align-items:flex-start;justify-content:center;padding:52px 20px 20px;z-index:50;box-sizing:border-box}
+.dov.show{display:flex}
+.dcard{background:var(--s2);border:0.5px solid var(--bds);border-radius:10px;padding:20px;max-width:480px;width:100%}
+.dh{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:13px}
+.dt{font-size:15px;font-weight:500;color:var(--tp);margin-bottom:5px}
+.dc{font-size:10px;color:var(--ta);background:rgba(94,106,210,.12);border:0.5px solid rgba(94,106,210,.3);border-radius:4px;padding:2px 7px;display:inline-block}
+.dx{background:none;border:none;color:var(--tm);font-size:17px;cursor:pointer;padding:0;font-family:inherit;line-height:1}
+.dx:hover{color:var(--tp)}
+.dtxt{font-size:13px;color:var(--ts);line-height:1.7;margin-bottom:12px}
+.dex{font-size:12px;color:var(--tm);padding:10px 12px;background:var(--s1);border-radius:6px;border-left:2px solid rgba(94,106,210,.5);line-height:1.6}
+.itk code{background:var(--s1);color:var(--ta);padding:1px 5px;border-radius:3px;font-size:12px}
+</style>
+
+<h2 class="sr-only">In the Know — Cybersecurity daily briefing dashboard</h2>
+<div class="itk" id="itk-root" style="position:relative">
+
+<div class="hdr">
+  <div>
+    <div class="brand">In the Know</div>
+    <div class="main-t">Cybersecurity <span id="live-badge" style="display:none" class="live-badge"><span class="live-dot"></span>Live</span></div>
+    <div class="itk-d" id="itk-date"></div>
+  </div>
+  <div class="hdr-btns">
+    <button class="btn" onclick="toggleImp()">Import JSON</button>
+    <button class="btn ac" id="mb-btn" onclick="morningBriefing()">Morning briefing ↗</button>
+  </div>
+</div>
+
+<div class="metrics">
+  <div class="metric"><span class="mv" id="m0">4</span><span class="ml">CVEs tracked</span></div>
+  <div class="metric"><span class="mv" id="m1">3</span><span class="ml">Active groups</span></div>
+  <div class="metric"><span class="mv" id="m2">3</span><span class="ml">Advisories</span></div>
+  <div class="metric"><span class="mv" id="m3">28</span><span class="ml">Terms detected</span></div>
+</div>
+
+<div class="tabs" role="tablist">
+  <button class="tab active" onclick="sw(0)">Lead story</button>
+  <button class="tab" onclick="sw(1)">CVEs &amp; exploits</button>
+  <button class="tab" onclick="sw(2)">Threat actors</button>
+  <button class="tab" onclick="sw(3)">Regulatory</button>
+  <button class="tab" onclick="sw(4)">Trends</button>
+  <button class="tab" onclick="sw(5)">Glossary</button>
+  <button class="tab" onclick="sw(6)">Sources</button>
+</div>
+
+<div class="panel show" id="p0">
+  <div class="imp" id="imp-box">
+    <div class="imp-row">
+      <span class="imp-lbl">Paste the JSON block returned by Claude after clicking <strong>Morning briefing ↗</strong></span>
+      <button class="btn" onclick="closeImp()">Close</button>
+    </div>
+    <div class="imp-schema">{ "leadStory": { "headline":"", "source":"", "sourceUrl":"", "url":"", "tags":[{"label":"","type":"d|w|a|g"}], "body":"", "beginnerTip":"" },
+  "cves": [...same shape, 3-4 items],  "threatActors": [...3 items],
+  "regulatory": [...3 items],  "trends": [...3 items],
+  "quickHits": [{"color":"danger|warn|accent|ok","source":"","sourceUrl":"","text":""}],
+  "analystFooter": "" }</div>
+    <textarea class="imp-ta" id="imp-ta" placeholder="Paste JSON here..."></textarea>
+    <div class="imp-actions">
+      <button class="btn ac" id="do-import-btn" onclick="doImport()">Import briefing data</button>
+      <span class="imp-status" id="imp-status"></span>
+    </div>
+  </div>
+  <div class="slbl">Lead story</div>
+  <div id="lead-card"></div>
+  <div class="slbl" style="margin-top:18px">Quick hits</div>
+  <ul class="qh" id="qh-list"></ul>
+  <div class="slbl">Analyst note</div>
+  <div class="fnote" id="analyst-footer"></div>
+</div>
+
+<div class="panel" id="p1">
+  <div class="slbl">CVEs &amp; exploits</div>
+  <div id="cve-cards"></div>
+</div>
+
+<div class="panel" id="p2">
+  <div class="slbl">Threat actors &amp; ransomware</div>
+  <div id="threat-cards"></div>
+</div>
+
+<div class="panel" id="p3">
+  <div class="slbl">Regulatory &amp; compliance</div>
+  <div id="reg-cards"></div>
+</div>
+
+<div class="panel" id="p4">
+  <div class="slbl">Industry trends</div>
+  <div id="trend-cards"></div>
+</div>
+
+<div class="panel" id="p5">
+  <div class="slbl">Glossary — <span id="gcount">28</span> terms</div>
+  <div class="gc">
+    <input type="text" id="gsearch" placeholder="Search terms..." oninput="fg()">
+    <select id="gcat" onchange="fg()">
+      <option value="">All categories</option>
+      <option>Vulnerability</option><option>Threat/Actor</option><option>Malware</option>
+      <option>Network</option><option>Regulatory</option><option>Cryptography</option><option>General</option>
+    </select>
+  </div>
+  <div class="gg" id="glos-grid"></div>
+  <div class="abox">
+    <div class="abox-t">Define &amp; add a new term</div>
+    <div class="arow">
+      <input type="text" id="nterm" placeholder="Enter a cybersecurity term...">
+      <select id="ncat">
+        <option value="General">General</option><option value="Vulnerability">Vulnerability</option>
+        <option value="Threat/Actor">Threat/Actor</option><option value="Malware">Malware</option>
+        <option value="Network">Network</option><option value="Regulatory">Regulatory</option>
+        <option value="Cryptography">Cryptography</option>
+      </select>
+      <button class="add-btn" onclick="defAdd()">Define &amp; add ↗</button>
+    </div>
+    <div class="ast" id="ast"></div>
+  </div>
+</div>
+
+<div class="panel" id="p6">
+  <div class="slbl">Verified sources (10)</div>
+  <div class="sg" id="src-grid"></div>
+</div>
+
+<div class="dov" id="dov" onclick="closeDef(event)">
+  <div class="dcard" onclick="event.stopPropagation()">
+    <div class="dh">
+      <div><div class="dt" id="d-term"></div><span class="dc" id="d-cat"></span></div>
+      <button class="dx" onclick="closeDef()">✕</button>
+    </div>
+    <div class="dtxt" id="d-txt"></div>
+    <div class="dex" id="d-ex"></div>
+  </div>
+</div>
+
+</div>
+
+<script>
+const GL=[
+  {t:"Advanced Persistent Threat (APT)",c:"Threat/Actor",d:"A sophisticated, long-term cyberattack where an intruder gains network access and remains hidden for an extended period to steal data or cause damage.",e:"A nation-state APT group silently accessed a defense contractor's network for 18 months, exfiltrating classified blueprints before detection."},
+  {t:"Attack Surface",c:"General",d:"The total sum of all points where an unauthorized user can try to enter or extract data from a system — including software, hardware, and human entry points.",e:"A company's attack surface includes its website, employee email accounts, mobile apps, and cloud services."},
+  {t:"Botnet",c:"Malware",d:"A network of private computers infected with malicious software and controlled as a group without the owners' knowledge, used to send spam or carry out attacks.",e:"Hackers built a botnet of 500,000 infected home routers to launch a DDoS attack against a major bank's website."},
+  {t:"Brute Force Attack",c:"Threat/Actor",d:"A trial-and-error method to gain access by trying every possible combination of passwords or keys until the correct one is found, usually with automated tools.",e:"Attackers used automated tools to try millions of password combinations per second against an online banking portal."},
+  {t:"CISA",c:"Regulatory",d:"The U.S. Cybersecurity & Infrastructure Security Agency — issues alerts, advisories, and maintains the Known Exploited Vulnerabilities (KEV) catalog for critical infrastructure protection.",e:"CISA issued an emergency directive requiring all federal agencies to patch a critical VPN vulnerability within 48 hours."},
+  {t:"CVSS",c:"Vulnerability",d:"Common Vulnerability Scoring System — rates the severity of security vulnerabilities on a scale of 0 to 10, where 10 is most critical. Helps organizations prioritize patching.",e:"A CVSS score of 9.8 on a Microsoft Exchange vulnerability prompted emergency patching across thousands of organizations."},
+  {t:"CVE",c:"Vulnerability",d:"Common Vulnerabilities and Exposures — a publicly disclosed list of known cybersecurity vulnerabilities, each with a unique ID for consistent worldwide reference.",e:"CVE-2021-44228 (Log4Shell) was rated the most critical vulnerability of 2021 and affected millions of systems globally."},
+  {t:"DDoS",c:"Threat/Actor",d:"Distributed Denial of Service — an attack that floods a website or service with so much traffic from many sources that it becomes unavailable to legitimate users.",e:"A DDoS attack knocked a major airline's booking website offline for six hours, causing millions in lost revenue."},
+  {t:"Encryption",c:"Cryptography",d:"The process of converting readable data into an unreadable format using an algorithm, so only authorized parties with the correct decryption key can access it.",e:"Your bank uses end-to-end encryption so intercepted transaction data cannot be read by attackers."},
+  {t:"Exploit",c:"Vulnerability",d:"A piece of software, code, or technique that takes advantage of a vulnerability in a system to cause unintended behavior — usually to gain unauthorized access.",e:"Hackers developed an exploit for an unpatched Windows vulnerability allowing full remote control of any affected machine."},
+  {t:"Firewall",c:"Network",d:"A network security device that monitors and controls incoming/outgoing network traffic based on security rules — acts as a barrier between trusted and untrusted networks.",e:"A hospital firewall blocked thousands of unauthorized connection attempts per day from external IP addresses."},
+  {t:"GDPR",c:"Regulatory",d:"General Data Protection Regulation — EU law governing how organizations collect, store, and use personal data. Violations can result in fines up to 4% of global annual revenue.",e:"A U.S. company was fined €20 million under GDPR for failing to secure European customer data exposed in a breach."},
+  {t:"ICS/OT",c:"Network",d:"Industrial Control Systems / Operational Technology — computer systems controlling physical industrial processes like power grids and water treatment. Cyberattacks can cause real-world physical damage.",e:"A cyberattack on a water treatment plant's ICS briefly altered chemical levels in the water supply."},
+  {t:"IOC",c:"Threat/Actor",d:"Indicators of Compromise — evidence a system has been breached, such as suspicious IP addresses, unusual file hashes, or abnormal network traffic patterns used to detect and investigate attacks.",e:"Analysts identified IOCs including a known malicious IP and a suspicious file appearing on 40 company machines."},
+  {t:"KEV",c:"Vulnerability",d:"Known Exploited Vulnerabilities — CISA's catalog of vulnerabilities actively being exploited in the wild. Federal agencies must patch KEV entries within strict deadlines.",e:"CISA added a critical Cisco IOS vulnerability to its KEV catalog, giving federal agencies 72 hours to patch."},
+  {t:"Malware",c:"Malware",d:"Short for malicious software — any software intentionally designed to disrupt, damage, or gain unauthorized access to a system. Includes viruses, ransomware, spyware, and trojans.",e:"Employees unknowingly installed malware disguised as a shipping notification attachment, granting attackers full network access."},
+  {t:"MFA",c:"General",d:"Multi-Factor Authentication — requires users to verify identity using two or more factors: something you know (password), have (phone), or are (fingerprint). Dramatically reduces account takeover risk.",e:"Even after attackers obtained an employee's password from the dark web, MFA prevented system access."},
+  {t:"NIST",c:"Regulatory",d:"National Institute of Standards and Technology — develops cybersecurity standards and frameworks, most notably the NIST CSF, with five functions: Identify, Protect, Detect, Respond, Recover.",e:"After a breach, a healthcare company used the NIST CSF to redesign its entire security program."},
+  {t:"Patch",c:"Vulnerability",d:"A software update released by a vendor to fix a security vulnerability or bug. Applying patches promptly is one of the most effective ways to prevent cyberattacks.",e:"Microsoft's Patch Tuesday released fixes for 87 vulnerabilities, including three already exploited in the wild."},
+  {t:"Phishing",c:"Threat/Actor",d:"A cyberattack using deceptive emails or messages appearing to come from trusted sources, tricking recipients into revealing sensitive information or clicking malicious links.",e:"Emails mimicking the company's IT department captured 200 employee passwords in a single day."},
+  {t:"Ransomware",c:"Malware",d:"Malware that encrypts a victim's files, making them inaccessible, then demands payment (usually cryptocurrency) in exchange for the decryption key to restore access.",e:"A hospital chain paid a $4.5M ransom after ransomware encrypted records across 50 facilities, halting surgeries."},
+  {t:"Social Engineering",c:"Threat/Actor",d:"Psychological manipulation of people into performing actions or revealing confidential information — exploiting human trust rather than technical vulnerabilities.",e:"An attacker posed as a frantic executive and convinced an IT technician to reset credentials without proper verification."},
+  {t:"SQL Injection",c:"Vulnerability",d:"An attack inserting malicious SQL code into a web form or URL to manipulate a database — commonly used to extract, modify, or delete data without authorization.",e:"Attackers used SQL injection on a retail login page to bypass authentication and extract 2 million customer credit card numbers."},
+  {t:"Threat Actor",c:"Threat/Actor",d:"Any individual, group, or entity responsible for a cyberattack or security incident. Includes nation-states, organized crime groups, hacktivists, and malicious insiders.",e:"The Lazarus Group, attributed to North Korea, has stolen over $3 billion in cryptocurrency to fund state activities."},
+  {t:"TTP",c:"Threat/Actor",d:"Tactics, Techniques, and Procedures — the behavior patterns and methods used by threat actors to plan, execute, and conceal cyberattacks. Understanding TTPs helps defenders anticipate attacks.",e:"Analyzing a group's TTPs allowed defenders to block their attack before any data was exfiltrated."},
+  {t:"VPN",c:"Network",d:"Virtual Private Network — encrypts your internet connection and masks your IP address, creating a secure tunnel for data. Commonly used to secure remote work connections.",e:"Attackers exploited an unpatched VPN vulnerability to gain internal network access without any employee credentials."},
+  {t:"Vulnerability",c:"Vulnerability",d:"A weakness or flaw in software, hardware, or system design that could be exploited by attackers to gain unauthorized access or cause harm to a system.",e:"A vulnerability in a popular PDF reader allowed code execution simply by opening a specially crafted PDF file."},
+  {t:"Zero-Day",c:"Vulnerability",d:"A vulnerability unknown to the software vendor with no available patch. Called zero-day because developers have had zero days to fix it — highly dangerous and valuable to attackers.",e:"A nation-state used a zero-day in a widely-used VPN product to compromise government networks in five countries before the vendor knew the flaw existed."}
+];
+const SRC=[
+  {n:"CISA",s:"Official government guidance",b:"Authoritative info on KEVs and national alerts",u:"https://www.cisa.gov",c:["Regulatory","CVEs"]},
+  {n:"The Hacker News",s:"Speed and global scope",b:"Immediate updates on new exploits and major breaches",u:"https://thehackernews.com",c:["CVEs","Breaking news"]},
+  {n:"Cybersecurity Dive",s:"Strategic analysis",b:"Connecting technical events to business and policy impact",u:"https://www.cybersecuritydive.com",c:["Trends","Analysis"]},
+  {n:"SecurityWeek",s:"Technical depth & ICS/OT",b:"Deep dives into industrial control systems and malware",u:"https://www.securityweek.com",c:["CVEs","ICS/OT"]},
+  {n:"Dark Reading",s:"CISO-focused perspective",b:"High-level risk management and operational security",u:"https://www.darkreading.com",c:["Trends","Threat actors"]},
+  {n:"CyberScoop",s:"Public sector & policy",b:"Legislative updates and government-related cyber threats",u:"https://cyberscoop.com",c:["Regulatory","Policy"]},
+  {n:"Cyber Defense Magazine",s:"Compliance & trends",b:"Longer-form analysis on standards and market shifts",u:"https://www.cyberdefensemagazine.com",c:["Compliance","Trends"]},
+  {n:"BleepingComputer",s:"Technical accuracy",b:"Reliable, detailed reporting on ransomware and developer bugs",u:"https://www.bleepingcomputer.com",c:["Ransomware","CVEs"]},
+  {n:"Krebs on Security",s:"Investigative journalism",b:"Deep dives into cybercriminal underworld activity",u:"https://krebsonsecurity.com",c:["Threat actors","Investigation"]},
+  {n:"NIST (CSRC)",s:"Regulatory/Standardization",b:"Gold standard for cybersecurity frameworks and best practices",u:"https://csrc.nist.gov",c:["Regulatory","Frameworks"]}
+];
+
+const DD={
+  leadStory:{headline:"Critical authentication bypass in Ivanti Endpoint Manager — CISA adds to KEV catalog",source:"The Hacker News",sourceUrl:"https://thehackernews.com",url:"https://thehackernews.com",tags:[{label:"Critical",type:"d"},{label:"Actively exploited",type:"d"},{label:"KEV listed",type:"d"}],body:"A critical Vulnerability (CVE-2026-21887, CVSS 9.8) in Ivanti Endpoint Manager 2024.1–2025.3 allows unauthenticated remote attackers full admin access via an authentication bypass in the management API. This Zero-Day is actively exploited by Threat Actor groups targeting healthcare and government networks. CISA added it to the KEV catalog under Emergency Directive 26-04, mandating federal agency Patch by July 7, 2026.",beginnerTip:"An <strong>authentication bypass</strong> lets attackers skip login entirely — like a hidden door bypassing the keycard reader. CVSS 9.8 out of 10 is near-maximum danger. Ivanti Endpoint Manager controls all devices in an organization from one place, so gaining access hands an attacker the keys to an entire network."},
+  cves:[
+    {headline:"CVE-2026-21887 — Ivanti EPM authentication bypass granting full unauthenticated admin access",source:"BleepingComputer",sourceUrl:"https://www.bleepingcomputer.com",url:"https://www.bleepingcomputer.com",tags:[{label:"CVSS 9.8",type:"d"},{label:"RCE",type:"d"},{label:"KEV listed",type:"d"}],body:"The Exploit targets the REST API management layer, bypassing all credential checks and returning a valid admin session token. Active IOC include unusual POST requests to the auth endpoint and C2 beaconing to 185.220.101[.]47. Apply Ivanti Security Advisory ISAI-2026-0127 — federal deadline July 7.",beginnerTip:"A <strong>CVE</strong> is a universal ID for security flaws. The Exploit here tricks the management API into granting full admin access without a password — like a bank vault that opens when you knock on the door."},
+    {headline:"CVE-2026-19944 — Siemens SIMATIC S7-1500 PLC remote code execution via malformed Profinet packets",source:"SecurityWeek",sourceUrl:"https://www.securityweek.com",url:"https://www.securityweek.com",tags:[{label:"CVSS 8.1",type:"w"},{label:"ICS/OT",type:"w"},{label:"No patch",type:"w"}],body:"A flaw in Siemens SIMATIC S7-1500 PLCs allows remote code execution via malformed Profinet packets. This ICS/OT Vulnerability could let attackers alter physical processes in manufacturing, water treatment, and power distribution. No Patch is available — immediate network segmentation is advised.",beginnerTip:"<strong>ICS/OT</strong> systems control real-world physical infrastructure. Unlike a data breach, an ICS attack can cause physical damage — for example, changing chemical dosing in a water supply or shutting down a power substation without ever entering the building."},
+    {headline:"CVE-2026-22301 — Chrome V8 use-after-free enables full browser sandbox escape",source:"The Hacker News",sourceUrl:"https://thehackernews.com",url:"https://thehackernews.com",tags:[{label:"CVSS 9.1",type:"d"},{label:"Patch available",type:"a"}],body:"A use-after-free Vulnerability in Chrome's V8 engine lets attackers escape the browser sandbox and run arbitrary code on the host. The Exploit delivers via malicious web pages — just visiting is enough. Update Chrome to 128.0.6513.119 immediately.",beginnerTip:"Browsers run pages in a <strong>sandbox</strong> — an isolated container so malicious code can't harm your computer. A use-after-free error lets attackers inject their own code. Visiting the wrong website could give an attacker complete control of your machine."},
+    {headline:"CVE-2026-20015 — OpenSSH pre-auth race condition enables unauthenticated root on glibc Linux",source:"NIST (CSRC)",sourceUrl:"https://csrc.nist.gov",url:"https://csrc.nist.gov",tags:[{label:"CVSS 8.8",type:"d"},{label:"Patch available",type:"a"}],body:"A race condition Vulnerability in OpenSSH 8.5p1–9.7p1 on glibc Linux allows unauthenticated root remote code execution in ~6–8 hours. Full Patch is available in OpenSSH 9.8p1 — all Linux distributions running sshd should update immediately.",beginnerTip:"<strong>Root</strong> access is the highest admin level on a server — an attacker with root can delete data, install backdoors, or pivot to other systems. Because glibc runs on almost all Linux systems, this flaw affects a very large number of servers worldwide."}
+  ],
+  threatActors:[
+    {headline:"LockBit 4.0 rebuilds post-Cronos infrastructure — healthcare and logistics sectors under active attack",source:"Krebs on Security",sourceUrl:"https://krebsonsecurity.com",url:"https://krebsonsecurity.com",tags:[{label:"Active campaign",type:"d"},{label:"Ransomware",type:"d"}],body:"LockBit 4.0 re-emerged with rebuilt infrastructure outside Five Eyes jurisdiction, claiming 12 victims in 72 hours. TTP include initial access via unpatched VPN appliances, lateral movement via admin tools, and double Ransomware. Active IOC: C2 at 91.108.4[.]x range; demands $2M–$8M in Monero.",beginnerTip:"<strong>Ransomware</strong> encrypts your files and demands payment to unlock them. LockBit rents its platform to affiliates who conduct attacks. Double extortion means they also steal your data, so even a good backup doesn't fully protect you."},
+    {headline:"APT41 launches pharmaceutical IP espionage campaign using DUSTPAN backdoor and spearphishing",source:"Dark Reading",sourceUrl:"https://www.darkreading.com",url:"https://www.darkreading.com",tags:[{label:"Nation-state",type:"d"},{label:"APT",type:"a"},{label:"Espionage",type:"a"}],body:"China-linked Advanced Persistent Threat (APT) group APT41 targets pharmaceutical firms via spearphishing emails impersonating FDA/EMA portals, then deploys the DUSTPAN backdoor. TTP: T1566.001, T1574.002, T1041. Average dwell time before detection: 47 days.",beginnerTip:"An <strong>APT</strong> is a long-term, nation-state-level attack. Persistent means attackers quietly maintain access for months — patient surveillance, not smash-and-grab. A 47-day dwell time means attackers are typically undetected inside a network for over six weeks."},
+    {headline:"Scattered Spider affiliate uses AI voice cloning to defeat corporate help desk verification",source:"BleepingComputer",sourceUrl:"https://www.bleepingcomputer.com",url:"https://www.bleepingcomputer.com",tags:[{label:"Social engineering",type:"w"},{label:"Active",type:"w"}],body:"A Scattered Spider affiliate uses AI voice cloning to impersonate C-suite executives calling IT help desks, requesting MFA bypass and credential resets. This vishing technique combines Social Engineering with synthetic audio from public earnings calls. Six confirmed incidents in hospitality over 14 days.",beginnerTip:"<strong>Social Engineering</strong> exploits human trust rather than technical vulnerabilities. Vishing is voice phishing by phone. AI voice cloning can replicate someone's voice from a few minutes of public audio — treat any phone-based security request as potentially fraudulent."}
+  ],
+  regulatory:[
+    {headline:"Emergency Directive 26-04 — Ivanti EPM patch mandated across all federal FCEB agencies by July 7",source:"CISA",sourceUrl:"https://www.cisa.gov",url:"https://www.cisa.gov",tags:[{label:"Emergency directive",type:"d"},{label:"Deadline: July 7",type:"d"}],body:"CISA Emergency Directive 26-04 requires all FCEB agencies to apply Ivanti's hotfix for CVE-2026-21887 by July 7, 2026, or disconnect affected systems from federal networks. Agencies must verify to CyberScope within 24 hours. Non-federal organizations should treat this as P1 regardless of direct applicability.",beginnerTip:"<strong>CISA</strong> is the U.S. national cybersecurity agency. An Emergency Directive is its highest-urgency instruction — federal agencies must comply legally. Even outside government, private sector pressure from cyber insurers and regulators typically follows within days."},
+    {headline:"NIST SP 800-218A draft extends SSDF to AI/ML components — AI-SBOM requirements proposed",source:"NIST (CSRC)",sourceUrl:"https://csrc.nist.gov",url:"https://csrc.nist.gov",tags:[{label:"Framework update",type:"a"},{label:"Comment period open",type:"a"}],body:"NIST released a draft update to SP 800-218A extending SSDF guidance to AI/ML model components in software supply chains. New requirements include model provenance verification, training data integrity attestation, and mandatory AI-SBOM for federal software suppliers. Comment closes September 15, 2026.",beginnerTip:"<strong>NIST</strong> creates the cybersecurity frameworks most organizations follow. This update requires tracking where AI models come from and whether their training data was trustworthy. An AI-SBOM is an ingredient list for AI — think of it as nutrition labeling applied to AI components in software."},
+    {headline:"Cyber Incident Reporting Modernization Act clears Senate Commerce — 24-hour mandate expands broadly",source:"CyberScoop",sourceUrl:"https://cyberscoop.com",url:"https://cyberscoop.com",tags:[{label:"Legislation",type:"a"},{label:"Senate Commerce",type:"a"}],body:"CIRMA advances from Senate Commerce, expanding mandatory incident reporting to any org with $50M+ revenue or 500+ employees. Covered entities must report Ransomware payments and material incidents to CISA within 24 hours, with a 72-hour supplemental report. Full Senate vote expected August 2026.",beginnerTip:"Currently most businesses have no legal obligation to quickly report cyberattacks. This law changes that — the 24-hour window is very short, meaning you need incident detection capabilities <em>before</em> an attack happens. You cannot report what you haven't yet detected."}
+  ],
+  trends:[
+    {headline:"AI-powered SOC triage cuts MTTD by 67% — but hallucination risk drives mandatory human review gates",source:"Cybersecurity Dive",sourceUrl:"https://www.cybersecuritydive.com",url:"https://www.cybersecuritydive.com",tags:[{label:"AI security",type:"a"},{label:"Trend",type:"a"}],body:"Enterprise AI-assisted SOC triage shows 67% mean-time-to-detect improvements versus human-only workflows. However, AI systems are generating confident false positives and missing IOC due to model hallucination. CrowdStrike, Palo Alto, and Microsoft are adding mandatory human-in-the-loop checkpoints for all high-severity alerts.",beginnerTip:"A SOC monitors systems around the clock for attack signs. MTTD is Mean Time to Detect — faster detection means far less damage. An AI that confidently dismisses a real attack as a false alarm may be more dangerous than not having AI at all — AI works best as an assistant, not an autonomous authority."},
+    {headline:"Open source dependency poisoning attacks surge 312% YoY — npm, PyPI, Maven Central targeted at scale",source:"Dark Reading",sourceUrl:"https://www.darkreading.com",url:"https://www.darkreading.com",tags:[{label:"Supply chain",type:"w"},{label:"Trend",type:"w"}],body:"Sonatype tracks a 312% year-over-year increase in malicious packages on npm, PyPI, and Maven Central. Attackers upload Malware-embedded packages with names nearly identical to legitimate libraries (typosquatting), gaining access to developer machines and CI/CD pipelines. Average survival time before removal: 18 days.",beginnerTip:"Software is built from packages — shared code libraries. Dependency poisoning means attackers upload Malware-laced packages with near-identical names to popular ones. When a developer accidentally installs the wrong package, attacker code runs on their machine — a stealthy, high-value entry point into organizations."},
+    {headline:"Cyber insurance premiums fall third consecutive quarter — coverage conditions tighten significantly",source:"Cyber Defense Magazine",sourceUrl:"https://www.cyberdefensemagazine.com",url:"https://www.cyberdefensemagazine.com",tags:[{label:"Market shift",type:"g"},{label:"Insurance",type:"a"}],body:"Cyber insurance premiums declined 8.3% QoQ for a third consecutive period as underwriters credit widespread MFA adoption, EDR, and backup validation. However, 74% of new policies require minimum security controls as a hard coverage prerequisite — failure to maintain them mid-term can void policies retroactively.",beginnerTip:"Cyber insurance works like car insurance — premiums in exchange for coverage after an attack. The price decline signals improving security posture industry-wide. Insurers now act as de facto security auditors, requiring specific controls like MFA as conditions of coverage rather than just pricing factors."}
+  ],
+  quickHits:[
+    {color:"danger",source:"BleepingComputer",sourceUrl:"https://www.bleepingcomputer.com",text:"LockBit 4.0 resurfaces with rebuilt infrastructure after Operation Cronos, claiming 12 new victims across Western European logistics firms with ransom demands of $2M–$8M."},
+    {color:"warn",source:"SecurityWeek",sourceUrl:"https://www.securityweek.com",text:"Siemens SIMATIC S7-1500 PLC RCE flaw (CVE-2026-19944, CVSS 8.1) exposes industrial environments — no patch available; network segmentation advised immediately."},
+    {color:"accent",source:"CyberScoop",sourceUrl:"https://cyberscoop.com",text:"Senate Commerce advances CIRMA, expanding mandatory 24-hour incident reporting to organizations with $50M+ revenue or 500+ employees."},
+    {color:"warn",source:"Dark Reading",sourceUrl:"https://www.darkreading.com",text:"Scattered Spider affiliate confirmed using AI voice-cloning to impersonate C-suite executives in vishing attacks targeting hospitality sector help desks."},
+    {color:"ok",source:"Cybersecurity Dive",sourceUrl:"https://www.cybersecuritydive.com",text:"Cyber insurance premiums fall for third consecutive quarter, declining 8.3% QoQ as underwriters cite improved MFA adoption and faster patch cadence."}
+  ],
+  analystFooter:"Today's threat landscape is defined by authentication vulnerabilities in enterprise management platforms, with active exploitation placing healthcare and government sectors at highest immediate risk; treat any unpatched Ivanti EPM deployment as potentially compromised and prioritize emergency remediation above all other security work this week."
+};
+
+function linkTerms(text){
+  if(!text)return'';
+  const sorted=[...GL].sort((a,b)=>b.t.length-a.t.length);
+  let segs=[text];
+  sorted.forEach(g=>{
+    const esc=g.t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    const end=/\w/.test(g.t.slice(-1))?'\\b':'';
+    try{
+      const re=new RegExp('\\b('+esc+')'+end,'gi');
+      const next=[];
+      segs.forEach(s=>{
+        if(typeof s!=='string'){next.push(s);return}
+        const parts=s.split(re);
+        for(let i=0;i<parts.length;i++){
+          if(i%2===0){if(parts[i])next.push(parts[i]);}
+          else next.push({t:g.t,m:parts[i]});
+        }
+      });
+      segs=next;
+    }catch(e){}
+  });
+  return segs.map(s=>typeof s==='string'?s:`<button class="gterm" onclick="gd('${s.t.replace(/'/g,"\\'")}'">${s.m}</button>`).join('');
+}
+
+function renderCard(s,isLead){
+  const tags=(s.tags||[]).map(t=>`<span class="tag ${t.type||'a'}">${t.label}</span>`).join('');
+  const src=s.url||s.sourceUrl||'#';
+  return`<div class="card${isLead?' lead':''}">
+  <div class="cm"><a class="sb" href="${src}" target="_blank">${s.source}</a>${tags}</div>
+  <div class="ch">${s.headline||''}</div>
+  <div class="cb">${linkTerms(s.body||'')}</div>
+  <div class="acc"><button class="acc-btn" onclick="ta(this)"><span class="cv">▾</span><span>What this means for beginners</span></button>
+  <div class="acc-body">${s.beginnerTip||''}</div></div>
+</div>`;}
+
+function renderQuickHits(hits){
+  const cm={danger:'#ff6b6b',warn:'#ffb84d',accent:'#5e6ad2',ok:'#34d399'};
+  return(hits||[]).map(h=>`<li><span class="dot" style="background:${cm[h.color]||cm.accent}"></span><strong><a href="${h.sourceUrl||'#'}" target="_blank" style="color:#f7f8f8;text-decoration:none">${h.source}</a></strong> — ${h.text}</li>`).join('');
+}
+
+function renderBriefing(data){
+  document.getElementById('lead-card').innerHTML=renderCard(data.leadStory,true);
+  document.getElementById('cve-cards').innerHTML=(data.cves||[]).map(s=>renderCard(s)).join('');
+  document.getElementById('threat-cards').innerHTML=(data.threatActors||[]).map(s=>renderCard(s)).join('');
+  document.getElementById('reg-cards').innerHTML=(data.regulatory||[]).map(s=>renderCard(s)).join('');
+  document.getElementById('trend-cards').innerHTML=(data.trends||[]).map(s=>renderCard(s)).join('');
+  document.getElementById('qh-list').innerHTML=renderQuickHits(data.quickHits);
+  document.getElementById('analyst-footer').innerHTML=data.analystFooter?`<strong>Analyst note —</strong> ${data.analystFooter}`:'';
+  document.getElementById('m0').textContent=(data.cves||[]).length;
+  document.getElementById('m1').textContent=(data.threatActors||[]).length;
+  document.getElementById('m2').textContent=(data.regulatory||[]).length;
+}
+
+function sw(n){document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i===n));document.querySelectorAll('.panel').forEach((p,i)=>p.classList.toggle('show',i===n))}
+function ta(btn){const cv=btn.querySelector('.cv');const body=btn.nextElementSibling;const o=body.classList.toggle('open');cv.classList.toggle('open',o)}
+function gd(key){const k=key.toLowerCase();const e=GL.find(g=>g.t.toLowerCase()===k||g.t.toLowerCase().includes(k));if(!e)return;document.getElementById('d-term').textContent=e.t;document.getElementById('d-cat').textContent=e.c;document.getElementById('d-txt').textContent=e.d;document.getElementById('d-ex').innerHTML='<strong>Real-world example:</strong> '+e.e;document.getElementById('dov').classList.add('show');document.getElementById('itk-root').scrollIntoView({block:'start'})}
+function closeDef(ev){if(!ev||ev.target===document.getElementById('dov'))document.getElementById('dov').classList.remove('show')}
+function rg(data){document.getElementById('glos-grid').innerHTML=data.map(e=>`<div class="gcard"><div class="gcard-h"><div class="gcard-t">${e.t}</div><div class="gcard-c">${e.c}</div></div><div class="gcard-d">${e.d}</div><div class="gcard-e"><strong>Example:</strong> ${e.e}</div></div>`).join('');document.getElementById('gcount').textContent=GL.length;document.getElementById('m3').textContent=GL.length}
+function fg(){const q=document.getElementById('gsearch').value.toLowerCase();const c=document.getElementById('gcat').value;rg(GL.filter(g=>(!q||g.t.toLowerCase().includes(q)||g.d.toLowerCase().includes(q))&&(!c||g.c===c)))}
+function rs(){document.getElementById('src-grid').innerHTML=SRC.map(s=>`<div class="scard"><div class="sc-name">${s.n}</div><div class="sc-str">${s.s}</div><div class="sc-best">${s.b}</div><div class="sc-cats">${s.c.map(c=>`<span class="tag a">${c}</span>`).join('')}</div><a class="sc-url" href="${s.u}" target="_blank">${s.u.replace('https://','')}</a></div>`).join('')}
+
+const PROMPT=()=>{const d=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});return`Generate today's In the Know — Cybersecurity daily briefing for ${d}. Search CISA, The Hacker News, BleepingComputer, SecurityWeek, Dark Reading, Krebs on Security, CyberScoop, Cybersecurity Dive, Cyber Defense Magazine, and NIST CSRC. Assign each story to the source best matched to its specialty.
+
+Return ONLY a valid JSON block — no preamble, explanation, or markdown fences — matching this exact schema:
+{
+  "leadStory": {"headline":"","source":"","sourceUrl":"","url":"","tags":[{"label":"","type":"d|w|a|g"}],"body":"","beginnerTip":""},
+  "cves": [3-4 objects with same shape],
+  "threatActors": [3 objects],
+  "regulatory": [3 objects],
+  "trends": [3 objects],
+  "quickHits": [{"color":"danger|warn|accent|ok","source":"","sourceUrl":"","text":""}],
+  "analystFooter": ""
+}
+Tag types — d: danger/red (critical CVSS 8+, actively exploited, emergency directives). w: warn/amber (medium severity, no patch available). a: accent/blue (informational, frameworks, legislation, standard trends). g: ok/green (positive developments). body and beginnerTip: plain text; beginnerTip may use <strong> for one key term. Return only the JSON block.`};
+
+function morningBriefing(){
+  const p=PROMPT();
+  if(typeof sendPrompt==='function'){sendPrompt(p);}
+  else{
+    if(navigator.clipboard){navigator.clipboard.writeText(p).then(()=>{const b=document.getElementById('mb-btn');const orig=b.textContent;b.textContent='✓ Prompt copied!';b.className='btn ok';setTimeout(()=>{b.textContent=orig;b.className='btn ac';},3000);});}
+    else{prompt('Copy this prompt into Claude.ai:',p);}
+  }
+}
+
+function toggleImp(){const b=document.getElementById('imp-box');b.style.display=b.style.display==='block'?'none':'block'}
+function closeImp(){document.getElementById('imp-box').style.display='none';document.getElementById('imp-status').textContent='';}
+
+function doImport(){
+  const raw=document.getElementById('imp-ta').value.trim();
+  const statusEl=document.getElementById('imp-status');
+  const btn=document.getElementById('do-import-btn');
+  if(!raw){statusEl.textContent='Please paste your JSON first.';return}
+  try{
+    let clean=raw;
+    if(raw.includes('```')){const m=raw.match(/```(?:json)?\s*([\s\S]*?)```/);if(m)clean=m[1].trim();}
+    const data=JSON.parse(clean);
+    const req=['leadStory','cves','threatActors','regulatory','trends','quickHits'];
+    const missing=req.filter(k=>!data[k]);
+    if(missing.length){throw new Error('Missing fields: '+missing.join(', '));}
+    renderBriefing(data);
+    document.getElementById('live-badge').style.display='';
+    sw(0);
+    closeImp();
+    document.getElementById('imp-ta').value='';
+    btn.textContent='✓ Briefing loaded';
+    btn.className='btn ok';
+    setTimeout(()=>{btn.textContent='Import briefing data';btn.className='btn ac';},3000);
+  }catch(e){
+    statusEl.style.color='#ff6b6b';
+    statusEl.textContent='Error: '+e.message;
+  }
+}
+
+async function defAdd(){
+  const term=document.getElementById('nterm').value.trim();
+  const cat=document.getElementById('ncat').value;
+  const st=document.getElementById('ast');
+  if(!term){st.textContent='Please enter a term first.';return}
+  if(GL.find(g=>g.t.toLowerCase()===term.toLowerCase())){st.textContent='"'+term+'" is already in the glossary.';return}
+  st.textContent='Generating definition...';
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:400,system:'You are a precise, back-end cybersecurity glossary engine. Your sole function is to output raw, unformatted JSON strings matching the user\'s requested schema. You must never include conversational text, introductory greetings, markdown formatting blocks (such as ```json), or trailing explanations. If you violate this schema, the parsing engine will fail.',messages:[{role:'user',content:'Define the term "'+term+'" under the category "'+cat+'" for an absolute beginner in information security.\n\nYou MUST strictly output a flat JSON object matching this exact shape:\n{"def":"A clear, plain-English definition strictly limited to 1-2 sentences.","ex":"A highly realistic, concrete technical or operational example sentence demonstrating the term in action."}'}]})});
+    const data=await res.json();
+    const parsed=JSON.parse(data.content[0].text);
+    GL.push({t:term,c:cat,d:parsed.def,e:parsed.ex});
+    GL.sort((a,b)=>a.t.localeCompare(b.t));
+    fg();
+    document.getElementById('nterm').value='';
+    st.textContent='✓ "'+term+'" added to the glossary.';
+    setTimeout(()=>st.textContent='',3500);
+  }catch(err){st.textContent='Error generating definition — please try again.'}
+}
+
+function init(){
+  document.getElementById('itk-date').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+  GL.sort((a,b)=>a.t.localeCompare(b.t));
+  renderBriefing(DD);
+  rg(GL);
+  rs();
+}
+if(document.readyState!=='loading')init();else document.addEventListener('DOMContentLoaded',init);
+</script>

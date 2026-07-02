@@ -1,0 +1,212 @@
+{
+ "leadStory": {
+  "headline": "CISA adds actively exploited Microsoft SharePoint deserialization flaw (CVE-2026-45659) to KEV catalog",
+  "source": "CISA",
+  "sourceUrl": "https://www.cisa.gov",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/07/01/cisa-adds-one-known-exploited-vulnerability-catalog",
+  "tags": [
+   {"label": "Actively exploited", "type": "d"},
+   {"label": "KEV listed", "type": "d"},
+   {"label": "SharePoint", "type": "d"}
+  ],
+  "body": "CISA added CVE-2026-45659, a Microsoft SharePoint Server deserialization of untrusted data Vulnerability, to its KEV catalog based on evidence of active exploitation. SharePoint sits at the center of document sharing in many organizations, making it a high-value target for any Threat Actor seeking an initial foothold. Federal agencies are required to remediate KEV entries on a fixed deadline, and private organizations should treat the listing as a strong signal to Patch immediately.",
+  "beginnerTip": "The <strong>KEV catalog</strong> is CISA's list of vulnerabilities that attackers are exploiting right now — not theoretical risks. Deserialization flaws trick a server into rebuilding malicious data as executable code. If your organization runs SharePoint on its own servers, this is the patch to ask about today."
+ },
+ "cves": [
+  {
+   "headline": "Critical Oracle E-Business Suite flaw under active attack — over 900 instances exposed online",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/critical-flaw-oracle-e-business-suite-threat/824230/",
+   "tags": [
+    {"label": "Actively exploited", "type": "d"},
+    {"label": "900+ exposed", "type": "d"}
+   ],
+   "body": "Researchers warn that a critical Vulnerability in Oracle E-Business Suite is under immediate threat, with successful exploitation potentially compromising Oracle Payments. Scans found more than 900 EBS instances exposed to the internet amid ongoing attacks. Attackers have repeatedly targeted this business software suite in past exploitation sprees, so organizations should apply Oracle's fix and reduce internet exposure now.",
+   "beginnerTip": "<strong>E-Business Suite</strong> is software large companies use to run core operations like payments and HR. Because it touches money directly, a flaw here lets attackers go straight for financial systems rather than working their way through a network."
+  },
+  {
+   "headline": "Adobe patches seven maximum-severity (CVSS 10.0) flaws in ColdFusion and Campaign Classic",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/adobe-patches-7-cvss-100-flaws-in.html",
+   "tags": [
+    {"label": "CVSS 10.0", "type": "d"},
+    {"label": "Patch available", "type": "a"}
+   ],
+   "body": "Adobe released fixes for seven maximum-severity vulnerabilities across the ColdFusion web application platform and Campaign Classic marketing automation software, flaws that could lead to arbitrary code execution. A CVSS score of 10.0 is the highest possible rating. ColdFusion has a long history of being targeted once an Exploit becomes public, so patching quickly matters more than usual here.",
+   "beginnerTip": "A <strong>CVSS 10.0</strong> is the worst possible severity score — remotely exploitable, no login needed, full system compromise. Seven of them in one release is exceptional and worth immediate attention from any team running these products."
+  },
+  {
+   "headline": "Citrix patches six NetScaler flaws, including 'HTTP/2 Bomb' and a CitrixBleed-style information leak",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/citrix-patches-netscaler-vulnerabilities-including-new-http-2-bomb-attack/",
+   "tags": [
+    {"label": "Patch available", "type": "a"},
+    {"label": "High severity", "type": "w"}
+   ],
+   "body": "Citrix urged customers to update NetScaler appliances after fixing six vulnerabilities, headlined by a novel 'HTTP/2 Bomb' denial-of-service flaw and a high-severity information disclosure bug with echoes of the notorious CitrixBleed Vulnerability that was widely exploited in earlier attack waves. NetScaler devices sit at the network edge, making them prime targets the moment a working Exploit circulates.",
+   "beginnerTip": "<strong>NetScaler</strong> appliances manage traffic into corporate networks — like the front door of a building. The original CitrixBleed flaw let attackers steal active login sessions, which is why researchers watch anything resembling it very closely."
+  },
+  {
+   "headline": "Progress Kemp LoadMaster pre-auth remote code execution flaw sees active exploitation attempts",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
+   "tags": [
+    {"label": "Pre-auth RCE", "type": "d"},
+    {"label": "Exploitation attempts", "type": "d"}
+   ],
+   "body": "A recently disclosed critical flaw in the Progress Kemp LoadMaster load balancer is seeing active exploitation attempts, according to eSentire's Threat Response Unit. The Vulnerability allows remote code execution before any authentication takes place, meaning an attacker needs no credentials at all — only network access to the device.",
+   "beginnerTip": "<strong>Pre-auth RCE</strong> is the most dangerous flaw type: an attacker can run their own code on the device without logging in first. Load balancers handle traffic for many servers at once, so compromising one grants a wide view of an organization's traffic."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "19-year-old Scattered Spider suspect extradited from Finland to face U.S. hacking charges",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/19-year-old-scattered-spider-suspect.html",
+   "tags": [
+    {"label": "Law enforcement", "type": "g"},
+    {"label": "Scattered Spider", "type": "a"}
+   ],
+   "body": "The U.S. Department of Justice announced the extradition of a teenager accused of belonging to Scattered Spider, the loosely organized group known for aggressive Social Engineering against corporate help desks. He faces charges of conspiracy, computer intrusion, and fraud. The extradition signals continued international pressure on a group whose members have proven young, distributed, and hard to deter.",
+   "beginnerTip": "<strong>Scattered Spider</strong> became infamous by simply calling company IT help desks and talking their way into accounts — no advanced hacking needed. Many suspected members are teenagers, which complicates prosecution but hasn't stopped international arrests."
+  },
+  {
+   "headline": "FortiBleed credential-theft campaign linked to INC and Lynx ransomware operations",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
+   "tags": [
+    {"label": "Ransomware", "type": "d"},
+    {"label": "Credential theft", "type": "d"}
+   ],
+   "body": "The mass FortiBleed credential-theft campaign has been linked to the INC and Lynx Ransomware operations, suggesting the Fortinet credentials stolen at scale were harvested specifically to fuel future network intrusions. Organizations that had exposed Fortinet devices during the campaign window should assume credentials were taken, reset them, and enforce MFA rather than waiting for signs of misuse.",
+   "beginnerTip": "Stolen VPN credentials are a <strong>skeleton key</strong>: ransomware crews buy or harvest them in bulk, then log in like normal employees weeks later. That's why a credential-theft campaign today often becomes a ransomware headline next quarter."
+  },
+  {
+   "headline": "Password-spray campaign against Azure CLI compromises at least 78 Microsoft accounts in 81M+ attempts",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html",
+   "tags": [
+    {"label": "Active campaign", "type": "w"},
+    {"label": "Cloud", "type": "a"}
+   ],
+   "body": "Researchers warned of a massive automated password-spraying operation aimed at Microsoft's Azure command-line interface, generating more than 81 million login attempts over roughly two weeks and compromising dozens of accounts. The traffic originated from systems associated with hosting provider LSHIY. The campaign is a reminder that cloud administrative interfaces are under constant, industrial-scale attack.",
+   "beginnerTip": "<strong>Password spraying</strong> flips brute force around: instead of trying millions of passwords on one account, attackers try a few common passwords across millions of accounts — staying under lockout limits. Strong unique passwords plus MFA defeat it."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "DHS to unveil ANCHOR-CI, replacing the shuttered critical-infrastructure cybersecurity council",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/dhs-anchor-ci-cybersecurity-information-sharing/",
+   "tags": [
+    {"label": "Critical infrastructure", "type": "a"},
+    {"label": "Policy", "type": "a"}
+   ],
+   "body": "The Department of Homeland Security is standing up a replacement framework for public-private critical infrastructure cybersecurity collaboration, more than a year after the previous coordination body was eliminated — a move that had drawn sharp criticism from experts and infrastructure operators. The new effort aims to restore a formal channel between government and the companies operating power, water, and other essential systems.",
+   "beginnerTip": "Most U.S. <strong>critical infrastructure</strong> — power grids, pipelines, hospitals — is privately owned, so the government can't defend it directly. Formal information-sharing councils are how threat warnings actually reach the operators who can act on them."
+  },
+  {
+   "headline": "White House budget chief open to re-staffing CISA after deep personnel cuts",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/russell-vought-cisa-staffing-trump-budget-cuts/",
+   "tags": [
+    {"label": "CISA", "type": "a"},
+    {"label": "Policy", "type": "a"}
+   ],
+   "body": "Budget director Russell Vought signaled openness to restoring staffing at CISA, as DHS Secretary Markwayne Mullin floats adding back roughly 600 personnel following deep cuts. Staffing levels at the agency directly affect how quickly advisories, KEV updates, and incident response support reach both federal agencies and the private sector.",
+   "beginnerTip": "<strong>CISA</strong> is the closest thing the U.S. has to a national cyber defense agency. Its analysts write the advisories and maintain the exploited-vulnerabilities catalog that thousands of organizations use to prioritize patching — fewer analysts means slower warnings."
+  },
+  {
+   "headline": "FTC: Amazon to pay $2.25M penalty for withholding transaction records from identity-theft victims",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/amazon-fined-225m-for-withholding-evidence-from-fraud-victims/",
+   "tags": [
+    {"label": "Enforcement", "type": "a"},
+    {"label": "Consumer protection", "type": "a"}
+   ],
+   "body": "The U.S. Federal Trade Commission said Amazon will pay a $2.25 million civil penalty to settle charges that it blocked identity-theft victims' access to transaction records they were legally entitled to. Victims need those records to prove fraudulent activity to banks, credit bureaus, and police — withholding them compounds the original harm.",
+   "beginnerTip": "U.S. law gives <strong>identity-theft victims</strong> the right to obtain business records of transactions made in their name. If you're ever a victim, formally requesting those records is one of the first recovery steps — and companies are required to provide them."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "ClickFix becomes the dominant malware delivery method as researchers expose its API-driven backend",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/winner-dominant-malware-delivery-clickfix",
+   "tags": [
+    {"label": "Social engineering", "type": "w"},
+    {"label": "Trend", "type": "w"}
+   ],
+   "body": "Researchers say ClickFix — the Social Engineering trick that convinces users to paste and run commands to 'fix' a fake error or prove they're human — is no longer the exception in Malware delivery but the rule. A separate analysis of 3,000 live ClickFix payloads found the malicious commands are now dispensed by API-driven services, evidence of a maturing criminal supply chain behind the technique.",
+   "beginnerTip": "<strong>ClickFix</strong> pages pretend something is broken (or show a fake CAPTCHA) and instruct you to press Win+R and paste a command. No legitimate website will ever ask you to run commands on your computer — treat any such instruction as an attack."
+  },
+  {
+   "headline": "'Phantom squatting': attackers register the web domains that AI models hallucinate",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/endpoint-security/phantom-squatting-ai-driven-supply-chain-threat",
+   "tags": [
+    {"label": "AI security", "type": "a"},
+    {"label": "Trend", "type": "w"}
+   ],
+   "body": "Large language models consistently invent plausible-looking web addresses for legitimate brands. Attackers have begun registering those hallucinated domains before anyone else can, then hosting Phishing pages and Malware on them to catch users who follow AI-generated links. Because the domains never belonged to the real brand, traditional typo-squatting defenses don't spot them.",
+   "beginnerTip": "When an AI chatbot gives you a link, <strong>verify the domain</strong> before entering credentials — models sometimes invent URLs that look official but were never owned by the company. Navigating to a site via a search engine or a saved bookmark is safer than trusting a generated link."
+  },
+  {
+   "headline": "Microsoft accelerates post-quantum cryptography migration, moving key deadlines up to 2029",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/microsoft-accelerates-post-quantum.html",
+   "tags": [
+    {"label": "Cryptography", "type": "a"},
+    {"label": "Roadmap", "type": "a"}
+   ],
+   "body": "Microsoft said advances in quantum computing are making it essential to replace current Encryption standards sooner than previously expected, accelerating its quantum-safe security roadmap to 2029. The shift matters beyond Microsoft: its operating systems and cloud services anchor the cryptography used by a large share of the world's organizations, so its timeline effectively sets the industry's pace.",
+   "beginnerTip": "<strong>Post-quantum cryptography</strong> replaces today's encryption with algorithms that even future quantum computers can't break. The urgency comes from 'harvest now, decrypt later' — adversaries stockpile encrypted data today, planning to unlock it once quantum machines mature."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "text": "Medtronic is notifying customers that the ShinyHunters data breach exposed their personal information to an unauthorized third party."
+  },
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "text": "DHS confirmed hackers breached the Homeland Security Information Network (HSIN), the sensitive information-sharing platform used by federal, state, local, and private-sector partners."
+  },
+  {
+   "color": "warn",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "text": "A China-linked group compromised at least 10 organizations in Southeast Asia — including two state-owned entities — deploying a previously unseen backdoor against critical systems."
+  },
+  {
+   "color": "accent",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "text": "Google patched 382 Chrome vulnerabilities in a single release, including 15 rated critical and 67 rated high severity — update your browser."
+  },
+  {
+   "color": "ok",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "text": "Anthropic restored worldwide access to Claude Fable 5 after the U.S. Commerce Department lifted export controls, with new guardrails and safety classifiers in place."
+  }
+ ],
+ "analystFooter": "Two actively exploited flaws — the SharePoint deserialization bug now on CISA's KEV list and the Oracle E-Business Suite vulnerability with 900+ exposed instances — should be this week's top patching priorities, and with ClickFix now the dominant malware delivery trick, remind users that no legitimate page will ever ask them to paste commands into their computer."
+}
