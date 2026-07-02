@@ -9,17 +9,22 @@ so accuracy matters more than volume.
 Compute today's date in **America/Los_Angeles** as `YYYY-MM-DD`. This is the
 briefing date used everywhere below.
 
-## Step 2 — Gather candidates
+## Step 2 — Get candidates
 
-```
-python3 scripts/fetch_feeds.py --hours 24 --out /tmp/candidates.json
-```
+The **fetch-feeds GitHub Actions workflow** commits fresh candidates to
+`data/candidates.json` shortly before this routine runs (~12:40 UTC daily).
+This environment's outbound network is usually restricted, so prefer the
+committed file over fetching yourself.
 
-- If the script exits **non-zero** (every feed failed): **STOP. Commit nothing.**
-  The dashboard gracefully shows the previous day.
-- Read `/tmp/candidates.json`. Individual failed feeds listed in `feeds[]` are
-  normal (Cyber Defense Magazine is usually blocked); work with what succeeded.
-- If fewer than 10 items total, re-run with `--hours 36`.
+1. Read `data/candidates.json` and check its `generated` timestamp.
+2. If it is **less than 12 hours old**, use it.
+3. If it is missing or stale, try
+   `python3 scripts/fetch_feeds.py --hours 24 --out /tmp/candidates.json`
+   and use that output instead. If the script exits non-zero AND the
+   committed candidates are stale or missing: **STOP. Commit nothing.**
+   The dashboard gracefully shows the previous day.
+4. Individual failed feeds listed in `feeds[]` are normal (Cyber Defense
+   Magazine is usually blocked); work with what succeeded.
 
 ## Step 3 — Select stories
 
@@ -37,7 +42,9 @@ Rules:
 - **Never invent URLs, CVE numbers, CVSS scores, or facts.** Every claim must
   come from a candidate item or a page you actually fetched.
 - Use WebFetch on the top story URLs when the RSS summary is too thin to write
-  an accurate body paragraph.
+  an accurate body paragraph. If outbound network access is restricted (fetches
+  fail), write accurate, appropriately-hedged bodies from the RSS titles and
+  summaries alone — do not pad with invented specifics.
 - If a category is thin that day, include fewer real items rather than padding
   with stale or fabricated content.
 - `source` must be exactly one of: CISA, The Hacker News, Cybersecurity Dive,

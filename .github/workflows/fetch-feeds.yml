@@ -1,0 +1,36 @@
+name: Fetch news feeds
+
+# Runs shortly before the Claude cloud routine (13:05 UTC), which synthesizes
+# the briefing from the candidates committed here. The routine's sandbox has
+# no outbound network access, so the fetching happens on GitHub's runners.
+
+on:
+  schedule:
+    - cron: "40 12 * * *" # 5:40 AM PDT / 4:40 AM PST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch RSS candidates
+        run: |
+          mkdir -p data
+          python3 scripts/fetch_feeds.py --hours 24 --out data/candidates.json
+
+      - name: Commit candidates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/candidates.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Fetch candidates $(date -u +%F)"
+            git push
+          fi

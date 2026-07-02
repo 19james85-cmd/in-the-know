@@ -1,11 +1,14 @@
 # In the Know — Cybersecurity Daily Briefing
 
-A self-updating daily cybersecurity briefing dashboard. Every morning a
-scheduled Claude agent gathers the last 24 hours of news from ten curated
-sources (via `scripts/fetch_feeds.py`), writes a structured briefing to
-`briefings/YYYY-MM-DD.json` following `BRIEFING_INSTRUCTIONS.md`, grows
-`glossary.json` with new beginner-friendly terms, and pushes to this repo.
-GitHub Pages serves the result.
+A self-updating daily cybersecurity briefing dashboard. Every morning, in two
+stages: first a GitHub Actions workflow (`.github/workflows/fetch-feeds.yml`)
+gathers the last 24 hours of news from ten curated sources via
+`scripts/fetch_feeds.py` and commits the candidates to `data/candidates.json`;
+then a scheduled Claude cloud agent reads those candidates, writes a structured
+briefing to `briefings/YYYY-MM-DD.json` following `BRIEFING_INSTRUCTIONS.md`,
+grows `glossary.json` with new beginner-friendly terms, and pushes to this
+repo. GitHub Pages serves the result. (Two stages because the Claude agent's
+sandbox has no outbound internet access — GitHub's runners do the fetching.)
 
 ## Reading it
 
