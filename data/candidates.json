@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-02T14:56:40.205263+00:00",
+ "generated": "2026-07-03T14:56:30.066304+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,19 +11,19 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 12,
+   "count": 6,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -35,7 +35,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -47,13 +47,13 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 13,
+   "count": 4,
    "error": null
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -65,284 +65,179 @@
  ],
  "items": [
   {
-   "source": "Cybersecurity Dive",
-   "title": "Most cybersecurity workers have been told to conceal a breach, report finds",
-   "url": "https://www.cybersecuritydive.com/news/data-breach-coverups-ai-bitdefender/824331/",
-   "published": "2026-07-02T14:14:31+00:00",
-   "summary": "The security firm Bitdefender's annual survey also found that U.S. companies were simultaneously more confident and more strained on cyber defense than foreign peers."
-  },
-  {
    "source": "BleepingComputer",
-   "title": "ConsentFix and ClickFix: How Microsoft 365 Accounts are Hijacked in 3 Seconds",
-   "url": "https://www.bleepingcomputer.com/news/security/consentfix-and-clickfix-how-microsoft-365-accounts-are-hijacked-in-3-seconds/",
-   "published": "2026-07-02T14:00:10+00:00",
-   "summary": "ConsentFix and ClickFix attacks steal Microsoft 365 tokens in seconds using fake prompts and OAuth flows. Learn how these MFA bypass tactics work and how to defend against them. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "How to Conduct a Successful Audit of AI-Driven Software Development",
-   "url": "https://www.securityweek.com/how-to-conduct-a-successful-audit-of-ai-driven-software-development/",
-   "published": "2026-07-02T13:15:00+00:00",
-   "summary": "As AI-generated code becomes commonplace, CISOs need new audit strategies to measure developer practices, govern AI tool usage, and identify software risks before they reach production. The post How to Conduct a Successful Audit of AI-Driven Software Development appeared first on SecurityWeek ."
+   "title": "ARToken PhaaS exposes EvilTokens' Microsoft 365 phishing toolkit",
+   "url": "https://www.bleepingcomputer.com/news/security/artoken-phaas-exposes-eviltokens-microsoft-365-phishing-toolkit/",
+   "published": "2026-07-03T14:12:22+00:00",
+   "summary": "A new phishing-as-a-service (PhaaS) platform dubbed \"ARToken\" appears to operate as an affiliate of the EvilTokens phishing platform, giving researchers a glimpse into an extensive toolkit designed to compromise Microsoft 365. [...]"
   },
   {
    "source": "The Hacker News",
-   "title": "ToddyCat-Linked Umbrij Malware Abuses OAuth to Access Gmail via Google API",
-   "url": "https://thehackernews.com/2026/07/toddycat-linked-umbrij-malware-abuses.html",
-   "published": "2026-07-02T13:04:13+00:00",
-   "summary": "The threat actor known as ToddyCat has been attributed to a new malware called Umbrij that's designed to gain surreptitious access to a victim's email correspondence via the Google API. \"In this campaign, the attackers focused their attention on corporate email communications hosted on Gmail, targeting access compromise via APIs,\" Kaspersky said in a detailed report published this week. \""
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "FortiBleed Campaign Linked to INC, Lynx Ransomware Attacks",
-   "url": "https://www.securityweek.com/fortibleed-campaign-linked-to-inc-lynx-ransomware-attacks/",
-   "published": "2026-07-02T12:34:29+00:00",
-   "summary": "Researchers say credentials harvested from hundreds of thousands of FortiGate firewalls are being used to facilitate ransomware attacks by the INC and Lynx operations. The post FortiBleed Campaign Linked to INC, Lynx Ransomware Attacks appeared first on SecurityWeek ."
+   "title": "Armored Likho Targets Government Agencies, Power Sector with BusySnake Stealer",
+   "url": "https://thehackernews.com/2026/07/armored-likho-targets-government.html",
+   "published": "2026-07-03T13:36:33+00:00",
+   "summary": "A previously undocumented threat actor known as Armored Likho has been attributed to cyber attacks targeting government agencies and the electric power sector across Russia, Brazil, and Kazakhstan. \"Armored Likho blends financially motivated campaigns targeting private individuals with targeted cyber espionage aimed at organizations,\" Kaspersky said in a technical analysis published today. \""
   },
   {
    "source": "Dark Reading",
-   "title": "Anthropic's AI Finds Bugs. IBM Bets $5B It Can Fix Them.",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-s-ai-finds-bugs-ibm-bets-5b-it-can-fix-them-",
-   "published": "2026-07-02T12:33:57+00:00",
-   "summary": "IBM and Red Hat assign 20,000 engineers to the new Project Lightwell service as Anthropic's Mythos findings ignite debate over how to secure the open-source software supply chain."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft fixes bug that removed Copilot buttons in Outlook",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-removed-copilot-button-in-outlook/",
-   "published": "2026-07-02T12:15:47+00:00",
-   "summary": "Microsoft has fixed a known issue causing the Copilot Chat or Copilot buttons in Classic Outlook to disappear for Windows users with the Copilot Chat (Basic) license. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Cisco finally confirms attackers exploiting Unified CM flaw",
-   "url": "https://www.bleepingcomputer.com/news/security/cisco-finally-confirms-attackers-exploiting-unified-cm-flaw/",
-   "published": "2026-07-02T11:35:25+00:00",
-   "summary": "Cisco confirmed that attackers are now exploiting a Unified Communications Manager (Unified CM) vulnerability patched in early June. [...]"
+   "title": "Chinese LLMs Broaden the Gap Between Attackers & Defenders",
+   "url": "https://www.darkreading.com/cyber-risk/chinese-llms-broaden-gap-between-attackers-and-defenders",
+   "published": "2026-07-03T13:01:00+00:00",
+   "summary": "Two new models from Chinese firms compete with top US mainstream and frontier models. Should cyber-defenders be worried?"
   },
   {
    "source": "The Hacker News",
-   "title": "Identity Lifecycle Management Wasn't Built for AI Agents",
-   "url": "https://thehackernews.com/2026/07/identity-lifecycle-management.html",
-   "published": "2026-07-02T11:30:00+00:00",
-   "summary": "Identity lifecycle management was architected around a person with an employment record, a manager, and a departure date. AI agents have none of those. As autonomous principals proliferate across enterprise environments, the governance model built for humans develops structural blind spots that traditional IGA tools weren't designed to detect. This guide covers where that model breaks, what it"
+   "title": "European Parliament Member Investigating Spyware Was Hacked With Pegasus",
+   "url": "https://thehackernews.com/2026/07/european-parliament-member.html",
+   "published": "2026-07-03T11:05:43+00:00",
+   "summary": "A new report from the Citizen Lab has revealed that former Member of the European Parliament Stelios Kouloglou had his mobile device repeatedly hacked with the notorious Pegasus spyware while serving on a committee that was tasked with investigating the abuse of such commercial surveillance tools in the bloc. \"Through forensic analysis of his device, we found that the attackers could have had"
   },
   {
    "source": "SecurityWeek",
-   "title": "Trump Administration Lifts Restrictions on Anthropic’s Claude Models After Cybersecurity Alarm",
-   "url": "https://www.securityweek.com/trump-administration-lifts-restrictions-on-anthropics-claude-models-after-cybersecurity-alarm/",
-   "published": "2026-07-02T11:01:48+00:00",
-   "summary": "Anthropic said Tuesday night that its AI model called Claude Fable 5 is now widely available. The post Trump Administration Lifts Restrictions on Anthropic’s Claude Models After Cybersecurity Alarm appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "CISA: Microsoft SharePoint RCE flaw now actively exploited",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-rce-flaw-now-actively-exploited/",
-   "published": "2026-07-02T10:52:43+00:00",
-   "summary": "CISA warned on Wednesday that attackers have begun exploiting a high-severity Microsoft SharePoint remote code execution vulnerability patched in May. [...]"
+   "title": "Agentic AI Used to Conduct Ransomware Attack via Langflow",
+   "url": "https://www.securityweek.com/agentic-ai-used-to-conduct-ransomware-attack-via-langflow/",
+   "published": "2026-07-03T11:00:00+00:00",
+   "summary": "Attack demonstrates how LLM agents can combine known exploitation techniques with real-time reasoning to automate complex, multi-stage intrusions. The post Agentic AI Used to Conduct Ransomware Attack via Langflow appeared first on SecurityWeek ."
   },
   {
    "source": "SecurityWeek",
-   "title": "Cisco Confirms In-the-Wild Exploitation of Unified CM Vulnerability",
-   "url": "https://www.securityweek.com/cisco-confirms-in-the-wild-exploitation-of-unified-cm-vulnerability/",
-   "published": "2026-07-02T10:48:43+00:00",
-   "summary": "A PoC exploit has been available since public disclosure, and the first exploitation attempts were observed last week. The post Cisco Confirms In-the-Wild Exploitation of Unified CM Vulnerability appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Opera rolls out Paste Protect feature to fight ClickFix attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/opera-rolls-out-paste-protect-feature-to-fight-clickfix-attacks/",
-   "published": "2026-07-02T10:46:58+00:00",
-   "summary": "Opera has introduced Paste Protect, a security feature designed to block ClickFix-style attacks that trick users into executing malicious commands through social engineering. [...]"
+   "title": "Medtronic Data Breach Impacts 3.8 Million People",
+   "url": "https://www.securityweek.com/medtronic-data-breach-impacts-3-8-million-people/",
+   "published": "2026-07-03T10:00:00+00:00",
+   "summary": "In April, ShinyHunters accessed the company’s corporate IT systems and stole patients’ personal and medical information. The post Medtronic Data Breach Impacts 3.8 Million People appeared first on SecurityWeek ."
   },
   {
    "source": "SecurityWeek",
-   "title": "‘BioShocking’ Attack Tricks AI Browsers Into Stealing Credentials",
-   "url": "https://www.securityweek.com/bioshocking-attack-tricks-ai-browsers-into-stealing-credentials/",
-   "published": "2026-07-02T10:45:00+00:00",
-   "summary": "Researchers show how context manipulation can cause agentic browsers to abandon safety guardrails and exfiltrate sensitive credentials. The post BioShocking' Attack Tricks AI Browsers Into Stealing Credentials appeared first on SecurityWeek ."
+   "title": "Alleged Scattered Spider Hacker Extradited to US",
+   "url": "https://www.securityweek.com/alleged-scattered-spider-hacker-extradited-to-us/",
+   "published": "2026-07-03T09:30:00+00:00",
+   "summary": "Prosecutors say 19-year-old Peter Stokes was a member of Scattered Spider, the hacking group linked to more than 100 network intrusions and over $100 million in ransom payments. The post Alleged Scattered Spider Hacker Extradited to US appeared first on SecurityWeek ."
   },
   {
    "source": "SecurityWeek",
-   "title": "CISA Warns of Actively Exploited Microsoft SharePoint Vulnerability",
-   "url": "https://www.securityweek.com/cisa-warns-of-actively-exploited-microsoft-sharepoint-vulnerability/",
-   "published": "2026-07-02T10:30:42+00:00",
-   "summary": "CISA says threat actors are exploiting a recently patched SharePoint remote code execution vulnerability (CVE-2026-45659). The post CISA Warns of Actively Exploited Microsoft SharePoint Vulnerability appeared first on SecurityWeek ."
+   "title": "Google, FBI Disrupt NetNut Residential Proxy Network Powered by Millions of Devices",
+   "url": "https://www.securityweek.com/google-fbi-disrupt-netnut-residential-proxy-network-powered-by-millions-of-devices/",
+   "published": "2026-07-03T08:13:22+00:00",
+   "summary": "NetNut rented access to millions of compromised devices, allowing cybercriminals and nation-state actors to mask their identities during attacks. The post Google, FBI Disrupt NetNut Residential Proxy Network Powered by Millions of Devices appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "AI Agent Exploits Langflow RCE to Automate Database Ransomware Attack",
-   "url": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
-   "published": "2026-07-02T09:13:13+00:00",
-   "summary": "Security firm Sysdig says it has found what it believes is the first ransomware attack run from start to finish by an AI agent. Its Threat Research Team calls the operator JADEPUFFER and says a large language model handled the whole job: breaking in, stealing credentials, moving deeper into the network, then encrypting and wiping a company's production database. Ransomware has always"
+   "title": "PamStealer Uses Fake Maccy Sites and PAM Checks to Steal Mac Login Passwords",
+   "url": "https://thehackernews.com/2026/07/pamstealer-uses-fake-maccy-sites-and.html",
+   "published": "2026-07-03T08:03:37+00:00",
+   "summary": "Cybersecurity researchers have flagged a new macOS information stealer called PamStealer that employs a series of clever tricks to infect systems and siphon sensitive data. The stealer, discovered by Jamf Threat Labs, is distributed as a compiled AppleScript (.scpt) file impersonating Maccy, a legitimate open-source clipboard manager. It has been codenamed PamStealer owing to its ability to"
   },
   {
-   "source": "BleepingComputer",
-   "title": "Alleged Scattered Spider hacker extradited to the United States",
-   "url": "https://www.bleepingcomputer.com/news/security/alleged-scattered-spider-hacker-extradited-to-the-united-states/",
-   "published": "2026-07-02T08:58:25+00:00",
-   "summary": "A dual United States and Estonian citizen has been extradited to the U.S. to face charges alleging he was a member of the Scattered Spider hacking collective. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "FortiBleed Credential Theft Linked to INC and Lynx Ransomware Operations",
-   "url": "https://thehackernews.com/2026/07/fortibleed-credential-theft-linked-to.html",
-   "published": "2026-07-02T08:00:49+00:00",
-   "summary": "The recently discovered financially-motivated FortiBleed campaign has been attributed to INC and Lynx ransomware operations, indicating that the verified, stolen credentials were intended for follow-on intrusions. \"An operator tied to FortiBleed's infrastructure was found actively working negotiation panels for both groups, tying mass FortiGate credential theft directly to ransomware deployment"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "New ChocoPoC RAT Targets Vulnerability Researchers via Fake PoC Exploit Repos",
-   "url": "https://thehackernews.com/2026/07/new-chocopoc-rat-targets-vulnerability.html",
-   "published": "2026-07-02T07:24:23+00:00",
-   "summary": "Attackers are hiding a data-stealing trojan inside fake exploit code aimed at the people who hunt bugs for a living. The malware, called ChocoPoC, travels in Python proof-of-concept (PoC) repositories on GitHub that claim to exploit hot new CVEs. Run one, and it quietly lifts your saved passwords, browser cookies, and files, then hands the attacker a shell on your machine. YesWeHack and"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "SharePoint RCE CVE-2026-45659 Added to CISA KEV After Active Exploitation",
-   "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
-   "published": "2026-07-02T05:46:45+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a high-severity flaw impacting Microsoft SharePoint Server to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerability, tracked as CVE-2026-45659 (CVSS score: 8.8), is a case of remote code execution arising from the deserialization of untrusted data. The issue"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Medtronic notifies customers impacted by ShinyHunters data breach",
-   "url": "https://www.bleepingcomputer.com/news/security/medtronic-notifies-customers-impacted-by-shinyhunters-data-breach/",
-   "published": "2026-07-02T04:25:42+00:00",
-   "summary": "Healthcare device firm Medtronic is notifying affected customers about a data breach that exposed their personal data to an unauthorized third party. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "FortiBleed credential-theft campaign linked to Lynx ransomware",
-   "url": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
-   "published": "2026-07-01T21:37:24+00:00",
-   "summary": "The massive FortiBleed credential theft campaign has been linked to the INC and Lynx ransomware operations, suggesting the stolen Fortinet credentials were intended to fuel future network intrusions. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Kubota says hackers had month-long access to network systems",
-   "url": "https://www.bleepingcomputer.com/news/security/kubota-says-hackers-had-month-long-access-to-network-systems/",
-   "published": "2026-07-01T21:09:06+00:00",
-   "summary": "Kubota North America Corporation disclosed that hackers had access to some of its network systems for more than a month earlier this year. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Crafty Phishing Campaigns Auto-Adapt to Victim's Device, OS",
-   "url": "https://www.darkreading.com/application-security/phishing-campaigns-auto-adapt-victims-device-os",
-   "published": "2026-07-01T20:31:21+00:00",
-   "summary": "Attackers fingerprint victims through user-agent data to deliver OS-specific payloads, increasing compromise rates and campaign profitability."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "New ChocoPoC malware targets researchers via trojanized PoC exploits",
-   "url": "https://www.bleepingcomputer.com/news/security/new-chocopoc-malware-targets-researchers-via-trojanized-poc-exploits/",
-   "published": "2026-07-01T20:08:13+00:00",
-   "summary": "Multiple weaponized proof-of-concept (PoC) exploits on GitHub were found delivering a Python-based remote access trojan (RAT) named ChocoPoC that can execute commands and steal sensitive data in a campaign believed to target cybersecurity researchers. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "And the Winner in Dominant Malware Delivery? ClickFix",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/winner-dominant-malware-delivery-clickfix",
-   "published": "2026-07-01T19:46:34+00:00",
-   "summary": "Researchers say the highly effective social engineering technique is no longer the exception for malware attacks — it's now the rule."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Unpatched Argo CD Repo-Server Flaw Could Let Attackers Take Over Kubernetes Clusters",
-   "url": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html",
-   "published": "2026-07-01T19:40:06+00:00",
-   "summary": "Argo CD, a widely used tool for deploying software to Kubernetes, has an unpatched flaw in its repo-server component that lets an unauthenticated attacker run code, provided they can reach the component's internal network port. Synacktiv, which found the bug, says it can lead to a full cluster takeover. There is no fix and no CVE. The firm says it reported the flaw to Argo CD's maintainers in"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "19-Year-Old Scattered Spider Suspect Extradited to Face U.S. Hacking Charges",
-   "url": "https://thehackernews.com/2026/07/19-year-old-scattered-spider-suspect.html",
-   "published": "2026-07-01T19:28:07+00:00",
-   "summary": "A teenager accused of belonging to the hacking group Scattered Spider has been extradited from Finland to face U.S. charges of conspiracy, computer intrusion, and fraud, the U.S. Department of Justice announced on July 1. Peter Stokes, 19, a dual U.S. and Estonian citizen, appeared in a Chicago federal court on June 30, where a judge ordered him held in custody. Finnish police"
+   "source": "SecurityWeek",
+   "title": "Critical Cursor AI Code Editor Flaws Could Lead to OS-Level Remote Code Execution",
+   "url": "https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/",
+   "published": "2026-07-03T07:57:53+00:00",
+   "summary": "The DuneSlide vulnerabilities enable zero-click prompt injection attacks that escape Cursor's sandbox and execute arbitrary code on the underlying operating system. The post Critical Cursor AI Code Editor Flaws Could Lead to OS-Level Remote Code Execution appeared first on SecurityWeek ."
   },
   {
    "source": "CyberScoop",
-   "title": "Researchers spot exploitation of another critical Oracle defect",
-   "url": "https://cyberscoop.com/oracle-ebs-critical-vulnerability-exploited/",
-   "published": "2026-07-01T19:23:26+00:00",
-   "summary": "The defect impacts a popular collection of business applications that attackers have hit before in widespread attack sprees. The post Researchers spot exploitation of another critical Oracle defect appeared first on CyberScoop ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Microsoft Adds New Teams Controls to Block Unauthorized AI Bots From Meetings",
-   "url": "https://www.securityweek.com/microsoft-adds-new-teams-controls-to-block-unauthorized-ai-bots-from-meetings/",
-   "published": "2026-07-01T18:08:15+00:00",
-   "summary": "Microsoft's new Teams admin policy requires organizer approval for external AI bots, giving organizations greater visibility and control over automated participants in sensitive meetings. The post Microsoft Adds New Teams Controls to Block Unauthorized AI Bots From Meetings appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "SEO-Poisoned Software Sites Abuse ScreenConnect to Deploy AsyncRAT",
-   "url": "https://thehackernews.com/2026/07/seo-poisoned-software-sites-abuse.html",
-   "published": "2026-07-01T17:53:06+00:00",
-   "summary": "Unknown threat actors are leveraging the ScreenConnect remote access tool as a way to deploy and execute AsyncRAT. Kaspersky said the activity is part of a \"massive, multi-domain, multi-language\" campaign that distributes malicious installer archives hosted on spoofed websites. These installers masquerade as popular software like OBS Studio, DNS Jumper, DS4Windows, and Bandicam, among others."
+   "title": "Someone infected a spyware probe overseer with spyware",
+   "url": "https://cyberscoop.com/pegasus-spyware-pega-committee-member-targeted/",
+   "published": "2026-07-03T05:00:00+00:00",
+   "summary": "Citizen Lab says the phone of a member of Europe’s PEGA Committee was infected twice with Pegasus, the NSO Group spyware that gave the panel its name. The post Someone infected a spyware probe overseer with spyware appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "DHS confirms hackers breached HSIN info-sharing platform",
-   "url": "https://www.bleepingcomputer.com/news/security/dhs-confirms-hackers-breached-hsin-info-sharing-platform/",
-   "published": "2026-07-01T17:32:22+00:00",
-   "summary": "The Department of Homeland Security is investigating a cyberattack that compromised the Homeland Security Information Network (HSIN), a sensitive information-sharing platform used by federal, state, local, and private-sector partners. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "VEIL#DROP Malware Chain Uses Blogger Platform to Deliver PureLogs Stealer",
-   "url": "https://thehackernews.com/2026/07/veildrop-malware-chain-uses-blogger.html",
-   "published": "2026-07-01T17:18:50+00:00",
-   "summary": "Cybersecurity researchers have flagged a new multi-stage malware delivery attack chain that uses social engineering and Blogger pages to deliver an information stealer called PureLogs. The activity has been codenamed VEIL#DROP by Securonix. It's suspected that the initial payloads are distributed either via spear-phishing or a drive-by compromise, which occurs when an unsuspecting user lands on"
+   "title": "Claude Fable 5 isn’t permanently leaving subscriptions, Anthropic says",
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/",
+   "published": "2026-07-03T01:37:09+00:00",
+   "summary": "Anthropic says Claude Fable 5 won't be accessible via Claude subscriptions after July 7, but it's not a permanent change, and the company expects the model to return outside the usage-based plan soon. [...]"
   },
   {
    "source": "BleepingComputer",
-   "title": "Webinar: Why traditional email security is no longer enough",
-   "url": "https://www.bleepingcomputer.com/news/security/webinar-why-traditional-email-security-is-no-longer-enough/",
-   "published": "2026-07-01T16:54:22+00:00",
-   "summary": "Modern phishing, business email compromise, and account takeover attacks increasingly exploit trusted identities and legitimate business workflows, making them harder for traditional email defenses to detect. This webinar explores how behavioral AI can help organizations automate detection and response. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers target Microsoft 365 accounts with 81 million login attempts",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-365-accounts-with-81-million-login-attempts/",
-   "published": "2026-07-01T16:38:01+00:00",
-   "summary": "An aggressive password-spraying campaign targeting Microsoft 365 environments generated more than 81 million login attempts over a two-week period. [...]"
+   "title": "Claude Fable relaunch disappoints users with nerfed performance",
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-relaunch-disappoints-users-with-nerfed-performance/",
+   "published": "2026-07-03T00:48:30+00:00",
+   "summary": "Claude Fable, the company's most powerful model, is now available to all users, but early impressions are disappointing, as it appears to be nowhere near the original release. [...]"
   },
   {
    "source": "Dark Reading",
-   "title": "When Too Much Security Data Became the Risk",
-   "url": "https://www.darkreading.com/cyber-risk/too-much-security-data-risk",
-   "published": "2026-07-01T15:44:41+00:00",
-   "summary": "Rapid growth turned routine firewall logs into a security and budget liability. One CISO used artificial intelligence to filter what data truly belongs in the SIEM."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Ousaban Banking Trojan Targets Iberian Bank Users with Fake PDF Lures",
-   "url": "https://thehackernews.com/2026/07/ousaban-banking-trojan-targets-iberian.html",
-   "published": "2026-07-01T15:26:55+00:00",
-   "summary": "A Brazilian banking trojan called Ousaban is going after Windows users who bank in Spain and Portugal. Fortinet's FortiGuard Labs identified the campaign in May 2026. It opens with a phishing PDF disguised as a corrupted file, checks that the visitor is really in Spain or Portugal, and hides its real payload inside an image. The goal is the usual one: steal banking logins and take"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Adobe Patches 7 CVSS 10.0 Flaws in ColdFusion and Campaign Classic",
-   "url": "https://thehackernews.com/2026/07/adobe-patches-7-cvss-100-flaws-in.html",
-   "published": "2026-07-01T15:25:46+00:00",
-   "summary": "Adobe has released patches for multiple maximum-severity security flaws impacting Adobe ColdFusion and Adobe Campaign Classic. The ColdFusion updates \"resolves critical and important vulnerabilities that could lead to arbitrary code execution, privilege escalation, arbitrary file system read, and security feature bypass,\" Adobe said in an alert released Tuesday. The vulnerabilities are listed"
+   "title": "Aussies Face Reduced Cybercrime Risk, as Pressure Shifts to SMBs",
+   "url": "https://www.darkreading.com/cybersecurity-analytics/aussies-face-reduced-cybercrime-risk-pressure-shifts-smbs",
+   "published": "2026-07-02T23:01:00+00:00",
+   "summary": "Improved institutional safeguards and stricter regulations have pushed the burdens of protection and risk reduction on to Australian businesses."
   },
   {
    "source": "Dark Reading",
-   "title": "'Phantom Squatting': An Emerging AI-Driven Supply Chain Threat",
-   "url": "https://www.darkreading.com/endpoint-security/phantom-squatting-ai-driven-supply-chain-threat",
-   "published": "2026-07-01T15:17:14+00:00",
-   "summary": "LLMs consistently hallucinate Web domains for legitimate brands that attackers can register for malicious activity in a difficult-to-detect attack vector."
+   "title": "Apple Reverses Age-Old Patch Policy to Keep Up With AI",
+   "url": "https://www.darkreading.com/cybersecurity-operations/apple-patch-policy-ai",
+   "published": "2026-07-02T19:31:58+00:00",
+   "summary": "Expect more compressed patching cycles from Apple going forward, as attackers leverage artificial intelligence to reduce time to exploit."
+  },
+  {
+   "source": "Krebs on Security",
+   "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
+   "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
+   "published": "2026-07-02T19:27:33+00:00",
+   "summary": "The Federal Bureau of Investigation (FBI) said today it worked with industry partners to seize hundreds of domains associated with NetNut, a sprawling residential proxy service operated by the publicly-traded Israeli company Alarum Technologies [NASDAQ: ALAR]. The action comes roughly two weeks after KrebsOnSecurity published findings from multiple security firms connecting NetNut to the Popa botnet, a collection of at least two million devices that have been compromised by malicious software wi"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "FortiBleed Actors Collaborating With Inc, Lynx Ransomware Gangs",
+   "url": "https://www.darkreading.com/threat-intelligence/fortibleed-actors-inc-lynx-ransomware-gangs",
+   "published": "2026-07-02T19:11:33+00:00",
+   "summary": "After gaining a foothold in thousands of Fortinet firewalls, the attackers are starting to monetize that access, and are also piling on a Nextcloud zero-day bug."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Google Disrupts NetNut Residential Proxy Network Spanning 2 Million Home Devices",
+   "url": "https://thehackernews.com/2026/07/google-disrupts-netnut-residential.html",
+   "published": "2026-07-02T18:54:06+00:00",
+   "summary": "Google has significantly degraded NetNut, one of the biggest networks that turns home devices into rented relays for other people's traffic. Working with the FBI, Lumen, and others, Google's Threat Intelligence Group (GTIG) said this week it had reduced the network's pool of usable devices by millions. Google identifies NetNut, also tracked as Popa, as a network spread across home"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Ransomware Groups Turn to Citrix Bleed 2, BYOVD, and Supply Chain Credentials",
+   "url": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
+   "published": "2026-07-02T18:30:33+00:00",
+   "summary": "Threat actors associated with the Anubis ransomware operation have been observed exploiting the Citrix Bleed 2 (CVE-2025-5777) vulnerability to obtain initial access. \"Although tactics differ between affiliates, common patterns emerged in tradecraft through use of legitimate Remote Management and Monitoring (RMM) tooling, credential access, and hands-on-keyboard procedures used for lateral"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Ransomware Thugs Masquerade as Interpol to Entice Small Biz",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-use-interpol-lure-target-small-businesses",
+   "published": "2026-07-02T18:07:40+00:00",
+   "summary": "The ransomware campaign relies on basic social engineering and stretches across multiple regions, including the US, Europe, Middle East, and elsewhere."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Alleged longstanding member of Scattered Spider extradited to US",
+   "url": "https://cyberscoop.com/scattered-spider-peter-stokes-cybercrime-extradition/",
+   "published": "2026-07-02T15:28:25+00:00",
+   "summary": "Peter Stokes boasted on social media about the luxurious globetrotting life he enjoyed while he was still a child. The post Alleged longstanding member of Scattered Spider extradited to US appeared first on CyberScoop ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "ThreatsDay: AI Compute Hijacking, Apple Email Flaw, BlueHammer Ransomware + 14 Stories",
+   "url": "https://thehackernews.com/2026/07/threatsday-ai-compute-hijacking-apple.html",
+   "published": "2026-07-02T15:24:18+00:00",
+   "summary": "This week’s security news is mostly about weak spots. Browsers, bots, sandboxes, AI systems, and email flows all show the same problem in different ways. Everything looks normal until someone tests a small gap and finds a way through. This is not one big break. It is small permissions, weak checks, open systems, and normal tools doing things they were allowed to do. That same pattern runs"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Google loses final appeal to overturn €4.1 billion EU fine",
+   "url": "https://www.bleepingcomputer.com/news/legal/google-loses-final-appeal-to-overturn-41-billion-eu-fine/",
+   "published": "2026-07-02T15:18:51+00:00",
+   "summary": "Court of Justice of the European Union (CJEU) has dismissed Google's final appeal against a €4.1 billion ($4.7 billion) antitrust fine over the company's use of Android to promote its Chrome browser and search service. [...]"
   },
   {
    "source": "Cybersecurity Dive",
-   "title": "Critical flaw in Oracle E-Business Suite is under immediate threat",
-   "url": "https://www.cybersecuritydive.com/news/critical-flaw-oracle-e-business-suite-threat/824230/",
-   "published": "2026-07-01T15:11:21+00:00",
-   "summary": "Researchers warn that successful exploitation of the vulnerability could allow an attacker to compromise Oracle Payments."
+   "title": "FortiBleed campaign traced to INC and Lynx ransomware operations",
+   "url": "https://www.cybersecuritydive.com/news/fortibleed-campaign-traced-to-inc-and-lynx-ransomware-operations/824348/",
+   "published": "2026-07-02T15:05:16+00:00",
+   "summary": "Researchers are also investigating the role of a suspected zero-day vulnerability."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "New CitrixBleed Vulnerability Exploited Immediately After Public Disclosure",
+   "url": "https://www.securityweek.com/new-citrixbleed-vulnerability-exploited-immediately-after-public-disclosure/",
+   "published": "2026-07-02T15:04:22+00:00",
+   "summary": "Hackers are targeting NetScaler appliances using public PoC code to retrieve arbitrary memory content in the HTTP response. The post New CitrixBleed Vulnerability Exploited Immediately After Public Disclosure appeared first on SecurityWeek ."
   }
  ]
 }
