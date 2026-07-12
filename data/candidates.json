@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-11T14:06:36.992484+00:00",
+ "generated": "2026-07-12T14:12:02.795400+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,13 +11,13 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 6,
+   "count": 2,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -29,13 +29,13 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 7,
+   "count": 1,
    "error": null
   },
   {
@@ -65,144 +65,32 @@
  ],
  "items": [
   {
-   "source": "BleepingComputer",
-   "title": "'Ghostcommit' hides prompt injection in images to fool AI agents, steal secrets",
-   "url": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
-   "published": "2026-07-11T09:03:57+00:00",
-   "summary": "A PNG hiding a prompt injection could steal your repo's secrets, researchers demonstrate. The technique, dubbed 'Ghostcommit,' slipped past AI code reviewers CodeRabbit and Bugbot, which never open image files at all, then convinced a coding agent to read a repo's .env and write every secret into the code as a list of numbers. [...]"
+   "source": "The Hacker News",
+   "title": "Compromised jscrambler 8.14.0 npm Release Drops Rust Infostealer During Install",
+   "url": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
+   "published": "2026-07-11T17:59:26+00:00",
+   "summary": "The jscrambler npm package was compromised, and simply installing its 8.14.0 release runs an infostealer on your machine. Published on July 11, 2026, the malicious version carries a preinstall hook that drops and executes a native binary, one build each for Windows, macOS, and Linux. Socket flagged the release six minutes after it was published. If you or one of your"
   },
   {
    "source": "The Hacker News",
-   "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
-   "url": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
-   "published": "2026-07-11T06:45:55+00:00",
-   "summary": "Zimbra is urging customers to apply updates to address a critical security vulnerability impacting the Classic Web Client that could result in arbitrary code execution. The vulnerability has been described as a case of stored cross-site scripting (XSS) that could allow specially crafted emails to execute malicious scripts in a user's session. It has yet to be assigned a CVE identifier. \"The"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "New U-Boot flaws could enable stealthy firmware attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/",
-   "published": "2026-07-10T21:59:02+00:00",
-   "summary": "Six vulnerabilities in the widely used U-Boot bootloader have been discovered that could allow attackers to execute malicious code during device boot, potentially enabling stealthy firmware attacks that compromise security protections and install persistent malware. [...]"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Armenian national pleads guilty to Ryuk ransomware attacks",
-   "url": "https://cyberscoop.com/karen-vardanyan-armenian-ryuk-ransomware-guilty/",
-   "published": "2026-07-10T20:13:27+00:00",
-   "summary": "Karen Vardanyan faces up to 15 years in federal prison and agreed to pay nearly $1.2 million in restitution. The post Armenian national pleads guilty to Ryuk ransomware attacks appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Jen Ellis: Connecting Cyber Community With Political Machinery",
-   "url": "https://www.darkreading.com/cybersecurity-operations/jen-ellis-connecting-cyber-community-political-machinery",
-   "published": "2026-07-10T19:08:04+00:00",
-   "summary": "Security Pro File: On the heels of her recent honors as a Member of the Order of the British Empire (MBE), we take a look back at the events that shaped Jen Ellis' advocacy on behalf of security researchers."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "CISA looks to remedy ailments from big May credential leak",
-   "url": "https://cyberscoop.com/cisa-credential-leak-forensic-report/",
-   "published": "2026-07-10T18:54:28+00:00",
-   "summary": "A major credential leak spurred the Cybersecurity and Infrastructure Security Agency to strengthen protections for its sensitive materials, improve how researchers can report agency vulnerabilities and develop plans for similar incidents, the agency said in a forensic report released Thursday. The blog post outlines CISA’s response to the leak that the researcher who discovered it [ ] The post CISA looks to remedy ailments from big May credential leak appeared first on CyberScoop ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Ryuk ransomware member pleads guilty in the US, faces 15 years in prison",
-   "url": "https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-pleads-guilty-in-the-us-faces-15-years-in-prison/",
-   "published": "2026-07-10T17:46:10+00:00",
-   "summary": "A 34-year-old Armenian man has pleaded guilty to hacking U.S. companies and deploying the infamous Ryuk ransomware to encrypt their systems. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Cybercriminals Flock to Healthcare Businesses as Attacks Surge",
-   "url": "https://www.darkreading.com/threat-intelligence/cybercriminals-healthcare-businesses-attacks-surge",
-   "published": "2026-07-10T16:51:34+00:00",
-   "summary": "While cyberattacks against hospitals and clinics grew modestly in the first half of 2026, attacks on service providers and other healthcare businesses more than doubled."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Police suspects Dutch hackers were involved in Odido breach",
-   "url": "https://www.bleepingcomputer.com/news/security/police-suspects-dutch-hackers-were-involved-in-odido-breach/",
-   "published": "2026-07-10T16:37:01+00:00",
-   "summary": "The Dutch National Police (Politie) says it has found \"strong indications\" that Dutch hackers have been involved in a February breach at the telecommunications provider Odido. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "URGENT - Progress Tells ShareFile Customers to Shut Down Storage Zone Controllers Over Security Threat",
-   "url": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
-   "published": "2026-07-10T16:30:00+00:00",
-   "summary": "Progress Software has told ShareFile customers to shut down the Windows servers running their Storage Zone Controllers, confirming to The Hacker News that it is responding to a \"credible external security threat.\" The company has temporarily disabled access to the affected accounts, a step it says it took \"out of an abundance of caution\" while it works with internal and external security"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Injective Labs GitHub Compromise Pushes Wallet-Key-Stealing npm Packages",
-   "url": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
-   "published": "2026-07-10T16:29:00+00:00",
-   "summary": "Unknown threat actors compromised the Injective Labs SDK project's GitHub repository and leveraged it to publish a malicious package on the npm registry to steal cryptocurrency wallet private keys and mnemonic seed phrases. The compromised version, @injectivelabs/sdk-ts@1.20.21, came embedded with fake telemetry functionality that exfiltrated data from cryptocurrency wallets. The version was"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Progress urges ShareFile admins to shut down servers over “credible” threat",
-   "url": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/",
-   "published": "2026-07-10T16:26:10+00:00",
-   "summary": "Progress Software is emailing ShareFile customers who use Storage Zone Controllers to immediately shut down their servers after identifying what it describes as a \"credible external security threat\" targeting the on-premises secure file-sharing software. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Six New U-Boot Flaws Could Let Malicious Images Crash Devices or Run Code at Boot",
-   "url": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
-   "published": "2026-07-10T15:57:14+00:00",
-   "summary": "Researchers at firmware security firm Binarly have found six new flaws in U-Boot, the small program that starts up hardware as varied as home routers, smart cameras, and the management chips inside data-center servers. Four of the bugs can crash a device. The other two could let an attacker who slips a malicious image in front of the bootloader run their own code, before the device"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers exploit critical auth bypass in Gitea Docker image",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/",
-   "published": "2026-07-10T15:48:38+00:00",
-   "summary": "Hackers are actively exploiting a critical vulnerability in the official Docker image for the Gitea self-hosted Git service that allows attackers to impersonate any user, including administrators. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Money launderer accused of stealing seized crypto while in prison",
-   "url": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/",
-   "published": "2026-07-10T15:30:19+00:00",
-   "summary": "A Bulgarian national has been charged with stealing $290,000 in government-seized cryptocurrency while serving 121 months in prison for helping launder millions stolen from American fraud victims. [...]"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Initial access broker linked to weaponization of CitrixBleed2 flaw",
-   "url": "https://www.cybersecuritydive.com/news/initial-access-broker-citrixbleed2-flaw-DragonForce/824961/",
-   "published": "2026-07-10T15:24:29+00:00",
-   "summary": "Similar exploitation was seen in a series of attacks involving an open-source machine emulator."
+   "title": "Hackers Weaponize Balochistan Police Portal in Multi-Group Espionage Campaigns",
+   "url": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
+   "published": "2026-07-11T17:49:31+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of sustained cyber espionage activity against several Pakistani law enforcement organizations undertaken by suspected China- and India-aligned threat actors between February 2024 and April 2026. \"At Balochistan Police, the compromised assets included servers hosting web applications that manage police and citizen data, such as criminal and"
   },
   {
    "source": "SecurityWeek",
-   "title": "In Other News: DHS Database Hacked, Adobe Boosts Patch Cadence, Canada Disrupts Ransomware Ops",
-   "url": "https://www.securityweek.com/in-other-news-dhs-database-hacked-adobe-boosts-patch-cadence-canada-disrupts-ransomware-ops/",
-   "published": "2026-07-10T15:01:19+00:00",
-   "summary": "Other noteworthy stories that might have slipped under the radar: Abnormal AI sued by Anthropic, AssuranceAmerica data breach affects 7 million people, NSA brings back TAO. The post In Other News: DHS Database Hacked, Adobe Boosts Patch Cadence, Canada Disrupts Ransomware Ops appeared first on SecurityWeek ."
+   "title": "Ghost Accounts Abuse GitHub API in Mass Recon Campaign",
+   "url": "https://www.securityweek.com/ghost-accounts-abuse-github-api-in-mass-recon-campaign/",
+   "published": "2026-07-11T17:30:00+00:00",
+   "summary": "Multiple campaigns are using ghost accounts to map GitHub organizations, including their repositories and members. The post Ghost Accounts Abuse GitHub API in Mass Recon Campaign appeared first on SecurityWeek ."
   },
   {
-   "source": "The Hacker News",
-   "title": "Laser Attack Resets Tangem Wallet Passwords on Cards That Can't Be Patched",
-   "url": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
-   "published": "2026-07-10T14:51:49+00:00",
-   "summary": "Researchers at Ledger's Donjon security team have shown that a precisely timed laser pulse, aimed at the chip inside a Tangem crypto wallet card, can reset the card's password to anything the attacker picks. No old password. No backup card. Once it is reset, whoever did it controls the wallet and can move the coins out. This is not an emergency for most owners. The attack needs"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "CISA details security lapses that led to GitHub leak of passwords, cloud access keys",
-   "url": "https://www.cybersecuritydive.com/news/cisa-github-passwords-leak-contractor-report/824953/",
-   "published": "2026-07-10T14:49:17+00:00",
-   "summary": "The agency's blog post came as lawmakers pressed the agency for answers."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws",
-   "url": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
-   "published": "2026-07-10T14:19:50+00:00",
-   "summary": "Details have emerged about three now-patched security flaws in the OpenClaw personal artificial intelligence (AI) assistant that, if successfully exploited, could enable credential theft, privilege escalation, and arbitrary code execution on the host. A brief description of the high-severity vulnerabilities is as follows - GHSA-hjr6-g723-hmfm (CVSS score: 8.8) - An operating system"
+   "source": "BleepingComputer",
+   "title": "Australia warns of global campaign targeting vulnerable CMS platforms",
+   "url": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
+   "published": "2026-07-11T14:18:23+00:00",
+   "summary": "The Australian Cyber Security Centre (ACSC) issued an alert about a global exploitation campaign targeting vulnerable content management systems (CMS) and plugins. [...]"
   }
  ]
 }
