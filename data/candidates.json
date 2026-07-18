@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-17T14:14:32.483001+00:00",
+ "generated": "2026-07-18T14:03:57.949614+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -10,9 +10,9 @@
   },
   {
    "source": "The Hacker News",
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: unclosed token: line 98, column 520"
+   "ok": true,
+   "count": 5,
+   "error": null
   },
   {
    "source": "Cybersecurity Dive",
@@ -23,13 +23,13 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 8,
+   "count": 1,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 4,
+   "count": 2,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 9,
+   "count": 4,
    "error": null
   },
   {
@@ -66,178 +66,115 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "Inside the Search for \"Clean\" Residential Proxies for Carding",
-   "url": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/",
-   "published": "2026-07-17T14:00:10+00:00",
-   "summary": "Residential proxies are no longer the silver bullet they once were for carding. Flare explains why cybercriminals increasingly seek \"clean\" residential proxies and combine them with browser fingerprints, device profiles, and other identity signals to evade modern fraud detection. [...]"
+   "title": "The Future of Age Verification: Your Face Never Leaves Your Device",
+   "url": "https://www.bleepingcomputer.com/news/security/the-future-of-age-verification-your-face-never-leaves-your-device/",
+   "published": "2026-07-18T13:15:24+00:00",
+   "summary": "As age verification laws expand worldwide, organizations face growing pressure to protect users' privacy while meeting regulatory requirements. Incode explains how on-device age estimation verifies age without transmitting or storing facial images, reducing biometric privacy risks while supporting compliance. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code",
+   "url": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html",
+   "published": "2026-07-17T21:20:10+00:00",
+   "summary": "Updated July 18, 2026: the two flaws now carry CVE IDs, the full mechanism has been published, a persistent-object-cache condition has surfaced, and a working proof-of-concept is public. The story below reflects all of it. An anonymous HTTP request can run code on a WordPress site. The bug is in core, so a bare install with zero plugins is exploitable. Every 6.9 and 7.0 site was in range until"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Abbott probes two cyber incidents amid extortion claims",
+   "url": "https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/",
+   "published": "2026-07-17T20:45:52+00:00",
+   "summary": "Abbott Laboratories is investigating two separate cybersecurity incidents after confirming unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business, while also investigating a separate claim that attackers breached its LabCentral portal and stole company data. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "OpenSSL HollowByte Flaw Could Freeze Server Memory with 11-Byte TLS Requests",
+   "url": "https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html",
+   "published": "2026-07-17T20:20:53+00:00",
+   "summary": "Eleven bytes will make an unpatched OpenSSL server set aside up to 131 KB of memory for a message that never arrives. On the glibc systems Okta tested, that memory is gone until the process restarts. OpenSSL shipped the HollowByte fix in June with no CVE, no advisory, and no changelog entry pointing at it. Okta's Red Team, which reported the denial-of-service bug and named it, published the"
   },
   {
    "source": "Dark Reading",
-   "title": "Gold Eagle Clearinghouse Targets Security Gap, But How Is Unclear",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/gold-eagle-clearinghouse-targets-security-gap",
-   "published": "2026-07-17T13:00:00+00:00",
-   "summary": "The White House launched Gold Eagle to coordinate vulnerability response in a new AI world, but multiple questions linger over how it's being implemented."
+   "title": "Inc Ransomware Exploits SonicWall SMA Zero-Days",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days",
+   "published": "2026-07-17T20:01:13+00:00",
+   "summary": "When chained together, the two vulnerabilities allow threat actors to gain root-level capabilities on SonicWall's mobile access appliances."
   },
   {
-   "source": "SecurityWeek",
-   "title": "Podcast: Broken Governance, Agentic AI, and the MindStone Agent Exclusive",
-   "url": "https://www.securityweek.com/podcast-broken-governance-agentic-ai-and-the-mindstone-agent-exclusive/",
-   "published": "2026-07-17T12:11:22+00:00",
-   "summary": "(Video) Artificial intelligence is transforming cybersecurity, but are governance, compliance, and security practices evolving fast enough to keep up? The post Podcast: Broken Governance, Agentic AI, and the MindStone Agent Exclusive appeared first on SecurityWeek ."
+   "source": "The Hacker News",
+   "title": "Seven Malicious Vite npm Packages Use Blockchain C2 to Deliver a RAT",
+   "url": "https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html",
+   "published": "2026-07-17T18:54:51+00:00",
+   "summary": "Cybersecurity researchers have discovered a cluster of seven malicious npm packages targeting the Vite frontend tooling ecosystem as part of a software supply chain attack. The malicious package campaign, codenamed ViteVenom by Checkmarx, marks an expansion of ChainVeil, which was observed using an \"unprecedented\" four-tier blockchain-based command-and-control (C2) infrastructure spanning Tron,"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload",
+   "url": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
+   "published": "2026-07-17T17:56:21+00:00",
+   "summary": "A vulnerability dubbed HollowByte allows unauthenticated attackers to trigger a denial-of-service (DoS) condition on OpenSSL servers with a malicious payload of just 11 bytes. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New NadMesh Botnet Hunts Exposed AI Services for Cloud Keys and Kubernetes Tokens",
+   "url": "https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html",
+   "published": "2026-07-17T17:12:23+00:00",
+   "summary": "A Go botnet called NadMesh turned up in early July hunting exposed AI services, and the operator's own dashboard claims 3,811 unique AWS keys. A Shodan harvester keeps the scan queue stocked with ComfyUI, Ollama, n8n, Open WebUI, Langflow, and Gradio: the image generators, local model runners, and workflow builders that teams stand up fast and firewall late. The intel feed behind that counter"
   },
   {
    "source": "Dark Reading",
-   "title": "Google Bets 'Agentic Defense' Strategy Can Outpace Attackers",
-   "url": "https://www.darkreading.com/cloud-security/google-bets-agentic-defense-strategy-outpace-attackers",
-   "published": "2026-07-17T11:50:25+00:00",
-   "summary": "Google Cloud incorporates key Wiz capabilities into an agentic defense platform to automate threat detection and remediation against AI attacks."
+   "title": "The Real AI Threat Is Blind Trust",
+   "url": "https://www.darkreading.com/application-security/real-ai-threat-blind-trust",
+   "published": "2026-07-17T16:43:13+00:00",
+   "summary": "AI models left to both interpret and execute commands eliminate critical cybersecurity oversight."
   },
   {
-   "source": "SecurityWeek",
-   "title": "Beacon Security Raises $13 Million for Security Data Platform",
-   "url": "https://www.securityweek.com/beacon-security-raises-13-million-for-security-data-platform/",
-   "published": "2026-07-17T11:43:36+00:00",
-   "summary": "The startup helps organizations detect, hunt, and protect their assets across environments at machine speed. The post Beacon Security Raises $13 Million for Security Data Platform appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Industry Reactions to Pentagon Suspending CMMC Phase 2: Feedback Friday",
-   "url": "https://www.securityweek.com/industry-reactions-to-pentagon-suspending-cmmc-phase-2-feedback-friday/",
-   "published": "2026-07-17T11:08:04+00:00",
-   "summary": "Industry professionals broadly agree that the suspension pauses third-party CMMC audits but not the underlying legal obligation to protect CUI. The post Industry Reactions to Pentagon Suspending CMMC Phase 2: Feedback Friday appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "New Windows LegacyHive zero-day gives hackers admin privileges",
-   "url": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/",
-   "published": "2026-07-17T11:05:30+00:00",
-   "summary": "A security researcher using the \"Nightmare Eclipse\" handle has released a Windows zero-day exploit dubbed LegacyHive that allows attackers to escalate privileges on up-to-date Windows systems. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Windows Server 2022 reach end of mainstream support in 90 days",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/",
-   "published": "2026-07-17T09:10:15+00:00",
-   "summary": "Microsoft announced that Windows Server 2022 will reach the mainstream end date in October 2026, but will switch to extended support and continue receiving security updates for five more years. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Cyberattack Disrupts Operations of Japanese Frozen Food Giant Nichirei",
-   "url": "https://www.securityweek.com/cyberattack-disrupts-operations-of-japanese-frozen-food-giant-nichirei/",
-   "published": "2026-07-17T09:06:27+00:00",
-   "summary": "The company disconnected its systems on July 13 and is starting to gradually restore operations. The post Cyberattack Disrupts Operations of Japanese Frozen Food Giant Nichirei appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Risk Ledger Raises $32 Million in Series B Funding",
-   "url": "https://www.securityweek.com/risk-ledger-raises-32-million-in-series-b-funding/",
-   "published": "2026-07-17T08:31:00+00:00",
-   "summary": "The British firm has built a collaborative platform to help organizations address supply chain security risks. The post Risk Ledger Raises $32 Million in Series B Funding appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "US charges two over laundering $43 million from investment fraud",
-   "url": "https://www.bleepingcomputer.com/news/security/us-charges-two-over-laundering-43-million-from-investment-fraud/",
-   "published": "2026-07-17T08:13:37+00:00",
-   "summary": "U.S. prosecutors on Thursday charged a New York man and woman for their roles in a large-scale crime ring that laundered money stolen in cyber investment fraud scams. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Fresh SharePoint Vulnerability Exploited Soon After Disclosure",
-   "url": "https://www.securityweek.com/fresh-sharepoint-vulnerability-exploited-soon-after-disclosure/",
-   "published": "2026-07-17T07:15:59+00:00",
-   "summary": "The critical-severity security defect allows remote, authenticated attackers to execute arbitrary code on the server. The post Fresh SharePoint Vulnerability Exploited Soon After Disclosure appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "CISA urges immediate action on actively exploited Fortinet flaws",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-feds-to-patch-exploited-fortinet-fortisandbox-flaws-by-sunday/",
-   "published": "2026-07-17T07:03:33+00:00",
-   "summary": "CISA on Thursday ordered government agencies to prioritize patching two actively exploited vulnerabilities in the Fortinet FortiSandbox threat detection platform. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Coca-Cola Suspends US Fairlife Production Due to Ransomware Attack",
-   "url": "https://www.securityweek.com/coca-cola-suspends-us-fairlife-production-due-to-ransomware-attack/",
-   "published": "2026-07-17T06:23:08+00:00",
-   "summary": "The company has yet to determine the full scope, nature, and impact of the incident. The post Coca-Cola Suspends US Fairlife Production Due to Ransomware Attack appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "New ClickLock macOS malware traps users into revealing login password",
-   "url": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/",
-   "published": "2026-07-16T21:52:54+00:00",
-   "summary": "A new macOS information-stealing malware dubbed ClickLock terminates all visible processes to force users into entering their system login password. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Coca-Cola says Fairlife ransomware attack halts US dairy production",
-   "url": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/",
-   "published": "2026-07-16T21:09:41+00:00",
-   "summary": "The Coca-Cola Company disclosed today that a ransomware attack impacting its Fairlife dairy subsidiary has disrupted operations, temporarily suspending production of Fairlife products across the United States. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Agentic AI: Taming the Unpredictable",
-   "url": "https://www.darkreading.com/cybersecurity-operations/agentic-ai-untamable-ask-the-right-security-questions",
-   "published": "2026-07-16T20:57:47+00:00",
-   "summary": "Agentic artificial intelligence is creating enough risks for organizations to demand a security reframe."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "1M+ Emails Use Hidden Text to Dupe AI Security Filters",
-   "url": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters",
-   "published": "2026-07-16T19:41:31+00:00",
-   "summary": "Artificial intelligence and LLMs can be surprisingly ineffective against text salting, allowing phishing emails to slide right into your inbox."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Claude Chrome extension flaw lets malicious extensions trigger AI actions",
-   "url": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/",
-   "published": "2026-07-16T19:26:07+00:00",
-   "summary": "A flaw in Anthropic's Claude for Chrome browser extension could allow a malicious extension to trigger predefined AI actions by simulating user clicks, potentially allowing it to abuse Claude's access to connected services such as Gmail, Google Docs, Google Calendar, and Salesforce. [...]"
+   "source": "The Hacker News",
+   "title": "GoldenEyeDog Subgroup Linked to DigiCert Breach and Code-Signing Certificate Theft",
+   "url": "https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html",
+   "published": "2026-07-17T16:39:16+00:00",
+   "summary": "Cybersecurity researchers have attributed the April 2026 DigiCert security incident to a threat activity cluster dubbed CylindricalCanine. Expel, which shared technical details of the event, described the threat actor as a sub-group of GoldenEyeDog (aka APT-Q-27, Dragon Breath, and Miuuti Group), a Chinese cybercrime group known for its targeting of the gambling and gaming sectors using"
   },
   {
    "source": "CyberScoop",
-   "title": "Program to rotate cyber personnel through federal agencies saw little use",
-   "url": "https://cyberscoop.com/opm-federal-rotational-cyber-workforce-program-gao/",
-   "published": "2026-07-16T19:18:19+00:00",
-   "summary": "The number of people who got approval to be in the Federal Rotational Cyber Workforce program was in the single digits, GAO found. The post Program to rotate cyber personnel through federal agencies saw little use appeared first on CyberScoop ."
+   "title": "State officials, election experts pan Trump speech: ‘This is what desperation looks like’",
+   "url": "https://cyberscoop.com/state-officials-election-experts-pan-trump-voter-fraud-speech-call-it-desperation/",
+   "published": "2026-07-17T15:37:29+00:00",
+   "summary": "The president’s speech re-hashed debunked conspiracies around U.S. elections. Critics say the administration’s 18-month investigation into voter fraud has been a total failure. The post State officials, election experts pan Trump speech: ‘This is what desperation looks like’ appeared first on CyberScoop ."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Abbott discloses cyberattack on cancer diagnostics business",
+   "url": "https://www.cybersecuritydive.com/news/abbott-discloses-cyberattack-on-cancer-diagnostics-business/825552/",
+   "published": "2026-07-17T15:29:00+00:00",
+   "summary": "The cyberattack follows Abbott's recent $21 billion purchase of Exact Sciences. Abbott did not disclose what kind of information was accessed."
   },
   {
    "source": "BleepingComputer",
-   "title": "New OkoBot framework deploys 20 payloads to steal data, crypto",
-   "url": "https://www.bleepingcomputer.com/news/security/new-okobot-framework-deploys-20-payloads-to-steal-data-crypto/",
-   "published": "2026-07-16T19:09:35+00:00",
-   "summary": "A new malicious framework called OkoBot is delivering more than 20 payloads in attacks focused on stealing cryptocurrency wallet seed phrases, credentials, and other sensitive data. [...]"
+   "title": "Ernst & Young discloses data breach after support system hack",
+   "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/",
+   "published": "2026-07-17T14:55:28+00:00",
+   "summary": "Ernst & Young is notifying customers of a data breach caused by the compromise of a third-party support ticket system used by its IT personnel. [...]"
   },
   {
-   "source": "CyberScoop",
-   "title": "Russian trio indicted for allegedly running bulletproof hosting providers that spurred cybercrime",
-   "url": "https://cyberscoop.com/russian-nationals-medialand-mlcloud-indicted-bulletproof-hosting/",
-   "published": "2026-07-16T17:24:04+00:00",
-   "summary": "Officials accused three Russian nationals, Media Land and ML.Cloud of supporting cyberattacks spanning 21 U.S. states and other countries, resulting in losses surpassing $62 million. The post Russian trio indicted for allegedly running bulletproof hosting providers that spurred cybercrime appeared first on CyberScoop ."
+   "source": "Cybersecurity Dive",
+   "title": "Ransomware attack forces Coca-Cola to suspend US production at dairy unit",
+   "url": "https://www.cybersecuritydive.com/news/ransomware-attack-coca-cola-suspend-production-dairy/825540/",
+   "published": "2026-07-17T14:35:34+00:00",
+   "summary": "The beverage company is still working to determine the full scope of the breach at its Fairlife business."
   },
   {
    "source": "SecurityWeek",
-   "title": "Legacy Systems, Real-World Impacts: The Reality of OT Security",
-   "url": "https://www.securityweek.com/legacy-systems-real-world-impacts-the-reality-of-ot-security/",
-   "published": "2026-07-16T15:15:00+00:00",
-   "summary": "Legacy systems, safety concerns, and critical infrastructure risks make OT vulnerability disclosure one of cybersecurity's most challenging balancing acts. The post Legacy Systems, Real-World Impacts: The Reality of OT Security appeared first on SecurityWeek ."
+   "title": "In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint",
+   "url": "https://www.securityweek.com/in-other-news-iran-tracks-us-military-phones-crashstealer-macos-malware-cvd-blueprint/",
+   "published": "2026-07-17T14:27:54+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: OpenClaw AI agents exploited via WhatsApp, ransomware hits naval defense firm TKMS, Lidl discloses data breach. The post In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint appeared first on SecurityWeek ."
   },
   {
-   "source": "Cybersecurity Dive",
-   "title": "Gaps in network security, oversight strategy hamper US’s aviation cybersecurity regulators",
-   "url": "https://www.cybersecuritydive.com/news/aviation-cybersecurity-faa-tsa-gao-report/825416/",
-   "published": "2026-07-16T15:03:14+00:00",
-   "summary": "A new government audit identified several weaknesses at the two agencies that protect air travel from hackers."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Iran-nexus actors using AI to enhance cyber playbook",
-   "url": "https://www.cybersecuritydive.com/news/iran-nexus-actors-ai-cyber-ChatGPT-malware/825415/",
-   "published": "2026-07-16T14:58:06+00:00",
-   "summary": "A report shows state-linked and hacktivist groups have used ChatGPT and other tools for malware development, phishing and mapping out industrial sites."
+   "source": "CyberScoop",
+   "title": "Leading members of Scattered Spider sentenced in UK to 66 months in jail",
+   "url": "https://cyberscoop.com/scattered-spider-leaders-sentenced-united-kingdom/",
+   "published": "2026-07-17T14:12:59+00:00",
+   "summary": "Thalha Jubair and Owen Flowers led and directed many attacks attributed to the hacker subset of The Com. U.S. authorities previously accused Jubair of participating in at least 120 attacks. The post Leading members of Scattered Spider sentenced in UK to 66 months in jail appeared first on CyberScoop ."
   }
  ]
 }
