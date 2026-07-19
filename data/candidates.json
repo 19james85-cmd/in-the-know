@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-19T13:07:27.139221+00:00",
+ "generated": "2026-07-19T14:08:23.803023+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -84,13 +84,6 @@
    "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/",
    "published": "2026-07-18T14:17:19+00:00",
    "summary": "Microsoft has observed a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "The Future of Age Verification: Your Face Never Leaves Your Device",
-   "url": "https://www.bleepingcomputer.com/news/security/the-future-of-age-verification-your-face-never-leaves-your-device/",
-   "published": "2026-07-18T13:15:24+00:00",
-   "summary": "As age verification laws expand worldwide, organizations face growing pressure to protect users' privacy while meeting regulatory requirements. Incode explains how on-device age estimation verifies age without transmitting or storing facial images, reducing biometric privacy risks while supporting compliance. [...]"
   }
  ]
 }
