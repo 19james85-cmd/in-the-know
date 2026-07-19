@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-18T14:03:57.949614+00:00",
+ "generated": "2026-07-19T13:07:27.139221+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,31 +11,31 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 5,
+   "count": 0,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -66,115 +66,31 @@
  "items": [
   {
    "source": "BleepingComputer",
+   "title": "Update now: 7-Zip fixes RCE flaw exploitable with malicious archives",
+   "url": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/",
+   "published": "2026-07-18T19:32:02+00:00",
+   "summary": "7-Zip version 26.02 was released to fix a remote code execution vulnerability that could allow attackers to execute malicious code by convincing users to open specially crafted compressed files. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "WordPress Core \"wp2shell\" RCE flaws get public exploits, patch now",
+   "url": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
+   "published": "2026-07-18T17:22:47+00:00",
+   "summary": "Public exploits have been released for the critical \"wp2shell\" remote code execution vulnerabilities affecting WordPress Core, making it imperative that administrators patch their sites immediately. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft warns of surge in ACR Stealer attacks on customers",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/",
+   "published": "2026-07-18T14:17:19+00:00",
+   "summary": "Microsoft has observed a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers. [...]"
+  },
+  {
+   "source": "BleepingComputer",
    "title": "The Future of Age Verification: Your Face Never Leaves Your Device",
    "url": "https://www.bleepingcomputer.com/news/security/the-future-of-age-verification-your-face-never-leaves-your-device/",
    "published": "2026-07-18T13:15:24+00:00",
    "summary": "As age verification laws expand worldwide, organizations face growing pressure to protect users' privacy while meeting regulatory requirements. Incode explains how on-device age estimation verifies age without transmitting or storing facial images, reducing biometric privacy risks while supporting compliance. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code",
-   "url": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html",
-   "published": "2026-07-17T21:20:10+00:00",
-   "summary": "Updated July 18, 2026: the two flaws now carry CVE IDs, the full mechanism has been published, a persistent-object-cache condition has surfaced, and a working proof-of-concept is public. The story below reflects all of it. An anonymous HTTP request can run code on a WordPress site. The bug is in core, so a bare install with zero plugins is exploitable. Every 6.9 and 7.0 site was in range until"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Abbott probes two cyber incidents amid extortion claims",
-   "url": "https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/",
-   "published": "2026-07-17T20:45:52+00:00",
-   "summary": "Abbott Laboratories is investigating two separate cybersecurity incidents after confirming unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business, while also investigating a separate claim that attackers breached its LabCentral portal and stole company data. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "OpenSSL HollowByte Flaw Could Freeze Server Memory with 11-Byte TLS Requests",
-   "url": "https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html",
-   "published": "2026-07-17T20:20:53+00:00",
-   "summary": "Eleven bytes will make an unpatched OpenSSL server set aside up to 131 KB of memory for a message that never arrives. On the glibc systems Okta tested, that memory is gone until the process restarts. OpenSSL shipped the HollowByte fix in June with no CVE, no advisory, and no changelog entry pointing at it. Okta's Red Team, which reported the denial-of-service bug and named it, published the"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Inc Ransomware Exploits SonicWall SMA Zero-Days",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days",
-   "published": "2026-07-17T20:01:13+00:00",
-   "summary": "When chained together, the two vulnerabilities allow threat actors to gain root-level capabilities on SonicWall's mobile access appliances."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Seven Malicious Vite npm Packages Use Blockchain C2 to Deliver a RAT",
-   "url": "https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html",
-   "published": "2026-07-17T18:54:51+00:00",
-   "summary": "Cybersecurity researchers have discovered a cluster of seven malicious npm packages targeting the Vite frontend tooling ecosystem as part of a software supply chain attack. The malicious package campaign, codenamed ViteVenom by Checkmarx, marks an expansion of ChainVeil, which was observed using an \"unprecedented\" four-tier blockchain-based command-and-control (C2) infrastructure spanning Tron,"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload",
-   "url": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
-   "published": "2026-07-17T17:56:21+00:00",
-   "summary": "A vulnerability dubbed HollowByte allows unauthenticated attackers to trigger a denial-of-service (DoS) condition on OpenSSL servers with a malicious payload of just 11 bytes. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "New NadMesh Botnet Hunts Exposed AI Services for Cloud Keys and Kubernetes Tokens",
-   "url": "https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html",
-   "published": "2026-07-17T17:12:23+00:00",
-   "summary": "A Go botnet called NadMesh turned up in early July hunting exposed AI services, and the operator's own dashboard claims 3,811 unique AWS keys. A Shodan harvester keeps the scan queue stocked with ComfyUI, Ollama, n8n, Open WebUI, Langflow, and Gradio: the image generators, local model runners, and workflow builders that teams stand up fast and firewall late. The intel feed behind that counter"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "The Real AI Threat Is Blind Trust",
-   "url": "https://www.darkreading.com/application-security/real-ai-threat-blind-trust",
-   "published": "2026-07-17T16:43:13+00:00",
-   "summary": "AI models left to both interpret and execute commands eliminate critical cybersecurity oversight."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "GoldenEyeDog Subgroup Linked to DigiCert Breach and Code-Signing Certificate Theft",
-   "url": "https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html",
-   "published": "2026-07-17T16:39:16+00:00",
-   "summary": "Cybersecurity researchers have attributed the April 2026 DigiCert security incident to a threat activity cluster dubbed CylindricalCanine. Expel, which shared technical details of the event, described the threat actor as a sub-group of GoldenEyeDog (aka APT-Q-27, Dragon Breath, and Miuuti Group), a Chinese cybercrime group known for its targeting of the gambling and gaming sectors using"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "State officials, election experts pan Trump speech: ‘This is what desperation looks like’",
-   "url": "https://cyberscoop.com/state-officials-election-experts-pan-trump-voter-fraud-speech-call-it-desperation/",
-   "published": "2026-07-17T15:37:29+00:00",
-   "summary": "The president’s speech re-hashed debunked conspiracies around U.S. elections. Critics say the administration’s 18-month investigation into voter fraud has been a total failure. The post State officials, election experts pan Trump speech: ‘This is what desperation looks like’ appeared first on CyberScoop ."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Abbott discloses cyberattack on cancer diagnostics business",
-   "url": "https://www.cybersecuritydive.com/news/abbott-discloses-cyberattack-on-cancer-diagnostics-business/825552/",
-   "published": "2026-07-17T15:29:00+00:00",
-   "summary": "The cyberattack follows Abbott's recent $21 billion purchase of Exact Sciences. Abbott did not disclose what kind of information was accessed."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Ernst & Young discloses data breach after support system hack",
-   "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/",
-   "published": "2026-07-17T14:55:28+00:00",
-   "summary": "Ernst & Young is notifying customers of a data breach caused by the compromise of a third-party support ticket system used by its IT personnel. [...]"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Ransomware attack forces Coca-Cola to suspend US production at dairy unit",
-   "url": "https://www.cybersecuritydive.com/news/ransomware-attack-coca-cola-suspend-production-dairy/825540/",
-   "published": "2026-07-17T14:35:34+00:00",
-   "summary": "The beverage company is still working to determine the full scope of the breach at its Fairlife business."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint",
-   "url": "https://www.securityweek.com/in-other-news-iran-tracks-us-military-phones-crashstealer-macos-malware-cvd-blueprint/",
-   "published": "2026-07-17T14:27:54+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: OpenClaw AI agents exploited via WhatsApp, ransomware hits naval defense firm TKMS, Lidl discloses data breach. The post In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint appeared first on SecurityWeek ."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Leading members of Scattered Spider sentenced in UK to 66 months in jail",
-   "url": "https://cyberscoop.com/scattered-spider-leaders-sentenced-united-kingdom/",
-   "published": "2026-07-17T14:12:59+00:00",
-   "summary": "Thalha Jubair and Owen Flowers led and directed many attacks attributed to the hacker subset of The Com. U.S. authorities previously accused Jubair of participating in at least 120 attacks. The post Leading members of Scattered Spider sentenced in UK to 66 months in jail appeared first on CyberScoop ."
   }
  ]
 }
