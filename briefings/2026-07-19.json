@@ -1,0 +1,65 @@
+{
+  "leadStory": {
+    "headline": "Public exploits released for critical 'wp2shell' RCE flaws in WordPress Core",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
+    "tags": [
+      {"label": "Critical RCE", "type": "d"},
+      {"label": "Public exploits", "type": "d"},
+      {"label": "WordPress Core", "type": "a"}
+    ],
+    "body": "Public exploits have been released for a set of critical Remote Code Execution vulnerabilities in WordPress Core known as 'wp2shell,' according to BleepingComputer. Once working exploit code circulates publicly, opportunistic scanning and mass exploitation attempts typically follow quickly, so site administrators are being urged to Patch immediately rather than wait for a routine update cycle. Specific affected version ranges were not detailed in early reporting.",
+    "beginnerTip": "A <strong>Remote Code Execution</strong> flaw lets an attacker run their own commands on a website's server just by sending it a crafted request, without needing a password. Once exploit code for a flaw like this becomes public, criminals can scan the internet and attack unpatched WordPress sites automatically, so applying updates quickly matters."
+  },
+  "cves": [
+    {
+      "headline": "7-Zip patches remote code execution flaw exploitable via malicious archive files",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/",
+      "tags": [
+        {"label": "Patch available", "type": "a"},
+        {"label": "Archive-based RCE", "type": "a"}
+      ],
+      "body": "7-Zip version 26.02 fixes a Remote Code Execution Vulnerability that can be triggered by opening a specially crafted compressed archive. Exploitation requires convincing a victim to open a malicious file rather than being reachable over a network, but 7-Zip's broad use as a general-purpose archive tool gives attackers a wide Attack Surface to target. Users and administrators should update rather than continue opening untrusted archives with older builds.",
+      "beginnerTip": "<strong>7-Zip</strong> is one of the most widely used free tools for opening compressed (.zip, .7z, etc.) files. Attackers can hide malicious code inside a booby-trapped archive, so keep archive tools updated and be cautious about opening compressed files from unfamiliar sources."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "Microsoft warns of surge in ACR Stealer attacks targeting enterprise customers",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/",
+      "tags": [
+        {"label": "Active attacks", "type": "d"},
+        {"label": "Credential theft", "type": "d"}
+      ],
+      "body": "Microsoft says it has observed a surge in attacks using ACR Stealer, an Infostealer Malware family that harvests browser-stored passwords, authentication tokens, and sensitive documents from infected machines. The campaign is specifically targeting Microsoft's enterprise customers, giving attackers a path to reused credentials and session tokens that can enable further compromise. Organizations should treat this as a reminder to enforce MFA and rotate credentials that may have been exposed on infected endpoints.",
+      "beginnerTip": "An <strong>Infostealer</strong> is malware built to quietly copy passwords, saved logins, and other sensitive data from an infected computer and send it back to an attacker. Because stolen browser passwords and login tokens can be reused, a single infected machine can lead to many other accounts being compromised."
+    }
+  ],
+  "regulatory": [],
+  "trends": [
+    {
+      "headline": "Industry pushes on-device age verification to balance compliance and privacy",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/the-future-of-age-verification-your-face-never-leaves-your-device/",
+      "tags": [
+        {"label": "Privacy tech", "type": "a"},
+        {"label": "Vendor perspective", "type": "a"}
+      ],
+      "body": "As age verification laws expand worldwide, identity-verification vendor Incode is pitching on-device facial age-estimation as a way to confirm a user's age range without transmitting or storing an actual photo of their face. The pitch centers on reducing biometric privacy risk while still meeting regulatory requirements for age gating. This piece reflects a vendor's perspective on its own technology category rather than independent testing or regulatory guidance.",
+      "beginnerTip": "<strong>On-device processing</strong> means data, like a photo used to estimate someone's age, is analyzed locally on your phone or computer instead of being uploaded to a company's servers. This can reduce privacy risk since the sensitive image never leaves your device, but you still have to trust that the app does what it claims."
+    }
+  ],
+  "quickHits": [
+    {"color": "danger", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com", "text": "Public exploits are circulating for critical 'wp2shell' Remote Code Execution flaws in WordPress Core — patch immediately."},
+    {"color": "warn", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com", "text": "7-Zip 26.02 fixes a Remote Code Execution flaw triggered by opening a malicious archive file."},
+    {"color": "danger", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com", "text": "Microsoft warns of a surge in ACR Stealer Malware attacks harvesting passwords and tokens from enterprise customers."},
+    {"color": "accent", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com", "text": "Vendor Incode pitches on-device facial age-estimation as a privacy-preserving way to meet expanding age verification laws."}
+  ],
+  "analystFooter": "Prioritize patching internet-facing WordPress installations today given public wp2shell exploits, then update 7-Zip and check endpoints for ACR Stealer indicators before anything else on today's list."
+}

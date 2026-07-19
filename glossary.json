@@ -90,6 +90,12 @@
   "e": "A cyberattack on a water treatment plant's ICS briefly altered chemical levels in the water supply."
  },
  {
+  "t": "Infostealer",
+  "c": "Malware",
+  "d": "A type of malware designed to quietly harvest sensitive data from an infected device, such as saved passwords, browser cookies, and authentication tokens, and send it back to an attacker.",
+  "e": "Microsoft warned that a surge in ACR Stealer infections was letting attackers harvest browser-stored passwords and login tokens from enterprise customers."
+ },
+ {
   "t": "IOC",
   "c": "Threat/Actor",
   "d": "Indicators of Compromise — evidence a system has been breached, such as suspicious IP addresses, unusual file hashes, or abnormal network traffic patterns used to detect and investigate attacks.",
@@ -196,6 +202,12 @@
   "c": "Vulnerability",
   "d": "A weakness or flaw in software, hardware, or system design that could be exploited by attackers to gain unauthorized access or cause harm to a system.",
   "e": "A vulnerability in a popular PDF reader allowed code execution simply by opening a specially crafted PDF file."
+ },
+ {
+  "t": "Web Shell",
+  "c": "Malware",
+  "d": "A small malicious script uploaded to a compromised web server that gives an attacker a remote command-line-like interface, letting them keep control of the site even after the original flaw is patched.",
+  "e": "After exploiting the 'wp2shell' WordPress flaw, attackers dropped a web shell to maintain access to the site."
  },
  {
   "t": "Zero-Day",
