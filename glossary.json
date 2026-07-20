@@ -6,10 +6,40 @@
   "e": "A nation-state APT group silently accessed a defense contractor's network for 18 months, exfiltrating classified blueprints before detection."
  },
  {
+  "t": "Agentic AI",
+  "c": "General",
+  "d": "An AI system that plans and carries out long chains of actions on its own — running tools, reading results, deciding the next step — instead of answering one prompt at a time.",
+  "e": "The Hugging Face intruder executed many thousands of individual actions across a swarm of short-lived sandboxes with no human driving each step."
+ },
+ {
+  "t": "AI Guardrails",
+  "c": "General",
+  "d": "Restrictions built into a hosted AI model that make it refuse certain requests. Useful in general, but they can also block legitimate defensive work.",
+  "e": "Hugging Face's forensic analysis was blocked by guardrails on the hosted models it first tried, while the attacker's model had no usage policy at all."
+ },
+ {
+  "t": "ASLR",
+  "c": "General",
+  "d": "A defense that shuffles where a program's code and data sit in memory each time it runs, so an attacker who overflows a buffer cannot reliably predict where to jump. It turns many crashes into just crashes instead of takeovers.",
+  "e": "F5 said the nginx CVE-2026-42533 overflow is a denial of service in normal conditions, but where ASLR is disabled or bypassed it may allow full remote code execution (July 2026)."
+ },
+ {
   "t": "Attack Surface",
   "c": "General",
   "d": "The total sum of all points where an unauthorized user can try to enter or extract data from a system — including software, hardware, and human entry points.",
   "e": "A company's attack surface includes its website, employee email accounts, mobile apps, and cloud services."
+ },
+ {
+  "t": "Attribution Confidence",
+  "c": "Threat/Actor",
+  "d": "How strongly researchers believe a named group is behind an attack. Reports are labeled low, moderate or high confidence, and low-confidence calls should be treated as a working hypothesis, not a fact.",
+  "e": "Kaspersky tied the HelloNet ViPNet campaign to a Chinese-speaking APT with low confidence in July 2026 — the evidence was one unused string and a download mirror."
+ },
+ {
+  "t": "Backdoor",
+  "c": "Malware",
+  "d": "Malware that quietly holds a door open for the attacker to return and run commands later, after the original way in has been closed or patched.",
+  "e": "HelloExecutor and the Rust-based HelloBackdoor let the HelloNet operators run commands and move files long after the initial infection (July 2026)."
  },
  {
   "t": "Botnet",
@@ -24,6 +54,12 @@
   "e": "Attackers used automated tools to try millions of password combinations per second against an online banking portal."
  },
  {
+  "t": "C3PAO",
+  "c": "Regulatory",
+  "d": "Certified Third-Party Assessment Organization — the accredited outside auditor that performs CMMC Level 2 certification assessments.",
+  "e": "There are 107 authorized C3PAOs against roughly 76,000 entities expected to need Level 2 certification."
+ },
+ {
   "t": "CISA",
   "c": "Regulatory",
   "d": "The U.S. Cybersecurity & Infrastructure Security Agency — issues alerts, advisories, and maintains the Known Exploited Vulnerabilities (KEV) catalog for critical infrastructure protection.",
@@ -34,6 +70,48 @@
   "c": "Threat/Actor",
   "d": "A social engineering technique where a fake error message or CAPTCHA page instructs the victim to copy and paste a command into their own computer, which silently installs malware. The victim performs the infection themselves.",
   "e": "A fake 'prove you're human' page told users to press Win+R and paste a command, which downloaded an information stealer — researchers found 3,000 live ClickFix payloads served by API-driven backends."
+ },
+ {
+  "t": "CMMC",
+  "c": "Regulatory",
+  "d": "The US Department of Defense/War programme that verifies defense contractors actually implement required cybersecurity controls, rather than just claiming to.",
+  "e": "CMMC Phase 2 — the mandatory third-party audit stage — was suspended in July 2026 for a 60-day review."
+ },
+ {
+  "t": "Code-Execution Primitive",
+  "c": "Vulnerability",
+  "d": "The fundamental capability an exploit ultimately achieves — the \"I can now run arbitrary code\" moment. Multiple different exploit routes can reach the same primitive.",
+  "e": "Two different gadget chains, same primitive: run code inside ServiceNow."
+ },
+ {
+  "t": "Command-and-Control (C2)",
+  "c": "Network",
+  "d": "The infrastructure malware phones home to for instructions and to send stolen data out. Cutting C2 off usually neuters the malware.",
+  "e": "The Hugging Face attacker used \"self-migrating\" C2 staged on public services, so blocking one address didn't stop it."
+ },
+ {
+  "t": "Coordinated Disclosure",
+  "c": "Vulnerability",
+  "d": "Reporting a flaw privately to the vendor, giving them time to patch, and publishing details only afterwards.",
+  "e": "Searchlight Cyber reported the ServiceNow bug on 1 April 2026 and it was patched 13 July before details went public."
+ },
+ {
+  "t": "Credential Rotation",
+  "c": "General",
+  "d": "Invalidating existing keys, tokens and passwords and issuing new ones, so anything the attacker stole stops working.",
+  "e": "Microsoft's advice on ACR Stealer stresses revoking session tokens, not just changing passwords — a stolen live token bypasses the new password entirely."
+ },
+ {
+  "t": "Credentials",
+  "c": "General",
+  "d": "Anything that proves identity to a system: passwords, API keys, access tokens, certificates. Stealing them is often more valuable than exploiting another bug.",
+  "e": "Hugging Face users were told to rotate their access tokens because cloud and cluster credentials were stolen."
+ },
+ {
+  "t": "CUI",
+  "c": "Regulatory",
+  "d": "Government information that isn't classified but still must be protected — technical drawings, contract data, personnel records.",
+  "e": "Contractors handling CUI must still protect it under DFARS 252.204-7012 even though CMMC audits are paused."
  },
  {
   "t": "CVE",
@@ -54,10 +132,46 @@
   "e": "A DDoS attack knocked a major airline's booking website offline for six hours, causing millions in lost revenue."
  },
  {
+  "t": "Defense Industrial Base (DIB)",
+  "c": "Regulatory",
+  "d": "The whole ecosystem of companies that supply the military — from prime contractors down to small subcontractors and machine shops.",
+  "e": "The stated reason for pausing CMMC Phase 2 was that audit costs were pushing small firms out of the DIB."
+ },
+ {
+  "t": "Denial of Service (DoS)",
+  "c": "Network",
+  "d": "Making a system unavailable rather than stealing from it — by crashing it or exhausting its memory, CPU or bandwidth.",
+  "e": "The OpenSSL \"HollowByte\" flaw makes a server reserve up to 131 KB of memory for a message that never arrives, using an 11-byte request."
+ },
+ {
   "t": "Deserialization",
   "c": "Vulnerability",
   "d": "The process of turning stored or transmitted data back into objects a program can use. When software deserializes untrusted data without checks, attackers can smuggle in malicious code that executes during the rebuild.",
   "e": "CISA added a SharePoint deserialization flaw to its KEV catalog after attackers used crafted data packets to run their own code on unpatched servers."
+ },
+ {
+  "t": "DFARS 252.204-7012",
+  "c": "Regulatory",
+  "d": "The contract clause that legally obliges defense contractors to implement NIST SP 800-171 and report cyber incidents. It sits in the contract itself, independent of CMMC.",
+  "e": "The CMMC pause changed nothing about this clause — it's still in every affected contract."
+ },
+ {
+  "t": "Digital Forensics",
+  "c": "General",
+  "d": "Examining logs, memory and disk images to reconstruct exactly what an attacker did, when, and what they took.",
+  "e": "Hugging Face brought in external forensic experts and found its AI tooling's guardrails obstructed the analysis."
+ },
+ {
+  "t": "DLL Side-Loading",
+  "c": "Malware",
+  "d": "Planting a malicious DLL (a Windows code library) next to a trusted program so that when the trusted program starts, Windows loads the attacker's library instead of the real one. The malware inherits the trusted program's reputation and privileges.",
+  "e": "HelloNet dropped a fake wtsapi32.dll into the ViPNet update folder so the legitimate itcsrvup64.exe loaded it at every boot (July 2026)."
+ },
+ {
+  "t": "ELF Binary",
+  "c": "General",
+  "d": "Executable and Linkable Format — the standard file format for programs on Linux and Unix, the equivalent of a .exe on Windows. Finding an unexpected ELF file on an appliance is a strong sign of compromise.",
+  "e": "UTA0533 wrote an ELF executable named /usr/bin/xzfind onto a SonicWall SMA appliance on 22 June 2026."
  },
  {
   "t": "Encryption",
@@ -72,10 +186,46 @@
   "e": "Hackers developed an exploit for an unpatched Windows vulnerability allowing full remote control of any affected machine."
  },
  {
+  "t": "Exploit Chain",
+  "c": "Vulnerability",
+  "d": "Combining two or more flaws so that the output of one enables the next, reaching an impact neither could achieve alone.",
+  "e": "Wp2shell chains a REST API routing bug with a SQL injection to get from anonymous request to code execution."
+ },
+ {
+  "t": "False Claims Act",
+  "c": "Regulatory",
+  "d": "A US law making it fraud to submit false claims to the government. Under DOJ's Civil Cyber-Fraud Initiative it's applied to contractors who misrepresent their security posture.",
+  "e": "MORSE Corp paid $4.6M over the gap between its self-reported score and what assessors actually found."
+ },
+ {
+  "t": "False Flag Operation",
+  "c": "Threat/Actor",
+  "d": "Deliberately leaving clues that point at someone else — a foreign language string, another group's tooling — so investigators blame the wrong party.",
+  "e": "Kaspersky explicitly kept a false flag on the table when tentatively attributing HelloNet to a Chinese-speaking group in July 2026."
+ },
+ {
+  "t": "Fileless Malware",
+  "c": "Malware",
+  "d": "Running malicious code entirely in RAM without writing it to disk, so file-scanning antivirus has nothing to find and a reboot erases the evidence.",
+  "e": "HelloInjector ran its HelloProxy payload in memory; separately, the second compromised SonicWall appliance lost its memory-resident backdoors when it was rebooted on 2 July 2026."
+ },
+ {
   "t": "Firewall",
   "c": "Network",
   "d": "A network security device that monitors and controls incoming/outgoing network traffic based on security rules — acts as a barrier between trusted and untrusted networks.",
   "e": "A hospital firewall blocked thousands of unauthorized connection attempts per day from external IP addresses."
+ },
+ {
+  "t": "Forced Auto-Update",
+  "c": "General",
+  "d": "A vendor mechanism that pushes a security fix to installations automatically, without waiting for the owner to act. Effective, but only for installs that haven't disabled it.",
+  "e": "WordPress used forced auto-updates to push 6.9.5 / 7.0.2 for wp2shell; self-managed sites with auto-update off are the exposed tail."
+ },
+ {
+  "t": "Gadget",
+  "c": "Vulnerability",
+  "d": "A small piece of existing, legitimate code that an attacker strings together with others to build an exploit — like assembling a weapon from spare parts already lying around.",
+  "e": "Attackers reached ServiceNow code execution via a different sandbox-escape gadget than the researchers' published one, so signature-based blocks on the original PoC miss it."
  },
  {
   "t": "GDPR",
@@ -84,10 +234,28 @@
   "e": "A U.S. company was fined €20 million under GDPR for failing to secure European customer data exposed in a breach."
  },
  {
+  "t": "Heap Buffer Overflow",
+  "c": "Vulnerability",
+  "d": "Writing more data into a memory area than was reserved for it, corrupting adjacent memory. Can crash a process or, in the worst case, be steered into code execution.",
+  "e": "Nginx CVE-2026-42533 lets a crafted HTTP request overflow a worker-process buffer, causing denial of service and potentially RCE."
+ },
+ {
   "t": "ICS/OT",
   "c": "Network",
   "d": "Industrial Control Systems / Operational Technology — computer systems controlling physical industrial processes like power grids and water treatment. Cyberattacks can cause real-world physical damage.",
   "e": "A cyberattack on a water treatment plant's ICS briefly altered chemical levels in the water supply."
+ },
+ {
+  "t": "In the Wild (ITW)",
+  "c": "Vulnerability",
+  "d": "Confirmation that real attackers are using a flaw against real targets right now — as opposed to it existing only in a lab or a research paper.",
+  "e": "Defused observed live attack traffic against ServiceNow instances, which is what moved CVE-2026-6875 from \"theoretical\" to \"drop everything\"."
+ },
+ {
+  "t": "Incident Response",
+  "c": "General",
+  "d": "The organised process of detecting, containing, eradicating and recovering from an attack — and working out what happened.",
+  "e": "Volexity discovered UTA0533 while running an IR engagement at a victim organization."
  },
  {
   "t": "Infostealer",
@@ -108,6 +276,24 @@
   "e": "CISA added a critical Cisco IOS vulnerability to its KEV catalog, giving federal agencies 72 hours to patch."
  },
  {
+  "t": "Lateral Movement",
+  "c": "Threat/Actor",
+  "d": "Moving sideways from the first compromised machine to other systems inside the same network, usually using stolen credentials.",
+  "e": "After stealing cloud and cluster keys from one worker node, the Hugging Face attacker moved laterally across several internal clusters."
+ },
+ {
+  "t": "LDAP",
+  "c": "Network",
+  "d": "Lightweight Directory Access Protocol — the protocol corporate systems use to check usernames and passwords against a central directory such as Active Directory. If it travels unencrypted, anyone watching the wire sees the logins.",
+  "e": "On a compromised SonicWall appliance, UTA0533 ran tcpdump against unencrypted LDAP traffic to harvest usernames and passwords (July 2026)."
+ },
+ {
+  "t": "Loader",
+  "c": "Malware",
+  "d": "Small, simple malware whose only job is to get a foothold and then pull down the real tools. Keeping stage one tiny makes it harder to detect and lets the attacker swap what comes next.",
+  "e": "HelloInjector did nothing but inject into svchost.exe and fetch further modules from the C2 (July 2026)."
+ },
+ {
   "t": "Malware",
   "c": "Malware",
   "d": "Short for malicious software — any software intentionally designed to disrupt, damage, or gain unauthorized access to a system. Includes viruses, ransomware, spyware, and trojans.",
@@ -126,6 +312,12 @@
   "e": "After a breach, a healthcare company used the NIST CSF to redesign its entire security program."
  },
  {
+  "t": "NIST SP 800-171",
+  "c": "Regulatory",
+  "d": "The NIST publication listing 110 security requirements for protecting CUI on non-federal systems. It defines the \"what\"; CMMC defines how it's verified.",
+  "e": "A contractor reporting a perfect score claims all 110 controls are fully implemented."
+ },
+ {
   "t": "Password Spraying",
   "c": "Threat/Actor",
   "d": "An attack that tries a few commonly used passwords across a huge number of accounts, instead of many passwords against one account. It stays under account-lockout limits, making it hard to detect.",
@@ -138,10 +330,40 @@
   "e": "Microsoft's Patch Tuesday released fixes for 87 vulnerabilities, including three already exploited in the wild."
  },
  {
+  "t": "Path Traversal",
+  "c": "Vulnerability",
+  "d": "Tricking a program into reading or writing a file outside the folder it was supposed to stay in, usually by smuggling ../ sequences into a filename.",
+  "e": "CVE-2026-15410 is a path traversal in SonicWall's remove_hotfix workflow — the step that turned non-root access into root (July 2026)."
+ },
+ {
+  "t": "Persistence",
+  "c": "Threat/Actor",
+  "d": "Anything an attacker sets up so their access survives a reboot or a password change — a modified startup script, a scheduled task, a new service.",
+  "e": "UTA0533 edited /etc/init.d/workplace so its web shell relaunched every time the SonicWall appliance restarted (July 2026)."
+ },
+ {
   "t": "Phishing",
   "c": "Threat/Actor",
   "d": "A cyberattack using deceptive emails or messages appearing to come from trusted sources, tricking recipients into revealing sensitive information or clicking malicious links.",
   "e": "Emails mimicking the company's IT department captured 200 employee passwords in a single day."
+ },
+ {
+  "t": "Platform-as-a-Service (PaaS)",
+  "c": "General",
+  "d": "A cloud model where the provider runs the servers and platform, and customers build applications and workflows on top of it.",
+  "e": "ServiceNow AI Platform is a PaaS product running 100+ billion workflows a year."
+ },
+ {
+  "t": "Pre-Authentication",
+  "c": "Vulnerability",
+  "d": "Exploitable without any username, password or session — the attacker doesn't need an account. Dramatically worse than a bug requiring a valid login.",
+  "e": "CVE-2026-6875 is a \"pre-auth sandbox-escape RCE\" — a total stranger on the internet can reach it."
+ },
+ {
+  "t": "Privilege Escalation",
+  "c": "Vulnerability",
+  "d": "Turning limited access into powerful access — e.g. a normal user account becoming an administrator.",
+  "e": "Many of the flaws in the July 2026 Microsoft Patch Tuesday were elevation-of-privilege bugs that let a low-level foothold become domain admin."
  },
  {
   "t": "Prompt Injection",
@@ -156,10 +378,22 @@
   "e": "Attackers hid a password-stealing trojan inside a fake proof-of-concept exploit posted to GitHub, targeting researchers who ran it to test the claimed vulnerability."
  },
  {
+  "t": "Proxy Tunnel",
+  "c": "Network",
+  "d": "A tool planted on a compromised internet-facing server that relays the attacker's traffic onward into the internal network, disguised as ordinary web requests to that server.",
+  "e": "UTA0533 injected Suo5, an open-source HTTP proxy, into a legitimate SonicWall process and reached it at /workplace/error.jsp (July 2026)."
+ },
+ {
   "t": "Ransomware",
   "c": "Malware",
   "d": "Malware that encrypts a victim's files, making them inaccessible, then demands payment (usually cryptocurrency) in exchange for the decryption key to restore access.",
   "e": "A hospital chain paid a $4.5M ransom after ransomware encrypted records across 50 facilities, halting surgeries."
+ },
+ {
+  "t": "Reconnaissance",
+  "c": "Threat/Actor",
+  "d": "The attacker's look-around phase after getting in: what machine is this, who is logged on, what else is reachable. It usually precedes the damaging part.",
+  "e": "HelloExecutor's job in the HelloNet campaign was command execution and network reconnaissance on the infected host (July 2026)."
  },
  {
   "t": "Remote Code Execution (RCE)",
@@ -168,10 +402,46 @@
   "e": "A pre-authentication RCE flaw in a load balancer let attackers run arbitrary commands on the device without ever logging in."
  },
  {
+  "t": "REST API",
+  "c": "Network",
+  "d": "A standard machine-to-machine web interface: programs send structured HTTP requests to defined \"routes\" (URLs) instead of clicking through pages.",
+  "e": "WordPress's REST API batch route could be confused about which internal handler should process a request — the first half of wp2shell."
+ },
+ {
+  "t": "Root",
+  "c": "General",
+  "d": "The all-powerful administrator account on Unix/Linux systems (Windows equivalent: SYSTEM or Administrator). Root can read, change, or hide anything.",
+  "e": "The chained SonicWall flaws give the attacker root on the VPN appliance — complete ownership of the box."
+ },
+ {
+  "t": "Sandbox",
+  "c": "General",
+  "d": "A restricted environment where untrusted code is allowed to run but is walled off from the rest of the system.",
+  "e": "ServiceNow runs customer scripts in a sandbox; CVE-2026-6875 is a \"sandbox escape\" — breaking out of that wall."
+ },
+ {
+  "t": "Setuid Binary",
+  "c": "General",
+  "d": "A Unix program flagged to run with its owner's privileges rather than the privileges of whoever launched it. A setuid-root program run by a low-privilege user executes as root — which is exactly why attackers plant their own.",
+  "e": "ROOTRUN, the ELF file UTA0533 dropped as /usr/bin/xzfind, was a setuid binary that let an unprivileged account run any command as root (July 2026)."
+ },
+ {
+  "t": "Sink",
+  "c": "Vulnerability",
+  "d": "In application security, the dangerous end-point where attacker-controlled data finally gets used — e.g. passed to a code evaluator or a database query. The entry point is the \"source\".",
+  "e": "Attackers targeted the same pre-auth sink (/assessment_thanks.do) that the original researchers documented."
+ },
+ {
   "t": "Social Engineering",
   "c": "Threat/Actor",
   "d": "Psychological manipulation of people into performing actions or revealing confidential information — exploiting human trust rather than technical vulnerabilities.",
   "e": "An attacker posed as a frantic executive and convinced an IT technician to reset credentials without proper verification."
+ },
+ {
+  "t": "SPRS",
+  "c": "Regulatory",
+  "d": "The DoD system where contractors post their self-assessed NIST 800-171 score. During the CMMC pause, that self-reported number is the verification mechanism.",
+  "e": "An inflated SPRS score is now the thing a prosecutor would cite, with no assessor standing in between."
  },
  {
   "t": "SQL Injection",
@@ -180,16 +450,52 @@
   "e": "Attackers used SQL injection on a retail login page to bypass authentication and extract 2 million customer credit card numbers."
  },
  {
+  "t": "Supply Chain Attack",
+  "c": "Threat/Actor",
+  "d": "Compromising a supplier — a software library, an update mechanism, a service provider — so the compromise flows downstream to all their customers at once.",
+  "e": "Hugging Face specifically confirmed its software supply chain was \"verified clean,\" because a poisoned model repository would infect thousands of organizations."
+ },
+ {
+  "t": "Template Injection",
+  "c": "Vulnerability",
+  "d": "When user-supplied text is fed into a template engine (which fills in placeholders like {{name}}) and the engine executes it as instructions rather than treating it as plain text.",
+  "e": "Hugging Face's breach began with a template injection in a dataset configuration file uploaded by the attacker."
+ },
+ {
   "t": "Threat Actor",
   "c": "Threat/Actor",
   "d": "Any individual, group, or entity responsible for a cyberattack or security incident. Includes nation-states, organized crime groups, hacktivists, and malicious insiders.",
   "e": "The Lazarus Group, attributed to North Korea, has stolen over $3 billion in cryptocurrency to fund state activities."
  },
  {
+  "t": "Threat Actor Tracking Name",
+  "c": "Threat/Actor",
+  "d": "A vendor-specific codename (UTA0533, APT29, Sandworm, Scattered Spider) for a cluster of related activity. Different vendors often use different names for the same group.",
+  "e": "UTA0533 is Volexity's naming scheme; another firm may later reveal it overlaps with a group they already track."
+ },
+ {
+  "t": "TLS Handshake",
+  "c": "Cryptography",
+  "d": "The opening negotiation of an encrypted (HTTPS) connection, where client and server agree on keys before any real data flows. Handshake messages are processed before the server trusts you, so bugs there are reachable by anyone.",
+  "e": "HollowByte abuses a length field in a TLS handshake message: OpenSSL believed the attacker's declared size and reserved up to 131 KB for a body that never arrived (July 2026)."
+ },
+ {
   "t": "TTP",
   "c": "Threat/Actor",
   "d": "Tactics, Techniques, and Procedures — the behavior patterns and methods used by threat actors to plan, execute, and conceal cyberattacks. Understanding TTPs helps defenders anticipate attacks.",
   "e": "Analyzing a group's TTPs allowed defenders to block their attack before any data was exfiltrated."
+ },
+ {
+  "t": "Unauthenticated",
+  "c": "Vulnerability",
+  "d": "Same idea as pre-auth: the request carries no proof of identity. Any anonymous visitor qualifies.",
+  "e": "Wp2shell works from an anonymous HTTP request to a WordPress site."
+ },
+ {
+  "t": "UUID",
+  "c": "General",
+  "d": "A long unique number identifying a device or object. Fine as a label — dangerous when it is used as a secret, because identifiers are usually readable by anyone on the box.",
+  "e": "SonicWall derived a service password from the appliance's product_uuid, a file any local user can read — so the identifier was effectively the password (July 2026)."
  },
  {
   "t": "VPN",
@@ -208,6 +514,18 @@
   "c": "Malware",
   "d": "A small malicious script uploaded to a compromised web server that gives an attacker a remote command-line-like interface, letting them keep control of the site even after the original flaw is patched.",
   "e": "After exploiting the 'wp2shell' WordPress flaw, attackers dropped a web shell to maintain access to the site."
+ },
+ {
+  "t": "WebSocket Tunnel",
+  "c": "Network",
+  "d": "WebSockets keep a two-way connection open between browser and server for live data. An attacker who can open one to an internal service turns it into a pipe from the internet straight to software that was only ever meant to be reachable from the machine itself.",
+  "e": "CVE-2026-15409 let an unauthenticated /wsproxy request open a WebSocket to localhost-only services on SonicWall SMA appliances (July 2026)."
+ },
+ {
+  "t": "Worker Process",
+  "c": "Network",
+  "d": "Servers like nginx split work across several worker processes that each handle many connections. Crashing one drops every connection it was serving, so a crash bug in a worker is a real outage, not a hiccup.",
+  "e": "CVE-2026-42533 overflows a buffer in an nginx worker process, crashing or restarting it and denying service to everyone it was handling (July 2026)."
  },
  {
   "t": "Zero-Day",

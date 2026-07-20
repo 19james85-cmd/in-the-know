@@ -3,3 +3,8 @@ Thumbs.db
 .DS_Store
 ~$*
 /candidates.json
+
+# local-only: PAT used by the daily briefing task, and the pre-merge glossary source
+.itk-token
+.itk-token.txt
+ITK-Glossary/

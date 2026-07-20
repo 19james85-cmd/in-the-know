@@ -1,0 +1,307 @@
+{
+ "leadStory": {
+  "headline": "WordPress Core 'wp2shell' flaws now exploited in the wild against stock installs",
+  "source": "SecurityWeek",
+  "sourceUrl": "https://www.securityweek.com",
+  "url": "https://www.securityweek.com/wp2shell-wordpress-vulnerabilities-exploited-in-the-wild/",
+  "tags": [
+   {
+    "label": "Actively Exploited",
+    "type": "d"
+   },
+   {
+    "label": "Unauthenticated RCE",
+    "type": "d"
+   },
+   {
+    "label": "WordPress Core",
+    "type": "a"
+   }
+  ],
+  "body": "Multiple security firms, including WordPress specialist Patchstack, have confirmed in-the-wild exploitation of the wp2shell flaws in WordPress core. CVE-2026-60137 is a high-severity SQL Injection and CVE-2026-63030 is a critical arbitrary code execution bug; chained, they give an unauthenticated attacker Remote Code Execution. WordPress 6.9.0 through 6.9.4 and 7.0.0 through 7.0.1 are affected, with no preconditions — a stock install carrying no plugins at all is exploitable by an anonymous request. WordPress shipped 6.9.5 and 7.0.2 on Friday and turned on forced updates through its auto-update system; Searchlight Cyber withheld details, but working Proof-of-Concept code was published by others.",
+  "beginnerTip": "Most WordPress scares come from add-on plugins, so the usual advice is to remove the ones you don't need. This one is different: the flaw is in WordPress itself, so a clean site with no plugins is still a target. <strong>Unauthenticated</strong> means the attacker needs no username or password — just the ability to send your site a web request, which anyone on the internet has. If auto-updates are on you are already fixed; if you turned them off, you are exactly who is being scanned for right now."
+ },
+ "cves": [
+  {
+   "headline": "Critical ServiceNow AI Platform RCE (CVE-2026-6875) under active attack",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+   "tags": [
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "CVSS Critical",
+     "type": "d"
+    },
+    {
+     "label": "Pre-Auth",
+     "type": "w"
+    }
+   ],
+   "body": "Threat intelligence firm Defused observed in-the-wild exploitation of CVE-2026-6875, a pre-authentication Sandbox escape leading to Remote Code Execution in the ServiceNow AI Platform. ServiceNow patched hosted instances and released updates for self-hosted deployments on July 13, and Searchlight Cyber reported the flaw on April 1 under Coordinated Disclosure. Notably, the live payloads reach the same code-execution primitive through a different Gadget than the published Proof-of-Concept, so detections written against the public exploit will not catch these attacks. ServiceNow's advisory still states it is not aware of exploitation against its instances.",
+   "beginnerTip": "ServiceNow runs IT tickets, HR requests and approvals for a very large share of big companies. It lets customers write small scripts and confines them to a <strong>Sandbox</strong> — a padded room that stops them touching the rest of the system. This bug lets a stranger with no login break out of that room and run commands. Because attackers found a different way out than the researchers published, filtering the known attack pattern is not enough — you need the actual update."
+  },
+  {
+   "headline": "Critical NGINX flaw can crash worker processes and may allow code execution",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html",
+   "tags": [
+    {
+     "label": "Critical",
+     "type": "d"
+    },
+    {
+     "label": "Unauthenticated",
+     "type": "w"
+    },
+    {
+     "label": "Patch Available",
+     "type": "g"
+    }
+   ],
+   "body": "F5 fixed CVE-2026-42533, which lets a remote, unauthenticated attacker trigger a Heap Buffer Overflow in an nginx Worker Process using crafted HTTP requests. Fixes landed July 15 in nginx 1.30.4 stable, 1.31.3 mainline and NGINX Plus 37.0.3.1. Triggering it crashes or restarts the worker, causing Denial of Service, and F5 says that where ASLR is disabled or bypassed it may also permit Remote Code Execution. The bug only surfaces under a specific configuration: a regex-based map whose output variable is used in a string expression after an earlier regex capture.",
+   "beginnerTip": "nginx answers web requests for a huge portion of the internet, spreading the load across several <strong>Worker Processes</strong>. This flaw makes nginx measure how much memory an answer needs, reserve exactly that much, then write more than it reserved — scribbling over neighboring memory. Usually that just crashes a worker and drops its connections. Only a fairly specific configuration is affected, so check your config, then upgrade."
+  },
+  {
+   "headline": "7-Zip flaw lets crafted XZ archives run code during extraction",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
+   "tags": [
+    {
+     "label": "Code Execution",
+     "type": "d"
+    },
+    {
+     "label": "User Interaction",
+     "type": "w"
+    },
+    {
+     "label": "Patched June 25",
+     "type": "g"
+    }
+   ],
+   "body": "CVE-2026-14266 is a Heap Buffer Overflow in how 7-Zip processes XZ chunked data, detailed by Trend Micro's Zero Day Initiative on July 15. Opening a malicious XZ archive can let an attacker execute code in the context of the current process. The fix shipped earlier, in 7-Zip 26.02 on June 25, so the patch predates the public write-up — anyone on an older build should update.",
+   "beginnerTip": "7-Zip is the free tool many people use to open compressed archive files. This flaw means the act of extracting a booby-trapped archive can run the attacker's code. Unlike the WordPress and ServiceNow bugs, this one needs you to open something, so it pairs naturally with a phishing email carrying an attachment. 7-Zip does not auto-update, so this is a manual job."
+  },
+  {
+   "headline": "OpenSSL quietly fixed 'HollowByte' denial-of-service flaw with no CVE or advisory",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/openssl-silently-fixes-hollowbyte-dos-vulnerability/",
+   "tags": [
+    {
+     "label": "Denial of Service",
+     "type": "w"
+    },
+    {
+     "label": "Silent Fix",
+     "type": "w"
+    },
+    {
+     "label": "No CVE",
+     "type": "a"
+    }
+   ],
+   "body": "Okta's Red Team disclosed HollowByte, a flaw where 11 bytes make an unpatched OpenSSL server set aside up to 131 KB of memory for a message body that never arrives; on the glibc systems tested, that memory is unavailable until the process restarts. OpenSSL shipped the fix in June with no CVE, no advisory and no changelog entry pointing at it. Fixed releases are 4.0.1, 3.6.3, 3.5.7, 3.4.6 and 3.0.21, all dated June 9. Older versions grew the receive buffer to the attacker's declared size the moment the TLS Handshake header landed, before any of the body arrived.",
+   "beginnerTip": "Encrypted web connections begin with a <strong>TLS Handshake</strong>, a short negotiation that happens before the server trusts you at all. OpenSSL believed the attacker's claim about how big the incoming message would be and reserved room for it up front — so a tiny request burns real memory. The awkward part is the silent fix: with no CVE number, your vulnerability scanner has nothing to match on, so you have to check version numbers by hand."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "Volexity ties SonicWall SMA zero-day attacks to new actor UTA0533, active since June 22",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/sonicwall-sma-zero-days-exploited.html",
+   "tags": [
+    {
+     "label": "Zero-Day",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 10.0",
+     "type": "d"
+    },
+    {
+     "label": "Edge Device",
+     "type": "w"
+    }
+   ],
+   "body": "Volexity attributed exploitation of SonicWall Secure Mobile Access 1000 series VPN appliances to a previously undocumented Threat Actor tracked as UTA0533, with activity dating to June 22 — weeks before public disclosure. CVE-2026-15409 (CVSS 10.0) is a pre-auth /wsproxy bypass opening a WebSocket Tunnel to localhost-only services, and CVE-2026-15410 is a Path Traversal used to reach Root. The actor planted a Setuid Binary called ROOTRUN, injected the Suo5 Proxy Tunnel and a Java Web Shell into a legitimate process, established Persistence via the appliance startup script, and ran tcpdump against unencrypted LDAP traffic to harvest Credentials. Volexity also found the appliance's service password is derived from a world-readable hardware UUID.",
+   "beginnerTip": "An SMA appliance is the box staff connect through to reach the office network from home — always exposed to the internet and rarely running security software. A <strong>Zero-Day</strong> is a flaw attackers use before the vendor knows or has a fix, so nobody could have patched in time. Once they reached <strong>Root</strong>, the all-powerful account, they left a hidden door for later and started reading staff passwords off the wire because the appliance sent them unencrypted."
+  },
+  {
+   "headline": "Russian intelligence hijacks exposed IP cameras to watch NATO and Ukraine military logistics",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/russian-intelligence-hacks-ip-cameras.html",
+   "tags": [
+    {
+     "label": "Nation-State",
+     "type": "d"
+    },
+    {
+     "label": "Espionage",
+     "type": "d"
+    },
+    {
+     "label": "Default Passwords",
+     "type": "w"
+    }
+   ],
+   "body": "Russian intelligence operators are scanning for internet-exposed IP cameras, fingerprinting them by brand and accessing those left on default passwords, obsolete firmware and factory settings. Image-recognition software then combs the video for military vehicles and cargo, giving a real-time view of aid convoys at border crossings and rail yards. Researchers counted more than 87,000 internet-connected cameras across the EU, NATO members and Ukraine running services with known-exploited vulnerabilities, over 4,000 of them in Ukraine. Camera access has reportedly been used in attempts to target Ukrainian personnel and equipment.",
+   "beginnerTip": "No clever exploit was needed for most of this — the cameras were simply left on the passwords they shipped with, which are published in the manual. It is a useful reminder that <strong>Attack Surface</strong> includes every internet-connected device, not just servers and laptops. If you own a camera, doorbell or recorder that is reachable from the internet, change the default password and update its firmware."
+  },
+  {
+   "headline": "New HollowGraph malware hides command-and-control in Microsoft 365 calendar events",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/",
+   "tags": [
+    {
+     "label": "Stealthy C2",
+     "type": "w"
+    },
+    {
+     "label": "Living off Trusted Services",
+     "type": "w"
+    },
+    {
+     "label": "Microsoft 365",
+     "type": "a"
+    }
+   ],
+   "body": "HollowGraph uses the calendar in compromised Microsoft 365 mailboxes as a Command-and-Control channel, receiving operator instructions and staging exfiltrated data inside calendar events — reporting notes events dated as far ahead as 2050 to keep them out of ordinary views. Because the traffic is ordinary Microsoft Graph API activity to a legitimate Microsoft endpoint, it blends into normal corporate telemetry and resists the usual approach of blocking suspicious domains.",
+   "beginnerTip": "Malware has to phone home for orders, and defenders usually catch it by spotting traffic to strange servers. <strong>Command-and-Control</strong> hidden inside Microsoft 365 defeats that, because the traffic goes to Microsoft — a destination you cannot block. Attackers increasingly abuse trusted cloud services precisely because the blocklist approach has nothing to grab onto."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "Director of Commerce AI standards office departs after three months",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/director-of-commerce-ai-standards-office-out-after-three-months/",
+   "tags": [
+    {
+     "label": "AI Governance",
+     "type": "a"
+    },
+    {
+     "label": "Leadership Change",
+     "type": "a"
+    },
+    {
+     "label": "Federal",
+     "type": "a"
+    }
+   ],
+   "body": "The director of the Center for AI Standards and Innovation has left the post after roughly three months, CyberScoop reports. The center sits inside the Commerce Department and has quietly become a key hub for the federal government's assessment of the threats and harms AI systems can pose. Details beyond the departure itself were limited in early reporting, and no successor has been named in the coverage.",
+   "beginnerTip": "Cybersecurity is shaped as much by government bodies as by attackers — the offices that write standards decide what companies are eventually required to do. When leadership at one of those offices turns over quickly, the practical effect is usually delay: guidance takes longer to appear. Worth filing away rather than acting on, but it is the kind of item that explains why a rule you were expecting has not arrived."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "Hugging Face says an autonomous AI agent breached its production infrastructure",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+   "tags": [
+    {
+     "label": "AI-Driven Attack",
+     "type": "d"
+    },
+    {
+     "label": "Credential Theft",
+     "type": "w"
+    },
+    {
+     "label": "Industry First",
+     "type": "a"
+    }
+   ],
+   "body": "Hugging Face, the largest public AI model repository, says an autonomous agent framework breached production through a malicious dataset, abusing two code execution paths — its remote-code dataset loader and a Template Injection in a dataset configuration — to run code on a processing worker. The company describes many thousands of individual actions across a swarm of short-lived sandboxes with self-migrating Command-and-Control staged on public services. It found unauthorized access to a limited set of internal datasets and to several service Credentials, but no evidence of tampering with public models, datasets, Spaces, or its software Supply Chain. Hugging Face has closed the code execution paths, rebuilt compromised nodes and rotated affected tokens.",
+   "beginnerTip": "This is the story to watch, because the attacker was largely software running on its own rather than a person at a keyboard. <strong>Agentic AI</strong> means an AI that plans and carries out long chains of actions by itself, and here that produced attack activity at a volume and speed no human team could match. The defensive lesson is old, though: the way in was untrusted code being allowed to run, and the cleanup was rotating every credential the intruder might have touched."
+  },
+  {
+   "headline": "Capital One open-sources AI-powered 'VulnHunter' code security tool",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/capital-one-open-sources-ai-powered-vulnhunter-security-tool/",
+   "tags": [
+    {
+     "label": "Defensive AI",
+     "type": "g"
+    },
+    {
+     "label": "Open Source",
+     "type": "g"
+    },
+    {
+     "label": "Tooling",
+     "type": "a"
+    }
+   ],
+   "body": "Capital One has released VulnHunter, an agentic security tool that identifies potentially exploitable code flaws, traces attack paths through a codebase, and recommends targeted remediations, as open source. It lands amid a broader push to use AI on the defensive side at the same pace attackers are adopting it for finding bugs.",
+   "beginnerTip": "Most AI security headlines are about attackers, so it is worth noting the other direction: the same technology that finds flaws for criminals finds them for defenders, and finding them first is the whole game. Open-sourcing a tool like this means smaller organizations get capability they could never have built. For a beginner, tools like this are also a good way to see what real <strong>Vulnerability</strong> hunting looks like in practice."
+  },
+  {
+   "headline": "New index tracks material breaches — and deliberately refuses to total up the losses",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/new-index-tracks-material-breaches-and-refuses-to-add-up-the-losses/",
+   "tags": [
+    {
+     "label": "Transparency",
+     "type": "a"
+    },
+    {
+     "label": "Metrics",
+     "type": "a"
+    },
+    {
+     "label": "Industry Resource",
+     "type": "a"
+    }
+   ],
+   "body": "Longtime security executive Richard Bird has built a public index of material breaches aimed at security professionals, journalists, policymakers and the general public. Its notable design choice is a refusal to sum the financial losses into a single headline figure — a pointed response to the widely-circulated breach cost estimates whose methodology is often criticized.",
+   "beginnerTip": "You will constantly meet claims like 'the average breach costs $4.9 million.' Those numbers come from small samples and heavy assumptions, and they get repeated until they sound like fact. A resource that publishes the individual cases but declines to produce one impressive total is making an honest point about what the data can actually support — good instinct to copy when you read security statistics."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "Cyber Defense Magazine",
+   "sourceUrl": "https://www.cyberdefensemagazine.com",
+   "text": "Coca-Cola's Fairlife dairy business halted US processing after a ransomware attack disclosed July 16 — an operational-technology shutdown, not just a data breach."
+  },
+  {
+   "color": "warn",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "text": "Chrome 150 patches six critical and high-severity use-after-free memory bugs — restart your browser to apply it."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "text": "SleeperGem supply chain attack published three malicious RubyGems packages, including a typosquat of git_credential_manager, targeting developer machines."
+  },
+  {
+   "color": "warn",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "text": "A major hospital software vendor lost customer data to attackers, again highlighting healthcare's exposure through third-party suppliers."
+  },
+  {
+   "color": "accent",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "text": "Ernst & Young's breach, traced to a compromised third-party support ticket system, exposed personal and financial information."
+  }
+ ],
+ "analystFooter": "Patch internet-facing WordPress first — wp2shell is confirmed exploited against stock installs — then ServiceNow (CVE-2026-6875), then SonicWall SMA appliances, rotating any credentials those appliances handled. Update nginx and 7-Zip on the normal cycle, and check OpenSSL versions by hand since HollowByte shipped without a CVE for scanners to catch."
+}
