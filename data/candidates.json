@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-19T14:08:23.803023+00:00",
+ "generated": "2026-07-20T14:52:33.657359+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,43 +11,43 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 0,
+   "count": 8,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 0,
+   "count": 3,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 0,
+   "count": 9,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "source": "Cyber Defense Magazine",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
@@ -65,25 +65,200 @@
  ],
  "items": [
   {
-   "source": "BleepingComputer",
-   "title": "Update now: 7-Zip fixes RCE flaw exploitable with malicious archives",
-   "url": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/",
-   "published": "2026-07-18T19:32:02+00:00",
-   "summary": "7-Zip version 26.02 was released to fix a remote code execution vulnerability that could allow attackers to execute malicious code by convincing users to open specially crafted compressed files. [...]"
+   "source": "CyberScoop",
+   "title": "Why blocking AI models won’t stop the cyber threats they create",
+   "url": "https://cyberscoop.com/why-blocking-ai-models-wont-stop-cyber-threats-op-ed/",
+   "published": "2026-07-20T14:12:47+00:00",
+   "summary": "AI companies can find vulnerabilities and write patches. But only the government can build the long-term defense strategy America needs. The post Why blocking AI models won't stop the cyber threats they create appeared first on CyberScoop ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "SonicWall Zero-Days Exploited to Deliver Custom Malware for Weeks Before Patch",
+   "url": "https://www.securityweek.com/sonicwall-zero-days-exploited-to-deliver-custom-malware-for-weeks-before-patch/",
+   "published": "2026-07-20T14:11:05+00:00",
+   "summary": "The zero-days CVE-2026-15409 and CVE-2026-15410 were exploited by a threat actor tracked by Volexity as UTA0533. The post SonicWall Zero-Days Exploited to Deliver Custom Malware for Weeks Before Patch appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "WordPress Core \"wp2shell\" RCE flaws get public exploits, patch now",
-   "url": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
-   "published": "2026-07-18T17:22:47+00:00",
-   "summary": "Public exploits have been released for the critical \"wp2shell\" remote code execution vulnerabilities affecting WordPress Core, making it imperative that administrators patch their sites immediately. [...]"
+   "title": "An AI SOC Evaluation Guide for Security Leaders",
+   "url": "https://www.bleepingcomputer.com/news/security/an-ai-soc-evaluation-guide-for-security-leaders/",
+   "published": "2026-07-20T14:01:11+00:00",
+   "summary": "Choosing an AI SOC platform requires understanding how it will perform in your own environment, not just during an evaluation. Prophet Security shares a practical framework for assessing AI SOC solutions, including how to validate accuracy, operating models, long-term reliability, and production readiness. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Cybersecurity Keeps Events 'Uneventful'",
+   "url": "https://www.darkreading.com/cyber-risk/cybersecurity-keeps-events-uneventful",
+   "published": "2026-07-20T14:00:00+00:00",
+   "summary": "From the World Cup to the United States' 250th celebration, this year's event calendar has been packed with high-profile gatherings that drew global audiences, intense scrutiny, and enormous security demands."
+  },
+  {
+   "source": "Cyber Defense Magazine",
+   "title": "Ransomware in the Dairy Aisle: A Look at Fairlife’s Cyberattack",
+   "url": "https://www.cyberdefensemagazine.com/ransomware-in-the-dairy-aisle/",
+   "published": "2026-07-20T13:50:17+00:00",
+   "summary": "Operational Impact and Response The Coca-Cola Company revealed a cyber incident impacting its Fairlife dairy business on July 16, 2026. The disruption forced an immediate nationwide pause on U.S. processing... The post Ransomware in the Dairy Aisle: A Look at Fairlife’s Cyberattack appeared first on Cyber Defense Magazine ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "⚡ Weekly Recap: WordPress RCE, SonicWall 0-Days, AI Service Attacks, SharePoint 0-Day and More",
+   "url": "https://thehackernews.com/2026/07/weekly-recap-wordpress-rce-sonicwall-0.html",
+   "published": "2026-07-20T13:32:26+00:00",
+   "summary": "A single request should not be able to do this much. But this week, small inputs led to code execution, memory loss, stolen keys, and disabled security tools. The paths were often simple: exposed systems, weak checks, old drivers, fake prompts, and public code used for malware delivery. Some bugs were new. Others were already being used before defenders had time to patch. Here is the full"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "OpenSSL Silently Fixes ‘HollowByte’ DoS Vulnerability",
+   "url": "https://www.securityweek.com/openssl-silently-fixes-hollowbyte-dos-vulnerability/",
+   "published": "2026-07-20T12:32:40+00:00",
+   "summary": "Attackers could send waves of malicious payloads to trigger buffer pre-allocations that are not freed, exhausting server memory. The post OpenSSL Silently Fixes HollowByte' DoS Vulnerability appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Russian Intelligence Hacks IP Cameras to Spy on Military Logistics Across NATO States and Ukraine",
+   "url": "https://thehackernews.com/2026/07/russian-intelligence-hacks-ip-cameras.html",
+   "published": "2026-07-20T12:13:39+00:00",
+   "summary": "At least one Russian intelligence service is systematically hijacking internet-connected security cameras across Europe and Ukraine, using the feeds to watch military transport routes, weapons shipments bound for Kyiv, and the locations of Ukrainian troops. That is the finding of a cybersecurity advisory published July 10 by the AIVD and MIVD, the Netherlands' civilian and military intelligence"
   },
   {
    "source": "BleepingComputer",
-   "title": "Microsoft warns of surge in ACR Stealer attacks on customers",
-   "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/",
-   "published": "2026-07-18T14:17:19+00:00",
-   "summary": "Microsoft has observed a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers. [...]"
+   "title": "Hugging Face warns an autonomous AI agent hacked its network",
+   "url": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/",
+   "published": "2026-07-20T11:56:28+00:00",
+   "summary": "The Hugging Face artificial intelligence repository disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "New Index Tracks Material Breaches — And Refuses to Add Up the Losses",
+   "url": "https://www.securityweek.com/new-index-tracks-material-breaches-and-refuses-to-add-up-the-losses/",
+   "published": "2026-07-20T11:46:50+00:00",
+   "summary": "Longtime cybersecurity executive Richard Bird built the resource for security experts, journalists, policymakers, and everyday citizens. The post New Index Tracks Material Breaches — And Refuses to Add Up the Losses appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Mythos Didn't Break Your Security Program. Your Exposure Window Could.",
+   "url": "https://thehackernews.com/2026/07/mythos-didnt-break-your-security.html",
+   "published": "2026-07-20T11:30:00+00:00",
+   "summary": "The industry spent the initial months after Anthropic's April 7 Mythos reveal focused on volume. How many new CVEs would Mythos add to an already overloaded pipeline? How quickly would the flood of AI-driven discovery overwhelm triage capabilities? How long would it take adversaries to weaponize Mythos findings at scale? Those questions were and remain valid. Yet they all stop short of"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Ernst & Young Data Breach Affects Personal, Financial Information",
+   "url": "https://www.securityweek.com/ernst-young-data-breach-affects-personal-financial-information/",
+   "published": "2026-07-20T11:27:38+00:00",
+   "summary": "Hackers stole names, addresses, Social Security numbers, credit/debit card numbers, and other information from a third-party management platform. The post Ernst Young Data Breach Affects Personal, Financial Information appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft confirms Windows Server Update Services sync delays",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/",
+   "published": "2026-07-20T10:47:28+00:00",
+   "summary": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Watch on Demand: Cloud & Data Security Summit",
+   "url": "https://www.securityweek.com/virtual-event-today-cloud-data-security-summit/",
+   "published": "2026-07-20T10:31:25+00:00",
+   "summary": "Attendees will be able to interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. The post Watch on Demand: Cloud & Data Security Summit appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Capital One Open Sources AI-Powered ‘VulnHunter’ Security Tool",
+   "url": "https://www.securityweek.com/capital-one-open-sources-ai-powered-vulnhunter-security-tool/",
+   "published": "2026-07-20T10:25:07+00:00",
+   "summary": "The agentic security tool identifies potentially exploitable code flaws, traces attack paths, and recommends targeted remediations. The post Capital One Open Sources AI-Powered ‘VulnHunter’ Security Tool appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Windows KB5121767 OOB update fixes shutdowns on some Dell PCs",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-bug-causing-some-dell-pcs-to-shut-down/",
+   "published": "2026-07-20T10:06:17+00:00",
+   "summary": "Microsoft has released emergency updates to fix a known issue causing some Dell PCs to shut down after installing the July 2026 Windows 11 security updates. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Hugging Face Hacked in Autonomous AI Attack",
+   "url": "https://www.securityweek.com/hugging-face-hacked-in-autonomous-ai-attack/",
+   "published": "2026-07-20T09:36:15+00:00",
+   "summary": "Targeting production infrastructure, the attack compromised internal datasets and service credentials. The post Hugging Face Hacked in Autonomous AI Attack appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Critical ServiceNow code execution flaw now exploited in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+   "published": "2026-07-20T09:29:20+00:00",
+   "summary": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform, according to threat intelligence company Defused. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New 7-Zip Vulnerability Could Let Crafted XZ Archives Run Code During Extraction",
+   "url": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
+   "published": "2026-07-20T09:10:56+00:00",
+   "summary": "Opening a crafted XZ archive in 7-Zip could let an attacker run code on the machine. The flaw, CVE-2026-14266, is a heap-based buffer overflow in how the archiver processes XZ chunked data, and Trend Micro's Zero Day Initiative (ZDI) detailed it on July 15. A fix shipped on June 25 in 7-Zip 26.02. The overflow lets an attacker \"execute code in the context of the current process,\" per the"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Russian-Speaking Hacker Uses Google Gemini CLI to Control Botnet of Eight Dental Clinic PCs",
+   "url": "https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html",
+   "published": "2026-07-20T09:07:11+00:00",
+   "summary": "A solo Russian-speaking threat actor known as \"bandcampro\" outsourced a chunk of their operations to Google's open-source Gemini CLI artificial intelligence (AI) and commandeered a live botnet. The findings come from an analysis of 200 Gemini CLI session logs between March 19 and April 21, 2026, which found the threat actor using AI, among other things, to crack passwords, set up a residential"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Your attack surface is bigger than you think",
+   "url": "https://www.cybersecuritydive.com/spons/your-attack-surface-is-bigger-than-you-think/825160/",
+   "published": "2026-07-20T09:00:00+00:00",
+   "summary": "New data reveals where attack surfaces are hiding the most risk."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "How agentic endpoint security shuts down IDE-based supply chain attacks",
+   "url": "https://www.cybersecuritydive.com/spons/how-agentic-endpoint-security-shuts-down-ide-based-supply-chain-attacks/825550/",
+   "published": "2026-07-20T09:00:00+00:00",
+   "summary": "Attention shifts from EDR to Agentic Endpoint Security to close visibility gaps that AI can exploit."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "The secret problem in AI infrastructure: Why MCP security starts with secrets",
+   "url": "https://www.cybersecuritydive.com/spons/the-secret-problem-in-ai-infrastructure-why-mcp-security-starts-with-secre/825210/",
+   "published": "2026-07-20T09:00:00+00:00",
+   "summary": "AI changes how infrastructure is accessed. Here s what to secure."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Chrome 150 Update Patches Severe Memory Safety Bugs",
+   "url": "https://www.securityweek.com/chrome-150-update-patches-severe-memory-safety-bugs/",
+   "published": "2026-07-20T08:12:19+00:00",
+   "summary": "The fresh security update resolves six critical and high-severity use-after-free vulnerabilities. The post Chrome 150 Update Patches Severe Memory Safety Bugs appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent",
+   "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+   "published": "2026-07-20T05:27:26+00:00",
+   "summary": "In an ironic twist, open-source artificial intelligence (AI) platform Hugging Face revealed that it was the victim of a hack perpetrated by an autonomous AI agent system. The company said it detected and responded to the incident targeting its production infrastructure earlier last week. \"We identified unauthorized access to a limited set of internal datasets and to several credentials used by"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "WP2Shell WordPress Vulnerabilities Exploited in the Wild",
+   "url": "https://www.securityweek.com/wp2shell-wordpress-vulnerabilities-exploited-in-the-wild/",
+   "published": "2026-07-20T05:21:29+00:00",
+   "summary": "Exploitation of the new WordPress vulnerabilities tracked as CVE-2026-60137 and CVE-2026-63030 started soon after disclosure. The post WP2Shell WordPress Vulnerabilities Exploited in the Wild appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "SleeperGem Uses Three Malicious RubyGems Packages to Target Developer Machines",
+   "url": "https://thehackernews.com/2026/07/sleepergem-uses-three-malicious.html",
+   "published": "2026-07-20T05:15:39+00:00",
+   "summary": "Cybersecurity researchers have flagged a new software supply chain attack codenamed SleeperGem targeting the Ruby ecosystem after three malicious gems were published to RubyGems with the end goal of serving additional payloads. The rogue gems are listed below - git_credential_manager (versions 2.8.0, 2.8.1, 2.8.2, 2.8.3) - Published on July 18, 2026 Dendreo (versions 1.1.3, 1.1.4) -"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical NGINX Vulnerability Can Crash Workers and May Allow Remote Code Execution",
+   "url": "https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html",
+   "published": "2026-07-19T20:42:49+00:00",
+   "summary": "F5 has shipped fixes for a critical nginx flaw that lets a remote, unauthenticated attacker trigger a heap buffer overflow in the worker process with crafted HTTP requests. CVE-2026-42533 was patched on July 15 in nginx 1.30.4 (stable) and 1.31.3 (mainline), and in NGINX Plus 37.0.3.1; anyone on an earlier build should upgrade. Triggering it can crash or restart the worker, causing a denial of"
   }
  ]
 }
