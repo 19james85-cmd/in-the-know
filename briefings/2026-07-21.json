@@ -1,0 +1,201 @@
+{
+ "leadStory": {
+  "headline": "Qilin ransomware crews are chaining a PAN-OS GlobalProtect authentication bypass straight to domain-wide encryption",
+  "source": "The Hacker News",
+  "sourceUrl": "https://thehackernews.com",
+  "url": "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
+  "tags": [
+   {"label": "Actively Exploited", "type": "d"},
+   {"label": "Ransomware", "type": "d"},
+   {"label": "CVE-2026-0257", "type": "w"},
+   {"label": "Perimeter Device", "type": "a"}
+  ],
+  "body": "Arctic Wolf Labs investigated multiple June 2026 intrusions in which attackers used CVE-2026-0257 — an authentication bypass in the Palo Alto Networks PAN-OS GlobalProtect portal and gateway, CVSS 7.8 — as the initial access point, then moved to full Qilin (aka Agenda) ransomware deployment across the victim's domain. The flaw is exploitable when authentication override cookies are enabled alongside certain certificate configurations, letting an unauthenticated attacker stand up a VPN session with no valid credentials. Once inside, the operators dumped LSASS memory and extracted NTDS.dit for credentials, used PsExec and RDP for lateral movement, installed AnyDesk, Ngrok and LogMeIn for persistence, staged data to MEGA with Rclone for double extortion, and cleared Windows event logs before encrypting. Arctic Wolf assesses with moderate confidence that these intrusions are ongoing, since Qilin runs a ransomware-as-a-service model that spreads a working exploit across many affiliates.",
+  "beginnerTip": "An <strong>authentication bypass</strong> means the attacker never has to guess or steal a password — a flaw in the login logic itself lets them walk past the check. This is why patching internet-facing VPN gateways is more urgent than patching a laptop: the VPN is the front door to everything else, and once it opens, the rest of the attack is just ordinary Windows administration performed by someone who shouldn't be there."
+ },
+ "cves": [
+  {
+   "headline": "ServiceNow AI Platform sandbox escape (CVE-2026-6875) exploited days after disclosure",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/exploitation-of-servicenow-vulnerability-seen-days-after-disclosure/",
+   "tags": [
+    {"label": "CVSS 9.5", "type": "d"},
+    {"label": "Unauthenticated RCE", "type": "d"},
+    {"label": "In the Wild", "type": "d"}
+   ],
+   "body": "CVE-2026-6875 is a code injection flaw in the ServiceNow AI Platform that lets an unauthenticated attacker break out of ServiceNow's scripting sandbox and run code on the instance. Public research identifies /assessment_thanks.do as a pre-authentication sink that accepts attacker-controlled input; escaping into the underlying Rhino scripting engine can allow reading database tables, creating administrator accounts, and running shell commands on configured proxy servers. ServiceNow announced patches on July 14 and said hosted instances were updated automatically, but self-hosted customers must apply the fix themselves. Defused Cyber has since reported in-the-wild exploitation against the same pre-auth endpoint, using a different sandbox-escape route than the published write-up.",
+   "beginnerTip": "A <strong>sandbox</strong> is a walled-off area where a program is allowed to run untrusted code without touching the rest of the system. A 'sandbox escape' means the attacker found a crack in that wall. The lesson here for beginners: cloud-hosted and self-hosted versions of the same product get patched on very different clocks, and attackers know exactly which customers are the slow ones."
+  },
+  {
+   "headline": "WordPress wp2shell exploitation widens as public exploits fuel mass scanning",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+   "tags": [
+    {"label": "Mass Exploitation", "type": "d"},
+    {"label": "Unauthenticated RCE", "type": "d"},
+    {"label": "Patch Available", "type": "g"}
+   ],
+   "body": "Attackers are chaining CVE-2026-60137, a high-severity SQL Injection, with CVE-2026-63030, a critical arbitrary code execution bug, to achieve unauthenticated Remote Code Execution on WordPress sites. The chain works by crafting a batch request in which a malformed sub-request causes later requests to be routed to unintended handlers, bypassing endpoint allow-lists and injecting parameters into sensitive API calls. WordPress 6.9.0–6.9.4 and 7.0.0–7.0.1 are affected with no preconditions — a stock install with zero plugins is exploitable anonymously — while 6.8.0–6.8.5 carry only the SQL Injection half, fixed in 6.8.6. WordPress shipped 6.9.5 and 7.0.2 and enabled forced auto-updates; VulnCheck has verified more than two dozen distinct public Proof-of-Concept exploits and observed attackers dropping persistent web shells.",
+   "beginnerTip": "An <strong>exploit chain</strong> is two or more separate bugs used together, where neither alone would be catastrophic. Here one bug leaks or manipulates data and the second turns that into code execution. If you run WordPress anywhere — even a hobby blog — confirm you are on 6.9.5, 7.0.2, or 6.8.6 today and check for unfamiliar PHP files in your uploads directory."
+  },
+  {
+   "headline": "SonicWall SMA1000 flaws were exploited as zero-days for weeks to plant appliance-specific malware",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/",
+   "tags": [
+    {"label": "CVSS 10.0", "type": "d"},
+    {"label": "Zero-Day", "type": "d"},
+    {"label": "Ransomware Precursor", "type": "w"}
+   ],
+   "body": "SonicWall disclosed CVE-2026-15409 and CVE-2026-15410 on July 14, and researchers now say both were already being exploited as zero-days. CVE-2026-15409 is a critical (CVSS 10.0) Server-Side Request Forgery in the SMA1000 Appliance Work Place interface that lets a remote, unauthenticated attacker force the appliance to make requests to locations it should never reach; CVE-2026-15410 is a high-severity (CVSS 7.2) post-authentication code injection in the Appliance Management Console that turns administrator access into arbitrary OS commands. Rapid7 telemetry ties the activity to an actor connected to the INC ransomware-as-a-service group, which has been harvesting credentials across multiple enterprise networks. Volexity, which assisted SonicWall's investigation, documented custom malware built specifically for SonicWall SMA VPN appliances, and Cybersecurity Dive reports the exploitation traces back to late June.",
+   "beginnerTip": "<strong>Server-Side Request Forgery (SSRF)</strong> tricks a server into making network requests on the attacker's behalf — the appliance becomes the attacker's proxy into the internal network it was supposed to protect. Because security appliances often can't run normal antivirus, malware planted on them can survive for months; assume compromise and rotate credentials rather than just patching."
+  },
+  {
+   "headline": "Windows 'LegacyHive' zero-day gets unofficial patches while Microsoft stays silent",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
+   "tags": [
+    {"label": "No Official Patch", "type": "w"},
+    {"label": "Privilege Escalation", "type": "w"},
+    {"label": "Public PoC", "type": "d"}
+   ],
+   "body": "LegacyHive is a local Privilege Escalation flaw in the Windows User Profile Service that lets a standard, non-administrative user mount another user's registry hive in full-access mode — including an administrator's. From there an attacker can read that user's stored secrets or modify the classes hive so that attacker-chosen code runs automatically the next time the administrator logs in. Proof-of-Concept code was published on July 14 by a researcher operating as Nightmare Eclipse, timed to land immediately after July 2026 Patch Tuesday, and it has been confirmed working on fully updated Windows systems. Microsoft has not assigned a CVE or shipped a fix; ACROS Security's 0patch service is distributing free unofficial micropatches in the meantime.",
+   "beginnerTip": "The Windows <strong>registry</strong> is a database of settings, and each user account has its own section called a 'hive'. This bug does not get an attacker onto the machine — it upgrades someone who is already there from ordinary user to administrator, which is why local privilege escalation is the standard second step after phishing."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "JADEPUFFER's new ENCFORGE ransomware encrypts model weights and training data instead of documents",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+   "tags": [
+    {"label": "Ransomware", "type": "d"},
+    {"label": "Agentic AI", "type": "w"},
+    {"label": "KEV Flaw", "type": "d"}
+   ],
+   "body": "Sysdig linked a second intrusion on the same Langflow server to JADEPUFFER, the AI-agent-driven operator it first documented earlier in July, matching the Proton Mail extortion address embedded in both campaigns' ransom notes. The entry point is CVE-2025-3248, an unauthenticated code execution flaw in Langflow versions before 1.3.0 via the /api/v1/validate/code endpoint; it carries a CVSS of 9.8 and has been in CISA's Known Exploited Vulnerabilities (KEV) catalog since May 5, 2025. The new payload, ENCFORGE, is compiled Go ransomware that targets roughly 180 file extensions specific to the machine learning stack — PyTorch and TensorFlow checkpoints, HuggingFace SafeTensors weights, llama.cpp GGUF quantized models, FAISS vector indices, Apache Parquet and TFRecord datasets, and NumPy arrays. Sysdig watched the operator write and revise six Python scripts in five minutes and 24 seconds through the same RCE channel until one worked.",
+   "beginnerTip": "Ransomware traditionally encrypts the files a business cannot work without. This crew noticed those files are now sometimes trained AI models that cost millions of GPU-hours to produce and are frequently not backed up like ordinary documents. The <strong>KEV</strong> catalog is CISA's list of flaws confirmed to be exploited in real attacks — anything on it should be at the front of your patch queue."
+  },
+  {
+   "headline": "HOLLOWGRAPH hides its command channel inside Microsoft 365 calendar events dated 2050",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/new-hollowgraph-malware-abuses-microsoft-365-calendar-for-cc-communication/",
+   "tags": [
+    {"label": "Espionage", "type": "w"},
+    {"label": "Living-off-Trusted-Services", "type": "a"},
+    {"label": "Low-Confidence Attribution", "type": "a"}
+   ],
+   "body": "Group-IB documented HOLLOWGRAPH, a component of the larger 'Cavern' command-and-control framework, which authenticates to the Microsoft Graph API with hardcoded credentials for a compromised Microsoft 365 account and then uses that mailbox's calendar as a two-way dead drop. Commands and stolen data are concealed in files attached to calendar events scheduled for May 13, 2050, with GET and SEND operations wrapped in hybrid RSA plus AES-256-GCM encryption. Observed activity runs from June 3 to July 9, 2026, across at least 12 infected systems, three of which were actively communicating, with targeting focused on organizations in Israel. Group-IB noted similarities between Cavern and tooling associated with Lyceum, an Iranian-linked subgroup tied to OilRig, but rated that link low confidence and has not attributed the campaign.",
+   "beginnerTip": "<strong>Command-and-Control (C2)</strong> is how malware receives orders and sends stolen data back. Traffic to Microsoft's own Graph API looks completely normal on a corporate network, so hiding inside it defeats defenses that block suspicious domains. Note the honest attribution language — 'low confidence' means researchers see resemblance, not proof, and beginners should treat confident nation-state claims with the same skepticism."
+  },
+  {
+   "headline": "FakeGit built 7,600 fake GitHub repos — 800 posing as AI skills and MCP servers",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html",
+   "tags": [
+    {"label": "Supply Chain Attack", "type": "d"},
+    {"label": "Infostealer", "type": "w"},
+    {"label": "AI Tooling", "type": "a"}
+   ],
+   "body": "Researchers uncovered roughly 7,600 malicious GitHub repositories spread across about 6,600 lookalike developer profiles, all delivering the SmartLoader malware family in a campaign tracked as FakeGit. More than 800 of the repositories impersonate AI 'skills' or Model Context Protocol (MCP) servers — fake Gmail, WhatsApp, Databricks, Jenkins and Docker integrations — using copied project code, convincing READMEs, and malicious ZIP files in the Releases section. As of July 2026 the operation has logged over 14 million downloads of GitHub Release assets across roughly 200 campaign repositories. SmartLoader establishes persistence and pulls down second-stage payloads including the StealC infostealer, and researchers describe an 'AgentBaiting' twist in which AI coding agents are induced to discover and recommend the malicious repositories on their own.",
+   "beginnerTip": "A <strong>Supply Chain Attack</strong> poisons something you already trust rather than attacking you directly. What is new here is the target: developers now ask AI assistants to find tools for them, so the attacker optimizes the fake repo to be attractive to the AI's search rather than to a human. Verify a repository's owner, star history, and commit age before running anything — including when an AI suggested it."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "Director of Commerce's AI standards office departs after three months",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/director-of-commerce-ai-standards-office-out-after-three-months/",
+   "tags": [
+    {"label": "US Policy", "type": "a"},
+    {"label": "AI Governance", "type": "a"},
+    {"label": "Leadership Churn", "type": "w"}
+   ],
+   "body": "The head of the Commerce Department's Center for AI Standards and Innovation (CAISI) has left the role after roughly three months. CAISI has quietly become a key hub for the federal government's work assessing potential threats and harms posed by AI systems — the technical evaluation function that standards, procurement rules and future regulation tend to be built on top of. Leadership turnover at that pace matters for anyone tracking where US AI security requirements are headed, because unfinished evaluation frameworks typically stall when the office driving them changes hands.",
+   "beginnerTip": "Standards bodies rarely make headlines, but they decide what 'secure enough' officially means — and once a standard exists, contracts and regulations start referencing it. <strong>NIST</strong>, also part of the Commerce Department, is the classic example: its documents began as voluntary guidance and are now contractually binding for large parts of the US supply chain."
+  },
+  {
+   "headline": "US seizes 1,000+ domains in FIFA World Cup illegal streaming crackdown",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/us-seizes-over-1-000-fifa-world-cup-illegal-streaming-domains/",
+   "tags": [
+    {"label": "Law Enforcement", "type": "g"},
+    {"label": "Domain Seizure", "type": "a"},
+    {"label": "Consumer Risk", "type": "w"}
+   ],
+   "body": "The US Justice Department seized more than 1,000 websites and blocked 1,970 domains used to stream FIFA World Cup 2026 matches without authorization. Domain seizure is the same enforcement mechanism regularly used against phishing infrastructure and malware command-and-control: authorities obtain a court order and redirect the domain's DNS records to a government-controlled server. Illegal streaming sites are also a routine malware delivery channel, pushing fake player updates, malicious browser extensions and subscription scams to viewers who arrive expecting a free match.",
+   "beginnerTip": "A <strong>domain seizure</strong> takes the name, not the server — the machine hosting the content usually still exists, which is why operators often reappear under a new address within days. It buys defenders time and breaks the links already circulating, but it is disruption rather than a permanent shutdown."
+  },
+  {
+   "headline": "Clover Health discloses breach of personal and health data after employee account compromise",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/clover-health-investments-discloses-data-breach/",
+   "tags": [
+    {"label": "Healthcare", "type": "w"},
+    {"label": "Breach Disclosure", "type": "a"},
+    {"label": "Social Engineering", "type": "w"}
+   ],
+   "body": "Clover Health Investments disclosed a data breach in which attackers used social engineering to compromise employee accounts that had access to personal and health information. Health insurers in the US operate under HIPAA, which imposes specific breach notification duties, so incidents of this type surface publicly on a regulatory clock rather than at the company's convenience. The initial access method is notable for how unglamorous it is — no exploit, no vulnerability, just a convincing human being persuading a help desk or an employee to hand over access.",
+   "beginnerTip": "<strong>Social Engineering</strong> attacks the person rather than the software, and it remains one of the most reliable ways into a large organization precisely because it bypasses every technical control you have bought. Phishing-resistant MFA and strict, scripted identity verification at the help desk are the two controls that most consistently blunt it."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "AI-generated code averages 15 vulnerabilities per codebase — and the framework matters more than the model",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies",
+   "tags": [
+    {"label": "AppSec", "type": "a"},
+    {"label": "AI Risk", "type": "a"},
+    {"label": "Research", "type": "a"}
+   ],
+   "body": "New research finds AI-generated code introduces about 15 vulnerabilities on average per codebase, but the level of risk depends far more on which framework the generated code is paired with than on which model produced it. That is a useful correction to the usual debate: teams tend to argue about model choice, when the security-relevant variable is whether the surrounding framework makes the unsafe pattern easy or hard to write. Frameworks with safe defaults — parameterized queries, automatic output encoding — absorb a lot of what a model gets wrong.",
+   "beginnerTip": "This mirrors an old lesson in application security: humans write insecure code for the same reasons, and the fix that scales is not 'try harder' but choosing tools where the insecure option is difficult by design. If you are learning to code with AI assistance, the highest-value habit is reviewing generated code for the classic categories — <strong>SQL Injection</strong>, unvalidated input, and hardcoded secrets."
+  },
+  {
+   "headline": "'N-day is becoming N-hour': patch diffing collapses the window between fix and exploit",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/n-day-is-becoming-n-hour-patching.html",
+   "tags": [
+    {"label": "Analysis", "type": "a"},
+    {"label": "Patch Management", "type": "w"},
+    {"label": "Exploit Economics", "type": "a"}
+   ],
+   "body": "The argument is blunt: every patch is a confession. The moment a vendor ships a security fix, the difference between the old and new code tells anyone watching exactly what was broken and where, and turning that diff back into a working exploit is now fast enough that the traditional weeks-long grace period after a patch has largely evaporated. Today's own headlines support it — ServiceNow's CVE-2026-6875 was under exploitation within days of disclosure, and wp2shell attacks began within roughly three days. The piece's conclusion is that patching faster alone will not close the gap; compensating controls and detection have to cover the interval.",
+   "beginnerTip": "<strong>N-day</strong> means a vulnerability that is already publicly known and patched, as opposed to a <strong>Zero-Day</strong> that nobody has a fix for. Most real-world breaches use N-days, not zero-days, because most organizations take weeks to patch. Attackers reverse-engineer the fix — comparing patched and unpatched code, called patch diffing — to locate the bug the vendor just described in the vaguest possible advisory."
+  },
+  {
+   "headline": "A quarter of security chiefs are considering quitting over AI risk pressure",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/cybersecurity-operations/cisos-feel-heat-ai-risk",
+   "tags": [
+    {"label": "Workforce", "type": "w"},
+    {"label": "Governance", "type": "a"},
+    {"label": "AI Adoption", "type": "a"}
+   ],
+   "body": "Survey findings reported by Dark Reading indicate that 26% of top security executives have considered leaving their position as job pressures rise, with organizations racing into AI adoption faster than security teams can assess it. The tension is structural rather than personal: business units deploy AI tools on their own timeline while accountability for the resulting exposure lands on the CISO, often without corresponding authority to slow anything down. Retention problems at that level cascade, since institutional knowledge about a specific environment is exactly what makes incident response fast.",
+   "beginnerTip": "A <strong>CISO</strong> (Chief Information Security Officer) is the executive accountable for an organization's security posture. For someone learning the field, this is a useful signal about where demand is heading — AI governance skills, meaning the ability to assess and document AI system risk, are currently scarcer than traditional hands-on security skills."
+  }
+ ],
+ "quickHits": [
+  {"color": "danger", "source": "SecurityWeek", "sourceUrl": "https://www.securityweek.com", "text": "Zimbra shipped fixes for as many as nine issues including a critical command injection in its SNMP monitoring component plus four XSS, restriction bypass and SSRF flaws; the SNMP bug is resolved in 10.1.19, and admins upgrading from 10.0.x, 9.0.x or 8.8.15 must reapply the SNMP mitigation afterward."},
+  {"color": "warn", "source": "SecurityWeek", "sourceUrl": "https://www.securityweek.com", "text": "Estée Lauder is notifying customers that attackers exfiltrated personal, financial and health information from its Oracle E-Business Suite instance, used for HR operations, via the Oracle EBS zero-day exploited back in August 2025."},
+  {"color": "warn", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com", "text": "Researchers escaped the sandboxes of Cursor, Codex, Gemini CLI and Antigravity by having the AI agent write files that trusted host tools later execute — multiple CVEs and patches followed, though Google downgraded two of the Antigravity findings."},
+  {"color": "accent", "source": "The Hacker News", "sourceUrl": "https://thehackernews.com", "text": "'Bit2Watt' research claims a cloud tenant with ordinary GPU access could swing a data center's power draw fast enough to stress the electrical grid it sits on — no exploit and no intrusion required, just legitimate compute scheduled adversarially."},
+  {"color": "ok", "source": "SecurityWeek", "sourceUrl": "https://www.securityweek.com", "text": "Meta paid a $78,000 bug bounty for a broken access control vulnerability in its customer support infrastructure that exposed support data — a reminder that authorization bugs, not memory corruption, dominate real-world web findings."}
+ ],
+ "analystFooter": "Priority order today: patch or verify PAN-OS GlobalProtect against CVE-2026-0257 and hunt for rogue VPN sessions, since Qilin affiliates are already converting that access to full-domain ransomware; then self-hosted ServiceNow (CVE-2026-6875) and any SonicWall SMA1000 appliance, which should be treated as compromised rather than merely unpatched. WordPress 6.9.5/7.0.2 and Zimbra 10.1.19 are quick wins if you own either, and LegacyHive is worth tracking but is a second-stage risk, not a front door."
+}

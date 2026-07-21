@@ -36,6 +36,12 @@
   "e": "Kaspersky tied the HelloNet ViPNet campaign to a Chinese-speaking APT with low confidence in July 2026 — the evidence was one unused string and a download mirror."
  },
  {
+  "t": "Authentication Bypass",
+  "c": "Vulnerability",
+  "d": "A flaw that lets an attacker skip the login check entirely instead of stealing or guessing a password. The system's own logic is broken, so it treats an unauthenticated stranger as a valid user.",
+  "e": "In July 2026, ransomware affiliates exploited CVE-2026-0257 in Palo Alto Networks PAN-OS to open GlobalProtect VPN sessions without any credentials, then deployed Qilin ransomware across victim networks."
+ },
+ {
   "t": "Backdoor",
   "c": "Malware",
   "d": "Malware that quietly holds a door open for the attacker to return and run commands later, after the original way in has been closed or patched.",
@@ -166,6 +172,12 @@
   "c": "Malware",
   "d": "Planting a malicious DLL (a Windows code library) next to a trusted program so that when the trusted program starts, Windows loads the attacker's library instead of the real one. The malware inherits the trusted program's reputation and privileges.",
   "e": "HelloNet dropped a fake wtsapi32.dll into the ViPNet update folder so the legitimate itcsrvup64.exe loaded it at every boot (July 2026)."
+ },
+ {
+  "t": "Double Extortion",
+  "c": "Threat/Actor",
+  "d": "A ransomware tactic where attackers steal a copy of your data before encrypting it, then threaten to publish the stolen copy as well as keep your files locked. Restoring from backup no longer ends the problem.",
+  "e": "In July 2026, Arctic Wolf reported Qilin operators using Rclone to copy victim data to MEGA cloud storage before encryption, so victims with good backups still faced a leak threat."
  },
  {
   "t": "ELF Binary",
@@ -418,6 +430,12 @@
   "c": "General",
   "d": "A restricted environment where untrusted code is allowed to run but is walled off from the rest of the system.",
   "e": "ServiceNow runs customer scripts in a sandbox; CVE-2026-6875 is a \"sandbox escape\" — breaking out of that wall."
+ },
+ {
+  "t": "Server-Side Request Forgery (SSRF)",
+  "c": "Vulnerability",
+  "d": "A flaw that tricks a server into making network requests chosen by the attacker. Because the request comes from the trusted server, it can reach internal systems the attacker could never contact directly.",
+  "e": "In July 2026, CVE-2026-15409 in SonicWall SMA1000 appliances — rated CVSS 10.0 — let unauthenticated attackers force the appliance to send requests to unintended internal locations."
  },
  {
   "t": "Setuid Binary",
