@@ -108,6 +108,12 @@
   "e": "Microsoft's advice on ACR Stealer stresses revoking session tokens, not just changing passwords — a stolen live token bypasses the new password entirely."
  },
  {
+  "t": "Credential Stuffing",
+  "c": "Threat/Actor",
+  "d": "Credential stuffing is an attack where criminals take username-and-password pairs leaked from one breached site and automatically try them on many other sites, betting that people reuse passwords. It succeeds only because password reuse is so common.",
+  "e": "In July 2026, Chick-fil-A disclosed a breach after attackers used credential stuffing to log into customer accounts with passwords stolen from unrelated sites."
+ },
+ {
   "t": "Credentials",
   "c": "General",
   "d": "Anything that proves identity to a system: passwords, API keys, access tokens, certificates. Stealing them is often more valuable than exploiting another bug.",
@@ -306,6 +312,12 @@
   "e": "HelloInjector did nothing but inject into svchost.exe and fetch further modules from the C2 (July 2026)."
  },
  {
+  "t": "Machine Key",
+  "c": "Cryptography",
+  "d": "A machine key is a secret value a web server (such as SharePoint or ASP.NET) uses to sign and encrypt the authentication tokens and cookies it hands out, so it can trust them later. If an attacker steals it, they can forge tokens the server will accept as genuine, even after a patch.",
+  "e": "In July 2026, attackers exploited a SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them forge valid logins even after the server was patched."
+ },
+ {
   "t": "Malware",
   "c": "Malware",
   "d": "Short for malicious software — any software intentionally designed to disrupt, damage, or gain unauthorized access to a system. Includes viruses, ransomware, spyware, and trojans.",
@@ -358,6 +370,12 @@
   "c": "Threat/Actor",
   "d": "A cyberattack using deceptive emails or messages appearing to come from trusted sources, tricking recipients into revealing sensitive information or clicking malicious links.",
   "e": "Emails mimicking the company's IT department captured 200 employee passwords in a single day."
+ },
+ {
+  "t": "Phishing-as-a-Service (PhaaS)",
+  "c": "Threat/Actor",
+  "d": "Phishing-as-a-Service is a criminal business model that rents ready-made phishing kits, fake login pages, and hosting to other crooks, so even unskilled attackers can run convincing campaigns. It works like a subscription software product, but for fraud.",
+  "e": "In July 2026, police dismantled Kratos, a phishing-as-a-service platform whose roughly 1,800 customers ran about 15,000 phishing campaigns a month."
  },
  {
   "t": "Platform-as-a-Service (PaaS)",
