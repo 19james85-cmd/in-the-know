@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-21T14:37:19.989116+00:00",
+ "generated": "2026-07-22T14:36:44.870424+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,13 +11,13 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 10,
+   "count": 11,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 1,
+   "count": 3,
    "error": null
   },
   {
@@ -29,13 +29,13 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 6,
+   "count": 4,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 5,
    "error": null
   },
   {
@@ -47,13 +47,13 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 11,
+   "count": 12,
    "error": null
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -65,284 +65,326 @@
  ],
  "items": [
   {
-   "source": "The Hacker News",
-   "title": "Qilin Ransomware Attackers Exploit PAN-OS Authentication Bypass for Initial Access",
-   "url": "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
-   "published": "2026-07-21T14:04:57+00:00",
-   "summary": "Threat actors have been observed exploiting a now-patched high-severity Palo Alto Networks PAN-OS vulnerability as an entry point to deploy Qilin (aka Agenda) ransomware on victim environments. Arctic Wolf Labs said it investigated multiple intrusions in June 2026 that began with the exploitation of CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw affecting the portal and gateway"
+   "source": "SecurityWeek",
+   "title": "Flaw in Adobe Extension With 300M Installs Enabled WhatsApp Data Theft",
+   "url": "https://www.securityweek.com/flaw-in-adobe-extension-with-300m-installs-enabled-whatsapp-data-theft/",
+   "published": "2026-07-22T14:22:31+00:00",
+   "summary": "An attacker only needed to convince the targeted user to visit a malicious website to exfiltrate WhatsApp messages and contacts. The post Flaw in Adobe Extension With 300M Installs Enabled WhatsApp Data Theft appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Closing the Identity Gaps in Critical Infrastructure Security",
-   "url": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gaps-in-critical-infrastructure-security/",
-   "published": "2026-07-21T14:00:10+00:00",
-   "summary": "Critical infrastructure attacks often begin with stolen credentials, compromised devices, or trusted accounts. Specops Software explains why Zero Trust should verify both user identities and device trust before granting access to critical systems. [...]"
+   "title": "New InfraTrust report reveals infrastructure flaws admins should patch first",
+   "url": "https://www.bleepingcomputer.com/news/security/new-infratrust-report-reveals-infrastructure-flaws-admins-should-patch-first/",
+   "published": "2026-07-22T14:15:00+00:00",
+   "summary": "Eclypsium has launched InfraTrust, a new infrastructure cybersecurity knowledge base and monthly InfraTrust Pulse report designed to help organizations prioritize vulnerabilities affecting infrastructure, firmware, networking, and edge devices. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "When Identity Verification Fails: Lessons from a Real-World SIM Swap and Near Account Takeover",
+   "url": "https://www.securityweek.com/when-identity-verification-fails-lessons-from-a-real-world-sim-swap-and-near-account-takeover/",
+   "published": "2026-07-22T14:00:00+00:00",
+   "summary": "Identity confidence changes throughout every interaction and should be reassessed continuously as new risk signals emerge. The post When Identity Verification Fails: Lessons from a Real-World SIM Swap and Near Account Takeover appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Adobe Chrome extension flaw let sites access private WhatsApp chats",
+   "url": "https://www.bleepingcomputer.com/news/security/adobe-chrome-extension-flaw-let-sites-access-private-whatsapp-chats/",
+   "published": "2026-07-22T13:22:20+00:00",
+   "summary": "The Adobe Acrobat extension for Chrome could be used to access conversations and data rendered in WhatsApp Web without any form of authentication. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "StrongestLayer Raises $4.1 Million in Seed Funding Extension",
+   "url": "https://www.securityweek.com/strongestlayer-raises-4-1-million-in-seed-funding-extension/",
+   "published": "2026-07-22T13:00:00+00:00",
+   "summary": "The startup will use the fresh investment to accelerate its go-to-market strategy and to expand its platform. The post StrongestLayer Raises $4.1 Million in Seed Funding Extension appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Vibe-Coded Apps Riddled With Exploitable Security Flaws",
+   "url": "https://www.securityweek.com/vibe-coded-apps-riddled-with-exploitable-security-flaws/",
+   "published": "2026-07-22T13:00:00+00:00",
+   "summary": "Analysis found 434 exploitable flaws in AI-generated apps, with denial-of-service, authorization and secrets exposure risks among the most common issues. The post Vibe-Coded Apps Riddled With Exploitable Security Flaws appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "Zimbra Patches Critical SNMP Command Injection and Four XSS Vulnerabilities",
-   "url": "https://thehackernews.com/2026/07/zimbra-patches-critical-snmp-command.html",
-   "published": "2026-07-21T13:18:31+00:00",
-   "summary": "Zimbra has rolled out fixes to address multiple critical security issues, including a command injection flaw in the Simple Network Management Protocol (SNMP) monitoring component. As many as nine security vulnerabilities have been patched in Zimbra 10.1.20. Topping the list is a command injection vulnerability in the SNMP monitoring component when SNMP notifications are enabled. Also patched"
+   "title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
+   "url": "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
+   "published": "2026-07-22T12:36:36+00:00",
+   "summary": "A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck. The vulnerability in question is CVE-2026-29059 (CVSS score: 7.5), a case of unauthenticated path traversal impacting Windmill's \"get_log_file\" endpoint (\"/api/w/{workspace}/jobs_u/get_log_file/{filename}\"). \"The filename parameter is concatenated into"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "The Fastest Path to AI Adoption Runs Through Security",
+   "url": "https://thehackernews.com/2026/07/the-fastest-path-to-ai-adoption-runs.html",
+   "published": "2026-07-22T11:58:00+00:00",
+   "summary": "Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic influence they have earned. According to McKinsey's State of AI report, 76 percent of employees now use AI in some capacity at work, up from 55"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "CISA orders urgent action on actively exploited Langflow RCE flaw",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-langflow-rce-flaw/",
+   "published": "2026-07-22T11:43:28+00:00",
+   "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday ordered U.S. government agencies to prioritize patching an actively exploited vulnerability in the Langflow visual framework for building AI agents. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "OpenAI Says Its AI Models Escaped Sandbox, Targeted Hugging Face to Cheat Benchmark",
+   "url": "https://thehackernews.com/2026/07/openai-says-its-own-ai-models-escaped.html",
+   "published": "2026-07-22T11:30:02+00:00",
+   "summary": "OpenAI on Tuesday said a combination of its artificial intelligence (AI) models, including GPT-5.6 Sol and an \"even more capable pre-release model,\" was behind the security incident that targeted Hugging Face's production infrastructure last week. The AI company said the models were operating with \"reduced cyber refusals for evaluation purposes\" that might otherwise limit their ability to"
   },
   {
    "source": "Dark Reading",
-   "title": "Choose Wisely: AI-Generated Coding Risk Varies, A Lot",
-   "url": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies",
-   "published": "2026-07-21T13:00:00+00:00",
-   "summary": "AI-generated code introduces 15 vulnerabilities on average per codebase, but the actual risk depends on framework pairing more than the model used."
+   "title": "EU Financial Institutions Leak Data Through Cookie Trackers",
+   "url": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers",
+   "published": "2026-07-22T11:30:00+00:00",
+   "summary": "European and US banks inadvertently transmitted customer data to ad platforms via tracking pixels, raising serious compliance, security, and privacy concerns."
   },
   {
    "source": "SecurityWeek",
-   "title": "Empirical Security Raises $25 Million in Series A Funding",
-   "url": "https://www.securityweek.com/empirical-security-raises-25-million-in-series-a-funding/",
-   "published": "2026-07-21T12:47:18+00:00",
-   "summary": "The startup will use the investment to accelerate the development of its threat prediction and discovery products. The post Empirical Security Raises $25 Million in Series A Funding appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "SecurityWeek Launches Critical Impact Awards to Recognize Excellence in Industrial Cybersecurity",
-   "url": "https://www.securityweek.com/securityweek-launches-critical-impact-awards-to-recognize-excellence-in-industrial-cybersecurity/",
-   "published": "2026-07-21T12:30:00+00:00",
-   "summary": "Independently judged and sponsor-neutral, the new awards program honors the people, organizations, and technologies delivering proven impact in industrial cybersecurity; winners to be announced live at the 2026 ICS Cybersecurity Conference in Nashville The post SecurityWeek Launches Critical Impact Awards to Recognize Excellence in Industrial Cybersecurity appeared first on SecurityWeek ."
+   "title": "Fourth SharePoint Vulnerability Exploited in Past Month’s Wave of Attacks",
+   "url": "https://www.securityweek.com/fourth-sharepoint-vulnerability-exploited-in-past-months-wave-of-attacks/",
+   "published": "2026-07-22T11:29:16+00:00",
+   "summary": "CVE-2026-50522 is being exploited by threat actors to steal machine keys and retain long-term access. The post Fourth SharePoint Vulnerability Exploited in Past Month's Wave of Attacks appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "Open-Source Android AI Agents Could Let Invisible Screen Text Run Code on Host PCs",
-   "url": "https://thehackernews.com/2026/07/open-source-android-ai-agents-could-let.html",
-   "published": "2026-07-21T11:58:00+00:00",
-   "summary": "An Android app that can draw over other windows and write to shared storage can slip instructions to the AI agent driving that phone, in text no human eye will ever see. Two more steps, and the same app is running commands on the PC driving the agent. Researchers demonstrated that chain, plus six other attacks, against five open-source mobile agent frameworks: AppAgent, AppAgentX,"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "New HollowGraph Malware Abuses Microsoft 365 Calendar for C&C Communication",
-   "url": "https://www.securityweek.com/new-hollowgraph-malware-abuses-microsoft-365-calendar-for-cc-communication/",
-   "published": "2026-07-21T11:55:28+00:00",
-   "summary": "Part of a larger toolkit, HollowGraph uses a compromised 365 account’s calendar as a two-way dead-drop. The post New HollowGraph Malware Abuses Microsoft 365 Calendar for C C Communication appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "N-day is Becoming N-Hour. Patching Faster Won't Save You.",
-   "url": "https://thehackernews.com/2026/07/n-day-is-becoming-n-hour-patching.html",
-   "published": "2026-07-21T11:42:23+00:00",
-   "summary": "Every patch is a confession. The moment a vendor ships a security fix, the diff between the old code and the new code tells anyone watching exactly what was broken and where. Turn that diff back into a working exploit, and you can hit every system that hasn't updated yet. This is N-day exploitation, and it's always been a race: the vendor patches, the clock starts, and defenders try to deploy"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "CISO Conversations: Andreas Gaetje – From Economics to CISO at Körber AG",
-   "url": "https://www.securityweek.com/ciso-conversations-andreas-gaetje-from-economics-to-ciso-at-korber-ag/",
-   "published": "2026-07-21T11:30:00+00:00",
-   "summary": "Gaetje’s story shows that you don’t need to be a ‘deep bit-crawler’ to become a Chief Information Security Officer. The post CISO Conversations: Andreas Gaetje – From Economics to CISO at Körber AG appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "New Bit2Watt Attack Could Let Cloud Tenants Disrupt Power Grids Without an Exploit",
-   "url": "https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html",
-   "published": "2026-07-21T11:24:50+00:00",
-   "summary": "A cloud tenant using nothing but ordinary GPU access can push a data center's power draw up and down fast enough to threaten the grid it runs on, with no exploit and no break-in. That is the claim behind Bit2Watt, described by three Zhejiang University researchers in a paper accepted to CHES 2026, the IACR's hardware-security conference, and the evidence splits in two: they measured the power"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Estée Lauder Discloses Impact From Oracle EBS Zero-Day Hack",
-   "url": "https://www.securityweek.com/estee-lauder-discloses-impact-from-oracle-ebs-zero-day-hack/",
-   "published": "2026-07-21T11:12:33+00:00",
-   "summary": "Hackers exfiltrated personal, financial, and health information from the company’s Oracle EBS instance in August 2025. The post Estée Lauder Discloses Impact From Oracle EBS Zero-Day Hack appeared first on SecurityWeek ."
+   "title": "Why Modern SOCs Need Multi-Layered Detections",
+   "url": "https://thehackernews.com/2026/07/why-modern-socs-need-multi-layered.html",
+   "published": "2026-07-22T11:25:35+00:00",
+   "summary": "The cycle is over. For years, cybersecurity followed a familiar pattern: defenses improved, attackers adapted, and the back-and-forth continued. Today, AI-equipped attackers are simply outpacing defenses. Most intrusions now bypass endpoint and malware-based detection entirely. The CrowdStrike Global Threat Report estimates around 79% of attacks are malware-free, as threat actors rely on"
   },
   {
    "source": "BleepingComputer",
-   "title": "US seizes over 1,000 websites in FIFA World Cup piracy crackdown",
-   "url": "https://www.bleepingcomputer.com/news/security/us-seizes-over-1-000-fifa-world-cup-illegal-streaming-domains/",
-   "published": "2026-07-21T11:07:07+00:00",
-   "summary": "The U.S. Justice Department has seized more than 1,000 websites and blocked 1,970 domains used to stream FIFA World Cup 2026 matches without authorization. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Meta Paid $78,000 Bounty for Vulnerability Exposing Customer Support Data",
-   "url": "https://www.securityweek.com/meta-pays-78000-bounty-for-vulnerability-exposing-customer-support-data/",
-   "published": "2026-07-21T10:19:21+00:00",
-   "summary": "A security researcher discovered a broken access control vulnerability in Meta’s support infrastructure. The post Meta Paid $78,000 Bounty for Vulnerability Exposing Customer Support Data appeared first on SecurityWeek ."
+   "title": "Stop renting storage space — this lifetime 2TB plan is yours for $59",
+   "url": "https://www.bleepingcomputer.com/news/security/stop-renting-storage-space-this-lifetime-2tb-plan-is-yours-for-59/",
+   "published": "2026-07-22T11:09:16+00:00",
+   "summary": "Cloud storage costs tend to creep up over time, since most services charge monthly or annually for as long as you use them. FileJump's Lifetime Plan skips that model entirely, offering 2TB of cloud storage for a single payment of $59 (MSRP $467). [...]"
   },
   {
    "source": "BleepingComputer",
-   "title": "Critical Palo Alto VPN bug now exploited by Qilin ransomware gang",
-   "url": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
-   "published": "2026-07-21T10:12:24+00:00",
-   "summary": "The Qilin ransomware gang is exploiting a critical PAN-OS GlobalProtect authentication bypass flaw to breach victims' networks, according to cybersecurity company Arctic Wolf. [...]"
+   "title": "Microsoft to stop Exchange 2016 / 2019 security updates in October",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/",
+   "published": "2026-07-22T10:44:52+00:00",
+   "summary": "Microsoft has reminded customers that it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Endpoint Security Firm Glow Launches With $180M in Funding at $1.2B Valuation",
+   "url": "https://www.securityweek.com/endpoint-security-firm-glow-launches-with-180m-in-funding-at-1-2b-valuation/",
+   "published": "2026-07-22T10:00:00+00:00",
+   "summary": "Using AI, the startup provides adaptive prevention through environment mapping, risk analysis, and automated policy enforcement. The post Endpoint Security Firm Glow Launches With $180M in Funding at $1.2B Valuation appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Oracle Patches Over 1,400 Vulnerabilities With Quarterly Security Updates",
+   "url": "https://www.securityweek.com/oracle-patches-over-1400-vulnerabilities-with-quarterly-security-updates/",
+   "published": "2026-07-22T09:33:12+00:00",
+   "summary": "Many of the vulnerabilities fixed with the July 2026 Critical Patch Update were likely discovered by AI. The post Oracle Patches Over 1,400 Vulnerabilities With Quarterly Security Updates appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Ransomware Group Threatening to Leak Data Stolen From Coca-Cola’s Fairlife",
+   "url": "https://www.securityweek.com/ransomware-group-threatening-to-leak-data-stolen-from-coca-colas-fairlife/",
+   "published": "2026-07-22T08:32:02+00:00",
+   "summary": "The Anubis ransomware group claims to have stolen 1 TB of confidential data from the Coca-Cola subsidiary. The post Ransomware Group Threatening to Leak Data Stolen From Coca-Cola's Fairlife appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "OpenAI Says Its AI Models Broke Loose and Hacked Hugging Face",
+   "url": "https://www.securityweek.com/openai-says-its-ai-models-broke-loose-and-hacked-hugging-face/",
+   "published": "2026-07-22T07:48:49+00:00",
+   "summary": "OpenAI says its AI models went rogue, as CISOS call the incident a watershed moment, warning that autonomous AI threat models have officially crossed into production reality. The post OpenAI Says Its AI Models Broke Loose and Hacked Hugging Face appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Chick-fil-A discloses data breach after credential stuffing attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/chick-fil-a-discloses-data-breach-after-credential-stuffing-attacks/",
+   "published": "2026-07-22T06:40:29+00:00",
+   "summary": "American fast food restaurant chain Chick-fil-A is notifying customers of a data breach after their accounts were hacked in a wave of recent credential stuffing attacks. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Police Dismantle Kratos Phishing Kit Built to Steal Microsoft 365 Sessions and Bypass MFA",
+   "url": "https://thehackernews.com/2026/07/police-dismantle-kratos-phishing-kit.html",
+   "published": "2026-07-22T06:38:45+00:00",
+   "summary": "German and US law enforcement have taken down the core infrastructure of Kratos, described by German investigators as one of the world's most widely used criminal phishing kits, and Indonesian authorities arrested the man they say developed and ran it. In a joint announcement on Monday, the Frankfurt public prosecutor's cybercrime unit (ZIT) and Germany's Federal Criminal Police Office (BKA)"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Trojanized Newtonsoft.Json Fork Hides Game-Rigging Code in a Working Library",
+   "url": "https://thehackernews.com/2026/07/trojanized-newtonsoftjson-fork-hides.html",
+   "published": "2026-07-22T06:00:06+00:00",
+   "summary": "Cybersecurity researchers have discovered a NuGet typosquat that's unlike the typical information-stealing malware distributed via package registries: usual info-stealers: it's designed to rig live game results on Digitain. The package, named \"Newtonsoftt.Json.Net,\" masquerades as the Newtonsoft.Json library and is a trojanized fork. Seven versions of the package have been published to the"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "OpenAI says its AI models hacked Hugging Face during testing",
+   "url": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/",
+   "published": "2026-07-22T05:19:20+00:00",
+   "summary": "OpenAI says its AI models, including GPT‑5.6 Sol and a pre-release model, hacked into the Hugging Face artificial intelligence repository while being tested in a sandboxed testing environment. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Microsoft Azure DevOps MCP Flaw Lets Hidden PR Comments Hijack AI Review Agents",
+   "url": "https://thehackernews.com/2026/07/microsoft-azure-devops-mcp-flaw-lets.html",
+   "published": "2026-07-22T04:57:52+00:00",
+   "summary": "A single invisible comment in an Azure DevOps pull request can turn a reviewer's own AI coding agent against them, driving it into projects the attacker has no rights to reach and quietly leaking what it finds. The flaw is in Microsoft's official Azure DevOps MCP server, and it works because one of its tools returns pull request descriptions without a prompt-injection guardrail the company had"
+  },
+  {
+   "source": "Krebs on Security",
+   "title": "LG to Ban Residential Proxies from Smart TV Apps",
+   "url": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
+   "published": "2026-07-22T01:10:38+00:00",
+   "summary": "The home appliance giant LG Electronics USA said this week it plans to suspend any apps built for its smart TVs that turn one's television into an always-on residential proxy node. The move comes less than a month after researchers found that more than 42 percent of games and other apps available for download on LG's webOS store allow unknown third-parties to route their Internet traffic through a user's TV."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Police dismantle Kratos phishing platform, arrest developer",
+   "url": "https://www.bleepingcomputer.com/news/security/police-dismantle-kratos-phishing-platform-arrest-developer/",
+   "published": "2026-07-21T23:07:33+00:00",
+   "summary": "Authorities in Germany and the U.S. dismantled the central infrastructure of Kratos, a phishing-as-a-service (PhaaS) platform with global reach, and its developer was arrested in Indonesia. [...]"
   },
   {
    "source": "CyberScoop",
-   "title": "What the World Cup can teach us about cybersecurity resilience",
-   "url": "https://cyberscoop.com/world-cup-2026-major-event-cybersecurity-resilience-op-ed/",
-   "published": "2026-07-21T10:00:00+00:00",
-   "summary": "Future major events can’t rely on yesterday's playbook. Lessons from the World Cup show why true cyber resilience starts months before kickoff and extends far beyond stadium perimeters. The post What the World Cup can teach us about cybersecurity resilience appeared first on CyberScoop ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Clover Health Investments Discloses Data Breach",
-   "url": "https://www.securityweek.com/clover-health-investments-discloses-data-breach/",
-   "published": "2026-07-21T09:36:51+00:00",
-   "summary": "Using social engineering, hackers compromised employee accounts with access to personal and health information. The post Clover Health Investments Discloses Data Breach appeared first on SecurityWeek ."
+   "title": "OpenAI says model test was behind Hugging Face hack",
+   "url": "https://cyberscoop.com/openai-chatgpt-hugging-face-cyberattack-data-poisoning/",
+   "published": "2026-07-21T22:38:55+00:00",
+   "summary": "At the time, Hugging Face said it wasn’t clear which LLM was used in the attack. OpenAI confirmed it was one of their models being tested for “maximal” cyber capabilities. The post OpenAI says model test was behind Hugging Face hack appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Microsoft shares manual fix for WSUS sync delays and timeouts",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-manual-fix-for-wsus-sync-delays-and-timeouts/",
-   "published": "2026-07-21T09:05:50+00:00",
-   "summary": "Microsoft has shared manual mitigations to help IT administrators fix Windows Server Update Services (WSUS) servers affected by a known issue that causes Windows Update scans to fail or time out. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
-   "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-   "published": "2026-07-21T08:59:30+00:00",
-   "summary": "Attackers have begun to exploit two critical vulnerabilities in WordPress that, when combined together, enable unauthenticated remote code execution (RCE) and complete compromise of vulnerable websites. The two security flaws, tracked as CVE-2026-63030 and CVE-2026-60137, have been codenamed wp2shell. \"By the early hours of Saturday morning (UTC), successful exploitation was already well"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Exploitation of ServiceNow Vulnerability Seen Days After Disclosure",
-   "url": "https://www.securityweek.com/exploitation-of-servicenow-vulnerability-seen-days-after-disclosure/",
-   "published": "2026-07-21T08:41:53+00:00",
-   "summary": "The ServiceNow AI platform vulnerability tracked as CVE-2026-6875 can be exploited for remote code execution. The post Exploitation of ServiceNow Vulnerability Seen Days After Disclosure appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Zimbra Update Patches Critical Vulnerabilities",
-   "url": "https://www.securityweek.com/zimbra-update-patches-critical-vulnerabilities/",
-   "published": "2026-07-21T08:20:08+00:00",
-   "summary": "The latest Zimbra refresh resolves command injection, XSS, restriction bypass, and SSRF security defects. The post Zimbra Update Patches Critical Vulnerabilities appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Windows LegacyHive zero-day flaw gets free, unofficial patches",
-   "url": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
-   "published": "2026-07-21T08:06:26+00:00",
-   "summary": "Free unofficial patches are available for a recently disclosed Windows zero-day flaw that allows attackers to escalate privileges on up-to-date Windows systems. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
-   "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
-   "published": "2026-07-21T07:34:32+00:00",
-   "summary": "Researchers at Sysdig have linked a second attack on the same Langflow server to JADEPUFFER, the AI-agent-driven operator it first documented earlier this month. The same operator has now been spotted deploying ENCFORGE, a new compiled Go ransomware designed to encrypt model weights, vector indexes, training datasets, and other AI infrastructure files across the host filesystem. The entry"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Critical ServiceNow AI Platform Flaw Exploited for Unauthenticated Code Execution",
-   "url": "https://thehackernews.com/2026/07/critical-servicenow-ai-platform-flaw.html",
-   "published": "2026-07-21T06:29:26+00:00",
-   "summary": "Threat actors are now exploiting a recently disclosed critical security flaw impacting ServiceNow AI Platform, according to Defused Cyber. In a post shared on X, the threat intelligence firm said it's observing in-the-wild exploitation of CVE-2026-6875 (CVSS score: 9.5), a sandbox escape vulnerability that could allow an unauthenticated user to run arbitrary code. Patches for the flaw were"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Estée Lauder discloses data breach via Oracle E-Business flaw",
-   "url": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/",
-   "published": "2026-07-20T22:39:30+00:00",
-   "summary": "Cosmetics giant Estée Lauder is notifying customers of a data breach after hackers exploited a flaw in Oracle E-Business Suite that the company used for human resources (HR) operations. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "SonicWall SMA1000 flaws exploited as zero-days to push custom malware",
-   "url": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/",
-   "published": "2026-07-20T22:23:23+00:00",
-   "summary": "Two recently disclosed SonicWall SMA1000 vulnerabilities were exploited in zero-day attacks for weeks, allowing threat actors to install custom malware on vulnerable VPN appliances. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers steal $23.7 million in crypto from Ostium in off-chain attack",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/",
-   "published": "2026-07-20T22:22:56+00:00",
-   "summary": "The Ostium trading platform announced that an attacker stole $23.75 million from its liquidity provider vault last week, after compromising off-chain infrastructure used to feed prices into the protocol. [...]"
+   "title": "FakeGit campaign uses 7,600 GitHub repos to push SmartLoader malware",
+   "url": "https://www.bleepingcomputer.com/news/security/fakegit-campaign-uses-7-600-github-repos-to-push-smartloader-malware/",
+   "published": "2026-07-21T22:34:17+00:00",
+   "summary": "A large-scale operation dubbed 'FakeGit' is pushing SmartLoader and StealC malware through 7,600 malicious GitHub repositories that accumulated more than 14 million downloads. [...]"
   },
   {
    "source": "Dark Reading",
-   "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-   "published": "2026-07-20T21:38:18+00:00",
-   "summary": "Barely three days after disclosure, attackers are widely chaining together CVE-2026-60137 and CVE-2026-63030 to lob exploit attempts against one of the largest attack surfaces on the Internet."
+   "title": "Ransomware Is Accelerating, But It's Not Because of AI",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai",
+   "published": "2026-07-21T21:48:05+00:00",
+   "summary": "Researchers pointed to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expansion of attacks on less defended organizations."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Using LLMs to Find and Prioritize Vulnerabilities Is No Easy Task",
+   "url": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task",
+   "published": "2026-07-21T21:27:37+00:00",
+   "summary": "The latest large language models have high false-positive rates and fail to take into account the context of scans, leading to more work for AppSec professionals."
   },
   {
    "source": "BleepingComputer",
-   "title": "Cursor, Codex, Gemini CLI, Antigravity hit by sandbox escapes",
-   "url": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/",
-   "published": "2026-07-20T21:14:42+00:00",
-   "summary": "Researchers escaped the sandboxes in Cursor, Codex, Gemini CLI and Antigravity by having the AI agent write files that trusted host tools later run. Multiple CVEs, patches, and Google downgrading two Antigravity findings. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "JadePuffer agentic attacks now target AI model data with ransomware",
-   "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
-   "published": "2026-07-20T21:08:02+00:00",
-   "summary": "The JadePuffer autonomous AI agent has upgraded with custom malware called EncForge that focuses on encrypting AI assets, such as training datasets, vector databases, and model checkpoints. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Remediating Vulnerabilities With LLMs: Inside Ivanti's Automation Push",
-   "url": "https://www.darkreading.com/cybersecurity-operations/remediating-vulnerabilities-llms-ivanti-automation",
-   "published": "2026-07-20T20:26:56+00:00",
-   "summary": "Ivanti CSO Daniel Spicer says frontier models have shown surprising effectiveness in early stages, but cost and human-in-the-loop viability remain open questions."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "25 Years After Code Red: What the Worm Era Can Teach Us About AI Security",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/25-years-after-code-red-what-the-worm-era-can-teach-us-about-ai-security-2",
-   "published": "2026-07-20T19:32:04+00:00",
-   "summary": "Marc Maiffret reflects on Code Red's legacy and the security lessons helping organizations navigate AI risk today."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "CISOs Feel the Heat Over AI Risk",
-   "url": "https://www.darkreading.com/cybersecurity-operations/cisos-feel-heat-ai-risk",
-   "published": "2026-07-20T19:07:01+00:00",
-   "summary": "Job pressures have increased as companies run headlong into AI adoption, causing 26% of top security executives to consider leaving their position."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Attackers Combo Up Evasion Tactics for BEC Phishing",
-   "url": "https://www.darkreading.com/endpoint-security/attackers-combo-evasion-tactics-bec-phishing",
-   "published": "2026-07-20T18:30:22+00:00",
-   "summary": "The TFF Trap uses fileless techniques and loaders with low detection rates to deploy various RATs and stealers, including Agent Tesla, Remcos, XWorm, and Best Private Logger."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "FakeGit Campaign Uses 7,600 GitHub Repositories to Spread SmartLoader Malware",
-   "url": "https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html",
-   "published": "2026-07-20T18:23:03+00:00",
-   "summary": "Cybersecurity researchers have discovered nearly 7,600 malicious GitHub repositories, out of which more than 800 pose as artificial intelligence (AI) skills or Model Context Protocol (MCP) servers to deliver a malware family known as SmartLoader as part of an ongoing campaign codenamed FakeGit. \"FakeGit uses copied projects, lookalike developer profiles, convincing READMEs, and malicious ZIP"
+   "title": "Critical SharePoint RCE flaw exploited to steal machine keys",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/",
+   "published": "2026-07-21T20:06:55+00:00",
+   "summary": "Hackers are actively exploiting the critical CVE-2026-50522 vulnerability in Microsoft SharePoint to steal machine keys and maintain access even after affected servers are patched. [...]"
   },
   {
    "source": "CyberScoop",
-   "title": "Director of Commerce AI standards office out after three months",
-   "url": "https://cyberscoop.com/director-of-commerce-ai-standards-office-out-after-three-months/",
-   "published": "2026-07-20T18:10:03+00:00",
-   "summary": "The Center for AI Standards and Innovation has quietly become a key hub for the federal government to assess potential threats and harms that AI systems pose. The post Director of Commerce AI standards office out after three months appeared first on CyberScoop ."
+   "title": "AI models keep getting caught cheating",
+   "url": "https://cyberscoop.com/ai-models-cheat-deceive-users-aisi-report/",
+   "published": "2026-07-21T19:20:08+00:00",
+   "summary": "New research from the UK shows how nearly every model tested tried to cheat, scam or cut corners on its way to solving problems. The post AI models keep getting caught cheating appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "New HollowGraph malware uses Microsoft Graph for stealthy C2 comms",
-   "url": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/",
-   "published": "2026-07-20T17:43:01+00:00",
-   "summary": "A malicious component dubbed HollowGraph uses the calendar feature in compromised Microsoft 365 mailboxes as a command-and-control channel to receive attacker commands and exfiltrate stolen data. [...]"
+   "title": "Anubis ransomware claims Coca-Cola Fairlife attack, threatens data leak",
+   "url": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/",
+   "published": "2026-07-21T18:50:54+00:00",
+   "summary": "The Anubis ransomware gang has claimed responsibility for the cyberattack on Coca-Cola's Fairlife dairy subsidiary, threatening to publish allegedly stolen corporate data unless the company pays a ransom. [...]"
   },
   {
    "source": "The Hacker News",
-   "title": "Exposed Server Reveals AI-Assisted Phishing Toolkit Behind WebDAV Malware Campaign",
-   "url": "https://thehackernews.com/2026/07/exposed-server-reveals-ai-assisted.html",
-   "published": "2026-07-20T17:29:50+00:00",
-   "summary": "A malware operator left its delivery server wide open, and Rapid7 pulled down the whole toolkit: 1,048 files spanning lure templates, filename-spoofing tests, execution experiments, droppers, builder notes, and two campaign chains. One was already live against Windows users in Mexico, delivering an infostealer through a fake government ID-lookup site over WebDAV. What makes it more than a"
+   "title": "Apple Fixes Hide My Email Bug That Exposed Real Addresses in Mail Logs",
+   "url": "https://thehackernews.com/2026/07/apple-fixes-hide-my-email-bug-that.html",
+   "published": "2026-07-21T18:46:32+00:00",
+   "summary": "Apple has moved to address a security flaw in its Hide My Email service that enabled users' real email addresses to be unmasked, effectively undermining the feature's privacy guarantees. 404 Media reported Tuesday that a fix for the issue was deployed by Apple on July 3, 2026, after more than a year, when it was disclosed to the company by Tyler Murphy, co-founder of EasyOptOuts. Hide My Email"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Hacker Turns AI Jailbreaks Into Offensive Attack Platform",
+   "url": "https://www.darkreading.com/cyber-risk/hacker-ai-jailbreaks-offensive-attack-platform",
+   "published": "2026-07-21T18:38:52+00:00",
+   "summary": "A Russian-speaking actor, Trim, dismantled publicly available frontier models and integrated them with offensive security tools."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Where’s the Trump administration line on AI regulation?",
+   "url": "https://cyberscoop.com/trump-admin-ai-safety-cybersecurity-export-controls/",
+   "published": "2026-07-21T18:33:24+00:00",
+   "summary": "The messy approach to U.S. AI regulation reflects both the rapid speed of model cyber capabilities and the White House’s “education” over the past two years, experts said. The post Where’s the Trump administration line on AI regulation? appeared first on CyberScoop ."
   },
   {
    "source": "Cybersecurity Dive",
-   "title": "Researchers trace SonicWall SMA1000 exploitation to late June",
-   "url": "https://www.cybersecuritydive.com/news/researchers-sonicwall-sma1000-exploitation-june/825654/",
-   "published": "2026-07-20T15:10:51+00:00",
-   "summary": "Multiple threat actors, including INC ransomware, have targeted vulnerable firewall systems."
+   "title": "4 ways to secure local developer IDEs and tools without sacrificing velocity",
+   "url": "https://www.cybersecuritydive.com/spons/4-ways-to-secure-local-developer-ides-and-tools-without-sacrificing-velocit/825550/",
+   "published": "2026-07-21T18:29:00+00:00",
+   "summary": "Attention shifts from EDR to Agentic Endpoint Security to close visibility gaps that AI can exploit."
   },
   {
    "source": "SecurityWeek",
-   "title": "Neo Emerges From Stealth With $100M to Control and Secure Enterprise AI Software",
-   "url": "https://www.securityweek.com/neo-emerges-from-stealth-with-100m-to-control-and-secure-enterprise-ai-software/",
-   "published": "2026-07-20T14:54:03+00:00",
-   "summary": "Neo raised money across seed and Series A funding rounds from Andreessen Horowitz, Bessemer Venture Partners, and others. The post Neo Emerges From Stealth With $100M to Control and Secure Enterprise AI Software appeared first on SecurityWeek ."
+   "title": "Trump Orders Defense Contractors to Map Software, Suppliers Across Critical Supply Chains",
+   "url": "https://www.securityweek.com/trump-orders-defense-contractors-to-map-software-suppliers-across-critical-supply-chains/",
+   "published": "2026-07-21T18:16:09+00:00",
+   "summary": "New executive order calls for end-to-end visibility into defense supply chains, including software dependencies, foreign ownership and cyber-related supplier risks. The post Trump Orders Defense Contractors to Map Software, Suppliers Across Critical Supply Chains appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Critical wp2shell WordPress flaws exploited to install webshells",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
+   "published": "2026-07-21T16:41:50+00:00",
+   "summary": "Hackers are exploiting the \"wp2shell\" critical vulnerability suite (CVE-2026-63030 and CVE-2026-60137) affecting WordPress Core to deploy persistent webshells and install malicious plugins on affected servers. [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "House intel bill includes provisions on state and local threat intelligence, election security, AI",
+   "url": "https://cyberscoop.com/house-intel-bill-includes-provisions-on-state-and-local-threat-intelligence-election-security-ai/",
+   "published": "2026-07-21T16:25:59+00:00",
+   "summary": "The House Intelligence Committee advanced its fiscal 2027 authorization legislation Monday. The post House intel bill includes provisions on state and local threat intelligence, election security, AI appeared first on CyberScoop ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "AWS Kiro Flaw Let a Poisoned Web Page Rewrite Its Config and Run Code",
+   "url": "https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html",
+   "published": "2026-07-21T16:06:12+00:00",
+   "summary": "Hidden text on a web page was enough to make Kiro, AWS's agentic coding IDE, rewrite its own configuration file and run an attacker's code on a developer's machine, with no approval step able to stop it. Intezer, in research with Kodem Security, found that a request as ordinary as asking Kiro to summarize a page could end in remote code execution. AWS has patched the issue, and no CVE has been"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "North Korea’s IT worker scheme funds Russia’s war effort",
+   "url": "https://cyberscoop.com/north-korea-it-worker-scheme-funds-russia-war-ukraine/",
+   "published": "2026-07-21T16:00:00+00:00",
+   "summary": "DTEX researchers found a series of transactions in a payment wallet showing North Korean IT worker salaries flowing into sanctioned entities that support the regime’s military programs. The post North Korea's IT worker scheme funds Russia's war effort appeared first on CyberScoop ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Google Launches Gemini 3.5 Flash Cyber AI to Find and Fix Software Vulnerabilities",
+   "url": "https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html",
+   "published": "2026-07-21T15:09:28+00:00",
+   "summary": "Google's DeepMind on Tuesday announced the release of Gemini 3.5 Flash Cyber, a specialized artificial intelligence (AI) model built atop 3.5 Flash that's designed to discover, validate, and patch vulnerabilities quickly and efficiently. According to the tech giant, the model will be exclusively available to governments and trusted partners via CodeMender as part of a limited-access pilot"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Ransomware victims fail to fix flaws that exposed them",
+   "url": "https://www.cybersecuritydive.com/news/ransomware-lingering-weaknesses-black-kite/825791/",
+   "published": "2026-07-21T15:08:51+00:00",
+   "summary": "Many organizations still aren't securing their email or patching vulnerabilities after recovering from attacks, a new report found."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Microsoft SharePoint under attack via new exploit",
+   "url": "https://www.cybersecuritydive.com/news/microsoft-sharepoint-attack-new-exploit/825797/",
+   "published": "2026-07-21T15:06:13+00:00",
+   "summary": "Security researchers warn the potential risk could rival the widespread ToolShell campaign of 2025."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
+   "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+   "published": "2026-07-21T14:57:51+00:00",
+   "summary": "A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr. The vulnerability in question is CVE-2026-50522 (CVSS score: 9.8), a critical deserialization of untrusted data in Microsoft Office SharePoint that could allow an unauthorized attacker to execute code over a network. Microsoft credited DEVCORE"
   }
  ]
 }
