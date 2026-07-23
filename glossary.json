@@ -174,6 +174,12 @@
   "e": "Hugging Face brought in external forensic experts and found its AI tooling's guardrails obstructed the analysis."
  },
  {
+  "t": "Digital Markets Act (DMA)",
+  "c": "Regulatory",
+  "d": "A European Union competition law that limits how the largest tech 'gatekeeper' platforms operate, for example barring them from unfairly favouring their own services over rivals'.",
+  "e": "In July 2026, the EU issued its first DMA fine, penalising Google €890 million for self-preferencing in search and restricting app developers in the Play Store."
+ },
+ {
   "t": "DLL Side-Loading",
   "c": "Malware",
   "d": "Planting a malicious DLL (a Windows code library) next to a trusted program so that when the trusted program starts, Windows loads the attacker's library instead of the real one. The malware inherits the trusted program's reputation and privileges.",
@@ -414,6 +420,12 @@
   "e": "UTA0533 injected Suo5, an open-source HTTP proxy, into a legitimate SonicWall process and reached it at /workplace/error.jsp (July 2026)."
  },
  {
+  "t": "Race Condition",
+  "c": "Vulnerability",
+  "d": "A timing flaw where two operations run at nearly the same moment and an attacker exploits the tiny gap between them to change data or bypass a check before the system finishes its work.",
+  "e": "In July 2026, the RefluXFS Linux flaw (CVE-2026-64600) used a race condition in the XFS filesystem to let a normal user overwrite root-owned files and take over the machine."
+ },
+ {
   "t": "Ransomware",
   "c": "Malware",
   "d": "Malware that encrypts a victim's files, making them inaccessible, then demands payment (usually cryptocurrency) in exchange for the decryption key to restore access.",
@@ -424,6 +436,12 @@
   "c": "Threat/Actor",
   "d": "The attacker's look-around phase after getting in: what machine is this, who is logged on, what else is reachable. It usually precedes the damaging part.",
   "e": "HelloExecutor's job in the HelloNet campaign was command execution and network reconnaissance on the infected host (July 2026)."
+ },
+ {
+  "t": "Remote Access Trojan (RAT)",
+  "c": "Malware",
+  "d": "Malware that gives an attacker hands-on remote control of an infected computer, letting them run commands, steal files, or watch activity as if they were sitting at the keyboard.",
+  "e": "In July 2026, the Chaos ransomware gang deployed a Rust RAT called msaRAT that hid its remote-control traffic inside a headless Chrome browser to avoid detection."
  },
  {
   "t": "Remote Code Execution (RCE)",
