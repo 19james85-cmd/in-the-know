@@ -330,6 +330,12 @@
   "e": "Employees unknowingly installed malware disguised as a shipping notification attachment, granting attackers full network access."
  },
  {
+  "t": "Malware-as-a-Service (MaaS)",
+  "c": "Malware",
+  "d": "A criminal business model where one group builds malware and rents it out to other criminals, much like a legitimate software subscription. It lets low-skill attackers launch sophisticated attacks they could never write themselves.",
+  "e": "In July 2026, the Golden Chickens MaaS operation (aka Venom Spider) resurfaced with four new rentable malware families including TinyEgg and ChonkyChicken."
+ },
+ {
   "t": "MFA",
   "c": "General",
   "d": "Multi-Factor Authentication — requires users to verify identity using two or more factors: something you know (password), have (phone), or are (fingerprint). Dramatically reduces account takeover risk.",
@@ -546,6 +552,12 @@
   "e": "Wp2shell works from an anonymous HTTP request to a WordPress site."
  },
  {
+  "t": "Use-After-Free",
+  "c": "Vulnerability",
+  "d": "A memory-safety bug where a program keeps using a chunk of memory after it has already been released for reuse. Attackers can fill that freed space with their own data to crash the program or run their own code.",
+  "e": "In July 2026, researchers used a use-after-free bug in Redis Streams to build a proof-of-concept that achieved remote code execution, prompting Redis to ship seven emergency releases."
+ },
+ {
   "t": "UUID",
   "c": "General",
   "d": "A long unique number identifying a device or object. Fine as a label — dangerous when it is used as a secret, because identifiers are usually readable by anyone on the box.",
@@ -580,6 +592,12 @@
   "c": "Network",
   "d": "Servers like nginx split work across several worker processes that each handle many connections. Crashing one drops every connection it was serving, so a crash bug in a worker is a real outage, not a hiccup.",
   "e": "CVE-2026-42533 overflows a buffer in an nginx worker process, crashing or restarting it and denying service to everyone it was handling (July 2026)."
+ },
+ {
+  "t": "Zero-Click Attack",
+  "c": "Threat/Actor",
+  "d": "An attack that needs no action from the victim at all — not even a click. Just receiving, opening, or previewing a message can be enough to trigger it, which makes these attacks very hard to avoid through user caution alone.",
+  "e": "In July 2026, Russia's Laundry Bear group used a zero-click flaw in Zimbra webmail (CVE-2025-66376) to steal 90 days of email the moment a victim merely previewed a booby-trapped message."
  },
  {
   "t": "Zero-Day",
