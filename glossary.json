@@ -1,5 +1,11 @@
 [
  {
+  "t": "AD CS",
+  "c": "Network",
+  "d": "Active Directory Certificate Services — the built-in Microsoft Windows system that issues and manages the digital certificates used to prove identity inside a company network. Misconfigurations in AD CS are a common path attackers use to escalate from a normal account to full control of the domain.",
+  "e": "The 'Certighost' exploit disclosed in July 2026 abused AD CS to let a low-privileged user obtain a Domain Controller certificate and take over the whole Active Directory domain."
+ },
+ {
   "t": "Advanced Persistent Threat (APT)",
   "c": "Threat/Actor",
   "d": "A sophisticated, long-term cyberattack where an intruder gains network access and remains hidden for an extended period to steal data or cause damage.",
@@ -46,6 +52,12 @@
   "c": "Malware",
   "d": "Malware that quietly holds a door open for the attacker to return and run commands later, after the original way in has been closed or patched.",
   "e": "HelloExecutor and the Rust-based HelloBackdoor let the HelloNet operators run commands and move files long after the initial infection (July 2026)."
+ },
+ {
+  "t": "Binding Operational Directive (BOD)",
+  "c": "Regulatory",
+  "d": "A compulsory order issued by CISA that requires U.S. federal civilian agencies to take a specific security action, such as patching a dangerous flaw by a set deadline. Though only binding on federal agencies, BODs are widely treated as a signal that private organizations should act too.",
+  "e": "In July 2026, CISA used BOD 26-04 to order federal agencies to patch the actively exploited Check Point SmartConsole flaw (CVE-2026-16232) by July 25."
  },
  {
   "t": "Botnet",
@@ -436,6 +448,12 @@
   "c": "Malware",
   "d": "Malware that encrypts a victim's files, making them inaccessible, then demands payment (usually cryptocurrency) in exchange for the decryption key to restore access.",
   "e": "A hospital chain paid a $4.5M ransom after ransomware encrypted records across 50 facilities, halting surgeries."
+ },
+ {
+  "t": "Ransomware-as-a-Service (RaaS)",
+  "c": "Malware",
+  "d": "A criminal business model in which the developers who build ransomware rent it out to other attackers ('affiliates'), who carry out the break-ins and split the ransom profits. It lets people with little technical skill launch sophisticated ransomware attacks.",
+  "e": "The DevMan RaaS operation detailed in July 2026 ran a web portal where affiliates could build their own ransomware payloads and track their earnings."
  },
  {
   "t": "Reconnaissance",
