@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-25T14:14:06.733534+00:00",
+ "generated": "2026-07-26T14:11:52.483522+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,31 +11,31 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 7,
+   "count": 1,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 3,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 5,
+   "count": 3,
    "error": null
   },
   {
@@ -65,151 +65,32 @@
  ],
  "items": [
   {
-   "source": "The Hacker News",
-   "title": "Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available",
-   "url": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
-   "published": "2026-07-25T12:52:43+00:00",
-   "summary": "Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of the Java process. Tracked as CVE-2026-16723, the vulnerability carries an Alibaba-assigned CVSS score of 9.0. The confirmed chain requires"
+   "source": "BleepingComputer",
+   "title": "Steam forum ClickFix attacks infect gamers with XMRig cryptominers",
+   "url": "https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/",
+   "published": "2026-07-25T22:37:47+00:00",
+   "summary": "Steam discussion forums are being abused in ClickFix attacks that pretend to be fixes for game and computer problems but actually infect devices with cryptominers. [...]"
   },
   {
    "source": "The Hacker News",
-   "title": "Researcher Publishes GitLab RCE PoC Letting Authenticated Users Run Commands as Git",
-   "url": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
-   "published": "2026-07-25T10:14:26+00:00",
-   "summary": "Security researchers at depthfirst published working exploit code on July 24 for a GitLab flaw that GitLab patched six weeks earlier, on June 10. It runs commands as git on any self-managed 18.11.3 server that has not taken the update. Any authenticated user who can push to a project can run it. The attacker commits a crafted Jupyter notebook and opens its commit diff, which leaks a heap"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "CTM360 Research Reveals How Insurance Phishing Has Evolved Into Real-Time Account Hijacking",
-   "url": "https://thehackernews.com/2026/07/ctm360-research-reveals-how-insurance.html",
-   "published": "2026-07-25T10:14:21+00:00",
-   "summary": "For years, phishing campaigns targeting financial institutions followed the same playbook. Victims were tricked into entering usernames and passwords, attackers collected the credentials, and accounts were compromised later when an opportunity arose. That model is changing. Recent investigations into insurance-focused phishing operations reveal a more immediate approach. Instead of harvesting"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Cl0p Affiliates Target Internet-Exposed PTC Windchill and FlexPLM with Unauthenticated RCE",
-   "url": "https://thehackernews.com/2026/07/cl0p-affiliates-target-internet-exposed.html",
-   "published": "2026-07-25T10:14:03+00:00",
-   "summary": "Threat actors linked to the Cl0p (aka Chubby Scorpius, FIN11, Graceful Spider, and Lace Tempest) ransomware campaign are exploiting flaws in internet-exposed PTC Windmill and FlexPLM deployments as part of a new data extortion campaign. \"Attackers chain a pre-authentication information disclosure in the FlexPLM WSDL endpoint with a server-side flaw in the Windchill login servlet, enabling"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "DevMan RaaS Portal Centralizes Payload Builds, Victim Management, and Affiliate Payouts",
-   "url": "https://thehackernews.com/2026/07/devman-raas-portal-centralizes-payload.html",
-   "published": "2026-07-25T09:53:41+00:00",
-   "summary": "The operators of the DevMan ransomware-as-a-service (RaaS) scheme are maintaining a dedicated web platform that offers affiliates the ability to build payloads, oversee earnings, and manage various aspects related to victims. Swiss cybersecurity company PRODAFT is tracking the centrally administered RaaS operation under the name Funky Mantis. \"The portal combined build generation, finance,"
+   "title": "Malvertising Sends Malware in Pieces, Then Makes the Browser Build the Executable",
+   "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+   "published": "2026-07-25T18:48:44+00:00",
+   "summary": "A malvertising operation dubbed SourTrade is making victims' browsers build the final Windows executable themselves, using a legitimate Bun runtime as its base instead of serving one complete malicious file from a fixed URL. Confiant, which detailed the campaign on July 23, 2026, said it has operated since late 2024 and impersonated TradingView, Solana, and Luno to target retail traders and"
   },
   {
    "source": "BleepingComputer",
-   "title": "OpenAI confirms ChatGPT is down worldwide",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
-   "published": "2026-07-25T09:31:09+00:00",
-   "summary": "ChatGPT, the famous artificial intelligence chatbot that allows users to converse with various personalities and topics, has connectivity issues worldwide. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Rockwell Patches Code Execution Flaws in Arena Simulation Software",
-   "url": "https://www.securityweek.com/rockwell-patches-code-execution-flaws-in-arena-simulation-software/",
-   "published": "2026-07-25T08:30:00+00:00",
-   "summary": "A researcher has explained how an attacker could exploit these vulnerabilities to target industrial organizations. The post Rockwell Patches Code Execution Flaws in Arena Simulation Software appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "CISOs vs. Boards: Myth or Misunderstanding?",
-   "url": "https://www.darkreading.com/cybersecurity-operations/cisos-vs-boards-myth-or-misunderstanding-",
-   "published": "2026-07-24T21:31:53+00:00",
-   "summary": "Escalating threats are forcing boards to prioritize security, but communication gaps persist. Boards and security teams each say they need more support to bridge the divide."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Industry’s message on CIRCIA: Please ask us fewer questions about cyberattacks",
-   "url": "https://cyberscoop.com/cisa-circia-cyber-incident-reporting-rule-feedback/",
-   "published": "2026-07-24T20:58:35+00:00",
-   "summary": "The administration set a target date of September for CISA to finalize the rule, but where the agency is headed remains a mystery to some. The post Industry's message on CIRCIA: Please ask us fewer questions about cyberattacks appeared first on CyberScoop ."
+   "title": "Malicious sites use JavaScript to build malware in browser memory",
+   "url": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
+   "published": "2026-07-25T15:21:09+00:00",
+   "summary": "A massive malvertising campaign is using fake Solana, Luno, and TradingView webpages with malicious JavaScript that instructs browsers to assemble malware directly in memory. [...]"
   },
   {
    "source": "BleepingComputer",
-   "title": "OnTrac notifies customers of data breach after network hack",
-   "url": "https://www.bleepingcomputer.com/news/security/ontrac-notifies-customers-of-data-breach-after-network-hack/",
-   "published": "2026-07-24T19:55:01+00:00",
-   "summary": "OnTrac parcel delivery company is informing that hackers breached its corporate network and may have accessed personal details belonging to its customers. [...]"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Despite multiple takedowns, botnets continue to grow",
-   "url": "https://cyberscoop.com/botnets-residential-proxy-networks-proliferate-lumen-black-lotus-labs/",
-   "published": "2026-07-24T19:47:44+00:00",
-   "summary": "Roughly 1 in 4 of those compromised IPs are based in the United States, Lumen’s Black Lotus Labs said. Botnets like IPIDEA have also rebounded quickly, surpassing their pre-disruption footprint. The post Despite multiple takedowns, botnets continue to grow appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Escape Artists: 'Incorrigible' AI Models Resist Rehabilitation",
-   "url": "https://www.darkreading.com/cybersecurity-operations/incorrigible-ai-models-resist-rehabilitation",
-   "published": "2026-07-24T19:45:02+00:00",
-   "summary": "The hacking of Hugging Face by a rogue OpenAI agent is significant, but unsurprising — and preventing the next AI model escape will be difficult, at best."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hermes AI agent used to automate attack on Thai Finance Ministry",
-   "url": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/",
-   "published": "2026-07-24T19:09:09+00:00",
-   "summary": "A threat actor used the open-source Hermes AI agent in unattended \"YOLO\" mode to automate post-exploitation activity during an alleged breach of Thailand's Ministry of Finance. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers hijack hotel Wi-Fi DNS to steal Microsoft 365 accounts",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/",
-   "published": "2026-07-24T17:50:37+00:00",
-   "summary": "Hackers are changing the DNS settings on Wi-Fi devices at hotels and conference centers to redirect users to fake Microsoft 365 login pages. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft blames massive Microsoft 365 outage on maintenance bug",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/",
-   "published": "2026-07-24T15:41:44+00:00",
-   "summary": "Microsoft says a bug in its automated network maintenance request system caused Thursday's massive outage by mistakenly removing IP routes from more devices than intended, disrupting Azure and Microsoft 365 services. [...]"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Microsoft, tech companies throw weight behind spread of open-source AI",
-   "url": "https://cyberscoop.com/tech-leaders-open-source-ai-cybersecurity/",
-   "published": "2026-07-24T15:22:15+00:00",
-   "summary": "Other signatories of the letter include Meta, Palantir, Perplexity, Mistral, NVIDIA, Mozilla, The Linux Foundation, Hugging Face, Dell Technologies and IBM. The post Microsoft, tech companies throw weight behind spread of open-source AI appeared first on CyberScoop ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "BlueNoroff Zoom Phishing Kit Profiles Crypto Wallets Before Malware Delivery",
-   "url": "https://thehackernews.com/2026/07/bluenoroff-zoom-phishing-kit-profiles.html",
-   "published": "2026-07-24T15:12:35+00:00",
-   "summary": "The North Korean threat actors behind the ClickFix-style campaigns that employ typosquatted Zoom and Microsoft Teams domains have been found to operate an active phishing kit to impersonate the videoconferencing platforms in social engineering campaigns designed to deliver malware. \"BlueNoroff has operationalised trust abuse by combining compromised industry contacts, social engineering, wallet"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Zero-day flaw in Check Point SmartConsole is under exploitation",
-   "url": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/",
-   "published": "2026-07-24T14:55:37+00:00",
-   "summary": "Researchers warned the vulnerability offers an attacker the ability to make key changes to security configurations."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "The most vulnerable AI products are also some of the most commonly exposed online",
-   "url": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/",
-   "published": "2026-07-24T14:26:10+00:00",
-   "summary": "It is becoming increasingly easy for hackers to target vulnerable AI tools on companies' networks, even as those companies come to depend on them for more tasks."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "In Other News: Dolphin X AI-Powered Malware, Car Anti-Theft Device Hack, 400 Linux Kernel Flaws",
-   "url": "https://www.securityweek.com/in-other-news-dolphin-x-ai-powered-malware-car-anti-theft-device-hack-400-linux-kernel-flaws/",
-   "published": "2026-07-24T14:20:00+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: Siemens ROX II industrial switch vulnerabilities, Russian Zimbra webmail espionage campaign, Stadler Rail ransomware extortion attempt. The post In Other News: Dolphin X AI-Powered Malware, Car Anti-Theft Device Hack, 400 Linux Kernel Flaws appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Certighost Exploit Lets Low-Privileged Active Directory Users Impersonate a Domain Controller",
-   "url": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html",
-   "published": "2026-07-24T14:15:21+00:00",
-   "summary": "Researchers H0j3n and Aniq Fakhrul published a working exploit on July 24 that lets a low-privileged Active Directory user obtain a certificate for a Domain Controller and authenticate as that machine. They codenamed the flaw Certighost. Because Domain Controller accounts carry directory replication rights, the resulting Kerberos credential can retrieve the krbtgt secret through DCSync."
+   "title": "ShinyHunters data leaks fuel $2,000 sextortion email scam",
+   "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-data-leaks-fuel-2-000-sextortion-email-scam/",
+   "published": "2026-07-25T14:16:26+00:00",
+   "summary": "Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin. [...]"
   }
  ]
 }
