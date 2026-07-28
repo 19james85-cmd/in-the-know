@@ -99,21 +99,53 @@ python3 -c "import json,sys; d=json.load(open(sys.argv[1])); assert all(k in d f
 2. Find up to **3** beginner-relevant cybersecurity terms that appear in
    today's stories but are **not** already present (case-insensitive compare
    against `t`).
-3. For each, append `{"t","c","d","e"}`:
+3. Keep `t` **short and matchable** — the dashboard auto-links glossary terms
+   by whole-string match against story bodies. "Path Traversal" links;
+   "Path traversal (../ sequences)" never will.
+4. For each, append `{"t","c","d","e"}`:
    - `c` from exactly: Vulnerability, Threat/Actor, Malware, Network,
      Regulatory, Cryptography, General
    - `d`: 1–2 plain-English sentences for an absolute beginner
    - `e`: one concrete, realistic example sentence
-4. Keep the array sorted by `t` (case-insensitive). **Never modify or delete
+5. Keep the array sorted by `t` (case-insensitive). **Never modify or delete
    existing entries.**
+6. Rebuild the lightweight index the dashboard loads on every page view:
 
-## Step 8 — Commit and push
+   ```
+   python3 scripts/build_glossary_index.py
+   ```
+
+   This writes `glossary-index.json` (term + category only, ~4K). The full
+   `glossary.json` with definitions is fetched lazily, only when a reader
+   clicks a term or opens the Glossary tab — so page weight stays flat as the
+   glossary grows. The script also fails loudly on duplicate terms, which is
+   your check that step 2 didn't re-add something.
+
+## Step 8 — Rotate the archive
+
+`briefings/` holds a rolling **14 days**. Anything older moves into a
+month bundle so the directory stays flat:
 
 ```
-git add briefings/ glossary.json
+python3 scripts/rotate_archive.py
+```
+
+This moves stale briefings into `archive/YYYY-MM.json`, then rewrites
+`briefings/index.json` with `latest`, the full `dates` list, and `archived`.
+Nothing is lost — `dates` still contains **every** date ever published, and the
+dashboard falls back to `archive/YYYY-MM.json` when a briefing isn't in
+`briefings/`. Prev/next still walks the whole history.
+
+Run this **after** writing today's briefing and **before** committing. It is
+idempotent; re-running it is safe. Use `--dry-run` to preview.
+
+## Step 9 — Commit and push
+
+```
+git add briefings/ archive/ glossary.json glossary-index.json
 git commit -m "Daily briefing YYYY-MM-DD"
 git push origin main
 ```
 
-Only ever commit `briefings/*` and `glossary.json`. Never commit
-`candidates.json` or changes to any other file.
+Only ever commit those four paths. Never commit `data/candidates.json`,
+`index.html`, or the token file.

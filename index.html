@@ -129,7 +129,7 @@ body{background:#0b0b10;margin:0;padding:0}
   <button class="tab" onclick="sw(2)">Threat actors</button>
   <button class="tab" onclick="sw(3)">Regulatory</button>
   <button class="tab" onclick="sw(4)">Trends</button>
-  <button class="tab" onclick="sw(5)">Glossary</button>
+  <button class="tab" onclick="sw(5);openGlossary()">Glossary</button>
   <button class="tab" onclick="sw(6)">Sources</button>
 </div>
 
@@ -194,7 +194,7 @@ body{background:#0b0b10;margin:0;padding:0}
 </div>
 
 <script>
-let GL=[];
+let GL=[],GLFULL=null,glPromise=null;
 const SRC=[
   {n:"CISA",s:"Official government guidance",b:"Authoritative info on KEVs and national alerts",u:"https://www.cisa.gov",c:["Regulatory","CVEs"]},
   {n:"The Hacker News",s:"Speed and global scope",b:"Immediate updates on new exploits and major breaches",u:"https://thehackernews.com",c:["CVEs","Breaking news"]},
@@ -263,10 +263,24 @@ function renderBriefing(data){
 
 function sw(n){document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i===n));document.querySelectorAll('.panel').forEach((p,i)=>p.classList.toggle('show',i===n))}
 function ta(btn){const cv=btn.querySelector('.cv');const body=btn.nextElementSibling;const o=body.classList.toggle('open');cv.classList.toggle('open',o)}
-function gd(key){const k=key.toLowerCase();const e=GL.find(g=>g.t.toLowerCase()===k||g.t.toLowerCase().includes(k));if(!e)return;document.getElementById('d-term').textContent=e.t;document.getElementById('d-cat').textContent=e.c;document.getElementById('d-txt').textContent=e.d;document.getElementById('d-ex').innerHTML='<strong>Real-world example:</strong> '+e.e;document.getElementById('dov').classList.add('show');document.getElementById('itk-root').scrollIntoView({block:'start'})}
+async function gd(key){await ensureGL();const k=key.toLowerCase();const e=GL.find(g=>g.t.toLowerCase()===k||g.t.toLowerCase().includes(k));if(!e)return;document.getElementById('d-term').textContent=e.t;document.getElementById('d-cat').textContent=e.c;document.getElementById('d-txt').textContent=e.d;document.getElementById('d-ex').innerHTML='<strong>Real-world example:</strong> '+e.e;document.getElementById('dov').classList.add('show');document.getElementById('itk-root').scrollIntoView({block:'start'})}
 function closeDef(ev){if(!ev||ev.target===document.getElementById('dov'))document.getElementById('dov').classList.remove('show')}
+function ensureGL(){
+  if(GLFULL)return Promise.resolve(GLFULL);
+  if(glPromise)return glPromise;
+  glPromise=fetch('glossary.json').then(r=>{if(!r.ok)throw new Error('glossary '+r.status);return r.json()})
+    .then(g=>{g.sort((a,b)=>a.t.localeCompare(b.t));GLFULL=g;GL=g;return g})
+    .catch(e=>{glPromise=null;throw e});
+  return glPromise;
+}
+function openGlossary(){
+  const grid=document.getElementById('glos-grid');
+  if(GLFULL){rg(GL);return}
+  grid.innerHTML='<div class="fnote">Loading glossary\u2026</div>';
+  ensureGL().then(()=>rg(GL)).catch(()=>{grid.innerHTML='<div class="fnote">Glossary unavailable \u2014 check back shortly.</div>'});
+}
 function rg(data){document.getElementById('glos-grid').innerHTML=data.map(e=>`<div class="gcard"><div class="gcard-h"><div class="gcard-t">${e.t}</div><div class="gcard-c">${e.c}</div></div><div class="gcard-d">${e.d}</div><div class="gcard-e"><strong>Example:</strong> ${e.e}</div></div>`).join('');document.getElementById('gcount').textContent=GL.length;document.getElementById('m3').textContent=GL.length}
-function fg(){const q=document.getElementById('gsearch').value.toLowerCase();const c=document.getElementById('gcat').value;rg(GL.filter(g=>(!q||g.t.toLowerCase().includes(q)||g.d.toLowerCase().includes(q))&&(!c||g.c===c)))}
+function fg(){if(!GLFULL)return;const q=document.getElementById('gsearch').value.toLowerCase();const c=document.getElementById('gcat').value;rg(GL.filter(g=>(!q||g.t.toLowerCase().includes(q)||g.d.toLowerCase().includes(q))&&(!c||g.c===c)))}
 function rs(){document.getElementById('src-grid').innerHTML=SRC.map(s=>`<div class="scard"><div class="sc-name">${s.n}</div><div class="sc-str">${s.s}</div><div class="sc-best">${s.b}</div><div class="sc-cats">${s.c.map(c=>`<span class="tag a">${c}</span>`).join('')}</div><a class="sc-url" href="${s.u}" target="_blank">${s.u.replace('https://','')}</a></div>`).join('')}
 
 let IDX=null,curDate=null;
@@ -275,10 +289,23 @@ function todayISO(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Lo
 function fmtDate(ds){const[y,m,d]=ds.split('-').map(Number);return new Date(y,m-1,d).toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}
 function setNav(){const i=IDX?IDX.dates.indexOf(curDate):-1;document.getElementById('nav-prev').disabled=!IDX||i<=0;document.getElementById('nav-next').disabled=!IDX||i<0||i>=IDX.dates.length-1}
 
-async function loadBriefing(ds){
+const ARCH={};
+async function fetchBriefing(ds){
   const r=await fetch('briefings/'+ds+'.json');
-  if(!r.ok)throw new Error('briefing fetch '+r.status);
-  const data=await r.json();
+  if(r.ok)return r.json();
+  if(r.status!==404)throw new Error('briefing fetch '+r.status);
+  const m=ds.slice(0,7);
+  if(!ARCH[m]){
+    ARCH[m]=fetch('archive/'+m+'.json').then(a=>{if(!a.ok)throw new Error('archive '+a.status);return a.json()})
+      .catch(e=>{delete ARCH[m];throw e});
+  }
+  const bundle=await ARCH[m];
+  if(!bundle[ds])throw new Error('no briefing for '+ds);
+  return bundle[ds];
+}
+
+async function loadBriefing(ds){
+  const data=await fetchBriefing(ds);
   curDate=ds;
   renderBriefing(data);
   document.getElementById('itk-date').textContent=fmtDate(ds)+(ds===IDX.latest&&ds<todayISO()?' \u2014 latest available':'');
@@ -304,10 +331,12 @@ function showErr(){
 async function init(){
   document.getElementById('itk-date').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
   try{
-    const g=await fetch('glossary.json');
+    const g=await fetch('glossary-index.json');
     if(g.ok){GL=await g.json();GL.sort((a,b)=>a.t.localeCompare(b.t));}
   }catch(e){}
-  rg(GL);rs();
+  document.getElementById('gcount').textContent=GL.length;
+  document.getElementById('m3').textContent=GL.length;
+  rs();
   try{
     const r=await fetch('briefings/index.json');
     if(!r.ok)throw new Error('index fetch '+r.status);

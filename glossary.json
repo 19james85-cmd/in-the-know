@@ -72,6 +72,12 @@
   "e": "Attackers used automated tools to try millions of password combinations per second against an online banking portal."
  },
  {
+  "t": "BYOVD",
+  "c": "Malware",
+  "d": "Short for Bring Your Own Vulnerable Driver. An attacker installs a real, properly signed device driver that happens to contain a known flaw, then abuses that flaw to get deep kernel-level control of Windows and switch off security software. Windows loads it willingly because the signature is genuine.",
+  "e": "In July 2026, Proofpoint documented the Cruciferra crypter dropping a legitimate but vulnerable driver called GoFlyDrv.sys and using its kernel access to find and terminate endpoint security processes before deploying remote access trojans."
+ },
+ {
   "t": "C3PAO",
   "c": "Regulatory",
   "d": "Certified Third-Party Assessment Organization — the accredited outside auditor that performs CMMC Level 2 certification assessments.",
@@ -492,6 +498,12 @@
   "e": "ServiceNow runs customer scripts in a sandbox; CVE-2026-6875 is a \"sandbox escape\" — breaking out of that wall."
  },
  {
+  "t": "Sandbox Escape",
+  "c": "Vulnerability",
+  "d": "A flaw that lets code break out of the restricted area it was supposed to be confined to and run on the underlying system. Sandboxes exist so that untrusted code can run safely; an escape means the wall did not hold.",
+  "e": "In July 2026, the automation platform n8n patched an 8.7-rated sandbox escape that allowed anyone with permission to edit a workflow to run operating-system commands as the n8n process itself."
+ },
+ {
   "t": "Server-Side Request Forgery (SSRF)",
   "c": "Vulnerability",
   "d": "A flaw that tricks a server into making network requests chosen by the attacker. Because the request comes from the trusted server, it can reach internal systems the attacker could never contact directly.",
@@ -610,6 +622,12 @@
   "c": "Network",
   "d": "Servers like nginx split work across several worker processes that each handle many connections. Crashing one drops every connection it was serving, so a crash bug in a worker is a real outage, not a hiccup.",
   "e": "CVE-2026-42533 overflows a buffer in an nginx worker process, crashing or restarting it and denying service to everyone it was handling (July 2026)."
+ },
+ {
+  "t": "Zero Trust",
+  "c": "Network",
+  "d": "A security model that assumes no user, device or connection is trustworthy just because it is already inside the network. Every single request has to prove who it is and that it is allowed, every time, instead of being waved through after one login at the perimeter.",
+  "e": "In July 2026, Senator Ron Wyden asked NIST to publish binding Zero Trust standards for federal agencies and give them two years to remove legacy VPN gateways, arguing that one breached edge device should not expose an entire agency network."
  },
  {
   "t": "Zero-Click Attack",
