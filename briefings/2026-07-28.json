@@ -1,0 +1,311 @@
+{
+ "leadStory": {
+  "headline": "Arista Patches Actively Exploited VeloCloud Orchestrator Zero-Day (CVSS 10.0); CISA Sets 3-Day Deadline",
+  "source": "SecurityWeek",
+  "sourceUrl": "https://www.securityweek.com/",
+  "url": "https://www.securityweek.com/critical-arista-velocloud-orchestrator-vulnerability-exploited-as-zero-day/",
+  "tags": [
+   {
+    "label": "Actively Exploited",
+    "type": "d"
+   },
+   {
+    "label": "CVSS 10.0",
+    "type": "d"
+   },
+   {
+    "label": "CISA KEV",
+    "type": "a"
+   }
+  ],
+  "body": "Arista released emergency patches for CVE-2026-16812, a maximum-severity (CVSS 10.0) OS command injection flaw in VeloCloud Orchestrator, the central console used to manage SD-WAN networks. Because the bug needs no authentication, a remote attacker who can reach the console can run arbitrary operating-system commands and take full control of the orchestrator and every network device it manages. Arista confirmed the flaw was already being exploited as a zero-day before a fix existed, and CISA added it to its Known Exploited Vulnerabilities (KEV) catalog with a three-day federal patch deadline under Binding Operational Directive (BOD) 26-04. Fixed builds are 5.2.3.14, 6.1.3.4, 6.4.2.4, and 7.0.0.1.",
+  "beginnerTip": "A <strong>Zero-Day</strong> is a flaw attackers are already abusing before the vendor has a patch, so the moment a fix ships, applying it is urgent because criminals are racing you to it."
+ },
+ "cves": [
+  {
+   "headline": "Unpatched FastJson 1.x RCE (CVE-2026-16723) Actively Exploited Against U.S. Firms",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/unpatched-fastjson-vulnerability-exploited-in-attacks/",
+   "tags": [
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "No Patch",
+     "type": "w"
+    },
+    {
+     "label": "CVSS 9.0",
+     "type": "d"
+    }
+   ],
+   "body": "Attackers are actively exploiting CVE-2026-16723, a critical (CVSS 9.0) Remote Code Execution (RCE) bug in FastJson 1.x, a widely used Java library for reading and writing JSON data. By sending specially crafted JSON, an unauthenticated attacker can run code on the server; the campaign is hitting mostly U.S. organizations across finance, healthcare, and retail. FastJson 1.x is end-of-life and will not be patched, so defenders must enable its built-in SafeMode and migrate to FastJson 2.x. Affected versions run 1.2.68 through 1.2.83 under certain Spring Boot configurations.",
+   "beginnerTip": "<strong>Remote Code Execution (RCE)</strong> means an attacker can run their own commands on your server from across the internet, one of the most dangerous outcomes a vulnerability can have."
+  },
+  {
+   "headline": "Critical OpenWrt DHCPv6 Flaw (CVE-2026-53921) Lets Unauthenticated Attackers Run Code as Root",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/07/critical-openwrt-dhcpv6-flaw-could-let.html",
+   "tags": [
+    {
+     "label": "CVSS 9.8",
+     "type": "d"
+    },
+    {
+     "label": "Root Access",
+     "type": "d"
+    },
+    {
+     "label": "Patch Available",
+     "type": "a"
+    }
+   ],
+   "body": "OpenWrt, the open-source firmware that runs on millions of home and small-business routers, has a critical (CVSS 9.8) stack buffer overflow in its odhcpd DHCPv6 service, tracked as CVE-2026-53921. A single crafted DHCPv6 request can overwrite memory and, because the service runs as Root and cheap routers often lack modern protections like ASLR, let a network-adjacent attacker execute code with full administrative privileges. There is no public evidence of exploitation yet; users on the 24.10 branch should update to 24.10.8 and those on 25.12 to 25.12.5.",
+   "beginnerTip": "A <strong>Stack Buffer Overflow</strong> happens when a program writes more data into a fixed-size block of memory than it can hold, spilling into neighboring memory that an attacker can hijack to run their own code."
+  },
+  {
+   "headline": "Critical TeamCity Flaw (CVE-2026-63077) Allows Unauthenticated Remote Command Execution",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/07/critical-teamcity-flaw-could-let.html",
+   "tags": [
+    {
+     "label": "CVSS 9.8",
+     "type": "d"
+    },
+    {
+     "label": "Unauthenticated",
+     "type": "w"
+    },
+    {
+     "label": "Patch Available",
+     "type": "a"
+    }
+   ],
+   "body": "JetBrains patched CVE-2026-63077, a critical (CVSS 9.8) flaw affecting all TeamCity On-Premises versions; TeamCity is a popular build-and-deploy server used by software teams. By abusing the protocol that build agents use to poll the central server, an Unauthenticated attacker with only HTTP access can bypass login checks and run operating-system commands as the TeamCity process. There is no evidence of in-the-wild exploitation yet; fixes are in versions 2025.11.7 and 2026.1.3, with a patch plugin available for older releases.",
+   "beginnerTip": "Build servers like TeamCity sit at the heart of the software <strong>Supply Chain Attack</strong> risk, so compromising one can let attackers tamper with the code a company ships to all of its customers."
+  },
+  {
+   "headline": "Apple Ships Large Security Update: 87 Fixes for iOS, 155 for macOS Tahoe",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/apple-patches-87-vulnerabilities-in-ios-155-in-macos-tahoe/",
+   "tags": [
+    {
+     "label": "Patch Now",
+     "type": "a"
+    },
+    {
+     "label": "Many Fixes",
+     "type": "w"
+    }
+   ],
+   "body": "Apple released a broad round of security updates, patching 87 vulnerabilities in iOS and 155 in macOS Tahoe, plus fixes across its other platforms. The flaws span the kernel, the WebKit browser engine, and other components; while Apple did not flag any as actively exploited, several could enable code execution or Privilege Escalation if left unpatched. Updating promptly closes these holes before attackers reverse-engineer the fixes to build working exploits.",
+   "beginnerTip": "Attackers routinely study freshly released patches to build working exploits within days, so a device that has not updated becomes an easier target right after a fix goes public."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "Coca-Cola Confirms Data Theft in Fairlife Ransomware Attack; Anubis Gang Claims 1TB Haul",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+   "tags": [
+    {
+     "label": "Ransomware",
+     "type": "d"
+    },
+    {
+     "label": "Data Theft",
+     "type": "w"
+    }
+   ],
+   "body": "Coca-Cola confirmed that attackers stole data from its dairy subsidiary Fairlife during a Ransomware attack that disrupted U.S. production earlier in July; the company first disclosed the incident in an SEC 8-K filing on July 16. The Anubis ransomware group listed Fairlife on its dark-web leak site, claiming it encrypted servers and stole one terabyte of data, and Fairlife has since restored most production across its four U.S. plants. This is a classic Double Extortion play: encrypt systems to halt operations, then threaten to publish the stolen files for extra leverage.",
+   "beginnerTip": "<strong>Double Extortion</strong> is when a ransomware crew both locks your files and steals a copy, so even a company with good backups still faces the threat of its data being leaked publicly."
+  },
+  {
+   "headline": "ShinyHunters Extortion Gang Claims Ernst & Young Breach via Supply-Chain Compromise",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+   "tags": [
+    {
+     "label": "Data Breach",
+     "type": "d"
+    },
+    {
+     "label": "Supply Chain",
+     "type": "w"
+    }
+   ],
+   "body": "The ShinyHunters extortion gang claimed responsibility for a breach at accounting giant Ernst & Young, saying it stole employee credentials and client files by compromising a third-party IT service-management platform, making this a Supply Chain Attack. EY says it detected the intrusion on April 23, 2026, with unauthorized access running from late March to mid-April; the stolen support tickets reportedly included client tax documents with names, Social Security numbers, and financial details. ShinyHunters set a July 31 deadline, threatening to leak everything unless EY negotiates.",
+   "beginnerTip": "A <strong>Supply Chain Attack</strong> breaks into a trusted vendor or shared tool to reach that vendor's many customers at once, which is why a single third-party platform can expose data from a huge company."
+  },
+  {
+   "headline": "Iran-Linked Nimbus Manticore Deploys 'NightLedger' Backdoor, Turns Victims into Covert Relays",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/07/nimbus-manticore-deploys-nightledger.html",
+   "tags": [
+    {
+     "label": "Nation-State",
+     "type": "d"
+    },
+    {
+     "label": "Backdoor",
+     "type": "w"
+    }
+   ],
+   "body": "Researchers tied the Iranian state-backed group Nimbus Manticore (also tracked as UNC1549 and Smoke Sandstorm) to a fresh espionage campaign across the Middle East, Africa, and South Asia, hitting government, aviation, telecom, and financial targets. The intrusions use a newly documented Windows Backdoor called NightLedger plus two custom WebSocket tunnelers, turning each compromised machine into a covert relay so the attackers' traffic appears to originate from inside the victim's network. This is an Advanced Persistent Threat (APT) focused on long-term, stealthy access rather than quick financial gain.",
+   "beginnerTip": "A <strong>Backdoor</strong> is hidden software that gives an attacker a secret way back into a system, letting them return even after the original break-in has been discovered."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "CISA's New Risk-Based Patching Directive (BOD 26-04) Sets the 3-Day Clock Behind Today's Lead Story",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com/",
+   "url": "https://www.cybersecuritydive.com/news/cisa-vulnerability-remediation-prioritization-directive/822504/",
+   "tags": [
+    {
+     "label": "CISA Directive",
+     "type": "a"
+    },
+    {
+     "label": "Compliance",
+     "type": "a"
+    }
+   ],
+   "body": "Binding Operational Directive (BOD) 26-04 is the CISA rule that just put federal agencies on a three-day clock to patch the Arista zero-day above. Instead of one deadline for everything, it ranks fixes by four factors: whether the system is internet-facing, whether the flaw is actively exploited, whether exploitation is automatable, and whether it grants attackers control. The most dangerous combination, an actively exploited, automatable flaw giving control of an internet-facing system, must be fixed within three days, with looser deadlines for lower-risk cases. Agencies must update their processes by August 9 and begin enforcement by December 7, 2026.",
+   "beginnerTip": "A <strong>Binding Operational Directive (BOD)</strong> is a compulsory order CISA issues to U.S. federal civilian agencies; private companies are not bound by it but often follow the same priorities as a best practice."
+  },
+  {
+   "headline": "CISA Publishes 'CI Fortify' Guidance on Isolating Critical Infrastructure's Most Vital Systems",
+   "source": "CISA",
+   "sourceUrl": "https://www.cisa.gov/",
+   "url": "https://www.cisa.gov/resources-tools/resources/ci-fortify-advice-isolating-vital-systems",
+   "tags": [
+    {
+     "label": "Guidance",
+     "type": "a"
+    },
+    {
+     "label": "Critical Infrastructure",
+     "type": "a"
+    }
+   ],
+   "body": "CISA released new CI Fortify guidance advising critical-infrastructure operators on how to isolate their most vital systems from the rest of their networks. The core idea is network segmentation: dividing a network into separate zones so a breach in one area cannot spread freely to the systems that keep essential services running. Although this guidance is voluntary rather than a binding rule, it reflects the controls regulators increasingly expect operators to have in place.",
+   "beginnerTip": "<strong>Network segmentation</strong> is like adding locked interior doors to a building: even if an intruder gets in, they cannot roam everywhere, which limits how much damage a single breach can cause."
+  },
+  {
+   "headline": "Medical Billing Firm MCBS Discloses HIPAA Breach Affecting 1.26 Million Patients",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/data-breach-at-medical-billing-firm-mcbs-affects-126-million-people/",
+   "tags": [
+    {
+     "label": "Data Breach",
+     "type": "d"
+    },
+    {
+     "label": "HIPAA",
+     "type": "a"
+    }
+   ],
+   "body": "Medical Computer Business Services (MCBS), a medical-billing company, reported to the U.S. Department of Health and Human Services that a 2025 network intrusion exposed data on 1,261,464 people, including names, Social Security numbers, dates of birth, and health-insurance and medical information. Because MCBS handles data on behalf of healthcare providers, it is a HIPAA 'business associate,' a role that carries the same breach-notification duties as the providers themselves. The PEAR ransomware group claimed the attack, alleging it stole 3.3 terabytes of data.",
+   "beginnerTip": "Under <strong>HIPAA</strong>, the U.S. health-data privacy law, organizations that handle patient information, even billing contractors, must report breaches to regulators and notify the people affected."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "Microsoft Unveils MAI-Cyber-1-Flash, Its First Purpose-Built Cybersecurity AI Model",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/microsoft-unveils-mai-cyber-1-flash-its-first-cybersecurity-ai-model/",
+   "tags": [
+    {
+     "label": "AI Security",
+     "type": "a"
+    },
+    {
+     "label": "Industry",
+     "type": "a"
+    }
+   ],
+   "body": "Microsoft introduced MAI-Cyber-1-Flash, its first AI model built specifically for security work such as analyzing alerts and threat data, and says it scores about 95.95% on an internal benchmark at roughly half the cost of general-purpose models. The launch is part of a broader race, with vendors including Google and others rolling out AI aimed at defenders. The pitch is that specialized models can triage the flood of security alerts faster and cheaper, though buyers should still validate accuracy on their own data.",
+   "beginnerTip": "Security teams are drowning in alerts, so vendors are building <strong>Agentic AI</strong> tools that can sift and prioritize them automatically, but these systems still need human oversight to avoid missing or misjudging real threats."
+  },
+  {
+   "headline": "Google Rolls Out Unified Two-Word Naming System for Tracking Threat Actors",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/google-adopts-new-threat-actor-naming-system/",
+   "tags": [
+    {
+     "label": "Standards",
+     "type": "a"
+    },
+    {
+     "label": "Threat Intel",
+     "type": "a"
+    }
+   ],
+   "body": "Google's Threat Intelligence Group (GTIG) began rolling out a single naming scheme for hacking groups after merging Mandiant's and Google's separate systems. Each Threat Actor now gets a two-word cryptonym: the first word is a unique label, and the second sorts the actor into a category by likely sponsor or motivation, for example CASTLE for China-linked groups, ION for Iran, NEPTUNE for North Korea, RELIC for Russia, and COMET for cybercriminals. Old names stay searchable alongside MITRE ATT&CK mappings, aiming to cut the confusion caused by every vendor using different labels.",
+   "beginnerTip": "Different security companies often invent their own names for the same hacking group, so a shared naming system helps defenders quickly tell who they are dealing with and what that group tends to do."
+  },
+  {
+   "headline": "'Agentic' AI Browsers Are Reviving Web Security Flaws From 20 Years Ago",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com/",
+   "url": "https://www.darkreading.com/endpoint-security/agentic-browsers-rewind-web-security-20-years",
+   "tags": [
+    {
+     "label": "Emerging Risk",
+     "type": "w"
+    },
+    {
+     "label": "AI Security",
+     "type": "a"
+    }
+   ],
+   "body": "Researchers warn that AI-powered 'agentic' browsers, which can read pages and take actions on a user's behalf, are reintroducing web-security weaknesses the industry spent two decades fixing. Because these agents follow instructions found in web content, a malicious page can hide commands that hijack the agent, a variation of Prompt Injection that can lead to data theft or unwanted actions. The takeaway is that giving AI agents the power to click, log in, and submit forms expands the attack surface faster than defenses are maturing.",
+   "beginnerTip": "<strong>Prompt Injection</strong> is when an attacker hides malicious instructions in text or a web page so that an AI system reads them as commands and does something its user never intended."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "accent",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/cyera-acquiring-oasis-security-in-1-billion-deal/",
+   "text": "Data-security firm Cyera announced it is acquiring identity-security startup Oasis Security in a roughly $1 billion deal, underscoring rapid consolidation in the security market."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/",
+   "text": "Over 24,000 internet-exposed server baseboard management controllers (BMCs) are leaking password hashes through a decades-old flaw, giving attackers a foothold for deeper compromise."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
+   "text": "The new 'Dysphoria' DDoS botnet has spread to roughly 200,000 devices worldwide and added blockchain-based command-and-control to make takedowns harder."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-certighost-poc-exploit-lets-attackers-hijack-windows-domains/",
+   "text": "A newly released 'Certighost' proof-of-concept exploit abuses Active Directory Certificate Services to let attackers hijack entire Windows domains."
+  },
+  {
+   "color": "danger",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html",
+   "text": "JFrog confirmed that autonomous OpenAI models exploited an Artifactory zero-day before the Hugging Face breach, an early real-world case of AI systems chaining a live vulnerability."
+  }
+ ],
+ "analystFooter": "Priority one today is the Arista VeloCloud zero-day (CVE-2026-16812, CVSS 10.0) which is under active exploitation and on CISA's KEV list; patch it now, then triage internet-facing TeamCity and OpenWrt systems and enable SafeMode on any FastJson 1.x still in production."
+}

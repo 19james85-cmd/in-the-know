@@ -108,6 +108,12 @@
   "e": "Two different gadget chains, same primitive: run code inside ServiceNow."
  },
  {
+  "t": "Command Injection",
+  "c": "Vulnerability",
+  "d": "A flaw where an application passes attacker-supplied input straight into a command the underlying operating system runs, letting the attacker execute their own OS commands. It usually happens when a program builds a system command out of user input without safely separating data from instructions.",
+  "e": "In July 2026, Arista's VeloCloud Orchestrator had a maximum-severity command injection flaw (CVE-2026-16812) that let unauthenticated attackers run any command on the server."
+ },
+ {
   "t": "Command-and-Control (C2)",
   "c": "Network",
   "d": "The infrastructure malware phones home to for instructions and to send stolen data out. Cutting C2 off usually neuters the malware.",
@@ -280,6 +286,12 @@
   "c": "Vulnerability",
   "d": "Writing more data into a memory area than was reserved for it, corrupting adjacent memory. Can crash a process or, in the worst case, be steered into code execution.",
   "e": "Nginx CVE-2026-42533 lets a crafted HTTP request overflow a worker-process buffer, causing denial of service and potentially RCE."
+ },
+ {
+  "t": "HIPAA",
+  "c": "Regulatory",
+  "d": "The U.S. Health Insurance Portability and Accountability Act, a law setting rules for protecting patients' health information. It requires healthcare organizations and their contractors to safeguard that data and to notify regulators and affected people when a breach occurs.",
+  "e": "In July 2026, medical-billing firm MCBS reported a HIPAA breach to the U.S. Department of Health and Human Services affecting over 1.26 million people."
  },
  {
   "t": "ICS/OT",
@@ -502,6 +514,12 @@
   "c": "Vulnerability",
   "d": "A flaw that lets code break out of the restricted area it was supposed to be confined to and run on the underlying system. Sandboxes exist so that untrusted code can run safely; an escape means the wall did not hold.",
   "e": "In July 2026, the automation platform n8n patched an 8.7-rated sandbox escape that allowed anyone with permission to edit a workflow to run operating-system commands as the n8n process itself."
+ },
+ {
+  "t": "SD-WAN",
+  "c": "Network",
+  "d": "Software-Defined Wide Area Network: technology that uses software to intelligently route traffic across multiple internet or private links connecting an organization's offices, instead of relying on fixed hardware routing. A central controller manages all the sites, which makes that controller a high-value target.",
+  "e": "In July 2026, a flaw in Arista's VeloCloud SD-WAN controller could have handed attackers control of every branch-office device it managed."
  },
  {
   "t": "Server-Side Request Forgery (SSRF)",
