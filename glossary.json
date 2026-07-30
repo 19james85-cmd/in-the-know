@@ -144,6 +144,12 @@
   "e": "Hugging Face users were told to rotate their access tokens because cloud and cluster credentials were stolen."
  },
  {
+  "t": "Cross-Site Scripting (XSS)",
+  "c": "Vulnerability",
+  "d": "A web flaw where a site runs attacker-supplied code (usually JavaScript) because it displayed untrusted input without cleaning it first. The malicious code then runs in the victim's browser with the trust of that site.",
+  "e": "In July 2026, the Russian group Laundry Bear exploited a Cross-Site Scripting (XSS) bug in Microsoft Exchange OWA (CVE-2026-42897) so that merely viewing a crafted email ran their code."
+ },
+ {
   "t": "CUI",
   "c": "Regulatory",
   "d": "Government information that isn't classified but still must be protected — technical drawings, contract data, personnel records.",
@@ -516,6 +522,12 @@
   "e": "In July 2026, the automation platform n8n patched an 8.7-rated sandbox escape that allowed anyone with permission to edit a workflow to run operating-system commands as the n8n process itself."
  },
  {
+  "t": "SBOM",
+  "c": "Regulatory",
+  "d": "Short for Software Bill of Materials: a machine-readable ingredients list of every component and library inside a piece of software. It lets defenders instantly check whether they are affected when a new vulnerability appears.",
+  "e": "In July 2026, CISA, the NSA, and the FBI released updated '2026 Minimum Elements for an SBOM' guidance adding required fields like component hashes and licenses."
+ },
+ {
   "t": "SD-WAN",
   "c": "Network",
   "d": "Software-Defined Wide Area Network: technology that uses software to intelligently route traffic across multiple internet or private links connecting an organization's offices, instead of relying on fixed hardware routing. A central controller manages all the sites, which makes that controller a high-value target.",
@@ -610,6 +622,12 @@
   "c": "General",
   "d": "A long unique number identifying a device or object. Fine as a label — dangerous when it is used as a secret, because identifiers are usually readable by anyone on the box.",
   "e": "SonicWall derived a service password from the appliance's product_uuid, a file any local user can read — so the identifier was effectively the password (July 2026)."
+ },
+ {
+  "t": "Vishing",
+  "c": "Threat/Actor",
+  "d": "Voice phishing: a scam carried out over a phone call in which the attacker impersonates a colleague, IT helpdesk, or trusted party to trick someone into revealing credentials or approving access.",
+  "e": "In July 2026, the ShinyHunters extortion gang used Vishing to trick healthcare helpdesk staff into resetting passwords and changing MFA, then stole data from cloud platforms."
  },
  {
   "t": "VPN",
