@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-01T14:09:54.855953+00:00",
+ "generated": "2026-08-02T14:11:34.620108+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,31 +11,31 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 6,
+   "count": 1,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 4,
+   "count": 0,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 6,
+   "count": 1,
    "error": null
   },
   {
@@ -65,137 +65,18 @@
  ],
  "items": [
   {
-   "source": "SecurityWeek",
-   "title": "Balance Theory Raises $19 Million to Help Enterprises Manage Cybersecurity Investments",
-   "url": "https://www.securityweek.com/balance-theory-raises-19-million-to-help-enterprises-manage-cybersecurity-investments/",
-   "published": "2026-08-01T12:30:00+00:00",
-   "summary": "The funding round was led by SYN Ventures, with participation from existing investors DataTribe and TEDCO. The post Balance Theory Raises $19 Million to Help Enterprises Manage Cybersecurity Investments appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Ruby on Rails Patches Critical Vulnerability",
-   "url": "https://www.securityweek.com/ruby-on-rails-patches-critical-vulnerability/",
-   "published": "2026-08-01T11:15:00+00:00",
-   "summary": "The flaw can be exploited by unauthenticated attackers to read arbitrary files and potentially achieve remote code execution (RCE). The post Ruby on Rails Patches Critical Vulnerability appeared first on SecurityWeek ."
-  },
-  {
    "source": "The Hacker News",
-   "title": "Hackers Poison Adform Script to Swap Crypto Wallet Addresses Across Customer Sites",
-   "url": "https://thehackernews.com/2026/08/hackers-poison-adform-script-to-swap.html",
-   "published": "2026-08-01T09:03:07+00:00",
-   "summary": "Attackers modified a JavaScript file served by advertising technology company Adform, turning it into a browser-side tool that rewrites cryptocurrency wallet addresses. Adform detected the incident on July 27, 2026, removed the malicious code, notified affected clients, and reported it to authorities. Anyone who visited a site carrying the affected script on July 27 and copied a Bitcoin,"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Adobe Campaign Classic CVSS 10.0 Flaw Could Run Code Without User Interaction",
-   "url": "https://thehackernews.com/2026/08/adobe-campaign-classic-cvss-100-flaw.html",
-   "published": "2026-08-01T07:12:42+00:00",
-   "summary": "Adobe has released security updates to address a maximum-severity security flaw in Campaign Classic (ACC), its enterprise-focused marketing automation platform, that could result in arbitrary code execution. The vulnerability, tracked as CVE-2026-48449, carries a severity score of 10.0 on the CVSS scoring system. It has been described as a case of incorrect authorization that could result in"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Hijacked Hotel Wi-Fi Pushes Fake Updates to Deliver Surveillance Malware",
-   "url": "https://thehackernews.com/2026/08/hijacked-hotel-wi-fi-pushes-fake.html",
-   "published": "2026-08-01T06:29:05+00:00",
-   "summary": "A fake browser update served over hijacked hotel Wi-Fi has been used to deliver CornFlake, a remote access trojan (RAT) that can capture webcam images, microphone audio, and keystrokes, Microsoft said in its latest report. Researchers track the operation as CaptiveCrunch and attribute it to Storm-2945. It assesses Storm-2945 to be an operational sub-cluster of Midnight Blizzard, also known as"
+   "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 Minutes",
+   "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+   "published": "2026-08-01T17:17:22+00:00",
+   "summary": "An attacker drained 1,196 Bitcoin addresses in 41 minutes on July 30, taking 1,082.65 BTC worth about $70.2 million at the time. Galaxy Research mapped the sweep and tied it to a firmware flaw in Coldcard, the Bitcoin-only hardware wallet made by Canadian firm Coinkite. A March 2021 firmware integration error routed seed generation to a deterministic software pseudorandom number generator (PRNG"
   },
   {
    "source": "BleepingComputer",
-   "title": "Amgen says cloud data breach exposed patient health, proprietary info",
-   "url": "https://www.bleepingcomputer.com/news/security/amgen-says-cloud-data-breach-exposed-patient-health-proprietary-info/",
-   "published": "2026-07-31T22:16:42+00:00",
-   "summary": "Pharmaceutical company Amgen says it suffered a data breach after threat actors stole corporate data and patient information stored in multiple cloud systems operated by third-party service providers. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Arch Linux disables AUR package adoption to stop malware flood",
-   "url": "https://www.bleepingcomputer.com/news/security/arch-linux-disables-aur-package-adoption-to-stop-malware-flood/",
-   "published": "2026-07-31T21:38:08+00:00",
-   "summary": "The Arch Linux project has temporarily disabled adoption of Arch User Repository (AUR) packages after a surge in malicious takeovers of existing packages. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Online ad firm Adform’s script compromised to steal cryptocurrency",
-   "url": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
-   "published": "2026-07-31T21:09:25+00:00",
-   "summary": "Online advertising firm Adform suffered a supply-chain attack that delivered cryptocurrency-stealing scripts to websites using its ad platform, replacing wallet addresses copied to visitors' clipboards with ones controlled by an attacker. [...]"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Trump blames Minnesota for cyberattacks on water sector, drawing pushback from cyber world",
-   "url": "https://cyberscoop.com/trump-blames-minnesota-water-cyberattacks-iran/",
-   "published": "2026-07-31T20:16:34+00:00",
-   "summary": "The president went against his intelligence agencies’ conclusions about Iran being the likely suspect in the campaign. The post Trump blames Minnesota for cyberattacks on water sector, drawing pushback from cyber world appeared first on CyberScoop ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "OpenAI says its new GPT 5.6 models are becoming more cost-efficient",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-new-gpt-56-models-are-becoming-more-cost-efficient/",
-   "published": "2026-07-31T18:52:44+00:00",
-   "summary": "OpenAI says it has reduced the price of two GPT-5.6 models, cutting Luna's API price by 80% and Terra's by 20% as it works to make its models more efficient. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Suspected Chinese-Speaking Hackers Target Central Asian Governments With OctLurk and SilkLurk",
-   "url": "https://thehackernews.com/2026/08/suspected-chinese-speaking-hackers.html",
-   "published": "2026-07-31T18:52:04+00:00",
-   "summary": "A Chinese-speaking threat actor is suspected to be behind a fresh wave of cyber attacks targeting government organizations mainly located in Central Asia, including Afghanistan, Kyrgyzstan, Tajikistan, Uzbekistan, Kazakhstan, and the Syrian Arab Republic, since January 2025. These targeted organizations operate across several sectors, such as healthcare, research, government offices,"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "CISA Issues Fresh SBOM Guidance. Did They Get It Right?",
-   "url": "https://www.darkreading.com/cybersecurity-operations/cisa-issues-fresh-sbom-guidance",
-   "published": "2026-07-31T18:13:11+00:00",
-   "summary": "A couple-dozen changes to SBOM fields will make them more comprehensive, but some argue that the framework lacks real risk-management improvements."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hacker uses DeepSeek AI to autonomously attack vulnerable servers",
-   "url": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
-   "published": "2026-07-31T17:35:35+00:00",
-   "summary": "A Chinese-speaking threat actor is using the DeepSeek AI model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers with limited human involvement. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "CISA warns of cyberattacks disrupting U.S. water utilities",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
-   "published": "2026-07-31T16:49:49+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "HollowFrame Loader Deploys Matryoshka Backdoor in Spear-Phishing Attack on Law Firm",
-   "url": "https://thehackernews.com/2026/07/hollowframe-loader-deploys-matryoshka.html",
-   "published": "2026-07-31T16:39:31+00:00",
-   "summary": "Cybersecurity researchers have shed light on a previously undocumented Go-based loader framework called HollowFrame and a Rust-based malware family tracked as Matryoshka. According to Blackpoint Cyber, the intrusion sequence begins with a spear-phishing message containing a link to an encrypted archive, which holds a Windows Shortcut (LNK). Executing the file triggers a multi-stage chain that"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "In Other News: OpenAI Open Source Tool, AWS Links Hacks to North Korea, Mythos Crypto Research",
-   "url": "https://www.securityweek.com/in-other-news-openai-open-source-tool-aws-links-hacks-to-north-korea-mythos-crypto-research/",
-   "published": "2026-07-31T15:47:02+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: parcel delivery company OnTrac hacked, Adobe patches, UK Department for Education loses 607,000 records. The post In Other News: OpenAI Open Source Tool, AWS Links Hacks to North Korea, Mythos Crypto Research appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Anthropic says human error let Claude AI models escape test environment and hack third parties",
-   "url": "https://www.cybersecuritydive.com/news/anthropic-claude-ai-hacking-test/826708/",
-   "published": "2026-07-31T15:29:00+00:00",
-   "summary": "The company said its discovery, which followed OpenAI's similar admission, proved the need for better testing guardrails."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Cyberattacks on Minnesota Water Systems Investigated as Officials Warn About Iranian Hackers",
-   "url": "https://www.securityweek.com/cyberattacks-on-minnesota-water-systems-investigated-as-officials-warn-about-iranian-hackers/",
-   "published": "2026-07-31T15:17:41+00:00",
-   "summary": "Iran has the “geopolitical motivations” and a recent history of targeting water systems, experts pointed out. The post Cyberattacks on Minnesota Water Systems Investigated as Officials Warn About Iranian Hackers appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Cheap Android TV Boxes Pose as Phones and Turn Owners’ Broadband Into Proxies",
-   "url": "https://thehackernews.com/2026/07/cheap-android-tv-boxes-pose-as-phones.html",
-   "published": "2026-07-31T14:45:01+00:00",
-   "summary": "Bitsight says some cheap Android TV boxes have shipped with apps that rewrite their hardware identity to mimic Samsung, Huawei, Xiaomi, or Vivo phones, then click ads on websites run by the same operators. Researchers named the operation Fuyao and attributed it to Zhejiang Fengwo IoT Technology Co., Ltd., a mainland China company founded in 2019. The same apps have a second job. When a box"
+   "title": "Rails patches critical Active Storage flaw with RCE potential",
+   "url": "https://www.bleepingcomputer.com/news/security/rails-patches-critical-active-storage-flaw-with-rce-potential/",
+   "published": "2026-08-01T14:20:30+00:00",
+   "summary": "A critical vulnerability in the Active Storage framework can allow an unauthenticated attacker to read arbitrary files from a Rails application, and potentially escalate to remote code execution (RCE). [...]"
   }
  ]
 }
