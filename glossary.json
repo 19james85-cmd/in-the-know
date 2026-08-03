@@ -84,6 +84,12 @@
   "e": "There are 107 authorized C3PAOs against roughly 76,000 entities expected to need Level 2 certification."
  },
  {
+  "t": "Captive Portal",
+  "c": "Network",
+  "d": "The web page a public Wi-Fi network shows you before letting you online, usually asking you to accept terms or sign in. Because your device trusts this page, an attacker who controls it can redirect you to fake login or malware sites.",
+  "e": "In July 2026, Russia's Midnight Blizzard tampered with hotel captive portals in its 'CaptiveCrunch' campaign to serve travelers fake Microsoft sign-in pages."
+ },
+ {
   "t": "CISA",
   "c": "Regulatory",
   "d": "The U.S. Cybersecurity & Infrastructure Security Agency — issues alerts, advisories, and maintains the Known Exploited Vulnerabilities (KEV) catalog for critical infrastructure protection.",
@@ -402,6 +408,12 @@
   "e": "A contractor reporting a perfect score claims all 110 controls are fully implemented."
  },
  {
+  "t": "Operational Technology",
+  "c": "Network",
+  "d": "The specialized computers, controllers and sensors that run physical equipment like pumps, valves and factory machines, as opposed to the regular IT that runs email and office apps. Attacks on it can have real-world physical effects.",
+  "e": "In July 2026, cyberattacks on the operational technology behind U.S. water utilities in seven states forced several plants to switch to manual control."
+ },
+ {
   "t": "Password Spraying",
   "c": "Threat/Actor",
   "d": "An attack that tries a few commonly used passwords across a huge number of accounts, instead of many passwords against one account. It stays under account-lockout limits, making it hard to detect.",
@@ -550,6 +562,12 @@
   "c": "Network",
   "d": "Software-Defined Wide Area Network: technology that uses software to intelligently route traffic across multiple internet or private links connecting an organization's offices, instead of relying on fixed hardware routing. A central controller manages all the sites, which makes that controller a high-value target.",
   "e": "In July 2026, a flaw in Arista's VeloCloud SD-WAN controller could have handed attackers control of every branch-office device it managed."
+ },
+ {
+  "t": "Server-Side Request Forgery",
+  "c": "Vulnerability",
+  "d": "A flaw that tricks a server into making network requests chosen by the attacker, often reaching internal systems the attacker could not contact directly. It is frequently chained with other bugs to break deeper into a network.",
+  "e": "In 2026, SonicWall SMA1000 CVE-2026-15409, a CVSS 10 server-side request forgery bug, was chained with a code-injection flaw to gain root access."
  },
  {
   "t": "Server-Side Request Forgery (SSRF)",

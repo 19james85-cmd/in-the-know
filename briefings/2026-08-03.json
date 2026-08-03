@@ -1,27 +1,71 @@
 {
  "leadStory": {
-  "headline": "Coldcard Wallet Firmware Flaw Linked to $88.6 Million Bitcoin Theft",
-  "source": "The Hacker News",
-  "sourceUrl": "https://thehackernews.com/",
-  "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+  "headline": "Iran-Linked Hackers Hit U.S. Water Systems Across Seven States",
+  "source": "SecurityWeek",
+  "sourceUrl": "https://www.securityweek.com/",
+  "url": "https://www.securityweek.com/us-water-cyberattacks-extend-beyond-minnesota-to-at-least-6-other-states/",
   "tags": [
    {
-    "label": "Cryptocurrency Theft",
+    "label": "Critical Infrastructure",
     "type": "d"
    },
    {
-    "label": "Firmware Flaw",
+    "label": "Active Attacks",
     "type": "d"
    },
    {
-    "label": "~$88.6M Stolen",
-    "type": "w"
+    "label": "Nation-State (Suspected)",
+    "type": "d"
    }
   ],
-  "body": "On July 30, an attacker swept 1,196 Bitcoin addresses in 41 minutes, taking about $70.2 million; Galaxy Research has since tied further waves to the same root cause, raising suspected losses to roughly $88.6 million across 4,585 addresses. The culprit is a March 2021 firmware integration error in Coldcard, the Bitcoin-only hardware wallet from Canadian maker Coinkite, that routed wallet 'seed' generation to a weak software PRNG instead of the device's true hardware random number generator. Block estimates the mistake left seeds with only about 40 bits of randomness on the Mk3 (and roughly 72 bits on later models) versus the 128 bits a proper 12-word seed should have, making some keys guessable offline. Coinkite shipped emergency firmware on July 31, but patching does not repair an already-created seed — affected owners must generate a fresh seed on updated firmware and move their coins.",
-  "beginnerTip": "A hardware wallet keeps your crypto keys on a small offline device so malware on your PC can't steal them. Everything hinges on the 'seed' — a random master secret the device generates. If that randomness comes from a weak <strong>PRNG</strong> (a formula that only looks random), an attacker can reproduce the same 'random' seeds and drain the wallet without ever touching the device."
+  "body": "Between roughly July 28 and July 31, cyberattacks hit water and wastewater utilities in at least seven U.S. states, with Minnesota hardest hit — disruptions were reported across more than 30 municipal systems, and beyond it Michigan, Georgia and South Dakota have reported activity consistent with the same campaign. Some operators were forced to drop their digital controls and run plants manually. U.S. investigators are treating Iran-linked hackers as a leading suspect based on tradecraft resembling past Iranian operations, but have not made a formal attribution and are wary of a false flag. Officials say the intruders' 'likely desired impact' was to cause loss of system pressure and potential contamination of the water supply; no contamination has been reported, and utilities have been urged to report incidents to the FBI and CISA.",
+  "beginnerTip": "Water plants run on <strong>Operational Technology</strong> (OT) — the industrial computers and sensors that physically open valves and run pumps, as opposed to the office IT that runs email. When these systems are attacked, staff can often fall back to operating equipment by hand, which is exactly what several utilities did here to keep water safe."
  },
  "cves": [
+  {
+   "headline": "Coldcard Wallet Firmware Flaw Linked to $88.6 Million Bitcoin Theft",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+   "tags": [
+    {
+     "label": "Cryptocurrency Theft",
+     "type": "d"
+    },
+    {
+     "label": "Firmware Flaw",
+     "type": "d"
+    },
+    {
+     "label": "~$88.6M Stolen",
+     "type": "w"
+    }
+   ],
+   "body": "On July 30, an attacker swept 1,196 Bitcoin addresses in 41 minutes, taking about $70.2 million; Galaxy Research has since tied further waves to the same root cause, raising suspected losses to roughly $88.6 million across 4,585 addresses. The culprit is a March 2021 firmware integration error in Coldcard, the Bitcoin-only hardware wallet from Canadian maker Coinkite, that routed wallet 'seed' generation to a weak software PRNG instead of the device's true hardware random number generator. Block estimates the mistake left seeds with only about 40 bits of randomness on the Mk3 (and roughly 72 bits on later models) versus the 128 bits a proper 12-word seed should have, making some keys guessable offline. Coinkite shipped emergency firmware on July 31, but patching does not repair an already-created seed — affected owners must generate a fresh seed on updated firmware and move their coins.",
+   "beginnerTip": "A hardware wallet keeps your crypto keys on a small offline device so malware on your PC can't steal them. Everything hinges on the 'seed' — a random master secret the device generates. If that randomness comes from a weak <strong>PRNG</strong> (a formula that only looks random), an attacker can reproduce the same 'random' seeds and drain the wallet without ever touching the device."
+  },
+  {
+   "headline": "SonicWall SMA1000 Zero-Days (CVE-2026-15409 / CVE-2026-15410) Chained for Root by INC Ransomware",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/recent-sonicwall-vulnerabilities-exploited-in-ransomware-attacks/",
+   "tags": [
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 10 / Critical",
+     "type": "d"
+    },
+    {
+     "label": "Zero-Day",
+     "type": "d"
+    }
+   ],
+   "body": "Two flaws in SonicWall SMA1000 remote-access appliances have been exploited as zero-days since late June: CVE-2026-15409, a server-side request forgery (SSRF) bug in the Work Place interface rated a maximum CVSS 10.0, and CVE-2026-15410, a code-injection flaw in the Appliance Management Console. Chained together they let an unauthenticated attacker reach internal services and then run commands as root on the box. The INC Ransomware gang has emerged as the dominant actor abusing the chain, harvesting local credentials, active session databases and multi-factor authentication (MFA) seeds for long-term persistence and lateral movement before deploying ransomware. SonicWall released hotfixes in July, and the flaws have been added to CISA's Known Exploited Vulnerabilities (KEV) catalog — SMA1000 owners should patch and assume prior compromise if they were exposed.",
+   "beginnerTip": "<strong>Server-Side Request Forgery</strong> (SSRF) tricks a server into making network requests on the attacker's behalf, often to systems the attacker couldn't reach directly. Because a stolen MFA 'seed' lets attackers generate valid one-time codes themselves, victims here must reset credentials and re-enroll MFA, not just install the patch."
+  },
   {
    "headline": "N-able N-central Auth-Bypass Flaws Exploited to Hijack MSP Servers (CVE-2026-18556 / CVE-2026-18577)",
    "source": "The Hacker News",
@@ -45,73 +89,73 @@
    "beginnerTip": "An <strong>RMM</strong> (Remote Monitoring and Management) platform is software IT providers use to control all their clients' computers from one dashboard. That makes it a jackpot for attackers: break the dashboard once and you inherit access to everyone it manages, which is why these flaws are urgent even at a 'medium' base score."
   },
   {
-   "headline": "Critical ServiceNow AI Platform Flaw (CVE-2026-6875) Now Exploited for Unauthenticated RCE",
-   "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
-   "url": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+   "headline": "Hugging Face 'Diffusers' Flaws (CVE-2026-44513) Let Malicious AI Models Run Code on Load",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/08/hugging-face-diffusers-flaws-could-let.html",
    "tags": [
     {
-     "label": "Actively Exploited",
+     "label": "Arbitrary Code Execution",
      "type": "d"
     },
     {
-     "label": "CVSS 9.5 / Critical",
+     "label": "CVSS 8.8 / High",
      "type": "d"
     },
     {
-     "label": "Unauthenticated RCE",
-     "type": "d"
-    }
-   ],
-   "body": "Attackers are now exploiting CVE-2026-6875, a critical (CVSS 9.5) Sandbox Escape in the ServiceNow AI Platform that lets an unauthenticated attacker break out of the isolated area where AI code is meant to run and execute commands on the underlying system — remote code execution (RCE) with no login required. ServiceNow patched its own hosted instances starting in April and released fixes for self-hosted customers on July 13, but organizations that run ServiceNow on their own servers must apply the update manually. Searchlight Cyber reported the flaw; in-the-wild exploitation has since been observed, so unpatched self-hosted deployments are the ones at risk.",
-   "beginnerTip": "A 'sandbox' is a walled-off space where a program runs so it can't touch the rest of the system. A <strong>Sandbox Escape</strong> is a bug that lets code climb out of that box — here, into the server itself. 'Unauthenticated' makes it worse: the attacker doesn't even need an account to begin."
-  },
-  {
-   "headline": "Rails Patches Critical Active Storage Flaw (CVE-2026-66066) — Rotate Your Secrets, Too",
-   "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
-   "url": "https://www.bleepingcomputer.com/news/security/rails-patches-critical-active-storage-flaw-with-rce-potential/",
-   "tags": [
-    {
-     "label": "Critical / CVSS 9.5",
-     "type": "d"
-    },
-    {
-     "label": "Arbitrary File Read",
-     "type": "d"
-    },
-    {
-     "label": "Patch Available",
+     "label": "AI Supply Chain",
      "type": "w"
     }
    ],
-   "body": "Ruby on Rails patched CVE-2026-66066, a critical arbitrary-file-read flaw in Active Storage's image processing that an unauthenticated attacker can trigger by uploading a specially crafted image when the app uses the libvips library. Successful exploitation can leak the server's environment and secrets — the Rails master key (secret_key_base), database passwords, cloud-storage credentials and API tokens — and from there escalate toward remote code execution. Fixed versions are Active Storage 7.2.3.2, 8.0.5.1 and 8.1.3.1; teams should upgrade libvips to 8.13+ and, critically, rotate any secrets the app could read, because a patch alone does not undo an earlier theft.",
-   "beginnerTip": "'Arbitrary file read' means an attacker can make the server hand over files it should keep private — including the keys that unlock its database and cloud accounts. That's why the fix has two halves: install the patch <strong>and</strong> rotate (replace) the exposed secrets, since anything already stolen keeps working until you change it."
-  },
-  {
-   "headline": "CISA Adds Actively Exploited Fortinet FortiOS SSL-VPN Flaw (CVE-2025-68686) to KEV",
-   "source": "CISA",
-   "sourceUrl": "https://www.cisa.gov/",
-   "url": "https://www.cisa.gov/news-events/alerts/2026/07/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-   "tags": [
-    {
-     "label": "CISA KEV",
-     "type": "a"
-    },
-    {
-     "label": "Actively Exploited",
-     "type": "d"
-    },
-    {
-     "label": "CVSS 5.3",
-     "type": "w"
-    }
-   ],
-   "body": "CISA added CVE-2025-68686, an information-exposure flaw in Fortinet FortiOS SSL-VPN, to its Known Exploited Vulnerabilities (KEV) catalog on July 27 after confirming real-world attacks. Although its CVSS base score is a modest 5.3, the KEV listing means it is being used against organizations now, and FortiGate SSL-VPN appliances sit directly on the internet as remote-access gateways — a favorite target for gaining an initial foothold. Federal agencies face a binding deadline to patch; everyone else should treat KEV entries as a priority patch list.",
-   "beginnerTip": "An <strong>SSL-VPN</strong> is the encrypted 'front door' employees use to log into a company network from home. Because it is internet-facing by design, any flaw in it is prime real estate for attackers — and a low severity score matters little once CISA confirms it is already being exploited."
+   "body": "Researchers disclosed three high-severity flaws in Hugging Face's popular 'Diffusers' Python library that let a crafted model repository silently run code on any machine that loads it — bypassing the very 'trust_remote_code' safeguard meant to prevent that. The lead bug, CVE-2026-44513 (CVSS 8.8), abuses the custom_pipeline loading flow so a malicious repo executes even when trust_remote_code is False or omitted; two related issues (CVE-2026-44827 and CVE-2026-45804) exploit a string-formatting quirk and a time-of-check-to-time-of-use gap. An attacker simply publishes a normal-looking model whose config references a legitimate pipeline name but ships hidden code. The flaws were fixed in Diffusers 0.38.0, so teams should upgrade and confirm no notebooks, inference services or container images are pinning older versions.",
+   "beginnerTip": "Downloading an AI model can be as risky as running a program from a stranger, because 'loading' a model can execute code bundled with it. This is a <strong>supply chain attack</strong> aimed at AI development: the fix is to update the library and only load models from sources you trust."
   }
  ],
  "threatActors": [
+  {
+   "headline": "'CaptiveCrunch': Russia's Midnight Blizzard Hijacks Hotel Wi-Fi to Steal Microsoft Logins",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/russian-state-apt-linked-to-recent-public-wi-fi-gateway-hacking/",
+   "tags": [
+    {
+     "label": "Nation-State",
+     "type": "d"
+    },
+    {
+     "label": "Credential Theft",
+     "type": "d"
+    },
+    {
+     "label": "Adversary-in-the-Middle",
+     "type": "w"
+    }
+   ],
+   "body": "Microsoft linked a campaign it calls 'CaptiveCrunch' to Storm-2945, a sub-cluster of the Russian state group Midnight Blizzard, that has been manipulating traffic on hospitality Wi-Fi networks — hotels and conference venues — since about May 2026. When a traveler connects, the attackers tamper with the captive portal (the sign-in page public Wi-Fi shows before granting access) to run an adversary-in-the-middle attack, redirecting victims to fake Microsoft sign-in pages or malware downloads. Recently the lures push a 'device code' authentication flow, tricking victims into entering a code that actually authorizes the attacker's own session — handing over Microsoft 365 access tokens without a password. Microsoft believes the group may have compromised shared captive-portal infrastructure used across multiple hospitality providers, widening the blast radius.",
+   "beginnerTip": "A <strong>Captive Portal</strong> is the 'agree and connect' page hotels and airports show on their Wi-Fi. Because your device trusts whatever that page says, attackers who control it can redirect you — so on public Wi-Fi, be suspicious of any surprise 'sign in to Microsoft' prompt and never type a login code you didn't request yourself."
+  },
+  {
+   "headline": "'ExfilSquad' Leaks Data on 100,000+ U.K. Police Officers After Legal-Database Breach",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/exfilsquad-hackers-leak-info-of-over-100-000-uk-police-officers-staff/",
+   "tags": [
+    {
+     "label": "Data Breach",
+     "type": "d"
+    },
+    {
+     "label": "Extortion",
+     "type": "w"
+    },
+    {
+     "label": "Law Enforcement",
+     "type": "a"
+    }
+   ],
+   "body": "A previously unknown group calling itself 'ExfilSquad' stole roughly 135,000 records from the U.K.'s Police National Legal Database (PNLD) — which supplies legal guidance to all 43 police forces in England and Wales — and dumped samples on a dark-web leak site. PNLD confirmed the theft; exposed data includes names, employing forces and work email addresses of officers and criminal-justice staff, plus some names and addresses of members of the public who used its 'Ask the Police' service. The National Crime Agency is investigating, and PNLD says the database holds no confidential victim, witness or offender records, assessing the immediate risk to individuals as low. The leak is part of a wider spree in which ExfilSquad listed 14 alleged victims across five countries on the same day, though most of those claims are unverified.",
+   "beginnerTip": "Even 'low-sensitivity' data like work emails and which force someone serves in is valuable for <strong>Phishing</strong> — attackers can impersonate colleagues convincingly. New crews that name many victims at once are often testing which ones will pay to keep the data quiet."
+  },
   {
    "headline": "FortiBleed: 110 Million Stolen FortiGate Credentials Linked to INC and Lynx Ransomware",
    "source": "Cybersecurity Dive",
@@ -133,50 +177,6 @@
    ],
    "body": "Researchers linked a mass credential-theft campaign dubbed 'FortiBleed' to the INC and Lynx ransomware operations after finding an exposed server holding data stolen from more than 73,000 Fortinet devices. The operation used a custom 'FortiGate Sniffer' packet-capture tool on compromised firewalls to intercept VPN logins straight from network traffic, ultimately targeting around 430,000 FortiGate firewalls and harvesting over 110 million credentials. An operator with access to the FortiBleed infrastructure was seen logged into both the INC Ransom and Lynx negotiation panels, and at least 12 ransomware deployments — hundreds of encrypted endpoints — have been tied to the stolen access. Lynx is widely believed to be a rebrand of the INC ransomware gang.",
    "beginnerTip": "This shows how ransomware crews work in stages: first quietly steal <strong>credentials</strong> (usernames and passwords) at scale, then later use them to walk in and encrypt networks. Turning on multi-factor authentication and rotating VPN passwords blunts stolen credentials before they can be cashed in."
-  },
-  {
-   "headline": "Adform Ad Script Hijacked to Swap Crypto Wallet Addresses in Visitors' Clipboards",
-   "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
-   "url": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
-   "tags": [
-    {
-     "label": "Supply Chain Attack",
-     "type": "d"
-    },
-    {
-     "label": "Cryptocurrency Theft",
-     "type": "d"
-    },
-    {
-     "label": "Clipper Malware",
-     "type": "w"
-    }
-   ],
-   "body": "Advertising-technology firm Adform — which serves roughly 14,000 businesses and holds nearly 30% of the demand-side ad market — had its widely embedded 'trackpoint-async.js' tracking script tampered with so that every site using it delivered a Clipboard Hijacker to visitors. Researcher Kevin Beaumont found that the appended, obfuscated code scanned each visitor's clipboard every few seconds and, whenever it spotted a copied Bitcoin, Ethereum or Tron wallet address, silently replaced it with an attacker's address so funds would be sent to the wrong place; it could also rewrite addresses shown on web pages. Because the malicious code rode in on trusted ad infrastructure, this is a textbook supply chain attack. Adform says it detected the activity on July 27, removed the code, and notified affected clients.",
-   "beginnerTip": "A <strong>Clipboard Hijacker</strong> (or 'clipper') watches what you copy and swaps a copied crypto address for the attacker's the instant before you paste. The defense: after pasting a wallet address, always re-check the first and last few characters against the real one before sending."
-  },
-  {
-   "headline": "New 'Spirals' Ransomware Goes From Break-In to Full Encryption in Under 24 Hours",
-   "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
-   "url": "https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/",
-   "tags": [
-    {
-     "label": "Ransomware",
-     "type": "d"
-    },
-    {
-     "label": "Fast Encryption",
-     "type": "w"
-    },
-    {
-     "label": "New Actor",
-     "type": "a"
-    }
-   ],
-   "body": "A previously unseen ransomware operator tracked as 'Spirals' compromised a South Asian IT services firm and went from initial break-in to data theft and full encryption in less than 24 hours. The attackers got in through an internet-facing Microsoft IIS web server, uploaded a web shell, bypassed User Account Control, dumped credentials from the SAM registry hive and LSASS memory, and used WMI to spread to more than a dozen systems while setting up redundant remote access via revsocks, Chisel and Cloudflare tunnels. The Rust-based ransomware encrypts each file with its own AES-128 key wrapped by an attacker-controlled ECDH P-256 key, chunking files over 5 MB to encrypt faster. The operator behind it remains unidentified.",
-   "beginnerTip": "The alarming part here is speed: defenders may have only hours, not days, to notice and respond. A <strong>web shell</strong> — a small malicious script planted on a public web server — is a common first step, which is why patching and monitoring internet-facing servers matters so much."
   }
  ],
  "regulatory": [
@@ -249,6 +249,28 @@
  ],
  "trends": [
   {
+   "headline": "CrowdStrike: AI Is Now Both the Weapon and the Target in Cyberattacks",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com/",
+   "url": "https://cyberscoop.com/crowdstrike-annual-threat-hunting-report-2026/",
+   "tags": [
+    {
+     "label": "Threat Report",
+     "type": "a"
+    },
+    {
+     "label": "AI Offense",
+     "type": "w"
+    },
+    {
+     "label": "Supply Chain",
+     "type": "w"
+    }
+   ],
+   "body": "CrowdStrike's 2026 Threat Hunting Report describes AI as simultaneously a weapon, a target and a catalyst that is shrinking the time defenders have to respond. On offense, adversaries used AI to generate payloads and shell commands and to abuse enterprise large language models (LLMs) — one campaign fired nearly 200,000 model requests in two minutes. As a target, North Korea-linked actors poisoned 131 trusted AI-framework packages, and 87% of software-registry threats in the first half of 2026 involved malicious npm packages. CrowdStrike also says AI-agent-triggered detection leads are now growing 2.5 times faster than human-triggered ones, flooding security teams with activity to investigate.",
+   "beginnerTip": "An <strong>LLM</strong> (Large Language Model) is the kind of AI behind chatbots and coding assistants. The report's takeaway for a beginner: AI speeds up both attackers and defenders, and the AI tools and model packages companies adopt are themselves becoming things attackers try to poison or hijack."
+  },
+  {
    "headline": "'Bit2Watt' Research: Ordinary Cloud GPU Jobs Could Destabilize Power Grids — No Exploit Needed",
    "source": "The Hacker News",
    "sourceUrl": "https://thehackernews.com/",
@@ -291,31 +313,21 @@
    ],
    "body": "Redis shipped seven security releases on July 23 after researchers published authenticated remote-code-execution proof-of-concepts against stock Redis 6.2.22, 7.4.9, 8.6.4 and 8.8.0, all abusing the RESTORE command to trigger memory-corruption bugs. A research group called 'Bera Buddies' says the flaws were surfaced by autonomous Kimi K3 AI agents — one claim is 19 Redis zero-days found in about 90 minutes and a working 8.8.0 exploit built in 27 minutes — though those counts and the degree of autonomy are self-reported and unverified. Redis's public record confirms the flaws and fixes, and notably two of the vulnerable versions were themselves the fixes Redis had recommended back in May. Admins should upgrade to the fixed release for their branch and, as a stopgap, revoke the RESTORE command from accounts that don't need it.",
    "beginnerTip": "A <strong>proof-of-concept</strong> (PoC) is working sample code that demonstrates a bug is really exploitable. The trend to watch is AI 'agents' that can hunt for new flaws and write exploits quickly — which cuts both ways, helping defenders find bugs first but also lowering the effort for attackers."
-  },
-  {
-   "headline": "'SourTrade' Malvertising Makes the Victim's Own Browser Assemble the Malware",
-   "source": "The Hacker News",
-   "sourceUrl": "https://thehackernews.com/",
-   "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
-   "tags": [
-    {
-     "label": "Malvertising",
-     "type": "w"
-    },
-    {
-     "label": "Evasion",
-     "type": "a"
-    },
-    {
-     "label": "Crypto Theft",
-     "type": "w"
-    }
-   ],
-   "body": "A Malvertising operation dubbed 'SourTrade' delivers no single finished malicious file; instead its web pages ship the pieces — a clean copy of the legitimate Bun runtime plus attacker-supplied executable code — and have the victim's browser stitch them into a unique Windows program per session. Confiant, which detailed it on July 23, says the campaign has run since late 2024, impersonates TradingView, Solana and Luno, and targets crypto investors across 12 countries in 25 languages, showing suspected researchers a blank page while serving real targets a convincing fake. Rotating the build each time changes the file's fingerprint, blunting simple hash-based detection, though the attacker's code still crosses the network in the process. The practical defense is old-fashioned: install trading and wallet apps from the vendor's own website, never from an ad.",
-   "beginnerTip": "<strong>Malvertising</strong> is malware spread through online ads, sometimes on otherwise legitimate sites. This variant is sneaky because the complete virus never travels across the wire in one piece for scanners to catch — the browser builds it on the spot — but the same rule protects you: get software from official sources, not ad links."
   }
  ],
  "quickHits": [
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+   "text": "Attackers are now exploiting CVE-2026-6875, a critical (CVSS 9.5) unauthenticated remote code execution flaw in the ServiceNow AI Platform — self-hosted instances must apply the July 13 fix."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/thermo-fisher-patches-flaw-that-could.html",
+   "text": "Thermo Fisher patched a flaw in its Applied Biosystems human-identification software that could let DNA data files be altered before analysis loads them, risking near-undetectable tampering."
+  },
   {
    "color": "danger",
    "source": "CISA",
@@ -329,23 +341,11 @@
    "text": "Microsoft's July Patch Tuesday fixed a record 622 vulnerabilities, including two zero-days already under active attack — patch and reboot."
   },
   {
-   "color": "danger",
-   "source": "The Hacker News",
-   "sourceUrl": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
-   "text": "Progress urged ShareFile customers to shut down their Storage Zone Controllers over an active security threat until they can be secured."
-  },
-  {
    "color": "warn",
    "source": "The Hacker News",
-   "sourceUrl": "https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html",
-   "text": "An OpenSSL flaw nicknamed 'HollowByte' can freeze a server's memory with TLS requests as small as 11 bytes, risking denial of service."
-  },
-  {
-   "color": "accent",
-   "source": "The Hacker News",
-   "sourceUrl": "https://thehackernews.com/2026/07/11-old-microsoft-signed-linux-uefi.html",
-   "text": "Eleven old Microsoft-signed Linux UEFI 'shim' bootloaders can be abused to bypass Secure Boot and load untrusted code at startup."
+   "sourceUrl": "https://thehackernews.com/2026/08/chinese-threat-actor-uses-leaked.html",
+   "text": "A Chinese threat actor is using a leaked version of the DarkSword exploit kit to deploy 'GHOSTBLADE' spyware on Apple iOS devices."
   }
  ],
- "analystFooter": "Patch priority today: N-able N-central (build 2026.3.1.7) and self-hosted ServiceNow (CVE-2026-6875) are both under active exploitation, followed by Rails Active Storage (CVE-2026-66066) — and for Rails, rotate secret_key_base and other secrets, not just the code. Coldcard owners whose seeds were created on affected firmware should move funds to a freshly generated wallet, FortiGate admins should force VPN password resets and enable MFA against FortiBleed, and anyone copy-pasting crypto addresses should double-check them after the Adform clipboard-hijacker attack."
+ "analystFooter": "Today's priorities: water and wastewater operators should verify OT segmentation, review remote-access logs and be ready to run manually while the multi-state campaign is investigated. On patching, SonicWall SMA1000 (CVE-2026-15409/15410, now in CISA KEV) and N-able N-central (build 2026.3.1.7) are under active exploitation and internet-facing — patch first and rotate any credentials and MFA seeds those boxes could expose; self-hosted ServiceNow (CVE-2026-6875) and Hugging Face Diffusers (upgrade to 0.38.0) follow. Coldcard owners with seeds created on affected firmware must move funds to a freshly generated wallet, and business travelers should distrust surprise Microsoft sign-in or 'device code' prompts on hotel Wi-Fi after the Midnight Blizzard CaptiveCrunch campaign."
 }
