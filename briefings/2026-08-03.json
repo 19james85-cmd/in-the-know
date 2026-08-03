@@ -1,0 +1,351 @@
+{
+ "leadStory": {
+  "headline": "Coldcard Wallet Firmware Flaw Linked to $88.6 Million Bitcoin Theft",
+  "source": "The Hacker News",
+  "sourceUrl": "https://thehackernews.com/",
+  "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+  "tags": [
+   {
+    "label": "Cryptocurrency Theft",
+    "type": "d"
+   },
+   {
+    "label": "Firmware Flaw",
+    "type": "d"
+   },
+   {
+    "label": "~$88.6M Stolen",
+    "type": "w"
+   }
+  ],
+  "body": "On July 30, an attacker swept 1,196 Bitcoin addresses in 41 minutes, taking about $70.2 million; Galaxy Research has since tied further waves to the same root cause, raising suspected losses to roughly $88.6 million across 4,585 addresses. The culprit is a March 2021 firmware integration error in Coldcard, the Bitcoin-only hardware wallet from Canadian maker Coinkite, that routed wallet 'seed' generation to a weak software PRNG instead of the device's true hardware random number generator. Block estimates the mistake left seeds with only about 40 bits of randomness on the Mk3 (and roughly 72 bits on later models) versus the 128 bits a proper 12-word seed should have, making some keys guessable offline. Coinkite shipped emergency firmware on July 31, but patching does not repair an already-created seed — affected owners must generate a fresh seed on updated firmware and move their coins.",
+  "beginnerTip": "A hardware wallet keeps your crypto keys on a small offline device so malware on your PC can't steal them. Everything hinges on the 'seed' — a random master secret the device generates. If that randomness comes from a weak <strong>PRNG</strong> (a formula that only looks random), an attacker can reproduce the same 'random' seeds and drain the wallet without ever touching the device."
+ },
+ "cves": [
+  {
+   "headline": "N-able N-central Auth-Bypass Flaws Exploited to Hijack MSP Servers (CVE-2026-18556 / CVE-2026-18577)",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/08/n-able-says-attackers-take-over-n.html",
+   "tags": [
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 8.2 / High",
+     "type": "d"
+    },
+    {
+     "label": "Incomplete Fix",
+     "type": "w"
+    }
+   ],
+   "body": "N-able confirmed attackers are exploiting an authentication bypass in N-central, the remote monitoring and management (RMM) console that managed service providers use to administer thousands of customer endpoints at once. The company first fixed the bug (CVE-2026-18556) in build 2026.2, but later found an alternative way to trigger it — tracked as CVE-2026-18577 — and shipped build 2026.3.1.7 on August 2 as the first fully unaffected version. Both are rated 8.2 on the CVSS scale and let a remote, unauthenticated attacker seize administrative control of the console, then use its built-in Take Control feature to reach managed devices and register Cloudflare tunnels for persistence. Because one compromised RMM server exposes every customer behind it, this is a supply chain risk to entire fleets.",
+   "beginnerTip": "An <strong>RMM</strong> (Remote Monitoring and Management) platform is software IT providers use to control all their clients' computers from one dashboard. That makes it a jackpot for attackers: break the dashboard once and you inherit access to everyone it manages, which is why these flaws are urgent even at a 'medium' base score."
+  },
+  {
+   "headline": "Critical ServiceNow AI Platform Flaw (CVE-2026-6875) Now Exploited for Unauthenticated RCE",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+   "tags": [
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 9.5 / Critical",
+     "type": "d"
+    },
+    {
+     "label": "Unauthenticated RCE",
+     "type": "d"
+    }
+   ],
+   "body": "Attackers are now exploiting CVE-2026-6875, a critical (CVSS 9.5) Sandbox Escape in the ServiceNow AI Platform that lets an unauthenticated attacker break out of the isolated area where AI code is meant to run and execute commands on the underlying system — remote code execution (RCE) with no login required. ServiceNow patched its own hosted instances starting in April and released fixes for self-hosted customers on July 13, but organizations that run ServiceNow on their own servers must apply the update manually. Searchlight Cyber reported the flaw; in-the-wild exploitation has since been observed, so unpatched self-hosted deployments are the ones at risk.",
+   "beginnerTip": "A 'sandbox' is a walled-off space where a program runs so it can't touch the rest of the system. A <strong>Sandbox Escape</strong> is a bug that lets code climb out of that box — here, into the server itself. 'Unauthenticated' makes it worse: the attacker doesn't even need an account to begin."
+  },
+  {
+   "headline": "Rails Patches Critical Active Storage Flaw (CVE-2026-66066) — Rotate Your Secrets, Too",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/rails-patches-critical-active-storage-flaw-with-rce-potential/",
+   "tags": [
+    {
+     "label": "Critical / CVSS 9.5",
+     "type": "d"
+    },
+    {
+     "label": "Arbitrary File Read",
+     "type": "d"
+    },
+    {
+     "label": "Patch Available",
+     "type": "w"
+    }
+   ],
+   "body": "Ruby on Rails patched CVE-2026-66066, a critical arbitrary-file-read flaw in Active Storage's image processing that an unauthenticated attacker can trigger by uploading a specially crafted image when the app uses the libvips library. Successful exploitation can leak the server's environment and secrets — the Rails master key (secret_key_base), database passwords, cloud-storage credentials and API tokens — and from there escalate toward remote code execution. Fixed versions are Active Storage 7.2.3.2, 8.0.5.1 and 8.1.3.1; teams should upgrade libvips to 8.13+ and, critically, rotate any secrets the app could read, because a patch alone does not undo an earlier theft.",
+   "beginnerTip": "'Arbitrary file read' means an attacker can make the server hand over files it should keep private — including the keys that unlock its database and cloud accounts. That's why the fix has two halves: install the patch <strong>and</strong> rotate (replace) the exposed secrets, since anything already stolen keeps working until you change it."
+  },
+  {
+   "headline": "CISA Adds Actively Exploited Fortinet FortiOS SSL-VPN Flaw (CVE-2025-68686) to KEV",
+   "source": "CISA",
+   "sourceUrl": "https://www.cisa.gov/",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/07/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "tags": [
+    {
+     "label": "CISA KEV",
+     "type": "a"
+    },
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 5.3",
+     "type": "w"
+    }
+   ],
+   "body": "CISA added CVE-2025-68686, an information-exposure flaw in Fortinet FortiOS SSL-VPN, to its Known Exploited Vulnerabilities (KEV) catalog on July 27 after confirming real-world attacks. Although its CVSS base score is a modest 5.3, the KEV listing means it is being used against organizations now, and FortiGate SSL-VPN appliances sit directly on the internet as remote-access gateways — a favorite target for gaining an initial foothold. Federal agencies face a binding deadline to patch; everyone else should treat KEV entries as a priority patch list.",
+   "beginnerTip": "An <strong>SSL-VPN</strong> is the encrypted 'front door' employees use to log into a company network from home. Because it is internet-facing by design, any flaw in it is prime real estate for attackers — and a low severity score matters little once CISA confirms it is already being exploited."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "FortiBleed: 110 Million Stolen FortiGate Credentials Linked to INC and Lynx Ransomware",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com/",
+   "url": "https://www.cybersecuritydive.com/news/fortibleed-campaign-traced-to-inc-and-lynx-ransomware-operations/824348/",
+   "tags": [
+    {
+     "label": "Ransomware",
+     "type": "d"
+    },
+    {
+     "label": "Credential Theft",
+     "type": "d"
+    },
+    {
+     "label": "Fortinet",
+     "type": "w"
+    }
+   ],
+   "body": "Researchers linked a mass credential-theft campaign dubbed 'FortiBleed' to the INC and Lynx ransomware operations after finding an exposed server holding data stolen from more than 73,000 Fortinet devices. The operation used a custom 'FortiGate Sniffer' packet-capture tool on compromised firewalls to intercept VPN logins straight from network traffic, ultimately targeting around 430,000 FortiGate firewalls and harvesting over 110 million credentials. An operator with access to the FortiBleed infrastructure was seen logged into both the INC Ransom and Lynx negotiation panels, and at least 12 ransomware deployments — hundreds of encrypted endpoints — have been tied to the stolen access. Lynx is widely believed to be a rebrand of the INC ransomware gang.",
+   "beginnerTip": "This shows how ransomware crews work in stages: first quietly steal <strong>credentials</strong> (usernames and passwords) at scale, then later use them to walk in and encrypt networks. Turning on multi-factor authentication and rotating VPN passwords blunts stolen credentials before they can be cashed in."
+  },
+  {
+   "headline": "Adform Ad Script Hijacked to Swap Crypto Wallet Addresses in Visitors' Clipboards",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
+   "tags": [
+    {
+     "label": "Supply Chain Attack",
+     "type": "d"
+    },
+    {
+     "label": "Cryptocurrency Theft",
+     "type": "d"
+    },
+    {
+     "label": "Clipper Malware",
+     "type": "w"
+    }
+   ],
+   "body": "Advertising-technology firm Adform — which serves roughly 14,000 businesses and holds nearly 30% of the demand-side ad market — had its widely embedded 'trackpoint-async.js' tracking script tampered with so that every site using it delivered a Clipboard Hijacker to visitors. Researcher Kevin Beaumont found that the appended, obfuscated code scanned each visitor's clipboard every few seconds and, whenever it spotted a copied Bitcoin, Ethereum or Tron wallet address, silently replaced it with an attacker's address so funds would be sent to the wrong place; it could also rewrite addresses shown on web pages. Because the malicious code rode in on trusted ad infrastructure, this is a textbook supply chain attack. Adform says it detected the activity on July 27, removed the code, and notified affected clients.",
+   "beginnerTip": "A <strong>Clipboard Hijacker</strong> (or 'clipper') watches what you copy and swaps a copied crypto address for the attacker's the instant before you paste. The defense: after pasting a wallet address, always re-check the first and last few characters against the real one before sending."
+  },
+  {
+   "headline": "New 'Spirals' Ransomware Goes From Break-In to Full Encryption in Under 24 Hours",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/",
+   "tags": [
+    {
+     "label": "Ransomware",
+     "type": "d"
+    },
+    {
+     "label": "Fast Encryption",
+     "type": "w"
+    },
+    {
+     "label": "New Actor",
+     "type": "a"
+    }
+   ],
+   "body": "A previously unseen ransomware operator tracked as 'Spirals' compromised a South Asian IT services firm and went from initial break-in to data theft and full encryption in less than 24 hours. The attackers got in through an internet-facing Microsoft IIS web server, uploaded a web shell, bypassed User Account Control, dumped credentials from the SAM registry hive and LSASS memory, and used WMI to spread to more than a dozen systems while setting up redundant remote access via revsocks, Chisel and Cloudflare tunnels. The Rust-based ransomware encrypts each file with its own AES-128 key wrapped by an attacker-controlled ECDH P-256 key, chunking files over 5 MB to encrypt faster. The operator behind it remains unidentified.",
+   "beginnerTip": "The alarming part here is speed: defenders may have only hours, not days, to notice and respond. A <strong>web shell</strong> — a small malicious script planted on a public web server — is a common first step, which is why patching and monitoring internet-facing servers matters so much."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "Industry Presses CISA to Narrow CIRCIA as Final Cyber-Reporting Rule Targets September",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com/",
+   "url": "https://cyberscoop.com/cisa-circia-cyber-incident-reporting-rule-feedback/",
+   "tags": [
+    {
+     "label": "Incident Reporting",
+     "type": "a"
+    },
+    {
+     "label": "Critical Infrastructure",
+     "type": "a"
+    },
+    {
+     "label": "Rulemaking",
+     "type": "a"
+    }
+   ],
+   "body": "As CISA works toward a September 2026 target to finalize the Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA) rule, critical-infrastructure groups are lobbying to shrink it — fewer covered entities, fewer reportable incidents, and less detail per report. CISA estimates more than 300,000 organizations across 16 critical-infrastructure sectors would be covered. As drafted, CIRCIA requires covered entities to report significant cyber incidents within 72 hours and ransom payments within 24 hours, making it one of the most far-reaching U.S. cyber regulations ever proposed.",
+   "beginnerTip": "<strong>CIRCIA</strong> is a coming U.S. law that will require important sectors (power, water, hospitals and more) to tell the government quickly when they're hacked. Faster reporting helps CISA spot attack patterns early and warn other potential victims before the same technique spreads."
+  },
+  {
+   "headline": "National Cyber Director Seeks Industry Help to Cut Cybersecurity Regulations, Renew CISA",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com/",
+   "url": "https://cyberscoop.com/sean-cairncross-industry-cut-cybersecurity-regulations-renew-cisa/",
+   "tags": [
+    {
+     "label": "Policy",
+     "type": "a"
+    },
+    {
+     "label": "Harmonization",
+     "type": "a"
+    },
+    {
+     "label": "CISA",
+     "type": "a"
+    }
+   ],
+   "body": "National Cyber Director Sean Cairncross asked industry to help identify overlapping and burdensome federal cybersecurity rules to streamline, while pushing to renew and refocus CISA. Proponents argue that companies today report the same incidents to multiple agencies under inconsistent formats and deadlines, and that harmonizing those requirements would free security teams to spend more time defending and less on paperwork. Critics counter that loosening requirements could reduce visibility into attacks; the debate will help shape how prescriptive U.S. cyber rules become.",
+   "beginnerTip": "'Regulatory harmonization' means making different agencies' rules line up so a company isn't filling out five different incident reports for one hack. It reflects a recurring tension in cybersecurity policy: enough rules to force good security, but not so many that teams drown in compliance paperwork."
+  },
+  {
+   "headline": "NIST Opens Comment on Draft SP 800-219r2: Automated Secure Config for macOS, iOS and visionOS",
+   "source": "NIST (CSRC)",
+   "sourceUrl": "https://csrc.nist.gov/",
+   "url": "https://csrc.nist.gov/News/2026/draft-sp-800-219r2-available-for-public-comment",
+   "tags": [
+    {
+     "label": "Framework",
+     "type": "a"
+    },
+    {
+     "label": "Secure Configuration",
+     "type": "a"
+    },
+    {
+     "label": "Public Comment",
+     "type": "a"
+    }
+   ],
+   "body": "NIST released the initial public draft of Special Publication 800-219r2, which provides automated, ready-to-use secure baselines for Apple's macOS, iOS and visionOS built from the open-source macOS Security Compliance Project (mSCP). The guidance lets organizations check and enforce device hardening in an automated way rather than by hand, and this revision adds simpler OS-version and rule management plus a broader intended audience. The public comment period is open through August 14, 2026.",
+   "beginnerTip": "A <strong>secure baseline</strong> is a checklist of settings that make a device safe out of the box — disabling risky features, enforcing encryption, and so on. 'Automated' means tools can apply and verify those settings across thousands of Macs and iPhones without an admin clicking through each one."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "'Bit2Watt' Research: Ordinary Cloud GPU Jobs Could Destabilize Power Grids — No Exploit Needed",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html",
+   "tags": [
+    {
+     "label": "Research",
+     "type": "a"
+    },
+    {
+     "label": "Critical Infrastructure",
+     "type": "w"
+    },
+    {
+     "label": "Cloud / AI",
+     "type": "a"
+    }
+   ],
+   "body": "Zhejiang University researchers described 'Bit2Watt,' a technique in which a cloud tenant uses nothing but ordinary GPU access to rapidly swing a data center's power draw — no malware, stolen credentials or software bug required. Because a GPU's electricity use tracks whatever it computes, toggling between heavy and idle work on a schedule creates a controllable power oscillation, and one method hides the modulation inside a normal AI-training run. The team measured the effect on real data-center GPUs (A100, V100) and, in a worst-case simulation of 1,000 GPUs modulating in lockstep, showed grid instability — though they concede synchronizing a real cloud fleet that tightly is still an unsolved problem. The unsettling part is that there is no bug to patch: the exposure is the coupling between volatile compute load and a modern, inverter-heavy grid that no single owner monitors.",
+   "beginnerTip": "This is a research paper and a simulation, not an attack that happened — but it highlights how AI data centers are becoming heavy, twitchy electricity consumers. As more of the grid runs on solar and batteries, sudden coordinated swings in demand become a new kind of physical-world risk that spans two industries at once."
+  },
+  {
+   "headline": "AI Agents Reportedly Found Redis Zero-Days and Wrote Working RCE Exploits in Minutes",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html",
+   "tags": [
+    {
+     "label": "AI Offense",
+     "type": "w"
+    },
+    {
+     "label": "Zero-Day",
+     "type": "w"
+    },
+    {
+     "label": "Patch Available",
+     "type": "a"
+    }
+   ],
+   "body": "Redis shipped seven security releases on July 23 after researchers published authenticated remote-code-execution proof-of-concepts against stock Redis 6.2.22, 7.4.9, 8.6.4 and 8.8.0, all abusing the RESTORE command to trigger memory-corruption bugs. A research group called 'Bera Buddies' says the flaws were surfaced by autonomous Kimi K3 AI agents — one claim is 19 Redis zero-days found in about 90 minutes and a working 8.8.0 exploit built in 27 minutes — though those counts and the degree of autonomy are self-reported and unverified. Redis's public record confirms the flaws and fixes, and notably two of the vulnerable versions were themselves the fixes Redis had recommended back in May. Admins should upgrade to the fixed release for their branch and, as a stopgap, revoke the RESTORE command from accounts that don't need it.",
+   "beginnerTip": "A <strong>proof-of-concept</strong> (PoC) is working sample code that demonstrates a bug is really exploitable. The trend to watch is AI 'agents' that can hunt for new flaws and write exploits quickly — which cuts both ways, helping defenders find bugs first but also lowering the effort for attackers."
+  },
+  {
+   "headline": "'SourTrade' Malvertising Makes the Victim's Own Browser Assemble the Malware",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+   "tags": [
+    {
+     "label": "Malvertising",
+     "type": "w"
+    },
+    {
+     "label": "Evasion",
+     "type": "a"
+    },
+    {
+     "label": "Crypto Theft",
+     "type": "w"
+    }
+   ],
+   "body": "A Malvertising operation dubbed 'SourTrade' delivers no single finished malicious file; instead its web pages ship the pieces — a clean copy of the legitimate Bun runtime plus attacker-supplied executable code — and have the victim's browser stitch them into a unique Windows program per session. Confiant, which detailed it on July 23, says the campaign has run since late 2024, impersonates TradingView, Solana and Luno, and targets crypto investors across 12 countries in 25 languages, showing suspected researchers a blank page while serving real targets a convincing fake. Rotating the build each time changes the file's fingerprint, blunting simple hash-based detection, though the attacker's code still crosses the network in the process. The practical defense is old-fashioned: install trading and wallet apps from the vendor's own website, never from an ad.",
+   "beginnerTip": "<strong>Malvertising</strong> is malware spread through online ads, sometimes on otherwise legitimate sites. This variant is sneaky because the complete virus never travels across the wire in one piece for scanners to catch — the browser builds it on the spot — but the same rule protects you: get software from official sources, not ad links."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "CISA",
+   "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/07/29/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "text": "CISA added the actively exploited Cisco Secure Firewall Management Center static-credentials flaw (CVE-2026-20316) to its KEV catalog, with a federal patch deadline of August 1."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
+   "text": "Microsoft's July Patch Tuesday fixed a record 622 vulnerabilities, including two zero-days already under active attack — patch and reboot."
+  },
+  {
+   "color": "danger",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
+   "text": "Progress urged ShareFile customers to shut down their Storage Zone Controllers over an active security threat until they can be secured."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html",
+   "text": "An OpenSSL flaw nicknamed 'HollowByte' can freeze a server's memory with TLS requests as small as 11 bytes, risking denial of service."
+  },
+  {
+   "color": "accent",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/07/11-old-microsoft-signed-linux-uefi.html",
+   "text": "Eleven old Microsoft-signed Linux UEFI 'shim' bootloaders can be abused to bypass Secure Boot and load untrusted code at startup."
+  }
+ ],
+ "analystFooter": "Patch priority today: N-able N-central (build 2026.3.1.7) and self-hosted ServiceNow (CVE-2026-6875) are both under active exploitation, followed by Rails Active Storage (CVE-2026-66066) — and for Rails, rotate secret_key_base and other secrets, not just the code. Coldcard owners whose seeds were created on affected firmware should move funds to a freshly generated wallet, FortiGate admins should force VPN password resets and enable MFA against FortiBleed, and anyone copy-pasting crypto addresses should double-check them after the Adform clipboard-hijacker attack."
+}

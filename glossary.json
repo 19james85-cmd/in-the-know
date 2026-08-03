@@ -96,6 +96,12 @@
   "e": "A fake 'prove you're human' page told users to press Win+R and paste a command, which downloaded an information stealer — researchers found 3,000 live ClickFix payloads served by API-driven backends."
  },
  {
+  "t": "Clipboard Hijacker",
+  "c": "Malware",
+  "d": "A clipboard hijacker (also called a 'clipper') is malware that watches whatever you copy and secretly swaps it before you paste — most often replacing a cryptocurrency wallet address with the attacker's so your payment goes to them. Because the switch happens invisibly at the moment of pasting, victims usually don't notice until the money is gone.",
+  "e": "In July 2026, tampered Adform advertising code acted as a clipboard hijacker, replacing copied Bitcoin, Ethereum and Tron addresses on any website that used Adform's tracking script."
+ },
+ {
   "t": "CMMC",
   "c": "Regulatory",
   "d": "The US Department of Defense/War programme that verifies defense contractors actually implement required cybersecurity controls, rather than just claiming to.",
@@ -360,6 +366,12 @@
   "e": "In July 2026, attackers exploited a SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them forge valid logins even after the server was patched."
  },
  {
+  "t": "Malvertising",
+  "c": "Malware",
+  "d": "Malvertising is the practice of spreading malware through online advertisements, sometimes even on legitimate, well-known websites. Simply loading a page that contains a poisoned ad can be enough to put a user at risk, without them ever clicking anything unusual.",
+  "e": "In July 2026, a malvertising campaign called 'SourTrade' impersonated TradingView and other finance brands to trick crypto investors across 12 countries into downloading a browser-assembled Windows trojan."
+ },
+ {
   "t": "Malware",
   "c": "Malware",
   "d": "Short for malicious software — any software intentionally designed to disrupt, damage, or gain unauthorized access to a system. Includes viruses, ransomware, spyware, and trojans.",
@@ -442,6 +454,12 @@
   "c": "Vulnerability",
   "d": "Turning limited access into powerful access — e.g. a normal user account becoming an administrator.",
   "e": "Many of the flaws in the July 2026 Microsoft Patch Tuesday were elevation-of-privilege bugs that let a low-level foothold become domain admin."
+ },
+ {
+  "t": "PRNG",
+  "c": "Cryptography",
+  "d": "A PRNG (pseudorandom number generator) is a formula that produces numbers that look random but are actually calculated from a starting value called a seed. If the seed is guessable or the generator is weak, an attacker can reproduce the exact same 'random' numbers — catastrophic when those numbers are used to create secret keys.",
+  "e": "In July 2026, a weak PRNG in Coldcard hardware-wallet firmware let attackers reproduce users' wallet seeds and steal an estimated $88.6 million in Bitcoin."
  },
  {
   "t": "Prompt Injection",
