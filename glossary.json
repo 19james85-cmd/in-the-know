@@ -60,6 +60,12 @@
   "e": "In July 2026, CISA used BOD 26-04 to order federal agencies to patch the actively exploited Check Point SmartConsole flaw (CVE-2026-16232) by July 25."
  },
  {
+  "t": "BMC",
+  "c": "Network",
+  "d": "A Baseboard Management Controller is a small always-on computer built into a server that lets admins power it on, reinstall the operating system, or mount media remotely, even when the main machine is off. Because it runs beneath the OS, malware there can survive a full disk wipe.",
+  "e": "In August 2026 researchers found over 24,000 internet-exposed BMCs leaking password hashes through a 2013 IPMI flaw (CVE-2013-4786), letting attackers log in within minutes."
+ },
+ {
   "t": "Botnet",
   "c": "Malware",
   "d": "A network of private computers infected with malicious software and controlled as a group without the owners' knowledge, used to send spam or carry out attacks.",
@@ -202,6 +208,12 @@
   "c": "Vulnerability",
   "d": "The process of turning stored or transmitted data back into objects a program can use. When software deserializes untrusted data without checks, attackers can smuggle in malicious code that executes during the rebuild.",
   "e": "CISA added a SharePoint deserialization flaw to its KEV catalog after attackers used crafted data packets to run their own code on unpatched servers."
+ },
+ {
+  "t": "Device Code Phishing",
+  "c": "Threat/Actor",
+  "d": "A phishing technique that abuses the OAuth 'device code' sign-in flow (built for TVs and gadgets that can't show a login page). The attacker starts a real login and tricks you into approving it on the genuine site, so no password is stolen and MFA is satisfied for real.",
+  "e": "In August 2026 Dark Reading reported device code phishing rose about 1,500% in the first half of 2026, with attackers approving their own logins via victims' legitimate Microsoft sign-ins."
  },
  {
   "t": "DFARS 252.204-7012",
@@ -412,6 +424,12 @@
   "c": "Network",
   "d": "The specialized computers, controllers and sensors that run physical equipment like pumps, valves and factory machines, as opposed to the regular IT that runs email and office apps. Attacks on it can have real-world physical effects.",
   "e": "In July 2026, cyberattacks on the operational technology behind U.S. water utilities in seven states forced several plants to switch to manual control."
+ },
+ {
+  "t": "Passkey",
+  "c": "Cryptography",
+  "d": "A phishing-resistant replacement for passwords that uses a private key stored on your device instead of a secret you type in. The website only ever sees a public key, so there is no password for an attacker to steal or trick you into revealing.",
+  "e": "In August 2026 Unit 42's 'Pass-ta-key' research showed that malware already on a PC could hijack Google-synced passkeys without breaking the underlying passkey cryptography."
  },
  {
   "t": "Password Spraying",
