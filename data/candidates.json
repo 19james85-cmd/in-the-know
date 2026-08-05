@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-04T15:06:22.606799+00:00",
+ "generated": "2026-08-05T14:59:05.576226+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,13 +11,13 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 10,
+   "count": 11,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 3,
+   "count": 0,
    "error": null
   },
   {
@@ -29,13 +29,13 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 6,
+   "count": 2,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 4,
+   "count": 7,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 6,
+   "count": 8,
    "error": null
   },
   {
@@ -65,277 +65,270 @@
  ],
  "items": [
   {
+   "source": "BleepingComputer",
+   "title": "Google Blogger locks hundreds of blogs in malware false positive",
+   "url": "https://www.bleepingcomputer.com/news/google/google-blogger-locks-hundreds-of-blogs-in-malware-false-positive/",
+   "published": "2026-08-05T14:58:51+00:00",
+   "summary": "Google has locked hundreds of Blogger websites after a false positive claimed they violated its \"Malware and Similar Malicious Content\" policy, with some sites deleted from the platform. [...]"
+  },
+  {
    "source": "SecurityWeek",
-   "title": "Oligo Raises $60 Million for Runtime Security",
-   "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
-   "published": "2026-08-04T15:00:00+00:00",
-   "summary": "The company will use the investment to accelerate product innovation and expand go-to-market operations. The post Oligo Raises $60 Million for Runtime Security appeared first on SecurityWeek ."
+   "title": "Black Hat USA 2026 – Summary of Vendor Announcements (Part 3)",
+   "url": "https://www.securityweek.com/black-hat-usa-2026-summary-of-vendor-announcements-part-3/",
+   "published": "2026-08-05T14:36:29+00:00",
+   "summary": "Many companies are showcasing their products and services this week at the 2026 edition of the Black Hat conference in Las Vegas. The post Black Hat USA 2026 – Summary of Vendor Announcements (Part 3) appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Veeam, Terraform MCP, Django Patch Critical Flaws, Led by CVSS 10.0 Cross-Tenant Bug",
+   "url": "https://thehackernews.com/2026/08/veeam-terraform-mcp-django-patch.html",
+   "published": "2026-08-05T14:27:30+00:00",
+   "summary": "HashiCorp, Veeam, and the Django Software Foundation have patched 11 vulnerabilities across Terraform MCP Server, Veeam Service Provider Console, and Django. The three most serious: An unauthenticated flaw in Veeam's console that hands over a managed agent's credentials, rated 9.5 A cross-tenant flaw in HashiCorp's MCP server that lets one user's Terraform token be reused for later users'"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "How AI-powered phishing killed blocklists for good",
+   "url": "https://www.bleepingcomputer.com/news/security/how-ai-powered-phishing-killed-blocklists-for-good/",
+   "published": "2026-08-05T14:01:11+00:00",
+   "summary": "AI is helping attackers create disposable phishing infrastructure and rapidly evolving toolkits that blocklists cannot track fast enough. Push Security explains why browser-level, technique-based detection offers a more durable defense than relying on domains, signatures, and other known-bad indicators. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Trojanized npm Packages Decode C2 IP From Ethereum Recipient Addresses",
+   "url": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html",
+   "published": "2026-08-05T13:41:27+00:00",
+   "summary": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely empty Ethereum transfer. The new dead drop resolver approach, observed in two trojanized npm package \"bianira-ui\" and \"fluid-type-ui,\" has been codenamed NullReceiver by"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "The Fourth Battlefield: The Growing Role of Cyber Operations in Global Conflict",
+   "url": "https://www.securityweek.com/the-fourth-battlefield-the-growing-role-of-cyber-operations-in-global-conflict/",
+   "published": "2026-08-05T13:00:08+00:00",
+   "summary": "CrowdStrike co-founder Dmitri Alperovitch discusses how cyber operations support kinetic warfare, signal coming conflicts, and reshape the global battlefield. The post The Fourth Battlefield: The Growing Role of Cyber Operations in Global Conflict appeared first on SecurityWeek ."
   },
   {
    "source": "CyberScoop",
-   "title": "Lawmakers spring to save ID theft services for OPM breach victims, with expiration looming",
-   "url": "https://cyberscoop.com/opm-breach-lifetime-identity-protection-bill/",
-   "published": "2026-08-04T14:51:40+00:00",
-   "summary": "Sen. Mark Warner, D-Va., and Del. Eleanor Holmes Norton, D-D.C., hope to make the services permanent before they end next month. The post Lawmakers spring to save ID theft services for OPM breach victims, with expiration looming appeared first on CyberScoop ."
+   "title": "Open-source software’s archenemy TeamPCP goes back further than anyone thought",
+   "url": "https://cyberscoop.com/teampcp-long-active-history-2020-oligo-security/",
+   "published": "2026-08-05T13:00:00+00:00",
+   "summary": "Oligo Security uncovered evidence of a long operational history, including multiple previous attacks it traced to the same attacker infrastructure and tools. The post Open-source software’s archenemy TeamPCP goes back further than anyone thought appeared first on CyberScoop ."
   },
   {
    "source": "SecurityWeek",
-   "title": "CISO Conversations: Russ Kirby – Passion Is the Antidote to Burnout",
-   "url": "https://www.securityweek.com/ciso-conversation-russ-kirby-passion-is-the-antidote-to-burnout/",
-   "published": "2026-08-04T14:30:00+00:00",
-   "summary": "Russ Kirby, CISO at Ping Identity, shares how passion, courage, and “good enough” thinking shaped his path from HP to the C-suite—and what keeps him up at night. The post CISO Conversations: Russ Kirby – Passion Is the Antidote to Burnout appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Varonis Agent IBAC keeps AI agents within their intended boundaries",
-   "url": "https://www.bleepingcomputer.com/news/security/varonis-agent-ibac-keeps-ai-agents-within-their-intended-boundaries/",
-   "published": "2026-08-04T14:00:10+00:00",
-   "summary": "AI agents need broad access to be useful, but traditional access controls cannot determine whether an action aligns with a user's intent. Varonis explains how Agent IBAC detects intent drift and enforces real-time guardrails to keep agents within their intended boundaries. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Weaponized Email AI Assistants Could Help Attackers Hijack Accounts",
-   "url": "https://www.securityweek.com/weaponized-email-ai-assistants-could-help-attackers-hijack-accounts/",
-   "published": "2026-08-04T13:54:13+00:00",
-   "summary": "Researchers demonstrate how attackers could abuse built-in email chatbots to evade detection, impersonate trusted employees, compromise executive accounts, and facilitate financial fraud. The post Weaponized Email AI Assistants Could Help Attackers Hijack Accounts appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Zenity Raises $125 Million in Series C Funding",
-   "url": "https://www.securityweek.com/zenity-raises-125-million-in-series-c-funding/",
-   "published": "2026-08-04T13:40:42+00:00",
-   "summary": "The AI security company will invest in product innovation, global expansion, and customer experience. The post Zenity Raises $125 Million in Series C Funding appeared first on SecurityWeek ."
+   "title": "New Attack Methods Enable Malware to Hijack Passkey-Protected Accounts",
+   "url": "https://www.securityweek.com/new-attack-methods-enable-malware-to-hijack-passkey-protected-accounts/",
+   "published": "2026-08-05T12:48:49+00:00",
+   "summary": "Palo Alto Networks researchers have demonstrated attacks against Google’s synced passkey implementation. The post New Attack Methods Enable Malware to Hijack Passkey-Protected Accounts appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "Keyv-Linked npm Worm Poisons Hundreds of Packages, Plants Claude Code and VS Code Hooks",
-   "url": "https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html",
-   "published": "2026-08-04T13:30:23+00:00",
-   "summary": "A credential-stealing npm worm that first appeared in keyv@6.0.0 spread beyond the Keyv and Cacheable namespaces into hundreds of packages across multiple organizations on August 4, 2026. SafeDep verified 353 poisoned versions across 79 package names in the npm registry. Its monitoring put the wider footprint at 442 versions across 353 names, while Aikido later reported at least 868 packages"
+   "title": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
+   "url": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
+   "published": "2026-08-05T11:43:27+00:00",
+   "summary": "A memory corruption flaw in the Linux kernel's Open vSwitch datapath gives ordinary local users a path to root on a broad set of default-configured distributions, and a public exploit ships with pre-built records for roughly 800 kernel builds. The vulnerability, tracked as CVE-2026-64531 (CVSS score: 7.8) and codenamed OVSwrap by its discoverer, was disclosed by security researcher Asim"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Kali365 Weaponizes Microsoft Authentication Against US Companies: New Enterprise Risk",
+   "url": "https://thehackernews.com/2026/08/kali365-weaponizes-microsoft.html",
+   "published": "2026-08-05T11:43:19+00:00",
+   "summary": "Kali365 is turning a legitimate Microsoft login into a gateway to corporate data. The phishing kit targets US organizations with attacker-controlled device codes that victims approve on Microsoft's real authentication page. Once access and refresh tokens are issued, attackers may retain access to email, documents, and cloud resources, creating a direct path to data exposure, financial fraud,"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "311,000 Impacted by Brown Health Medical Group-MA Data Breach",
+   "url": "https://www.securityweek.com/311000-impacted-by-brown-health-medical-group-ma-data-breach/",
+   "published": "2026-08-05T11:35:23+00:00",
+   "summary": "Hackers stole personal information, medical records, and financial information from the organization’s server. The post 311,000 Impacted by Brown Health Medical Group-MA Data Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Cybersecurity Alliance Drafts SAFE Guidelines for Sharing AI Incident Data",
+   "url": "https://www.securityweek.com/cybersecurity-alliance-drafts-safe-guidelines-for-sharing-ai-incident-data/",
+   "published": "2026-08-05T11:11:29+00:00",
+   "summary": "The guidelines are the work of the recently launched Open Secure AI Alliance, which now includes 120 organizations. The post Cybersecurity Alliance Drafts SAFE Guidelines for Sharing AI Incident Data appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical Gitea Flaw Let Unauthenticated Attackers Read Server Files via Org-Mode Markup",
+   "url": "https://thehackernews.com/2026/08/critical-gitea-flaw-let-unauthenticated.html",
+   "published": "2026-08-05T11:04:23+00:00",
+   "summary": "An unauthenticated attacker can read any file the service account can access on Gitea, the self-hosted Git platform, in versions 1.22.1 through 1.27.0. No login, no repository write access. A public repository and crafted Org-mode markup are enough. The flaw is fixed in Gitea 1.27.1. The file-read flaw is tracked as CVE-2026-59774, rated Critical with a CVSS score of 9.8, and received its"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Leaked n8n API Tokens Exposed Live Instances to Credential Theft",
+   "url": "https://thehackernews.com/2026/08/leaked-n8n-api-tokens-exposed-live.html",
+   "published": "2026-08-05T10:35:29+00:00",
+   "summary": "GitGuardian researchers found 321 n8n instances accepting API tokens exposed in public GitHub commits and demonstrated four ways attackers could use them to access sensitive data and downstream credentials without exploiting a software vulnerability. We scanned public GitHub commits for exposed n8n API tokens and identified 4,576 unique credentials associated with 1,255 hostnames. Of the 896"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "AI Agents Targeted Real People and Projects During Cybersecurity Tests",
+   "url": "https://www.securityweek.com/ai-security-institute-reports-anthropic-and-openai-models-going-rogue-against-organizations/",
+   "published": "2026-08-05T10:33:41+00:00",
+   "summary": "AI Security Institute reports Anthropic and OpenAI models going rogue against real people, organizations, and open source projects. The post AI Agents Targeted Real People and Projects During Cybersecurity Tests appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "CISA Warns of Exploited Langflow, N-central, and Tomcat Vulnerabilities",
+   "url": "https://www.securityweek.com/cisa-warns-of-exploited-langflow-n-central-and-tomcat-vulnerabilities/",
+   "published": "2026-08-05T09:44:50+00:00",
+   "summary": "The flaws can be exploited for remote code execution, authentication bypass, and EncryptInterceptor bypass. The post CISA Warns of Exploited Langflow, N-central, and Tomcat Vulnerabilities appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Open VSX Removes 77 Malicious Evil Twin Extensions Exfiltrating Developer Data",
+   "url": "https://thehackernews.com/2026/08/open-vsx-removes-77-malicious-evil-twin.html",
+   "published": "2026-08-05T09:23:03+00:00",
+   "summary": "A cluster of 77 extensions on the Open VSX marketplace has been found to impersonate legitimate developer tools while transmitting information about the systems and development environments on which they were installed. The \"evil twin\" extensions were uploaded to the repository between July 26 and August 1, 2026, according to Manifold Security. The packages have been removed from Open VSX as of"
   },
   {
    "source": "CyberScoop",
-   "title": "Senate set to debate package of bills on privacy, AI and kids safety",
-   "url": "https://cyberscoop.com/senate-kids-online-safety-act-ai-bills-markup/",
-   "published": "2026-08-04T13:23:35+00:00",
-   "summary": "Headlined by the Kids Online Safety Act, a key committee will look to clear major legislation governing how minors interact with the internet. The post Senate set to debate package of bills on privacy, AI and kids safety appeared first on CyberScoop ."
+   "title": "AI is getting better at election facts, but voters shouldn’t rely on it",
+   "url": "https://cyberscoop.com/ai-chatbots-2026-midterm-elections/",
+   "published": "2026-08-05T09:00:00+00:00",
+   "summary": "AI chatbots are avoiding some of the obvious errors that plagued earlier models, but they still fall short giving voters the full picture compared to state and local sources. The post AI is getting better at election facts, but voters shouldn’t rely on it appeared first on CyberScoop ."
   },
   {
-   "source": "The Hacker News",
-   "title": "Fake Adobe and Zoom Updates Install ScreenConnect for Persistent Remote Access",
-   "url": "https://thehackernews.com/2026/08/fake-adobe-and-zoom-updates-install.html",
-   "published": "2026-08-04T13:11:22+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of an active, multi-wave campaign that employs social engineering lures themed around Adobe and Zoom software updates, business document reviews, and system maintenance utilities to stealthily deploy Remote Monitoring and Management (RMM) programs like ConnectWise ScreenConnect. The campaign has been codenamed SMOKE#SCREEN by Securonix Threat"
+   "source": "SecurityWeek",
+   "title": "Over 400 NPM Packages Infected in ChainDrop Supply Chain Attack",
+   "url": "https://www.securityweek.com/over-400-npm-packages-infected-in-chaindrop-supply-chain-attack/",
+   "published": "2026-08-05T08:56:58+00:00",
+   "summary": "The malware was designed to steal and exfiltrate secrets, and to propagate itself via stolen NPM and GitHub credentials. The post Over 400 NPM Packages Infected in ChainDrop Supply Chain Attack appeared first on SecurityWeek ."
   },
   {
    "source": "Dark Reading",
-   "title": "AI Notetaker Lets Hackers Spy on Government, Corporate Video Calls",
-   "url": "https://www.darkreading.com/application-security/ai-notetaker-spy-government-corporate-video-calls",
-   "published": "2026-08-04T13:00:00+00:00",
-   "summary": "A Google Firebase misconfiguration lets users of tl;dv, an AI meeting tool, query any other users' meeting information and potentially join calls."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "AI makes costly spearphishing attacks easier, cyber insurer says",
-   "url": "https://www.cybersecuritydive.com/news/ai-spearphishing-cyber-insurance-claims/826732/",
-   "published": "2026-08-04T12:00:00+00:00",
-   "summary": "Dive Brief: Ransomware extortion caused roughly three-quarters of business losses in the first half of 2026, the cyber insurance firm Resilience said in a recent report. At the same time, ransomware accounted for less than 6% of the incidents for which Resilience customers submitted claim..."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "TP-Link Omada ZTP Vulnerabilities Chain Into Full Network Takeover",
-   "url": "https://www.securityweek.com/tp-link-omada-ztp-vulnerabilities-chain-into-full-network-takeover/",
-   "published": "2026-08-04T12:00:00+00:00",
-   "summary": "Forescout researchers have found 15 new vulnerabilities in the TP-Link Omada networking ecosystem. The post TP-Link Omada ZTP Vulnerabilities Chain Into Full Network Takeover appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Obsidian Security Raises $85 Million at $1.1 Billion Valuation",
-   "url": "https://www.securityweek.com/obsidian-security-raises-85-million-at-1-1-billion-valuation/",
-   "published": "2026-08-04T12:00:00+00:00",
-   "summary": "Obsidian Security has developed a platform for governing AI agents across third-party applications. The post Obsidian Security Raises $85 Million at $1.1 Billion Valuation appeared first on SecurityWeek ."
+   "title": "Angola's Largest Telco Breached Hours Before IPO",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/angolas-largest-telco-breached-hours-before-ipo",
+   "published": "2026-08-05T08:00:00+00:00",
+   "summary": "Unitel, Angola's dominant mobile operator, continues to recover from a cyberattack that caused outages the day of the government-owned telco's public offering."
   },
   {
    "source": "The Hacker News",
-   "title": "When Vibe Hacking Turns AI into the Junior Hacker Every Adversary Always Wanted",
-   "url": "https://thehackernews.com/2026/08/when-vibe-hacking-turns-ai-into-junior.html",
-   "published": "2026-08-04T11:30:00+00:00",
-   "summary": "The cybersecurity industry has spent decades assuming that offensive capability scales with technical expertise. That assumption is starting to break. Security teams have long estimated risk by ranking attacker sophistication. Nation-state actors sat at one end. Organized criminal groups followed. Inexperienced attackers, dismissed as \"script kiddies,\" sat at the other end, running public"
+   "title": "Claude Mythos 5 Tried to Backdoor a Real Open-Source Project in Testing, Then Vouched for Itself",
+   "url": "https://thehackernews.com/2026/08/claude-mythos-5-tried-to-backdoor-real.html",
+   "published": "2026-08-05T07:53:50+00:00",
+   "summary": "An agent running Anthropic's Claude Mythos 5 spent 34 hours trying to get a malware dropper merged into a real open-source project during a cyber evaluation by the UK's AI Security Institute. When a bystander publicly warned that the code was malicious, the agent denied it, force-pushed a rewritten branch history to erase the evidence, and posted from a second account it controlled to vouch for"
   },
   {
    "source": "The Hacker News",
-   "title": "Google Deletes 3 ADK AI Workflows After Malicious GitHub Issue Could Trigger Privileged Agent",
-   "url": "https://thehackernews.com/2026/08/google-deletes-3-adk-ai-workflows-after.html",
-   "published": "2026-08-04T11:16:23+00:00",
-   "summary": "Google deleted three AI agent workflows from its Agent Development Kit (ADK) Python repository. Pillar Security showed that a public GitHub issue could manipulate a triage agent into triggering a privileged code-fixing agent. The researchers said the public agent could be prompt-injected into posting /adk-issue-fix as adk-bot. They identified the bot as a collaborator, so that comment satisfied"
+   "title": "CISA Flags Langflow RCE, Tomcat, and N-central Flaws as Actively Exploited",
+   "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+   "published": "2026-08-05T07:40:39+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on August 5, 2026, added three flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation in the wild. The list of vulnerabilities is as follows - CVE-2026-9198 (CVSS score: 9.8) - A code injection vulnerability in Langflow that allows unauthenticated attackers to achieve full remote"
   },
   {
    "source": "SecurityWeek",
-   "title": "Gemini Agent-to-Agent Attack Method Exposed Secrets, Enabled Pull Request Tampering",
-   "url": "https://www.securityweek.com/gemini-agent-to-agent-attack-exposed-secrets-enabled-pull-request-tampering/",
-   "published": "2026-08-04T10:54:30+00:00",
-   "summary": "A crafted prompt to a low-privilege Google ADK agent could be used to pass a malicious hand-off comment to a privileged agent. The post Gemini Agent-to-Agent Attack Method Exposed Secrets, Enabled Pull Request Tampering appeared first on SecurityWeek ."
+   "title": "Water Sector Cyberattacks Reportedly Hit at Least 12 States",
+   "url": "https://www.securityweek.com/water-sector-cyberattacks-reportedly-hit-at-least-12-states/",
+   "published": "2026-08-05T07:24:52+00:00",
+   "summary": "Georgia has been confirmed as one of the attacked states after Clayton County reported a pump station disruption. The post Water Sector Cyberattacks Reportedly Hit at Least 12 States appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "New cPanel Critical Flaw Could Let Hosting Customers Run SQL as Database Root",
-   "url": "https://thehackernews.com/2026/08/new-cpanel-critical-flaw-could-let.html",
-   "published": "2026-08-04T10:36:27+00:00",
-   "summary": "cPanel has patched a flaw that let an authenticated hosting customer execute SQL in the database's root context, crossing the privilege boundary between a cPanel account and the server's administrative database identity. It shipped in a targeted security release that closes two other routes past account boundaries. The database bug is tracked as CVE-2026-58048 (CVSS 4.0 score: 9.4) and affects"
+   "title": "QuickFox Supply Chain Attack Delivers FDMTP Backdoor via Trojanized Windows Installer",
+   "url": "https://thehackernews.com/2026/08/quickfox-supply-chain-attack-delivers.html",
+   "published": "2026-08-05T05:47:19+00:00",
+   "summary": "Cybersecurity researchers have disclosed what has been described as a \"long-standing supply chain attack\" on QuickFox, a virtual private network (VPN) and network acceleration tool designed for overseas Chinese users. According to Fortinet FortiGuard Labs, the supply chain attack has been ongoing since at least August 2025 and involves a trojanized version of the application to deliver FDMTP, a"
   },
   {
    "source": "CyberScoop",
-   "title": "How companies could share cyber risks without exposing their secrets",
-   "url": "https://cyberscoop.com/zero-knowledge-proofs-cyber-risk-sharing-op-ed/",
-   "published": "2026-08-04T10:00:00+00:00",
-   "summary": "A cryptographic technique could let companies prove they're vulnerable to critical flaws without revealing the sensitive data that attackers could exploit. The post How companies could share cyber risks without exposing their secrets appeared first on CyberScoop ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Decades-Old BMC Vulnerability Exposes Thousands of Data Centers to Attacks",
-   "url": "https://www.securityweek.com/decades-old-bmc-vulnerability-exposes-thousands-of-data-centers-to-attacks/",
-   "published": "2026-08-04T09:56:06+00:00",
-   "summary": "Over 24,000 internet-accessible server-management interfaces disclose authentication hashes before login. The post Decades-Old BMC Vulnerability Exposes Thousands of Data Centers to Attacks appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "DOUBLECUP Uses ClickFix and Cached PNGs to Deliver CountLoader and DeviceManager RAT",
-   "url": "https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html",
-   "published": "2026-08-04T09:03:23+00:00",
-   "summary": "A new Russian loader-as-a-service (LaaS) codenamed DOUBLECUP has been using ClickFix lures as a way to stage malware-laced PNG images in victims' browser cache and ultimately deliver CountLoader and a previously undocumented remote access trojan called DeviceManager. \"The first stage drops a steganographic PNG image into the browser's cache, retrieves its hidden content, and executes the second"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "150,000 Impacted by Madera Community Hospital Data Breach",
-   "url": "https://www.securityweek.com/150000-impacted-by-madera-community-hospital-data-breach/",
-   "published": "2026-08-04T08:33:45+00:00",
-   "summary": "An extortion group stole personal, financial, and medical information from the hospital’s network. The post 150,000 Impacted by Madera Community Hospital Data Breach appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
-   "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
-   "published": "2026-08-04T07:00:13+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity security flaw impacting N-able N-central to its Known Exploited Vulnerabilities (KEV) catalog following reports of active exploitation in the wild. The vulnerability, tracked as CVE-2026-18577 (CVSS score: 8.2), is a case of incomplete patching for CVE-2026-18556 (CVSS score: 8.2) that allows"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Device Code Phishing Up 1,500% in 2026; Vishing Doubles",
-   "url": "https://www.darkreading.com/cybersecurity-analytics/device-code-phishing-vishing-doubles",
-   "published": "2026-08-04T07:00:00+00:00",
-   "summary": "Newer social engineering techniques help attackers ignore entrenched security controls and limit the evidence they leave behind."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Microsoft Bug Bounty Program: $20 Million Paid to 500 Researchers",
-   "url": "https://www.securityweek.com/microsoft-bug-bounty-program-20-million-paid-to-500-researchers/",
-   "published": "2026-08-04T05:18:34+00:00",
-   "summary": "The biggest single reward paid out by Microsoft between July 1, 2025, and June 30, 2026, was $200,000. The post Microsoft Bug Bounty Program: $20 Million Paid to 500 Researchers appeared first on SecurityWeek ."
+   "title": "National cyber director lays out White House plans to secure AI without writing new rules",
+   "url": "https://cyberscoop.com/trump-ai-executive-order-open-source-strategy-sean-cairncross/",
+   "published": "2026-08-05T03:17:09+00:00",
+   "summary": "The Trump administration executive order on artificial intelligence tried to strike the balance between responsible use, security and mutual benefit, all with an eye toward not making it regulatory in nature, National Cyber Director Sean Cairncross said Tuesday. “Everyone is working towards the same goal in terms of protecting the country and securing our systems, [ ] The post National cyber director lays out White House plans to secure AI without writing new rules appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Hotel Wi-Fi attacks use custom malware to breach Microsoft 365 accounts",
-   "url": "https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts/",
-   "published": "2026-08-04T00:17:15+00:00",
-   "summary": "Microsoft has linked a global campaign targeting hospitality Wi-Fi networks to the Russian threat actor Midnight Blizzard, also known as APT29. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "New Pass-ta-key attacks let malware hijack Google-synced passkeys",
-   "url": "https://www.bleepingcomputer.com/news/security/new-pass-ta-key-attacks-let-malware-hijack-google-synced-passkeys/",
-   "published": "2026-08-03T23:58:01+00:00",
-   "summary": "Security researchers have discovered three attacks that allow malware on already-compromised Windows devices to abuse Google Password Manager's synced passkeys to take over accounts, bypass user verification, and extract passkey private keys. [...]"
+   "title": "OpenAI, Anthropic AI agents targeted real people and systems in cyber tests",
+   "url": "https://www.bleepingcomputer.com/news/security/openai-anthropic-ai-agents-targeted-real-people-and-systems-in-cyber-tests/",
+   "published": "2026-08-04T23:39:59+00:00",
+   "summary": "OpenAI and Anthropic have confirmed that their AI models were involved in separate, newly disclosed third-party cybersecurity testing incidents that resulted in a real website being breached and social engineering attacks against people outside the intended testing boundaries. [...]"
   },
   {
    "source": "CyberScoop",
-   "title": "Public interest coalition urges Congress to investigate OpenAI, Hugging Face hack",
-   "url": "https://fedscoop.com/public-interest-coalition-urges-congress-investigate-openai-hugging-face-hack/",
-   "published": "2026-08-03T21:43:26+00:00",
-   "summary": "The post Public interest coalition urges Congress to investigate OpenAI, Hugging Face hack appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Attackers Exploit N-able Patch Bypass Flaw on RMM Servers",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw",
-   "published": "2026-08-03T21:21:11+00:00",
-   "summary": "Over the weekend, the vendor discovered another vector of authentication bypass CVE-2026-18577 that gives attackers administrator access."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "New Tool Traces AI Videos Back to Their Source",
-   "url": "https://www.darkreading.com/cyber-risk/new-tool-advances-ai-generated-video-detection",
-   "published": "2026-08-03T20:42:28+00:00",
-   "summary": "Researchers dug into the root of the problem with the goal of promoting industry collaboration on improved protective measures."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Anthropic: Claude Attacks Result of Security Gaps, Not Model Issues",
-   "url": "https://www.darkreading.com/cyber-risk/anthropic-ai-issues-result-security-gaps",
-   "published": "2026-08-03T20:31:12+00:00",
-   "summary": "Last month's incidents in which the AI model breached real-world systems derived from over-permissioning, especially with Internet access."
+   "title": "AISI, OpenAI report more ‘unsanctioned’ model hacks",
+   "url": "https://cyberscoop.com/aisi-openai-report-unsanctioned-ai-model-hacks/",
+   "published": "2026-08-04T22:46:25+00:00",
+   "summary": "Following similar reports by OpenAI and Anthropic, the UK’s top AI testing lab and a private cybersecurity tester say their models exploited parts of the open internet. The post AISI, OpenAI report more ‘unsanctioned’ model hacks appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "New DOUBLECUP ClickFix service hides malware in browser cache images",
-   "url": "https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/",
-   "published": "2026-08-03T20:01:22+00:00",
-   "summary": "A new Russian loader-as-a-service named DOUBLECUP uses ClickFix attacks to hide malicious code in PNG images cached by victims' browsers, ultimately delivering CountLoader to Windows and macOS devices and a new remote access trojan named DeviceManager to Windows systems. [...]"
+   "title": "TP-Link patches Omada ZTP flaws allowing hackers to breach networks",
+   "url": "https://www.bleepingcomputer.com/news/security/tp-link-patches-omada-ztp-flaws-allowing-hackers-to-breach-networks/",
+   "published": "2026-08-04T22:18:20+00:00",
+   "summary": "TP-Link has patched 15 vulnerabilities in the zero-touch provisioning (ZTP) mechanism of its Omada network devices that could be chained with previously disclosed flaws to achieve remote code execution (RCE). [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Massive supply-chain attack compromises 440 packages under four hours",
+   "url": "https://cyberscoop.com/supply-chain-attack-malware-mini-shai-hulud-teampcp/",
+   "published": "2026-08-04T22:07:35+00:00",
+   "summary": "Researchers from multiple security firms observed a variant of Mini Shai-Hulud, self-replicating malware linked to TeamPCP, in all the affected packages. The post Massive supply-chain attack compromises 440 packages under four hours appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Fake Roblox Xeno script launcher pushes infostealer, RAT malware",
-   "url": "https://www.bleepingcomputer.com/news/security/fake-roblox-xeno-script-launcher-pushes-infostealer-rat-malware/",
-   "published": "2026-08-03T19:25:10+00:00",
-   "summary": "Fake Xeno Executor installers are infecting unsuspecting Roblox players with malware that provides remote access and steals sensitive information. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "18 Malicious npm Packages Deliver Cross-Platform RAT to Alibaba Tool Users",
-   "url": "https://thehackernews.com/2026/08/18-malicious-npm-packages-deliver-cross.html",
-   "published": "2026-08-03T18:43:53+00:00",
-   "summary": "Cybersecurity researchers have discovered a new set of malicious npm packages that target users of Alibaba developer tools with a cross-platform remote access trojan (RAT) as part of a sophisticated, targeted software supply chain attack targeting Chinese-speaking environments. One of the packages in question is \"lib-mtop,\" an unscoped package with the same name as a private Alibaba package"
+   "title": "Phishing service spoofs RingCentral to steal Microsoft 365 accounts",
+   "url": "https://www.bleepingcomputer.com/news/security/phishing-service-spoofs-ringcentral-to-steal-microsoft-365-accounts/",
+   "published": "2026-08-04T21:45:36+00:00",
+   "summary": "The Greatness phishing-as-a-service (PhaaS) platform has expanded from credential phishing to adversary-in-the-middle attacks and device-code phishing targeting Microsoft 365 accounts. [...]"
   },
   {
    "source": "BleepingComputer",
-   "title": "N-able warns of N-central auth bypass flaw exploited in attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
-   "published": "2026-08-03T17:00:56+00:00",
-   "summary": "N-able is warning customers that hackers are exploiting an authentication bypass vulnerability (CVE-2026-18577) affecting both hosted and on-premises N-central servers. [...]"
+   "title": "New XCSSET variant targets macOS devs via compromised Xcode projects",
+   "url": "https://www.bleepingcomputer.com/news/security/new-xcsset-variant-targets-macos-devs-via-compromised-xcode-projects/",
+   "published": "2026-08-04T19:03:09+00:00",
+   "summary": "A new version of the XCSSET malware is targeting thousands of macOS users through compromised Xcode projects and GitHub repositories. [...]"
   },
   {
-   "source": "The Hacker News",
-   "title": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
-   "url": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html",
-   "published": "2026-08-03T16:24:47+00:00",
-   "summary": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen. Unit 42 detailed three attack paths against Chrome's Google Password Manager cloud authenticator, which it calls Pass-ta-key, Silver Pass-ta-key and Golden Pass-ta-key; the strongest targets the master key"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
-   "url": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
-   "published": "2026-08-03T16:15:13+00:00",
-   "summary": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances. In a report published over the weekend, Resecurity said it observed the INC Ransomware accelerating its activity since the beginning of August 2026, listing multiple victims on its data leak site. Per"
+   "source": "BleepingComputer",
+   "title": "77 Open VSX extensions found harvesting developer info",
+   "url": "https://www.bleepingcomputer.com/news/security/77-open-vsx-extensions-found-harvesting-developer-info/",
+   "published": "2026-08-04T18:50:55+00:00",
+   "summary": "77 extensions on the Open VSX marketplace impersonated legitimate developer tools while transmitting information about the systems and development environments where they were installed. [...]"
   },
   {
    "source": "Dark Reading",
-   "title": "Chinese Actor Weaponizes Deepseek AI Agent to Attack Security Firm",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-deepseek-ai-agent-attack-security-firm",
-   "published": "2026-08-03T15:42:18+00:00",
-   "summary": "Researchers intercepted and investigated the model, which was attempting to compromise more than 1,200 hosts for proxyjacking to launch further attacks."
+   "title": "Smoke#Screen RMM Takeover Gambit Exposes Threat Actor Playbook",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/latest-rmm-fueled-phishing-attack-exposes-threat-actor-playbook",
+   "published": "2026-08-04T18:37:35+00:00",
+   "summary": "The attacks use diverse social engineering lures and rotating payloads to deliver ScreenConnect for persistent remote access to compromised networks."
   },
   {
-   "source": "Cybersecurity Dive",
-   "title": "OT security coalition urges Congress, CISA to enact reforms amid water sector hacks",
-   "url": "https://www.cybersecuritydive.com/news/ot-security-coalition-congress-cisa-reforms-water/826791/",
-   "published": "2026-08-03T15:32:00+00:00",
-   "summary": "Iran-nexus hackers are suspected in a broad campaign targeting drinking and wastewater sites in at least seven U.S. states."
+   "source": "CyberScoop",
+   "title": "Dem senators criticize Trump administration decisionmaking on AI security risks",
+   "url": "https://cyberscoop.com/trump-ai-policy-chinese-models-risk/",
+   "published": "2026-08-04T17:28:05+00:00",
+   "summary": "The five senators said the administration has alternated between being too passive and overstepping, and China stands to benefit as a result. The post Dem senators criticize Trump administration decisionmaking on AI security risks appeared first on CyberScoop ."
   },
   {
-   "source": "Cybersecurity Dive",
-   "title": "China-based hacker employs DeepSeek in autonomous threat campaign",
-   "url": "https://www.cybersecuritydive.com/news/china-based-hacker-deepseek-autonomous/826784/",
-   "published": "2026-08-03T15:24:00+00:00",
-   "summary": "Researchers said the hacker also attempted to test Western AI tools, but ultimately was forced to revert to manual operations to succeed."
+   "source": "The Hacker News",
+   "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
+   "url": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html",
+   "published": "2026-08-04T17:27:39+00:00",
+   "summary": "The commercial phishing-as-a-service (PhaaS) toolkit known as Greatness has become the latest crimeware solution to add support for device code phishing, a rapidly growing cyber threat that abuses the legitimate OAuth 2.0 Device Authorization Grant to bypass Multi-Factor Authentication (MFA) and seize control of user accounts. \"Greatness supports AiTM [adversary-in-the-middle] credential and"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Black Hat USA 2026 – Summary of Vendor Announcements (Part 2)",
+   "url": "https://www.securityweek.com/black-hat-usa-2026-summary-of-vendor-announcements-part-2/",
+   "published": "2026-08-04T16:49:39+00:00",
+   "summary": "Many companies are showcasing their products and services this week at the 2026 edition of the Black Hat conference in Las Vegas. The post Black Hat USA 2026 – Summary of Vendor Announcements (Part 2) appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Massive ChainDrop npm supply-chain attack infects hundreds of packages",
+   "url": "https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/",
+   "published": "2026-08-04T15:24:35+00:00",
+   "summary": "Self-propagating malware named 'ChainDrop' has compromised more than 1,300 packages with a combined 2 billion monthly downloads on the Node Package Manager (npm) registry. [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Prolific ransomware group behind SonicWall zero-day attacks",
+   "url": "https://cyberscoop.com/inc-ransomware-sonicwall-zero-day-attacks/",
+   "published": "2026-08-04T15:20:06+00:00",
+   "summary": "INC ransomware wasn’t the first group to exploit the zero-days, but it’s been the most assertive and effective in chaining both vulnerabilities to steal and encrypt data for extortion. The post Prolific ransomware group behind SonicWall zero-day attacks appeared first on CyberScoop ."
   }
  ]
 }
