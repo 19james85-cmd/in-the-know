@@ -96,6 +96,12 @@
   "e": "In July 2026, Russia's Midnight Blizzard tampered with hotel captive portals in its 'CaptiveCrunch' campaign to serve travelers fake Microsoft sign-in pages."
  },
  {
+  "t": "CI/CD Pipeline",
+  "c": "General",
+  "d": "A CI/CD (continuous integration / continuous delivery) pipeline is the automated system that builds, tests and ships software. Compromising it lets attackers slip malicious code into everything the team releases.",
+  "e": "The TeamCity CVE-2026-63077 flaw disclosed in August 2026 let attackers reach the build server and potentially poison the downstream CI/CD pipeline."
+ },
+ {
   "t": "CISA",
   "c": "Regulatory",
   "d": "The U.S. Cybersecurity & Infrastructure Security Agency — issues alerts, advisories, and maintains the Known Exploited Vulnerabilities (KEV) catalog for critical infrastructure protection.",
@@ -258,6 +264,12 @@
   "e": "Your bank uses end-to-end encryption so intercepted transaction data cannot be read by attackers."
  },
  {
+  "t": "Entropy",
+  "c": "Cryptography",
+  "d": "Entropy is the amount of true randomness available when generating secret keys or passwords. Low entropy means the output is predictable, so an attacker can guess it.",
+  "e": "In August 2026, a weak random-number function in CryptoJS produced low-entropy recovery phrases, letting thieves drain about $5.7 million from five crypto wallet apps."
+ },
+ {
   "t": "Exploit",
   "c": "Vulnerability",
   "d": "A piece of software, code, or technique that takes advantage of a vulnerability in a system to cause unintended behavior — usually to gain unauthorized access.",
@@ -346,6 +358,12 @@
   "c": "Malware",
   "d": "A type of malware designed to quietly harvest sensitive data from an infected device, such as saved passwords, browser cookies, and authentication tokens, and send it back to an attacker.",
   "e": "Microsoft warned that a surge in ACR Stealer infections was letting attackers harvest browser-stored passwords and login tokens from enterprise customers."
+ },
+ {
+  "t": "Initial Access Broker",
+  "c": "Threat/Actor",
+  "d": "An initial access broker is a criminal who breaks into company networks and then sells that foothold to other attackers, such as ransomware crews, instead of doing the final attack themselves.",
+  "e": "In August 2026, the sentenced Ransom Cartel operator was described as working with initial access brokers who supplied ready-made access to victim corporate networks."
  },
  {
   "t": "IOC",
