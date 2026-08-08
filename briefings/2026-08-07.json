@@ -1,0 +1,379 @@
+{
+ "leadStory": {
+  "headline": "Attacks hit U.S. water utilities in 12 states as 4,400+ Rockwell controllers sit exposed online",
+  "source": "CyberScoop",
+  "sourceUrl": "https://cyberscoop.com",
+  "url": "https://cyberscoop.com/exposed-rockwell-controllers-water-system-attacks/",
+  "tags": [
+   {
+    "label": "Critical Infrastructure",
+    "type": "d"
+   },
+   {
+    "label": "Actively Exploited",
+    "type": "d"
+   },
+   {
+    "label": "ICS/OT",
+    "type": "a"
+   },
+   {
+    "label": "EtherNet/IP",
+    "type": "a"
+   }
+  ],
+  "body": "New research from Forescout's Vedere Labs found more than 4,400 Rockwell Automation and Allen-Bradley Programmable Logic Controller (PLC) devices reachable directly from the public internet, including 22 in cities already hit by attacks on water and wastewater systems. A Programmable Logic Controller (PLC) is the small industrial computer that physically opens valves, runs pumps, and controls treatment processes at a utility. Many of these controllers speak EtherNet/IP, an industrial protocol built for trusted factory networks with no authentication, so when the port is left open an outside attacker can enumerate the device and, depending on its configuration, change settings or push new ones. The FBI and EPA issued a joint advisory confirming intrusions at water and wastewater utilities in at least 12 states since July 27.",
+  "beginnerTip": "A <strong>Programmable Logic Controller (PLC)</strong> is the 'brain' that runs physical machinery — pumps, valves, motors. These devices were never meant to face the open internet; putting one online is like leaving a water plant's control panel out on a public sidewalk."
+ },
+ "cves": [
+  {
+   "headline": "Cisco patches 12 SD-WAN and IOS XE bugs, including three 9.9-severity flaws",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html",
+   "tags": [
+    {
+     "label": "CVE-2026-20303",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 9.9",
+     "type": "d"
+    },
+    {
+     "label": "SD-WAN",
+     "type": "a"
+    },
+    {
+     "label": "Patch Available",
+     "type": "g"
+    }
+   ],
+   "body": "On August 5, Cisco released fixes for 12 vulnerabilities across its Catalyst SD-WAN and IOS XE software. Three of them — CVE-2026-20303, CVE-2026-20304, and CVE-2026-20310 — carry a near-maximum CVSS score of 9.9 and stem from improper input validation, improper access control, and improper link resolution before file access. A separate IOS XE command injection flaw, CVE-2026-20272, is rated 9.8. Cisco says it found the bugs internally and is not aware of any exploitation in the wild; first fixed releases include IOS XE 17.9.10, 17.12.8, 17.15.6, and 17.18.4.",
+   "beginnerTip": "<strong>SD-WAN</strong> is software that ties an organization's branch offices together over the internet, so a flaw in it can expose the whole network. 'Not exploited yet' is not 'safe' — attackers reverse-engineer patches fast, so update before a public exploit lands."
+  },
+  {
+   "headline": "WordPress 7.0.3 fixes pre-auth login XSS that can chain to PHP code execution (CVE-2026-64638)",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html",
+   "tags": [
+    {
+     "label": "CVE-2026-64638",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 8.9",
+     "type": "w"
+    },
+    {
+     "label": "Pre-Authentication",
+     "type": "a"
+    },
+    {
+     "label": "XSS",
+     "type": "a"
+    }
+   ],
+   "body": "Disclosed August 7 and nicknamed 'XSS2Shell,' CVE-2026-64638 is a pre-authentication Cross-Site Scripting (XSS) flaw on the WordPress login page affecting essentially every version. When someone submits a non-existent username, a sanitizer mismatch — PHP's strip_tags treats a crafted '< tag' string as harmless while WordPress's own KSES filter later reinterprets it — lets attacker JavaScript run in the visitor's browser with no login required. If an administrator is already signed in and interacts with an attacker-controlled page, the XSS can be chained to install a plugin or upload a ZIP, reaching full PHP Remote Code Execution (RCE). WordPress patched it in version 7.0.3 on August 6, backported through the 4.7 branch.",
+   "beginnerTip": "<strong>Pre-Authentication</strong> means an attacker needs no username or password to trigger the bug — the most dangerous kind. If your site has automatic background updates enabled it likely already has 7.0.3; if not, update by hand today."
+  },
+  {
+   "headline": "18-year-old Linux kernel flaw 'SCTPhantom' grants local root and container escape (CVE-2026-64564)",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html",
+   "tags": [
+    {
+     "label": "CVE-2026-64564",
+     "type": "w"
+    },
+    {
+     "label": "CVSS 8.5",
+     "type": "w"
+    },
+    {
+     "label": "Use-After-Free",
+     "type": "a"
+    },
+    {
+     "label": "Privilege Escalation",
+     "type": "a"
+    }
+   ],
+   "body": "Tencent's Zhuque Lab disclosed a Use-After-Free bug in the Linux kernel's SCTP dynamic address reconfiguration (ASCONF) code whose root cause dates to 2007, making it nearly 18 years old. The kernel validates a delete-IP operation using the packet's source address but caches a pointer tied to a different address parameter, and that identity mismatch lets a local, unprivileged user corrupt kernel memory to gain root and break out of a container onto the host. Rated CVSS 8.5 (High), it is local-only and needs SCTP reachable, which limits exposure; fixes were backported to stable kernels including 6.6.148, 6.12.101, and 6.18.42. No public exploit or KEV listing existed as of August 7.",
+   "beginnerTip": "A <strong>Use-After-Free</strong> bug happens when a program keeps using memory it already handed back, letting an attacker slip their own data into that spot. 'Container escape' is the nightmare case: code trapped inside an isolated box breaks out to control the whole server."
+  },
+  {
+   "headline": "Chrome 151 patches six critical use-after-free and memory-corruption bugs",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/critical-vulnerabilities-patched-with-chrome-151-update/",
+   "tags": [
+    {
+     "label": "Chrome 151",
+     "type": "a"
+    },
+    {
+     "label": "6 Critical",
+     "type": "d"
+    },
+    {
+     "label": "Use-After-Free",
+     "type": "a"
+    },
+    {
+     "label": "Patch Available",
+     "type": "g"
+    }
+   ],
+   "body": "Google shipped Chrome 151 with fixes for six critical vulnerabilities — CVE-2026-19137, -19149, -19154, -19157, -19170, and -19172 — five of them Use-After-Free defects and one an out-of-bounds write in ANGLE, Chrome's graphics translation layer. Two of the critical bugs sit in WebGL, the browser's 3-D graphics engine and a recurring source of exploitable memory flaws. The update also addresses 35 high-severity issues; Google reports no in-the-wild exploitation and users should be on 151.0.7922.108/.109.",
+   "beginnerTip": "Browsers are among the most-attacked software because they run untrusted code from every site you visit. Close and reopen Chrome to let a pending update finish — the fix only protects you once the browser restarts."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "Vishing crew UNC6671 (ex-BlackFile) rebrands and pivots to hedge funds and PE firms",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/vishing-extortion-group-unc6671-rebrands-after-making-millions/",
+   "tags": [
+    {
+     "label": "UNC6671",
+     "type": "d"
+    },
+    {
+     "label": "Vishing",
+     "type": "a"
+    },
+    {
+     "label": "AitM",
+     "type": "a"
+    },
+    {
+     "label": "Financial Sector",
+     "type": "a"
+    }
+   ],
+   "body": "Google's Threat Intelligence Group detailed how UNC6671 — which retired the 'BlackFile' extortion brand in May and now operates as Redact, Pink, Helix, and Falcon — shifted in July 2026 to targeting private-equity firms, hedge funds, major law firms, and rating agencies. The group's initial access relies on Vishing (voice phishing): callers impersonate IT staff to talk employees into granting access, then use Adversary-in-the-Middle (AitM) techniques against Microsoft 365 and Okta to steal live session tokens and slip past multi-factor authentication (MFA). Reported targets include Point72, Millennium, Two Sigma, and Citadel.",
+   "beginnerTip": "<strong>Adversary-in-the-Middle (AitM)</strong> phishing sits between you and the real login page, relaying everything in real time so it grabs not just your password but the 'already logged in' token — which is why it defeats many forms of MFA. Verify unexpected 'IT support' calls through a known internal channel before granting anything."
+  },
+  {
+   "headline": "Canadian man pleads guilty to the 2024 Snowflake mass-extortion breaches",
+   "source": "Krebs on Security",
+   "sourceUrl": "https://krebsonsecurity.com",
+   "url": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+   "tags": [
+    {
+     "label": "Snowflake",
+     "type": "a"
+    },
+    {
+     "label": "Extortion",
+     "type": "a"
+    },
+    {
+     "label": "Guilty Plea",
+     "type": "g"
+    }
+   ],
+   "body": "Connor Riley Moucka, 26, of Ontario pleaded guilty on August 5 in U.S. federal court to computer fraud, wire fraud, aggravated identity theft, and conspiracy. Between February and October 2024 he and co-defendant John Erin Binns used credentials stolen by Infostealer malware to log into Snowflake customer accounts that lacked multi-factor authentication (MFA), hitting roughly 165 organizations including AT&T, Ticketmaster, and Santander. The campaign collected more than $2.5 million in ransom, and sentencing is set for October 27.",
+   "beginnerTip": "The whole Snowflake disaster traces back to cloud accounts with no <strong>MFA</strong> plus passwords already stolen by infostealers — proof that MFA on every cloud login is not optional. Stolen-but-unused passwords sitting in criminal logs are a ticking clock."
+  },
+  {
+   "headline": "Ransom Cartel creator Maksim Silnikau sentenced to 16 years in U.S. prison",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/ransom-cartel-creator-sentenced-to-16-years-in-prison/",
+   "tags": [
+    {
+     "label": "Ransomware",
+     "type": "a"
+    },
+    {
+     "label": "RaaS",
+     "type": "a"
+    },
+    {
+     "label": "Law Enforcement",
+     "type": "g"
+    }
+   ],
+   "body": "A federal judge in Alexandria, Virginia sentenced Maksim Silnikau, a 40-year-old Belarusian, to 16 years for creating and running the Ransom Cartel Ransomware-as-a-Service (RaaS) operation. Between 2021 and 2023 its affiliates hit at least 18 companies and attempted to extort more than $5.2 million. The DOJ says Silnikau had been active on Russian-speaking cybercrime forums since 2005 and was arrested in Poland in July 2023 as he tried to return to Belarus.",
+   "beginnerTip": "<strong>Ransomware-as-a-Service (RaaS)</strong> works like a criminal franchise: the creator rents the malware to 'affiliates' who run the attacks and split the proceeds. Convictions like this target the hard-to-replace operators at the top rather than the interchangeable affiliates."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "Senators press administration on whether the U.S. and allies are coordinated enough against scam networks",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/senate-hearing-transnational-scam-task-force/",
+   "tags": [
+    {
+     "label": "Policy",
+     "type": "a"
+    },
+    {
+     "label": "Fraud",
+     "type": "a"
+    },
+    {
+     "label": "Oversight",
+     "type": "a"
+    }
+   ],
+   "body": "At an August 6 Senate Foreign Relations Committee hearing, lawmakers from both parties questioned administration officials on how 13 federal agencies and numerous foreign governments are coordinating against transnational scam operations that blend cybercrime, human trafficking, money laundering, and cryptocurrency. Sen. Pete Ricketts likened the moment to the 1990s multinational counter-narcotics push and asked whether a comparable coordinating body is needed; Sen. Jeanne Shaheen noted there is effectively 'nobody heading that effort up across agencies.'",
+   "beginnerTip": "'Transnational' scams are run from one country against victims in another, which makes them hard to police because no single nation has full jurisdiction. Hearings like this shape whether the government stands up a dedicated task force with authority to coordinate a response."
+  },
+  {
+   "headline": "DHS official at Black Hat: AI firms know policymakers 'won't let you make a Terminator factory'",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/ai-security-regulation-innovation-us-government-black-hat/827296/",
+   "tags": [
+    {
+     "label": "AI Policy",
+     "type": "a"
+    },
+    {
+     "label": "Regulation",
+     "type": "a"
+    },
+    {
+     "label": "Black Hat",
+     "type": "a"
+    }
+   ],
+   "body": "Speaking at Black Hat USA 2026, a senior DHS official argued that AI developers already grasp there are hard limits on the most dangerous uses of their technology — 'policymakers won't let you make a Terminator factory' — while cautioning against heavier-handed rules that could slow U.S. innovation. The remarks capture an ongoing tension in Washington between light-touch regulation meant to keep an edge over rivals and guardrails against misuse of increasingly capable AI systems.",
+   "beginnerTip": "There is no settled U.S. law yet governing how powerful AI models may be built or deployed; the rules are still being argued out in venues like this. For defenders, AI governance is a moving target to watch, not a fixed rulebook."
+  },
+  {
+   "headline": "Healthcare vendor breach hits 3.8 million people — the year's largest so far",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/3-8-million-impacted-by-unlimited-technology-systems-data-breach/",
+   "tags": [
+    {
+     "label": "HIPAA",
+     "type": "a"
+    },
+    {
+     "label": "Healthcare",
+     "type": "a"
+    },
+    {
+     "label": "Data Breach",
+     "type": "w"
+    }
+   ],
+   "body": "Ohio-based Unlimited Technology Systems, a healthcare revenue-cycle software vendor, disclosed a breach affecting 3,803,750 people — the largest U.S. healthcare data breach reported so far in 2026. An intruder accessed its environment between October 5 and 10, 2025 (detected October 19) and took names, Social Security numbers, medical record numbers, diagnoses, insurance details, and scanned IDs. As a HIPAA 'business associate,' the company is legally obligated to notify affected individuals and regulators; no ransomware group has claimed the attack.",
+   "beginnerTip": "<strong>HIPAA</strong> is the U.S. law protecting health information; a 'business associate' is a contractor that handles patient data for a provider and is held to the same breach-notification rules. Stolen medical plus Social Security data is prized because it enables long-term identity and insurance fraud."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "Black Hat panel: attackers increasingly aim to destroy OT systems, not just disrupt them",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/critical-infrastructure-destructive-cyberattacks-black-hat/827260/",
+   "tags": [
+    {
+     "label": "ICS/OT",
+     "type": "a"
+    },
+    {
+     "label": "Critical Infrastructure",
+     "type": "a"
+    },
+    {
+     "label": "Trend",
+     "type": "a"
+    }
+   ],
+   "body": "Experts at Black Hat USA 2026 warned that cyberattacks on Operational Technology (OT) have shifted from extortion and espionage toward outright destruction of physical processes — a dangerous turn given how much critical infrastructure runs on aging, underfunded, thinly staffed systems. Officials said many operators still struggle with fundamentals like strong passwords and comprehensive logging, leaving little margin against attackers willing to cause physical damage amid heightened geopolitical tension.",
+   "beginnerTip": "<strong>Operational Technology (OT)</strong> is the computing that runs physical equipment — power grids, pipelines, factory lines — as opposed to the IT that runs email and spreadsheets. A destructive OT attack can mean real-world harm like no water or no power, not merely stolen data."
+  },
+  {
+   "headline": "One GitHub issue could reach CI secrets in Claude Code, Gemini CLI, and Codex",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/claude-code-and-gemini-cli-flaws-let.html",
+   "tags": [
+    {
+     "label": "Gemini CLI",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 10.0",
+     "type": "d"
+    },
+    {
+     "label": "CI/CD Pipeline",
+     "type": "a"
+    },
+    {
+     "label": "Supply Chain Attack",
+     "type": "a"
+    }
+   ],
+   "body": "Researchers at Novee Security showed that a public GitHub issue opened by an outsider with no repository privileges could compromise AI coding assistants from Anthropic, Google, and OpenAI running in automated pipelines. The worst, Gemini CLI's CVE-2026-12537 (a perfect CVSS 10.0), is an OS command injection in the container launcher reachable via a crafted .gemini/.env file. A Claude Code flaw (CVE-2026-54316) abused Hugging Face's public download counter to leak an API key one character at a time. Vendors have shipped fixes — update Gemini CLI to 0.39.1 and Claude Code to 2.1.163 — and audit any workflow an outsider can trigger.",
+   "beginnerTip": "A <strong>CI/CD Pipeline</strong> is the automated system that builds and ships code; because it holds secrets like API keys and runs on incoming input, it's a prime target. The lesson: treat anything an outside user can submit — like a GitHub issue — as hostile, even when an AI agent is the one reading it."
+  },
+  {
+   "headline": "AI research tool 'HTTP Terminator' invents novel request-smuggling attacks and an Apache zero-day",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/ai-assisted-http-terminator-finds-novel.html",
+   "tags": [
+    {
+     "label": "Offensive AI",
+     "type": "w"
+    },
+    {
+     "label": "HTTP Desync",
+     "type": "a"
+    },
+    {
+     "label": "CVE-2026-63078",
+     "type": "a"
+    }
+   ],
+   "body": "PortSwigger's James Kettle built HTTP Terminator, an AI-assisted system that was fed 138 HTTP and SMTP specifications, generated about 30,000 candidate attack vectors, and proved new HTTP desynchronization ('request smuggling') techniques against roughly 700 targets including banks, government infrastructure, and an airport. One malformed request exposed a zero-day in Apache Traffic Server, now patched as CVE-2026-63078. The work is an early, concrete look at AI discovering genuinely novel offensive techniques rather than just rehashing known ones.",
+   "beginnerTip": "HTTP request smuggling (or 'desync') tricks two servers into disagreeing about where one web request ends and the next begins, letting an attacker sneak a hidden request past front-end defenses. The bigger story: AI is starting to find brand-new attack classes, so defenders can't rely on 'nobody's thought of that yet.'"
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/north-carolina-ports-confirms-cyberattack-disrupting-operations/",
+   "text": "North Carolina's three seaports are running cargo gates manually after an August 4 cyberattack knocked out statewide port IT systems; the U.S. Coast Guard is monitoring."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-tontou-cpu-attack-bypasses-spectre-v2-fixes-leaks-linux-password-hashes/",
+   "text": "New 'TONTOU' and 'Interrupt Injection' side-channel attacks bypass existing Spectre v2 defenses on Intel and AMD CPUs, leaking data such as Linux password hashes."
+  },
+  {
+   "color": "accent",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/microsoft-apple-release-fresh-security-updates/",
+   "text": "Microsoft and Apple both shipped fresh security updates this week; apply them across Windows, macOS, and iOS."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/swiss-government-sharepoint-breach-compromised-200-accounts/",
+   "text": "A breach of the Swiss government's SharePoint environment compromised roughly 200 accounts."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
+   "text": "A ClickFix campaign is tricking macOS users into pasting malicious terminal commands that install an infostealer aimed at draining crypto wallets."
+  }
+ ],
+ "analystFooter": "Today's priorities, in order: verify no water/OT controllers are internet-exposed and apply Cisco's SD-WAN/IOS XE patches (three 9.9s); push WordPress 7.0.3 and Chrome 151; and given the UNC6671 vishing wave, remind staff to confirm any 'IT support' phone request out-of-band before granting access."
+}

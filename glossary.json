@@ -12,6 +12,12 @@
   "e": "A nation-state APT group silently accessed a defense contractor's network for 18 months, exfiltrating classified blueprints before detection."
  },
  {
+  "t": "Adversary-in-the-Middle (AitM)",
+  "c": "Network",
+  "d": "Adversary-in-the-Middle (AitM) is a phishing technique where the attacker secretly relays traffic between the victim and the real website in real time. This lets them capture not just the password but also the session token that proves you are logged in, which is how AitM defeats many forms of multi-factor authentication.",
+  "e": "In July 2026, the UNC6671 extortion crew used AitM tooling against Microsoft 365 and Okta logins to hijack hedge-fund employees' accounts despite MFA."
+ },
+ {
   "t": "Agentic AI",
   "c": "General",
   "d": "An AI system that plans and carries out long chains of actions on its own — running tools, reading results, deciding the next step — instead of answering one prompt at a time.",
@@ -270,6 +276,12 @@
   "e": "In August 2026, a weak random-number function in CryptoJS produced low-entropy recovery phrases, letting thieves drain about $5.7 million from five crypto wallet apps."
  },
  {
+  "t": "EtherNet/IP",
+  "c": "Network",
+  "d": "EtherNet/IP is a common industrial networking protocol that control equipment such as PLCs uses to talk to workstations and other systems over standard Ethernet. It was designed for trusted factory networks and generally has no built-in authentication, so exposing it to the internet is dangerous.",
+  "e": "In August 2026, thousands of water-system controllers were found reachable over the public internet via EtherNet/IP, letting outsiders potentially read or change their configuration."
+ },
+ {
   "t": "Exploit",
   "c": "Vulnerability",
   "d": "A piece of software, code, or technique that takes advantage of a vulnerability in a system to cause unintended behavior — usually to gain unauthorized access.",
@@ -508,6 +520,12 @@
   "c": "Cryptography",
   "d": "A PRNG (pseudorandom number generator) is a formula that produces numbers that look random but are actually calculated from a starting value called a seed. If the seed is guessable or the generator is weak, an attacker can reproduce the exact same 'random' numbers — catastrophic when those numbers are used to create secret keys.",
   "e": "In July 2026, a weak PRNG in Coldcard hardware-wallet firmware let attackers reproduce users' wallet seeds and steal an estimated $88.6 million in Bitcoin."
+ },
+ {
+  "t": "Programmable Logic Controller (PLC)",
+  "c": "Network",
+  "d": "A Programmable Logic Controller (PLC) is a small, rugged industrial computer that directly runs physical equipment like pumps, valves, and motors in factories and utilities. Because it controls real-world machinery, a compromised PLC can cause physical damage, not just data loss.",
+  "e": "In August 2026, researchers found over 4,400 Rockwell PLCs exposed directly to the internet, including some in U.S. cities whose water systems had already been attacked."
  },
  {
   "t": "Prompt Injection",
