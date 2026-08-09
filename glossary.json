@@ -132,6 +132,12 @@
   "e": "CMMC Phase 2 — the mandatory third-party audit stage — was suspended in July 2026 for a 60-day review."
  },
  {
+  "t": "Code Injection",
+  "c": "Vulnerability",
+  "d": "A flaw where an application mistakes attacker-supplied data for its own instructions and runs it. If the injected input is executed as program code, the attacker can make the software do things it was never meant to do — often leading to full remote code execution.",
+  "e": "The Langflow flaw CVE-2026-9198, added to CISA's KEV list in August 2026, was a code injection bug that let unauthenticated attackers run their own code on default installations."
+ },
+ {
   "t": "Code-Execution Primitive",
   "c": "Vulnerability",
   "d": "The fundamental capability an exploit ultimately achieves — the \"I can now run arbitrary code\" moment. Multiple different exploit routes can reach the same primitive.",
@@ -148,6 +154,12 @@
   "c": "Network",
   "d": "The infrastructure malware phones home to for instructions and to send stolen data out. Cutting C2 off usually neuters the malware.",
   "e": "The Hugging Face attacker used \"self-migrating\" C2 staged on public services, so blocking one address didn't stop it."
+ },
+ {
+  "t": "Container Escape",
+  "c": "General",
+  "d": "When an attacker breaks out of a container — a lightweight, isolated box that is supposed to keep an application separate from the host machine and its neighbors — and gains access to the underlying server. It turns a foothold in one confined app into control over everything running on that host.",
+  "e": "In August 2026, Tencent researchers chained the 'SCTPhantom' Linux flaw (CVE-2026-64564) into a container escape, breaking out to gain root on the host operating system."
  },
  {
   "t": "Coordinated Disclosure",
@@ -586,6 +598,12 @@
   "c": "Network",
   "d": "A standard machine-to-machine web interface: programs send structured HTTP requests to defined \"routes\" (URLs) instead of clicking through pages.",
   "e": "WordPress's REST API batch route could be confused about which internal handler should process a request — the first half of wp2shell."
+ },
+ {
+  "t": "RMM",
+  "c": "Network",
+  "d": "Remote Monitoring and Management — software that IT teams and managed service providers use to watch, control, and push updates to many computers remotely from one console. Because a single RMM server has trusted access to every machine it manages, attackers prize it as a way to reach hundreds of systems at once.",
+  "e": "In August 2026, attackers exploited an authentication-bypass flaw (CVE-2026-18577) in the N-able N-central RMM platform and abused its remote-access feature to pivot into customers' managed endpoints."
  },
  {
   "t": "Root",

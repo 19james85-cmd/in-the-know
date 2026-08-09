@@ -1,0 +1,407 @@
+{
+ "leadStory": {
+  "headline": "Metabase zero-day (CVSS 10.0) exploited in the wild; Framework and Tally confirm stolen customer data",
+  "source": "The Hacker News",
+  "sourceUrl": "https://thehackernews.com",
+  "url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+  "tags": [
+   {
+    "label": "CVSS 10.0",
+    "type": "d"
+   },
+   {
+    "label": "Zero-Day",
+    "type": "d"
+   },
+   {
+    "label": "Actively Exploited",
+    "type": "d"
+   },
+   {
+    "label": "SQL Injection",
+    "type": "a"
+   }
+  ],
+  "body": "Metabase, a widely used open-source business-intelligence dashboard, disclosed that attackers exploited a maximum-severity flaw (CVSS 10.0) as a zero-day — meaning it was being abused before any patch existed. A zero-day is a bug the vendor has had zero days to fix. The vulnerability, which has no CVE identifier yet, lets an unauthenticated attacker (one with no account or password) send a crafted request that performs SQL injection — slipping database commands into an input field — to gain full administrator access to the Metabase instance. From there the attacker can read connected databases, steal saved credentials, and export data. Laptop maker Framework and form-builder Tally have both confirmed customer information was taken; Metabase Cloud instances were patched automatically, but self-hosted deployments on versions 1.58 and above must be updated by hand.",
+  "beginnerTip": "A <strong>zero-day</strong> is dangerous precisely because there is no fix available when attacks begin — so the only defense is fast patching the moment the vendor ships an update, plus watching logs for signs you were already hit. If you run Metabase yourself (self-hosted), update it now rather than assuming the cloud fix covers you."
+ },
+ "cves": [
+  {
+   "headline": "N-able N-central auth-bypass (CVE-2026-18577) added to CISA KEV after real customer compromises",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
+   "tags": [
+    {
+     "label": "CVE-2026-18577",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 8.2",
+     "type": "d"
+    },
+    {
+     "label": "CISA KEV",
+     "type": "d"
+    },
+    {
+     "label": "RMM",
+     "type": "a"
+    }
+   ],
+   "body": "CISA added CVE-2026-18577 (CVSS 8.2) to its Known Exploited Vulnerabilities (KEV) catalog — the government's authoritative list of bugs proven to be under active attack — after N-able confirmed a 'limited number of customers' were breached. The flaw is an authentication bypass (a way in that skips the login check) in N-able N-central, and is actually an incomplete fix for an earlier bug, CVE-2026-18556, which was also added to KEV this week. N-central is an RMM platform — software managed service providers use to remotely monitor and control many client machines at once — so a single compromised server lets an attacker abuse the built-in 'Take Control' remote-access feature to pivot into every managed endpoint. Huntress observed attackers doing reconnaissance on domain controllers and moving laterally; the fix is version 2026.3 HF1, and federal agencies were ordered to patch by August 6.",
+   "beginnerTip": "<strong>RMM</strong> tools are a favorite target because breaching one gives an attacker a foothold on hundreds of downstream computers at once — a force multiplier. 'Incomplete patch' bugs like this one are a reminder that applying the latest hotfix (not just the first fix) matters."
+  },
+  {
+   "headline": "Langflow RCE (CVE-2026-9198, CVSS 9.8) hits CISA KEV amid 650+ exploitation attempts",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+   "tags": [
+    {
+     "label": "CVE-2026-9198",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 9.8",
+     "type": "d"
+    },
+    {
+     "label": "CISA KEV",
+     "type": "d"
+    },
+    {
+     "label": "Patch Available",
+     "type": "g"
+    }
+   ],
+   "body": "CISA added CVE-2026-9198 (CVSS 9.8) in Langflow to its KEV catalog on August 5. Langflow is a popular open-source tool for visually building AI applications. The bug is a Code Injection flaw — the app treats attacker-supplied text as commands to run — letting an unauthenticated attacker achieve remote code execution (RCE), meaning they can run their own programs on the server from across the internet. Tracking service KEVIntel logged 650 exploitation attempts starting July 6 from 244 unique attacker IP addresses across 41 countries, and Langflow flaws have repeatedly been weaponized in recent months to drop cryptocurrency miners and ransomware. A fix shipped in July 2026 with version 1.10.1.",
+   "beginnerTip": "<strong>Remote Code Execution (RCE)</strong> is close to the worst case: the attacker runs their own code on your machine. Internet-exposed developer and AI tools are increasingly scanned within hours of a bug going public, so treat them like production systems and patch fast."
+  },
+  {
+   "headline": "Apache Tomcat flaw (CVE-2026-34486) exploited by an AI-orchestrated hacking campaign",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+   "tags": [
+    {
+     "label": "CVE-2026-34486",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 7.5",
+     "type": "w"
+    },
+    {
+     "label": "CISA KEV",
+     "type": "d"
+    },
+    {
+     "label": "AI-Assisted",
+     "type": "a"
+    }
+   ],
+   "body": "Also added to CISA's KEV on August 5 was CVE-2026-34486 (CVSS 7.5), a missing-encryption weakness in Apache Tomcat — the extremely common Java web server — that lets an attacker bypass its EncryptInterceptor protection for clustered servers. Palo Alto Networks' Unit 42 tied some of the exploitation to a Chinese-speaking actor who used the DeepSeek AI model, via a framework called Hermes Agent, as an autonomous attacker: the AI picked targets, wrote exploit code, and narrowed its own scope to save compute, hitting 460+ targets. Separately, SOCRadar linked the same CVE to a China-nexus 'spray-and-check' campaign that compromised 107 endpoints across 100+ countries and deployed the SNOWLIGHT Linux loader. A patch has been available since April 2026 (Tomcat 11.0.21, 10.1.54, 9.0.117).",
+   "beginnerTip": "This is an early look at <strong>AI-assisted</strong> offense — an attacker letting an AI agent choose targets and build exploits with little human input, compressing hours of work into minutes. The defensive lesson is unchanged: a patch has existed since April, so patched systems were never at risk."
+  },
+  {
+   "headline": "'SCTPhantom' 18-year-old Linux flaw (CVE-2026-64564) gives local root and container escape",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html",
+   "tags": [
+    {
+     "label": "CVE-2026-64564",
+     "type": "w"
+    },
+    {
+     "label": "Local Root",
+     "type": "w"
+    },
+    {
+     "label": "Container Escape",
+     "type": "a"
+    },
+    {
+     "label": "Patch Available",
+     "type": "g"
+    }
+   ],
+   "body": "Researchers disclosed CVE-2026-64564, nicknamed SCTPhantom, on August 6 — a use-after-free bug (where the kernel keeps using a piece of memory it already released, letting an attacker corrupt it) in Linux's SCTP networking code that has existed since 2008. Tencent's Zhuque Lab turned it into full root (total control of the machine) and used it for a container escape — breaking out of an isolated container to reach the underlying host — on tested builds of Debian 13, Ubuntu 24.04, Rocky Linux 9, RHEL 9, and OpenCloudOS. The flaw is local, not remote (an attacker needs code running on the box already) and requires SCTP to be reachable, which limits exposure. Fixes shipped in stable kernels 7.1.6, 6.18.42, 6.12.101, and 6.6.148 on August 3, and Tencent credits an AI research pipeline with finding it.",
+   "beginnerTip": "A <strong>Container Escape</strong> defeats the wall that is supposed to keep one container's processes away from the host and its neighbors — turning a small foothold into control of the whole server. Disabling unused kernel modules like SCTP shrinks this kind of attack surface."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "Head Mare breaches TrueConf servers to swap client installers with PhantomCore backdoors",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-trueconf-to-trojanize-client-installers-with-backdoors/",
+   "tags": [
+    {
+     "label": "Head Mare",
+     "type": "d"
+    },
+    {
+     "label": "Supply Chain",
+     "type": "d"
+    },
+    {
+     "label": "PhantomCore",
+     "type": "a"
+    },
+    {
+     "label": "Hacktivist",
+     "type": "a"
+    }
+   ],
+   "body": "The hacktivist group Head Mare — activists who hack for a political cause rather than money — is exploiting unpatched TrueConf video-conferencing servers to run a supply chain attack, according to Kaspersky. After gaining code execution with the highest privileges (via a default, unauthenticated port 4307), the attackers plant a web shell — a hidden script that gives remote command access — access the TrueConf database, and replace the legitimate client installer on the server with a trojanized, unsigned version carrying the PhantomCore backdoor. When staff connect and 'update', they silently install the malware; a second backdoor, PhantomGraph, takes its commands through a Microsoft OneDrive account. The danger spreads beyond TrueConf users, because employees who join meetings on a compromised partner's server can also be served the infected installer.",
+   "beginnerTip": "A <strong>supply chain attack</strong> poisons trusted software at the source, so victims install malware while doing something completely normal like accepting an update. Unsigned installers are a red flag — legitimate updates are digitally signed to prove they really came from the vendor."
+  },
+  {
+   "headline": "Snowflake extortionist Connor Moucka pleads guilty; breaches hit 165 orgs and 100M+ people",
+   "source": "Krebs on Security",
+   "sourceUrl": "https://krebsonsecurity.com",
+   "url": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+   "tags": [
+    {
+     "label": "UNC5537",
+     "type": "d"
+    },
+    {
+     "label": "Extortion",
+     "type": "d"
+    },
+    {
+     "label": "Credential Theft",
+     "type": "a"
+    },
+    {
+     "label": "MFA",
+     "type": "g"
+    }
+   ],
+   "body": "Connor Riley Moucka, 26, of Ontario pleaded guilty in a Seattle federal court to computer fraud, wire fraud, and aggravated identity theft over the 2024 Snowflake customer-data thefts, a campaign tracked as UNC5537 that reached at least 165 organizations — including AT&T, Ticketmaster, and Santander — and exposed records on 100+ million people. The way in was mundane: old passwords harvested years earlier by infostealer malware and never changed, on accounts that had multi-factor authentication (MFA) switched off. MFA is the second check — a code or prompt on your phone — that would have blocked logins even with a stolen password. Prosecutors say Moucka personally took at least $495,000; he faces a two-year mandatory minimum and up to 30 years, with sentencing set for October 27.",
+   "beginnerTip": "Nearly every account in this mega-breach could have been saved by one control: <strong>MFA</strong>. Turn it on everywhere, and rotate any password that might have been exposed — stolen credentials can sit unused for years before someone tries them."
+  },
+  {
+   "headline": "LockBit 5.0 resurgence: cross-platform variants and a new ransomware alliance",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/in-other-news-lockbit-5-0-department-of-war-cybersecurity-framework-oneplus-vulnerability/",
+   "tags": [
+    {
+     "label": "LockBit 5.0",
+     "type": "d"
+    },
+    {
+     "label": "Ransomware",
+     "type": "d"
+    },
+    {
+     "label": "RaaS",
+     "type": "a"
+    },
+    {
+     "label": "Manufacturing",
+     "type": "w"
+    }
+   ],
+   "body": "LockBit — one of the most prolific ransomware-as-a-service (RaaS) brands, where operators rent their malware to affiliates for a cut of the ransom — has continued rebuilding after the 2024 'Operation Cronos' police takedown. Its version 5.0 ships updated Windows, Linux, and ESXi (VMware) encryptors with faster encryption and better evasion, plus per-victim negotiation portals, and reporting points to a working alliance with other gangs such as Qilin and DragonForce to share tooling and infrastructure. Manufacturing continues to be among the hardest-hit sectors as the group courts affiliates to rebuild its reputation, raising the risk of renewed attacks on critical infrastructure.",
+   "beginnerTip": "<strong>Ransomware-as-a-Service (RaaS)</strong> lowers the bar for crime: the core gang writes the malware and runs the infrastructure, while less-skilled 'affiliates' carry out break-ins for a cut. Offline, tested backups remain the single most reliable way to survive an encryption attack."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "NIST opens public comment on draft SP 800-213r1 for IoT product security",
+   "source": "NIST (CSRC)",
+   "sourceUrl": "https://csrc.nist.gov",
+   "url": "https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd",
+   "tags": [
+    {
+     "label": "NIST",
+     "type": "a"
+    },
+    {
+     "label": "IoT",
+     "type": "a"
+    },
+    {
+     "label": "Draft Guidance",
+     "type": "a"
+    },
+    {
+     "label": "Comment by Aug 24",
+     "type": "w"
+    }
+   ],
+   "body": "NIST released the initial public draft of Special Publication (SP) 800-213r1, 'IoT Product Cybersecurity Guidelines for the Federal Government,' with a comment period ending August 24, 2026. SP 800-213 is federal guidance for setting cybersecurity requirements on Internet of Things (IoT) products — network-connected devices like sensors, cameras, and controllers. The revision deliberately shifts language from 'devices' to 'products' to reflect that a modern connected device comes bundled with apps, cloud services, and update mechanisms that all carry risk, and it stresses that adding an IoT product to a system can change that system's overall risk and require new security controls.",
+   "beginnerTip": "<strong>NIST</strong> is the U.S. standards agency whose cybersecurity publications, while written for federal agencies, become de facto best practice for private industry too. 'Initial public draft' means anyone — including you — can submit comments before the guidance is finalized."
+  },
+  {
+   "headline": "CISA retires ten legacy emergency directives, marking a shift to risk-based patching",
+   "source": "CISA",
+   "sourceUrl": "https://www.cisa.gov",
+   "url": "https://www.cisa.gov/news-events/news/cisa-retires-ten-emergency-directives-marking-era-federal-cybersecurity",
+   "tags": [
+    {
+     "label": "CISA",
+     "type": "a"
+    },
+    {
+     "label": "Emergency Directive",
+     "type": "a"
+    },
+    {
+     "label": "Federal",
+     "type": "a"
+    },
+    {
+     "label": "Policy Shift",
+     "type": "a"
+    }
+   ],
+   "body": "CISA retired ten older Emergency Directives — legally binding orders it issues to federal civilian agencies to fix specific, urgent threats — saying their required actions are now standard practice or superseded by newer policy. The move reflects a broader shift toward Binding Operational Directive (BOD) 26-04, which tells agencies to prioritize patching based on risk factors like whether a bug is on the KEV list and how easily it can be automated, rather than reacting threat-by-threat. Retiring a directive does not undo the fixes; it means the underlying hygiene is now expected by default.",
+   "beginnerTip": "An <strong>Emergency Directive</strong> is CISA's most forceful tool — a mandatory 'fix this now' order to federal agencies. The trend here is from one-off firefighting toward a steady, risk-ranked patching program, which is the same maturity path private organizations are encouraged to follow."
+  },
+  {
+   "headline": "SEC's four-day cyber incident disclosure rule keeps pressure on public companies",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/",
+   "tags": [
+    {
+     "label": "SEC",
+     "type": "a"
+    },
+    {
+     "label": "Disclosure",
+     "type": "a"
+    },
+    {
+     "label": "Compliance",
+     "type": "a"
+    },
+    {
+     "label": "Materiality",
+     "type": "w"
+    }
+   ],
+   "body": "The U.S. Securities and Exchange Commission (SEC) rule requiring public companies to report a 'material' cybersecurity incident within four business days of deciding it is material remains a central compliance obligation in 2026, alongside annual disclosures about how a company manages cyber risk and governs it at the board level. 'Material' means information a reasonable investor would consider important — so the clock starts at the materiality determination, not the moment of discovery, which is where many companies still struggle. The rule keeps a steady incentive to have incident-response and decision-making processes documented in advance.",
+   "beginnerTip": "<strong>Materiality</strong> is the judgment call at the center of breach disclosure: would this news matter to an investor deciding whether to buy or sell the stock? Because the reporting clock starts at that decision, regulators expect companies to make it promptly and to be able to show their reasoning."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "AI as an autonomous attacker: DeepSeek-driven agent hit 460+ targets with minimal human input",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/china-based-hacker-deepseek-autonomous/826784/",
+   "tags": [
+    {
+     "label": "AI Threats",
+     "type": "a"
+    },
+    {
+     "label": "Autonomous Attacks",
+     "type": "w"
+    },
+    {
+     "label": "DeepSeek",
+     "type": "a"
+    },
+    {
+     "label": "Unit 42",
+     "type": "a"
+    }
+   ],
+   "body": "Palo Alto Networks' Unit 42 detailed a China-based operator who wired the DeepSeek AI model into a framework called Hermes Agent and let it run much of an attack on its own — enumerating targets, scanning GitHub for fresh proof-of-concept exploits, generating code, and even narrowing its own target list to conserve computing cost — all commanded through Telegram. The agent attempted 460+ targets using bugs in Langflow, n8n, Citrix NetScaler, Apache Tomcat, and others. Researchers assess the actor was an independent individual, not a state, which is the unsettling part: capabilities that once required a skilled team are increasingly available to lone attackers through off-the-shelf AI.",
+   "beginnerTip": "The takeaway is speed and scale, not magic — the AI still exploited <strong>known, patchable vulnerabilities</strong>. As reconnaissance and exploit-writing get automated, the window between a bug becoming public and mass exploitation keeps shrinking, so timely patching matters more than ever."
+  },
+  {
+   "headline": "Evasion trend: malvertising delivers malware in pieces and has the browser assemble it",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+   "tags": [
+    {
+     "label": "Malvertising",
+     "type": "w"
+    },
+    {
+     "label": "Evasion",
+     "type": "a"
+    },
+    {
+     "label": "Browser",
+     "type": "a"
+    },
+    {
+     "label": "Detection Bypass",
+     "type": "w"
+    }
+   ],
+   "body": "Researchers described a malvertising technique — malware spread through booby-trapped online ads — that ships the malicious program in harmless-looking fragments and then uses JavaScript in the victim's browser to reassemble the executable locally. Because no single downloaded piece looks dangerous on its own, this sidesteps network filters and scanners that inspect files in transit. It is part of a wider pattern of attackers splitting, encoding, or late-binding their payloads specifically to defeat detection that happens at the gateway rather than on the endpoint.",
+   "beginnerTip": "This is why <strong>endpoint detection</strong> — security that watches what actually runs on your computer — matters alongside network filtering: if the malicious file only comes together on your machine, defenses that only inspect the network never see the finished threat."
+  },
+  {
+   "headline": "'Bit2Watt' research shows cloud tenants could disrupt power grids without an exploit",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html",
+   "tags": [
+    {
+     "label": "Bit2Watt",
+     "type": "w"
+    },
+    {
+     "label": "Cloud",
+     "type": "a"
+    },
+    {
+     "label": "Power Grid",
+     "type": "a"
+    },
+    {
+     "label": "Research",
+     "type": "a"
+    }
+   ],
+   "body": "Researchers unveiled Bit2Watt, a technique in which ordinary cloud tenants — customers renting virtual machines in a shared data center — deliberately spike and coordinate their power draw to create sudden swings large enough to stress the electrical grid the data center draws from, all without exploiting any software vulnerability. It exploits physics and the concentration of compute in modern data centers rather than a bug, highlighting a growing class of infrastructure risks where the 'attack surface' is power and cooling, not code. The work is a proof of concept, but it points to why grid operators and hyperscale providers are paying closer attention to load-manipulation threats.",
+   "beginnerTip": "Not every serious threat involves a software <strong>exploit</strong>; some abuse the physical systems computers depend on, like electricity. As data centers grow, their power demand itself becomes something defenders and grid operators have to reason about."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html",
+   "text": "'SCTPhantom' (CVE-2026-64564), an 18-year-old Linux SCTP use-after-free bug, gives local root and container escape; fixes shipped in stable kernels on August 3."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html",
+   "text": "New 'Zapscape' KVM flaw could let privileged code in a level-1 guest VM escape to the underlying Linux host."
+  },
+  {
+   "color": "danger",
+   "source": "Krebs on Security",
+   "sourceUrl": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+   "text": "Snowflake extortionist Connor Moucka pleaded guilty; the 2024 UNC5537 thefts hit 165 organizations and exposed records on 100M+ people."
+  },
+  {
+   "color": "accent",
+   "source": "NIST (CSRC)",
+   "sourceUrl": "https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd",
+   "text": "NIST is taking public comment through August 24 on draft SP 800-213r1, its updated IoT product cybersecurity guidance for the federal government."
+  },
+  {
+   "color": "accent",
+   "source": "CISA",
+   "sourceUrl": "https://www.cisa.gov/news-events/news/cisa-retires-ten-emergency-directives-marking-era-federal-cybersecurity",
+   "text": "CISA retired ten legacy Emergency Directives, folding their requirements into risk-based BOD 26-04 as standard practice."
+  }
+ ],
+ "analystFooter": "Priorities today, in order: hand-patch any self-hosted Metabase (CVSS 10.0 zero-day with confirmed data theft) and hunt for signs of prior compromise; apply N-able N-central 2026.3 HF1 and the Langflow 1.10.1 / Apache Tomcat fixes now on CISA's KEV list; verify MFA is enforced everywhere in light of the Snowflake guilty plea; and treat any unsigned 'update' installer as hostile given the Head Mare TrueConf supply-chain attacks."
+}

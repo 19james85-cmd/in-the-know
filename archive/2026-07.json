@@ -2297,5 +2297,356 @@
    }
   ],
   "analystFooter": "Today's must-do: confirm every Zimbra server is on 10.0.18/10.1.13+ to shut out Laundry Bear's zero-click email theft, then upgrade Redis and NodeBB and get any internet-exposed PLCs behind a VPN."
+ },
+ "2026-07-25": {
+  "leadStory": {
+   "headline": "Check Point SmartConsole zero-day (CVE-2026-16232) exploited for full admin takeover; CISA sets July 25 patch deadline",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/",
+   "tags": [
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "Authentication Bypass",
+     "type": "d"
+    },
+    {
+     "label": "CISA KEV / BOD 26-04",
+     "type": "d"
+    }
+   ],
+   "body": "Check Point is warning that CVE-2026-16232, a critical (CVSS 9.3) authentication-bypass flaw in its SmartConsole management GUI, is being exploited as a Zero-Day in the wild. An unauthenticated attacker can obtain a valid application login token and then authenticate to a Security Management Server or Multi-Domain Server with full administrator rights, letting them rewrite firewall and security policy across the estate. Check Point says a handful of customers whose management interfaces were exposed directly to the internet without IP restrictions were hit. CISA added the flaw to its Known Exploited Vulnerabilities (KEV) catalog and, under Binding Operational Directive (BOD) 26-04, ordered U.S. federal agencies to patch by Saturday, July 25.",
+   "beginnerTip": "SmartConsole is the admin dashboard for Check Point firewalls, so this bug hands an attacker the keys to the security controls themselves. The core lesson: management interfaces should never sit on the public internet — restrict them to a VPN or trusted IPs. When CISA issues a <strong>Binding Operational Directive (BOD)</strong>, federal agencies are legally required to patch by the stated date, and it's a strong signal that private organizations should hurry too."
+  },
+  "cves": [
+   {
+    "headline": "Fastjson 1.x hit by unauthenticated RCE (CVE-2026-16723) — and there will be no patch",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
+    "tags": [
+     {
+      "label": "Actively Exploited",
+      "type": "d"
+     },
+     {
+      "label": "Unauthenticated RCE",
+      "type": "d"
+     },
+     {
+      "label": "No Patch (EOL)",
+      "type": "w"
+     }
+    ],
+    "body": "Security firms ThreatBook and Imperva report active exploitation of CVE-2026-16723 (CVSS 9.0), a critical flaw in Fastjson, Alibaba's widely used JSON library for Java. In affected Spring Boot apps, a single malicious JSON request runs code without authentication and with the privileges of the Java process — no AutoType and no classpath 'gadget' required, just a stock 'java -jar' fat-jar deployment. Because the Fastjson 1.x repository was archived read-only in October 2024, no fix will be issued; the only remediation is enabling SafeMode or migrating to the unaffected Fastjson 2.x.",
+    "beginnerTip": "'End of life' (EOL) software is dangerous precisely because reported bugs never get patched — the vendor has walked away. A <strong>Deserialization</strong> flaw like this abuses the step where an app turns incoming text (JSON) back into live program objects, letting attacker-controlled data become attacker-controlled code."
+   },
+   {
+    "headline": "Public GitLab RCE exploit lets any logged-in user run commands as 'git' on unpatched self-managed servers",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
+    "tags": [
+     {
+      "label": "Public Exploit",
+      "type": "d"
+     },
+     {
+      "label": "Authenticated RCE",
+      "type": "w"
+     },
+     {
+      "label": "Patch Available",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers at depthfirst published working exploit code on July 24 for a GitLab flaw rooted in the Ruby 'Oj' JSON parser. On an unpatched self-managed GitLab server, an ordinary authenticated user triggers code execution as the 'git' service account simply by committing two crafted Jupyter notebooks and requesting their diff — no admin rights, CI access, or victim interaction needed. Affected ranges include CE/EE 15.2.0 through 18.10.7, 18.11.0 through 18.11.4, and 19.0.0 through 19.0.1; GitLab shipped fixes on June 10 (18.10.8, 18.11.5, 19.0.2), so patched servers are safe.",
+    "beginnerTip": "A Proof-of-Concept (PoC) becoming public sharply raises risk, because attackers no longer have to discover the bug themselves. This one was patched six weeks earlier — a reminder that <strong>Patch</strong> lag, not the unknown, is what usually gets organizations breached."
+   },
+   {
+    "headline": "'Certighost' exploit (CVE-2026-54121) lets any domain user impersonate a Domain Controller",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html",
+    "tags": [
+     {
+      "label": "Privilege Escalation",
+      "type": "d"
+     },
+     {
+      "label": "Domain Takeover",
+      "type": "d"
+     },
+     {
+      "label": "Patched (July 2026)",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers H0j3n and Aniq Fakhrul published a working exploit on July 24 for CVE-2026-54121, dubbed 'Certighost', an Active Directory Certificate Services (AD CS) flaw Microsoft patched in its July 14 updates. A low-privileged domain user can request a certificate for a Domain Controller, then use PKINIT (certificate-based Kerberos login) to authenticate as that machine. From there the attacker can run DCSync to pull secrets like the krbtgt account hash, enabling forged tickets and full domain compromise. Microsoft's fix adds validation that the certificate target is a genuine computer object.",
+    "beginnerTip": "In a Windows network the Domain Controller is the master authenticator — impersonating it is game over. <strong>AD CS</strong> is the built-in system that issues digital certificates inside a company; misconfigurations in it have become one of the most reliable routes to taking over an entire domain."
+   },
+   {
+    "headline": "Rockwell patches four code-execution flaws in Arena industrial simulation software",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/rockwell-patches-code-execution-flaws-in-arena-simulation-software/",
+    "tags": [
+     {
+      "label": "ICS/OT",
+      "type": "a"
+     },
+     {
+      "label": "Code Execution",
+      "type": "w"
+     },
+     {
+      "label": "Patch Available",
+      "type": "g"
+     }
+    ],
+    "body": "Rockwell Automation released Arena 17.00.01 to fix four high-severity memory-corruption bugs (CVE-2026-8085, CVE-2026-8312, CVE-2026-8313, CVE-2026-8314), all out-of-bounds write flaws that allow arbitrary code execution when a user opens a malicious simulation file (.doe, .mod, or .pkg). The software fails to bounds-check attacker-supplied data before copying it into a fixed-size buffer. All versions through 17.00.00 are affected; no in-the-wild exploitation was reported as of the CISA advisory, but this is 'open a file' malware bait aimed at industrial engineers.",
+    "beginnerTip": "An 'out-of-bounds write' means the program writes data past the end of the memory space it reserved, corrupting neighboring memory an attacker can steer toward running their code. These are file-based attacks, so the practical defense is simple: don't open simulation or project files from untrusted sources."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "Cl0p launches extortion wave against internet-exposed PTC Windchill and FlexPLM (CVE-2026-12569)",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/cl0p-affiliates-target-internet-exposed.html",
+    "tags": [
+     {
+      "label": "Ransomware / Extortion",
+      "type": "d"
+     },
+     {
+      "label": "Actively Exploited",
+      "type": "d"
+     },
+     {
+      "label": "CISA KEV",
+      "type": "w"
+     }
+    ],
+    "body": "Affiliates of the Cl0p gang (aka FIN11, Graceful Spider, Lace Tempest) are exploiting CVE-2026-12569 (CVSS ~9.3), an unauthenticated RCE in PTC's Windchill and FlexPLM product-lifecycle-management platforms caused by unsafe deserialization of untrusted data. Attackers chain a pre-auth info disclosure in the FlexPLM WSDL endpoint with a flaw in the Windchill login servlet, drop hex-named JSP web shells, and steal engineering and design data. CISA added the CVE to its KEV catalog on June 25; around July 20 Cl0p began emailing victims with the subject 'Windchill PDMLink module serious data leak,' its signature double-extortion play against manufacturing, automotive, and aerospace targets.",
+    "beginnerTip": "Cl0p specializes in mass-exploiting one file-transfer or enterprise app at a time (MOVEit, GoAnywhere, and now Windchill), stealing data rather than encrypting it. In <strong>Double Extortion</strong>, criminals threaten to leak stolen files publicly unless paid — so strong backups alone don't neutralize the threat."
+   },
+   {
+    "headline": "North Korea's BlueNoroff runs a Zoom/Teams phishing kit that fingerprints crypto wallets before delivering malware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/bluenoroff-zoom-phishing-kit-profiles.html",
+    "tags": [
+     {
+      "label": "Nation-State (DPRK)",
+      "type": "d"
+     },
+     {
+      "label": "Crypto Theft",
+      "type": "w"
+     },
+     {
+      "label": "Social Engineering",
+      "type": "a"
+     }
+    ],
+    "body": "The North Korea-linked BlueNoroff group is operating an active phishing kit that impersonates Zoom and Microsoft Teams using typosquatted domains in ClickFix-style lures. Before dropping malware, the kit profiles a visitor's cryptocurrency wallet browser extensions so operators can focus on high-value targets. BlueNoroff seeds the campaign through already-compromised, trusted industry contacts — often via Telegram — creating a self-propagating pipeline; a Google Meet lure page sits half-built in the kit's source, hinting at expansion.",
+    "beginnerTip": "'Typosquatting' registers look-alike domains (e.g. zooom or teams-video) hoping you won't notice the misspelling. Always launch meeting apps from the real, bookmarked site rather than clicking a link in a message — especially one that arrives from a contact you trust, since that account may already be hijacked."
+   },
+   {
+    "headline": "'DevMan' ransomware-as-a-service runs a full web portal for payload builds and affiliate payouts",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/devman-raas-portal-centralizes-payload.html",
+    "tags": [
+     {
+      "label": "Ransomware-as-a-Service",
+      "type": "w"
+     },
+     {
+      "label": "Cybercrime Economy",
+      "type": "a"
+     },
+     {
+      "label": "Emerging Threat",
+      "type": "a"
+     }
+    ],
+    "body": "Swiss firm PRODAFT detailed 'DevMan,' a ransomware-as-a-service (RaaS) operation whose operators run a polished web platform where affiliates build custom ransomware payloads, track earnings, and manage victims from a dashboard. The self-service model lowers the technical bar for would-be extortionists and industrializes the crime, mirroring how legitimate software-as-a-service works. Centralized portals like this also give researchers a single chokepoint to study — and law enforcement a target to seize.",
+    "beginnerTip": "<strong>Ransomware-as-a-Service (RaaS)</strong> splits the crime into specialists: core developers build and rent the malware, while 'affiliates' break into victims and share the profits. It's why ransomware keeps spreading even though few criminals can actually write the malware themselves."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "CISA now targets September 2026 to finalize CIRCIA cyber-incident reporting rule",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/cisa-circia-cyber-incident-reporting-rule-feedback/",
+    "tags": [
+     {
+      "label": "US Regulation",
+      "type": "a"
+     },
+     {
+      "label": "Incident Reporting",
+      "type": "a"
+     },
+     {
+      "label": "Critical Infrastructure",
+      "type": "a"
+     }
+    ],
+    "body": "CISA is aiming to finalize the long-delayed rule implementing the Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA) by September 2026, having blown past the October 2025 statutory deadline. As drafted, covered critical-infrastructure entities across 16 sectors would have to report significant cyber incidents to CISA within 72 hours and ransom payments within 24 hours. After more than 1,200 stakeholders joined June town halls, much of industry is pushing CISA to narrow who counts as 'covered' and to ask for less detail per report.",
+    "beginnerTip": "A 'notice of proposed rulemaking' (NPRM) is a draft regulation the public gets to comment on before it becomes binding. CIRCIA matters because mandatory 72-hour reporting would give the government far earlier visibility into attacks — today most incidents are disclosed slowly, if at all."
+   },
+   {
+    "headline": "Boards vs. CISOs: escalating threats force security onto the agenda, but the communication gap persists",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/cybersecurity-operations/cisos-vs-boards-myth-or-misunderstanding-",
+    "tags": [
+     {
+      "label": "Governance",
+      "type": "a"
+     },
+     {
+      "label": "Board Oversight",
+      "type": "a"
+     },
+     {
+      "label": "Risk",
+      "type": "a"
+     }
+    ],
+    "body": "As regulators increasingly hold directors accountable for cyber risk, corporate boards are prioritizing security — yet Dark Reading reports a persistent gap in how boards and security teams communicate. Boards want risk framed in business and financial terms, while CISOs often default to technical metrics, and each side says it needs more support to bridge the divide. The trend reflects rules like the SEC's cyber-disclosure requirements pushing security from the server room into the boardroom.",
+    "beginnerTip": "A <strong>CISO</strong> (Chief Information Security Officer) is the executive who owns an organization's cybersecurity. The recurring theme here is translation: technical risk only drives decisions when it's expressed as potential dollars, downtime, and legal exposure that a board can weigh."
+   },
+   {
+    "headline": "Microsoft, Meta, NVIDIA and others urge governments to back open-source AI",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/tech-leaders-open-source-ai-cybersecurity/",
+    "tags": [
+     {
+      "label": "AI Policy",
+      "type": "a"
+     },
+     {
+      "label": "Open Source",
+      "type": "a"
+     },
+     {
+      "label": "Industry Coalition",
+      "type": "g"
+     }
+    ],
+    "body": "A coalition including Microsoft, Meta, Palantir, Perplexity, Mistral, NVIDIA, Mozilla, the Linux Foundation, Hugging Face, Dell, and IBM signed an open letter urging policymakers to support the development and spread of open-source AI. Backers argue open models improve transparency, competition, and security by letting defenders inspect and test them; critics counter that freely downloadable models are harder to police once misused. The letter lands the same week as fresh reporting on AI models resisting safety controls, underscoring the unsettled security debate.",
+    "beginnerTip": "'Open-source' AI means the model's weights and code are published for anyone to download, run, and modify. The security trade-off cuts both ways: openness lets researchers find and fix flaws faster, but it also means safety guardrails can be stripped out by whoever holds a copy."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "Despite repeated takedowns, residential-proxy botnets keep growing — now nearing 60 million victim IPs",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/botnets-residential-proxy-networks-proliferate-lumen-black-lotus-labs/",
+    "tags": [
+     {
+      "label": "Botnets",
+      "type": "w"
+     },
+     {
+      "label": "Residential Proxies",
+      "type": "w"
+     },
+     {
+      "label": "Threat Landscape",
+      "type": "a"
+     }
+    ],
+    "body": "Lumen's Black Lotus Labs says the botnet ecosystem it tracks is approaching 60 million infected IP addresses, with roughly 1 in 4 based in the United States, and it now follows 30-plus malicious proxy-botnet clusters that each average over 100,000 daily victims. These networks resell access to hacked home devices as 'residential proxies,' letting criminals route attacks through addresses that look like ordinary consumers and slip past defenses. Even after the FBI's July 2 seizure of NetNut infrastructure, networks like IPIDEA rebounded past their pre-takedown size, showing single-provider takedowns rarely stick.",
+    "beginnerTip": "A residential proxy routes an attacker's traffic through a real home internet connection, so a malicious login looks like it's coming from a normal household rather than a data center. It's a big reason why blocking by IP address is increasingly ineffective."
+   },
+   {
+    "headline": "Attackers automate a government breach with an off-the-shelf AI agent in unattended 'YOLO' mode",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/",
+    "tags": [
+     {
+      "label": "AI-Enabled Attacks",
+      "type": "w"
+     },
+     {
+      "label": "Post-Exploitation",
+      "type": "a"
+     },
+     {
+      "label": "Emerging TTP",
+      "type": "a"
+     }
+    ],
+    "body": "Hunt.io and researcher Bob Diachenko found exposed directories tied to an alleged intrusion at Thailand's Ministry of Finance in which the attacker ran the open-source Hermes AI agent in 'YOLO' mode — a setting that strips out the human approval prompts for dangerous commands. Logs show the agent automating post-exploitation work: privilege escalation, kernel vulnerability scanning, service enumeration, and file-system searches, alongside web shells and suo5 HTTP tunnels. The ministry has not confirmed a breach, but the case is an early real-world look at attackers delegating hands-on-keyboard work to an AI.",
+    "beginnerTip": "'Post-exploitation' is everything an attacker does after the initial break-in — escalating privileges, hunting for data, and spreading. Handing that to an autonomous AI agent could let one operator move through many networks at once, which is why defenders are watching this trend closely."
+   },
+   {
+    "headline": "The most vulnerable AI products are also among the most commonly exposed to the internet",
+    "source": "Cybersecurity Dive",
+    "sourceUrl": "https://www.cybersecuritydive.com",
+    "url": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/",
+    "tags": [
+     {
+      "label": "Attack Surface",
+      "type": "w"
+     },
+     {
+      "label": "AI Security",
+      "type": "a"
+     },
+     {
+      "label": "Exposure",
+      "type": "a"
+     }
+    ],
+    "body": "A Censys report previewed by Cybersecurity Dive finds that many of the AI tools organizations are rushing to adopt are sitting directly on the public internet with weak or no authentication, even as companies grow more dependent on them. That combination — high-value, buggy, and reachable — makes them easy targets, echoing the internet-exposure problems long seen with industrial control systems. The finding reinforces a simple point: new technology expands the attack surface faster than most teams secure it.",
+    "beginnerTip": "Your <strong>Attack Surface</strong> is the sum of all the ways an attacker could try to get in. Every AI service you stand up — a chatbot, a model API, an agent — adds to it, and anything reachable from the open internet should require strong authentication before it's exposed."
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "danger",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "text": "Attackers are poisoning DNS on compromised hotel and conference Wi-Fi gateways to redirect guests to fake Microsoft 365 login pages — harvesting credentials and OAuth session tokens (bypassing MFA) from traveling employees, using techniques linked to Russia's APT28."
+   },
+   {
+    "color": "warn",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "text": "Parcel carrier OnTrac is notifying customers that hackers breached its corporate network and may have accessed personal data."
+   },
+   {
+    "color": "warn",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "text": "CTM360 reports insurance-themed phishing has evolved into real-time account hijacking, where attackers relay stolen credentials the instant victims type them, defeating the delay defenders used to rely on."
+   },
+   {
+    "color": "accent",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "text": "Microsoft blames Thursday's massive Microsoft 365 and Azure outage on a bug in its automated network-maintenance system that mistakenly withdrew IP routes from more devices than intended — an outage, not an attack."
+   },
+   {
+    "color": "accent",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "text": "In other news: a Russian espionage campaign targeting Zimbra webmail, an attempted ransomware extortion of train-maker Stadler Rail, Siemens ROX II industrial switch flaws, and roughly 400 newly catalogued Linux kernel vulnerabilities."
+   }
+  ],
+  "analystFooter": "Priority order today: patch Check Point SmartConsole now (CISA deadline is today) and get management interfaces off the public internet; then hunt for exposed PTC Windchill/FlexPLM and Fastjson 1.x, since both are under active, unauthenticated exploitation."
  }
 }
