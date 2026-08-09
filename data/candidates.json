@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-08T13:29:50.664548+00:00",
+ "generated": "2026-08-09T13:33:31.837323+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,31 +11,31 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 8,
+   "count": 0,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 5,
+   "count": 1,
    "error": null
   },
   {
@@ -65,137 +65,11 @@
  ],
  "items": [
   {
-   "source": "SecurityWeek",
-   "title": "Critical One-Click Vulnerability in Atlassian’s Rovo AI Exposed Enterprise Data",
-   "url": "https://www.securityweek.com/critical-one-click-vulnerability-in-atlassians-rovo-ai-exposed-enterprise-data/",
-   "published": "2026-08-08T11:30:00+00:00",
-   "summary": "The RovoBlast attack method identified by Varonis researchers could have been exploited to steal Confluence, Jira and SharePoint data. The post Critical One-Click Vulnerability in Atlassian's Rovo AI Exposed Enterprise Data appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Atlassian Rovo Can Be Tricked Into Sending Jira and Confluence Data to Attackers",
-   "url": "https://thehackernews.com/2026/08/atlassian-rovo-can-be-tricked-into.html",
-   "published": "2026-08-08T08:54:50+00:00",
-   "summary": "Attacker-controlled instructions can make Atlassian's Rovo assistant collect Jira or Confluence data that a signed-in user can access, then send it to an outside server. Two security firms found that behavior independently, by different routes. Only one of those routes is confirmed closed. PromptArmor, an AI security firm, hid the instructions in content Rovo reads. It said an uploaded file was"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "New CSS Attacks Can Break Webmail Defenses to Steal Passwords and Tokens",
-   "url": "https://thehackernews.com/2026/08/new-css-attacks-can-break-webmail.html",
-   "published": "2026-08-08T08:03:57+00:00",
-   "summary": "New research shows content inside an email can escape its message boundary and interfere with the webmail interface. Across attack chains spanning Outlook, Gmail, Fastmail, Proton Mail, Yahoo Mail, and AOL Mail, the techniques can capture passwords, take over third-party accounts, leak tokens, hijack trusted UI actions, and manipulate AI tools that read email. PortSwigger researcher Gareth"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication",
-   "url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
-   "published": "2026-08-08T06:58:31+00:00",
-   "summary": "Metabase has warned that a maximum-severity security flaw impacting its business intelligence and data visualization software package has been exploited in the wild as a zero-day. The vulnerability (CVSS score: 10.0), which does not carry a CVE identifier, allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, enabling them to gain"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "N-able Issues N-central Hotfix 2 as Attackers Reach Managed Systems and Persist",
-   "url": "https://thehackernews.com/2026/08/n-central-attackers-reach-managed.html",
-   "published": "2026-08-08T06:57:43+00:00",
-   "summary": "N-able has released a fresh round of hotfixes for N‑central as part of its investigation into ongoing exploitation of a recently disclosed security flaw in the Remote Monitoring and Management (RMM) product. \"We are proactively expanding protections in response to ongoing monitoring of threat actors as they evolve their attack techniques,\" the company said. \"This is not a duplicate of our"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Progress Kemp LoadMaster Flaw Hits CISA KEV After 792 Reported Exploit Attempts",
-   "url": "https://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html",
-   "published": "2026-08-08T06:52:16+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a critical-severity security flaw impacting Progress Kemp LoadMaster to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation in the wild. The vulnerability, tracked as CVE-2026-8037 (CVSS score: 9.6), is a command injection flaw that could be weaponized to achieve arbitrary"
-  },
-  {
    "source": "BleepingComputer",
-   "title": "Metabase SQLi zero-day exploited in customer data-theft attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/",
-   "published": "2026-08-07T20:14:46+00:00",
-   "summary": "A critical Metabase SQL injection vulnerability was exploited in zero-day attacks to breach customer instances in data theft attacks, known to impact Framework and Tally. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Unlimited Technology Systems breach impacts 3.8 million people",
-   "url": "https://www.bleepingcomputer.com/news/security/unlimited-technology-systems-breach-impacts-38-million-people/",
-   "published": "2026-08-07T19:30:41+00:00",
-   "summary": "Healthcare software company Unlimited Technology Systems reported that more than 3.8 million people were impacted by a data breach incident that occurred in October 2025. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Nearly 800 Malicious npm Packages Deliver Cross-Platform RAT and Infostealer",
-   "url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html",
-   "published": "2026-08-07T18:48:17+00:00",
-   "summary": "A cluster of nearly 800 malicious packages has been published to the npm registry as part of a new campaign designed to deliver cross-platform malware targeting Windows, Mac, and Linux systems. \"These packages appear to use AI slop squatted, or randomly generated typo-squatting package names, but all of them deliver a powerful RAT and infostealer payload,\" OpenSourceMalware researcher Paul"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
-   "url": "https://thehackernews.com/2026/08/clickfix-attacks-deliver-macos-stealer.html",
-   "published": "2026-08-07T18:29:08+00:00",
-   "summary": "ClickFix-style attacks are being used to deliver a Go-based malware capable of stealing cryptocurrency assets, as well as browser-stored passwords, Apple iCloud Keychain data, and cached credentials. The macOS-focused infection chain is designed to deliver a shell script that profiles the host and then fetches a macOS malware payload that's compatible with the computer's CPU architecture. \""
-  },
-  {
-   "source": "The Hacker News",
-   "title": "UNC6671 Vishing Attacks Target Personal Phones to Steal SaaS Data",
-   "url": "https://thehackernews.com/2026/08/unc6671-vishing-attacks-target-personal.html",
-   "published": "2026-08-07T18:16:13+00:00",
-   "summary": "A recent wave of cyber attacks targeting financial services, private equity, and professional services has been attributed to a data extortion group known as UNC6671. \"UNC6671 continues to rely on voice phishing (vishing) to target enterprise employees, posing as IT help desk staff facilitating mandatory, urgent security migrations. Significantly, the threat actor often contacts employees via"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Experts say healthcare faces cybersecurity crisis: ‘These are patient safety issues’",
-   "url": "https://www.cybersecuritydive.com/news/healthcare-cybersecurity-crisis-def-con/827378/",
-   "published": "2026-08-07T17:29:00+00:00",
-   "summary": "Regulatory failures, funding constraints and industry consolidation have created serious hacking risks."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "More than half of AI-generated patches are broken",
-   "url": "https://cyberscoop.com/ai-code-patching-security-risks/",
-   "published": "2026-08-07T17:10:39+00:00",
-   "summary": "Research finds your AI generated security patch is more likely to fail than fully fix a vulnerability. It might even introduce brand new flaws to exploit along the way. The post More than half of AI-generated patches are broken appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "AI-Generated Patches Fail Half the Time",
-   "url": "https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time",
-   "published": "2026-08-07T16:47:43+00:00",
-   "summary": "A study of more than 6,000 patches found that even working patches can introduce new bugs, break something else, or are open to bypass."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Levi Strauss & Co. says hackers stole corporate data in cyberattack",
-   "url": "https://www.bleepingcomputer.com/news/security/levi-strauss-and-co-says-hackers-stole-corporate-data-in-cyberattack/",
-   "published": "2026-08-07T15:48:20+00:00",
-   "summary": "Levi Strauss & Co. (Levi's) says that hackers used social engineering on three of its employees to gain access to and steal corporate data stored on their machines. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "In Other News: AI Slop Limits Apple Bounties, North Carolina Port Attacks, Hackers Target Wall Street",
-   "url": "https://www.securityweek.com/in-other-news-ai-slop-limits-apple-bounties-north-carolina-port-attacks-hackers-target-wall-street/",
-   "published": "2026-08-07T14:26:42+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: ban on Chinese data center tech, QuickFox VPN supply chain attack, IEH Corporation mailbox breached via phishing. The post In Other News: AI Slop Limits Apple Bounties, North Carolina Port Attacks, Hackers Target Wall Street appeared first on SecurityWeek ."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Coast Guard says it is monitoring cyberattack that disrupted North Carolina’s ports",
-   "url": "https://cyberscoop.com/north-carolina-ports-cyberattack-coast-guard/",
-   "published": "2026-08-07T14:24:49+00:00",
-   "summary": "The cyberattack hit gate systems at all three North Carolina ports, as officials continue investigating the breach and its effects on operations. The post Coast Guard says it is monitoring cyberattack that disrupted North Carolina's ports appeared first on CyberScoop ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Real emails, hijacked payments: Two H1 2026 attack chains",
-   "url": "https://www.bleepingcomputer.com/news/security/real-emails-hijacked-payments-two-h1-2026-attack-chains/",
-   "published": "2026-08-07T14:00:10+00:00",
-   "summary": "Gen's H1 2026 Threat Report examines two separate attack chains. One used compromised business inboxes and browser manipulation in a banking-malware campaign, while the other used clipboard hijacking to redirect cryptocurrency payments. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "North Carolina Ports confirms cyberattack disrupting operations",
-   "url": "https://www.bleepingcomputer.com/news/security/north-carolina-ports-confirms-cyberattack-disrupting-operations/",
-   "published": "2026-08-07T13:34:40+00:00",
-   "summary": "The North Carolina Ports Authority has confirmed that a cyberattack disrupted IT systems and slowed operations at Port of Wilmington, Port of Morehead City, and Charlotte Inland Port. [...]"
+   "title": "Hackers breach TrueConf to trojanize client installers with backdoors",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-trueconf-to-trojanize-client-installers-with-backdoors/",
+   "published": "2026-08-08T14:16:23+00:00",
+   "summary": "The Head Mare hacktivist group has been exploiting vulnerabilities in unpatched TrueConf video conferencing servers to replace client installers with malicious versions that deliver backdoors. [...]"
   }
  ]
 }
