@@ -1,0 +1,333 @@
+{
+ "leadStory": {
+  "headline": "CISA orders emergency patching of Progress LoadMaster flaw (CVE-2026-8037, CVSS 9.6) as attacks surge",
+  "source": "BleepingComputer",
+  "sourceUrl": "https://www.bleepingcomputer.com",
+  "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
+  "tags": [
+   {
+    "label": "CVE-2026-8037",
+    "type": "d"
+   },
+   {
+    "label": "CVSS 9.6",
+    "type": "d"
+   },
+   {
+    "label": "CISA KEV",
+    "type": "d"
+   },
+   {
+    "label": "Command Injection",
+    "type": "d"
+   }
+  ],
+  "body": "CISA added CVE-2026-8037 to its Known Exploited Vulnerabilities (KEV) catalog — the government's authoritative list of bugs confirmed to be under active attack — after evidence that hackers are exploiting a critical flaw in Progress Kemp LoadMaster, a widely deployed load balancer (an appliance that spreads network traffic across servers). Rated CVSS 9.6, the bug is an OS command injection: the appliance fails to sanitize input sent to several of its API endpoints, so an unauthenticated attacker (one with no login) can smuggle in operating-system commands and achieve remote code execution (RCE) — running their own code on the device. Telemetry cited by researchers counted 792 exploitation attempts over 41 days from 65 IP addresses across 18 countries, and eSentire says exploitation began almost immediately after technical analysis was published. Progress shipped fixes back in June (GA 7.2.63.2 and LTSF 7.2.54.18), and under Binding Operational Directive 26-04 federal civilian agencies had until today, August 10, to patch.",
+  "beginnerTip": "<strong>Command Injection</strong> happens when a device treats text you send it as commands to run instead of harmless data. Internet-facing appliances like load balancers, VPNs, and firewalls are prime targets because they sit at the network edge — if yours runs LoadMaster with the API exposed, patch to the fixed release now."
+ },
+ "cves": [
+  {
+   "headline": "Metabase patches maximum-severity SQL injection zero-day (CVSS 10.0) after cloud attacks",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/metabase-patches-vulnerability-exploited-as-zero-day/",
+   "tags": [
+    {
+     "label": "CVSS 10.0",
+     "type": "d"
+    },
+    {
+     "label": "Zero-Day",
+     "type": "d"
+    },
+    {
+     "label": "SQL Injection",
+     "type": "d"
+    },
+    {
+     "label": "Unauthenticated",
+     "type": "a"
+    }
+   ],
+   "body": "Metabase, a popular open-source business-intelligence dashboard, released patches for a maximum-severity flaw (CVSS 10.0) that attackers had already exploited as a zero-day — a bug abused before any fix existed. Tracked as advisory GHSA-vwf4-m7j8-wcjf with no CVE assigned yet, it lives in the unauthenticated POST /api/session/reset_password endpoint, letting a remote attacker with no credentials perform SQL injection — slipping database commands into an input field — to gain full administrator access. From there an attacker can change configuration, harvest saved credentials for every connected data source, and export data in bulk. Every release from version 1.58 onward is affected; Metabase confirmed active exploitation of its Cloud environment before patching, and self-hosted users must update to the fixed builds (x.58.24, x.59.21, x.60.17, x.61.11, x.62.9, x.63.5) by hand.",
+   "beginnerTip": "Because no CVE number was issued, scanners that only read the U.S. National Vulnerability Database feed will not flag exposed Metabase instances — a reminder that a missing <strong>CVE</strong> ID does not mean a bug is safe. If you self-host Metabase, patch immediately and rotate the credentials of any database it connects to."
+  },
+  {
+   "headline": "Critical flaws in Belgian eID software expose 2 million users to ID theft and drive-by RCE",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/critical-flaws-discovered-in-belgian-eid-software-used-by-2-million-people/",
+   "tags": [
+    {
+     "label": "Drive-By RCE",
+     "type": "d"
+    },
+    {
+     "label": "eID",
+     "type": "a"
+    },
+    {
+     "label": "Coordinated Disclosure",
+     "type": "a"
+    }
+   ],
+   "body": "Researchers found critical flaws in the Connective browser extension, digital-identity software used by more than two million Belgians and integrated into eight of the country's ten largest banks and over 60 government agencies for authentication and legally binding electronic signatures. The core problem was missing origin checks: the software did not verify which website was talking to it, so any web page or even an embedded advert could silently read a user's electronic ID (eID) and payment-card details, or trigger official-looking pop-ups to trick people into revealing their eID PIN. A separate remote code execution (RCE) bug let a malicious website force the software to run arbitrary code at the user's privilege level by abusing how it handled local files — a 'drive-by' attack that needs no eID card inserted and no clicking beyond visiting the page. No CVE identifiers were assigned; vendor Nitro Software finished shipping fixes in late July, 146 days after the initial report.",
+   "beginnerTip": "A <strong>drive-by</strong> attack compromises you simply for visiting a booby-trapped web page — no download or click required. Software that bridges your browser to hardware like ID-card readers is risky because a single missing origin check can let any website reach that hardware; keep such extensions fully updated."
+  },
+  {
+   "headline": "New passkey attacks recover synced private keys and bypass phishing-resistant MFA (CVE-2026-34348)",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
+   "tags": [
+    {
+     "label": "CVE-2026-34348",
+     "type": "w"
+    },
+    {
+     "label": "Passkey",
+     "type": "a"
+    },
+    {
+     "label": "MFA",
+     "type": "a"
+    }
+   ],
+   "body": "Three separate research efforts showed ways to defeat passkeys — the phishing-resistant login credentials meant to replace passwords — without breaking the underlying cryptography. Instead of stealing an authenticator's private key, SpecterOps chained signed authentication material that Windows had stored in cleartext (logged via CVE-2026-34348, vendor CVSS 6.5) with weaknesses in Microsoft Entra ID's passkey validation to impersonate privileged users despite policies requiring phishing-resistant multi-factor authentication (MFA). Palo Alto's Unit 42 demonstrated malware on a Windows PC recovering the private keys for a victim's Google Password Manager passkeys synced in Chrome, and researcher Dirk-jan Mollema showed malware in a signed-in session reusing a Windows Hello for Business key without prompting the user to unlock it. In every case the weakness was the surrounding implementation — how keys and signatures are stored and validated — not the passkey math itself.",
+   "beginnerTip": "<strong>Passkeys</strong> are still far stronger than passwords and remain worth adopting — these attacks mostly require malware already running on your device or an attacker already inside a Windows environment. The lesson is that no single control is a silver bullet: keep devices patched and malware-free so the storage around your keys stays trustworthy."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "Head Mare exploits TrueConf server flaws to swap client installers with PhantomCore backdoor",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/head-mare-exploits-trueconf-flaws-to.html",
+   "tags": [
+    {
+     "label": "Head Mare",
+     "type": "d"
+    },
+    {
+     "label": "Supply Chain Attack",
+     "type": "d"
+    },
+    {
+     "label": "Backdoor",
+     "type": "w"
+    }
+   ],
+   "body": "The threat actor known as Head Mare weaponized unpatched TrueConf videoconferencing servers to attack Russian firms across instrumentation, electronics, transport, energy, IT, and software sectors, according to Kaspersky, which spotted the campaign in July 2026. Chaining two flaws (KLCERT-26-057 and KLCERT-26-058, patched June 18), the attackers gained unauthenticated access through TCP port 4307, planted a web shell — a hidden script that gives remote command control of a server — harvested the TrueConf database, and then replaced the legitimate TrueConf client installer with a trojanized version. Anyone who downloaded the client from the compromised server received the PhantomCore backdoor and remote access trojan (RAT), giving Head Mare hands-on control of their machine. Swapping a trusted installer at its source makes this a supply chain attack, where victims are infected through software they had every reason to trust.",
+   "beginnerTip": "A <strong>Supply Chain Attack</strong> poisons software or a vendor you already trust, so normal caution ('only download from the official server') does not protect you. Defenders counter it by verifying installer signatures and patching the servers that distribute software, not just the endpoints that receive it."
+  },
+  {
+   "headline": "Levi Strauss says attacker used social engineering to steal corporate data from employees",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/corporate-data-stolen-in-levi-strauss-cyberattack/",
+   "tags": [
+    {
+     "label": "Social Engineering",
+     "type": "w"
+    },
+    {
+     "label": "Data Breach",
+     "type": "w"
+    }
+   ],
+   "body": "Denim maker Levi Strauss disclosed that a threat actor used social engineering — manipulating people rather than exploiting software — to gain access to the computers of three employees and exfiltrate (copy out) corporate data from them. Attacks like this typically start with a convincing phishing email, phone call (vishing), or fake help-desk request that tricks a worker into handing over credentials or approving access. The incident is a reminder that many breaches begin with a person, not an unpatched server, and that a handful of compromised accounts can be enough to reach sensitive data.",
+   "beginnerTip": "<strong>Social Engineering</strong> targets human trust — the attacker's tools are a persuasive story and urgency, not a piece of malware. The best defenses are verifying unexpected requests through a separate channel and using phishing-resistant multi-factor authentication so a stolen password alone is not enough."
+  },
+  {
+   "headline": "Hackers sabotage second Polish energy facility using a novel private APN pivot",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/novel-private-apn-pivot-let-hackers-sabotage-second-polish-energy-facility/",
+   "tags": [
+    {
+     "label": "ICS/OT",
+     "type": "d"
+    },
+    {
+     "label": "Private APN",
+     "type": "w"
+    },
+    {
+     "label": "Critical Infrastructure",
+     "type": "d"
+    }
+   ],
+   "body": "Poland's national CERT (CERT.PL) reported that attackers sabotaged a second Polish energy facility by pivoting through a private APN — a dedicated cellular access point name that acts as a private mobile network linking a site's remote equipment back to its operator. CERT.PL says this appears to be the first known case of a private APN being abused as an attack vector, letting the intruders reach industrial control systems (ICS/OT) — the computers that physically run pumps, breakers, and valves — over a channel that defenders had assumed was isolated. Attacks that cross from IT networks into operational technology are especially serious because they can disrupt physical processes, not just data.",
+   "beginnerTip": "<strong>ICS/OT</strong> refers to the specialized computers that control physical equipment in plants and utilities; unlike office IT, a failure here can stop machinery or cause real-world damage. This case shows why 'assumed isolated' connections — like a private cellular link — still need monitoring and segmentation."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "Iran-linked hackers hit water systems in a dozen states; New Jersey and Alabama confirmed",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/new-jersey-alabama-join-states-targeted-in-water-cyberattacks/",
+   "tags": [
+    {
+     "label": "Critical Infrastructure",
+     "type": "d"
+    },
+    {
+     "label": "ICS/OT",
+     "type": "d"
+    },
+    {
+     "label": "CISA/FBI/EPA",
+     "type": "a"
+    }
+   ],
+   "body": "Hackers linked to Iran have targeted the industrial control systems (ICS) at water and wastewater facilities in at least a dozen US states, with New Jersey (Cape May and Woodbine) and Alabama (Childersburg) the latest to confirm attacks that began in late July. Minnesota was first to report that more than 30 water systems had their operational technology (OT) probed, followed by Michigan, South Dakota, and Georgia. The campaign reportedly exploits internet-exposed programmable logic controllers (PLCs) — the small ruggedized computers that automate pumps and valves — including devices made by Rockwell Automation. CISA, the FBI, and the EPA have issued joint warnings urging water utilities to get these devices off the public internet and change default passwords.",
+   "beginnerTip": "A <strong>Programmable Logic Controller (PLC)</strong> is a small industrial computer that directly controls physical equipment like a water pump; many were designed decades ago with no security and should never be reachable from the open internet. The immediate fix regulators are pushing is basic hygiene: take PLCs offline or behind a firewall and replace default passwords."
+  },
+  {
+   "headline": "Valve notifies Steam hardware buyers of a data breach at shipping partner CEVA Logistics",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/valve-notifies-steam-hardware-customers-of-a-data-breach/",
+   "tags": [
+    {
+     "label": "Data Breach",
+     "type": "w"
+    },
+    {
+     "label": "Third-Party Risk",
+     "type": "a"
+    },
+    {
+     "label": "Breach Notification",
+     "type": "a"
+    }
+   ],
+   "body": "Valve, the company behind the Steam gaming platform, is notifying Steam hardware customers in Europe that hackers stole their data by breaching its shipping partner, CEVA Logistics — not Valve's own systems. Because the exposed data belongs to European customers, the notifications fall under GDPR breach-disclosure rules, which require companies to tell affected individuals when their personal data is compromised. The incident is another example of third-party (supply chain) risk: an organization can be fully patched itself and still see customer data leak through a vendor it relies on.",
+   "beginnerTip": "<strong>Third-party risk</strong> means your data can be exposed through the outside companies a service uses — shippers, cloud hosts, support contractors — even when the main company is secure. Regulations like the EU's GDPR exist partly to make sure you are told when this happens so you can watch for fraud."
+  },
+  {
+   "headline": "LexisNexis takes services offline after suspicious activity on a third-party vendor's servers",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/lexisnexis-shuts-down-services-after-suspicious-activity-on-servers/",
+   "tags": [
+    {
+     "label": "Incident Response",
+     "type": "a"
+    },
+    {
+     "label": "Third-Party Risk",
+     "type": "w"
+    },
+    {
+     "label": "Containment",
+     "type": "g"
+    }
+   ],
+   "body": "Data and analytics giant LexisNexis took its Nexis Diligence (due-diligence and risk research), Metabase API (news data feeds), and Newsdesk (media monitoring) services offline after detecting unusual activity on servers hosted and managed by an unnamed third-party vendor. The company says it deliberately disconnected from those systems to contain the issue and protect customers — a textbook incident-response containment step — and is investigating with a forensic firm while rebuilding the affected systems in a new environment. It is not yet clear whether any customer data was accessed.",
+   "beginnerTip": "Proactively pulling systems offline is a core <strong>Incident Response</strong> move called containment: you accept downtime to stop an intruder from spreading or stealing more. It can look alarming from the outside, but disconnecting fast is often the responsible choice."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "'Ghostjacking' turns AI agents against their owners using poisoned firewall logs",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/ghostjacking-attack-uses-poisoned-logs-to-turn-ai-agents-bad/",
+   "tags": [
+    {
+     "label": "Prompt Injection",
+     "type": "w"
+    },
+    {
+     "label": "Agentic AI",
+     "type": "a"
+    },
+    {
+     "label": "Ghostjacking",
+     "type": "a"
+    }
+   ],
+   "body": "Researchers at Tenet unveiled 'Ghostjacking' at DEF CON on August 9: an attack that hides malicious instructions inside firewall logs so an organization's own AI agent reads and obeys them. When Cloudflare's firewall blocks a bad request, it records that request word-for-word in the logs; an attacker crafts a blocked request whose text is actually a command, and when an AI agent later reads the logs it cannot tell the difference between real data and a planted instruction — a form of prompt injection. In the demo the technique hijacked the Claude Code agent nine times out of ten on Cloudflare's own recommended setup, rerouting email and web traffic to open a hidden path around the firewall. It highlights the danger of giving agentic AI broad access to infrastructure it cannot fully reason about.",
+   "beginnerTip": "<strong>Prompt Injection</strong> is when hidden text in the data an AI reads gets treated as a command — the AI equivalent of a con artist slipping instructions into paperwork. Until this is solved, limit what AI agents can do on their own and never let them act on untrusted input without a human check."
+  },
+  {
+   "headline": "OpenAI pauses work on its next model, Astra, over 'Critical' cyber capabilities",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html",
+   "tags": [
+    {
+     "label": "AI Guardrails",
+     "type": "a"
+    },
+    {
+     "label": "Agentic AI",
+     "type": "a"
+    },
+    {
+     "label": "Governance",
+     "type": "g"
+    }
+   ],
+   "body": "OpenAI said on August 7 that it is pausing some internal work on its upcoming model, code-named Astra, after preliminary evaluations found it may have reached a 'Critical' cybersecurity threshold — meaning it could potentially identify and carry out cyberattacks against well-defended real-world systems on its own. The finding is described as preliminary rather than final, and benchmarking continues. In response OpenAI added stricter safeguards — isolated testing environments, restricted network and tool access, stronger protection and encryption of the model's weights, extra monitoring, and sandboxed execution — and said it will work with government agencies and AI-safety organizations to test the model's capabilities.",
+   "beginnerTip": "This is an example of <strong>AI Guardrails</strong>: deliberate limits a developer places on a powerful model to keep it from being misused. The same agentic coding skills that make an AI a great security assistant could also make it a formidable attacker, which is why offensive-capability testing is becoming standard before release."
+  },
+  {
+   "headline": "Malicious 'Solidity Pro' VS Code extensions steal crypto wallets, API keys, and SSH keys",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
+   "tags": [
+    {
+     "label": "Infostealer",
+     "type": "w"
+    },
+    {
+     "label": "Supply Chain Attack",
+     "type": "w"
+    },
+    {
+     "label": "Seed Phrase",
+     "type": "a"
+    }
+   ],
+   "body": "Researchers flagged malicious Visual Studio Code (VS Code) extensions named 'Solidity Pro' — published under the names helper-beeps and web3devtoolsx — that pose as developer tools but deliver an infostealer targeting cryptocurrency developers. The malware hunts for wallet seed phrases and credentials tied to MetaMask, Phantom, Rabby, Coinbase, Trust, and Keplr, plus API keys, SSH keys, and developer tokens, then exfiltrates them over Telegram. Early versions (1.0.0 through 2.4.x) waited a random 12 to 72 hours before fetching an encrypted Python payload from Cloudflare Workers infrastructure and running it outside the editor — a delay designed to outlast quick automated security checks — while versions from 3.0.0 became a full information stealer. The extensions were pulled from Open VSX, but a related GitHub repository reportedly stays online.",
+   "beginnerTip": "A wallet <strong>Seed Phrase</strong> is the list of words that fully controls your cryptocurrency — anyone who reads it can drain your funds, so it should never be stored where software can scrape it. Treat editor and browser extensions like installed apps: vet the publisher, and be wary of tools that ask for broad access."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "ok",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/member-of-the-com-sent-to-prison-for-blackmail-sextortion/",
+   "text": "A member of 'The Com,' a loose online cybercrime collective that preys on minors, was sentenced to two years in prison for blackmail and sextortion targeting nearly 120 victims worldwide."
+  },
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
+   "text": "Today, August 10, is the CISA deadline for federal agencies to patch the actively exploited Progress LoadMaster flaw (CVE-2026-8037) under Binding Operational Directive 26-04."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
+   "text": "Malicious 'Solidity Pro' VS Code extensions were caught stealing crypto wallet seed phrases, API keys, and SSH keys from developers and exfiltrating them via Telegram."
+  },
+  {
+   "color": "accent",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html",
+   "text": "OpenAI paused some work on its unreleased Astra model after early tests suggested it may have reached a 'Critical' offensive-cyber capability threshold."
+  },
+  {
+   "color": "danger",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/new-jersey-alabama-join-states-targeted-in-water-cyberattacks/",
+   "text": "Iran-linked hackers have now hit water and wastewater ICS in at least a dozen US states, with New Jersey and Alabama the latest confirmed targets."
+  }
+ ],
+ "analystFooter": "Patch first, then hunt: if you run Progress LoadMaster or self-hosted Metabase, apply the fixes today and check logs for prior compromise — both are under active, unauthenticated exploitation — and treat any internet-exposed ICS/OT or PLC as an emergency to get behind a firewall."
+}

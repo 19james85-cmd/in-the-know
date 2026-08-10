@@ -348,6 +348,12 @@
   "e": "A U.S. company was fined €20 million under GDPR for failing to secure European customer data exposed in a breach."
  },
  {
+  "t": "Ghostjacking",
+  "c": "Threat/Actor",
+  "d": "An attack that hides malicious instructions inside data an AI agent will later read (such as firewall logs), so the organization's own AI agent unknowingly carries out the attacker's commands. It is a specific twist on prompt injection aimed at agents wired into real infrastructure.",
+  "e": "At DEF CON in August 2026, researchers used Ghostjacking to hide commands in Cloudflare firewall logs and hijacked an AI coding agent nine times out of ten."
+ },
+ {
   "t": "Heap Buffer Overflow",
   "c": "Vulnerability",
   "d": "Writing more data into a memory area than was reserved for it, corrupting adjacent memory. Can crash a process or, in the worst case, be steered into code execution.",
@@ -636,6 +642,12 @@
   "e": "In July 2026, a flaw in Arista's VeloCloud SD-WAN controller could have handed attackers control of every branch-office device it managed."
  },
  {
+  "t": "Seed Phrase",
+  "c": "Cryptography",
+  "d": "A list of (usually 12 or 24) ordinary words that is the master key to a cryptocurrency wallet. Anyone who obtains the seed phrase can take full control of the funds, so it must never be stored where software can read it.",
+  "e": "In August 2026, malicious \"Solidity Pro\" VS Code extensions searched developers' machines for wallet seed phrases and stole them over Telegram."
+ },
+ {
   "t": "Server-Side Request Forgery",
   "c": "Vulnerability",
   "d": "A flaw that tricks a server into making network requests chosen by the attacker, often reaching internal systems the attacker could not contact directly. It is frequently chained with other bugs to break deeper into a network.",
@@ -652,6 +664,12 @@
   "c": "General",
   "d": "A Unix program flagged to run with its owner's privileges rather than the privileges of whoever launched it. A setuid-root program run by a low-privilege user executes as root — which is exactly why attackers plant their own.",
   "e": "ROOTRUN, the ELF file UTA0533 dropped as /usr/bin/xzfind, was a setuid binary that let an unprivileged account run any command as root (July 2026)."
+ },
+ {
+  "t": "Sextortion",
+  "c": "Threat/Actor",
+  "d": "A form of blackmail where an attacker threatens to share sexual images or messages of a victim unless they pay money or provide more content. It frequently targets teenagers and children.",
+  "e": "In August 2026 a member of the cybercrime group The Com was sentenced to two years in prison for sextortion against nearly 120 victims worldwide."
  },
  {
   "t": "Sink",
