@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-09T13:33:31.837323+00:00",
+ "generated": "2026-08-10T14:01:55.314426+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,7 +11,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 0,
+   "count": 5,
    "error": null
   },
   {
@@ -23,7 +23,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 0,
+   "count": 7,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 1,
+   "count": 4,
    "error": null
   },
   {
@@ -65,11 +65,116 @@
  ],
  "items": [
   {
+   "source": "SecurityWeek",
+   "title": "‘Ghostjacking’ Attack Uses Poisoned Logs to Turn AI Agents Bad",
+   "url": "https://www.securityweek.com/ghostjacking-attack-uses-poisoned-logs-to-turn-ai-agents-bad/",
+   "published": "2026-08-10T12:59:34+00:00",
+   "summary": "An AI agent executes instructions that an attacker has planted in the log or alert that records a blocked request word for word. The post Ghostjacking' Attack Uses Poisoned Logs to Turn AI Agents Bad appeared first on SecurityWeek ."
+  },
+  {
    "source": "BleepingComputer",
-   "title": "Hackers breach TrueConf to trojanize client installers with backdoors",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-trueconf-to-trojanize-client-installers-with-backdoors/",
-   "published": "2026-08-08T14:16:23+00:00",
-   "summary": "The Head Mare hacktivist group has been exploiting vulnerabilities in unpatched TrueConf video conferencing servers to replace client installers with malicious versions that deliver backdoors. [...]"
+   "title": "Member of The Com sent to prison for blackmail, sextortion",
+   "url": "https://www.bleepingcomputer.com/news/security/member-of-the-com-sent-to-prison-for-blackmail-sextortion/",
+   "published": "2026-08-10T12:56:28+00:00",
+   "summary": "A member of \"The Com,\" a loose-knit online cybercrime collective that targets children and teenagers, has been sentenced to two years in prison for blackmail and sextortion offenses against nearly 120 victims worldwide. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
+   "url": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
+   "published": "2026-08-10T12:25:04+00:00",
+   "summary": "Three separate research efforts last week demonstrated ways to defeat passkey protections without breaking the cryptography they rest on. Passkeys are designed to replace reusable passwords and resist phishing. The attacks instead reused signed authentication material that Windows had exposed, abused a cloud-synced passkey system from malware already on the victim's machine, and used a"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "LexisNexis shuts down services after suspicious activity on servers",
+   "url": "https://www.bleepingcomputer.com/news/security/lexisnexis-shuts-down-services-after-suspicious-activity-on-servers/",
+   "published": "2026-08-10T12:11:52+00:00",
+   "summary": "LexisNexis took its Diligence, Metabase API, and Newsdesk services offline as part of its response to unusual activity on servers hosted and managed by an unnamed third-party vendor. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Shipping 10–50× More Code? Watch This Webinar on Securing AI-Speed Development",
+   "url": "https://thehackernews.com/2026/08/shipping-1050-more-code-watch-this.html",
+   "published": "2026-08-10T11:52:16+00:00",
+   "summary": "AI is helping development teams produce far more code, far faster. But security teams still have to review vulnerabilities, manage dependencies, prioritize fixes, and control risk at human speed. When software output jumps 10 to 50 times, the problem is no longer just finding vulnerabilities. It is keeping security from becoming the bottleneck, or worse, losing control of what gets shipped."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Valve notifies Steam hardware customers of a data breach",
+   "url": "https://www.bleepingcomputer.com/news/security/valve-notifies-steam-hardware-customers-of-a-data-breach/",
+   "published": "2026-08-10T11:47:55+00:00",
+   "summary": "Video game publisher and digital distribution giant Valve is notifying Steam hardware customers in Europe that hackers stole their data after hacking its shipping partner, CEVA Logistics. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "New Jersey, Alabama Join States Targeted in Water Cyberattacks",
+   "url": "https://www.securityweek.com/new-jersey-alabama-join-states-targeted-in-water-cyberattacks/",
+   "published": "2026-08-10T11:44:26+00:00",
+   "summary": "Hackers linked to Iran targeted industrial control systems (ICS) at water facilities in at least a dozen US states. The post New Jersey, Alabama Join States Targeted in Water Cyberattacks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "TrueConf Server Flaws Exploited to Replace Client Installers with PhantomCore",
+   "url": "https://thehackernews.com/2026/08/head-mare-exploits-trueconf-flaws-to.html",
+   "published": "2026-08-10T11:33:41+00:00",
+   "summary": "The threat actor known as Head Mare has been observed weaponizing security flaws in unpatched TrueConf servers once again in attacks targeting Russian companies spanning instrumentation, electronics, transport, energy, IT, and software development sectors. Russian cybersecurity vendor Kaspersky said it detected the attacks in July 2026. The activity involves exploiting a vulnerability chain"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Metabase Patches Vulnerability Exploited as Zero-Day",
+   "url": "https://www.securityweek.com/metabase-patches-vulnerability-exploited-as-zero-day/",
+   "published": "2026-08-10T11:03:55+00:00",
+   "summary": "The security defect allows unauthenticated, remote attackers to gain administrative access to Metabase instances. The post Metabase Patches Vulnerability Exploited as Zero-Day appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Novel Private APN Pivot Let Hackers Sabotage Second Polish Energy Facility",
+   "url": "https://www.securityweek.com/novel-private-apn-pivot-let-hackers-sabotage-second-polish-energy-facility/",
+   "published": "2026-08-10T10:01:52+00:00",
+   "summary": "CERT.PL said this appears to be the first instance of a private APN being used as an attack vector. The post Novel Private APN Pivot Let Hackers Sabotage Second Polish Energy Facility appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Critical Progress LoadMaster flaw now actively exploited in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
+   "published": "2026-08-10T09:49:37+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned that hackers are exploiting a critical-severity Progress Kemp LoadMaster command injection vulnerability. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "CISA Urges Immediate Patching of Exploited Progress LoadMaster Vulnerability",
+   "url": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-progress-loadmaster-vulnerability/",
+   "published": "2026-08-10T09:31:51+00:00",
+   "summary": "The critical-severity flaw allows unauthenticated, remote attackers to execute arbitrary commands. The post CISA Urges Immediate Patching of Exploited Progress LoadMaster Vulnerability appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Corporate Data Stolen in Levi Strauss Cyberattack",
+   "url": "https://www.securityweek.com/corporate-data-stolen-in-levi-strauss-cyberattack/",
+   "published": "2026-08-10T08:55:44+00:00",
+   "summary": "Using social engineering, a threat actor accessed the computers of three employees and exfiltrated data from them. The post Corporate Data Stolen in Levi Strauss Cyberattack appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Solidity Pro VS Code Extensions Steal Crypto Wallets, API Keys, and Credentials",
+   "url": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
+   "published": "2026-08-10T07:38:23+00:00",
+   "summary": "Cybersecurity researchers have flagged a malicious Microsoft Visual Studio Code (VS Code) extension named Solidity Pro (\"solidity-pro\") that has been observed delivering a browser wallet and credential stealer. The names of the extensions are below - helper-beeps.solidity-pro web3devtoolsx.solidity-pro Although neither of the extensions is now available on Open VSX, the GitHub repository"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "OpenAI's Next AI Model Astra Shows Cyber Performance Strong Enough to Trigger Pause",
+   "url": "https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html",
+   "published": "2026-08-10T05:50:03+00:00",
+   "summary": "OpenAI has announced that it's pausing some \"internal activities\" involving its upcoming artificial intelligence (AI) model Astra after an internal evaluation found it had made significant advancements in agentic coding and cybersecurity. In response to the discovery, the AI upstart said it's implementing security controls for higher-capability models and associated activities, such as isolated"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Critical Flaws Discovered in Belgian eID Software Used by 2 Million People",
+   "url": "https://www.securityweek.com/critical-flaws-discovered-in-belgian-eid-software-used-by-2-million-people/",
+   "published": "2026-08-10T04:44:32+00:00",
+   "summary": "The vulnerabilities affected software used by eight of Belgium’s ten largest banks and over 60 government agencies. The post Critical Flaws Discovered in Belgian eID Software Used by 2 Million People appeared first on SecurityWeek ."
   }
  ]
 }
