@@ -204,6 +204,12 @@
   "e": "CVE-2021-44228 (Log4Shell) was rated the most critical vulnerability of 2021 and affected millions of systems globally."
  },
  {
+  "t": "CVE Numbering Authority (CNA)",
+  "c": "Regulatory",
+  "d": "An organization officially authorized to assign CVE identifiers (the standard CVE-year-number IDs) to software flaws within a defined scope, such as its own products. CNAs are appointed and overseen by higher-level coordinators called Roots.",
+  "e": "In August 2026, the NATO Cyber Security Centre and startup AISLE were onboarded as CVE Numbering Authorities under the ENISA Root, letting them issue CVE IDs for flaws in their scope."
+ },
+ {
   "t": "CVSS",
   "c": "Vulnerability",
   "d": "Common Vulnerability Scoring System — rates the severity of security vulnerabilities on a scale of 0 to 10, where 10 is most critical. Helps organizations prioritize patching.",
@@ -456,6 +462,12 @@
   "e": "Even after attackers obtained an employee's password from the dark web, MFA prevented system access."
  },
  {
+  "t": "Model Context Protocol (MCP)",
+  "c": "General",
+  "d": "An open standard that lets AI assistants and agents plug into external tools, data sources, and services in a consistent way. It expands what an AI can do, but each connected tool is code the AI is trusting.",
+  "e": "In August 2026, researchers showed a malicious Model Context Protocol (MCP) server could split a harmful request into innocent-looking steps to make an AI coding agent leak SSH keys and secrets."
+ },
+ {
   "t": "NIST",
   "c": "Regulatory",
   "d": "National Institute of Standards and Technology — develops cybersecurity standards and frameworks, most notably the NIST CSF, with five functions: Identify, Protect, Detect, Respond, Recover.",
@@ -520,6 +532,12 @@
   "c": "General",
   "d": "A cloud model where the provider runs the servers and platform, and customers build applications and workflows on top of it.",
   "e": "ServiceNow AI Platform is a PaaS product running 100+ billion workflows a year."
+ },
+ {
+  "t": "Plug and Play",
+  "c": "General",
+  "d": "A Windows feature that automatically detects newly connected hardware and installs the driver or helper software it needs, with no manual setup by the user. Convenient, but it means the operating system will fetch and run vendor code on your behalf.",
+  "e": "In August 2026, researchers abused Windows Plug and Play in the 'Plug And Pwn' technique, making Windows 11 auto-install signed vendor software they then chained into full SYSTEM access."
  },
  {
   "t": "Pre-Authentication",
