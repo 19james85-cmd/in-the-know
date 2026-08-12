@@ -504,6 +504,12 @@
   "e": "Microsoft's Patch Tuesday released fixes for 87 vulnerabilities, including three already exploited in the wild."
  },
  {
+  "t": "Patch Tuesday",
+  "c": "General",
+  "d": "The second Tuesday of each month, when Microsoft (and some other vendors) release their scheduled bundle of security updates. Grouping fixes on a predictable day helps IT teams plan testing and deployment.",
+  "e": "On August 2026 Patch Tuesday, Microsoft fixed roughly 400 vulnerabilities, including a Windows afd.sys zero-day already exploited by North Korean hackers."
+ },
+ {
   "t": "Path Traversal",
   "c": "Vulnerability",
   "d": "Tricking a program into reading or writing a file outside the folder it was supposed to stay in, usually by smuggling ../ sequences into a filename.",
@@ -636,6 +642,12 @@
   "e": "The chained SonicWall flaws give the attacker root on the VPN appliance — complete ownership of the box."
  },
  {
+  "t": "Rootkit",
+  "c": "Malware",
+  "d": "Malicious software designed to hide deep in a computer and give an attacker stealthy, high-level control while evading detection. \"Kernel-mode\" rootkits run in the operating system's core, making them especially hard to spot or remove.",
+  "e": "In August 2026, North Korean hackers exploited a Windows WinSock zero-day (CVE-2026-68820) to install a kernel-mode rootkit for persistent SYSTEM-level control."
+ },
+ {
   "t": "Sandbox",
   "c": "General",
   "d": "A restricted environment where untrusted code is allowed to run but is walled off from the rest of the system.",
@@ -694,6 +706,12 @@
   "c": "Vulnerability",
   "d": "In application security, the dangerous end-point where attacker-controlled data finally gets used — e.g. passed to a code evaluator or a database query. The entry point is the \"source\".",
   "e": "Attackers targeted the same pre-auth sink (/assessment_thanks.do) that the original researchers documented."
+ },
+ {
+  "t": "Smart Contract",
+  "c": "General",
+  "d": "A small program stored on a blockchain that automatically runs and returns data when called. Because blockchain data is public and cannot be edited or deleted, criminals sometimes abuse smart contracts to store information that is hard for police to take down.",
+  "e": "In August 2026, the DeadLock ransomware group used Polygon smart contracts to store its command-and-control address so defenders could not seize a single server to disrupt it."
  },
  {
   "t": "Social Engineering",
