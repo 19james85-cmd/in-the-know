@@ -1,5 +1,11 @@
 [
  {
+  "t": "Account Takeover (ATO)",
+  "c": "Threat/Actor",
+  "d": "Account takeover is when an attacker gains control of a legitimate user's online account, whether by stealing a password, forging a login token, or abusing a flaw that skips the login check. Once inside, they can read private data or act as the victim.",
+  "e": "In August 2026, a critical Adobe Commerce flaw (CVE-2026-71362) allowed unauthenticated account takeover by letting an attacker switch their session to another shopper's account."
+ },
+ {
   "t": "AD CS",
   "c": "Network",
   "d": "Active Directory Certificate Services — the built-in Microsoft Windows system that issues and manages the digital certificates used to prove identity inside a company network. Misconfigurations in AD CS are a common path attackers use to escalate from a normal account to full control of the domain.",
@@ -360,6 +366,12 @@
   "e": "At DEF CON in August 2026, researchers used Ghostjacking to hide commands in Cloudflare firewall logs and hijacked an AI coding agent nine times out of ten."
  },
  {
+  "t": "Hack Back",
+  "c": "General",
+  "d": "Hacking back means going on the offensive against an attacker's own systems - for example to disrupt or destroy their infrastructure - rather than only defending your own network. It is legally restricted for private companies in most countries because of the risk of hitting the wrong target.",
+  "e": "In August 2026, a White House memo proposed letting vetted U.S. security firms hack back against foreign cybercrime gangs under government oversight."
+ },
+ {
   "t": "Heap Buffer Overflow",
   "c": "Vulnerability",
   "d": "Writing more data into a memory area than was reserved for it, corrupting adjacent memory. Can crash a process or, in the worst case, be steered into code execution.",
@@ -406,6 +418,12 @@
   "c": "Threat/Actor",
   "d": "Indicators of Compromise — evidence a system has been breached, such as suspicious IP addresses, unusual file hashes, or abnormal network traffic patterns used to detect and investigate attacks.",
   "e": "Analysts identified IOCs including a known malicious IP and a suspicious file appearing on 40 company machines."
+ },
+ {
+  "t": "JWT",
+  "c": "Cryptography",
+  "d": "A JSON Web Token (JWT) is a compact, digitally signed piece of data a server issues to prove who a user is and what they are allowed to do, so the user does not have to log in again on every request. If the signature checking is flawed, an attacker can forge a token and impersonate someone.",
+  "e": "In August 2026, attackers exploited SharePoint flaw CVE-2026-55040 by forging a JWT that declared no signature was needed, letting them log in as any user."
  },
  {
   "t": "KEV",
