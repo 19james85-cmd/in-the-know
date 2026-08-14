@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13T14:04:44.993269+00:00",
+ "generated": "2026-08-14T13:59:13.803621+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,7 +11,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 3,
+   "count": 0,
    "error": null
   },
   {
@@ -23,19 +23,19 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 7,
+   "count": 10,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 4,
+   "count": 2,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -47,13 +47,13 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 10,
+   "count": 13,
    "error": null
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -66,199 +66,220 @@
  "items": [
   {
    "source": "BleepingComputer",
+   "title": "Max severity SAP Commerce Cloud flaw now targeted in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/",
+   "published": "2026-08-14T13:45:18+00:00",
+   "summary": "A maximum-severity SAP Commerce Cloud remote code execution vulnerability patched three days ago is already being targeted in attacks, according to threat intelligence company Defused. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Cyera's Oasis Security Buy is All About AI Agent Control",
+   "url": "https://www.darkreading.com/identity-access-management-security/cyera-oasis-security-acquisition-ai-agent-control",
+   "published": "2026-08-14T12:17:21+00:00",
+   "summary": "The $1 billion deal aims to converge data security and identity into a single control plane for agents, with privileged access redefined around business context rather than static roles."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "In Other News: Rapid7 Layoffs, Hacking a Boeing 737, Refrigeration System Vulnerabilities",
+   "url": "https://www.securityweek.com/in-other-news-rapid7-layoffs-hacking-a-boeing-737-refrigeration-system-vulnerabilities/",
+   "published": "2026-08-14T11:57:51+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: government AI platform deal sparks outrage, North Korean IT worker breaches federal agency, DEF CON attendee blamed for Delta flight disruption. The post In Other News: Rapid7 Layoffs, Hacking a Boeing 737, Refrigeration System Vulnerabilities appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Shell investigates 'potential incident' after Clop data theft claims",
+   "url": "https://www.bleepingcomputer.com/news/security/shell-investigates-potential-incident-after-clop-data-theft-claims/",
+   "published": "2026-08-14T11:55:45+00:00",
+   "summary": "Oil giant Shell has confirmed it is investigating a potential security incident after the Clop ransomware gang claimed it stole 89GB of data. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Trivy, Not LiteLLM Behind the 2,500 Org Compromise",
+   "url": "https://www.securityweek.com/trivy-not-litellm-behind-the-2500-org-compromise/",
+   "published": "2026-08-14T11:35:23+00:00",
+   "summary": "Over 95% of the affected companies were exposed before the malicious LiteLLM packages were published. The post Trivy, Not LiteLLM Behind the 2,500 Org Compromise appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Krebs on Security",
+   "title": "Who’s Tracking You? Use This New Service to Find Out",
+   "url": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/",
+   "published": "2026-08-14T11:24:35+00:00",
+   "summary": "It can be daunting to determine who's responsible for showing ads on the websites we visit, or who's harvesting data from the mobile apps we use every day. That information is already semi-public, but it is not easily parsed and traditionally much of it has remained walled away in the hands of large advertising platforms. Not anymore: A powerful and free new service called DecryptAds scrapes and correlates this adtech data and makes it simple to quickly learn a great deal about the entities that"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Google Cloud Sets Out Post-Quantum Roadmap With 2029 Readiness Goal",
+   "url": "https://www.securityweek.com/google-cloud-sets-out-post-quantum-roadmap-with-2029-readiness-goal/",
+   "published": "2026-08-14T11:00:00+00:00",
+   "summary": "Google Cloud outlines its roadmap to full post-quantum cryptography readiness, with key milestones targeted for 2027 and 2028. The post Google Cloud Sets Out Post-Quantum Roadmap With 2029 Readiness Goal appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "RingCentral data breach exposed info of 1.6 million accounts",
+   "url": "https://www.bleepingcomputer.com/news/security/ringcentral-data-breach-exposed-info-of-16-million-accounts/",
+   "published": "2026-08-14T10:52:05+00:00",
+   "summary": "The ShinyHunters extortion group stole personal information from 1.6 million RingCentral accounts after hacking the company in July, according to the data breach notification service Have I Been Pwned. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "1.6 Million Likely Impacted by RingCentral Data Breach",
+   "url": "https://www.securityweek.com/1-6-million-likely-impacted-by-ringcentral-data-breach/",
+   "published": "2026-08-14T10:24:03+00:00",
+   "summary": "The hackers published the allegedly stolen information, including names, addresses, email addresses, and phone numbers. The post 1.6 Million Likely Impacted by RingCentral Data Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Over 1,000 Charities Hit by Beacon CRM Data Breach",
+   "url": "https://www.securityweek.com/over-1000-charities-hit-by-beacon-crm-data-breach/",
+   "published": "2026-08-14T09:20:28+00:00",
+   "summary": "The root cause of the incident is believed to be a compromised AWS access key that was exposed in publicly available JavaScript build artifacts. The post Over 1,000 Charities Hit by Beacon CRM Data Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Data analyst sent to prison for stealing data, extorting employer",
+   "url": "https://www.bleepingcomputer.com/news/security/data-analyst-sent-to-prison-for-stealing-data-extorting-employer/",
+   "published": "2026-08-14T08:27:18+00:00",
+   "summary": "A former data analyst contractor for Brightly Software has been sentenced to two years in prison for targeting his employer in a $2.5 million extortion scheme. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "14,000 Trezor Customers Impacted by Data Breach at ShipMonk",
+   "url": "https://www.securityweek.com/14000-trezor-customers-impacted-by-data-breach-at-shipmonk/",
+   "published": "2026-08-14T08:16:00+00:00",
+   "summary": "Hackers stole the customers’ shipping information, including names, addresses, email addresses, and phone numbers. The post 14,000 Trezor Customers Impacted by Data Breach at ShipMonk appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Hackers Exploiting Unpatched GeoServer Zero-Day",
+   "url": "https://www.securityweek.com/hackers-exploiting-unpatched-geoserver-zero-day/",
+   "published": "2026-08-14T07:01:56+00:00",
+   "summary": "The security defect is described as an SQL injection that could allow attackers to achieve remote code execution. The post Hackers Exploiting Unpatched GeoServer Zero-Day appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "AmnesiaStealer macOS Malware Steals Data, Controls Browser Sessions",
+   "url": "https://www.securityweek.com/amnesiastealer-macos-malware-steals-data-controls-browser-sessions/",
+   "published": "2026-08-14T06:41:43+00:00",
+   "summary": "The Rust-based macOS infostealer harvests users’ passwords, keychain information, Chromium-based browser data, and Safari cookies. The post AmnesiaStealer macOS Malware Steals Data, Controls Browser Sessions appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Apple sends new ‘Threat Notification’ alerts over mercenary spyware attacks",
+   "url": "https://www.bleepingcomputer.com/news/apple/apple-sends-new-threat-notification-alerts-over-mercenary-spyware-attacks/",
+   "published": "2026-08-14T01:19:12+00:00",
+   "summary": "You're not alone if you just received an \"Apple Threat Notification\" saying it detected a \"mercenary spyware attack targeted at your iPhone.\" [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "A bold new strategy or a dangerous precedent? Experts are divided on Trump’s memo.",
+   "url": "https://cyberscoop.com/private-sector-hacking-presidential-memo-cybersecurity/",
+   "published": "2026-08-13T22:19:07+00:00",
+   "summary": "The “philosophical shift” that the memo authorizes raises legal, practical and moral questions, experts say. The post A bold new strategy or a dangerous precedent? Experts are divided on Trump's memo. appeared first on CyberScoop ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Tech contractor for Brightly Software sentenced to 2 years in prison for insider attack",
+   "url": "https://cyberscoop.com/cameron-curry-insider-attack-brightly-software-sentenced/",
+   "published": "2026-08-13T21:59:53+00:00",
+   "summary": "Cameron Curry stole corporate data and employee information, which he used to threaten the company as his six-month contract gig came to a close. He ultimately extorted the company for $7,540.92. The post Tech contractor for Brightly Software sentenced to 2 years in prison for insider attack appeared first on CyberScoop ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Ukraine shuts down 94 fraudulent call centers, seize millions in cash",
+   "url": "https://www.bleepingcomputer.com/news/security/ukraine-shuts-down-94-fraudulent-call-centers-seize-millions-in-cash/",
+   "published": "2026-08-13T21:12:47+00:00",
+   "summary": "Authorities in Ukraine shut down 94 fraudulent call centers across the country that lured people into investment scams or tried to obtain access to bank accounts. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Akira hackers disable EDR with Safe Mode, steal data but fail to encrypt",
+   "url": "https://www.bleepingcomputer.com/news/security/akira-hackers-disable-edr-with-safe-mode-steal-data-but-fail-to-encrypt/",
+   "published": "2026-08-13T20:47:02+00:00",
+   "summary": "An Akira ransomware affiliate disabled the endpoint detection and response (EDR) solution on a compromised system by restarting the machine into Safe Mode with Networking. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Global Threat Campaign Hits Critical VMware vCenter Flaw",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/global-threat-campaign-critical-vmware-vcenter-flaw",
+   "published": "2026-08-13T20:45:17+00:00",
+   "summary": "Exploitation against CVE-2026–59310 began earlier this month, and patching the vulnerability may not be enough to fully mitigate the threat."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Hackers breach govt webmail while running parallel crypto fraud",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-govt-webmail-while-running-parallel-crypto-fraud/",
+   "published": "2026-08-13T18:15:19+00:00",
+   "summary": "The Jewelbug hacker group has been carrying out espionage operations targeting governments and militaries while also engaging in cryptocurrency fraud. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft patches LegacyHive Windows zero-day vulnerability",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-legacyhive-windows-zero-day-vulnerability/",
+   "published": "2026-08-13T17:46:20+00:00",
+   "summary": "Microsoft has released security patches to address a Windows zero-day vulnerability known as \"LegacyHive,\" disclosed after the July 2026 Patch Tuesday. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "AI 'watermark removers' flood the web. Almost none can prove they work.",
+   "url": "https://www.bleepingcomputer.com/news/security/ai-watermark-removers-flood-the-web-almost-none-can-prove-they-work/",
+   "published": "2026-08-13T17:33:28+00:00",
+   "summary": "Multiple 'watermark removers' have surfaced days after Anthropic began watermarking text generated by Claude, including an open source project with over 4,500 GitHub stars and paid AI detection evasion services. None of the tools' claims about defeating the text watermark can be verified, as Anthropic has not released a detector. [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "AI’s ‘middle class’ has gotten dramatically better at hacking",
+   "url": "https://cyberscoop.com/mid-tier-ai-models-hacking-threat/",
+   "published": "2026-08-13T16:55:02+00:00",
+   "summary": "As frontier models and their sandbox escaping exploits dominate front-page news, researchers are increasingly worried about cheaper, more efficient AI models. The post AI’s ‘middle class’ has gotten dramatically better at hacking appeared first on CyberScoop ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Critical VMware vCenter RCE flaw exploited for reverse SSH access",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-vmware-vcenter-rce-flaw-exploited-for-reverse-ssh-access/",
+   "published": "2026-08-13T16:40:23+00:00",
+   "summary": "A recently patched critical vulnerability (CVE-2026-59310) in VMware vCenter Syslog Server is being exploited in an active campaign to deploy a reverse SSH tool for persistence and remote access. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Researchers find AI-powered hacking tools for sale in underground forums",
+   "url": "https://www.cybersecuritydive.com/news/ai-hacking-tools-sale-underground-forums/827807/",
+   "published": "2026-08-13T15:20:40+00:00",
+   "summary": "A report shows how criminal actors are lowering the barriers to entry with sophisticated services, without ethical constraints."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Trezor discloses data breach affecting nearly 14,000 customers",
+   "url": "https://www.bleepingcomputer.com/news/security/trezor-discloses-data-breach-affecting-nearly-14-000-customers/",
+   "published": "2026-08-13T15:13:19+00:00",
+   "summary": "Hardware wallet manufacturer Trezor disclosed a data breach affecting nearly 14,000 of its customers after ShipMonk, its shipping and logistics provider, was hacked [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "US government will let private companies hack criminal gangs",
+   "url": "https://www.cybersecuritydive.com/news/us-private-companies-gangs-cyberattacks-offensive-operations/827805/",
+   "published": "2026-08-13T15:05:32+00:00",
+   "summary": "The new program, meant to aggressively disrupt costly cybercrime schemes, carries numerous legal and security risks."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Cybersecurity M&A Roundup: 21 Deals Announced in July 2026",
+   "url": "https://www.securityweek.com/cybersecurity-ma-roundup-21-deals-announced-in-july-2026/",
+   "published": "2026-08-13T14:41:44+00:00",
+   "summary": "Significant cybersecurity M A deals announced by Barracuda, CrowdStrike, Cyera, Okta, Palo Alto Networks, and Qualcomm. The post Cybersecurity M A Roundup: 21 Deals Announced in July 2026 appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Adobe Commerce Bug Targeted Immediately After Disclosure",
+   "url": "https://www.securityweek.com/adobe-commerce-bug-targeted-immediately-after-disclosure/",
+   "published": "2026-08-13T14:17:44+00:00",
+   "summary": "The first exploitation attempts targeting CVE-2026-71362 were observed shortly after Adobe released patches. The post Adobe Commerce Bug Targeted Immediately After Disclosure appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
    "title": "Who Vets AI’s Code? The Scale Challenge Facing Open Source Ingestion",
    "url": "https://www.bleepingcomputer.com/news/security/who-vets-ais-code-the-scale-challenge-facing-open-source-ingestion/",
    "published": "2026-08-13T14:00:10+00:00",
    "summary": "AI coding tools can introduce unvetted or hallucinated open source dependencies faster than traditional security reviews can keep pace. ActiveState explains why organizations should govern packages at the point of selection, before they enter the development pipeline. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "White House taps security firms for offensive hack-back operations",
-   "url": "https://www.bleepingcomputer.com/news/security/white-house-taps-security-firms-for-offensive-hack-back-operations/",
-   "published": "2026-08-13T13:30:53+00:00",
-   "summary": "A new White House memo signed by U.S. President Donald Trump instructs the National Coordination Center (NCC) to establish a program that would allow private security companies to apply for approval to hack foreign cybercrime organizations. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "WordPress 7.0.4 Patches Remote Code Execution Vulnerability",
-   "url": "https://www.securityweek.com/wordpress-7-0-4-patches-remote-code-execution-vulnerability/",
-   "published": "2026-08-13T12:53:56+00:00",
-   "summary": "Attackers with Author-level user or higher permissions could exploit the flaw via malicious Postscript files. The post WordPress 7.0.4 Patches Remote Code Execution Vulnerability appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "WhatsApp rolls out new feature that flags potential scam messages",
-   "url": "https://www.bleepingcomputer.com/news/security/whatsapp-rolls-out-new-feature-that-flags-potential-scam-messages/",
-   "published": "2026-08-13T11:50:22+00:00",
-   "summary": "WhatsApp has begun rolling out a new optional \"Scam Alert\" feature, which uses a local machine learning model to warn users when scammers are targeting them. [...]"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Trump turns to private sector in offensive hacking operations memo",
-   "url": "https://cyberscoop.com/trump-memo-private-sector-offensive-hacking/",
-   "published": "2026-08-13T11:47:55+00:00",
-   "summary": "One expert called it a “pretty big shift in U.S. cyber policy,” and there have been reservations in the past about opening the door to private sector involvement in cyber offense. The post Trump turns to private sector in offensive hacking operations memo appeared first on CyberScoop ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Venture Firm Team8 Secures Additional $365 Million",
-   "url": "https://www.securityweek.com/venture-firm-team8-secures-additional-365-million/",
-   "published": "2026-08-13T11:42:48+00:00",
-   "summary": "The Israeli company has nearly $2 billion in total assets under management since 2014. The post Venture Firm Team8 Secures Additional $365 Million appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Fortinet Patches Authentication Flaws in FortiWeb and FortiManager",
-   "url": "https://www.securityweek.com/fortinet-patches-authentication-flaws-in-fortiweb-and-fortimanager/",
-   "published": "2026-08-13T10:40:57+00:00",
-   "summary": "The vulnerabilities could allow attackers to log in with random usernames and passwords or impersonate any FortiGate appliance. The post Fortinet Patches Authentication Flaws in FortiWeb and FortiManager appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "'Jewelbug' APT Balances State Espionage & Cryptocurrency Theft",
-   "url": "https://www.darkreading.com/threat-intelligence/jewelbug-apt-state-espionage-cryptocurrency-theft",
-   "published": "2026-08-13T10:00:00+00:00",
-   "summary": "Researchers discovered hackers-for-hire performing cyber espionage and financially motivated heists from the same Web panel."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "White House Mobilizes Security Firms for Operations Against Foreign Cybercrime Gangs",
-   "url": "https://www.securityweek.com/white-house-mobilizes-security-firms-for-operations-against-foreign-cybercrime-gangs/",
-   "published": "2026-08-13T09:53:04+00:00",
-   "summary": "Contracts may require a $1 million bond, which will be forfeited if a company fails to comply with operational requirements. The post White House Mobilizes Security Firms for Operations Against Foreign Cybercrime Gangs appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Critical VMware vCenter Vulnerability in Attackers’ Crosshairs",
-   "url": "https://www.securityweek.com/critical-vmware-vcenter-vulnerability-in-attackers-crosshairs/",
-   "published": "2026-08-13T09:06:40+00:00",
-   "summary": "Tracked as CVE-2026–59310, the directory traversal bug allows remote attackers to execute arbitrary code. The post Critical VMware vCenter Vulnerability in Attackers' Crosshairs appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘ShieldBreak’",
-   "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-shieldbreak/",
-   "published": "2026-08-13T08:38:03+00:00",
-   "summary": "Dropped on Patch Tuesday, the exploit allows any user to spawn a shell with System privileges. The post Nightmare Eclipse Drops Windows Zero-Day Exploit ShieldBreak' appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Belgium's eID Authentication Opens Citizen Accounts to RCE",
-   "url": "https://www.darkreading.com/application-security/belgium-eid-authentication-citizen-accounts-rce",
-   "published": "2026-08-13T07:00:00+00:00",
-   "summary": "The trust framework underlying Belgium's electronic ID system was fully compromised by severe vulnerabilities in a key browser extension, showcasing bigger problems with extensions in general."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
-   "url": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
-   "published": "2026-08-13T06:09:48+00:00",
-   "summary": "Threat actors have begun to exploit a newly disclosed Microsoft SharePoint vulnerability following the release of a proof-of-concept (PoC) code. The vulnerability in question is CVE-2026-55040 (CVSS score: 9.1), which refers to a critical security feature bypass that stems from weak authentication. It was patched by Microsoft as part of its July 2026 Patch Tuesday updates. \"The authentication"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "\"City-Forum\" data-theft attacks target Salesforce, ServiceNow portals",
-   "url": "https://www.bleepingcomputer.com/news/security/city-forum-data-theft-attacks-target-salesforce-servicenow-portals/",
-   "published": "2026-08-12T23:07:23+00:00",
-   "summary": "An ongoing data theft campaign uses custom tools to steal data exposed to anonymous users through Salesforce Experience Cloud and ServiceNow customer portals. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Android malware combo takes out loans and relays victims' credit cards",
-   "url": "https://www.bleepingcomputer.com/news/security/android-malware-combo-takes-out-loans-and-relays-victims-credit-cards/",
-   "published": "2026-08-12T22:22:57+00:00",
-   "summary": "A new Android NFC relay malware called WindRelay is being used alongside the SpyNote remote administration tool (RAT) to steal live card data and send it to attackers in real time. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Long-running Data Theft Campaign Targeting Salesforce, ServiceNow",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/long-running-data-theft-campaign-salesforce-servicenow",
-   "published": "2026-08-12T21:08:54+00:00",
-   "summary": "The City-Forum campaign has been active since at least March 2025 and has targeted organizations across multiple sectors with custom tooling."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers exploit critical Adobe Commerce flaw to hijack customer accounts",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-adobe-commerce-flaw-to-hijack-customer-accounts/",
-   "published": "2026-08-12T20:54:59+00:00",
-   "summary": "Attempts to exploit a critical vulnerability (CVE-2026-71362) in Adobe's Commerce and Magento e-commerce platforms have been detected, potentially allowing attackers to hijack customer accounts. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hundreds of fake Chrome VPN extensions route traffic through a proxy",
-   "url": "https://www.bleepingcomputer.com/news/security/hundreds-of-fake-chrome-vpn-extensions-route-traffic-through-a-proxy/",
-   "published": "2026-08-12T18:54:57+00:00",
-   "summary": "More than 737 browser extensions published on the Chrome Web Store impersonated well-known VPN and proxy services while routing users' traffic through SOCKS5 proxies operated by a single provider. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor",
-   "url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
-   "published": "2026-08-12T17:39:27+00:00",
-   "summary": "The North Korean threat actor known as Lazarus Group has been attributed to the zero-day exploitation of a newly patched security flaw impacting Microsoft Windows to deliver a never-before-seen backdoor targeting defense and aerospace companies across France, Germany, Brazil, and India. The activity, per Check Point Research, is part of Operation Dream Job, a long-running cyber espionage and"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Researchers observe first ‘near-autonomous’ AI attack on government target in Taiwan",
-   "url": "https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/",
-   "published": "2026-08-12T17:05:01+00:00",
-   "summary": "Israeli cyber firm Dream said the framework adapted mid-operation, corrected its mistakes and expanded as it went along. The post Researchers observe first ‘near-autonomous’ AI attack on government target in Taiwan appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Walmart Takes a 'Trusted Agent' Approach to Purple Teaming",
-   "url": "https://www.darkreading.com/cybersecurity-operations/walmart-trusted-agent-approach-purple-teaming",
-   "published": "2026-08-12T16:28:04+00:00",
-   "summary": "Walmart colocates red and blue teams to build trust and improve security through collaborative purple teaming exercises"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Plug and Pwn attack uses fake USB devices for Windows SYSTEM access",
-   "url": "https://www.bleepingcomputer.com/news/security/plug-and-pwn-attack-uses-fake-usb-devices-for-windows-system-access/",
-   "published": "2026-08-12T16:05:12+00:00",
-   "summary": "Security researchers have disclosed new \"Plug and Pwn\" attacks that abuse the Windows Plug and Play feature to trigger Windows into installing vulnerable or insecure vendor software and gain SYSTEM privileges. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Lazarus hackers exploited Windows zero-day to target defense firms",
-   "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
-   "published": "2026-08-12T15:38:08+00:00",
-   "summary": "North Korean hackers have been exploiting a Windows zero-day vulnerability (CVE-2026-68820) to target defense-sector companies as part of the Operation Dream Job campaign. [...]"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Hackers abuse AI models to find new entry paths",
-   "url": "https://www.cybersecuritydive.com/news/google-cloudaccenture/827689/",
-   "published": "2026-08-12T15:01:43+00:00",
-   "summary": "Network defenders are racing to secure their IT systems before criminal and state-actors circumvent existing guardrails."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Cisco says software vulnerability could let hackers crash firewalls",
-   "url": "https://www.cybersecuritydive.com/news/cisco-firewall-vulnerabilities-vpn-crash/827688/",
-   "published": "2026-08-12T14:50:13+00:00",
-   "summary": "Threat actors already have begun exploiting the flaw, according to the U.S. government."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "SharePoint Vulnerability Exploited Shortly After PoC Release",
-   "url": "https://www.securityweek.com/sharepoint-vulnerability-exploited-shortly-after-poc-release/",
-   "published": "2026-08-12T14:47:01+00:00",
-   "summary": "The vulnerability was patched by Microsoft in July and CISA warned that it could end up being exploited in the wild. The post SharePoint Vulnerability Exploited Shortly After PoC Release appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "FBI: Hackers target online accounts to steal nude photos",
-   "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-of-hackers-targeting-online-accounts-to-steal-explicit-photos/",
-   "published": "2026-08-12T14:15:09+00:00",
-   "summary": "The FBI warns that cybercriminals are targeting adults' and children's social media and other online accounts to steal sexually explicit images or videos. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "737 Chrome VPN Extensions Caught Routing Traffic Through Proxies. Check If You Have One",
-   "url": "https://thehackernews.com/2026/08/737-chrome-vpn-extensions-caught.html",
-   "published": "2026-08-12T14:09:50+00:00",
-   "summary": "A massive set of 737 free VPN and proxy extensions have been found to mainly target Russian-speaking users seeking access to blocked services with an aim to intercept browser traffic and route them through a proxy infrastructure. The extensions, published across at least 40 Chrome Web Store developer accounts, racked up 75,486 installs. Of those identified, 274 have been found to impersonate 66"
   }
  ]
 }
