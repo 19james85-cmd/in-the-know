@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-15T13:14:08.048945+00:00",
+ "generated": "2026-08-16T13:16:04.322276+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -17,7 +17,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -29,7 +29,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 4,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 5,
+   "count": 1,
    "error": null
   },
   {
@@ -66,73 +66,10 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "How Anthropic plans to watermark Claude's AI-generated text",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/how-anthropic-plans-to-watermark-claudes-ai-generated-text/",
-   "published": "2026-08-14T23:24:17+00:00",
-   "summary": "It could soon become easier to identify AI-generated content, even if it's not the usual \"It's Not X, it's Y\" type of post you'd come across on LinkedIn and other socials. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Mission-Driven Security: Inside a Global Bank's Defense",
-   "url": "https://www.darkreading.com/cybersecurity-operations/mission-driven-security-inside-global-bank-defense",
-   "published": "2026-08-14T19:24:18+00:00",
-   "summary": "In this video interview, Standard Chartered's group CISO shares insights on transitioning from technical roles to strategic leadership, the importance of business-savvy security executives, and how AI is reshaping both defensive capabilities and adversarial tactics in banking."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers arrested over €30M bank fraud exploiting service provider flaw",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-arrested-over-30m-bank-fraud-exploiting-service-provider-flaw/",
-   "published": "2026-08-14T18:04:26+00:00",
-   "summary": "Four cybercriminals were arrested in Brazil, and three others were charged in Europe over allegations that they exploited a vulnerability at a service provider, allowing them to withdraw funds from Commerzbank customers' bank accounts. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Amid AI-Driven Bug-Hunt Tsunami, NIST Looks to … AI",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/ai-driven-bug-tsunami-nist-looks-to-ai",
-   "published": "2026-08-14T17:32:46+00:00",
-   "summary": "Driven by AI-augmented research and scanning, vulnerability volumes continue to surge, driving the National Institute of Standards and Technology to ask whether AI could be the answer."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Scottish Govt Suffers Potentially Widening Data Breach at Prosecutor's Office",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/scottish-govt-data-breach-prosecutors-office",
-   "published": "2026-08-14T15:58:50+00:00",
-   "summary": "One Caledonian government agency reported a breach, thanks to a third party that may have serviced other agencies as well."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Researchers confirm breach claims by data-extortion group",
-   "url": "https://www.cybersecuritydive.com/news/researchers-confirm-breach-claims-data-extortion/827926/",
-   "published": "2026-08-14T15:32:51+00:00",
-   "summary": "The exfiltrated data may be related to misconfiguration of Microsoft Power Page portals, according to a new report."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers exploit macOS Screen Sharing flaw to deploy Monero miner",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-macos-screen-sharing-flaw-to-deploy-monero-miner/",
-   "published": "2026-08-14T14:59:55+00:00",
-   "summary": "The Netherlands' National Cyber Security Centre (NCSC) is warning that hackers are actively exploiting a macOS authentication bypass vulnerability after public exploit code emerged. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "The Modern Attack Chain: Rethinking Google Workspace Security in the Age of AI",
-   "url": "https://www.bleepingcomputer.com/news/security/the-modern-attack-chain-rethinking-google-workspace-security-in-the-age-of-ai/",
-   "published": "2026-08-14T14:00:10+00:00",
-   "summary": "Google Workspace attacks do not always begin with phishing. Stolen OAuth tokens can provide another path into Gmail, Drive, and connected systems. Material Security explains why organizations need defenses that cover the entire Workspace attack chain. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "What Boards Need to Know About Tech Risk",
-   "url": "https://www.darkreading.com/cyber-risk/what-boards-must-know-tech-risk",
-   "published": "2026-08-14T14:00:00+00:00",
-   "summary": "Why do so many boards underestimate technology risk until it becomes a crisis?"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Max severity SAP Commerce Cloud flaw now targeted in attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/",
-   "published": "2026-08-14T13:45:18+00:00",
-   "summary": "A maximum-severity SAP Commerce Cloud remote code execution vulnerability patched three days ago is already being targeted in attacks, according to threat intelligence company Defused. [...]"
+   "title": "New Evooo1Bot Linux botnet turns routers into traffic relay nodes",
+   "url": "https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/",
+   "published": "2026-08-15T14:14:38+00:00",
+   "summary": "A new Mirai-based modular Linux botnet malware called Evooo1Bot has been targeting internet-facing gateway devices, turning them into SOCKS5 traffic relay nodes. [...]"
   }
  ]
 }
