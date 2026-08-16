@@ -444,6 +444,12 @@
   "e": "On a compromised SonicWall appliance, UTA0533 ran tcpdump against unencrypted LDAP traffic to harvest usernames and passwords (July 2026)."
  },
  {
+  "t": "Load Balancer",
+  "c": "Network",
+  "d": "A load balancer is a device or service that spreads incoming network traffic across multiple servers so no single server gets overwhelmed. Because it sits at the network edge and inspects traffic, a flaw in one can hand attackers a foothold into the network.",
+  "e": "In August 2026, CISA flagged CVE-2026-8037, a command-injection bug in the Progress Kemp LoadMaster load balancer, as actively exploited."
+ },
+ {
   "t": "Loader",
   "c": "Malware",
   "d": "Small, simple malware whose only job is to get a foothold and then pull down the real tools. Keeping stage one tiny makes it harder to detect and lets the attacker swap what comes next.",
@@ -562,6 +568,12 @@
   "c": "General",
   "d": "A Windows feature that automatically detects newly connected hardware and installs the driver or helper software it needs, with no manual setup by the user. Convenient, but it means the operating system will fetch and run vendor code on your behalf.",
   "e": "In August 2026, researchers abused Windows Plug and Play in the 'Plug And Pwn' technique, making Windows 11 auto-install signed vendor software they then chained into full SYSTEM access."
+ },
+ {
+  "t": "Post-Quantum Cryptography",
+  "c": "Cryptography",
+  "d": "Post-quantum cryptography is a set of new encryption methods designed to stay secure even against future quantum computers, which could break much of today's encryption. Organizations are beginning to adopt it now because data stolen today could be decrypted later once quantum machines mature.",
+  "e": "In August 2026, Google Cloud published a roadmap to be ready for post-quantum cryptography by 2029."
  },
  {
   "t": "Pre-Authentication",
@@ -736,6 +748,12 @@
   "c": "Threat/Actor",
   "d": "Psychological manipulation of people into performing actions or revealing confidential information — exploiting human trust rather than technical vulnerabilities.",
   "e": "An attacker posed as a frantic executive and convinced an IT technician to reset credentials without proper verification."
+ },
+ {
+  "t": "SOCKS5",
+  "c": "Network",
+  "d": "SOCKS5 is a proxy protocol that forwards a user's network traffic through an intermediary machine, masking where the traffic really originates. Attackers hijack devices into SOCKS5 relays to anonymize their own activity behind someone else's IP address.",
+  "e": "In August 2026, the Evooo1Bot Linux botnet turned infected routers into SOCKS5 relay nodes to launder criminal traffic."
  },
  {
   "t": "SPRS",
