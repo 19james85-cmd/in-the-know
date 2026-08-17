@@ -198,6 +198,12 @@
   "e": "In July 2026, the Russian group Laundry Bear exploited a Cross-Site Scripting (XSS) bug in Microsoft Exchange OWA (CVE-2026-42897) so that merely viewing a crafted email ran their code."
  },
  {
+  "t": "Cryptojacking",
+  "c": "Malware",
+  "d": "Cryptojacking is when an attacker secretly uses your computer or server to mine cryptocurrency for them, stealing your processing power and electricity. It rarely damages files - it just runs quietly in the background - so victims often only notice slow performance, heat, or high power bills.",
+  "e": "In August 2026, attackers exploited a macOS Screen Sharing flaw (CVE-2026-65400) to gain root access and install a Monero cryptojacking miner on internet-exposed Macs."
+ },
+ {
   "t": "CUI",
   "c": "Regulatory",
   "d": "Government information that isn't classified but still must be protected — technical drawings, contract data, personnel records.",
@@ -660,6 +666,12 @@
   "e": "WordPress's REST API batch route could be confused about which internal handler should process a request — the first half of wp2shell."
  },
  {
+  "t": "Reverse Shell",
+  "c": "Network",
+  "d": "A reverse shell is a trick where the victim's machine opens a connection out to the attacker, giving the attacker a command line on that machine. It is popular because firewalls usually block incoming connections but allow outgoing ones, so the outbound 'call home' slips through.",
+  "e": "In August 2026, an APT exploiting the VMware vCenter flaw CVE-2026-59310 dropped the open-source reverse_ssh tool to keep a reverse shell open on compromised servers."
+ },
+ {
   "t": "RMM",
   "c": "Network",
   "d": "Remote Monitoring and Management — software that IT teams and managed service providers use to watch, control, and push updates to many computers remotely from one console. Because a single RMM server has trusted access to every machine it manages, attackers prize it as a way to reach hundreds of systems at once.",
@@ -826,6 +838,12 @@
   "c": "Threat/Actor",
   "d": "Voice phishing: a scam carried out over a phone call in which the attacker impersonates a colleague, IT helpdesk, or trusted party to trick someone into revealing credentials or approving access.",
   "e": "In July 2026, the ShinyHunters extortion gang used Vishing to trick healthcare helpdesk staff into resetting passwords and changing MFA, then stole data from cloud platforms."
+ },
+ {
+  "t": "VoLTE",
+  "c": "Network",
+  "d": "VoLTE (Voice over LTE) is the technology that carries phone calls as data over the 4G LTE network instead of over older circuit-switched voice systems, enabling higher-quality voice and video calls. Because it runs on the phone's modem software, bugs in that software can sometimes be triggered simply by placing a specially crafted call.",
+  "e": "In August 2026, researchers showed a VoLTE video call could trigger an exploit chain giving full Android kernel access on phones using certain Unisoc chipsets."
  },
  {
   "t": "VPN",
