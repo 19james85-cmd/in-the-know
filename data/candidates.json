@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16T13:16:04.322276+00:00",
+ "generated": "2026-08-17T13:23:39.158675+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,19 +11,19 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 0,
+   "count": 4,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 0,
+   "count": 6,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 1,
+   "count": 8,
    "error": null
   },
   {
@@ -66,10 +66,136 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "New Evooo1Bot Linux botnet turns routers into traffic relay nodes",
-   "url": "https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/",
-   "published": "2026-08-15T14:14:38+00:00",
-   "summary": "A new Mirai-based modular Linux botnet malware called Evooo1Bot has been targeting internet-facing gateway devices, turning them into SOCKS5 traffic relay nodes. [...]"
+   "title": "Windows Server 2022 reaches end of mainstream support in 60 days",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/",
+   "published": "2026-08-17T12:33:11+00:00",
+   "summary": "Microsoft has reminded IT administrators that Windows Server 2022 is rapidly approaching its mainstream end date of October 2026, when it will switch to extended support. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Irregular Details How a Naming Error Let AI Models Attack a Real Company",
+   "url": "https://www.securityweek.com/irregular-details-how-a-naming-error-let-ai-models-attack-a-real-company/",
+   "published": "2026-08-17T12:11:00+00:00",
+   "summary": "The AI security testing firm has shared information on a recently disclosed incident involving Anthropic AI models. The post Irregular Details How a Naming Error Let AI Models Attack a Real Company appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "How MCP Servers Can Expose Enterprise Secrets",
+   "url": "https://thehackernews.com/2026/08/how-mcp-servers-can-expose-enterprise.html",
+   "published": "2026-08-17T11:58:00+00:00",
+   "summary": "MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running. As more organizations adopt AI agents into their systems, that exposure can silently become a major gap in MCP server security. The Model Context Protocol (MCP) allows AI agents to reach the tools and data,"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Philips and GE investigating Clop ransomware data theft claims",
+   "url": "https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/",
+   "published": "2026-08-17T11:25:02+00:00",
+   "summary": "Tech giants General Electric (GE) and Philips have also confirmed they're investigating claims that the Clop ransomware gang breached their systems and stole data. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Conflicting Test Goals Pushed Claude Agents to Deploy Self-Replicating Malware",
+   "url": "https://www.securityweek.com/conflicting-test-goals-pushed-claude-agents-to-deploy-self-replicating-malware/",
+   "published": "2026-08-17T11:09:57+00:00",
+   "summary": "Anthropic has been conducting tests to identify issues in how AI agents interact with each other. The post Conflicting Test Goals Pushed Claude Agents to Deploy Self-Replicating Malware appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access",
+   "url": "https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html",
+   "published": "2026-08-17T10:52:34+00:00",
+   "summary": "Security researchers at SSD Secure Disclosure have published a two-stage exploit chain that achieves full Android kernel access on devices running Unisoc modem firmware through a VoLTE video call, with no fix from the chipset maker. The advisory, published August 17, 2026, is the second stage of a chain that began in March 2026, when SSD disclosed remote code execution in the"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "French tax authority data breach affects 678,000 individuals",
+   "url": "https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/",
+   "published": "2026-08-17T10:09:48+00:00",
+   "summary": "The French Ministry of the Economy and Finance has disclosed a data breach after an attacker accessed the General Directorate of Public Finances (DGFiP) systems and stole data belonging to 678,000 individuals. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "40,000 Impacted by SafePal Data Breach",
+   "url": "https://www.securityweek.com/40000-impacted-by-safepal-data-breach/",
+   "published": "2026-08-17T09:37:06+00:00",
+   "summary": "Hackers exploited a vulnerability in the order-tracking function of a plugin to access SafePal customer information. The post 40,000 Impacted by SafePal Data Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Evooo1Bot Linux Botnet Exploits Known Flaws to Turn Edge Devices Into SOCKS5 Proxies",
+   "url": "https://thehackernews.com/2026/08/evooo1bot-linux-botnet-exploits-known.html",
+   "published": "2026-08-17T09:29:55+00:00",
+   "summary": "Cybersecurity researchers have flagged a previously undocumented Linux botnet family dubbed Evooo1Bot that derives its core functionality from the Mirai botnet source code and is equipped to turn internet-facing devices into SOCKS proxies. \"While the malware reuses the DDoS engine from the publicly leaked Mirai source code, it extends the original framework with numerous capabilities, including"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft working on Defender patch for ShieldBreak zero-day",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/",
+   "published": "2026-08-17T09:05:33+00:00",
+   "summary": "Microsoft is working on a security patch for the \"ShieldBreak\" zero-day vulnerability disclosed last week by security researcher \"Nightmare Eclipse\" and now tracked as CVE-2026-69414. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Why more security data has blurred companies’ view of risk",
+   "url": "https://www.cybersecuritydive.com/spons/why-more-security-data-has-blurred-companies-view-of-risk/827640/",
+   "published": "2026-08-17T09:00:00+00:00",
+   "summary": "More security data can create blind spots. Here's how to regain visibility."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Recent macOS Screen Sharing Vulnerability Exploited in Attacks",
+   "url": "https://www.securityweek.com/recent-macos-screen-sharing-vulnerability-exploited-in-attacks/",
+   "published": "2026-08-17T08:47:38+00:00",
+   "summary": "Threat actors gained root access to the vulnerable systems and deployed a Monero miner. The post Recent macOS Screen Sharing Vulnerability Exploited in Attacks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Critical SAP Commerce Cloud Vulnerability Exploited 3 Days After Disclosure",
+   "url": "https://www.securityweek.com/critical-sap-commerce-cloud-vulnerability-exploited-3-days-after-disclosure/",
+   "published": "2026-08-17T08:13:07+00:00",
+   "summary": "The vulnerability tracked as CVE-2026-58231 can be exploited to execute arbitrary code and compromise internal components. The post Critical SAP Commerce Cloud Vulnerability Exploited 3 Days After Disclosure appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
+   "url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
+   "published": "2026-08-17T07:36:19+00:00",
+   "summary": "Cybersecurity researchers have attributed the exploitation of a newly patched security flaw in Broadcom VMware vCenter to a suspected China-nexus advanced persistent threat (APT). The attacks involve the exploitation of CVE-2026-59310 (CVSS score: 9.8), a severe directory-traversal vulnerability in the VMware vCenter server that could be weaponized by a malicious actor to execute arbitrary code"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Fortune 500 Companies Hit in Azure Data Theft Campaign",
+   "url": "https://www.securityweek.com/fortune-500-companies-hit-in-azure-data-theft-campaign/",
+   "published": "2026-08-17T06:51:08+00:00",
+   "summary": "A threat actor is claiming the exfiltration of millions of records from McDonald’s, TCS, Vodafone, and other large organizations. The post Fortune 500 Companies Hit in Azure Data Theft Campaign appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "SafePal data breach impacts 39,798 customers, stolen info for sale",
+   "url": "https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/",
+   "published": "2026-08-16T23:47:06+00:00",
+   "summary": "Cryptocurrency hardware wallet provider SafePal is warning of a data breach affecting about 39,798 customers after a flaw was exploited to steal customer order information, and a threat actor is now claiming to be selling the stolen data. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Anthropic confirms Claude is down in major outage affecting multiple services",
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/",
+   "published": "2026-08-16T22:28:57+00:00",
+   "summary": "Claude is experiencing a major outage, with users reporting login problems and degraded performance across several Anthropic services. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Large-scale DDoS attacks disrupted Threema secure messaging service",
+   "url": "https://www.bleepingcomputer.com/news/security/large-scale-ddos-attacks-disrupted-threema-secure-messaging-service/",
+   "published": "2026-08-16T17:29:52+00:00",
+   "summary": "Multiple distributed denial-of-service (DDoS) attacks targeted the Threema secure messaging service earlier this week, causing severe disruptions to communications. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "New AmnesiaStealer macOS malware hijacks browser sessions via remote control",
+   "url": "https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/",
+   "published": "2026-08-16T15:07:44+00:00",
+   "summary": "A new information-stealing malware called AmnesiaStealer, which targets macOS users via ClickFix attacks, includes a streaming module that allows the attacker to interactively control the victim's web browser. [...]"
   }
  ]
 }
