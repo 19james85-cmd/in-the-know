@@ -1,0 +1,367 @@
+{
+  "leadStory": {
+    "headline": "CISA adds actively exploited Ray AI framework flaw (CVE-2025-62593, CVSS 9.4) to KEV, orders federal fix by Aug 20",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
+    "tags": [
+      {
+        "label": "CVE-2025-62593",
+        "type": "d"
+      },
+      {
+        "label": "CVSS 9.4",
+        "type": "d"
+      },
+      {
+        "label": "KEV",
+        "type": "d"
+      },
+      {
+        "label": "DNS Rebinding",
+        "type": "d"
+      },
+      {
+        "label": "RCE",
+        "type": "d"
+      }
+    ],
+    "body": "On August 17, 2026, CISA added CVE-2025-62593 to its Known Exploited Vulnerabilities (KEV) catalog — the official list of flaws confirmed to be under active attack — and gave federal agencies until August 20 to patch. The bug (CVSS 9.4) is in Ray, an open-source Python framework used to run large AI and machine-learning jobs across many machines. It allows Remote Code Execution (running attacker-supplied commands on the target) and can even be triggered from an ordinary web browser through DNS rebinding, a trick where a malicious website tricks your browser into talking to a service running on your own private network. Attackers have already weaponized it: the RondoDox DDoS botnet grabbed it before public disclosure, and a campaign called ShadowRay 2.0 has been hijacking unpatched Ray clusters with NVIDIA GPUs to mine cryptocurrency.",
+    "beginnerTip": "A KEV listing is CISA's strongest signal that a flaw is not theoretical — real attackers are using it right now. <strong>DNS rebinding</strong> is dangerous because it lets a random web page reach 'internal-only' services that were never meant to face the internet, so don't assume something is safe just because it lacks a public login."
+  },
+  "cves": [
+    {
+      "headline": "GitLab ships emergency patch for critical GraphQL flaw (CVE-2026-19478, CVSS 9.4) that lets anonymous attackers delete public projects",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/08/critical-gitlab-graphql-flaw-could-let.html",
+      "tags": [
+        {
+          "label": "CVE-2026-19478",
+          "type": "d"
+        },
+        {
+          "label": "CVSS 9.4",
+          "type": "d"
+        },
+        {
+          "label": "GraphQL",
+          "type": "d"
+        },
+        {
+          "label": "Code Injection",
+          "type": "w"
+        }
+      ],
+      "body": "GitLab released an out-of-band critical patch on August 17, 2026 for CVE-2026-19478 (CVSS 9.4), a flaw in its GraphQL API — the query interface that lets apps ask GitLab for exactly the data they want. Because of a broken authorization check, an unauthenticated attacker (one with no account or login) could remotely modify or delete public projects and user data. Fixed releases are 19.2.4, 19.1.6, 19.0.8, and 18.11.11; GitLab Dedicated is already patched, but self-managed servers should update immediately. There is no confirmed exploitation or public proof-of-concept yet, but the destructive, no-login nature makes internet-facing instances an obvious target.",
+      "beginnerTip": "This is the third GraphQL authorization bug GitLab has fixed in 2026, a reminder that <strong>GraphQL</strong> APIs need permission checks on every field, not just at the front door. If you run your own GitLab, patch now and check whether your instance is reachable from the public internet."
+    },
+    {
+      "headline": "Forminator WordPress plugin flaw (CVE-2026-15748, CVSS 9.8) exposes ~600,000 sites to unauthenticated code execution",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/300000-wordpress-sites-potentially-exposed-to-hacking-due-to-form-plugin-flaw/",
+      "tags": [
+        {
+          "label": "CVE-2026-15748",
+          "type": "d"
+        },
+        {
+          "label": "CVSS 9.8",
+          "type": "d"
+        },
+        {
+          "label": "Arbitrary File Upload",
+          "type": "d"
+        },
+        {
+          "label": "RCE",
+          "type": "d"
+        }
+      ],
+      "body": "Forminator, a form-builder plugin installed on more than 600,000 WordPress sites, contains CVE-2026-15748 (CVSS 9.8), an arbitrary file upload flaw — meaning the site accepts an uploaded file without properly checking its type. An unauthenticated attacker can upload a malicious PHP file (WordPress's server-side scripting language) and run it, achieving Remote Code Execution and full site takeover. Exploitation requires a form that has both a File Upload field and a Select field, a common combination. The issue is fixed in version 1.56.2; all versions up to and including 1.56.1 are vulnerable.",
+      "beginnerTip": "File-upload fields are a classic weak point: if a site doesn't strictly block executable file types, an attacker can upload a program and ask the server to run it. If you use Forminator, update to <strong>1.56.2</strong> or later today."
+    },
+    {
+      "headline": "'Certighost' AD CS flaw (CVE-2026-54121, CVSS 8.8) lets any domain user impersonate a Domain Controller",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/certighost-and-the-privilege-hiding-in-your-certificate-authority/",
+      "tags": [
+        {
+          "label": "CVE-2026-54121",
+          "type": "d"
+        },
+        {
+          "label": "CVSS 8.8",
+          "type": "w"
+        },
+        {
+          "label": "AD CS",
+          "type": "w"
+        },
+        {
+          "label": "Privilege Escalation",
+          "type": "w"
+        }
+      ],
+      "body": "Certighost (CVE-2026-54121, CVSS 8.8) is a privilege-escalation flaw in Active Directory Certificate Services (AD CS), the Windows component that issues the digital certificates a network trusts to prove identity. A low-privileged but authenticated domain user can trick the Enterprise Certificate Authority into issuing a certificate that impersonates a Domain Controller — the servers that hold the keys to the whole Windows domain — enabling full domain takeover. Microsoft patched it on July 14, 2026, but a working proof-of-concept exploit went public on July 24, so unpatched networks are now at real risk. The deeper lesson, researchers note, is treating your Certificate Authority as Tier 0 (crown-jewel) infrastructure.",
+      "beginnerTip": "In a Windows network, whoever controls the <strong>Certificate Authority</strong> can effectively forge trusted identities for anyone, including administrators. Apply the July 2026 update to every server running an Enterprise CA and limit who can request certificates."
+    },
+    {
+      "headline": "Apple patches dozens of WebKit bugs in fresh macOS and iOS updates",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/dozens-of-webkit-vulnerabilities-patched-with-fresh-macos-ios-security-updates/",
+      "tags": [
+        {
+          "label": "WebKit",
+          "type": "w"
+        },
+        {
+          "label": "Sandbox Escape",
+          "type": "w"
+        },
+        {
+          "label": "Memory Corruption",
+          "type": "w"
+        }
+      ],
+      "body": "Apple shipped security updates for macOS and iOS fixing dozens of vulnerabilities in WebKit, the browser engine behind Safari and every iPhone web view. According to Apple, the bugs could be used to crash Safari, corrupt memory, leak sensitive data, escape the sandbox (break out of the isolated area a web page is meant to stay inside), and exfiltrate data. Browser-engine flaws are especially valuable to attackers because they can often be triggered just by getting a victim to open a malicious web page. Apple did not report active exploitation, but users should install the updates promptly.",
+      "beginnerTip": "A <strong>sandbox escape</strong> is serious because sandboxing is the main wall stopping a malicious web page from touching the rest of your device. On iPhones and Macs the fastest protection is simply keeping the OS updated — turn on automatic updates."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "CISA: ransomware gangs now exploiting Windows Task Host flaw (CVE-2025-60710) to seize SYSTEM control",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/",
+      "tags": [
+        {
+          "label": "CVE-2025-60710",
+          "type": "d"
+        },
+        {
+          "label": "Ransomware",
+          "type": "d"
+        },
+        {
+          "label": "Privilege Escalation",
+          "type": "d"
+        }
+      ],
+      "body": "CISA updated its KEV entry for CVE-2025-60710 to confirm that ransomware gangs are now abusing it. The flaw is a link-following weakness in the Windows Task Host affecting Windows 11 and Windows Server 2025, and it lets a local attacker who already has basic user access elevate to SYSTEM — the highest privilege level on a Windows machine. That kind of Privilege Escalation is exactly what ransomware crews want after an initial break-in: it lets them disable defenses and encrypt an entire network. Microsoft patched the bug in November 2025, and CISA first flagged active exploitation back in April 2026.",
+      "beginnerTip": "Ransomware attacks usually start with limited access, then rely on a <strong>Privilege Escalation</strong> bug like this to gain full control. If you manage Windows machines, confirm the November 2025 updates are actually installed — a known-exploited flaw left unpatched is an open door."
+    },
+    {
+      "headline": "New details on BlackFile ransomware's campaign against financial and medical firms",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/blackfile-cyberattacks-financial-sector/",
+      "tags": [
+        {
+          "label": "Ransomware",
+          "type": "d"
+        },
+        {
+          "label": "Threat Actor",
+          "type": "w"
+        },
+        {
+          "label": "Double Extortion",
+          "type": "w"
+        }
+      ],
+      "body": "Google researchers have shared fresh detail on BlackFile, a ransomware operation running four separate affiliate groups that continue to hit victims in the financial sector and, increasingly, medical-technology organizations. Several potential victims received new extortion demands in the past week. Like most modern crews, BlackFile is believed to use double extortion — stealing data before encrypting it, then threatening to leak it unless paid, so victims can't simply restore from backups. The affiliate model, where the core gang rents its malware to independent partners, makes the operation harder to disrupt because taking down one affiliate leaves the others running.",
+      "beginnerTip": "An <strong>affiliate</strong> model means a ransomware brand is really many independent crews sharing one toolkit, so 'the group' can keep attacking even after some members are arrested. Strong offline backups plus data-leak monitoring blunt the double-extortion playbook."
+    },
+    {
+      "headline": "TWINLOOT: stealthy Python implant runs its entire command-and-control inside Microsoft SharePoint and Teams",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/08/twinloot-abuses-sharepoint-and-teams-to.html",
+      "tags": [
+        {
+          "label": "Command-and-Control",
+          "type": "w"
+        },
+        {
+          "label": "Living off the Land",
+          "type": "w"
+        },
+        {
+          "label": "Credential Theft",
+          "type": "w"
+        }
+      ],
+      "body": "Researchers at Ontinue disclosed TWINLOOT, a modular Python implant that steals credentials and moves across a network while hiding all of its Command-and-Control (C2) traffic — the channel malware uses to receive orders — inside trusted Microsoft services like SharePoint Online and Teams. This is a form of living off the land: instead of setting up suspicious attacker servers, the malware blends into normal cloud activity that most defenses won't flag. It is hardened with PyArmor (a tool that obfuscates Python code to slow down analysts) and designed for stealthy persistence. Because the traffic looks like ordinary Microsoft 365 usage, network monitoring alone is unlikely to catch it.",
+      "beginnerTip": "<strong>Living off the land</strong> means attackers abuse legitimate, already-trusted tools and services so their activity blends in. Defending against it relies less on blocking 'bad' domains and more on spotting unusual behavior in trusted apps."
+    }
+  ],
+  "regulatory": [
+    {
+      "headline": "Experts pour cold water on the U.S. 'Gold Eagle' AI vulnerability clearinghouse",
+      "source": "Cybersecurity Dive",
+      "sourceUrl": "https://www.cybersecuritydive.com",
+      "url": "https://www.cybersecuritydive.com/news/ai-vulnerability-clearinghouse-us-government-challenges/827710/",
+      "tags": [
+        {
+          "label": "Policy",
+          "type": "a"
+        },
+        {
+          "label": "Vulnerability Management",
+          "type": "a"
+        },
+        {
+          "label": "CVE",
+          "type": "a"
+        }
+      ],
+      "body": "The U.S. government's promises about Gold Eagle — a new AI-powered program meant to coordinate and prioritize vulnerability disclosures — are overblown, security experts told Cybersecurity Dive. Supporters argue it could help organizations decide which flaws to patch first, a real pain point as CVE volumes climb. Skeptics counter that AI triage can't fix the underlying problems of incomplete data, vendor cooperation, and trust that have long dogged coordinated disclosure. The debate matters because federal vulnerability programs increasingly shape how the whole industry prioritizes patching.",
+      "beginnerTip": "A <strong>CVE</strong> is a unique ID assigned to a specific security flaw so everyone can refer to the same bug. The challenge Gold Eagle is trying to solve is that far more CVEs are published each year than any team can realistically patch, so prioritization is everything."
+    },
+    {
+      "headline": "French tax authority breach exposes data on 680,000 taxpayers",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/680000-impacted-by-french-tax-authority-data-breach/",
+      "tags": [
+        {
+          "label": "Data Breach",
+          "type": "d"
+        },
+        {
+          "label": "GDPR",
+          "type": "a"
+        },
+        {
+          "label": "Credential Theft",
+          "type": "w"
+        }
+      ],
+      "body": "France's tax authority disclosed a breach in which attackers used compromised credentials — stolen valid usernames and passwords — to access enterprise and personal tax-related data belonging to about 680,000 people. Under the EU's GDPR (the General Data Protection Regulation, Europe's strict data-protection law), organizations generally must notify regulators of a serious breach within 72 hours and inform affected individuals. Tax data is especially sensitive because it fuels identity theft and highly convincing tax-themed phishing. The incident underscores that stolen credentials, not exotic exploits, remain a leading way into government and enterprise systems.",
+      "beginnerTip": "<strong>GDPR</strong> sets legal deadlines for disclosing breaches and can bring heavy fines, which is why European breaches tend to be reported publicly and quickly. For individuals, the practical risk here is targeted phishing that references real tax details."
+    },
+    {
+      "headline": "Baylor Genetics says June hack compromised sensitive patient genetic data",
+      "source": "Cybersecurity Dive",
+      "sourceUrl": "https://www.cybersecuritydive.com",
+      "url": "https://www.cybersecuritydive.com/news/baylor-genetics-cyberattack-compromise-patient-data-genetic-testing/828019/",
+      "tags": [
+        {
+          "label": "Data Breach",
+          "type": "d"
+        },
+        {
+          "label": "Healthcare",
+          "type": "w"
+        },
+        {
+          "label": "Supply Chain",
+          "type": "w"
+        }
+      ],
+      "body": "Baylor Genetics, a major genetic-testing firm, confirmed that a June 2026 breach exposed sensitive patient data along with employee information. Health and genetic data is regulated in the U.S. under HIPAA (the Health Insurance Portability and Accountability Act), which sets rules for protecting medical information and requires breach notification. The case highlights supply-chain risk in healthcare: hospitals and clinics rely on outside labs and vendors, so a breach at one specialized firm can expose patients who never directly used it. Genetic data is uniquely worrying because, unlike a password, you cannot change your DNA after it leaks.",
+      "beginnerTip": "<strong>Supply chain</strong> risk means your data can be exposed by a partner or vendor you've never heard of, not just the company you dealt with directly. Genetic and health records are prized by attackers because they're permanent and hard to remediate."
+    }
+  ],
+  "trends": [
+    {
+      "headline": "Rapid7: AI-driven surge in vulnerabilities is breaking the traditional patch cycle",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/ai-driven-vulnerability-surge-breaks-the-traditional-patching-model/",
+      "tags": [
+        {
+          "label": "Vulnerability Management",
+          "type": "a"
+        },
+        {
+          "label": "Attack Surface",
+          "type": "a"
+        },
+        {
+          "label": "AI Security",
+          "type": "a"
+        }
+      ],
+      "body": "Security firm Rapid7 warns that the volume of disclosed vulnerabilities — accelerated by AI tools that help find bugs — is rising faster than defenders can patch, and that attackers are exploiting new flaws more quickly than before. Their argument is that ranking work purely by severity score (like CVSS) no longer works; teams should prioritize by real exposure, meaning which vulnerable systems are actually reachable and exploitable in their environment. This reflects a broader industry shift from 'patch everything' to 'patch what an attacker can actually reach first.' It ties directly to the day's KEV additions, which are CISA's way of saying: these specific flaws are being exploited now.",
+      "beginnerTip": "A high CVSS score tells you how bad a flaw could be, but not whether it's exposed in your setup. <strong>Attack surface</strong> — the sum of all the points where an attacker could try to get in — is what modern prioritization focuses on: fix the reachable, actively exploited flaws first."
+    },
+    {
+      "headline": "Anthropic and EPFL show self-propagating 'mind virus' payloads can jump between AI agents",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html",
+      "tags": [
+        {
+          "label": "AI Security",
+          "type": "a"
+        },
+        {
+          "label": "Prompt Injection",
+          "type": "w"
+        },
+        {
+          "label": "Proof-of-Concept",
+          "type": "a"
+        }
+      ],
+      "body": "Researchers at Anthropic and Switzerland's EPFL demonstrated, in an August 10, 2026 preprint, that self-propagating instructions can spread from one AI agent to another through the editable system-prompt files that autonomous agents use to remember state between sessions. In a simulated six-agent coding environment, a hidden malicious instruction planted in one agent's memory file could copy itself into others — conceptually a computer worm built out of text prompts rather than code. It's a form of prompt injection, where attacker-controlled text is treated as trusted instructions by an AI. This is proof-of-concept research, not an in-the-wild attack, but it points at a genuinely new class of risk as agents gain persistent memory and the ability to edit files.",
+      "beginnerTip": "<strong>Prompt injection</strong> is the AI-era version of an injection attack: instead of malicious code, an attacker slips in malicious instructions that the AI obeys. As AI agents get memory and file access, the text they read has to be treated as untrusted input, just like data from the internet."
+    },
+    {
+      "headline": "Fortinet acquires AI-security startup Virtue AI to secure models and agentic systems",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/fortinet-acquires-ai-security-company-virtue-ai/",
+      "tags": [
+        {
+          "label": "AI Security",
+          "type": "a"
+        },
+        {
+          "label": "Acquisition",
+          "type": "g"
+        }
+      ],
+      "body": "Networking and security vendor Fortinet is acquiring Virtue AI to strengthen its AI-security portfolio, specifically for protecting AI models, AI-powered applications, and agentic systems (software where AI agents take actions on their own). The deal is another sign that securing AI — both defending AI systems and countering AI-enabled attacks — has become a distinct, fast-consolidating market. For buyers it signals that mainstream security platforms are racing to bolt on AI-specific protections rather than build them slowly in-house. Terms of the acquisition were not disclosed.",
+      "beginnerTip": "'<strong>Agentic</strong>' AI means systems that don't just answer questions but take real actions — running code, calling tools, changing files — which is exactly why they need dedicated security controls. Expect more security vendors to buy up AI-security specialists this way."
+    }
+  ],
+  "quickHits": [
+    {
+      "color": "danger",
+      "source": "Cybersecurity Dive",
+      "sourceUrl": "https://www.cybersecuritydive.com/news/critical-flaw-sap-commerce-cloud-initial-exploitation/828023/",
+      "text": "Max-severity SAP Commerce Cloud flaw CVE-2026-58231 (CVSS 10.0) is now seeing initial exploitation attempts, days after patches and a public PoC landed."
+    },
+    {
+      "color": "ok",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wmic-lolbin-tool-in-windows-11-beta-builds/",
+      "text": "Microsoft is removing the legacy WMIC command-line tool — a favorite LOLBin abused by attackers to 'live off the land' — from Windows 11 24H2 and 25H2."
+    },
+    {
+      "color": "warn",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
+      "text": "16 typosquatted RubyGems packages (a campaign dubbed StubMaker) drop a Windows infostealer that grabs browser credentials and crypto wallets."
+    },
+    {
+      "color": "danger",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/",
+      "text": "A threat actor claims to be selling 3.6 million employee account records allegedly pulled from Fortune 500 firms' Microsoft Azure environments using stolen credentials."
+    },
+    {
+      "color": "warn",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com/cyber-risk/linux-botnet-evooo1bot-mirai-capabilities-beyond-ddos",
+      "text": "Linux botnet 'Evooo1Bot' extends the classic Mirai code with exploitation modules, credential theft, and reverse SOCKS relays — turning devices into persistent attacker infrastructure."
+    }
+  ],
+  "analystFooter": "Patch priority order today: the three actively-exploited KEV flaws (Ray CVE-2025-62593 by the Aug 20 federal deadline, Windows Task Host CVE-2025-60710, and SAP Commerce Cloud CVE-2026-58231), then the pre-auth criticals in GitLab, Forminator, and AD CS before public PoCs mature into mass exploitation."
+}
