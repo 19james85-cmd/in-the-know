@@ -300,6 +300,12 @@
     "e": "In July 2026, Arctic Wolf reported Qilin operators using Rclone to copy victim data to MEGA cloud storage before encryption, so victims with good backups still faced a leak threat."
   },
   {
+    "t": "Double Free",
+    "c": "Vulnerability",
+    "d": "A memory bug where a program releases (frees) the same block of memory twice. Attackers can exploit the resulting corruption to crash the program or run their own code with the program's privileges.",
+    "e": "In August 2026, CISA added CVE-2026-33824, a Double Free flaw in the Windows IKE service, to its Known Exploited Vulnerabilities catalog after attackers used it for remote code execution."
+  },
+  {
     "t": "ELF Binary",
     "c": "General",
     "d": "Executable and Linkable Format — the standard file format for programs on Linux and Unix, the equivalent of a .exe on Windows. Finding an unexpected ELF file on an appliance is a strong sign of compromise.",
@@ -406,6 +412,12 @@
     "c": "Network",
     "d": "Industrial Control Systems / Operational Technology — computer systems controlling physical industrial processes like power grids and water treatment. Cyberattacks can cause real-world physical damage.",
     "e": "A cyberattack on a water treatment plant's ICS briefly altered chemical levels in the water supply."
+  },
+  {
+    "t": "Improper Authentication",
+    "c": "Vulnerability",
+    "d": "A flaw where a system fails to correctly verify who a user really is, letting an attacker access it without valid credentials. It is a common cause of account takeover and unauthorized access.",
+    "e": "In August 2026, Apple macOS flaw CVE-2026-65400 (CVSS 9.8) let an attacker on the network log into Screen Sharing with no valid password due to Improper Authentication."
   },
   {
     "t": "In the Wild (ITW)",
@@ -724,6 +736,12 @@
     "c": "Regulatory",
     "d": "Short for Software Bill of Materials: a machine-readable ingredients list of every component and library inside a piece of software. It lets defenders instantly check whether they are affected when a new vulnerability appears.",
     "e": "In July 2026, CISA, the NSA, and the FBI released updated '2026 Minimum Elements for an SBOM' guidance adding required fields like component hashes and licenses."
+  },
+  {
+    "t": "SCADA",
+    "c": "Network",
+    "d": "Short for Supervisory Control and Data Acquisition: software and hardware that monitor and control physical industrial equipment such as power grids, water systems, and factory machinery. A flaw here can have real-world safety consequences, not just data loss.",
+    "e": "In August 2026, CVE-2026-25895 in the FUXA SCADA/HMI platform let unauthenticated attackers write files and run code on systems controlling industrial equipment."
   },
   {
     "t": "SD-WAN",
