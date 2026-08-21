@@ -420,6 +420,12 @@
   "e": "In August 2026, WatchTowr's honeypot sensors caught the first in-the-wild exploitation of the critical GitLab flaw about two days after it was disclosed."
  },
  {
+  "t": "IAM",
+  "c": "General",
+  "d": "IAM (Identity and Access Management) is the system that decides who a user is and what they are allowed to do -- handling logins, permissions, and access to apps and data.",
+  "e": "In August 2026, Microsoft's Entra ID, a cloud IAM service, had a maximum-severity flaw (CVE-2026-69836) that let unauthenticated attackers run code remotely."
+ },
+ {
   "t": "ICS/OT",
   "c": "Network",
   "d": "Industrial Control Systems / Operational Technology — computer systems controlling physical industrial processes like power grids and water treatment. Cyberattacks can cause real-world physical damage.",
@@ -550,6 +556,12 @@
   "c": "Regulatory",
   "d": "The NIST publication listing 110 security requirements for protecting CUI on non-federal systems. It defines the \"what\"; CMMC defines how it's verified.",
   "e": "A contractor reporting a perfect score claims all 110 controls are fully implemented."
+ },
+ {
+  "t": "OAuth",
+  "c": "Network",
+  "d": "OAuth is the technology behind 'Sign in with Google/Microsoft' buttons: it lets one app access your account by issuing it a limited access token, so the app never sees your actual password.",
+  "e": "In August 2026, suspected Russian hackers routed defense-sector targets through a genuine Google OAuth consent screen and then stole the resulting access tokens to hijack their accounts."
  },
  {
   "t": "Operational Technology",
@@ -868,6 +880,12 @@
   "c": "Threat/Actor",
   "d": "Tactics, Techniques, and Procedures — the behavior patterns and methods used by threat actors to plan, execute, and conceal cyberattacks. Understanding TTPs helps defenders anticipate attacks.",
   "e": "Analyzing a group's TTPs allowed defenders to block their attack before any data was exfiltrated."
+ },
+ {
+  "t": "Typosquatting",
+  "c": "Threat/Actor",
+  "d": "Typosquatting is registering a package name, domain, or handle that looks almost identical to a trusted one, hoping people or automated tools pick the fake by mistake.",
+  "e": "In August 2026, attackers poisoned the popular Rust arrayref crate by adding a dependency called 'proc-macro1', a typosquatting impersonation of the legitimate proc-macro2 package."
  },
  {
   "t": "Unauthenticated",
