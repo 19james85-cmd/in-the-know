@@ -1,0 +1,194 @@
+{
+ "leadStory": {
+  "headline": "Over 9,300 exposed AWS access keys found still active years after leaking, giving full account control",
+  "source": "BleepingComputer",
+  "sourceUrl": "https://www.bleepingcomputer.com",
+  "url": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
+  "tags": [
+   {"label": "9,300+ Live Keys", "type": "d"},
+   {"label": "Multi-Year Exposure", "type": "w"},
+   {"label": "Cloud/IAM", "type": "a"}
+  ],
+  "body": "More than 9,300 Amazon Web Services (AWS) access keys that were publicly exposed between August 2022 and August 2026 remain active and valid, according to BleepingComputer. A valid AWS access key typically grants whoever holds it broad control over the associated cloud account, including its data, infrastructure, and billing, making a still-live leaked key a serious account-takeover risk. The report does not specify exactly where the keys were exposed, but the four-year span shows how long unrotated cloud credentials can remain a live threat once they leak. The scale points to a widespread, ongoing failure across many organizations to detect and rotate exposed secrets.",
+  "beginnerTip": "An <strong>Access Key</strong> is like a username and password combined into one string that lets software (not a person) log into a cloud account -- if it leaks in code, a config file, or a public repository, anyone who finds it can use it exactly like the real owner. Use secret-scanning tools on your repositories and rotate any key immediately if it is ever exposed."
+ },
+ "cves": [
+  {
+   "headline": "Researchers show Microsoft Defender's own signed driver can be abused to kill security software at boot",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
+   "tags": [
+    {"label": "BYOVD-style Abuse", "type": "w"},
+    {"label": "No Patch Needed", "type": "a"},
+    {"label": "Windows 7-11", "type": "w"}
+   ],
+   "body": "Check Point Research disclosed a technique that abuses BTR.sys, a legitimately signed Boot Time Removal Tool driver built into Microsoft Defender, to perform arbitrary kernel-level file and registry operations before Windows security software loads. The technique requires no software vulnerability and no driver imported from outside the machine, working across Windows 7 through Windows 11 25H2, because the driver itself is already trusted and signed by Microsoft. Because BTR.sys is a legitimate, signed component rather than a bug, there is no simple patch; defenders instead need to monitor and restrict how the driver's remediation functions can be invoked.",
+   "beginnerTip": "Windows normally only lets trusted, digitally signed drivers run at the kernel's most privileged level. This technique is in the spirit of <strong>BYOVD</strong> (Bring Your Own Vulnerable Driver) attacks, though here it abuses a built-in Defender driver rather than an imported one -- a reminder that software already trusted on your machine can sometimes be turned against it."
+  },
+  {
+   "headline": "New iAuthFlow V2 phishing toolkit abuses passkeys to survive password resets",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/new-phishing-toolkit-uses-passkeys-to-maintain-access-after-password-resets/",
+   "tags": [
+    {"label": "Passkey Abuse", "type": "w"},
+    {"label": "Persistent Access", "type": "d"},
+    {"label": "Phishing Kit", "type": "a"}
+   ],
+   "body": "Researchers describe a phishing toolkit called iAuthFlow V2 that can register an attacker-controlled passkey on a victim's account during a phishing session. Because the rogue passkey is a valid, registered authentication method, it lets the attacker keep signing in even after the victim changes their password and revokes active sessions. The technique turns passkeys -- normally a stronger, phishing-resistant alternative to passwords -- into a persistence mechanism when an attacker can trick a victim into authorizing one during an active phishing attack.",
+   "beginnerTip": "A <strong>Passkey</strong> is a newer sign-in method meant to replace passwords, tied to your device instead of something you type. This shows why account recovery matters: resetting your password is not enough if an attacker has also registered their own passkey on your account -- always review and remove authentication methods you don't recognize."
+  },
+  {
+   "headline": "14 trojanized npm packages caught dropping AI-assisted RedC2 4.0 Linux backdoor",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+   "tags": [
+    {"label": "Supply Chain Attack", "type": "d"},
+    {"label": "npm", "type": "w"},
+    {"label": "AI-Assisted C2", "type": "a"}
+   ],
+   "body": "Trend Micro found 14 trojanized npm packages, disguised as ordinary calendar and streak-tracking utilities, that quietly drop RedC2 4.0, a Linux backdoor with an AI-assisted command-and-control component. When one of the malicious packages loads, it locates a bundled binary, marks it executable, and launches it as a detached background process, giving the attacker persistent remote access to any machine that installed it. The campaign is another example of a Supply Chain Attack that hides malicious functionality inside a package that looks legitimate on the surface, targeting developers who pull it in as a dependency.",
+   "beginnerTip": "A <strong>Supply Chain Attack</strong> targets trusted software you rely on -- like an open-source package -- instead of attacking you directly, so the malicious code arrives disguised as something helpful. Before adding a new dependency, check its download count, maintainer history, and recent version changes for anything unusual."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "Private equity firm Apollo discloses breach tied to ongoing wave of financial-sector attacks",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/apollo-discloses-data-breach-social-engineering-attack/",
+   "tags": [
+    {"label": "Data Breach", "type": "d"},
+    {"label": "Financial Sector", "type": "w"},
+    {"label": "Social Engineering", "type": "a"}
+   ],
+   "body": "Private equity firm Apollo disclosed that attackers broke into some of its cloud platforms during a five-day period in early July, compromising sensitive personal data. CyberScoop describes the incident as part of an ongoing wave of attacks hitting the financial sector, though the report does not name the specific data types exposed or the number of people affected. The disclosure adds Apollo to a growing list of financial firms hit by a similar pattern of intrusion this year.",
+   "beginnerTip": "When a company discloses a breach 'during a five-day period,' that window usually reflects how long attackers had access before being detected -- the shorter that gap, the less damage is typically done. If you have any relationship with an affected firm, watch for their official breach notification rather than relying on secondhand reports."
+  },
+  {
+   "headline": "New SynkLoader malware spreads via Microsoft Teams phishing campaign",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
+   "tags": [
+    {"label": "New Malware", "type": "w"},
+    {"label": "Credential Theft", "type": "d"},
+    {"label": "Microsoft Teams", "type": "a"}
+   ],
+   "body": "A previously unknown malware family called SynkLoader is being distributed through phishing campaigns conducted over Microsoft Teams. The malware uses a fake lock screen to trick victims into typing their credentials, which it then steals. The campaign highlights how attackers continue to move phishing lures into collaboration platforms that many employees implicitly trust more than email.",
+   "beginnerTip": "A fake lock screen mimics your computer's normal login prompt to trick you into typing your password into a malicious program instead of the real operating system. If a Teams message ever prompts you to \"unlock\" or re-enter credentials unexpectedly, verify through another channel before typing anything."
+  },
+  {
+   "headline": "Banking trojans Manic, Grandoreiro, and ToxicPanda 2.0 remain active threats",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/banking-trojans-manic-grandoreiro-toxicpanda-2-0-in-the-spotlight/",
+   "tags": [
+    {"label": "Banking Trojan", "type": "w"},
+    {"label": "Spyware", "type": "d"},
+    {"label": "Latin America/Europe", "type": "a"}
+   ],
+   "body": "SecurityWeek highlights three active banking-trojan operations: Manic, which comes equipped with spyware capabilities; a persistent Grandoreiro campaign continuing to target Latin America and Europe; and an expanded ToxicPanda 2.0 malware family. Grandoreiro in particular has resurfaced repeatedly despite past law-enforcement takedowns, refining its evasion and detection-avoidance features. Together, the campaigns show banking trojans remain a durable, evolving threat to financial-account holders across multiple regions.",
+   "beginnerTip": "A <strong>Banking Trojan</strong> is malware disguised as something legitimate that specifically targets your online banking credentials and transactions once installed. These families keep resurfacing because takedowns remove infrastructure, not the developers -- treat unexpected banking-app prompts or login pages with suspicion."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "Lawmakers seek GAO watchdog review of federal government's hacking tools used on Americans",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/watchdog-review-federal-government-hacking-americans/",
+   "tags": [
+    {"label": "Congressional Oversight", "type": "a"},
+    {"label": "Spyware", "type": "w"}
+   ],
+   "body": "Sen. Ron Wyden and Rep. Greg Casar are asking the Government Accountability Office (GAO) to investigate how federal agencies use spyware and other sophisticated hacking tools and authorities domestically. The request reflects growing congressional concern over the scope of government hacking capabilities directed at Americans and calls for an independent watchdog review rather than relying solely on agency self-reporting.",
+   "beginnerTip": "The <strong>GAO</strong> is a nonpartisan federal watchdog that investigates how agencies spend money and use their authority, then reports findings to Congress. Requests like this one are how lawmakers try to get independent facts about surveillance programs that are otherwise largely secret."
+  },
+  {
+   "headline": "Defense contractors' CMMC confidence keeps rising even as their ability to prove compliance lags",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/defense-contractors-cmmc-cybersecurity-confidence-gap/828494/",
+   "tags": [
+    {"label": "CMMC", "type": "a"},
+    {"label": "Compliance Gap", "type": "w"}
+   ],
+   "body": "A new consulting-firm survey finds a widening confidence gap among U.S. defense contractors preparing for Cybersecurity Maturity Model Certification (CMMC): self-reported confidence in their security posture keeps climbing even as fewer contractors say they can actually document and prove the required controls. The disconnect matters because CMMC ties eligibility for Defense Department contracts to independently assessed, evidence-backed compliance rather than self-assessment alone.",
+   "beginnerTip": "<strong>CMMC</strong> is the Pentagon's certification program requiring defense contractors to prove -- with audit evidence, not just self-assessment -- that they meet baseline cybersecurity controls. Feeling secure and being able to demonstrate it to an auditor are two different things, and only the second one satisfies a compliance requirement."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "OWASP releases new Top 10 blueprint flagging AI agent skill risks",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint",
+   "tags": [
+    {"label": "OWASP", "type": "a"},
+    {"label": "Agentic AI", "type": "a"}
+   ],
+   "body": "The Open Worldwide Application Security Project (OWASP) published a new top-10 security list tailored to AI-era risks, introducing a Universal Skill Format meant to bring consistency and security review to the growing ecosystem of AI \"skills\" and add-ons that extend chatbot and agent capabilities. The framework reflects OWASP's ongoing effort to give developers and security teams a standard way to evaluate risk in fast-moving AI tooling, much as its original Top 10 did for web applications.",
+   "beginnerTip": "OWASP is a nonprofit best known for its Top 10 lists of the most critical security risks in a given technology area, widely used by developers as a baseline checklist. A new list for AI \"skills\" signals that add-on capabilities for AI agents are now common enough to need their own standardized security guidance."
+  },
+  {
+   "headline": "OpenAI adds new AI security controls following the Hugging Face incident",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/application-security/openai-adds-controls-already",
+   "tags": [
+    {"label": "AI Security", "type": "a"},
+    {"label": "Agentic AI", "type": "w"}
+   ],
+   "body": "OpenAI rolled out new security controls for its AI systems, a move Dark Reading frames as a follow-up to last month's incident involving Hugging Face. The report suggests some of the added protections arguably should have existed before autonomous, Agentic AI models were deployed with real-world reach. The update is part of a broader industry pattern of retrofitting guardrails onto AI agents only after an incident exposes a gap.",
+   "beginnerTip": "When AI vendors add security controls reactively -- after an incident rather than before deployment -- it's a sign the industry is still catching up to the risks of giving AI systems real autonomy. If you deploy AI agents in your own environment, don't assume vendor-side guardrails alone are sufficient; add your own permission boundaries too."
+  },
+  {
+   "headline": "Volunteer push grows to help under-resourced local governments defend against cyberattacks",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/cyber-risk/cyber-pros-help-city-hall",
+   "tags": [
+    {"label": "Public Sector", "type": "a"},
+    {"label": "Workforce Gap", "type": "g"}
+   ],
+   "body": "Dark Reading reports on efforts to recruit volunteer cybersecurity professionals to help defend municipal and other local government agencies that operate with far smaller security budgets than federal counterparts or private industry. Small government IT teams are common targets for ransomware and other attacks but often lack the staff or funding to build a dedicated security program. Community and volunteer initiatives are positioned as one way to help close that gap in the near term.",
+   "beginnerTip": "Local governments -- cities, counties, school districts -- are frequent ransomware targets because they often run critical services on thin IT budgets with little dedicated security staff. Efforts to bring in volunteer expertise reflect a real, ongoing resource gap at the local level, not just at federal agencies."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "ok",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com/news/microsoft-maximum-severity-flaw-entra-id-exploitation/828501/",
+   "text": "Microsoft confirmed its maximum-severity Entra ID remote-code-execution flaw was exploited in the wild but says the issue is fully mitigated in its cloud infrastructure and requires no action from customers."
+  },
+  {
+   "color": "warn",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/encrypted-prompts-bypass-ai-safety-guardrails-in-grok-and-gemini/",
+   "text": "Researchers say a Cryptographic Context Injection technique can hide malicious instructions in encrypted prompts to bypass AI safety guardrails in both xAI's Grok and Google's Gemini."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+   "text": "A new malware family is spreading through built-in updaters on Android-based vehicle head units to enable ad fraud and build a proxy botnet, Kaspersky reports."
+  },
+  {
+   "color": "accent",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/former-nsa-director-paul-nakasone-launches-national-security-advisory-firm/",
+   "text": "Former NSA Director Paul Nakasone has launched the Nakasone Group, a new advisory firm counseling government and corporate clients on cybersecurity and national-security risk."
+  },
+  {
+   "color": "accent",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denies-ai-caused-bug/",
+   "text": "SecurityWeek's weekly roundup covers a 'zombie card' payment attack, T-Mobile reportedly cutting a cable to stop hackers, and GitHub denying that AI caused a recent bug."
+  }
+ ],
+ "analystFooter": "Rotate any AWS credentials that may have ever touched a public repo or CI log given today's 9,300-key exposure report, treat unexpected Teams login prompts and passkey-registration requests with suspicion given active phishing and toolkit abuse, and audit recently added npm dependencies against the trojanized RedC2-dropping packages."
+}

@@ -66,6 +66,12 @@
   "e": "HelloExecutor and the Rust-based HelloBackdoor let the HelloNet operators run commands and move files long after the initial infection (July 2026)."
  },
  {
+  "t": "Banking Trojan",
+  "c": "Malware",
+  "d": "A type of malware disguised as something legitimate that is built specifically to steal online banking credentials, session data, or funds once it infects a device. It often waits quietly until the victim opens a banking app or site before activating.",
+  "e": "The Grandoreiro banking trojan resurfaced in a new campaign targeting bank customers across Latin America and Europe in August 2026."
+ },
+ {
   "t": "Binding Operational Directive (BOD)",
   "c": "Regulatory",
   "d": "A compulsory order issued by CISA that requires U.S. federal civilian agencies to take a specific security action, such as patching a dangerous flaw by a set deadline. Though only binding on federal agencies, BODs are widely treated as a signal that private organizations should act too.",
@@ -202,6 +208,12 @@
   "c": "Vulnerability",
   "d": "A web flaw where a site runs attacker-supplied code (usually JavaScript) because it displayed untrusted input without cleaning it first. The malicious code then runs in the victim's browser with the trust of that site.",
   "e": "In July 2026, the Russian group Laundry Bear exploited a Cross-Site Scripting (XSS) bug in Microsoft Exchange OWA (CVE-2026-42897) so that merely viewing a crafted email ran their code."
+ },
+ {
+  "t": "Cryptographic Context Injection",
+  "c": "Threat/Actor",
+  "d": "An attack technique that hides malicious instructions inside encrypted or obfuscated content so security filters can't recognize them, only revealing the hidden commands once the target system decrypts or processes the content internally. It has been used to smuggle instructions past AI chatbot safety guardrails.",
+  "e": "Researchers showed a Cryptographic Context Injection technique could bypass safety guardrails in both Grok and Gemini by hiding attacker instructions inside encrypted prompt content."
  },
  {
   "t": "Cryptojacking",
@@ -376,6 +388,12 @@
   "c": "Vulnerability",
   "d": "A small piece of existing, legitimate code that an attacker strings together with others to build an exploit — like assembling a weapon from spare parts already lying around.",
   "e": "Attackers reached ServiceNow code execution via a different sandbox-escape gadget than the researchers' published one, so signature-based blocks on the original PoC miss it."
+ },
+ {
+  "t": "GAO",
+  "c": "Regulatory",
+  "d": "The Government Accountability Office is a nonpartisan U.S. federal watchdog agency that investigates how government agencies spend money and use their authority, then reports its findings to Congress. It has no enforcement power itself, but its reports often shape future oversight and legislation.",
+  "e": "In August 2026, lawmakers asked the GAO to review how federal agencies use spyware and other hacking tools against Americans."
  },
  {
   "t": "GDPR",
