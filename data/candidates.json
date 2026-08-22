@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21T13:28:50.805077+00:00",
+ "generated": "2026-08-22T13:07:04.187907+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,7 +11,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 11,
+   "count": 3,
    "error": null
   },
   {
@@ -23,19 +23,19 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 7,
+   "count": 5,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 7,
+   "count": 3,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -65,263 +65,151 @@
  ],
  "items": [
   {
+   "source": "BleepingComputer",
+   "title": "Named Pipes Under Attack: Securing Windows Interprocess Communication",
+   "url": "https://www.bleepingcomputer.com/news/security/named-pipes-under-attack-securing-windows-interprocess-communication/",
+   "published": "2026-08-22T13:00:09+00:00",
+   "summary": "Windows named pipes provide fast interprocess communication, but weak access controls can expose privileged services to untrusted processes. ThreatLocker explains how endpoint verification, command authorization, strict input validation, and narrowly scoped privileges can help secure named-pipe communication. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Banking Trojans Manic, Grandoreiro, ToxicPanda 2.0 in the Spotlight",
+   "url": "https://www.securityweek.com/banking-trojans-manic-grandoreiro-toxicpanda-2-0-in-the-spotlight/",
+   "published": "2026-08-22T08:30:00+00:00",
+   "summary": "The spyware-equipped Manic, a persistent Grandoreiro campaign in Latin America and Europe, and an expanded ToxicPanda 2.0 malware. The post Banking Trojans Manic, Grandoreiro, ToxicPanda 2.0 in the Spotlight appeared first on SecurityWeek ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Apollo discloses data breach from ongoing wave of attacks hitting financial sector",
+   "url": "https://cyberscoop.com/apollo-discloses-data-breach-social-engineering-attack/",
+   "published": "2026-08-21T19:14:28+00:00",
+   "summary": "The private equity firm said attackers broke into some of its cloud platforms during a five-day period in early July, compromising sensitive personal data. The post Apollo discloses data breach from ongoing wave of attacks hitting financial sector appeared first on CyberScoop ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
+   "url": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+   "published": "2026-08-21T18:53:00+00:00",
+   "summary": "Cybersecurity researchers have discovered a set of trojanized npm packages that masquerade as working calendar and streak utilities but are engineered to stealthily deliver an artificial intelligence (AI)-powered Linux implant dubbed RedC2 4.0. \"When the module loads, it locates the bundled binary, marks it executable, and launches it as a detached background process,\" TrendAI, Trend Micro's"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "New SynkLoader malware pushed in Microsoft Teams phishing campaign",
+   "url": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
+   "published": "2026-08-21T18:01:30+00:00",
+   "summary": "A previously unknown malware family dubbed SynkLoader is being distributed in Microsoft Teams phishing campaigns to steal credentials via a fake lock screen. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "OWASP Flags Top AI Skill Risks in New Security Blueprint",
+   "url": "https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint",
+   "published": "2026-08-21T17:36:53+00:00",
+   "summary": "The Open Worldwide Application Security Project has a brand-new top 10 security list tailored for the modern era, and it debuts a Universal Skill Format to add consistency and security to the AI add-ons."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Former NSA Director Paul Nakasone Launches National Security Advisory Firm",
+   "url": "https://www.securityweek.com/former-nsa-director-paul-nakasone-launches-national-security-advisory-firm/",
+   "published": "2026-08-21T16:27:52+00:00",
+   "summary": "The newly-formed Nakasone Group will counsel government leaders, corporations, prominent families, and other private clients confronting cybersecurity, geopolitical, and personal security risks. The post Former NSA Director Paul Nakasone Launches National Security Advisory Firm appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Hundreds of leaked AWS keys give full control over corporate accounts",
+   "url": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
+   "published": "2026-08-21T15:55:15+00:00",
+   "summary": "More than 9,300 Amazon Web Services (AWS) access keys publicly exposed between August 2022 and August 2026 are still active and valid. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
+   "url": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
+   "published": "2026-08-21T15:52:10+00:00",
+   "summary": "Check Point Research has disclosed a technique that uses Microsoft Defender's own legitimately signed boot-time remediation driver to perform arbitrary kernel-level file and registry operations on Windows systems ranging from Windows 7 through Windows 11 25H2, with no software flaw exploited and no driver imported from outside the machine. The driver, BTR.sys (Boot Time Removal Tool), is a"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
+   "url": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+   "published": "2026-08-21T15:41:44+00:00",
+   "summary": "Cybersecurity researchers have flagged a new malware family that's specifically designed to infect Android-based vehicle head unit firmware developed by DoFun. Kaspersky, which discovered the threat in June 2026, said the end goal of the malware is to serve a multi-stage downloader to enable ad fraud and creation of a proxy botnet. \"The malware spread through the built-in updaters of"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "In Other News: Zombie Card Attack, T-Mobile Cut Cable to Stop Hackers, GitHub Denies AI Caused Bug",
+   "url": "https://www.securityweek.com/in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denies-ai-caused-bug/",
+   "published": "2026-08-21T15:11:16+00:00",
+   "summary": "Other noteworthy stories that might have slipped under the radar: Threema DDoS attack, Evooo1Bot Linux botnet, Crypto4A secures top-tier NIST certification. The post In Other News: Zombie Card Attack, T-Mobile Cut Cable to Stop Hackers, GitHub Denies AI Caused Bug appeared first on SecurityWeek ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Lawmakers seek watchdog review of federal hacking of Americans",
+   "url": "https://cyberscoop.com/watchdog-review-federal-government-hacking-americans/",
+   "published": "2026-08-21T15:05:33+00:00",
+   "summary": "Sen. Ron Wyden and Rep. Greg Casar want a GAO probe on the government’s use of spyware and other sophisticated hacking tools and authorities. The post Lawmakers seek watchdog review of federal hacking of Americans appeared first on CyberScoop ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft blames Windows gaming issues on RGB lighting devices",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/",
+   "published": "2026-08-21T14:54:49+00:00",
+   "summary": "Microsoft says ongoing issues causing games to crash or fail to launch after installing the August 2026 Windows updates may be caused by peripherals with RGB lighting. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Microsoft confirms maximum severity flaw in Entra ID targeted for exploitation",
+   "url": "https://www.cybersecuritydive.com/news/microsoft-maximum-severity-flaw-entra-id-exploitation/828501/",
+   "published": "2026-08-21T14:54:27+00:00",
+   "summary": "The company said the remote-code execution vulnerability has been fully mitigated and no further action is necessary."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Encrypted Prompts Bypass AI Safety Guardrails in Grok and Gemini",
+   "url": "https://www.securityweek.com/encrypted-prompts-bypass-ai-safety-guardrails-in-grok-and-gemini/",
+   "published": "2026-08-21T14:34:05+00:00",
+   "summary": "Researchers say the new ‘Cryptographic Context Injection’ technique conceals malicious instructions until they are decrypted inside a trusted execution environment. The post Encrypted Prompts Bypass AI Safety Guardrails in Grok and Gemini appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Defense contractors’ CMMC confidence lags, even as self-assessments improve",
+   "url": "https://www.cybersecuritydive.com/news/defense-contractors-cmmc-cybersecurity-confidence-gap/828494/",
+   "published": "2026-08-21T14:24:07+00:00",
+   "summary": "A confidence disconnect is plaguing the industry, a consulting firm said."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "New Phishing Toolkit Uses Passkeys to Maintain Access After Password Resets",
+   "url": "https://www.securityweek.com/new-phishing-toolkit-uses-passkeys-to-maintain-access-after-password-resets/",
+   "published": "2026-08-21T14:22:06+00:00",
+   "summary": "Researchers say iAuthFlow V2 can register an attacker-controlled passkey, enabling persistent access even after passwords are changed and active sessions revoked. The post New Phishing Toolkit Uses Passkeys to Maintain Access After Password Resets appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Is Online Privacy Possible? How Digital Identities Can Help",
+   "url": "https://www.bleepingcomputer.com/news/security/is-online-privacy-possible-how-digital-identities-can-help/",
+   "published": "2026-08-21T14:00:10+00:00",
+   "summary": "Using the same email, phone number, payment method, and other identifiers makes it easier for data brokers and attackers to profile your activity. Anonyome Labs explains how separate digital personas can reduce correlation and limit the impact of breaches, spam, and identity theft. [...]"
+  },
+  {
    "source": "Dark Reading",
    "title": "Calling on Cyber Pros to Help Defend City Hall",
-   "url": "https://www.darkreading.com/cyber-risk/calling-on-cyber-pros-to-help-city-hall",
+   "url": "https://www.darkreading.com/cyber-risk/cyber-pros-help-city-hall",
    "published": "2026-08-21T14:00:00+00:00",
    "summary": "Government agencies with smaller budgets need support — and here's how you can help."
   },
   {
-   "source": "SecurityWeek",
-   "title": "Critical Isolated-vm Vulnerability Leads to RCE on Host",
-   "url": "https://www.securityweek.com/critical-isolated-vm-vulnerability-leads-to-rce-on-host/",
-   "published": "2026-08-21T12:26:07+00:00",
-   "summary": "The type confusion bug can lead to V8 sandbox escape and control-flow hijacking of the host process. The post Critical Isolated-vm Vulnerability Leads to RCE on Host appeared first on SecurityWeek ."
-  },
-  {
    "source": "BleepingComputer",
-   "title": "CISA orders feds to patch actively exploited TrueConf Server flaws",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/",
-   "published": "2026-08-21T12:25:33+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) ordered U.S. federal agencies to prioritize patching two actively exploited vulnerabilities in the TrueConf Server self-hosted communications platform. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Wazuh and AI For Enhanced SOC Workflows",
-   "url": "https://thehackernews.com/2026/08/wazuh-and-ai-for-enhanced-soc-workflows.html",
-   "published": "2026-08-21T11:21:39+00:00",
-   "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has experienced a similar transformation. While attackers employ AI to automate"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft warns of max severity Entra ID flaw exploited in attacks",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/",
-   "published": "2026-08-21T11:04:10+00:00",
-   "summary": "Microsoft has patched a maximum-severity vulnerability in the Entra ID identity and access management (IAM) platform that has been exploited in attacks. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers abuse FTP server banners to deliver new Windows malware",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-ftp-server-banners-to-deliver-new-windows-malware/",
-   "published": "2026-08-21T11:00:00+00:00",
-   "summary": "Threat actors are abusing FTP banners to hide commands that deliver two previously undocumented remote access trojans named E4del and PINHOLE. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "SickKids data breach exposes employee and job applicant info",
-   "url": "https://www.bleepingcomputer.com/news/security/sickkids-data-breach-exposes-employee-and-job-applicant-info/",
-   "published": "2026-08-21T10:10:42+00:00",
-   "summary": "Toronto's Hospital for Sick Children (SickKids) says a cybersecurity incident exposed the personal information of some current and former employees and job applicants, stemming from a flaw in third-party software. Clinical systems and patient records were not affected. (264) [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0",
-   "url": "https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html",
-   "published": "2026-08-21T10:03:11+00:00",
-   "summary": "Cisco has published another round of security updates for Crosswork platforms and Secure Workload Software as part of a continued comprehensive internal security review. Four of the security vulnerabilities affect Crosswork Data Gateway, Crosswork Network Controller, and Crosswork Planning, regardless of the device configuration. A brief description of each of the flaws is below -"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Rust Supply Chain Attack Linked to North Korean Hackers",
-   "url": "https://www.securityweek.com/rust-supply-chain-attack-linked-to-north-korean-hackers/",
-   "published": "2026-08-21T09:23:18+00:00",
-   "summary": "Hackers pushed a poisoned arrayref version that added a dependency to fetch a malicious payload from a remote server. The post Rust Supply Chain Attack Linked to North Korean Hackers appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Contractors’ CMMC Confidence Rises as Ability to Prove It Falls Behind",
-   "url": "https://www.securityweek.com/contractors-cmmc-confidence-rises-as-ability-to-prove-it-falls-behind/",
-   "published": "2026-08-21T08:41:06+00:00",
-   "summary": "Two industry surveys released this week by Kiteworks and CyberSheath paint a consistent picture of the defense industrial base. The post Contractors' CMMC Confidence Rises as Ability to Prove It Falls Behind appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Microsoft Patches Exploited Entra ID Vulnerability",
-   "url": "https://www.securityweek.com/microsoft-rolls-out-22-fresh-security-patches/",
-   "published": "2026-08-21T08:12:19+00:00",
-   "summary": "A total of 22 patches were releaased, a majority for code execution, privilege escalation, and information disclosure vulnerabilities. The post Microsoft Patches Exploited Entra ID Vulnerability appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "CISA Urges Immediate Patching of Exploited TrueConf Vulnerabilities",
-   "url": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-trueconf-vulnerabilities/",
-   "published": "2026-08-21T07:25:50+00:00",
-   "summary": "The Head Mare hacktivist group has been exploiting the bugs to deploy the PhantomCore malware. The post CISA Urges Immediate Patching of Exploited TrueConf Vulnerabilities appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
-   "url": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
-   "published": "2026-08-21T07:04:25+00:00",
-   "summary": "A newly disclosed security flaw in GitLab has come under active exploitation within days of public disclosure, according to watchTowr. The vulnerability in question is CVE-2026-19478 (CVSS score: 9.4), a case of code injection that allows an unauthenticated attacker to modify or delete publicly accessible GitLab projects and rewrite their data under certain conditions without requiring"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
-   "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
-   "published": "2026-08-21T06:06:11+00:00",
-   "summary": "Microsoft on Thursday warned of a maximum-severity security flaw in Entra ID that it said has been exploited in the wild, but noted that no customer action is required. The vulnerability, tracked as CVE-2026-69836 (CVSS score: 10.0), is a case of remote code execution impacting the tech giant's cloud-based identity and access management service. It was previously called Azure Active Directory"
+   "title": "Microsoft rolls out Classic Outlook theme for New Outlook users",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/",
+   "published": "2026-08-21T13:39:35+00:00",
+   "summary": "Microsoft has started rolling out a Classic Outlook theme for users of Outlook on the web and the New Outlook for Windows. [...]"
   },
   {
    "source": "Dark Reading",
-   "title": "New CUSTODY Framework Constrains AI Agents Inside the Network",
-   "url": "https://www.darkreading.com/perimeter/new-custody-framework-constrains-ai-agents-inside-network",
-   "published": "2026-08-20T20:42:18+00:00",
-   "summary": "Enterprise cybersecurity expert Jake Williams joins the Dark Reading News Desk to explain why he decided to release his new agentic AI framework in the wake of the OpenAI attacks on Hugging Face."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
-   "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
-   "published": "2026-08-20T20:22:35+00:00",
-   "summary": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation. The affected releases are arrayref 0.3.10, internment 0.8.7, and append-only-vec 0.1.9, all published from the same owner"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
-   "url": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
-   "published": "2026-08-20T19:59:19+00:00",
-   "summary": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S. These clusters include UNC6293, UNC7005, and UNC5976. \"These clusters engage in persistent, adaptive"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "What We Missed: Delta Flight Disrupted With Wi-Fi Hack",
-   "url": "https://www.darkreading.com/cyber-risk/delta-flight-disrupted-wi-fi-hack",
-   "published": "2026-08-20T19:11:15+00:00",
-   "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, including some scary airplane security risks and the US government's newest hack back strategy."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Early 764 member sentenced to 77 years, longest prison term to date for a nihilistic violent extremist",
-   "url": "https://cyberscoop.com/764-member-sentenced-longest-prison-sentence-kyle-spitze/",
-   "published": "2026-08-20T18:34:23+00:00",
-   "summary": "Kyle Spitze led an offshoot of the violent extremist collective and victimized dozens of girls, coercing them to degrade themselves under threats of doxing and swatting. The post Early 764 member sentenced to 77 years, longest prison term to date for a nihilistic violent extremist appeared first on CyberScoop ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers poison arrayref Rust crate to push infostealer malware",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
-   "published": "2026-08-20T17:53:52+00:00",
-   "summary": "Hackers compromised the maintainer account behind the widely used Rust crate arrayref to introduce malware that executed on developers' systems during compilation. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "N-able Bug Exposes Password Vault Master Keys",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/n-able-bug-password-vault-master-keys",
-   "published": "2026-08-20T17:39:24+00:00",
-   "summary": "The popular Passportal password manager, favored by MSPs and SMBs, remains risky even after its patch, thanks to its cloud-based design. Should these products stay away from the cloud entirely?"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Money and Mindset: The Two Biggest Roadblocks to Cyber Policing",
-   "url": "https://www.darkreading.com/cybersecurity-operations/money-and-mindset-the-two-biggest-roadblocks-to-cyber-policing",
-   "published": "2026-08-20T17:32:51+00:00",
-   "summary": "Law enforcement training is not keeping pace with the volume and rapid evolution of cybercrimes, though officers really only need to learn the basics, but focus and budgets hinder progress."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit, and More",
-   "url": "https://thehackernews.com/2026/08/threatsday-gogs-100-rce-n8n-workflow-to.html",
-   "published": "2026-08-20T17:23:48+00:00",
-   "summary": "A lot of this week’s trouble starts with something trusted doing exactly what it was allowed to do. Signed drivers get turned against defenses. Legitimate apps help malware blend in. A weak header check opens a path to code execution. Elsewhere, exposed systems, old bugs, odd hiding tricks, and AI-assisted exploit research keep lowering the effort needed to cause damage. Nothing here needs"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "AI-Generated Exploit Scripts Target Siemens S7 PLCs in U.S. Critical Infrastructure",
-   "url": "https://thehackernews.com/2026/08/ai-generated-exploit-scripts-target.html",
-   "published": "2026-08-20T16:59:44+00:00",
-   "summary": "The U.S. government on Wednesday warned of an \"active threat\" targeting critical infrastructure organizations in the country using artificial intelligence (AI)-generated exploit scripts. The activity is targeting Siemens S7 SeriesProgrammable Logic Controllers (PLCs) to conduct reconnaissance and capability development using AI-generated scripts disguised as legitimate monitoring tools. That"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Retail theft bill spurs ‘very large and very dangerous’ surveillance fears",
-   "url": "https://cyberscoop.com/corca-retail-theft-bill-ice-surveillance/",
-   "published": "2026-08-20T15:27:24+00:00",
-   "summary": "The Combating Organized Retail Crime Act has won a big House vote and could be on the fast track in the Senate — and supporters say it could help fight cybercrime. The post Retail theft bill spurs ‘very large and very dangerous’ surveillance fears appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Pakistan's Transparent Tribe Refreshes Toolset for Afghan Cyberattacks",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/pakistan-transparent-tribe-afghan-cyberattacks",
-   "published": "2026-08-20T14:59:22+00:00",
-   "summary": "A nation-state threat actor is picking on immature organizations run by the Taliban, but failing against more prepared government agencies in India."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Hackers Target Zimbra Servers in Active Exploitation Campaign",
-   "url": "https://www.securityweek.com/hackers-target-zimbra-servers-in-active-exploitation-campaign/",
-   "published": "2026-08-20T14:50:49+00:00",
-   "summary": "Exploitation of the Zimbra Collaboration vulnerability CVE-2026-73570 has been observed by Poland’s CERT Polska. The post Hackers Target Zimbra Servers in Active Exploitation Campaign appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Fitch explains how water, healthcare organizations can keep strong credit ratings despite cyberattacks",
-   "url": "https://www.cybersecuritydive.com/news/water-healthcare-cyberattacks-credit-ratings-fitch/828384/",
-   "published": "2026-08-20T14:45:43+00:00",
-   "summary": "Resilience, not prevention, is key, analysts at the credit-rating agency said in a pair of new reports."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Critical Elementor Pro bug exposes WordPress sites to RCE attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/critical-elementor-pro-bug-exposes-wordpress-sites-to-rce-attacks/",
-   "published": "2026-08-20T14:39:48+00:00",
-   "summary": "A critical vulnerability in the Elementor Pro WordPress plugin could allow attackers to upload executable files for remote code execution on the server. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "New Cryptographic Context Injection Attack Could Let Web Pages Steal Grok Chat Data",
-   "url": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
-   "published": "2026-08-20T14:36:27+00:00",
-   "summary": "Adversa AI has disclosed an attack technique that it says can cause xAI's Grok chatbot to send a user's name, approximate location, subscription tier, and the prompts from the ongoing conversation to an attacker-controlled server after the user asks it to summarize an ordinary web page. The AI security company, which has codenamed the technique \"Cryptographic Context Injection,\" said the"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Surveillance – Everything You Wanted to Know, But Were Afraid to Ask",
-   "url": "https://www.securityweek.com/surveillance-everything-you-wanted-to-know-but-were-afraid-to-ask/",
-   "published": "2026-08-20T14:30:00+00:00",
-   "summary": "We all know they’re watching us. But we don’t know who they are, nor why nor how they are doing it. The post Surveillance – Everything You Wanted to Know, But Were Afraid to Ask appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "What we know so far about the hacking campaign against US water systems",
-   "url": "https://www.cybersecuritydive.com/news/what-we-know-so-far-about-the-hacking-campaign-against-us-water-systems/828374/",
-   "published": "2026-08-20T14:07:09+00:00",
-   "summary": "Support is growing for stricter oversight and increased financial resources for utilities in the wake of a cyberattack spree, suspected to be the work of Iran-linked threat groups."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "How MSPs can catch phishing attacks email filters miss",
-   "url": "https://www.bleepingcomputer.com/news/security/how-msps-can-catch-phishing-attacks-email-filters-miss/",
-   "published": "2026-08-20T14:01:11+00:00",
-   "summary": "AI is making phishing attacks more personalized, convincing, and difficult for traditional email filters to detect. Kaseya explains how MSPs can monitor identity, email, and endpoint activity to detect and contain attacks that make it past the inbox. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE",
-   "url": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
-   "published": "2026-08-20T13:48:24+00:00",
-   "summary": "Cybersecurity researchers have disclosed a critical security flaw in isolated-vm, a popular open-source sandbox with more than 2,900 stars and 190 forks on GitHub, that could allow attackers to escape the confines of the isolated environment. The vulnerability (\"GHSA-864f-rcv7-6rh4\"), which has yet to be assigned a CVE identifier, impacts all versions of the library before and including 7.0.0."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
-   "url": "https://thehackernews.com/2026/08/critical-netscaler-flaw-can-bypass.html",
-   "published": "2026-08-20T13:35:13+00:00",
-   "summary": "Citrix has released updates to address two security flaws impacting NetScaler ADC and NetScaler Gateway deployments, including a critical-severity authentication bypass vulnerability. According to the cloud computing and virtualization technology company, the issues affect customer-managed NetScaler ADC and NetScaler Gateway, including certain FIPS and NDcPP builds, as well as SecurAccess"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "The push to designate AI as the next critical infrastructure sector",
-   "url": "https://cyberscoop.com/ai-critical-infrastructure-designation-cisa-report/",
-   "published": "2026-08-20T13:31:17+00:00",
-   "summary": "The designation would unlock a range of federal services, tools and resources for an industry that policymakers view as increasingly tied to national and economic security. The post The push to designate AI as the next critical infrastructure sector appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "'Grandoreiro' Malware Resurfaces With Mexico Campaign",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/grandoreiro-resurfaces-mexico-campaign",
-   "published": "2026-08-20T13:30:00+00:00",
-   "summary": "The banking Trojan, post-law enforcement takedown, is sprucing itself up with features that make detection and analysis harder."
+   "title": "OpenAI Adds Controls That Should've Been There Already",
+   "url": "https://www.darkreading.com/application-security/openai-adds-controls-already",
+   "published": "2026-08-21T13:30:00+00:00",
+   "summary": "The new AI security controls follow the Hugging Face incident last month, though many of these additions perhaps should have been in place prior to the frontier models escaping."
   }
  ]
 }
