@@ -702,6 +702,12 @@
   "e": "UTA0533 injected Suo5, an open-source HTTP proxy, into a legitimate SonicWall process and reached it at /workplace/error.jsp (July 2026)."
  },
  {
+  "t": "Q-Day",
+  "c": "Cryptography",
+  "d": "The anticipated future date when quantum computers become powerful enough to break the public-key encryption that protects today's internet traffic, banking, and government secrets. Nobody knows exactly when it will arrive, so migration to quantum-resistant algorithms is happening years in advance.",
+  "e": "In August 2026, US senators introduced the Quantum-GUARD Act to prepare the electric grid for Q-Day by pushing utilities toward post-quantum cryptography."
+ },
+ {
   "t": "QUIC",
   "c": "Network",
   "d": "A modern internet transport protocol, used by HTTP/3, that runs over UDP and encrypts nearly everything to make connections faster and more private than classic TCP. That same heavy encryption makes malicious traffic hidden inside QUIC hard for security tools to inspect.",
@@ -748,6 +754,12 @@
   "c": "Network",
   "d": "A standard machine-to-machine web interface: programs send structured HTTP requests to defined \"routes\" (URLs) instead of clicking through pages.",
   "e": "WordPress's REST API batch route could be confused about which internal handler should process a request — the first half of wp2shell."
+ },
+ {
+  "t": "Reverse Proxy",
+  "c": "Network",
+  "d": "A server that sits between users and a real website, forwarding traffic in both directions. Legitimate ones balance load and add security, but attackers use malicious reverse proxies to silently relay a victim's login to the real site while capturing everything typed.",
+  "e": "In August 2026, the Mirage2FA phishing service used an adversary-in-the-middle reverse proxy to relay victims' Microsoft 365 logins in real time, capturing credentials and session cookies together."
  },
  {
   "t": "Reverse Shell",
@@ -820,6 +832,12 @@
   "c": "Vulnerability",
   "d": "A flaw that tricks a server into making network requests chosen by the attacker. Because the request comes from the trusted server, it can reach internal systems the attacker could never contact directly.",
   "e": "In July 2026, CVE-2026-15409 in SonicWall SMA1000 appliances — rated CVSS 10.0 — let unauthenticated attackers force the appliance to send requests to unintended internal locations."
+ },
+ {
+  "t": "Session Cookie",
+  "c": "General",
+  "d": "A small token your browser stores after you log in, proving to the website that you're already authenticated so you don't have to re-enter your password on every page. If an attacker steals it, they can impersonate you without knowing your password or passing MFA.",
+  "e": "In August 2026, the Mirage2FA phishing kit stole authenticated Microsoft 365 session cookies from roughly 4,500 companies, letting attackers walk straight into accounts despite two-factor authentication."
  },
  {
   "t": "Setuid Binary",

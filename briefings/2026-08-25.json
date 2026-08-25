@@ -1,0 +1,281 @@
+{
+ "leadStory": {
+  "headline": "CISA gives agencies 72 hours to patch max-severity Oracle WebLogic flaw exploited since January",
+  "source": "The Hacker News",
+  "sourceUrl": "https://thehackernews.com",
+  "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
+  "tags": [
+   {
+    "label": "CVSS 10.0",
+    "type": "d"
+   },
+   {
+    "label": "KEV",
+    "type": "d"
+   },
+   {
+    "label": "Actively Exploited",
+    "type": "d"
+   }
+  ],
+  "body": "CISA added CVE-2026-21962, a maximum-severity (CVSS 10.0) vulnerability in Oracle HTTP Server and the Oracle WebLogic Server Proxy Plug-in, to its KEV catalog on August 24 and ordered federal agencies to patch by August 27 — an unusually short 72-hour deadline. The flaw lets an unauthenticated attacker — someone with no username or password — reach the server over plain HTTP and read or modify critical data. Exploitation has been underway since at least January 22, when honeypots run by CloudSEK caught attacks starting immediately after a proof-of-concept exploit was published.",
+  "beginnerTip": "The <strong>KEV</strong> (Known Exploited Vulnerabilities) catalog is CISA's list of flaws criminals are actively using right now — not just theoretical bugs. When something lands on KEV with a 3-day deadline instead of the usual 3 weeks, that's the government's way of saying attackers are already inside networks through this hole."
+ },
+ "cves": [
+  {
+   "headline": "Over 270 Zimbra mail servers breached through SNMP flaw CVE-2026-73570",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch",
+   "tags": [
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "RCE",
+     "type": "d"
+    }
+   ],
+   "body": "Shadowserver has found more than 270 compromised Zimbra Collaboration Suite instances while scanning for artifacts of CVE-2026-73570, a flaw that lets attackers execute arbitrary commands on servers with SNMP notifications enabled — the default in vulnerable versions. Zimbra disclosed the bug on June 26 and shipped a fix in ZCS 10.1.20 on July 20, but CERT Polska flagged an active exploitation campaign on August 16, and CISA added it to the KEV catalog on August 21 with a three-day patch deadline. A successful attack gives full takeover of a victim's email and communications.",
+   "beginnerTip": "<strong>SNMP</strong> (Simple Network Management Protocol) is a background service that lets admins monitor servers remotely. Features that are on by default — even ones you never use — are still part of your attack surface."
+  },
+  {
+   "headline": "Attackers probe miniOrange SAML plugin flaws that forge WordPress admin logins",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-target-wordpress-sites-in-miniorange-auth-bypass-attacks/",
+   "tags": [
+    {
+     "label": "Auth Bypass",
+     "type": "d"
+    },
+    {
+     "label": "Exploitation Attempts",
+     "type": "w"
+    }
+   ],
+   "body": "Hackers are attempting to exploit two critical authentication bypass flaws, CVE-2026-61979 and CVE-2026-15981, in the miniOrange SAML 2.0 Single Sign On plugin for WordPress. The first lets an attacker downgrade the signature algorithm to HMAC-SHA1 and forge a SAML response the plugin accepts as authentic; the second makes the plugin treat an OpenSSL verification error as success, so malformed signatures pass validation. Chained together they let anyone log in as any user, including administrators. Fixes shipped in July, but Patchstack notes the vendor's advisory only covered the free edition, leaving users of the six paid editions unaware they needed to update.",
+   "beginnerTip": "<strong>SAML</strong> is a standard that lets one login (like your company account) work across many websites — single sign-on. If the software that checks those login 'tickets' is broken, an attacker can print their own ticket."
+  },
+  {
+   "headline": "Unpatched Calix router flaw lets anyone on the internet punch holes into home networks",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/",
+   "tags": [
+    {
+     "label": "No Patch",
+     "type": "w"
+    },
+    {
+     "label": "Unauthenticated",
+     "type": "d"
+    }
+   ],
+   "body": "CVE-2026-75501, a missing-authentication flaw in Calix GS7 XGS (GS5239XG) residential routers used by multiple US broadband providers, lets remote unauthenticated attackers create port-forwarding rules on the device. The router exposes its UPnP WANIPConnection service on the public internet-facing interface on TCP port 5000, so anyone online can instruct it to forward traffic to devices inside the home — exposing cameras, NAS drives, and other IoT gear that were never meant to be reachable from outside. No firmware fix is available yet; the recommended mitigation is disabling UPnP in the router settings, or asking your ISP to do it if the setting is locked.",
+   "beginnerTip": "<strong>NAT</strong> (Network Address Translation) is what normally hides your home devices behind one public address, acting as an accidental firewall. This bug lets outsiders reach around it — a reminder that ISP-supplied routers deserve scrutiny too."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "ShinyHunters phishes ReliaQuest employee, but device-trust controls contain the breach",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/reliaquest-confirms-shinyhunters-hack-but-says-impact-was-limited/",
+   "tags": [
+    {
+     "label": "ShinyHunters",
+     "type": "w"
+    },
+    {
+     "label": "Social Engineering",
+     "type": "w"
+    }
+   ],
+   "body": "Security firm ReliaQuest confirmed that the ShinyHunters extortion group tricked one of its employees on August 22 using voice calls impersonating the company's own security team, a lookalike domain, and a cloned single sign-on page. The employee entered a password and approved an MFA push, handing attackers a valid session on the company's identity dashboard. ReliaQuest says the damage stopped there: untrusted devices could not reach applications regardless of valid credentials, and no systems or customer data were accessed. ShinyHunters posted screenshots of the compromised Okta view to claim a bigger win than it got.",
+   "beginnerTip": "This is <strong>Zero Trust</strong> working as designed — a stolen password plus an approved MFA prompt still wasn't enough, because the attacker's device wasn't recognized. Layers matter precisely because humans sometimes get fooled."
+  },
+  {
+   "headline": "Mirage2FA phishing service compromises accounts at 4,500 US and EU companies",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html",
+   "tags": [
+    {
+     "label": "PhaaS",
+     "type": "d"
+    },
+    {
+     "label": "MFA Bypass",
+     "type": "d"
+    }
+   ],
+   "body": "ANY.RUN researchers detailed Mirage2FA, a commercial Phishing-as-a-Service (PhaaS) kit active since September 2024 that has potentially compromised about 4,500 of the 9,400 corporate Microsoft 365 accounts it targeted — roughly a 48% success rate across 94 countries, with most victims in the US. The kit works as an Adversary-in-the-Middle (AitM) reverse proxy: the victim types their real password and one-time code into a fake page, Mirage2FA relays them to Microsoft in real time over a WebSocket channel, and the attacker walks away with both the credentials and the authenticated session cookie. Because it steals the session itself, conventional MFA offers little protection.",
+   "beginnerTip": "A <strong>session cookie</strong> is the token your browser holds after login so you don't re-enter your password on every click. Steal it and you ARE the victim, no password or MFA needed — which is why phishing-resistant methods like passkeys matter."
+  },
+  {
+   "headline": "Iran-linked hackers knocked a UK power facility offline for four days",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/uk-power-facility-disabled-Iran-cyberattack/828599/",
+   "tags": [
+    {
+     "label": "Iran-nexus",
+     "type": "d"
+    },
+    {
+     "label": "Critical Infrastructure",
+     "type": "d"
+    }
+   ],
+   "body": "UK officials confirmed that a small power facility was forced offline for four days in July by a cyberattack attributed to Iran-nexus hackers — believed to be the first time an Iran-linked group has fully shut down a UK power site. The incident was contained to one facility with no wider grid impact, but it coincided with a coordinated wave of attacks on more than 30 US community water utilities and a broader campaign against vulnerable industrial devices in the water and energy sectors. The UK government has briefed energy company CEOs on hardening steps.",
+   "beginnerTip": "Attacks on <strong>Operational Technology</strong> — the computers that control physical equipment like turbines and pumps — are rarer than data theft but far scarier, because the impact is measured in outages, not leaked records."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "TikTok to pay $400M in DOJ settlement over children's privacy violations",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/legal/tiktok-reaches-400m-settlement-with-us-over-coppa-violations/",
+   "tags": [
+    {
+     "label": "COPPA",
+     "type": "a"
+    },
+    {
+     "label": "$400M",
+     "type": "a"
+    }
+   ],
+   "body": "The Justice Department announced a $400 million settlement with TikTok and parent ByteDance over allegations they violated COPPA by letting millions of children under 13 use the platform, collecting their personal data without parental consent, and ignoring parents' deletion requests. TikTok pays $300 million up front and $100 million once a prior consent decree against predecessor Musical.ly is vacated. Beyond the money — one of the largest recoveries ever under federal child privacy law — the deal requires stronger age controls and expanded parental oversight tools.",
+   "beginnerTip": "<strong>COPPA</strong> (Children's Online Privacy Protection Act) is the 1998 US law requiring verifiable parental consent before collecting personal data from kids under 13. Regulators increasingly treat 'we didn't know they were kids' as no defense."
+  },
+  {
+   "headline": "Treasury sanctions Mabna Institute hackers in 'economic D-Day' against Iran",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/us-treasury-sanctions-iranian-hackers-economic-dday/",
+   "tags": [
+    {
+     "label": "Sanctions",
+     "type": "a"
+    },
+    {
+     "label": "Iran",
+     "type": "w"
+    }
+   ],
+   "body": "As part of what Treasury Secretary Scott Bessent called an 'economic D-Day' against Iran, the Treasury Department sanctioned Iranians tied to the Mabna Institute, a hacking-for-hire outfit that has worked for the Iranian regime for years. The move follows last week's Justice Department indictment of 17 Mabna-affiliated individuals accused of intrusions at 144 US universities, 178 foreign universities, and at least 42 US companies since 2013, alongside attacks on critical infrastructure. Sanctions freeze US assets and make it a crime for US entities to transact with the designated individuals.",
+   "beginnerTip": "Sanctions and indictments rarely lead to arrests when hackers stay in their home country, but they raise the cost of the trade — travel becomes risky, money becomes harder to move, and front companies get exposed."
+  },
+  {
+   "headline": "Bipartisan Quantum-GUARD Act would push the electric grid to prepare for Q-Day",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/quantum-guard-act-electric-grid-cybersecurity/",
+   "tags": [
+    {
+     "label": "Legislation",
+     "type": "a"
+    },
+    {
+     "label": "Post-Quantum",
+     "type": "a"
+    }
+   ],
+   "body": "Senators Chris Coons and Mike Rounds introduced the Quantum-GUARD Act, which would direct FERC to weigh quantum computing threats when reviewing reliability standards for electric utilities and to explore Post-Quantum Cryptography in both IT and OT systems. The bill also establishes a Department of Energy testing environment for post-quantum adoption and orders a study of vulnerabilities across the bulk electric power system. It fits the federal push to migrate government systems to quantum-resistant encryption by 2030, ahead of Q-Day — the point when quantum computers can break today's encryption.",
+   "beginnerTip": "The worry isn't just future decryption — it's <strong>harvest now, decrypt later</strong>: adversaries stealing encrypted data today to unlock once quantum computers mature. That's why migration is starting years before Q-Day arrives."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "First malware built specifically for car head units feeds the BadBox botnet",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/first-malware-built-specifically-for-car-head-units-fuels-botnet/",
+   "tags": [
+    {
+     "label": "Botnet",
+     "type": "w"
+    },
+    {
+     "label": "Automotive",
+     "type": "a"
+    }
+   ],
+   "body": "Kaspersky documented the first malware campaign purpose-built for vehicle head units — the Android-powered dashboard screens handling navigation and media. Attackers abused the software-update mechanism of aftermarket DoFun units popular in China and APAC to deliver multi-stage malware, which downloads a reverse proxy module that routes strangers' traffic through the car's internet connection. Researchers attribute the activity to MoYu Group, tied to the BadBox botnet of millions of factory-infected Android streaming boxes, phones, and tablets used for ad fraud and illegal proxy relays.",
+   "beginnerTip": "A <strong>botnet</strong> is a swarm of hijacked devices remotely controlled by criminals. Your car joining one doesn't mean someone can steer it — head units are usually isolated from driving controls — but it does mean your connection may be relaying someone else's crimes."
+  },
+  {
+   "headline": "AI is finding vulnerabilities faster than anyone can fix them",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-gap-why-discovery-is-outrunning-repair",
+   "tags": [
+    {
+     "label": "AI",
+     "type": "a"
+    },
+    {
+     "label": "VulnMgmt",
+     "type": "a"
+    }
+   ],
+   "body": "Dark Reading examines the widening 'vulnerability gap': AI-assisted tools are discovering flaws at a pace that patching and remediation teams cannot match, while regulators simultaneously tighten disclosure and patching expectations. The piece argues this is an all-hands moment for the industry — organizations that still treat vulnerability management as a monthly scan-and-spreadsheet exercise will fall behind as both attackers and researchers wield automated discovery. Prioritization based on actual exploitability, not raw CVE counts, becomes the survival skill.",
+   "beginnerTip": "No organization patches everything. Mature teams triage using signals like the KEV catalog and exploit availability — fixing the 5% of flaws attackers actually use beats drowning in the other 95%."
+  },
+  {
+   "headline": "WhatsApp rolls out multiple passkeys and stronger two-step verification",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/whatsapp-adds-stronger-two-step-verification-multiple-passkeys/",
+   "tags": [
+    {
+     "label": "Passkeys",
+     "type": "g"
+    },
+    {
+     "label": "Consumer Security",
+     "type": "g"
+    }
+   ],
+   "body": "WhatsApp began rolling out account security upgrades including support for multiple passkeys per account and a stronger two-step verification flow, plus more caller context (like country of origin) when Android users receive calls from unknown numbers. Multiple passkeys means you can register your phone, tablet, and laptop separately, so losing one device doesn't lock you out. It's part of the broader industry shift away from SMS codes toward phishing-resistant authentication.",
+   "beginnerTip": "A <strong>passkey</strong> is a cryptographic key stored on your device that replaces passwords — there's nothing to type, so there's nothing for a phishing page to steal. Today's Mirage2FA story is exactly the attack passkeys defeat."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html",
+   "text": "Two previously unknown remote access trojans, E4del and PINHOLE, hide their command instructions inside FTP server banners — using the login greeting text of innocent-looking servers as 'dead drops' to evade detection."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html",
+   "text": "Researchers found 24 npm packages serving as free phishing infrastructure, abusing unpkg CDN mirrors to redirect victims to ClickFix-style fake Cloudflare CAPTCHA pages."
+  },
+  {
+   "color": "ok",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-dozens-of-suspects-in-global-cybercrime-crackdown/",
+   "text": "Law enforcement from 22 countries identified 263 suspects and arrested 58 in a global crackdown on cybercrime networks coordinated by African crime groups."
+  },
+  {
+   "color": "accent",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-now-lets-admins-block-external-bots-from-meetings/",
+   "text": "Microsoft Teams is rolling out a meeting protection policy letting admins automatically block all identified external bots — including AI notetakers — from joining meetings."
+  },
+  {
+   "color": "warn",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com/mobile-security/toxicpanda-banking-trojan-matures-enterprise-threat",
+   "text": "The ToxicPanda Android banking trojan has matured into an enterprise-grade threat, with new features expanding its global reach beyond victims' financial apps."
+  }
+ ],
+ "analystFooter": "Patch order for today: Oracle WebLogic/HTTP Server (CVE-2026-21962) and Zimbra (CVE-2026-73570) first — both are on KEV with active exploitation — then miniOrange SAML on any WordPress sites, and disable UPnP on Calix GS7 routers while awaiting a fix."
+}

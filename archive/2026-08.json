@@ -2140,5 +2140,372 @@
    }
   ],
   "analystFooter": "Patch first, then hunt: if you run Progress LoadMaster or self-hosted Metabase, apply the fixes today and check logs for prior compromise — both are under active, unauthenticated exploitation — and treat any internet-exposed ICS/OT or PLC as an emergency to get behind a firewall."
+ },
+ "2026-08-11": {
+  "leadStory": {
+   "headline": "CISA: SharePoint RCE flaw CVE-2026-45659 now exploited in ransomware attacks",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/",
+   "tags": [
+    {
+     "label": "CVE-2026-45659",
+     "type": "d"
+    },
+    {
+     "label": "CISA KEV",
+     "type": "d"
+    },
+    {
+     "label": "Ransomware",
+     "type": "d"
+    },
+    {
+     "label": "Deserialization",
+     "type": "d"
+    }
+   ],
+   "body": "CISA confirmed that ransomware gangs are now abusing CVE-2026-45659, a high-severity remote code execution (RCE) flaw in on-premises Microsoft SharePoint Server — meaning attackers can run their own code on an unpatched server. The bug is a deserialization of untrusted data weakness: SharePoint rebuilds a saved data object from attacker-supplied input without checking it, and that unsafe rebuild is turned into code execution. It has been flagged as actively exploited since early July and was added to CISA's Known Exploited Vulnerabilities (KEV) catalog — the government's authoritative list of bugs confirmed to be under real-world attack. All supported on-premises versions are affected (Subscription Edition, 2019, and 2016); post-exploitation activity includes stealing IIS machine keys to keep access and deploying malware. Microsoft shipped a fix in an out-of-band update in late May, so patched servers are protected.",
+   "beginnerTip": "<strong>Deserialization</strong> is when software takes stored or transmitted data and rebuilds it back into a live object in memory. If the program trusts that data blindly, an attacker can smuggle in a booby-trapped object that runs code. On-premises means the software runs on servers the organization manages itself, so patching is the customer's job — not Microsoft's cloud team's."
+  },
+  "cves": [
+   {
+    "headline": "CISA: SonicWall SMA1000 SSRF flaw (CVSS 10.0) now exploited by ransomware gangs",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-sonicwall-sma1000-flaws-now-exploited-by-ransomware-gangs/",
+    "tags": [
+     {
+      "label": "CVE-2026-15409",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 10.0",
+      "type": "d"
+     },
+     {
+      "label": "Server-Side Request Forgery (SSRF)",
+      "type": "d"
+     },
+     {
+      "label": "Ransomware",
+      "type": "d"
+     }
+    ],
+    "body": "CISA confirmed ransomware crews are exploiting two SonicWall SMA1000 flaws, led by CVE-2026-15409, a maximum-severity (CVSS 10.0) Server-Side Request Forgery (SSRF) bug — a weakness that tricks the appliance itself into making network requests the attacker chooses, reaching internal services it should not. It is chained with CVE-2026-15410, a high-severity (CVSS 7.2) post-authentication command injection flaw in the management console, to escalate to root-level control of the box. SMA1000 is an enterprise remote-access VPN gateway used by large firms, government agencies, and managed service providers, so a compromised appliance is a foothold into the whole internal network. SonicWall patched both in mid-July; affected 12.4.3 and 12.5.0 firmware must be upgraded to hotfix 12.4.3-03453 or 12.5.0-02835 or later. CISA added them to the KEV catalog and ordered federal agencies to patch within days.",
+    "beginnerTip": "An <strong>SSRF</strong> flaw turns a trusted server into the attacker's errand-runner: because the request comes from the appliance, internal systems that trust it will answer. VPN gateways and other edge appliances are prized targets because they sit at the network's front door — patch them first."
+   },
+   {
+    "headline": "Cisco warns of high-severity ClamAV flaws with public exploit code",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-high-severity-clamav-flaws-with-public-exploits/",
+    "tags": [
+     {
+      "label": "CVE-2026-20337",
+      "type": "w"
+     },
+     {
+      "label": "CVE-2026-20338",
+      "type": "w"
+     },
+     {
+      "label": "Denial of Service (DoS)",
+      "type": "w"
+     },
+     {
+      "label": "Proof-of-Concept (PoC)",
+      "type": "a"
+     }
+    ],
+    "body": "Cisco warned that its Secure Endpoint Connector (on Windows, macOS, and Linux) is affected by seven vulnerabilities in ClamAV — the open-source antivirus engine bundled inside — that let a remote, unauthenticated attacker crash the scanning process, causing a denial-of-service (DoS) condition where the antivirus stops working. Two of them, CVE-2026-20337 and CVE-2026-20338, already have public proof-of-concept (PoC) code — working demo exploits anyone can grab — which raises the odds of real attacks. The bugs stem from improper boundary checks and bad memory handling in ClamAV's parsers for file formats like ZIP, PDF, Mach-O, and XAR, so a single crafted file fed to the scanner can knock it over. Fixes shipped in ClamAV 1.5.4, and Cisco's PSIRT says it has no evidence of exploitation in the wild yet.",
+    "beginnerTip": "A <strong>Proof-of-Concept (PoC)</strong> is sample code that proves a bug is real and exploitable. Once a PoC is public, the barrier to attack drops sharply because criminals no longer have to discover the technique themselves — treat any flaw with a public PoC as urgent."
+   },
+   {
+    "headline": "'Plug And Pwn': researchers turn Windows 11 USB auto-install into full SYSTEM takeover",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/researchers-turn-usb-auto-install-into.html",
+    "tags": [
+     {
+      "label": "Privilege Escalation",
+      "type": "d"
+     },
+     {
+      "label": "Plug and Play",
+      "type": "w"
+     },
+     {
+      "label": "SYSTEM",
+      "type": "w"
+     },
+     {
+      "label": "Proof-of-Concept (PoC)",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers showed that Windows Plug and Play — the feature that automatically finds and installs drivers when you connect hardware — can be abused to gain SYSTEM, the highest-privilege account on Windows. In the technique they call 'Plug And Pwn' (built for DEF CON 34), an unprivileged user or an emulated USB device makes Windows fetch signed vendor software, then chains flaws in that software to run code as SYSTEM on a fully patched Windows 11 machine — a form of privilege escalation, where a low-power account climbs to full control. The demonstrated chain abuses a Sierra Wireless named pipe that lets ordinary users change DNS settings, then a Sony FeliCa co-installer that fetches configuration over unencrypted HTTP, letting the attacker redirect it to a malicious server. It can also fire over Remote Desktop when USB redirection is enabled, though Microsoft notes that redirection is off by default.",
+    "beginnerTip": "<strong>Privilege escalation</strong> is the step where an attacker who has some limited access gains far more — here, from a normal user to SYSTEM, which can do anything on the machine. The lesson: even 'trusted', signed vendor helper software can be the weak link, so limit which auto-install drivers your machines will accept."
+   },
+   {
+    "headline": "Malicious SIM card can run attacker code inside modems of cellular IoT devices",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/a-malicious-sim-card-can-run-attacker.html",
+    "tags": [
+     {
+      "label": "Code Injection",
+      "type": "w"
+     },
+     {
+      "label": "ICS/OT",
+      "type": "w"
+     },
+     {
+      "label": "Proof-of-Concept (PoC)",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers at the University of Birmingham showed that a malicious SIM card can order the device it sits in to run commands of the attacker's choosing. On the cellular modules built into things like electric-vehicle chargers, industrial routers, and car telematics units, that code runs inside the modem — the chip that handles the mobile connection — which is often enough to take over the whole device. The attack matters because SIMs are frequently swapped, shipped, and managed by third parties, so a rogue or tampered card becomes a physical delivery vehicle for an exploit into hardware that may sit in critical infrastructure and industrial control systems (ICS/OT). It is a reminder that a component many people treat as inert plumbing can be an active attack surface.",
+    "beginnerTip": "A <strong>modem</strong> is the part of a connected device that talks to the cellular network; if an attacker controls it, they often control everything the device does. Treat SIM cards like any other untrusted input — know where they came from, especially for equipment deployed in the field."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "US and South Korea warn of Gunra ransomware exploiting Fortinet flaws to hit critical infrastructure",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/us-warns-of-gunra-ransomware-attacks-against-government-critical-infrastructure/",
+    "tags": [
+     {
+      "label": "Ransomware",
+      "type": "d"
+     },
+     {
+      "label": "Ransomware-as-a-Service (RaaS)",
+      "type": "d"
+     },
+     {
+      "label": "Double Extortion",
+      "type": "w"
+     },
+     {
+      "label": "CISA KEV",
+      "type": "a"
+     }
+    ],
+    "body": "CISA, the FBI, NSA, and South Korea's National Policy Agency issued a joint #StopRansomware advisory on Gunra, a ransomware-as-a-service (RaaS) operation — a business model where the core gang rents its malware to affiliates who carry out the attacks and split the profits. Gunra first appeared in April 2025, is built from the leaked Conti ransomware source code, and uses double extortion: it both encrypts a victim's files and steals a copy of the data, threatening to leak it unless paid twice over. Affiliates have exploited two known Fortinet firewall flaws (CVE-2024-55591 and CVE-2025-24472) to gain privileged access, targeting healthcare, financial services, and government organizations worldwide. Helpfully, researchers found a weakness in Gunra's Linux variant that can let defenders reconstruct the encryption keys from file timestamps and recover data without paying.",
+    "beginnerTip": "<strong>Double extortion</strong> means the attackers hit you twice: they lock your files and also steal a copy, so even a good backup doesn't remove the threat of your data being published. That is why preventing initial access — here, by patching the Fortinet bugs — matters more than any single recovery step."
+   },
+   {
+    "headline": "China-linked Storm-1175 deploys new StormEncryptor ransomware via N-central flaw",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
+    "tags": [
+     {
+      "label": "Ransomware",
+      "type": "d"
+     },
+     {
+      "label": "CVE-2026-18577",
+      "type": "d"
+     },
+     {
+      "label": "RMM",
+      "type": "w"
+     },
+     {
+      "label": "Authentication Bypass",
+      "type": "w"
+     }
+    ],
+    "body": "Microsoft reported that Storm-1175, a financially motivated and likely China-based threat actor previously tied to Medusa ransomware, is now deploying a new C++ strain called StormEncryptor (it appends .encrypted to files). For initial access the group likely exploited CVE-2026-18577, an authentication bypass — a flaw that lets an attacker skip the login step — in N-able's N-central, a remote monitoring and management (RMM) tool that IT teams use to administer many machines at once. The flaw got a CVSS score of 8.2 on August 2 and was added to CISA's KEV catalog a day later; the attacks began within hours of disclosure. After breaking in, Storm-1175 abused RMM tools AnyDesk and SimpleHelp, scanned with Advanced IP Scanner, and dumped credentials from LSASS memory using Mimikatz.",
+    "beginnerTip": "RMM tools are powerful because they control many computers at once — which is exactly why attackers love them. An <strong>authentication bypass</strong> is one of the worst bug types because the attacker never needs a valid password; when one hits an RMM product, patch it the same day."
+   },
+   {
+    "headline": "Researchers built a fake crypto startup and hired three suspected North Korean IT workers",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/researchers-built-fake-crypto-startup.html",
+    "tags": [
+     {
+      "label": "Threat Actor",
+      "type": "a"
+     },
+     {
+      "label": "Social Engineering",
+      "type": "w"
+     },
+     {
+      "label": "Insider Threat",
+      "type": "w"
+     }
+    ],
+    "body": "Security researchers ran a honeypot: they invented a cryptocurrency startup, advertised developer jobs, and hired three people they believe were North Korean operatives (linked to the group tracked as Famous Chollima), recording every company laptop and virtual machine they issued. The scheme is the DPRK 'IT worker' operation, where North Koreans use forged identities, AI tools, VPNs, and hired middlemen to land remote jobs at Western tech firms and funnel wages back to the regime. The value here is defensive detail hiring teams can actually use — how the operatives passed interviews, collaborated, and accessed company resources once inside. It is a rare inside look at a threat that shows up not as malware but as a seemingly ordinary new remote employee.",
+    "beginnerTip": "Not every threat arrives as a hacked server; sometimes it is a new hire. This is a form of <strong>insider threat</strong> — risk from someone with legitimate access — and it is why identity checks, verifying where equipment ships, and watching for unusual remote-access patterns matter during onboarding."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "NATO and AI startup AISLE become CVE Numbering Authorities under ENISA",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/nato-aisle-enisa-cve-vulnerability-tracking/",
+    "tags": [
+     {
+      "label": "CVE Numbering Authority (CNA)",
+      "type": "a"
+     },
+     {
+      "label": "CVE",
+      "type": "a"
+     },
+     {
+      "label": "Governance",
+      "type": "a"
+     }
+    ],
+    "body": "The NATO Cyber Security Centre and AI vulnerability-finding startup AISLE have been onboarded as CVE Numbering Authorities (CNAs) under the European Union Agency for Cybersecurity (ENISA). A CVE Numbering Authority (CNA) is an organization officially authorized to assign CVE identifiers — the standard 'CVE-year-number' IDs the whole industry uses to track a specific software flaw — within its own scope. ENISA became a CVE 'Root' (a top-level coordinator that appoints and oversees CNAs) for European entities in late 2025 and now oversees 20 CNAs, including eight moved over from the long-standing MITRE Root. Spreading this authority beyond a single US-based organization is meant to make vulnerability tracking faster and more resilient, letting NATO assign IDs for flaws in its own enterprise and share details with partners sooner.",
+    "beginnerTip": "Every CVE ID has to be issued by an authorized <strong>CVE Numbering Authority (CNA)</strong> — vendors, coordinators, and research bodies that each cover a defined slice of software. More CNAs, spread across more regions, means flaws get catalogued faster and the system relies less on any one organization."
+   },
+   {
+    "headline": "The FTC weighs regulating AI systems for ideological bias",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/ftc-regulating-ai-ideological-bias/",
+    "tags": [
+     {
+      "label": "AI Governance",
+      "type": "a"
+     },
+     {
+      "label": "Regulation",
+      "type": "a"
+     }
+    ],
+    "body": "The US Federal Trade Commission (FTC) — the agency that polices unfair and deceptive business practices — is considering whether to begin regulating ideological bias in AI systems. Supporters frame it as consumer protection; critics argue the commission would be overstepping its legal authority and potentially infringing on free-speech rights, since deciding what counts as 'biased' output is contested ground. For anyone building or buying AI tools, the practical takeaway is that the compliance rules around AI are still being written and could shift depending on how this plays out. Claude notes this is a policy debate with reasonable arguments on multiple sides rather than a settled question.",
+    "beginnerTip": "'Regulation' here means legally binding rules an agency can enforce, as opposed to voluntary guidelines. Watching which regulator claims authority over AI — and whether courts agree they have it — tells you where real compliance obligations for AI products will eventually land."
+   },
+   {
+    "headline": "Report: outdated cybercrime laws put good-faith security researchers at legal risk",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/application-security/outdated-cybercrime-laws-security-researchers-risk",
+    "tags": [
+     {
+      "label": "Coordinated Disclosure",
+      "type": "a"
+     },
+     {
+      "label": "Policy",
+      "type": "a"
+     }
+    ],
+    "body": "A public-policy expert mapped cybercrime laws around the world and found many are broad and outdated enough to expose ethical hackers — people who probe systems to report flaws, not exploit them — to prosecution, and proposed a five-point framework to protect good-faith research. The core tension is that laws written to punish computer intrusion often do not distinguish between an attacker and a researcher doing the same technical action for defensive reasons. Weak legal protection has a chilling effect: if reporting a bug risks a lawsuit or charges, fewer researchers will do it, and vulnerabilities stay hidden longer. The framework aims to give coordinated disclosure — the practice of privately reporting a flaw to the vendor and giving time to fix it before going public — a clearer legal safe harbor.",
+    "beginnerTip": "<strong>Coordinated disclosure</strong> is the responsible way to handle a discovered flaw: tell the vendor privately, give them time to patch, then publish. Clear legal protection for this process is what keeps skilled researchers reporting bugs instead of staying silent."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "OpenAI launches GPT-5.6-Cyber, a security model with reduced refusals for exploit work",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html",
+    "tags": [
+     {
+      "label": "Agentic AI",
+      "type": "a"
+     },
+     {
+      "label": "Vulnerability",
+      "type": "a"
+     },
+     {
+      "label": "Coordinated Disclosure",
+      "type": "g"
+     }
+    ],
+    "body": "OpenAI unveiled GPT-5.6-Cyber, a cybersecurity-focused model built on GPT-5.6 Sol and gated behind a new, tightly vetted 'Daybreak Red' access tier for vulnerability research, exploit validation, and penetration testing. It is deliberately tuned to refuse fewer dual-use security requests — completing 95% of tasks on OpenAI's internal benchmark versus 1.5% for the general model — which is powerful for defenders but also lowers the effort needed for offensive work. As a demonstration, OpenAI used it to find two previously unknown bugs in V8, the JavaScript engine inside Chrome, reporting one through coordinated disclosure (fixed and assigned CVE-2026-15903). OpenAI rated the model 'High' for cyber capability but below its 'Critical' threshold. It is the clearest sign yet that offensive-security AI is becoming a mainstream, if carefully gated, product category.",
+    "beginnerTip": "'Dual-use' means the same capability helps both attackers and defenders — finding a vulnerability is useful whether you plan to fix it or exploit it. That is why access to a model like this is gated behind vetting: the tool itself is neutral, and who holds it decides the outcome."
+   },
+   {
+    "headline": "Cloudflare: DDoS attacks over 1 Tbps surged roughly fivefold in Q2",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/ddos-attacks-over-1-tbps-surged-fivefold-in-the-second-quarter/",
+    "tags": [
+     {
+      "label": "DDoS",
+      "type": "w"
+     },
+     {
+      "label": "Botnet",
+      "type": "w"
+     },
+     {
+      "label": "Denial of Service (DoS)",
+      "type": "a"
+     }
+    ],
+    "body": "Cloudflare says it mitigated more than 800 network-layer distributed denial-of-service (DDoS) attacks exceeding 1 Tbps in the second quarter — a roughly fivefold (up about 519%) jump over the prior quarter. A DDoS attack floods a target with traffic from many machines at once (usually a botnet, a network of hacked devices) to knock it offline; 1 Tbps is an enormous firehose of junk data. Even so, the vast majority of attacks stayed small and brief: 96.6% were under 50 Mbps and 90.6% ended within 10 minutes, so defenses need to handle both rare giant floods and constant small ones. Across the first half of 2026, Cloudflare blocked 23.2 million network-layer attacks and 29.64 trillion malicious HTTP requests.",
+    "beginnerTip": "<strong>DDoS</strong> attacks aim at availability — keeping legitimate users from reaching a service — rather than stealing data. Because the traffic comes from thousands of sources at once, you generally can't block it yourself; you rely on an upstream provider that can absorb and filter the flood."
+   },
+   {
+    "headline": "Malicious MCP servers can split instructions to make AI coding agents leak secrets",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/malicious-mcp-servers-can-split.html",
+    "tags": [
+     {
+      "label": "Model Context Protocol (MCP)",
+      "type": "w"
+     },
+     {
+      "label": "Prompt Injection",
+      "type": "d"
+     },
+     {
+      "label": "Agentic AI",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers showed that a malicious tool server connected to an AI coding assistant over the Model Context Protocol (MCP) — an open standard that lets AI agents plug into external tools and data sources — can quietly steal SSH keys, environment secrets, source code, and customer data. The trick is to split a harmful request across several smaller, individually innocent-looking instructions, so no single step looks obviously malicious and simple filters wave it through; it can succeed even after a blunt version of the same theft was refused. This is a form of prompt injection, where hidden instructions ride in through the data or tools an AI consumes rather than from the user. As AI agents gain more real-world access, the tools they connect to become a supply-chain risk of their own.",
+    "beginnerTip": "The <strong>Model Context Protocol (MCP)</strong> is how AI agents connect to outside tools — handy, but every tool you connect is code you are trusting. Only wire up MCP servers from sources you trust, and be cautious about the secrets and access you expose to an agent."
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "danger",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breached-a-small-polish-energy-plant-via-private-apn-last-year/",
+    "text": "CERT Polska disclosed that attackers shut down a steam turbine at a Polish combined heat-and-power plant serving 50,000 residents by pivoting from a compromised wind-farm FortiGate through the grid operator's unisolated private cellular network (APN) into the plant's OT network — the first known OT breach via a private APN."
+   },
+   {
+    "color": "danger",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/multistate-water-system-attacks-widen-iran-suspected",
+    "text": "Attacks on US water systems have spread across roughly a dozen states, hitting internet-exposed programmable logic controllers (PLCs) protected with weak or default credentials, with Iran-linked actors suspected."
+   },
+   {
+    "color": "warn",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-updates-gpg-key-for-signing-firefox-thunderbird-releases-after-exposure/",
+    "text": "Mozilla revoked and reissued the GPG key used to sign Firefox and Thunderbird Linux releases after an unencrypted copy was accidentally committed to a private GitHub repo — the key that lets users verify a download is authentic."
+   },
+   {
+    "color": "warn",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bdthemes-plugins-supply-chain-hack-creates-rogue-wordpress-admins/",
+    "text": "A supply-chain attack on WordPress vendor BdThemes poisoned a remote JSON feed delivered to admins' browsers to silently create rogue administrator accounts; the plugins were pulled from downloads while it was investigated."
+   },
+   {
+    "color": "accent",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/extension-banned-for-stealing-ai-chats-returns-to-chrome-store-resumes-malicious-activities/",
+    "text": "A Chrome extension previously removed for stealing users' AI chat data — after amassing 300,000+ installs and a 4.6 rating — slipped back into the Chrome Web Store and resumed its malicious behavior."
+   }
+  ],
+  "analystFooter": "Patch priority today is the actively-exploited, KEV-listed edge and server bugs — SharePoint (CVE-2026-45659), SonicWall SMA1000 (CVE-2026-15409), and N-able N-central (CVE-2026-18577) — since all three are now feeding ransomware; then review who and what your AI agents and RMM tools are allowed to reach."
  }
 }
