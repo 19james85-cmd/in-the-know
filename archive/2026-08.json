@@ -1400,5 +1400,745 @@
    }
   ],
   "analystFooter": "Today's priorities, in order: verify no water/OT controllers are internet-exposed and apply Cisco's SD-WAN/IOS XE patches (three 9.9s); push WordPress 7.0.3 and Chrome 151; and given the UNC6671 vishing wave, remind staff to confirm any 'IT support' phone request out-of-band before granting access."
+ },
+ "2026-08-09": {
+  "leadStory": {
+   "headline": "Metabase zero-day (CVSS 10.0) exploited in the wild; Framework and Tally confirm stolen customer data",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+   "tags": [
+    {
+     "label": "CVSS 10.0",
+     "type": "d"
+    },
+    {
+     "label": "Zero-Day",
+     "type": "d"
+    },
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    },
+    {
+     "label": "SQL Injection",
+     "type": "a"
+    }
+   ],
+   "body": "Metabase, a widely used open-source business-intelligence dashboard, disclosed that attackers exploited a maximum-severity flaw (CVSS 10.0) as a zero-day — meaning it was being abused before any patch existed. A zero-day is a bug the vendor has had zero days to fix. The vulnerability, which has no CVE identifier yet, lets an unauthenticated attacker (one with no account or password) send a crafted request that performs SQL injection — slipping database commands into an input field — to gain full administrator access to the Metabase instance. From there the attacker can read connected databases, steal saved credentials, and export data. Laptop maker Framework and form-builder Tally have both confirmed customer information was taken; Metabase Cloud instances were patched automatically, but self-hosted deployments on versions 1.58 and above must be updated by hand.",
+   "beginnerTip": "A <strong>zero-day</strong> is dangerous precisely because there is no fix available when attacks begin — so the only defense is fast patching the moment the vendor ships an update, plus watching logs for signs you were already hit. If you run Metabase yourself (self-hosted), update it now rather than assuming the cloud fix covers you."
+  },
+  "cves": [
+   {
+    "headline": "N-able N-central auth-bypass (CVE-2026-18577) added to CISA KEV after real customer compromises",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
+    "tags": [
+     {
+      "label": "CVE-2026-18577",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 8.2",
+      "type": "d"
+     },
+     {
+      "label": "CISA KEV",
+      "type": "d"
+     },
+     {
+      "label": "RMM",
+      "type": "a"
+     }
+    ],
+    "body": "CISA added CVE-2026-18577 (CVSS 8.2) to its Known Exploited Vulnerabilities (KEV) catalog — the government's authoritative list of bugs proven to be under active attack — after N-able confirmed a 'limited number of customers' were breached. The flaw is an authentication bypass (a way in that skips the login check) in N-able N-central, and is actually an incomplete fix for an earlier bug, CVE-2026-18556, which was also added to KEV this week. N-central is an RMM platform — software managed service providers use to remotely monitor and control many client machines at once — so a single compromised server lets an attacker abuse the built-in 'Take Control' remote-access feature to pivot into every managed endpoint. Huntress observed attackers doing reconnaissance on domain controllers and moving laterally; the fix is version 2026.3 HF1, and federal agencies were ordered to patch by August 6.",
+    "beginnerTip": "<strong>RMM</strong> tools are a favorite target because breaching one gives an attacker a foothold on hundreds of downstream computers at once — a force multiplier. 'Incomplete patch' bugs like this one are a reminder that applying the latest hotfix (not just the first fix) matters."
+   },
+   {
+    "headline": "Langflow RCE (CVE-2026-9198, CVSS 9.8) hits CISA KEV amid 650+ exploitation attempts",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+    "tags": [
+     {
+      "label": "CVE-2026-9198",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 9.8",
+      "type": "d"
+     },
+     {
+      "label": "CISA KEV",
+      "type": "d"
+     },
+     {
+      "label": "Patch Available",
+      "type": "g"
+     }
+    ],
+    "body": "CISA added CVE-2026-9198 (CVSS 9.8) in Langflow to its KEV catalog on August 5. Langflow is a popular open-source tool for visually building AI applications. The bug is a Code Injection flaw — the app treats attacker-supplied text as commands to run — letting an unauthenticated attacker achieve remote code execution (RCE), meaning they can run their own programs on the server from across the internet. Tracking service KEVIntel logged 650 exploitation attempts starting July 6 from 244 unique attacker IP addresses across 41 countries, and Langflow flaws have repeatedly been weaponized in recent months to drop cryptocurrency miners and ransomware. A fix shipped in July 2026 with version 1.10.1.",
+    "beginnerTip": "<strong>Remote Code Execution (RCE)</strong> is close to the worst case: the attacker runs their own code on your machine. Internet-exposed developer and AI tools are increasingly scanned within hours of a bug going public, so treat them like production systems and patch fast."
+   },
+   {
+    "headline": "Apache Tomcat flaw (CVE-2026-34486) exploited by an AI-orchestrated hacking campaign",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+    "tags": [
+     {
+      "label": "CVE-2026-34486",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 7.5",
+      "type": "w"
+     },
+     {
+      "label": "CISA KEV",
+      "type": "d"
+     },
+     {
+      "label": "AI-Assisted",
+      "type": "a"
+     }
+    ],
+    "body": "Also added to CISA's KEV on August 5 was CVE-2026-34486 (CVSS 7.5), a missing-encryption weakness in Apache Tomcat — the extremely common Java web server — that lets an attacker bypass its EncryptInterceptor protection for clustered servers. Palo Alto Networks' Unit 42 tied some of the exploitation to a Chinese-speaking actor who used the DeepSeek AI model, via a framework called Hermes Agent, as an autonomous attacker: the AI picked targets, wrote exploit code, and narrowed its own scope to save compute, hitting 460+ targets. Separately, SOCRadar linked the same CVE to a China-nexus 'spray-and-check' campaign that compromised 107 endpoints across 100+ countries and deployed the SNOWLIGHT Linux loader. A patch has been available since April 2026 (Tomcat 11.0.21, 10.1.54, 9.0.117).",
+    "beginnerTip": "This is an early look at <strong>AI-assisted</strong> offense — an attacker letting an AI agent choose targets and build exploits with little human input, compressing hours of work into minutes. The defensive lesson is unchanged: a patch has existed since April, so patched systems were never at risk."
+   },
+   {
+    "headline": "'SCTPhantom' 18-year-old Linux flaw (CVE-2026-64564) gives local root and container escape",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html",
+    "tags": [
+     {
+      "label": "CVE-2026-64564",
+      "type": "w"
+     },
+     {
+      "label": "Local Root",
+      "type": "w"
+     },
+     {
+      "label": "Container Escape",
+      "type": "a"
+     },
+     {
+      "label": "Patch Available",
+      "type": "g"
+     }
+    ],
+    "body": "Researchers disclosed CVE-2026-64564, nicknamed SCTPhantom, on August 6 — a use-after-free bug (where the kernel keeps using a piece of memory it already released, letting an attacker corrupt it) in Linux's SCTP networking code that has existed since 2008. Tencent's Zhuque Lab turned it into full root (total control of the machine) and used it for a container escape — breaking out of an isolated container to reach the underlying host — on tested builds of Debian 13, Ubuntu 24.04, Rocky Linux 9, RHEL 9, and OpenCloudOS. The flaw is local, not remote (an attacker needs code running on the box already) and requires SCTP to be reachable, which limits exposure. Fixes shipped in stable kernels 7.1.6, 6.18.42, 6.12.101, and 6.6.148 on August 3, and Tencent credits an AI research pipeline with finding it.",
+    "beginnerTip": "A <strong>Container Escape</strong> defeats the wall that is supposed to keep one container's processes away from the host and its neighbors — turning a small foothold into control of the whole server. Disabling unused kernel modules like SCTP shrinks this kind of attack surface."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "Head Mare breaches TrueConf servers to swap client installers with PhantomCore backdoors",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-trueconf-to-trojanize-client-installers-with-backdoors/",
+    "tags": [
+     {
+      "label": "Head Mare",
+      "type": "d"
+     },
+     {
+      "label": "Supply Chain",
+      "type": "d"
+     },
+     {
+      "label": "PhantomCore",
+      "type": "a"
+     },
+     {
+      "label": "Hacktivist",
+      "type": "a"
+     }
+    ],
+    "body": "The hacktivist group Head Mare — activists who hack for a political cause rather than money — is exploiting unpatched TrueConf video-conferencing servers to run a supply chain attack, according to Kaspersky. After gaining code execution with the highest privileges (via a default, unauthenticated port 4307), the attackers plant a web shell — a hidden script that gives remote command access — access the TrueConf database, and replace the legitimate client installer on the server with a trojanized, unsigned version carrying the PhantomCore backdoor. When staff connect and 'update', they silently install the malware; a second backdoor, PhantomGraph, takes its commands through a Microsoft OneDrive account. The danger spreads beyond TrueConf users, because employees who join meetings on a compromised partner's server can also be served the infected installer.",
+    "beginnerTip": "A <strong>supply chain attack</strong> poisons trusted software at the source, so victims install malware while doing something completely normal like accepting an update. Unsigned installers are a red flag — legitimate updates are digitally signed to prove they really came from the vendor."
+   },
+   {
+    "headline": "Snowflake extortionist Connor Moucka pleads guilty; breaches hit 165 orgs and 100M+ people",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com",
+    "url": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+    "tags": [
+     {
+      "label": "UNC5537",
+      "type": "d"
+     },
+     {
+      "label": "Extortion",
+      "type": "d"
+     },
+     {
+      "label": "Credential Theft",
+      "type": "a"
+     },
+     {
+      "label": "MFA",
+      "type": "g"
+     }
+    ],
+    "body": "Connor Riley Moucka, 26, of Ontario pleaded guilty in a Seattle federal court to computer fraud, wire fraud, and aggravated identity theft over the 2024 Snowflake customer-data thefts, a campaign tracked as UNC5537 that reached at least 165 organizations — including AT&T, Ticketmaster, and Santander — and exposed records on 100+ million people. The way in was mundane: old passwords harvested years earlier by infostealer malware and never changed, on accounts that had multi-factor authentication (MFA) switched off. MFA is the second check — a code or prompt on your phone — that would have blocked logins even with a stolen password. Prosecutors say Moucka personally took at least $495,000; he faces a two-year mandatory minimum and up to 30 years, with sentencing set for October 27.",
+    "beginnerTip": "Nearly every account in this mega-breach could have been saved by one control: <strong>MFA</strong>. Turn it on everywhere, and rotate any password that might have been exposed — stolen credentials can sit unused for years before someone tries them."
+   },
+   {
+    "headline": "LockBit 5.0 resurgence: cross-platform variants and a new ransomware alliance",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/in-other-news-lockbit-5-0-department-of-war-cybersecurity-framework-oneplus-vulnerability/",
+    "tags": [
+     {
+      "label": "LockBit 5.0",
+      "type": "d"
+     },
+     {
+      "label": "Ransomware",
+      "type": "d"
+     },
+     {
+      "label": "RaaS",
+      "type": "a"
+     },
+     {
+      "label": "Manufacturing",
+      "type": "w"
+     }
+    ],
+    "body": "LockBit — one of the most prolific ransomware-as-a-service (RaaS) brands, where operators rent their malware to affiliates for a cut of the ransom — has continued rebuilding after the 2024 'Operation Cronos' police takedown. Its version 5.0 ships updated Windows, Linux, and ESXi (VMware) encryptors with faster encryption and better evasion, plus per-victim negotiation portals, and reporting points to a working alliance with other gangs such as Qilin and DragonForce to share tooling and infrastructure. Manufacturing continues to be among the hardest-hit sectors as the group courts affiliates to rebuild its reputation, raising the risk of renewed attacks on critical infrastructure.",
+    "beginnerTip": "<strong>Ransomware-as-a-Service (RaaS)</strong> lowers the bar for crime: the core gang writes the malware and runs the infrastructure, while less-skilled 'affiliates' carry out break-ins for a cut. Offline, tested backups remain the single most reliable way to survive an encryption attack."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "NIST opens public comment on draft SP 800-213r1 for IoT product security",
+    "source": "NIST (CSRC)",
+    "sourceUrl": "https://csrc.nist.gov",
+    "url": "https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd",
+    "tags": [
+     {
+      "label": "NIST",
+      "type": "a"
+     },
+     {
+      "label": "IoT",
+      "type": "a"
+     },
+     {
+      "label": "Draft Guidance",
+      "type": "a"
+     },
+     {
+      "label": "Comment by Aug 24",
+      "type": "w"
+     }
+    ],
+    "body": "NIST released the initial public draft of Special Publication (SP) 800-213r1, 'IoT Product Cybersecurity Guidelines for the Federal Government,' with a comment period ending August 24, 2026. SP 800-213 is federal guidance for setting cybersecurity requirements on Internet of Things (IoT) products — network-connected devices like sensors, cameras, and controllers. The revision deliberately shifts language from 'devices' to 'products' to reflect that a modern connected device comes bundled with apps, cloud services, and update mechanisms that all carry risk, and it stresses that adding an IoT product to a system can change that system's overall risk and require new security controls.",
+    "beginnerTip": "<strong>NIST</strong> is the U.S. standards agency whose cybersecurity publications, while written for federal agencies, become de facto best practice for private industry too. 'Initial public draft' means anyone — including you — can submit comments before the guidance is finalized."
+   },
+   {
+    "headline": "CISA retires ten legacy emergency directives, marking a shift to risk-based patching",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov",
+    "url": "https://www.cisa.gov/news-events/news/cisa-retires-ten-emergency-directives-marking-era-federal-cybersecurity",
+    "tags": [
+     {
+      "label": "CISA",
+      "type": "a"
+     },
+     {
+      "label": "Emergency Directive",
+      "type": "a"
+     },
+     {
+      "label": "Federal",
+      "type": "a"
+     },
+     {
+      "label": "Policy Shift",
+      "type": "a"
+     }
+    ],
+    "body": "CISA retired ten older Emergency Directives — legally binding orders it issues to federal civilian agencies to fix specific, urgent threats — saying their required actions are now standard practice or superseded by newer policy. The move reflects a broader shift toward Binding Operational Directive (BOD) 26-04, which tells agencies to prioritize patching based on risk factors like whether a bug is on the KEV list and how easily it can be automated, rather than reacting threat-by-threat. Retiring a directive does not undo the fixes; it means the underlying hygiene is now expected by default.",
+    "beginnerTip": "An <strong>Emergency Directive</strong> is CISA's most forceful tool — a mandatory 'fix this now' order to federal agencies. The trend here is from one-off firefighting toward a steady, risk-ranked patching program, which is the same maturity path private organizations are encouraged to follow."
+   },
+   {
+    "headline": "SEC's four-day cyber incident disclosure rule keeps pressure on public companies",
+    "source": "Cybersecurity Dive",
+    "sourceUrl": "https://www.cybersecuritydive.com",
+    "url": "https://www.cybersecuritydive.com/",
+    "tags": [
+     {
+      "label": "SEC",
+      "type": "a"
+     },
+     {
+      "label": "Disclosure",
+      "type": "a"
+     },
+     {
+      "label": "Compliance",
+      "type": "a"
+     },
+     {
+      "label": "Materiality",
+      "type": "w"
+     }
+    ],
+    "body": "The U.S. Securities and Exchange Commission (SEC) rule requiring public companies to report a 'material' cybersecurity incident within four business days of deciding it is material remains a central compliance obligation in 2026, alongside annual disclosures about how a company manages cyber risk and governs it at the board level. 'Material' means information a reasonable investor would consider important — so the clock starts at the materiality determination, not the moment of discovery, which is where many companies still struggle. The rule keeps a steady incentive to have incident-response and decision-making processes documented in advance.",
+    "beginnerTip": "<strong>Materiality</strong> is the judgment call at the center of breach disclosure: would this news matter to an investor deciding whether to buy or sell the stock? Because the reporting clock starts at that decision, regulators expect companies to make it promptly and to be able to show their reasoning."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "AI as an autonomous attacker: DeepSeek-driven agent hit 460+ targets with minimal human input",
+    "source": "Cybersecurity Dive",
+    "sourceUrl": "https://www.cybersecuritydive.com",
+    "url": "https://www.cybersecuritydive.com/news/china-based-hacker-deepseek-autonomous/826784/",
+    "tags": [
+     {
+      "label": "AI Threats",
+      "type": "a"
+     },
+     {
+      "label": "Autonomous Attacks",
+      "type": "w"
+     },
+     {
+      "label": "DeepSeek",
+      "type": "a"
+     },
+     {
+      "label": "Unit 42",
+      "type": "a"
+     }
+    ],
+    "body": "Palo Alto Networks' Unit 42 detailed a China-based operator who wired the DeepSeek AI model into a framework called Hermes Agent and let it run much of an attack on its own — enumerating targets, scanning GitHub for fresh proof-of-concept exploits, generating code, and even narrowing its own target list to conserve computing cost — all commanded through Telegram. The agent attempted 460+ targets using bugs in Langflow, n8n, Citrix NetScaler, Apache Tomcat, and others. Researchers assess the actor was an independent individual, not a state, which is the unsettling part: capabilities that once required a skilled team are increasingly available to lone attackers through off-the-shelf AI.",
+    "beginnerTip": "The takeaway is speed and scale, not magic — the AI still exploited <strong>known, patchable vulnerabilities</strong>. As reconnaissance and exploit-writing get automated, the window between a bug becoming public and mass exploitation keeps shrinking, so timely patching matters more than ever."
+   },
+   {
+    "headline": "Evasion trend: malvertising delivers malware in pieces and has the browser assemble it",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+    "tags": [
+     {
+      "label": "Malvertising",
+      "type": "w"
+     },
+     {
+      "label": "Evasion",
+      "type": "a"
+     },
+     {
+      "label": "Browser",
+      "type": "a"
+     },
+     {
+      "label": "Detection Bypass",
+      "type": "w"
+     }
+    ],
+    "body": "Researchers described a malvertising technique — malware spread through booby-trapped online ads — that ships the malicious program in harmless-looking fragments and then uses JavaScript in the victim's browser to reassemble the executable locally. Because no single downloaded piece looks dangerous on its own, this sidesteps network filters and scanners that inspect files in transit. It is part of a wider pattern of attackers splitting, encoding, or late-binding their payloads specifically to defeat detection that happens at the gateway rather than on the endpoint.",
+    "beginnerTip": "This is why <strong>endpoint detection</strong> — security that watches what actually runs on your computer — matters alongside network filtering: if the malicious file only comes together on your machine, defenses that only inspect the network never see the finished threat."
+   },
+   {
+    "headline": "'Bit2Watt' research shows cloud tenants could disrupt power grids without an exploit",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html",
+    "tags": [
+     {
+      "label": "Bit2Watt",
+      "type": "w"
+     },
+     {
+      "label": "Cloud",
+      "type": "a"
+     },
+     {
+      "label": "Power Grid",
+      "type": "a"
+     },
+     {
+      "label": "Research",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers unveiled Bit2Watt, a technique in which ordinary cloud tenants — customers renting virtual machines in a shared data center — deliberately spike and coordinate their power draw to create sudden swings large enough to stress the electrical grid the data center draws from, all without exploiting any software vulnerability. It exploits physics and the concentration of compute in modern data centers rather than a bug, highlighting a growing class of infrastructure risks where the 'attack surface' is power and cooling, not code. The work is a proof of concept, but it points to why grid operators and hyperscale providers are paying closer attention to load-manipulation threats.",
+    "beginnerTip": "Not every serious threat involves a software <strong>exploit</strong>; some abuse the physical systems computers depend on, like electricity. As data centers grow, their power demand itself becomes something defenders and grid operators have to reason about."
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "danger",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html",
+    "text": "'SCTPhantom' (CVE-2026-64564), an 18-year-old Linux SCTP use-after-free bug, gives local root and container escape; fixes shipped in stable kernels on August 3."
+   },
+   {
+    "color": "warn",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html",
+    "text": "New 'Zapscape' KVM flaw could let privileged code in a level-1 guest VM escape to the underlying Linux host."
+   },
+   {
+    "color": "danger",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+    "text": "Snowflake extortionist Connor Moucka pleaded guilty; the 2024 UNC5537 thefts hit 165 organizations and exposed records on 100M+ people."
+   },
+   {
+    "color": "accent",
+    "source": "NIST (CSRC)",
+    "sourceUrl": "https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd",
+    "text": "NIST is taking public comment through August 24 on draft SP 800-213r1, its updated IoT product cybersecurity guidance for the federal government."
+   },
+   {
+    "color": "accent",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/news/cisa-retires-ten-emergency-directives-marking-era-federal-cybersecurity",
+    "text": "CISA retired ten legacy Emergency Directives, folding their requirements into risk-based BOD 26-04 as standard practice."
+   }
+  ],
+  "analystFooter": "Priorities today, in order: hand-patch any self-hosted Metabase (CVSS 10.0 zero-day with confirmed data theft) and hunt for signs of prior compromise; apply N-able N-central 2026.3 HF1 and the Langflow 1.10.1 / Apache Tomcat fixes now on CISA's KEV list; verify MFA is enforced everywhere in light of the Snowflake guilty plea; and treat any unsigned 'update' installer as hostile given the Head Mare TrueConf supply-chain attacks."
+ },
+ "2026-08-10": {
+  "leadStory": {
+   "headline": "CISA orders emergency patching of Progress LoadMaster flaw (CVE-2026-8037, CVSS 9.6) as attacks surge",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
+   "tags": [
+    {
+     "label": "CVE-2026-8037",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 9.6",
+     "type": "d"
+    },
+    {
+     "label": "CISA KEV",
+     "type": "d"
+    },
+    {
+     "label": "Command Injection",
+     "type": "d"
+    }
+   ],
+   "body": "CISA added CVE-2026-8037 to its Known Exploited Vulnerabilities (KEV) catalog — the government's authoritative list of bugs confirmed to be under active attack — after evidence that hackers are exploiting a critical flaw in Progress Kemp LoadMaster, a widely deployed load balancer (an appliance that spreads network traffic across servers). Rated CVSS 9.6, the bug is an OS command injection: the appliance fails to sanitize input sent to several of its API endpoints, so an unauthenticated attacker (one with no login) can smuggle in operating-system commands and achieve remote code execution (RCE) — running their own code on the device. Telemetry cited by researchers counted 792 exploitation attempts over 41 days from 65 IP addresses across 18 countries, and eSentire says exploitation began almost immediately after technical analysis was published. Progress shipped fixes back in June (GA 7.2.63.2 and LTSF 7.2.54.18), and under Binding Operational Directive 26-04 federal civilian agencies had until today, August 10, to patch.",
+   "beginnerTip": "<strong>Command Injection</strong> happens when a device treats text you send it as commands to run instead of harmless data. Internet-facing appliances like load balancers, VPNs, and firewalls are prime targets because they sit at the network edge — if yours runs LoadMaster with the API exposed, patch to the fixed release now."
+  },
+  "cves": [
+   {
+    "headline": "Metabase patches maximum-severity SQL injection zero-day (CVSS 10.0) after cloud attacks",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/metabase-patches-vulnerability-exploited-as-zero-day/",
+    "tags": [
+     {
+      "label": "CVSS 10.0",
+      "type": "d"
+     },
+     {
+      "label": "Zero-Day",
+      "type": "d"
+     },
+     {
+      "label": "SQL Injection",
+      "type": "d"
+     },
+     {
+      "label": "Unauthenticated",
+      "type": "a"
+     }
+    ],
+    "body": "Metabase, a popular open-source business-intelligence dashboard, released patches for a maximum-severity flaw (CVSS 10.0) that attackers had already exploited as a zero-day — a bug abused before any fix existed. Tracked as advisory GHSA-vwf4-m7j8-wcjf with no CVE assigned yet, it lives in the unauthenticated POST /api/session/reset_password endpoint, letting a remote attacker with no credentials perform SQL injection — slipping database commands into an input field — to gain full administrator access. From there an attacker can change configuration, harvest saved credentials for every connected data source, and export data in bulk. Every release from version 1.58 onward is affected; Metabase confirmed active exploitation of its Cloud environment before patching, and self-hosted users must update to the fixed builds (x.58.24, x.59.21, x.60.17, x.61.11, x.62.9, x.63.5) by hand.",
+    "beginnerTip": "Because no CVE number was issued, scanners that only read the U.S. National Vulnerability Database feed will not flag exposed Metabase instances — a reminder that a missing <strong>CVE</strong> ID does not mean a bug is safe. If you self-host Metabase, patch immediately and rotate the credentials of any database it connects to."
+   },
+   {
+    "headline": "Critical flaws in Belgian eID software expose 2 million users to ID theft and drive-by RCE",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/critical-flaws-discovered-in-belgian-eid-software-used-by-2-million-people/",
+    "tags": [
+     {
+      "label": "Drive-By RCE",
+      "type": "d"
+     },
+     {
+      "label": "eID",
+      "type": "a"
+     },
+     {
+      "label": "Coordinated Disclosure",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers found critical flaws in the Connective browser extension, digital-identity software used by more than two million Belgians and integrated into eight of the country's ten largest banks and over 60 government agencies for authentication and legally binding electronic signatures. The core problem was missing origin checks: the software did not verify which website was talking to it, so any web page or even an embedded advert could silently read a user's electronic ID (eID) and payment-card details, or trigger official-looking pop-ups to trick people into revealing their eID PIN. A separate remote code execution (RCE) bug let a malicious website force the software to run arbitrary code at the user's privilege level by abusing how it handled local files — a 'drive-by' attack that needs no eID card inserted and no clicking beyond visiting the page. No CVE identifiers were assigned; vendor Nitro Software finished shipping fixes in late July, 146 days after the initial report.",
+    "beginnerTip": "A <strong>drive-by</strong> attack compromises you simply for visiting a booby-trapped web page — no download or click required. Software that bridges your browser to hardware like ID-card readers is risky because a single missing origin check can let any website reach that hardware; keep such extensions fully updated."
+   },
+   {
+    "headline": "New passkey attacks recover synced private keys and bypass phishing-resistant MFA (CVE-2026-34348)",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
+    "tags": [
+     {
+      "label": "CVE-2026-34348",
+      "type": "w"
+     },
+     {
+      "label": "Passkey",
+      "type": "a"
+     },
+     {
+      "label": "MFA",
+      "type": "a"
+     }
+    ],
+    "body": "Three separate research efforts showed ways to defeat passkeys — the phishing-resistant login credentials meant to replace passwords — without breaking the underlying cryptography. Instead of stealing an authenticator's private key, SpecterOps chained signed authentication material that Windows had stored in cleartext (logged via CVE-2026-34348, vendor CVSS 6.5) with weaknesses in Microsoft Entra ID's passkey validation to impersonate privileged users despite policies requiring phishing-resistant multi-factor authentication (MFA). Palo Alto's Unit 42 demonstrated malware on a Windows PC recovering the private keys for a victim's Google Password Manager passkeys synced in Chrome, and researcher Dirk-jan Mollema showed malware in a signed-in session reusing a Windows Hello for Business key without prompting the user to unlock it. In every case the weakness was the surrounding implementation — how keys and signatures are stored and validated — not the passkey math itself.",
+    "beginnerTip": "<strong>Passkeys</strong> are still far stronger than passwords and remain worth adopting — these attacks mostly require malware already running on your device or an attacker already inside a Windows environment. The lesson is that no single control is a silver bullet: keep devices patched and malware-free so the storage around your keys stays trustworthy."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "Head Mare exploits TrueConf server flaws to swap client installers with PhantomCore backdoor",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/head-mare-exploits-trueconf-flaws-to.html",
+    "tags": [
+     {
+      "label": "Head Mare",
+      "type": "d"
+     },
+     {
+      "label": "Supply Chain Attack",
+      "type": "d"
+     },
+     {
+      "label": "Backdoor",
+      "type": "w"
+     }
+    ],
+    "body": "The threat actor known as Head Mare weaponized unpatched TrueConf videoconferencing servers to attack Russian firms across instrumentation, electronics, transport, energy, IT, and software sectors, according to Kaspersky, which spotted the campaign in July 2026. Chaining two flaws (KLCERT-26-057 and KLCERT-26-058, patched June 18), the attackers gained unauthenticated access through TCP port 4307, planted a web shell — a hidden script that gives remote command control of a server — harvested the TrueConf database, and then replaced the legitimate TrueConf client installer with a trojanized version. Anyone who downloaded the client from the compromised server received the PhantomCore backdoor and remote access trojan (RAT), giving Head Mare hands-on control of their machine. Swapping a trusted installer at its source makes this a supply chain attack, where victims are infected through software they had every reason to trust.",
+    "beginnerTip": "A <strong>Supply Chain Attack</strong> poisons software or a vendor you already trust, so normal caution ('only download from the official server') does not protect you. Defenders counter it by verifying installer signatures and patching the servers that distribute software, not just the endpoints that receive it."
+   },
+   {
+    "headline": "Levi Strauss says attacker used social engineering to steal corporate data from employees",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/corporate-data-stolen-in-levi-strauss-cyberattack/",
+    "tags": [
+     {
+      "label": "Social Engineering",
+      "type": "w"
+     },
+     {
+      "label": "Data Breach",
+      "type": "w"
+     }
+    ],
+    "body": "Denim maker Levi Strauss disclosed that a threat actor used social engineering — manipulating people rather than exploiting software — to gain access to the computers of three employees and exfiltrate (copy out) corporate data from them. Attacks like this typically start with a convincing phishing email, phone call (vishing), or fake help-desk request that tricks a worker into handing over credentials or approving access. The incident is a reminder that many breaches begin with a person, not an unpatched server, and that a handful of compromised accounts can be enough to reach sensitive data.",
+    "beginnerTip": "<strong>Social Engineering</strong> targets human trust — the attacker's tools are a persuasive story and urgency, not a piece of malware. The best defenses are verifying unexpected requests through a separate channel and using phishing-resistant multi-factor authentication so a stolen password alone is not enough."
+   },
+   {
+    "headline": "Hackers sabotage second Polish energy facility using a novel private APN pivot",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/novel-private-apn-pivot-let-hackers-sabotage-second-polish-energy-facility/",
+    "tags": [
+     {
+      "label": "ICS/OT",
+      "type": "d"
+     },
+     {
+      "label": "Private APN",
+      "type": "w"
+     },
+     {
+      "label": "Critical Infrastructure",
+      "type": "d"
+     }
+    ],
+    "body": "Poland's national CERT (CERT.PL) reported that attackers sabotaged a second Polish energy facility by pivoting through a private APN — a dedicated cellular access point name that acts as a private mobile network linking a site's remote equipment back to its operator. CERT.PL says this appears to be the first known case of a private APN being abused as an attack vector, letting the intruders reach industrial control systems (ICS/OT) — the computers that physically run pumps, breakers, and valves — over a channel that defenders had assumed was isolated. Attacks that cross from IT networks into operational technology are especially serious because they can disrupt physical processes, not just data.",
+    "beginnerTip": "<strong>ICS/OT</strong> refers to the specialized computers that control physical equipment in plants and utilities; unlike office IT, a failure here can stop machinery or cause real-world damage. This case shows why 'assumed isolated' connections — like a private cellular link — still need monitoring and segmentation."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "Iran-linked hackers hit water systems in a dozen states; New Jersey and Alabama confirmed",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/new-jersey-alabama-join-states-targeted-in-water-cyberattacks/",
+    "tags": [
+     {
+      "label": "Critical Infrastructure",
+      "type": "d"
+     },
+     {
+      "label": "ICS/OT",
+      "type": "d"
+     },
+     {
+      "label": "CISA/FBI/EPA",
+      "type": "a"
+     }
+    ],
+    "body": "Hackers linked to Iran have targeted the industrial control systems (ICS) at water and wastewater facilities in at least a dozen US states, with New Jersey (Cape May and Woodbine) and Alabama (Childersburg) the latest to confirm attacks that began in late July. Minnesota was first to report that more than 30 water systems had their operational technology (OT) probed, followed by Michigan, South Dakota, and Georgia. The campaign reportedly exploits internet-exposed programmable logic controllers (PLCs) — the small ruggedized computers that automate pumps and valves — including devices made by Rockwell Automation. CISA, the FBI, and the EPA have issued joint warnings urging water utilities to get these devices off the public internet and change default passwords.",
+    "beginnerTip": "A <strong>Programmable Logic Controller (PLC)</strong> is a small industrial computer that directly controls physical equipment like a water pump; many were designed decades ago with no security and should never be reachable from the open internet. The immediate fix regulators are pushing is basic hygiene: take PLCs offline or behind a firewall and replace default passwords."
+   },
+   {
+    "headline": "Valve notifies Steam hardware buyers of a data breach at shipping partner CEVA Logistics",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/valve-notifies-steam-hardware-customers-of-a-data-breach/",
+    "tags": [
+     {
+      "label": "Data Breach",
+      "type": "w"
+     },
+     {
+      "label": "Third-Party Risk",
+      "type": "a"
+     },
+     {
+      "label": "Breach Notification",
+      "type": "a"
+     }
+    ],
+    "body": "Valve, the company behind the Steam gaming platform, is notifying Steam hardware customers in Europe that hackers stole their data by breaching its shipping partner, CEVA Logistics — not Valve's own systems. Because the exposed data belongs to European customers, the notifications fall under GDPR breach-disclosure rules, which require companies to tell affected individuals when their personal data is compromised. The incident is another example of third-party (supply chain) risk: an organization can be fully patched itself and still see customer data leak through a vendor it relies on.",
+    "beginnerTip": "<strong>Third-party risk</strong> means your data can be exposed through the outside companies a service uses — shippers, cloud hosts, support contractors — even when the main company is secure. Regulations like the EU's GDPR exist partly to make sure you are told when this happens so you can watch for fraud."
+   },
+   {
+    "headline": "LexisNexis takes services offline after suspicious activity on a third-party vendor's servers",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/lexisnexis-shuts-down-services-after-suspicious-activity-on-servers/",
+    "tags": [
+     {
+      "label": "Incident Response",
+      "type": "a"
+     },
+     {
+      "label": "Third-Party Risk",
+      "type": "w"
+     },
+     {
+      "label": "Containment",
+      "type": "g"
+     }
+    ],
+    "body": "Data and analytics giant LexisNexis took its Nexis Diligence (due-diligence and risk research), Metabase API (news data feeds), and Newsdesk (media monitoring) services offline after detecting unusual activity on servers hosted and managed by an unnamed third-party vendor. The company says it deliberately disconnected from those systems to contain the issue and protect customers — a textbook incident-response containment step — and is investigating with a forensic firm while rebuilding the affected systems in a new environment. It is not yet clear whether any customer data was accessed.",
+    "beginnerTip": "Proactively pulling systems offline is a core <strong>Incident Response</strong> move called containment: you accept downtime to stop an intruder from spreading or stealing more. It can look alarming from the outside, but disconnecting fast is often the responsible choice."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "'Ghostjacking' turns AI agents against their owners using poisoned firewall logs",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/ghostjacking-attack-uses-poisoned-logs-to-turn-ai-agents-bad/",
+    "tags": [
+     {
+      "label": "Prompt Injection",
+      "type": "w"
+     },
+     {
+      "label": "Agentic AI",
+      "type": "a"
+     },
+     {
+      "label": "Ghostjacking",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers at Tenet unveiled 'Ghostjacking' at DEF CON on August 9: an attack that hides malicious instructions inside firewall logs so an organization's own AI agent reads and obeys them. When Cloudflare's firewall blocks a bad request, it records that request word-for-word in the logs; an attacker crafts a blocked request whose text is actually a command, and when an AI agent later reads the logs it cannot tell the difference between real data and a planted instruction — a form of prompt injection. In the demo the technique hijacked the Claude Code agent nine times out of ten on Cloudflare's own recommended setup, rerouting email and web traffic to open a hidden path around the firewall. It highlights the danger of giving agentic AI broad access to infrastructure it cannot fully reason about.",
+    "beginnerTip": "<strong>Prompt Injection</strong> is when hidden text in the data an AI reads gets treated as a command — the AI equivalent of a con artist slipping instructions into paperwork. Until this is solved, limit what AI agents can do on their own and never let them act on untrusted input without a human check."
+   },
+   {
+    "headline": "OpenAI pauses work on its next model, Astra, over 'Critical' cyber capabilities",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html",
+    "tags": [
+     {
+      "label": "AI Guardrails",
+      "type": "a"
+     },
+     {
+      "label": "Agentic AI",
+      "type": "a"
+     },
+     {
+      "label": "Governance",
+      "type": "g"
+     }
+    ],
+    "body": "OpenAI said on August 7 that it is pausing some internal work on its upcoming model, code-named Astra, after preliminary evaluations found it may have reached a 'Critical' cybersecurity threshold — meaning it could potentially identify and carry out cyberattacks against well-defended real-world systems on its own. The finding is described as preliminary rather than final, and benchmarking continues. In response OpenAI added stricter safeguards — isolated testing environments, restricted network and tool access, stronger protection and encryption of the model's weights, extra monitoring, and sandboxed execution — and said it will work with government agencies and AI-safety organizations to test the model's capabilities.",
+    "beginnerTip": "This is an example of <strong>AI Guardrails</strong>: deliberate limits a developer places on a powerful model to keep it from being misused. The same agentic coding skills that make an AI a great security assistant could also make it a formidable attacker, which is why offensive-capability testing is becoming standard before release."
+   },
+   {
+    "headline": "Malicious 'Solidity Pro' VS Code extensions steal crypto wallets, API keys, and SSH keys",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
+    "tags": [
+     {
+      "label": "Infostealer",
+      "type": "w"
+     },
+     {
+      "label": "Supply Chain Attack",
+      "type": "w"
+     },
+     {
+      "label": "Seed Phrase",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers flagged malicious Visual Studio Code (VS Code) extensions named 'Solidity Pro' — published under the names helper-beeps and web3devtoolsx — that pose as developer tools but deliver an infostealer targeting cryptocurrency developers. The malware hunts for wallet seed phrases and credentials tied to MetaMask, Phantom, Rabby, Coinbase, Trust, and Keplr, plus API keys, SSH keys, and developer tokens, then exfiltrates them over Telegram. Early versions (1.0.0 through 2.4.x) waited a random 12 to 72 hours before fetching an encrypted Python payload from Cloudflare Workers infrastructure and running it outside the editor — a delay designed to outlast quick automated security checks — while versions from 3.0.0 became a full information stealer. The extensions were pulled from Open VSX, but a related GitHub repository reportedly stays online.",
+    "beginnerTip": "A wallet <strong>Seed Phrase</strong> is the list of words that fully controls your cryptocurrency — anyone who reads it can drain your funds, so it should never be stored where software can scrape it. Treat editor and browser extensions like installed apps: vet the publisher, and be wary of tools that ask for broad access."
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "ok",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/member-of-the-com-sent-to-prison-for-blackmail-sextortion/",
+    "text": "A member of 'The Com,' a loose online cybercrime collective that preys on minors, was sentenced to two years in prison for blackmail and sextortion targeting nearly 120 victims worldwide."
+   },
+   {
+    "color": "danger",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
+    "text": "Today, August 10, is the CISA deadline for federal agencies to patch the actively exploited Progress LoadMaster flaw (CVE-2026-8037) under Binding Operational Directive 26-04."
+   },
+   {
+    "color": "warn",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
+    "text": "Malicious 'Solidity Pro' VS Code extensions were caught stealing crypto wallet seed phrases, API keys, and SSH keys from developers and exfiltrating them via Telegram."
+   },
+   {
+    "color": "accent",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html",
+    "text": "OpenAI paused some work on its unreleased Astra model after early tests suggested it may have reached a 'Critical' offensive-cyber capability threshold."
+   },
+   {
+    "color": "danger",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/new-jersey-alabama-join-states-targeted-in-water-cyberattacks/",
+    "text": "Iran-linked hackers have now hit water and wastewater ICS in at least a dozen US states, with New Jersey and Alabama the latest confirmed targets."
+   }
+  ],
+  "analystFooter": "Patch first, then hunt: if you run Progress LoadMaster or self-hosted Metabase, apply the fixes today and check logs for prior compromise — both are under active, unauthenticated exploitation — and treat any internet-exposed ICS/OT or PLC as an emergency to get behind a firewall."
  }
 }

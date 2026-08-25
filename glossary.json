@@ -186,6 +186,12 @@
   "e": "Searchlight Cyber reported the ServiceNow bug on 1 April 2026 and it was patched 13 July before details went public."
  },
  {
+  "t": "COPPA",
+  "c": "Regulatory",
+  "d": "The Children's Online Privacy Protection Act, a US law that requires websites and apps to get verifiable parental consent before collecting personal data from children under 13. Violations are enforced by the FTC and Justice Department and can cost companies hundreds of millions of dollars.",
+  "e": "In August 2026, TikTok agreed to pay $400 million to settle a Justice Department lawsuit alleging COPPA violations in how it handled children's accounts and data."
+ },
+ {
   "t": "Credential Rotation",
   "c": "General",
   "d": "Invalidating existing keys, tokens and passwords and issuing new ones, so anything the attacker stole stops working.",
@@ -696,6 +702,12 @@
   "e": "UTA0533 injected Suo5, an open-source HTTP proxy, into a legitimate SonicWall process and reached it at /workplace/error.jsp (July 2026)."
  },
  {
+  "t": "QUIC",
+  "c": "Network",
+  "d": "A modern internet transport protocol, used by HTTP/3, that runs over UDP and encrypts nearly everything to make connections faster and more private than classic TCP. That same heavy encryption makes malicious traffic hidden inside QUIC hard for security tools to inspect.",
+  "e": "In August 2026, the QUICAgent backdoor from Operation QUICSILVER hid its command-and-control traffic inside QUIC connections while spying on Myanmar government targets."
+ },
+ {
   "t": "Race Condition",
   "c": "Vulnerability",
   "d": "A timing flaw where two operations run at nearly the same moment and an attacker exploits the tiny gap between them to change data or bypass a check before the system finishes its work.",
@@ -838,6 +850,12 @@
   "c": "General",
   "d": "A small program stored on a blockchain that automatically runs and returns data when called. Because blockchain data is public and cannot be edited or deleted, criminals sometimes abuse smart contracts to store information that is hard for police to take down.",
   "e": "In August 2026, the DeadLock ransomware group used Polygon smart contracts to store its command-and-control address so defenders could not seize a single server to disrupt it."
+ },
+ {
+  "t": "SNMP",
+  "c": "Network",
+  "d": "Simple Network Management Protocol — a standard language that servers, routers, and printers use to report their status and accept monitoring commands over a network. SNMP services often run with high privileges, so a flaw in one can hand an attacker control of the entire device.",
+  "e": "In August 2026, CISA ordered federal agencies to patch a Zimbra mail server flaw that let attackers inject commands through its SNMP monitoring component."
  },
  {
   "t": "Social Engineering",
