@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24T13:33:20.045230+00:00",
+ "generated": "2026-08-25T13:31:24.438534+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,13 +11,13 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 5,
+   "count": 9,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -29,13 +29,13 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 0,
+   "count": 5,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 0,
+   "count": 3,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 4,
+   "count": 9,
    "error": null
   },
   {
@@ -66,129 +66,255 @@
  "items": [
   {
    "source": "SecurityWeek",
-   "title": "Uber Fined Nearly $1 Billion by Dutch Regulators Over Automated Suspensions of Driver Accounts",
-   "url": "https://www.securityweek.com/uber-fined-nearly-1-billion-by-dutch-regulators-over-automated-suspensions-of-driver-accounts/",
-   "published": "2026-08-24T12:42:09+00:00",
-   "summary": "Dutch Data Protection Authority said it is imposing a fine of 825 million euros because Uber violated the EU’s General Data Protection Regulation. The post Uber Fined Nearly $1 Billion by Dutch Regulators Over Automated Suspensions of Driver Accounts appeared first on SecurityWeek ."
+   "title": "WhatsApp Adds Multiple Passkeys and Stronger 2SV in Account Security Update",
+   "url": "https://www.securityweek.com/whatsapp-adds-multiple-passkeys-and-stronger-2sv-in-account-security-update/",
+   "published": "2026-08-25T13:00:00+00:00",
+   "summary": "When Android users get a call from a non-contact, they will see more information about the caller, including their country. The post WhatsApp Adds Multiple Passkeys and Stronger 2SV in Account Security Update appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Microsoft: August updates break printing, PDF export in WPF apps",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-updates-break-printing-pdf-export-in-wpf-apps/",
-   "published": "2026-08-24T12:40:21+00:00",
-   "summary": "Microsoft has confirmed that .NET Framework updates released as part of the August 2026 Patch Tuesday are breaking printing and PDF export in WPF applications. [...]"
+   "title": "WhatsApp adds stronger two-step verification, multiple passkeys",
+   "url": "https://www.bleepingcomputer.com/news/security/whatsapp-adds-stronger-two-step-verification-multiple-passkeys/",
+   "published": "2026-08-25T13:00:00+00:00",
+   "summary": "WhatsApp has started rolling out several new account security features, including support for multiple passkeys and stronger two-step verification. [...]"
   },
   {
    "source": "SecurityWeek",
-   "title": "91 Vulnerabilities Patched in Spring Application Framework",
-   "url": "https://www.securityweek.com/91-vulnerabilities-patched-in-spring-application-framework/",
-   "published": "2026-08-24T11:58:28+00:00",
-   "summary": "More than 200 vulnerabilities have been patched to date this year, compared to only 16 in 2025 and 22 in 2024. The post 91 Vulnerabilities Patched in Spring Application Framework appeared first on SecurityWeek ."
+   "title": "Hands-On Cyber-Physical Systems Training Returns to ICS Cybersecurity Conference",
+   "url": "https://www.securityweek.com/hands-on-cyber-physical-systems-training-returns-to-ics-cybersecurity-conference/",
+   "published": "2026-08-25T12:57:59+00:00",
+   "summary": "Hands-on Cyber Attack Methods course returns to SecurityWeek’s ICS Cybersecurity Conference, October 6–8 at the W Nashville. The post Hands-On Cyber-Physical Systems Training Returns to ICS Cybersecurity Conference appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Hackers breached over 270 Zimbra servers in ongoing attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/",
+   "published": "2026-08-25T12:04:02+00:00",
+   "summary": "Threat actors have already compromised over 270 Zimbra instances in remote code execution attacks targeting a high-severity Zimbra Collaboration Suite (ZCS) vulnerability. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows",
+   "url": "https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html",
+   "published": "2026-08-25T11:56:15+00:00",
+   "summary": "Thousands of companies have been affected by the Mirage2FA campaign from 2024 to 2026. The commercial phishing-as-a-service toolkit targets Microsoft 365 accounts by abusing legitimate login flows and bypassing two-factor authentication. According to ANY.RUN research, 48% of targeted email addresses were potentially compromised. Most of the affected companies are US-based. Mirage2FA Campaign"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages",
+   "url": "https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html",
+   "published": "2026-08-25T11:52:43+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a new campaign that uses a cluster of 24 npm packages as free phishing infrastructure for redirecting to ClickFix-style fake CAPTCHA pages. \"While the malware is simply a single HTML page inside the npm package, and while downloading it wouldn't do harm, the threat actor’s use of npm isn't to infect developers who install it, but to use the"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands",
+   "url": "https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html",
+   "published": "2026-08-25T11:33:44+00:00",
+   "summary": "Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE. While threat actors are known to abuse legitimate services to point to additional command-and-control (C2) infrastructure and blend in with regular network traffic, the development"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "First Malware Built Specifically for Car Head Units Fuels Botnet",
+   "url": "https://www.securityweek.com/first-malware-built-specifically-for-car-head-units-fuels-botnet/",
+   "published": "2026-08-25T11:18:22+00:00",
+   "summary": "Kaspersky researchers have linked the malware to the BadBox botnet, which has ensnared millions of devices. The post First Malware Built Specifically for Car Head Units Fuels Botnet appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Frontier AI: Vulnerability Management's Systemic Revolution",
+   "url": "https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html",
+   "published": "2026-08-25T11:14:07+00:00",
+   "summary": "Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline. The symbiotic relationship between vulnerability and patch management teams has also existed for that time and has gone through waves of contention and thankfulness. While this relationship required thoughtful care and feeding from both sides, both sides were aiming to work toward a"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Police arrests dozens of suspects in global cybercrime crackdown",
+   "url": "https://www.bleepingcomputer.com/news/security/police-arrests-dozens-of-suspects-in-global-cybercrime-crackdown/",
+   "published": "2026-08-25T10:53:20+00:00",
+   "summary": "Law enforcement agencies from 22 countries helped identify 263 suspects and arrested 58 individuals linked to cybercrime networks coordinated by African crime groups. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Silent Patches Don’t Stop Attackers – They Blind Defenders",
+   "url": "https://www.securityweek.com/silent-patches-dont-stop-attackers-they-blind-defenders/",
+   "published": "2026-08-25T10:00:00+00:00",
+   "summary": "Silent patches can become exploit intelligence for attackers while leaving defenders without the context needed to prioritize risk. The post Silent Patches Don’t Stop Attackers They Blind Defenders appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
+   "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
+   "published": "2026-08-25T08:34:07+00:00",
+   "summary": "Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators. The vulnerabilities, as disclosed by Patchstack, are listed below - CVE-2026-61979 (CVSS score: 8.1) - An unauthenticated privilege escalation"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Taiwan Charges 9 Over Illegal AI Server Exports to China, Including Nvidia and Super Micro Staff",
+   "url": "https://www.securityweek.com/taiwan-charges-9-over-illegal-ai-server-exports-to-china-including-nvidia-and-super-micro-staff/",
+   "published": "2026-08-25T08:30:00+00:00",
+   "summary": "AI infrastructure, including advanced semiconductors mostly made in Taiwan, has become a key point of competition between the U.S. and China. The post Taiwan Charges 9 Over Illegal AI Server Exports to China, Including Nvidia and Super Micro Staff appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "CISA Warns of Exploited Oracle WebLogic Vulnerability",
+   "url": "https://www.securityweek.com/cisa-warns-of-exploited-oracle-weblogic-vulnerability/",
+   "published": "2026-08-25T07:46:34+00:00",
+   "summary": "The vulnerability is tracked as CVE-2026-21962 and it has been widely exploited by threat actors against WebLogic servers. The post CISA Warns of Exploited Oracle WebLogic Vulnerability appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+   "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
+   "published": "2026-08-25T06:12:35+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a maximum-severity security flaw impacting Oracle HTTP Server and Oracle WebLogic Server to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerability, tracked as CVE-2026-21962 (CVSS score: 10.0), allows an unauthenticated attacker with network access via HTTP to"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "SCOTUS tosses one of two injunctions against Trump USPS mail-in ballot rules",
+   "url": "https://cyberscoop.com/supreme-court-ruling-usps-mail-in-ballots/",
+   "published": "2026-08-24T22:47:08+00:00",
+   "summary": "The 6-3 decision dismisses one lawsuit brought by states, saying they have no standing to sue because the disputed sections “neither requires nor forbids anything of anyone outside the executive branch.” The post SCOTUS tosses one of two injunctions against Trump USPS mail-in ballot rules appeared first on CyberScoop ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Exploited Zimbra Flaw Highlights Shrinking Window to Patch",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch",
+   "published": "2026-08-24T21:46:55+00:00",
+   "summary": "CISA has issued a three-day deadline for agencies to patch a Zimbra security vulnerability, CVE-2026-73570, which allows full takeover of a user's communications."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Unpatched Calix flaw lets hackers bypass NAT to expose internal devices",
+   "url": "https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/",
+   "published": "2026-08-24T21:14:30+00:00",
+   "summary": "An unpatched vulnerability in Calix GS7 XGS (GS5239XG) residential routers used by multiple U.S. broadband providers allows remote, unauthenticated attackers to create port-forwarding rules that can expose local network devices to the public internet. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Foul Language: WordlistLoader Disguises Malware as Ordinary Text",
+   "url": "https://www.darkreading.com/data-privacy/wordlistloader-disguises-malware-ordinary-text",
+   "published": "2026-08-24T20:51:27+00:00",
+   "summary": "ClickFix-style threat campaigns are using a new trick to evade detection and deliver Amatera, an increasingly prevalent infostealer."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Hackers target WordPress sites in miniOrange auth bypass attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-target-wordpress-sites-in-miniorange-auth-bypass-attacks/",
+   "published": "2026-08-24T19:26:32+00:00",
+   "summary": "Hackers are attempting to exploit two critical authentication bypass vulnerabilities in the miniOrange SAML 2.0 Single Sign On plugin for WordPress that can be used to forge SAML responses and log in as administrators. [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Treasury sanctions alleged Iranian hackers as part of ‘economic D-Day’",
+   "url": "https://cyberscoop.com/us-treasury-sanctions-iranian-hackers-economic-dday/",
+   "published": "2026-08-24T19:06:12+00:00",
+   "summary": "It’s a follow-up to an indictment the Justice Department unsealed last week against people affiliated with the Mabna Institute. The post Treasury sanctions alleged Iranian hackers as part of ‘economic D-Day’ appeared first on CyberScoop ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Bipartisan Senate bill aims to prepare energy sector for Q-Day",
+   "url": "https://cyberscoop.com/quantum-guard-act-electric-grid-cybersecurity/",
+   "published": "2026-08-24T19:01:05+00:00",
+   "summary": "Under the bill, FERC would consider cyber threats from quantum computers and post-quantum cryptography in its reliability standards for the energy sector. The post Bipartisan Senate bill aims to prepare energy sector for Q-Day appeared first on CyberScoop ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "TikTok reaches $400M settlement with US over COPPA violations",
+   "url": "https://www.bleepingcomputer.com/news/legal/tiktok-reaches-400m-settlement-with-us-over-coppa-violations/",
+   "published": "2026-08-24T17:56:24+00:00",
+   "summary": "The U.S. Department of Justice announced a $400 million settlement with TikTok, ByteDance, and affiliated companies over allegations that they violated the Children's Online Privacy Protection Act (COPPA). [...]"
   },
   {
    "source": "The Hacker News",
    "title": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
    "url": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html",
-   "published": "2026-08-24T11:58:00+00:00",
+   "published": "2026-08-24T17:41:30+00:00",
    "summary": "If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work. The harder part is what comes after. AI can also introduce open-source packages at a pace your security team was never built to handle. More dependencies mean more vulnerabilities to review, more remediation work, and a backlog that can"
   },
   {
    "source": "The Hacker News",
-   "title": "Critical Keycloak Password Reset Flaw Could Let Unauthenticated Attackers Take Over Any Account",
-   "url": "https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html",
-   "published": "2026-08-24T11:56:34+00:00",
-   "summary": "Red Hat and the Keycloak project have released patches to address a critical security flaw in the open-source identity and access management server that could allow an unauthenticated remote attacker to take over any user account by forcing a password reset. The vulnerability, assigned the CVE identifier CVE-2026-18963, is rated 9.1 on the CVSS scoring system by Red Hat, which acts as"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Operation QUICSILVER Targets Myanmar Government and IT with QUICAgent Backdoor",
-   "url": "https://thehackernews.com/2026/08/operation-quicsilver-targets-myanmar.html",
-   "published": "2026-08-24T11:51:36+00:00",
-   "summary": "Cybersecurity researchers have flagged a cyber espionage campaign targeting Myanmar that uses graduation ceremony invitation lures to deliver a Go backdoor called QUICAgent. The campaign, codenamed Operation QUICSILVER, has been found to target government and information technology sectors, per Seqrite Labs. The activity is assessed to be the work of a China-nexus threat actor with moderate"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "The Outsized Shadow: Why 5% of AI Users Are Your Biggest Security Risk",
-   "url": "https://thehackernews.com/2026/08/the-outsized-shadow-why-5-of-ai-users.html",
-   "published": "2026-08-24T11:30:00+00:00",
-   "summary": "Big security risks come in small packages. While enterprise security teams focus on policing the proliferation of employees using ChatGPT and Claude for quick drafting tasks, a more urgent threat is posed by a handful of AI super-adopters who are quietly hardcoding unvetted tools into critical business operations. According to new research published by Akamai, the top 5% of enterprise power"
+   "title": "Weedhack Malware Spreads via Fake Minecraft Clients and SEO Poisoning",
+   "url": "https://thehackernews.com/2026/08/weedhack-malware-spreads-via-fake.html",
+   "published": "2026-08-24T17:41:11+00:00",
+   "summary": "Cybersecurity researchers have found that several websites are still actively distributing a malware family known as Weedhack to gamers by masquerading as Minecraft clients. McAfee Labs said it detected and blocked more than 6,300 attempts to access malicious sites, adding that it found lookalike gaming websites designed to mimic legitimate projects, including branding, feature lists, FAQs,"
   },
   {
    "source": "SecurityWeek",
-   "title": "Venezuelan Gets Record Federal Prison Term for ATM Jackpotting",
-   "url": "https://www.securityweek.com/venezuelan-gets-record-federal-prison-term-for-atm-jackpotting/",
-   "published": "2026-08-24T10:59:30+00:00",
-   "summary": "Juan Manuel Gouveia-Aguilera has been sentenced to 8 years in prison for his role in an ATM jackpotting scheme that caused millions in losses. The post Venezuelan Gets Record Federal Prison Term for ATM Jackpotting appeared first on SecurityWeek ."
+   "title": "ReliaQuest Confirms ShinyHunters Hack, but Says Impact Was Limited",
+   "url": "https://www.securityweek.com/reliaquest-confirms-shinyhunters-hack-but-says-impact-was-limited/",
+   "published": "2026-08-24T17:38:21+00:00",
+   "summary": "A ReliaQuest employee fell victim to a phishing attack and the hackers gained access to a dashboard. The post ReliaQuest Confirms ShinyHunters Hack, but Says Impact Was Limited appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "CISA orders urgent patching of actively exploited Zimbra flaw",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-urgent-patching-of-actively-exploited-zimbra-flaw/",
-   "published": "2026-08-24T10:45:12+00:00",
-   "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) has ordered U.S. government agencies to patch an actively exploited vulnerability in Zimbra Collaboration Suite (ZCS) within three days. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Personal Information Exposed in Apollo Global Data Breach",
-   "url": "https://www.securityweek.com/personal-information-exposed-in-apollo-global-data-breach/",
-   "published": "2026-08-24T10:08:42+00:00",
-   "summary": "The private equity firm appears to have been targeted as part of a campaign focusing on major financial companies. The post Personal Information Exposed in Apollo Global Data Breach appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Rethinking Application Security for the AI Era",
-   "url": "https://www.securityweek.com/rethinking-application-security-for-the-ai-era/",
-   "published": "2026-08-24T10:00:00+00:00",
-   "summary": "As AI dramatically shortens the time from vulnerability disclosure to exploitation, enterprises must look beyond patching to reduce application risk. The post Rethinking Application Security for the AI Era appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft shares temporary fix for Windows 11 gaming issues",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-temporary-fix-for-windows-11-gaming-issues/",
-   "published": "2026-08-24T09:42:05+00:00",
-   "summary": "Microsoft has shared a temporary fix for ongoing gaming issues caused by Windows 11 updates released during the August 2026 Patch Tuesday. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Iran-Linked Hackers Shut Down UK Power Plant for Four Days",
-   "url": "https://www.securityweek.com/iran-linked-hackers-shut-down-uk-power-plant-for-four-days/",
-   "published": "2026-08-24T09:22:09+00:00",
-   "summary": "The attack caused real-world operational disruption and raised concerns about the resilience of Britain’s distributed energy infrastructure and the potential for repeatable attacks. The post Iran-Linked Hackers Shut Down UK Power Plant for Four Days appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "TikTok Reaches $400 Million Settlement With US Justice Department Over Children’s Privacy",
-   "url": "https://www.securityweek.com/tiktok-reaches-400-million-settlement-with-us-justice-department-over-childrens-privacy/",
-   "published": "2026-08-24T09:11:11+00:00",
-   "summary": "TikTok will pay $300 million immediately and another $100 million after an order vacates an earlier consent decree against its predecessor company, Musical.ly. The post TikTok Reaches $400 Million Settlement With US Justice Department Over Children's Privacy appeared first on SecurityWeek ."
+   "title": "ReliaQuest confirms failed data-theft attack after ShinyHunters breach",
+   "url": "https://www.bleepingcomputer.com/news/security/reliaquest-confirms-failed-data-theft-attack-after-shinyhunters-breach/",
+   "published": "2026-08-24T15:17:16+00:00",
+   "summary": "Cybersecurity company ReliaQuest has confirmed that one of its employees was targeted in a social engineering attack after hackers impersonated a member of the security team. [...]"
   },
   {
    "source": "Cybersecurity Dive",
-   "title": "Salesforce gave every org the same free scanner. Attackers already know what it misses.",
-   "url": "https://www.cybersecuritydive.com/spons/salesforce-gave-every-org-the-same-free-scanner-attackers-already-know-wha/828063/",
-   "published": "2026-08-24T09:00:00+00:00",
-   "summary": "A defense every attacker can rehearse against isn t a defense. It s a false sense of security."
+   "title": "UK power facility disabled for days after suspected state-linked cyberattack",
+   "url": "https://www.cybersecuritydive.com/news/uk-power-facility-disabled-Iran-cyberattack/828599/",
+   "published": "2026-08-24T15:08:49+00:00",
+   "summary": "The disruption took place amid a wave of attacks targeting vulnerable industrial devices in the water and energy sectors."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Tricky 'SynkLoader' Multitool May Herald Ransomware",
+   "url": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware",
+   "published": "2026-08-24T15:02:32+00:00",
+   "summary": "An advanced, multilingual malware family brings back a trick from yesteryear — screen hijacking — for effective password theft, along with a slew of novel features."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "House Democrats ask GAO to study CISA workforce cuts",
+   "url": "https://www.cybersecuritydive.com/news/cisa-workforce-cuts-congress-letter-gao-study/828596/",
+   "published": "2026-08-24T14:43:48+00:00",
+   "summary": "The five lawmakers, who serve on the Homeland Security Committee, said Congress didn't know enough about the Trump administration's changes to the cybersecurity agency."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "ToxicPanda Banking Trojan Matures Into Enterprise Threat",
+   "url": "https://www.darkreading.com/mobile-security/toxicpanda-banking-trojan-matures-enterprise-threat",
+   "published": "2026-08-24T14:34:59+00:00",
+   "summary": "The latest version of the Android malware has new features that expand its global reach and put more than users' financial applications at risk."
   },
   {
    "source": "The Hacker News",
-   "title": "UAT-10147 Uses AI to Scale Server Attacks, Deploys SPECTRE With EDR Bypass and Linux Rootkit",
-   "url": "https://thehackernews.com/2026/08/uat-10147-uses-ai-to-scale-server.html",
-   "published": "2026-08-24T08:08:31+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a Chinese-speaking cybercrime group dubbed UAT-10147 that's targeting Windows and Linux web servers globally across the education, media, technology, and gaming sectors. The vast majority of the targets are located in Brazil, Bolivia, China, Canada, and Vietnam. Details of the threat activity came to light following the discovery of an open"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Anthropic Expands Mythos 5 Access to More Defenders, Unveils $35M Open Source Fund",
-   "url": "https://www.securityweek.com/anthropic-expands-mythos-5-access-to-more-defenders-unveils-35m-open-source-fund/",
-   "published": "2026-08-24T07:18:58+00:00",
-   "summary": "Claude Security, currently in public beta for Claude Enterprise customers, now runs codebase scans on Mythos 5. The post Anthropic Expands Mythos 5 Access to More Defenders, Unveils $35M Open Source Fund appeared first on SecurityWeek ."
+   "title": "⚡ Weekly Recap: AI-Powered PLC Attacks, GitLab Attacks, Stripe Key Leaks and More",
+   "url": "https://thehackernews.com/2026/08/weekly-recap-ai-powered-plc-attacks.html",
+   "published": "2026-08-24T14:32:10+00:00",
+   "summary": "A package gets installed. A login prompt opens. A box sits exposed to the internet. Nothing looks unusual yet. That’s roughly the mood this week. Trusted tools turn hostile, old weak spots get fresh attention, AI makes exploit work cheaper, and researchers keep finding attacks that sound harder than they actually are. Plenty to clean up. Here’s the short version. ⚡ Threat of the Week U.S."
   },
   {
    "source": "BleepingComputer",
-   "title": "ToxicPanda Android malware uses VPN permissions to block Google Play",
-   "url": "https://www.bleepingcomputer.com/news/security/toxicpanda-android-malware-uses-vpn-permissions-to-block-google-play/",
-   "published": "2026-08-23T14:23:46+00:00",
-   "summary": "The ToxicPanda Android malware has evolved with new malicious functionality, expanding its targeting to 349 applications and adding support for 167 remote commands. [...]"
+   "title": "Microsoft Teams now lets admins block external bots from meetings",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-now-lets-admins-block-external-bots-from-meetings/",
+   "published": "2026-08-24T14:00:19+00:00",
+   "summary": "Microsoft is rolling out a new Teams meeting protection policy that allows administrators to automatically block all identified external bots from joining Teams meetings. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "South Korean startup platform breach exposes key management failures",
+   "url": "https://www.bleepingcomputer.com/news/security/south-korean-startup-platform-breach-exposes-key-management-failures/",
+   "published": "2026-08-24T14:00:10+00:00",
+   "summary": "A breach at South Korea's government-backed startup platform exposed encrypted personal data after an encryption key was included in an API. Penta Security explains why encryption keys must be securely managed and kept separate from the data they protect. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Hired for One Job, Judged on Another: The CISO’s Real Problem",
+   "url": "https://www.securityweek.com/hired-for-one-job-judged-on-another-the-cisos-real-problem/",
+   "published": "2026-08-24T14:00:00+00:00",
+   "summary": "The skills that get a CISO hired are rarely the skills they are judged on later. Most security leaders are stuck in that gap. Closing it is the real job. The post Hired for One Job, Judged on Another: The CISO’s Real Problem appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "The Vulnerability Gap: Why Discovery Is Outrunning Repair",
+   "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-gap-why-discovery-is-outrunning-repair",
+   "published": "2026-08-24T14:00:00+00:00",
+   "summary": "AI is discovering more vulnerabilities, faster, and under a tightening regulatory environment, making this an all-hands-on-deck moment for the cybersecurity community."
   }
  ]
 }
