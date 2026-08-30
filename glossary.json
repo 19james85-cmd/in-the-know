@@ -216,6 +216,12 @@
   "e": "In July 2026, the Russian group Laundry Bear exploited a Cross-Site Scripting (XSS) bug in Microsoft Exchange OWA (CVE-2026-42897) so that merely viewing a crafted email ran their code."
  },
  {
+  "t": "Cryptographic Agility",
+  "c": "Cryptography",
+  "d": "Cryptographic agility means designing systems so the encryption algorithm can be swapped out without rewriting the whole application. It matters because algorithms eventually get broken and you need to be able to move fast when that happens.",
+  "e": "In August 2026, the U.S. Treasury launched a Quantum-Readiness Task Force that named cryptographic agility as a core goal for financial firms preparing for post-quantum encryption."
+ },
+ {
   "t": "Cryptographic Context Injection",
   "c": "Threat/Actor",
   "d": "An attack technique that hides malicious instructions inside encrypted or obfuscated content so security filters can't recognize them, only revealing the hidden commands once the target system decrypts or processes the content internally. It has been used to smuggle instructions past AI chatbot safety guardrails.",
@@ -570,6 +576,12 @@
   "e": "In August 2026, researchers showed a malicious Model Context Protocol (MCP) server could split a harmful request into innocent-looking steps to make an AI coding agent leak SSH keys and secrets."
  },
  {
+  "t": "N-Day",
+  "c": "Vulnerability",
+  "d": "An N-day is a vulnerability that has already been publicly disclosed and has a patch available - the opposite of a zero-day. Attackers love them because plenty of organizations take weeks or years to apply fixes.",
+  "e": "In August 2026, an NSA and FBI advisory said the China-nexus group QTFY used both zero-day and N-day flaws, including a 2024 Check Point bug (CVE-2024-24919) that had been patched for over a year."
+ },
+ {
   "t": "NIST",
   "c": "Regulatory",
   "d": "National Institute of Standards and Technology — develops cybersecurity standards and frameworks, most notably the NIST CSF, with five functions: Identify, Protect, Detect, Respond, Recover.",
@@ -610,6 +622,12 @@
   "c": "Vulnerability",
   "d": "A software update released by a vendor to fix a security vulnerability or bug. Applying patches promptly is one of the most effective ways to prevent cyberattacks.",
   "e": "Microsoft's Patch Tuesday released fixes for 87 vulnerabilities, including three already exploited in the wild."
+ },
+ {
+  "t": "Patch Bypass",
+  "c": "Vulnerability",
+  "d": "A patch bypass is when researchers or attackers find a way around a fix a vendor already shipped, so the vulnerability is exploitable again even on 'patched' systems. It usually happens because the first fix blocked one specific attack path instead of the underlying flaw.",
+  "e": "In August 2026, watchTowr and Huntress defeated PaperCut's first emergency patch for two actively exploited NG/MF flaws, forcing the vendor to publish Emergency Patch Release 2 on August 28."
  },
  {
   "t": "Patch Tuesday",

@@ -2507,5 +2507,719 @@
    }
   ],
   "analystFooter": "Patch priority today is the actively-exploited, KEV-listed edge and server bugs — SharePoint (CVE-2026-45659), SonicWall SMA1000 (CVE-2026-15409), and N-able N-central (CVE-2026-18577) — since all three are now feeding ransomware; then review who and what your AI agents and RMM tools are allowed to reach."
+ },
+ "2026-08-12": {
+  "leadStory": {
+   "headline": "Microsoft's August Patch Tuesday fixes ~400 flaws, including a Windows zero-day already used by North Korean hackers",
+   "source": "Krebs on Security",
+   "sourceUrl": "https://krebsonsecurity.com",
+   "url": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/",
+   "tags": [
+    {
+     "label": "CVE-2026-68820",
+     "type": "d"
+    },
+    {
+     "label": "Zero-Day",
+     "type": "d"
+    },
+    {
+     "label": "Privilege Escalation",
+     "type": "d"
+    },
+    {
+     "label": "Patch Tuesday",
+     "type": "a"
+    }
+   ],
+   "body": "Microsoft's August 2026 Patch Tuesday closed roughly 400 security vulnerabilities across Windows and related software, three of which are zero-days — flaws that were public or under attack before a fix existed. The one demanding immediate attention is CVE-2026-68820, a use-after-free bug in the Windows Ancillary Function Driver for WinSock (afd.sys), the low-level component that handles network socket operations. A use-after-free is a memory-management error where the software keeps using a chunk of memory after it has been freed, and attackers exploit it here to jump from a normal user account to full SYSTEM control. Check Point reports that North Korean state hackers were already exploiting it to plant a kernel-mode rootkit, and Microsoft also patched two publicly disclosed zero-days in the User Profile Service (CVE-2026-62832) and Container Isolation driver (CVE-2026-72971).",
+   "beginnerTip": "\"Patch Tuesday\" is the second Tuesday of each month, when Microsoft releases its bundle of security fixes. When you see a flaw is being exploited to gain <strong>SYSTEM</strong> privileges, that means the attacker gets the highest level of control on a Windows machine — more than a normal administrator — so these updates should be installed right away."
+  },
+  "cves": [
+   {
+    "headline": "Attackers actively exploiting VMware vCenter directory-traversal flaw for persistent remote access",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
+    "tags": [
+     {
+      "label": "CVE-2026-59310",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 9.8",
+      "type": "d"
+     },
+     {
+      "label": "Path Traversal",
+      "type": "d"
+     },
+     {
+      "label": "Remote Code Execution (RCE)",
+      "type": "d"
+     }
+    ],
+    "body": "Threat actors are actively exploiting CVE-2026-59310, a critical (CVSS 9.8) directory-traversal flaw in Broadcom VMware vCenter's Syslog server. Directory traversal (also called path traversal) is a trick where an attacker sends file paths containing sequences like \"../\" to escape the folder they are supposed to be limited to and reach files elsewhere on the system; here it leads to remote code execution with no login required. Researchers at QUIRSO counted 361 unique victim IP addresses across 47 countries, with an advanced persistent threat (APT) using the bug to establish remote access. Broadcom shipped the fix in advisory VMSA-2026-0006 on July 29, and because vCenter is the management console for entire virtualized environments, a compromise hands attackers a foothold over every hosted server.",
+    "beginnerTip": "vCenter is the central dashboard admins use to run all their virtual machines, so it is a high-value target. If a system is internet-facing and a patch exists for an <strong>actively exploited</strong> flaw, treat it as urgent — attackers scan for these within hours."
+   },
+   {
+    "headline": "Adobe patches three CVSS 10.0 flaws in ColdFusion and Campaign Classic",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html",
+    "tags": [
+     {
+      "label": "CVE-2026-48362",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 10.0",
+      "type": "d"
+     },
+     {
+      "label": "Command Injection",
+      "type": "d"
+     },
+     {
+      "label": "Remote Code Execution (RCE)",
+      "type": "d"
+     }
+    ],
+    "body": "Adobe released fixes for multiple critical flaws in ColdFusion, Commerce, and Campaign Classic that can lead to arbitrary code execution and privilege escalation. Three carry the maximum CVSS score of 10.0: two incorrect-authorization bugs in Campaign Classic (CVE-2026-71398 and CVE-2026-27302) and an OS command injection flaw in ColdFusion (CVE-2026-48362). Command injection means the software passes attacker-supplied text into an operating-system command without cleaning it, letting the attacker run their own commands on the server. Adobe rated the updates Priority 1 and, while it says there is no evidence of exploitation yet, urged admins to patch within 72 hours.",
+    "beginnerTip": "A <strong>CVSS 10.0</strong> is the worst possible severity score on the 0–10 scale — typically an unauthenticated, remotely exploitable flaw that fully compromises the system. \"No evidence of exploitation yet\" is not \"safe\"; it just means the clock is ticking before someone weaponizes it."
+   },
+   {
+    "headline": "Maximum-severity SAP Commerce Cloud flaw lets unauthenticated attackers run code",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html",
+    "tags": [
+     {
+      "label": "CVE-2026-58231",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 10.0",
+      "type": "d"
+     },
+     {
+      "label": "Authentication Bypass",
+      "type": "d"
+     },
+     {
+      "label": "Unauthenticated",
+      "type": "d"
+     }
+    ],
+    "body": "SAP's August patch day addressed CVE-2026-58231, a maximum-severity (CVSS 10.0) improper-authorization flaw in SAP Commerce Cloud's Data Hub Adapter. Because of insufficient authorization checks and input validation, an unauthenticated attacker can abuse a default authentication client and send specially crafted input to bypass authentication and likely execute code. It affects COM_CLOUD versions 2211 and 2211-JDK21; SAP security firm Onapsis urged customers to apply the fixed release and redeploy, and, as a stopgap, to restrict access to the vulnerable endpoint with an IP filter. \"Unauthenticated\" is the key word here — the attacker needs no valid account or password to get in.",
+    "beginnerTip": "An <strong>authentication bypass</strong> means the attacker skips the login step entirely rather than guessing a password. Internet-exposed enterprise apps like SAP Commerce are prime targets, so restricting who can even reach the vulnerable endpoint buys time until you patch."
+   },
+   {
+    "headline": "Cisco warns of actively exploited ASA/FTD VPN flaw that crashes firewalls",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/",
+    "tags": [
+     {
+      "label": "CVE-2026-20349",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 8.6",
+      "type": "d"
+     },
+     {
+      "label": "KEV",
+      "type": "d"
+     },
+     {
+      "label": "Denial of Service (DoS)",
+      "type": "d"
+     }
+    ],
+    "body": "Cisco is warning that CVE-2026-20349, a high-severity (CVSS 8.6) denial-of-service flaw in its Secure Firewall ASA and Threat Defense (FTD) software, is being actively exploited to remotely crash devices. The bug stems from insufficient error checking when the Remote Access SSL VPN service processes HTTP requests: a single crafted request can force the device to reload, cutting off the VPN. A denial-of-service (DoS) attack does not steal data — it makes a system unavailable — but knocking out a firewall/VPN gateway can strand remote workers and disrupt operations. CISA added the flaw to its Known Exploited Vulnerabilities (KEV) catalog, giving federal agencies until August 14, 2026 to patch; there are no workarounds, so upgrading to a fixed release is the only fix.",
+    "beginnerTip": "The <strong>KEV</strong> (Known Exploited Vulnerabilities) catalog is CISA's authoritative list of flaws confirmed to be under real-world attack. It is one of the best free prioritization tools out there: if a bug is on the KEV list, patch it before anything that is merely theoretical."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "Gunra ransomware exploits old Fortinet flaws and bypasses MFA to hit critical infrastructure",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/gunra-ransomware-gang-fortinet-flaws-bypasses-mfa",
+    "tags": [
+     {
+      "label": "Ransomware",
+      "type": "d"
+     },
+     {
+      "label": "Ransomware-as-a-Service (RaaS)",
+      "type": "d"
+     },
+     {
+      "label": "MFA",
+      "type": "d"
+     },
+     {
+      "label": "Double Extortion",
+      "type": "d"
+     }
+    ],
+    "body": "A joint advisory from the FBI, CISA, NSA and partners warns that the Gunra ransomware group is breaking into critical-infrastructure networks by exploiting known Fortinet VPN authentication-bypass flaws (CVE-2024-55591 and CVE-2025-24472). Gunra emerged in April 2025 as a double-extortion operation — it steals data and encrypts systems, then threatens to leak the data unless paid — built from the leaked Conti ransomware source code, and now runs a ransomware-as-a-service (RaaS) affiliate program. In one case the crew defeated multi-factor authentication (MFA) by taking over an SSL-VPN admin account with default credentials, then editing the portal's authentication files so a Gunra-chosen one-time code would always be accepted. Targets span government, healthcare, finance, manufacturing, utilities and more.",
+    "beginnerTip": "Notice these are <strong>known</strong> Fortinet flaws with patches already available — attackers succeed because organizations leave edge devices unpatched. \"RaaS\" (ransomware-as-a-service) means the core developers rent their malware to affiliates for a cut, which multiplies how many groups can run attacks."
+   },
+   {
+    "headline": "Sandworm-linked UAC-0145 pushes a trojanized WireGuard VPN through fake job interviews",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/sandworm-hackers-target-it-pros-with-trojanized-wireguard-vpn-client/",
+    "tags": [
+     {
+      "label": "Threat Actor",
+      "type": "d"
+     },
+     {
+      "label": "Social Engineering",
+      "type": "d"
+     },
+     {
+      "label": "Backdoor",
+      "type": "d"
+     },
+     {
+      "label": "VPN",
+      "type": "w"
+     }
+    ],
+    "body": "Ukraine's CERT-UA has tied a campaign against IT professionals to UAC-0145, a subcluster of the Russian GRU threat group Sandworm (also tracked as APT44 and Seashell Blizzard). Active since at least May 2026, the operators pose as recruiters, study a target's resume, move the chat to Telegram and Zoom, then present a \"technical assessment\" requiring a corporate VPN — a trojanized build of the legitimate WireGuard client. The poisoned version adds a non-standard \"SymmetricKey\" config option carrying Base64 data that is AES-256-GCM-decrypted, giving the attacker a hidden backdoor to run arbitrary commands on the victim's machine. CERT-UA issued its formal advisory on August 9, 2026.",
+    "beginnerTip": "This is <strong>social engineering</strong>: the attack succeeds by manipulating a person (a fake job offer) rather than breaking software. A \"trojanized\" app is a real, working program that has been secretly modified to also do something malicious — so always download tools like WireGuard from the official source, never from a recruiter."
+   },
+   {
+    "headline": "DeadLock ransomware hides its command-and-control on the Polygon blockchain to resist takedowns",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/deadlock-ransomware-uses-blockchain-to-resist-infrastructure-takedown/",
+    "tags": [
+     {
+      "label": "Ransomware",
+      "type": "w"
+     },
+     {
+      "label": "Smart Contract",
+      "type": "w"
+     },
+     {
+      "label": "Command-and-Control (C2)",
+      "type": "w"
+     },
+     {
+      "label": "Double Extortion",
+      "type": "w"
+     }
+    ],
+    "body": "The DeadLock ransomware group, a Rust-based double-extortion operation first seen in July 2025 with 80-plus victims listed, is making its infrastructure harder to disrupt by storing configuration on the Polygon blockchain. Instead of hard-coding a server address that police can seize, DeadLock's recovery page reads its current chat-proxy location and leak-blog posts from Polygon smart contracts — small programs that live on the blockchain and return data on request. Because that data is public and immutable, and the page can rotate among six Polygon RPC providers, defenders cannot simply take down one server or domain. Victim chats run over the decentralized Session messenger, with stolen files parked on Wasabi cloud storage. Microsoft notes DeadLock is abusing the blockchain's design, not exploiting a flaw in Polygon itself.",
+    "beginnerTip": "\"Command-and-control\" (C2) is how malware phones home for instructions; taking down that channel is a classic way police disrupt a gang. Using a <strong>blockchain</strong> as the address book makes that harder because there is no single server to seize — a growing trend worth understanding."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "NIST seeks public input to overhaul the National Vulnerability Database for the AI age",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/nist-national-vulnerability-database-ai-overhaul/",
+    "tags": [
+     {
+      "label": "NIST",
+      "type": "a"
+     },
+     {
+      "label": "CVE",
+      "type": "a"
+     },
+     {
+      "label": "Vulnerability",
+      "type": "a"
+     }
+    ],
+    "body": "NIST has issued a Request for Information (RFI) on modernizing the National Vulnerability Database (NVD), the U.S. government's central repository of known software flaws that enriches CVE records with severity scores and other details. The NVD has struggled with a backlog as the volume of reported vulnerabilities keeps climbing, and NIST now wants ideas on using AI and automation to make the database more scalable, interoperable, and machine-consumable over the next five years. The RFI was published August 12, 2026, with comments due by October 11, 2026. Defenders everywhere rely on the NVD, so how it is rebuilt affects the whole industry's ability to prioritize patches.",
+    "beginnerTip": "The <strong>NVD</strong> (National Vulnerability Database) is where a raw CVE identifier gets its CVSS severity score and technical metadata. An \"RFI\" is a formal government request for feedback before writing new policy — a normal early step in how U.S. cyber standards get shaped."
+   },
+   {
+    "headline": "Federal judge again blocks Trump mail-in voting directive",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/federal-judge-blocks-trump-mail-in-voting-executive-order/",
+    "tags": [
+     {
+      "label": "Election Security",
+      "type": "a"
+     },
+     {
+      "label": "Governance",
+      "type": "a"
+     }
+    ],
+    "body": "A federal judge issued a second order blocking an executive directive aimed at restricting mail-in voting, after the U.S. Supreme Court had temporarily reversed an earlier decision through its emergency \"shadow docket.\" The dispute sits at the intersection of election administration and security policy, an area cybersecurity teams track because changes to voting procedures ripple into how election infrastructure is secured and audited. The ruling keeps existing mail-in voting rules in place for now while the legal fight continues.",
+    "beginnerTip": "Election security is a recognized cybersecurity subfield covering the systems and procedures that keep voting trustworthy. Court battles like this matter to defenders because <strong>policy changes drive technical changes</strong> — new rules can mean new systems to secure on tight deadlines."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "Picus Blue Report 2026: defenses block only 37% of what an attacker does after breaking in",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/enterprise-defenses-recovered-at-edge.html",
+    "tags": [
+     {
+      "label": "Lateral Movement",
+      "type": "a"
+     },
+     {
+      "label": "Reconnaissance",
+      "type": "a"
+     },
+     {
+      "label": "Incident Response",
+      "type": "a"
+     }
+    ],
+    "body": "Picus Labs' Blue Report 2026, drawn from more than 338 million attack simulations run in real production environments between January and June 2026, found that enterprises now stop attacks at the perimeter fairly well — prevention rose from 62% to 69% — but collapse once an intruder is inside. Only 37% of post-compromise actions were blocked, and just 14% generated a meaningful alert, meaning fewer than one in seven simulated attacks tripped an alarm. The biggest gaps were \"quiet\" activities like reconnaissance and credential collection, which slipped past defenses roughly nine times out of ten. The takeaway: attackers increasingly win by making no noise, so detection and response inside the network matter as much as blocking at the edge.",
+    "beginnerTip": "\"Post-compromise\" means everything an attacker does <strong>after</strong> the initial break-in — quietly looking around (reconnaissance), stealing passwords, and moving deeper (lateral movement). This report is a reminder that keeping intruders out is only half the job; you also need to spot them once they are in."
+   },
+   {
+    "headline": "LiteLLM supply-chain attack via poisoned Trivy scanner may have exposed thousands of organizations",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/over-2500-organizations-impacted-by-litellm-supply-chain-attack/",
+    "tags": [
+     {
+      "label": "Supply Chain Attack",
+      "type": "d"
+     },
+     {
+      "label": "CI/CD Pipeline",
+      "type": "d"
+     },
+     {
+      "label": "Infostealer",
+      "type": "d"
+     },
+     {
+      "label": "Credentials",
+      "type": "d"
+     }
+    ],
+    "body": "A group tracked as TeamPCP compromised the widely used Trivy security scanner and used that access to poison the build pipeline of LiteLLM, a popular open-source AI gateway. Two malicious LiteLLM releases (v1.82.7 and v1.82.8) sat on the PyPI package registry for about 40 minutes in March 2026, long enough to rack up tens of thousands of downloads while harvesting cloud keys, SSH keys, Kubernetes tokens and database passwords. This is a supply-chain attack — rather than hacking each victim directly, attackers poison a trusted piece of software so everyone who installs it is compromised. Reports put exposure at 2,100 to 2,500-plus organizations, a reminder that your security depends on the security of every tool in your build chain.",
+    "beginnerTip": "A <strong>supply-chain attack</strong> hits a trusted supplier so the malware rides in through a legitimate update. Notice the irony: the entry point here was a security scanner, showing that even defensive tools in your CI/CD pipeline (the automated system that builds and ships software) must be locked down."
+   },
+   {
+    "headline": "API design flaw let weaker AI models decode the hidden reasoning of stronger ones, exposing secrets",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
+    "tags": [
+     {
+      "label": "Credentials",
+      "type": "w"
+     },
+     {
+      "label": "REST API",
+      "type": "w"
+     }
+    ],
+    "body": "Researchers disclosed a weakness in how OpenAI, Anthropic and Google passed hidden AI \"reasoning\" between API calls that let them recover models' internal chain-of-thought — and, in some cases, secrets like API keys and passwords — from session logs. As companies wire AI models into more of their workflows through APIs (the interfaces that let programs talk to each other), the data those models handle becomes a fresh attack surface. The finding underlines an emerging theme in 2026: securing AI systems is not just about the model's answers, but about the plumbing that carries data to and from them.",
+    "beginnerTip": "An <strong>API</strong> (application programming interface) is how one piece of software requests something from another — here, an app asking an AI model to respond. As more sensitive data flows through these connections, treat API logs and traffic as something that needs protecting, not just the app's front door."
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "danger",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/hackers-leverage-new-microsoft-sharepoint-exploit-in-attacks/",
+    "text": "Attackers are already using a proof-of-concept (PoC) exploit that Rapid7 published for a critical Microsoft SharePoint vulnerability, turning research code into live attacks within a day."
+   },
+   {
+    "color": "warn",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldbreak-zero-day-grants-system-privileges/",
+    "text": "A researcher released \"ShieldBreak,\" a proof-of-concept zero-day that claims to bypass Microsoft Defender and grant SYSTEM privileges, published just after the August Patch Tuesday updates shipped."
+   },
+   {
+    "color": "accent",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chipmaker-patch-tuesday-intel-amd-fix-over-80-vulnerabilities-combined/",
+    "text": "Chipmaker Patch Tuesday: Intel and AMD together fixed more than 80 vulnerabilities, several high-severity ones enabling privilege escalation or code execution."
+   },
+   {
+    "color": "ok",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-adds-new-security-feature-to-thwart-man-in-the-middle-attacks/",
+    "text": "Signal rolled out Automatic Key Verification, which quietly confirms your encrypted chats have not been intercepted — a defense against man-in-the-middle (adversary-in-the-middle) attacks."
+   },
+   {
+    "color": "warn",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/delta-probes-wi-fi-deauth-attack-on-flight-carrying-def-con-attendees/",
+    "text": "Delta is investigating a rogue in-flight Wi-Fi network that appeared aboard a Las Vegas-to-Atlanta flight carrying DEF CON attendees, with federal authorities now involved."
+   }
+  ],
+  "analystFooter": "Prioritize the actively exploited, KEV-listed bugs first — Cisco ASA/FTD (CVE-2026-20349, federal deadline Aug 14), VMware vCenter (CVE-2026-59310), and the Windows afd.sys zero-day (CVE-2026-68820) from Patch Tuesday — then schedule the maximum-severity SAP (CVE-2026-58231) and Adobe (CVE-2026-48362) fixes, and audit which internet-facing VPN and edge appliances are still unpatched, since that is how both Gunra and today's exploited flaws get in."
+ },
+ "2026-08-13": {
+  "leadStory": {
+   "headline": "Attackers exploit critical SharePoint authentication-bypass (CVE-2026-55040) within a day of a public exploit",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
+   "tags": [
+    {
+     "label": "CVE-2026-55040",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 9.1",
+     "type": "d"
+    },
+    {
+     "label": "Authentication Bypass",
+     "type": "d"
+    },
+    {
+     "label": "JWT",
+     "type": "d"
+    },
+    {
+     "label": "In the Wild (ITW)",
+     "type": "d"
+    }
+   ],
+   "body": "Threat actors began attacking on-premises Microsoft SharePoint servers using CVE-2026-55040, a critical (CVSS 9.1) authentication bypass, within roughly a day of Rapid7 publishing a proof-of-concept (PoC) exploit on August 12, 2026. The flaw lives in SharePoint's handling of JWTs - JSON Web Tokens, the signed digital passes a server trusts to prove who a user is. By chaining four weaknesses in the token-validation pipeline (including a forged token that declares \"alg: none\" so no signature is checked), an unauthenticated remote attacker can mint a valid-looking token and impersonate any site user or administrator. Microsoft actually patched this in its July 2026 Patch Tuesday updates, but organizations that had not applied that fix were exposed the moment working attack code went public; honeypot operator Defused reported live exploitation attempts the same day.",
+   "beginnerTip": "A <strong>proof-of-concept</strong> (PoC) is demonstration code that shows a vulnerability is real and exploitable. The lesson here is timing: a patch existing is not the same as a patch installed, and once a PoC goes public, mass scanning and attacks typically start within hours - so internet-facing servers like SharePoint should be patched on the day the fix ships, not weeks later."
+  },
+  "cves": [
+   {
+    "headline": "Hackers target critical Adobe Commerce/Magento flaw (CVE-2026-71362) to hijack shopper accounts",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-adobe-commerce-flaw-to-hijack-customer-accounts/",
+    "tags": [
+     {
+      "label": "CVE-2026-71362",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 9.1",
+      "type": "d"
+     },
+     {
+      "label": "Account Takeover (ATO)",
+      "type": "d"
+     },
+     {
+      "label": "Unauthenticated",
+      "type": "d"
+     }
+    ],
+    "body": "Attackers have started probing CVE-2026-71362, a critical (CVSS 9.1) incorrect-authorization flaw in Adobe Commerce and the open-source Magento platform that powers a large share of online stores. Incorrect authorization means the software fails to properly check whether a request is allowed, and here it lets an unauthenticated attacker switch their session to another shopper's account - a straightforward account takeover (ATO) that hands over the victim's order history and personal data with no login, admin rights, or user interaction required. It affects Adobe Commerce and Magento versions 2.4.4 through 2.4.9. Adobe says it has no confirmed reports of in-the-wild exploitation, but e-commerce security firm Sansec reports its web application firewall is already blocking exploitation attempts, so store owners should apply the August 2026 security update immediately.",
+    "beginnerTip": "An <strong>account takeover</strong> (ATO) is when an attacker gains control of a legitimate user's account. \"No admin rights or user interaction required\" is what makes this one dangerous - the attacker does not need to trick the victim into clicking anything or steal a password first; the flawed authorization check does the work for them."
+   },
+   {
+    "headline": "Fortinet patches authentication-bypass flaws in FortiWeb and FortiManager",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/fortinet-patches-authentication-flaws-in-fortiweb-and-fortimanager/",
+    "tags": [
+     {
+      "label": "CVE-2026-26035",
+      "type": "w"
+     },
+     {
+      "label": "CVE-2026-70468",
+      "type": "w"
+     },
+     {
+      "label": "Authentication Bypass",
+      "type": "w"
+     },
+     {
+      "label": "Patch",
+      "type": "a"
+     }
+    ],
+    "body": "Fortinet released fixes for eight vulnerabilities, including two authentication-bypass bugs in its widely deployed security appliances. CVE-2026-26035 in FortiWeb (Fortinet's web application firewall) lets a remote, unauthenticated attacker log into the management GUI/CLI with a random username and password - but only when a non-default \"wildcard\" admin setting is enabled. CVE-2026-70468 in FortiManager (the central console used to administer fleets of firewalls) allows an attacker with a valid certificate to impersonate any managed FortiGate device. Fortinet also patched a high-severity buffer-overflow bug (CVE-2026-70465) in FortiClient for Windows. There are no reports of exploitation yet, but Fortinet edge devices are a perennial favorite of attackers, so admins should upgrade to the fixed builds (FortiWeb 8.0.3, 7.6.7, 7.4.12, and 7.2.13, and equivalent FortiManager releases).",
+    "beginnerTip": "An <strong>authentication bypass</strong> lets an attacker get in without valid credentials - skipping the login check rather than guessing a password. Network security appliances like firewalls sit at the edge of the network facing the internet, so a bypass on one is especially serious: it is the guard at the gate being tricked into opening the door."
+   },
+   {
+    "headline": "WordPress 7.0.4 fixes a decade-old RCE hiding in image processing (CVE-2026-65640)",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/wordpress-7-0-4-patches-remote-code-execution-vulnerability/",
+    "tags": [
+     {
+      "label": "CVE-2026-65640",
+      "type": "w"
+     },
+     {
+      "label": "CVSS 8.8",
+      "type": "w"
+     },
+     {
+      "label": "Remote Code Execution (RCE)",
+      "type": "d"
+     },
+     {
+      "label": "Patch",
+      "type": "a"
+     }
+    ],
+    "body": "WordPress shipped version 7.0.4 on August 12, 2026 to fix CVE-2026-65640, a high-severity (CVSS 8.8) remote code execution flaw that had been present in WordPress core since version 4.7 - nearly ten years. An attacker with an Author-level account or higher can upload a file that carries a harmless-looking \".png\" name but actually contains a PostScript program; sites using the Imagick image library then hand it to Ghostscript, which executes the embedded code. Remote code execution (RCE) means the attacker gets to run their own commands on the server. Only installations using Imagick and Ghostscript are affected, and the attacker needs a content-contributor account, so it is not fully unauthenticated - but the fix has been backported all the way to the 4.7 branch given how long the bug lingered.",
+    "beginnerTip": "This is a classic file-type confusion trick: the system trusts the <strong>.png</strong> extension in the filename instead of inspecting what the file actually contains. It is a good reminder that user-uploaded files should be validated by their real content, and that even trusted-contributor accounts should be treated as a potential attack path."
+   },
+   {
+    "headline": "Flaws in Belgium's national eID browser extension exposed 2 million users to drive-by RCE",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/application-security/belgium-eid-authentication-citizen-accounts-rce",
+    "tags": [
+     {
+      "label": "Remote Code Execution (RCE)",
+      "type": "w"
+     },
+     {
+      "label": "Cross-Site Scripting (XSS)",
+      "type": "w"
+     },
+     {
+      "label": "Attack Surface",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers disclosed severe, now-patched flaws in \"Connective,\" the browser extension that lets Belgian citizens authenticate to government and banking services with their electronic ID (eID) card. The extension is used by more than 2 million people, eight of Belgium's ten largest banks, and over 60 government agencies. Because the extension exposed powerful capabilities to any web page, a malicious website, ad, or hidden iframe could read card data, steal eID PINs, forge signing requests, and execute attacker-controlled code on the victim's Windows machine - a \"drive-by\" attack requiring nothing more than visiting the wrong page. Vendor Nitro Software Belgium remediated the issues in stages, with the final fixes (disabling risky library loading, hiding the PIN token behind a reference value, and enforcing origin checks) shipped on July 22, 2026.",
+    "beginnerTip": "Browser extensions are a growing part of the <strong>attack surface</strong> - the total set of places an attacker could try to get in. An extension runs inside your browser with special privileges, so if it trusts any web page that asks, a booby-trapped site or ad can abuse those privileges without you clicking or downloading anything."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "North Korea's Lazarus Group used a Windows kernel zero-day and fake job offers to hit defense and aerospace firms",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
+    "tags": [
+     {
+      "label": "Threat Actor",
+      "type": "d"
+     },
+     {
+      "label": "Zero-Day",
+      "type": "d"
+     },
+     {
+      "label": "Rootkit",
+      "type": "d"
+     },
+     {
+      "label": "Backdoor",
+      "type": "d"
+     }
+    ],
+    "body": "New reporting from Check Point details how the North Korean state group Lazarus exploited a Windows zero-day (CVE-2026-68820, a use-after-free bug in the afd.sys network driver) for roughly five weeks before Microsoft patched it on August 11. The activity is part of Operation Dream Job, Lazarus's long-running espionage campaign that lures defense contractors, aerospace engineers, and aviation staff - this time across France, Germany, India, and Brazil - with fake recruitment offers. Successful exploitation gave attackers SYSTEM-level control, which they used to install FudModule, a kernel-mode rootkit that blinds security tools, and a newly documented backdoor the researchers call Troy. A zero-day is a flaw attackers exploit before the vendor has a fix available; because this one is now patched, applying the August update is the priority.",
+    "beginnerTip": "A <strong>rootkit</strong> is malware that operates at the deepest level of the operating system (the \"kernel\") to hide the attacker's presence and disable defenses. Pair that with a zero-day and a convincing fake job offer, and you have the hallmark of a well-resourced nation-state actor - which is exactly why defense and aerospace employees are told to be skeptical of unsolicited recruiter messages."
+   },
+   {
+    "headline": "'Jewelbug' runs state espionage and cryptocurrency fraud from the same control panel",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/threat-intelligence/jewelbug-apt-state-espionage-cryptocurrency-theft",
+    "tags": [
+     {
+      "label": "Advanced Persistent Threat (APT)",
+      "type": "d"
+     },
+     {
+      "label": "Threat Actor",
+      "type": "a"
+     },
+     {
+      "label": "Command-and-Control (C2)",
+      "type": "a"
+     },
+     {
+      "label": "Backdoor",
+      "type": "w"
+     }
+    ],
+    "body": "Symantec researchers describe Jewelbug (also tracked as Earth Alux and REF7707), a China-based advanced persistent threat (APT) that blends two missions most groups keep separate: government and military espionage across Asia and the Middle East, and a for-profit cryptocurrency fraud operation running hundreds of fake exchanges. Strikingly, both are administered from one custom command-and-control (C2) panel called XG-Web, which the operators toggle between like browser tabs; it has logged over a million implant check-ins, 580,000-plus stolen browser cookies, and 2,300-plus exfiltrated emails, largely via its main \"Antino\" backdoor. An APT is a well-resourced, persistent intruder - usually state-linked - that quietly maintains long-term access. Blurring espionage with financially motivated crime makes attribution (working out who is behind an attack) harder for defenders.",
+    "beginnerTip": "<strong>Command-and-control</strong> (C2) is the infrastructure malware uses to receive orders and send stolen data back to the attacker. Seeing a single C2 panel run both spying and crypto theft is notable: it suggests the same crew is being paid by a government and moonlighting for profit, which muddies the usual line between nation-state and criminal activity."
+   },
+   {
+    "headline": "'City-Forum' campaign quietly siphoned data from Salesforce and ServiceNow portals for over a year",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/city-forum-data-theft-attacks-target-salesforce-servicenow-portals/",
+    "tags": [
+     {
+      "label": "Threat Actor",
+      "type": "w"
+     },
+     {
+      "label": "Reconnaissance",
+      "type": "w"
+     },
+     {
+      "label": "Attack Surface",
+      "type": "a"
+     }
+    ],
+    "body": "SaaS security firm Reco uncovered a long-running data-theft campaign, dubbed City-Forum, that harvests information exposed to anonymous (not-logged-in) users through misconfigured Salesforce Experience Cloud and ServiceNow customer portals. All the activity traces to a single server (IP 158.220.87.79, hosted by German provider Contabo) tied to the domain city-forum.com, which has been in place since at least March 2025. Victims span telecoms, banks and financial firms, enterprise software vendors, security companies, and public-sector portals. Rather than exploiting a software bug, the operator abuses the fact that these portals were set up to reveal more data to anonymous visitors than intended, combining Salesforce Aura enumeration with lesser-known techniques against ServiceNow search. Reco says the attacks are ongoing and increasing.",
+    "beginnerTip": "This is a misconfiguration problem, not a hacked password: the portals were configured to show sensitive records to visitors who were never asked to log in. If your organization runs a Salesforce or ServiceNow portal, it is worth checking exactly what a completely anonymous visitor can see - that is part of your external <strong>attack surface</strong>."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "White House memo lets vetted private firms 'hack back' at foreign cybercrime gangs",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/trump-memo-private-sector-offensive-hacking/",
+    "tags": [
+     {
+      "label": "Governance",
+      "type": "a"
+     },
+     {
+      "label": "Hack Back",
+      "type": "a"
+     },
+     {
+      "label": "Ransomware",
+      "type": "a"
+     }
+    ],
+    "body": "President Trump signed a National Security Presidential Memorandum on August 12, 2026 directing the National Coordination Center (NCC) to build a program that lets approved private security companies conduct offensive cyber operations - \"hack back\" - against foreign transnational criminal organizations behind ransomware, phishing, and sextortion campaigns targeting Americans. Participating firms would operate \"under the control and oversight of the United States Government,\" could conduct surveillance and destructive attacks on criminals' systems, and may have to post a $1 million bond. The White House cited more than $20.8 billion in reported U.S. losses to cyber-enabled crime in 2025. Experts called it a significant shift in U.S. cyber policy, noting past reservations about letting private companies wield offensive capabilities.",
+    "beginnerTip": "<strong>Hack Back</strong> means striking the attacker's own systems rather than just defending your own. It has long been legally off-limits for private companies in the U.S., which is why deputizing vetted firms to do it - even under government oversight - is a notable and debated policy change; critics worry about collateral damage and mistaken targets."
+   },
+   {
+    "headline": "FBI warns of a surge in account takeovers aimed at stealing explicit images from adults and minors",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-of-hackers-targeting-online-accounts-to-steal-explicit-photos/",
+    "tags": [
+     {
+      "label": "Sextortion",
+      "type": "w"
+     },
+     {
+      "label": "Social Engineering",
+      "type": "a"
+     },
+     {
+      "label": "MFA",
+      "type": "g"
+     }
+    ],
+    "body": "The FBI issued a public advisory warning that cybercriminals are breaking into social media, cloud, and other online accounts specifically to steal sexually explicit images and videos, then using them to extort victims - a crime known as sextortion. Both adults and children are being targeted. The bureau's guidance is preventive and practical: enable multi-factor authentication (MFA) on important accounts, use strong unique passwords, be wary of phishing and social-engineering attempts to harvest login details, and limit the sensitive content stored in accounts. Anyone being extorted is urged to report to the FBI's IC3 (ic3.gov) rather than pay.",
+    "beginnerTip": "<strong>Multi-factor authentication</strong> (MFA) requires a second proof of identity - like a code from your phone - on top of your password, and it blocks the large majority of account-takeover attempts. If you are a parent, this advisory is a prompt to talk with kids about locking down accounts and never sharing intimate images, since attackers deliberately target minors."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "Researchers document the first 'near-autonomous' AI-driven cyberattack on a government target",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/",
+    "tags": [
+     {
+      "label": "Agentic AI",
+      "type": "a"
+     },
+     {
+      "label": "AI Guardrails",
+      "type": "a"
+     },
+     {
+      "label": "Reconnaissance",
+      "type": "a"
+     }
+    ],
+    "body": "Israeli firm Dream says it observed the first publicly known near-autonomous AI attack against a government, attributed to suspected China-linked operators targeting Taiwanese government systems, including the nuclear safety agency and energy companies. Built on open-source AI agent frameworks (reported as Hermes and OpenClaw), the system deployed up to eight sub-agents per wave, each assigned a target and technique, and adapted mid-operation - correcting its own mistakes and expanding scope as it went. Over the first four days of July it compromised 85 accounts and pulled more than 2,500 personnel records. The operators sidestepped the AI models' safety guardrails by framing the intrusion as \"authorized penetration testing.\" This is an early real-world sign of \"agentic\" AI - software that plans and acts on its own - being turned to offensive use.",
+    "beginnerTip": "<strong>Agentic AI</strong> refers to AI that does not just answer questions but takes actions to reach a goal, chaining steps together with little human input. The worrying part here is speed and scale: an AI agent can run reconnaissance and adapt far faster than human operators, which shrinks the time defenders have to notice and respond."
+   },
+   {
+    "headline": "Defenders race to secure AI systems as attackers use models to find new ways in",
+    "source": "Cybersecurity Dive",
+    "sourceUrl": "https://www.cybersecuritydive.com",
+    "url": "https://www.cybersecuritydive.com/news/google-cloudaccenture/827689/",
+    "tags": [
+     {
+      "label": "Agentic AI",
+      "type": "a"
+     },
+     {
+      "label": "AI Guardrails",
+      "type": "a"
+     },
+     {
+      "label": "Attack Surface",
+      "type": "a"
+     }
+    ],
+    "body": "Research from Google Cloud and Accenture warns that criminal and state-backed actors are increasingly using AI models to discover fresh entry paths into corporate networks, forcing defenders to secure their AI systems before those guardrails can be circumvented. As organizations wire AI models and agents into more workflows, each integration becomes part of the attack surface - and the same tools that speed up defenders also lower the skill and time needed to find and exploit weaknesses. The practical takeaway echoes across 2026's reporting: securing AI is not only about the model's outputs but about the data, permissions, and connections wired around it.",
+    "beginnerTip": "\"<strong>AI Guardrails</strong>\" are the built-in rules meant to stop an AI model from doing harmful things. A recurring theme this year is that attackers keep finding ways around them - often just by rewording a request - so guardrails should be treated as one layer of defense, not a guarantee."
+   },
+   {
+    "headline": "Walmart's 'trusted agent' purple teaming turns red-vs-blue rivalry into shared learning",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/cybersecurity-operations/walmart-trusted-agent-approach-purple-teaming",
+    "tags": [
+     {
+      "label": "Purple Team",
+      "type": "g"
+     },
+     {
+      "label": "Incident Response",
+      "type": "a"
+     },
+     {
+      "label": "Reconnaissance",
+      "type": "a"
+     }
+    ],
+    "body": "Dark Reading profiles how Walmart reshaped its security testing by co-locating its offensive \"red\" team (which simulates attackers) and defensive \"blue\" team (which detects and responds) into a collaborative \"purple\" team. Purple Team work began at Walmart in 2016 and, by its own account, went badly at first because the two sides are naturally adversarial. The turning point was a culture change - a \"trusted agent\" observation model and an emphasis that exercises are \"about learning, not winning\" - with the teams now meeting several times a month to sharpen each other's work. It is a useful counterpoint to the technology-heavy news cycle: much of security improvement comes from how teams are organized and how openly they share what they find.",
+    "beginnerTip": "A <strong>Purple Team</strong> is not a separate group but a way of working: the red (attack) and blue (defense) teams collaborate so every simulated attack immediately teaches the defenders how to detect it. The key insight from Walmart is cultural - the exercise only works when nobody is trying to \"win.\""
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "danger",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hundreds-of-fake-chrome-vpn-extensions-route-traffic-through-a-proxy/",
+    "text": "Researchers found 737 fake Chrome VPN extensions - impersonating brands like Proton, NordVPN, and ExpressVPN with 75,000+ installs - that quietly routed users' browser traffic through attacker-controlled SOCKS5 proxies, an adversary-in-the-middle position over everything they browsed."
+   },
+   {
+    "color": "danger",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/android-malware-combo-takes-out-loans-and-relays-victims-credit-cards/",
+    "text": "A new Android malware pairing, 'WindRelay' plus the SpyNote remote access trojan (RAT), relays victims' tap-to-pay card data to attackers in real time and can even take out loans in their name."
+   },
+   {
+    "color": "warn",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/plug-and-pwn-attack-uses-fake-usb-devices-for-windows-system-access/",
+    "text": "'Plug and Pwn' attacks abuse Windows Plug and Play to make the OS auto-install vulnerable vendor software from a fake USB device, giving an attacker with physical access SYSTEM-level privileges."
+   },
+   {
+    "color": "warn",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-shieldbreak/",
+    "text": "A group called Nightmare Eclipse released 'ShieldBreak,' a Windows zero-day exploit dropped on Patch Tuesday that lets any user spawn a shell with SYSTEM privileges - full control of the machine."
+   },
+   {
+    "color": "ok",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/whatsapp-rolls-out-new-feature-that-flags-potential-scam-messages/",
+    "text": "WhatsApp is rolling out an optional 'Scam Alert' feature that uses an on-device machine-learning model to warn users when a message looks like a scam - processing stays on your phone rather than in the cloud."
+   }
+  ],
+  "analystFooter": "Patch the actively targeted web apps first - SharePoint (CVE-2026-55040) now that a PoC is public, and Adobe Commerce/Magento (CVE-2026-71362) that Sansec is already seeing probed - then apply the August WordPress (CVE-2026-65640) and Fortinet FortiWeb/FortiManager updates; beyond patching, the Lazarus zero-day and the near-autonomous AI attack on Taiwan are reminders to keep an eye on recruiter-themed lures and on how much your own AI integrations widen the attack surface."
  }
 }
