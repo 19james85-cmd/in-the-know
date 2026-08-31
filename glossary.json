@@ -270,6 +270,12 @@
   "e": "The stated reason for pausing CMMC Phase 2 was that audit costs were pushing small firms out of the DIB."
  },
  {
+  "t": "Denial of Service",
+  "c": "Network",
+  "d": "An attack or bug that makes a system crash, hang, or stop responding so legitimate users can't reach it. It does not steal data, but it can take a service offline.",
+  "e": "Citrix first described the NetScaler flaw CVE-2026-8452 in 2026 as a Denial of Service memory bug before researchers showed it could also be pushed to full remote code execution."
+ },
+ {
   "t": "Denial of Service (DoS)",
   "c": "Network",
   "d": "Making a system unavailable rather than stealing from it — by crashing it or exhausting its memory, CPU or bandwidth.",
@@ -744,6 +750,12 @@
   "e": "A hospital chain paid a $4.5M ransom after ransomware encrypted records across 50 facilities, halting surgeries."
  },
  {
+  "t": "Ransomware-as-a-Service",
+  "c": "Malware",
+  "d": "A criminal business model where one group builds the ransomware and rents it to other criminals (called affiliates) who carry out the actual attacks, then split the ransom. It lets people with little technical skill run damaging attacks.",
+  "e": "In August 2026 a joint government advisory described Gunra as a Ransomware-as-a-Service operation whose affiliates had hit at least 51 healthcare, finance, and government organizations."
+ },
+ {
   "t": "Ransomware-as-a-Service (RaaS)",
   "c": "Malware",
   "d": "A criminal business model in which the developers who build ransomware rent it out to other attackers ('affiliates'), who carry out the break-ins and split the ransom profits. It lets people with little technical skill launch sophisticated ransomware attacks.",
@@ -856,6 +868,12 @@
   "c": "General",
   "d": "A small token your browser stores after you log in, proving to the website that you're already authenticated so you don't have to re-enter your password on every page. If an attacker steals it, they can impersonate you without knowing your password or passing MFA.",
   "e": "In August 2026, the Mirage2FA phishing kit stole authenticated Microsoft 365 session cookies from roughly 4,500 companies, letting attackers walk straight into accounts despite two-factor authentication."
+ },
+ {
+  "t": "Session Hijacking",
+  "c": "Network",
+  "d": "An attack where someone steals the session token (the cookie your browser keeps after you log in) so they are treated as already signed in, without ever needing your password. Because the login already happened, it can slip past multi-factor authentication.",
+  "e": "In August 2026 Anthropic warned that infostealer malware was hijacking users' Claude sessions and draining their paid usage after stealing the login cookies from infected PCs."
  },
  {
   "t": "Setuid Binary",
