@@ -1,41 +1,41 @@
 {
- "generated": "2026-08-30T16:56:37.963581+00:00",
+ "generated": "2026-08-31T19:13:30.102046+00:00",
  "window_hours": 24,
  "feeds": [
   {
    "source": "CISA",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 1,
+   "count": 7,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 0,
+   "count": 10,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 4,
+   "count": 9,
    "error": null
   },
   {
@@ -80,38 +80,227 @@
   },
   {
    "source": "BleepingComputer",
-   "title": "FulcrumSec claims Manchester Airports hack, theft of 86 GB of data",
-   "url": "https://www.bleepingcomputer.com/news/security/fulcrumsec-claims-manchester-airports-hack-theft-of-86-gb-of-data/",
-   "published": "2026-08-30T15:00:21+00:00",
-   "summary": "FulcrumSec claims it stole 86 GB of data from Manchester Airports Group. BleepingComputer validated one traveller's record, while samples revealed detailed customer, booking, and travel information beyond what MAG initially disclosed. [...]"
+   "title": "Microsoft warns of TerminalFix attacks deploying reverse tunnels",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-terminalfix-attacks-deploying-reverse-tunnels/",
+   "published": "2026-08-31T18:51:04+00:00",
+   "summary": "A new ClickFix variant dubbed TerminalFix uses fake Cloudflare CAPTCHA prompts on compromised websites to trick victims into running malicious PowerShell commands in Windows Terminal. [...]"
   },
   {
-   "source": "BleepingComputer",
-   "title": "Anthropic warns infostealer malware is hijacking Claude sessions to drain usage",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/",
-   "published": "2026-08-30T14:30:25+00:00",
-   "summary": "Anthropic is warning some Claude users that infostealer malware on their PCs has stolen active Claude login sessions, allowing attackers to access accounts and consume their usage. [...]"
+   "source": "CyberScoop",
+   "title": "‘Watershed 250’ test program in Texas looks to private sector for water cybersecurity help",
+   "url": "https://cyberscoop.com/watershed-250-texas-water-cybersecurity-pilot/",
+   "published": "2026-08-31T18:36:43+00:00",
+   "summary": "The six-month program will be overseen by the Office of the National Cyber Director and Texas Cyber Command to “find out what works.” The post ‘Watershed 250’ test program in Texas looks to private sector for water cybersecurity help appeared first on CyberScoop ."
   },
   {
-   "source": "BleepingComputer",
-   "title": "Chrome Web Store extensions caught stealing crypto, browser data",
-   "url": "https://www.bleepingcomputer.com/news/security/chrome-web-store-extensions-caught-stealing-crypto-browser-data/",
-   "published": "2026-08-30T14:17:44+00:00",
-   "summary": "Multiple extensions for Google Chrome and Microsoft Edge delivered a malware framework that deployed modules to steal cryptocurrency, sensitive data, and browser history, as well as inject ClickFix lures. [...]"
+   "source": "Dark Reading",
+   "title": "AI Model Rules Are Not Security Controls",
+   "url": "https://www.darkreading.com/cyber-risk/model-knowing-rules-is-not-security-control",
+   "published": "2026-08-31T17:34:26+00:00",
+   "summary": "OpenAI's Hugging Face attack postmortem shows agents don't care about rules — they need strong controls."
   },
   {
    "source": "The Hacker News",
-   "title": "TerminalFix Uses Fake Cloudflare CAPTCHAs to Deploy Reverse-Tunnel Backdoor",
-   "url": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html",
-   "published": "2026-08-30T07:36:33+00:00",
-   "summary": "Microsoft has disclosed details of a new ClickFix variant, dubbed TerminalFix, that aims to trick users into running a malicious command in Windows Terminal or PowerShell. \"While traditional ClickFix campaigns direct victims to the Windows Run dialog, TerminalFix campaigns apply the same technique but direct users to Windows Terminal or PowerShell instead, increasing the likelihood that complex"
+   "title": "North Korean Job Fraud Expands Beyond IT Into Healthcare and Sales",
+   "url": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html",
+   "published": "2026-08-31T17:24:28+00:00",
+   "summary": "Threat actors with ties to the Democratic People's Republic of Korea (aka DPRK or North Korea) have been observed seeking job opportunities beyond the information technology (IT) sector, with recent investigations identifying suspected workers employed in sales and marketing and the medical profession. The ongoing insider threat is part of what has been described as the IT worker scheme,"
   },
   {
    "source": "BleepingComputer",
-   "title": "Anthropic is cutting Claude Code's current weekly limits by 17%",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/",
-   "published": "2026-08-29T23:11:51+00:00",
-   "summary": "Anthropic is permanently increasing Claude Code's standard weekly usage limits by 25% for Pro, Max, Team, and seat-based Enterprise plans, but it's not as good as it sounds. [...]"
+   "title": "Microsoft Exchange Online outage causes email failures, auth issues",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/",
+   "published": "2026-08-31T16:56:57+00:00",
+   "summary": "Microsoft is investigating a widespread service issue causing authentication issues, email delays and failures, and various other issues for Exchange Online customers. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "OpenAI confirms ChatGPT outage as users report errors",
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-outage-as-users-report-errors/",
+   "published": "2026-08-31T16:50:50+00:00",
+   "summary": "ChatGPT Work is experiencing a partial outage, and users across multiple subscription plans may be unable to start or continue tasks. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "PaperCut issues emergency patches as threat actors target chained vulnerabilities",
+   "url": "https://www.cybersecuritydive.com/news/papercut-emergency-patches-threat-actors-chained-vulnerabilities/829184/",
+   "published": "2026-08-31T15:25:52+00:00",
+   "summary": "The print management software maker faced a wave of attacks in 2023 aimed at higher education customers."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "State-linked actor targets Cisco routers for espionage",
+   "url": "https://www.cybersecuritydive.com/news/state-actor-cisco-routers-China-espionage/829181/",
+   "published": "2026-08-31T14:57:44+00:00",
+   "summary": "An actor known as Fire Ant has expanded its reach into trusted environments, with unique tooling and stealth."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Chinese Fire Ant hackers turn Cisco routers into spying platforms",
+   "url": "https://www.bleepingcomputer.com/news/security/chinese-fire-ant-hackers-turn-cisco-routers-into-spying-platforms/",
+   "published": "2026-08-31T14:52:03+00:00",
+   "summary": "The researchers discovered Fire Ant's new tactic after finding an active GRE (Generic Routing Encapsulation) tunnel interface on a Cisco IOS XR router that could not be explained by a running configuration or commit history. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Nightmare Eclipse Drops ‘HardBreacher’ Kaspersky Product Exploit",
+   "url": "https://www.securityweek.com/nightmare-eclipse-drops-hardbreacher-kaspersky-product-exploit/",
+   "published": "2026-08-31T14:32:34+00:00",
+   "summary": "Kaspersky told SecurityWeek that it patched the vulnerability affecting its Endpoint Security product. The post Nightmare Eclipse Drops HardBreacher' Kaspersky Product Exploit appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "File servers are here to stay. Here’s how to manage them securely",
+   "url": "https://www.bleepingcomputer.com/news/security/file-servers-are-here-to-stay-heres-how-to-manage-them-securely/",
+   "published": "2026-08-31T14:00:10+00:00",
+   "summary": "File servers remain a critical part of many IT environments, but managing access securely can become complex as permissions accumulate. tenfold Software outlines five best practices for simplifying file server administration and maintaining least-privilege access. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "ServiceNow Patches 3 Critical Code Injection Vulnerabilities",
+   "url": "https://www.securityweek.com/servicenow-patches-3-critical-code-injection-vulnerabilities/",
+   "published": "2026-08-31T13:59:19+00:00",
+   "summary": "Attackers could exploit the security defects to execute arbitrary code and access or tamper with data. The post ServiceNow Patches 3 Critical Code Injection Vulnerabilities appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
+   "url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
+   "published": "2026-08-31T13:50:00+00:00",
+   "summary": "The boring parts caused most of the trouble. A router shipped ready to listen. A fake check turned the user into the installer. Trusted systems collected traffic and passwords, then cleaned the logs. Old bugs formed new attack chains. Even an AI agent decided its assigned task was optional. Elsewhere, fake apps, helpful support calls, cheap banking kits, exposed systems, and weak defaults kept"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Berlin confirms data theft after Rhysida ransomware attack claims",
+   "url": "https://www.bleepingcomputer.com/news/security/berlin-confirms-data-theft-after-rhysida-ransomware-attack-claims/",
+   "published": "2026-08-31T13:30:01+00:00",
+   "summary": "Berlin's city administration has confirmed that cybercriminals are attempting to extort the city after the Rhysida ransomware gang listed it on their data leak site. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "McKesson Confirms Data Breach as Attacker Deadline Looms",
+   "url": "https://www.securityweek.com/mckesson-confirms-data-breach-as-attacker-deadline-looms/",
+   "published": "2026-08-31T13:14:46+00:00",
+   "summary": "The ShinyHunters extortion group has claimed the theft of 284 million records from the company’s systems. The post McKesson Confirms Data Breach as Attacker Deadline Looms appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "What the Hugging Face Incident Teaches Security Leaders About AI Agent Access",
+   "url": "https://www.securityweek.com/what-the-hugging-face-incident-teaches-security-leaders-about-ai-agent-access/",
+   "published": "2026-08-31T12:15:00+00:00",
+   "summary": "Security teams must treat autonomous agents as highly privileged identities. The post What the Hugging Face Incident Teaches Security Leaders About AI Agent Access appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions",
+   "url": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
+   "published": "2026-08-31T12:14:00+00:00",
+   "summary": "The threat actor known as Silver Fox has been observed distributing the ValleyRAT backdoor disguised as a signed Chinese adware application, running the malware under a trusted process to slip past users who add such software to their antivirus exclusions. Russian cybersecurity vendor Kaspersky said the attackers built the disguise around QN Wallpaper, a genuine Chinese desktop-wallpaper tool"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Anthropic Warns Claude Users of Infostealer Malware Infections",
+   "url": "https://www.securityweek.com/anthropic-warns-claude-users-of-infostealer-malware-infections/",
+   "published": "2026-08-31T12:11:58+00:00",
+   "summary": "The AI giant is logging customers out of their accounts and removing payment data to prevent unauthorized Claude usage. The post Anthropic Warns Claude Users of Infostealer Malware Infections appeared first on SecurityWeek ."
+  },
+  {
+   "source": "CISA",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/08/31/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "published": "2026-08-31T12:00:00+00:00",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-81578 PaperCut NG/MF Missing Authentication for Critical Function Vulnerability CVE-2026-82078 PaperCut NG/MF Unsafe Reflection Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
+   "url": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
+   "published": "2026-08-31T11:47:24+00:00",
+   "summary": "Threat actors associated with Aurora (aka Aur0ra) ransomware have been observed using SpaceX's artificial intelligence (AI)-powered coding assistant Cursor to break into target networks, according to findings from CloudSEK and Gambit Security. The two independent analyses are based on exposed infrastructure associated with the Russian-speaking cybercrime group, leading to the discovery of its"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance",
+   "url": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html",
+   "published": "2026-08-31T11:31:47+00:00",
+   "summary": "Claude Code reads files, runs shell commands, invokes MCP tools, and acts through the credentials available on a developer’s machine. Anthropic’s new Compliance API endpoints give security teams their clearest view yet into that activity. They also expose a larger problem: activity logs alone cannot tell you whether an agent’s access is legitimate. AI has moved from the browser tab to the"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Critical Ruby on Rails Vulnerability in Attackers’ Crosshairs",
+   "url": "https://www.securityweek.com/critical-ruby-on-rails-vulnerability-in-attackers-crosshairs/",
+   "published": "2026-08-31T11:24:17+00:00",
+   "summary": "Named KindaRails2Shell, the arbitrary file read flaw allows attackers to extract secrets and execute arbitrary code remotely. The post Critical Ruby on Rails Vulnerability in Attackers' Crosshairs appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Boston Scientific Still Recovering From Cyberattack",
+   "url": "https://www.securityweek.com/boston-scientific-still-recovering-from-cyberattack/",
+   "published": "2026-08-31T10:50:57+00:00",
+   "summary": "The company has called in CrowdStrike and others to investigate the attack that caused global network disruption. The post Boston Scientific Still Recovering From Cyberattack appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Extortion Group Claims Manchester Airports Group Data Breach",
+   "url": "https://www.securityweek.com/extortion-group-claims-manchester-airports-group-data-breach/",
+   "published": "2026-08-31T10:29:10+00:00",
+   "summary": "FulcrumSec says it stole over 80 GB of data from Manchester Airports Group and plans to leak it online. The post Extortion Group Claims Manchester Airports Group Data Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft says Windows 11 KB5120998 update resets mouse settings",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-says-windows-11-kb5120998-update-resets-mouse-settings/",
+   "published": "2026-08-31T10:23:46+00:00",
+   "summary": "Microsoft has confirmed that mouse settings are being reverted on Windows 11 systems after installing the KB5120998 August 2026 non-security preview update. [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "The AI Kill Switch Act is repeating the Clipper Chip’s mistakes",
+   "url": "https://cyberscoop.com/ai-kill-switch-act-clipper-chip-mistakes-op-ed/",
+   "published": "2026-08-31T10:00:00+00:00",
+   "summary": "Mandating ‘kill switches’ for AI agents would threaten the security of America’s critical infrastructure and undercut U.S. AI leadership. Congress must reject the AI Kill Switch Act. The post The AI Kill Switch Act is repeating the Clipper Chip’s mistakes appeared first on CyberScoop ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Nigerians extradited to US for sextortion, deaths of two teens",
+   "url": "https://www.bleepingcomputer.com/news/security/nigerians-charged-US-over-sextortion-deaths-of-us-teens/",
+   "published": "2026-08-31T09:22:47+00:00",
+   "summary": "Two Nigerian men extradited to the U.S. on Thursday have been charged with involvement in sextortion schemes that resulted in the deaths of two minor victims in Mississippi and North Carolina. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Judge Says Pentagon’s Measures Against Anthropic Were ‘Illegal and Baseless’",
+   "url": "https://www.securityweek.com/judge-says-pentagons-measures-against-anthropic-were-illegal-and-baseless/",
+   "published": "2026-08-31T09:07:01+00:00",
+   "summary": "The ruling is part of Anthropic's legal battle against the Pentagon after the government labeled the company as a supply chain risk earlier this year. The post Judge Says Pentagon's Measures Against Anthropic Were Illegal and Baseless' appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs",
+   "url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+   "published": "2026-08-31T09:04:55+00:00",
+   "summary": "A China-nexus cyber espionage actor tracked as Fire Ant has expanded a long-running campaign beyond VMware hypervisors to compromise Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts used to route, authenticate, and manage high-value networks. Sygnia, the incident response firm that investigated the intrusion, said the actor"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Berlin Won’t Pay Extortion Group Claiming Data Theft",
+   "url": "https://www.securityweek.com/berlin-wont-pay-extortion-group-claiming-data-theft/",
+   "published": "2026-08-31T08:49:36+00:00",
+   "summary": "The Rhysida ransomware group has claimed the exfiltration of over 5TB of data, including personal information and credentials. The post Berlin Won’t Pay Extortion Group Claiming Data Theft appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft asks users to ignore 'Antivirus is turned off' errors",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-asks-users-to-ignore-antivirus-is-turned-off-errors/",
+   "published": "2026-08-31T08:29:42+00:00",
+   "summary": "Microsoft asked customers this week to ignore alerts that Defender Antivirus has been turned off after installing the latest Defender updates. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets, Not Victims",
+   "url": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
+   "published": "2026-08-31T07:56:53+00:00",
+   "summary": "The U.S. Department of Justice (DoJ) on Friday corrected a previously issued press statement that several of its agencies were victims of attacks carried out by Chinese threat actors, instead now pointing out that they were among those targeted. Last week, the DoJ said the National Aeronautics and Space Administration, Federal Reserve, Department of Energy, Department of Justice, Department"
   }
  ]
 }
