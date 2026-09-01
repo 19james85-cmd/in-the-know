@@ -1,0 +1,220 @@
+{
+  "leadStory": {
+    "headline": "PaperCut print servers under active attack as CISA adds two zero-days to KEV",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
+    "tags": [
+      {"label": "CVE-2026-82078 (CVSS 9.4)", "type": "d"},
+      {"label": "CVE-2026-81578", "type": "d"},
+      {"label": "Actively Exploited", "type": "d"},
+      {"label": "CISA KEV", "type": "d"}
+    ],
+    "body": "Two zero-day flaws in PaperCut NG and MF print-management software are now being used in hands-on-keyboard intrusions, and CISA has added both to its KEV catalog. CVE-2026-81578 is an Authentication Bypass (missing authentication on a critical function) and CVE-2026-82078 is a Pre-Authentication Remote Code Execution flaw (CVSS 9.4) caused by unsafe dynamic class loading; chained together they let an unauthenticated attacker run code on the print server with no credentials or user interaction. PaperCut shipped an emergency Patch on August 27 and then a second one within about 48 hours after attackers found a way around the first fix. Federal civilian agencies must patch by September 14.",
+    "beginnerTip": "A print server sits deep inside a corporate network and is often forgotten at patch time, which makes it a quiet foothold for attackers. When a vendor ships a <strong>second</strong> patch days after the first, it usually means the original fix was incomplete - apply the newest one, don't assume last week's update still covers you."
+  },
+  "cves": [
+    {
+      "headline": "Critical Langflow RCE (and a Rails flaw) exploited within hours of disclosure",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+      "tags": [
+        {"label": "CVE-2026-0768 (CVSS 9.8)", "type": "d"},
+        {"label": "Remote Code Execution", "type": "d"},
+        {"label": "In the Wild", "type": "d"}
+      ],
+      "body": "VulnCheck reports active exploitation of CVE-2026-0768, an unauthenticated Remote Code Execution flaw (CVSS 9.8) in the code validator of Langflow's custom-component editor that lets an attacker run arbitrary Python as root. Detections jumped from about 50 within hours on August 30 to 360 by September 1, with traffic mostly originating from Russia. Attackers are separately probing CVE-2026-66066 (\"KindaRails2Shell\", CVSS 9.5), a Ruby on Rails flaw that leaks environment secrets and can lead to code execution.",
+      "beginnerTip": "Langflow is a tool for building AI workflows visually, and it is increasingly exposed to the internet. Any admin panel that can run code should never be reachable from the public web - put it behind a <strong>VPN</strong> or IP allowlist even before a patch exists."
+    },
+    {
+      "headline": "JFrog Artifactory auth-bypass exploited to mint admin tokens",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/critical-jfrog-artifactory-vulnerability-reportedly-exploited-in-the-wild/",
+      "tags": [
+        {"label": "CVE-2026-82329 (CVSS 9.8)", "type": "d"},
+        {"label": "Authentication Bypass", "type": "d"},
+        {"label": "In the Wild", "type": "d"}
+      ],
+      "body": "watchTowr reports in-the-wild exploitation of CVE-2026-82329, a critical Authentication Bypass in JFrog Artifactory that lets an Unauthenticated attacker on the network mint themselves an administrator token. With admin control an attacker owns the repositories, user accounts, build artifacts and software packages stored in the platform - a textbook Supply Chain Attack risk. Self-hosted instances should upgrade to a patched build (7.111.21, 7.117.28, 7.125.20, 7.133.29, 7.146.38 or 7.161.20), released August 28.",
+      "beginnerTip": "Artifactory is where a company stores the software components it ships to customers, so an attacker who controls it can poison those downloads. This is why a build system compromise is treated as a <strong>Supply Chain Attack</strong> - one break-in can spread to everyone downstream."
+    },
+    {
+      "headline": "WatchGuard patches critical pre-auth RCE bugs in Firebox VPN daemon",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/watchguard-patches-critical-vulnerabilities/",
+      "tags": [
+        {"label": "CVE-2026-19313 / 19315 / 19318 (CVSS 9.3)", "type": "d"},
+        {"label": "Pre-Authentication RCE", "type": "d"},
+        {"label": "Patch Available", "type": "w"}
+      ],
+      "body": "WatchGuard fixed three critical flaws (CVSS 9.3) in the iked process of Fireware OS, the daemon that handles IKEv1/IKEv2 key exchange for IPsec VPNs. The bugs are a Heap Buffer Overflow (CVE-2026-19313), a stack-based buffer overflow (CVE-2026-19318) and a Type Confusion (CVE-2026-19315); each is reachable Pre-Authentication, so a crafted packet can trigger Remote Code Execution before login. Fixed versions are Fireware 2026.2.2, 12.12.2 and 12.5.20 for the older T15/T35 branch; no exploitation has been seen yet.",
+      "beginnerTip": "A firewall's VPN service is exposed to the whole internet by design, so a Pre-Authentication bug there is especially dangerous - attackers don't need a password to reach it. <strong>Type Confusion</strong> means the program treats a piece of memory as the wrong kind of object, which attackers can abuse to hijack execution."
+    },
+    {
+      "headline": "Nearly 22,000 Exchange servers still exposed to mailbox-hijack flaw",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/nearly-22-000-microsoft-exchange-servers-vulnerable-to-hijack-attacks/",
+      "tags": [
+        {"label": "CVE-2026-62911 (CVSS 8.0)", "type": "d"},
+        {"label": "Authentication Bypass", "type": "w"},
+        {"label": "PoC Public", "type": "w"}
+      ],
+      "body": "About 21,899 internet-facing Microsoft Exchange servers remain unpatched against CVE-2026-62911, an Authentication Bypass by capture-replay (CVSS 8.0) reported by DEVCORE's Orange Tsai that lets an attacker read and send mail from any mailbox. Microsoft fixed it in the August 2026 Patch Tuesday, but the Netherlands NCSC warns public Proof-of-Concept exploit code already exists. The US leads exposure with roughly 6,200 vulnerable instances, followed by Germany at about 5,100.",
+      "beginnerTip": "\"Capture-replay\" means an attacker records a valid login handshake and replays it later to impersonate the user without knowing the password. Because working exploit code is public, treat any unpatched Exchange server as <strong>already at risk</strong> and patch immediately."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "ShinyHunters extorts McKesson after vishing its way into Salesforce and Snowflake",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/mckesson-data-theft-extortion-attack-shinyhunters/",
+      "tags": [
+        {"label": "ShinyHunters", "type": "d"},
+        {"label": "Data Extortion", "type": "d"},
+        {"label": "Healthcare", "type": "d"}
+      ],
+      "body": "Healthcare-distribution giant McKesson confirmed a breach after ShinyHunters claimed it stole data on its data-leak site. The group used Vishing (voice-phishing) calls to trick employees into handing over credentials, took over Okta single sign-on accounts, then pulled roughly a terabyte of data from McKesson's Salesforce and Snowflake environments over four days. ShinyHunters demanded about $55 million; the claimed \"284 million records\" refers to raw database rows, not unique patients, and appears tied to McKesson's Oncology and Medical-Surgical units.",
+      "beginnerTip": "This attack used no malware at all - just a convincing phone call to a help desk. <strong>Vishing</strong> (phone-based social engineering) works because attackers exploit human trust, so verifying caller identity out-of-band is as important as any technical control."
+    },
+    {
+      "headline": "Microsoft warns of 'TerminalFix' - fake CAPTCHAs that plant a reverse-tunnel backdoor",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-terminalfix-attacks-deploying-reverse-tunnels/",
+      "tags": [
+        {"label": "TerminalFix", "type": "d"},
+        {"label": "ClickFix Variant", "type": "d"},
+        {"label": "PowerShell Abuse", "type": "w"}
+      ],
+      "body": "Microsoft detailed TerminalFix, a ClickFix variant that shows a fake Cloudflare \"Verify you are human\" overlay on compromised sites and tricks victims into pasting a malicious PowerShell command into Windows Terminal. Unlike older ClickFix lures that drop a single Infostealer, TerminalFix runs a multistage chain using DLL Side-Loading and Steganography to hide its payload, then performs Active Directory reconnaissance and installs a custom reverse-tunnel implant for persistent, network-level access. Microsoft found the attacks in the wild but did not observe hands-on-keyboard activity yet.",
+      "beginnerTip": "If a website ever tells you to copy text and paste it into Windows Terminal or PowerShell to \"prove you're human,\" that is an attack - real CAPTCHAs never do this. <strong>ClickFix</strong> tricks work by getting you to run the command yourself, sidestepping many security tools."
+    },
+    {
+      "headline": "ClickFix campaign hides its command server on the Polygon blockchain",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/endpoint-security/clickfix-campaign-comprises-31-orgs-abuses-polygon-blockchain",
+      "tags": [
+        {"label": "EtherHiding", "type": "d"},
+        {"label": "Blockchain C2", "type": "w"},
+        {"label": "31 Orgs Hit", "type": "w"}
+      ],
+      "body": "Researchers tracked a ClickFix campaign that compromised 31 organizations and used a technique called EtherHiding to run its Command-and-Control. Instead of a normal server that defenders can block, the attackers stored the address of their live C2 in a smart contract on the Polygon blockchain, which they can update at will and which cannot be easily taken down. This makes the malware's \"address book\" resilient, because blockchain data is public and effectively permanent.",
+      "beginnerTip": "Normally defenders shut down an attack by blocking or seizing the attacker's server. <strong>EtherHiding</strong> defeats that by hiding the server address inside a public blockchain, which no single company can delete - a sign attackers are borrowing crypto infrastructure to stay online."
+    }
+  ],
+  "regulatory": [
+    {
+      "headline": "Whistleblower flags 'untested' USPS system governing mail-in ballots before midterms",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/usps-whistleblower-ballot-system-2026-midterms/",
+      "tags": [
+        {"label": "Election Security", "type": "a"},
+        {"label": "Whistleblower", "type": "w"}
+      ],
+      "body": "A federal official has come forward alleging that the US Postal Service is deploying new, \"untested\" IT systems - including a Federal Ballot Mail Portal - that could wrongly deny thousands of mail-in ballots ahead of the 2026 midterms. The concern is less about hacking than about rushed, unvalidated software making consequential decisions about which ballots count. It underscores how software-assurance and change-management practices are themselves an election-security issue.",
+      "beginnerTip": "Not every security risk is a hacker - sometimes software that was never properly tested causes the damage on its own. \"Untested\" here means it may not have gone through formal validation to confirm it behaves correctly under real-world load and edge cases."
+    },
+    {
+      "headline": "200+ companies back a 'Collective Cyber Defense' letter with three shared metrics",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/collective-cyber-defense-letter-vendor-questionnaire-op-ed/",
+      "tags": [
+        {"label": "Industry Standards", "type": "a"},
+        {"label": "Vendor Risk", "type": "a"}
+      ],
+      "body": "More than 200 companies have signed an August 27 \"Collective Cyber Defense\" letter that commits them to three measurable goals: coverage, currency and configuration of their security controls. The idea is that if large buyers all endorse the same three metrics, those metrics effectively become the baseline questions in every vendor-security questionnaire. It is a market-driven push to standardize how organizations prove their defenses rather than waiting for regulation.",
+      "beginnerTip": "A \"vendor questionnaire\" is the security checklist a company sends suppliers before trusting them with data. When big buyers align on the same few questions, those questions quietly become an industry <strong>standard</strong> that everyone has to meet."
+    },
+    {
+      "headline": "Texas 'Watershed 250' pilot enlists private sector to defend water utilities",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/watershed-250-texas-water-cybersecurity-pilot/",
+      "tags": [
+        {"label": "Critical Infrastructure", "type": "a"},
+        {"label": "Public-Private", "type": "g"}
+      ],
+      "body": "A six-month program called \"Watershed 250,\" overseen by the Office of the National Cyber Director and Texas Cyber Command, will pair private-sector security help with water utilities to \"find out what works.\" Water systems are prime ICS/OT targets - many run on aging Operational Technology with tiny IT budgets - and recent campaigns have specifically hit Programmable Logic Controllers (PLC) at utilities. The pilot aims to produce a repeatable model other states can copy.",
+      "beginnerTip": "Water plants run on industrial control computers (<strong>Operational Technology</strong>) that were built for reliability, not internet security. Programs like this exist because small utilities often can't afford dedicated cyber staff, so states are testing shared-defense models."
+    }
+  ],
+  "trends": [
+    {
+      "headline": "Forescout uses Claude to port a real PLC exploit - in 8 hours for $536",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/experiment-porting-a-plc-exploit-with-ai-takes-hours-and-hundreds-of-dollars/",
+      "tags": [
+        {"label": "AI + Offensive Security", "type": "w"},
+        {"label": "ICS/OT", "type": "w"}
+      ],
+      "body": "Forescout's Vedere Labs used Anthropic's Claude to adapt a working Remote Code Execution exploit from one WAGO Programmable Logic Controller (PLC) model to another (based on CVE-2021-31886, a pre-auth buffer overflow), succeeding after 8 hours 32 minutes and $535.74 in API costs. The AI needed heavy human oversight and, in one test, wrote a payload that permanently bricked a PLC. The takeaway isn't fully autonomous hacking - it's that AI meaningfully lowers the skill and time needed to retarget existing exploits at Critical Infrastructure.",
+      "beginnerTip": "This experiment matters because retargeting an exploit to a new device model used to require rare expert skills. AI didn't invent a new attack - it made an <strong>existing</strong> one cheaper and faster to adapt, which is the realistic near-term AI threat."
+    },
+    {
+      "headline": "Anthropic users hit by infostealers and session-cookie theft",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-users-infostealer-attacks-session-thefts",
+      "tags": [
+        {"label": "Session Hijacking", "type": "w"},
+        {"label": "Infostealer", "type": "w"}
+      ],
+      "body": "A threat actor used a mix of Infostealer malware to grab Session Cookie data and hijack Claude accounts belonging to an unknown number of users. Because a stolen session token can let an attacker in without ever seeing the password, this is classic Session Hijacking - and it sidesteps MFA, since the victim already completed the login the attacker is now riding on. It is a reminder that account security increasingly hinges on protecting the device, not just the password.",
+      "beginnerTip": "After you log in, your browser holds a <strong>Session Cookie</strong> that proves who you are so you don't re-enter your password on every click. If malware steals that cookie, the attacker is logged in as you - which is why infostealers can bypass even multi-factor authentication."
+    },
+    {
+      "headline": "Report: security policies aren't keeping up with hybrid cloud",
+      "source": "Cybersecurity Dive",
+      "sourceUrl": "https://www.cybersecuritydive.com",
+      "url": "https://www.cybersecuritydive.com/news/security-policies-fail-keep-up-hybrid-cloud/829256/",
+      "tags": [
+        {"label": "Cloud Security", "type": "a"},
+        {"label": "Misconfiguration", "type": "a"}
+      ],
+      "body": "A Cloud Security Alliance report found that roughly two-thirds of companies suffered a business-critical application outage caused by misconfigured security policies as they stretched to cover hybrid and multi-cloud environments. The problem is complexity: rules written for one environment break or conflict when applied across many, and manual policy management can't keep pace. It highlights misconfiguration - not exotic exploits - as a leading cause of real-world downtime.",
+      "beginnerTip": "\"Hybrid cloud\" means running systems across your own data center and one or more cloud providers at once. Each has its own settings, so a rule that's safe in one place can silently break another - <strong>misconfiguration</strong>, not hacking, is often the bigger day-to-day risk."
+    }
+  ],
+  "quickHits": [
+    {
+      "color": "danger",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "text": "The Cronos blockchain restarted trading after a price-manipulation attack on the Tectonic lending platform let an attacker borrow $74 million."
+    },
+    {
+      "color": "warn",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "text": "Attackers stole a METR API key and burned roughly $600,000 in AI credits before it was caught - a reminder to scope and rotate API keys tightly."
+    },
+    {
+      "color": "warn",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "text": "Aesto Health disclosed a breach affecting 9.5 million people, with data stolen from the company's AWS infrastructure."
+    },
+    {
+      "color": "accent",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "text": "Five Venezuelan nationals pleaded guilty in US court to ATM jackpotting - attempting to install malware on cash machines to force them to dispense money."
+    },
+    {
+      "color": "warn",
+      "source": "CISA",
+      "sourceUrl": "https://www.cisa.gov",
+      "text": "CISA published six ICS advisories for Rockwell Automation products (Logix, ControlLogix, RSLinx Classic, Historian ME and more), several allowing denial-of-service or remote code execution."
+    }
+  ],
+  "analystFooter": "Patch the actively-exploited edge first: PaperCut NG/MF (apply the second fix), Langflow, and JFrog Artifactory are all being hit in the wild right now, and unpatched Exchange has public exploit code - then warn your team that fake Cloudflare CAPTCHAs asking you to paste commands into PowerShell are the day's top social-engineering lure."
+}

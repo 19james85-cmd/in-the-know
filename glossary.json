@@ -354,6 +354,12 @@
   "e": "In August 2026, a weak random-number function in CryptoJS produced low-entropy recovery phrases, letting thieves drain about $5.7 million from five crypto wallet apps."
  },
  {
+  "t": "EtherHiding",
+  "c": "Malware",
+  "d": "A trick where attackers store the address of their command server inside a smart contract on a public blockchain instead of on a normal server. Because blockchain data cannot be easily deleted or seized, defenders can't just take the server offline.",
+  "e": "In September 2026 a ClickFix campaign that hit 31 organizations used EtherHiding on the Polygon blockchain to keep its command-and-control reachable."
+ },
+ {
   "t": "EtherNet/IP",
   "c": "Network",
   "d": "EtherNet/IP is a common industrial networking protocol that control equipment such as PLCs uses to talk to workstations and other systems over standard Ethernet. It was designed for trusted factory networks and generally has no built-in authentication, so exposing it to the internet is dangerous.",
@@ -936,6 +942,12 @@
   "e": "Attackers used SQL injection on a retail login page to bypass authentication and extract 2 million customer credit card numbers."
  },
  {
+  "t": "Steganography",
+  "c": "General",
+  "d": "Hiding data or malicious code inside an ordinary-looking file such as an image, so it slips past defenses that aren't looking there. The carrier file looks completely normal to a human or scanner.",
+  "e": "In September 2026 Microsoft's TerminalFix campaign used steganography to conceal its malware payload inside a benign-looking file."
+ },
+ {
   "t": "Supply Chain Attack",
   "c": "Threat/Actor",
   "d": "Compromising a supplier — a software library, an update mechanism, a service provider — so the compromise flows downstream to all their customers at once.",
@@ -970,6 +982,12 @@
   "c": "Threat/Actor",
   "d": "Tactics, Techniques, and Procedures — the behavior patterns and methods used by threat actors to plan, execute, and conceal cyberattacks. Understanding TTPs helps defenders anticipate attacks.",
   "e": "Analyzing a group's TTPs allowed defenders to block their attack before any data was exfiltrated."
+ },
+ {
+  "t": "Type Confusion",
+  "c": "Vulnerability",
+  "d": "A memory-safety bug where a program treats a chunk of memory as the wrong kind of object than it actually is. Attackers can abuse the mismatch to corrupt memory and hijack what the program does, often leading to code execution.",
+  "e": "In September 2026 WatchGuard patched CVE-2026-19315, a type confusion flaw in its Firebox VPN daemon that could be triggered before login."
  },
  {
   "t": "Typosquatting",
