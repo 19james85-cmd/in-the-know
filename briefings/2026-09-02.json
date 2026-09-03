@@ -1,0 +1,335 @@
+{
+ "leadStory": {
+  "headline": "SonicWall SMA1000 zero-days chained for unauthenticated remote code execution, exploited in the wild",
+  "source": "BleepingComputer",
+  "sourceUrl": "https://www.bleepingcomputer.com",
+  "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
+  "tags": [
+   {
+    "label": "CVE-2026-83548 (CVSS 10)",
+    "type": "d"
+   },
+   {
+    "label": "CVE-2026-83549 (CVSS 7.8)",
+    "type": "d"
+   },
+   {
+    "label": "Actively Exploited",
+    "type": "d"
+   },
+   {
+    "label": "Zero-Day",
+    "type": "d"
+   }
+  ],
+  "body": "SonicWall confirmed attackers are actively exploiting two previously unknown flaws in its SMA1000 secure-access appliances, the boxes that sit at the network edge to give remote workers a VPN into corporate systems. CVE-2026-83548 (CVSS 10, the maximum) is a pre-authentication Server-Side Request Forgery (SSRF) bug that lets an unauthenticated attacker make the appliance send requests on their behalf, and CVE-2026-83549 (CVSS 7.8) is an OS command injection flaw in the management console; chained together they give a remote attacker unauthenticated Remote Code Execution. Affected models are the 6210, 7210 and 8200v, and because these are zero-days there was no patch when exploitation began. SonicWall has released hotfixes (12.4.3-03526, 12.5.0-02952 and later) and urges customers to apply them immediately.",
+  "beginnerTip": "A <strong>zero-day</strong> is a flaw attackers are already exploiting before the vendor has a fix ready, so there is no patch on day one. Internet-facing security appliances like VPNs are prime targets because they are exposed to everyone and, once breached, hand attackers a foothold inside the whole network. If you run SMA1000 hardware, apply the hotfix now rather than waiting for a maintenance window."
+ },
+ "cves": [
+  {
+   "headline": "Attackers forge admin tokens via critical JFrog Artifactory authentication bypass",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/",
+   "tags": [
+    {
+     "label": "CVE-2026-82329 (CVSS 9.8)",
+     "type": "d"
+    },
+    {
+     "label": "Auth Bypass",
+     "type": "d"
+    },
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    }
+   ],
+   "body": "A critical authentication-bypass flaw (CVE-2026-82329, CVSS 9.8) in self-managed JFrog Artifactory, a widely used repository for storing and distributing software packages, is being exploited days after disclosure. Self-managed instances without an extra 'join key' configured are issued a predictable 'phantom' key that an unauthenticated attacker can abuse to mint themselves administrator tokens. With admin access, attackers can enumerate users and credentials, read artifacts, change security settings, and even poison the software packages an organization builds on. JFrog patched it on August 28 (versions 7.111.21, 7.117.28, 7.125.20 and later); JFrog Cloud was not affected.",
+   "beginnerTip": "An <strong>authentication bypass</strong> means an attacker skips the login step entirely rather than guessing a password. A build server like Artifactory is high value because poisoning a stored package can spread malware to everything built from it — a classic supply-chain risk."
+  },
+  {
+   "headline": "Critical Langflow RCE exploited to steal OpenAI and AWS keys",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/",
+   "tags": [
+    {
+     "label": "CVE-2026-0768",
+     "type": "d"
+    },
+    {
+     "label": "Unauthenticated RCE",
+     "type": "d"
+    },
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    }
+   ],
+   "body": "Attackers are exploiting CVE-2026-0768, an unauthenticated Remote Code Execution flaw in Langflow, an open-source tool for building AI applications, to harvest secrets. The bug lives in the custom-component code validator, which fails to properly check a user-supplied string before running it as Python code with root privileges. Once in, attackers query environment variables to steal AWS secrets, OpenAI API keys and superuser credentials. VulnCheck's honeypots saw attempts climb to roughly 360 over the weekend, with traffic mostly from Russia; the fix is in Langflow 1.4.3 and later (versions 1.4.2 and earlier are vulnerable).",
+   "beginnerTip": "<strong>Remote Code Execution (RCE)</strong> means an attacker can run their own commands on your server from across the internet — usually the worst kind of flaw. Storing API keys in environment variables is convenient, but any RCE turns those keys into an easy prize, so rotate exposed keys immediately after patching."
+  },
+  {
+   "headline": "Public exploit released for Cleo Harmony privilege-escalation flaw",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/exploit-published-for-fresh-cleo-harmony-vulnerability/",
+   "tags": [
+    {
+     "label": "CVE-2026-84115 (CVSS 8.3)",
+     "type": "w"
+    },
+    {
+     "label": "Privilege Escalation",
+     "type": "w"
+    },
+    {
+     "label": "Public Exploit",
+     "type": "w"
+    }
+   ],
+   "body": "A working exploit is now circulating for CVE-2026-84115 (CVSS 8.3), a privilege-escalation flaw in Cleo Harmony, managed file-transfer software of the kind targeted heavily in past mass-exploitation campaigns. The bug mishandles the 'Bearer' token in HTTP authorization headers, letting a remote attacker craft a manipulated token to gain elevated permissions via the /api/connections endpoint. From there attackers can maintain persistent access, escalate privileges and move laterally into connected systems. All builds up to 5.8.1.10 are affected; version 5.8.1.11 fixes it.",
+   "beginnerTip": "<strong>Privilege escalation</strong> is when an attacker who already has some access levels up to more powerful rights, like going from a normal user to an administrator. A published exploit means the technique is now public code anyone can run, so the window between disclosure and mass attacks shrinks fast — patch quickly."
+  },
+  {
+   "headline": "Chrome and Firefox ship updates patching dozens of vulnerabilities",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/chrome-and-firefox-updates-patch-dozens-of-vulnerabilities/",
+   "tags": [
+    {
+     "label": "Browser Patches",
+     "type": "a"
+    },
+    {
+     "label": "Patch Available",
+     "type": "g"
+    }
+   ],
+   "body": "Google and Mozilla released security updates for Chrome and Firefox that together fix dozens of vulnerabilities, several rated high severity. Browsers are one of the most attacked pieces of software because they run untrusted code from every website you visit, so memory-safety and sandbox-escape bugs are prized by attackers. Both vendors recommend updating promptly; the fixes ship automatically but only take effect after the browser is restarted.",
+   "beginnerTip": "Your browser quietly downloads updates but often applies them only after a restart. Fully closing and reopening Chrome or Firefox is the simplest security habit most people skip — do it today."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "23-year-old Sality P2P botnet dismantled in global sinkhole operation",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/sality-botnet-infrastructure-dismantled-in-joint-global-takedown/",
+   "tags": [
+    {
+     "label": "Sality / SALTY SPIDER",
+     "type": "g"
+    },
+    {
+     "label": "Botnet Takedown",
+     "type": "g"
+    },
+    {
+     "label": "Law Enforcement",
+     "type": "g"
+    }
+   ],
+   "body": "Law enforcement from the US, Bulgaria, Hungary and Romania, working with CrowdStrike and the Shadowserver Foundation, disrupted Sality, a peer-to-peer botnet that first appeared in 2003 and has been linked to more than 11 million IP addresses over its lifetime. Because Sality has no central server, investigators ran a sinkhole operation that attacked the peer list every infected machine uses to find others, cutting the operator (tracked as SALTY SPIDER) off from roughly 15,000 still-infected systems. The takedown severs the attacker's control but does not clean the infected machines, which remain compromised until wiped or disinfected.",
+   "beginnerTip": "A <strong>botnet</strong> is a network of hijacked computers an attacker controls remotely to send spam, steal data or launch attacks. A <strong>sinkhole</strong> reroutes the bots' traffic to servers run by defenders, starving the criminals of control — a common way to dismantle botnets without needing to touch each victim's PC."
+  },
+  {
+   "headline": "Russian national extradited over Excel-malware campaign that hit 80,000 freelancers",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/us-charges-russian-for-infecting-80-000-freelancers-with-malware/",
+   "tags": [
+    {
+     "label": "Indictment",
+     "type": "a"
+    },
+    {
+     "label": "Phishing",
+     "type": "a"
+    },
+    {
+     "label": "RAT",
+     "type": "a"
+    }
+   ],
+   "body": "A 40-year-old Russian national arrested in Cyprus was extradited to the US on August 28 and indicted in California over a phishing campaign that infected freelancers with malware. Prosecutors say that between 2016 and 2017 he used 255 fake accounts on a freelancing platform to send Microsoft Excel attachments carrying malicious macros to about 80,000 users, deploying the TVRAT and DarkVNC remote-access trojans that gave him hidden control of victims' computers. He faces charges including conspiracy, computer damage, unauthorized access and aggravated identity theft.",
+   "beginnerTip": "A <strong>Remote Access Trojan (RAT)</strong> is malware that secretly hands an attacker full remote control of your computer. This case is a reminder that a booby-trapped Office document — not just a shady link — is a classic delivery method; disable macros unless you truly trust the sender."
+  },
+  {
+   "headline": "FBI warns of OAuth consent phishing targeting prominent individuals",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/fbi-alert-oauth-consent-phishing-campaign/",
+   "tags": [
+    {
+     "label": "Consent Phishing",
+     "type": "w"
+    },
+    {
+     "label": "OAuth Abuse",
+     "type": "w"
+    },
+    {
+     "label": "MFA Bypass",
+     "type": "w"
+    }
+   ],
+   "body": "The FBI issued an alert about an ongoing campaign, tracked since late 2025, that targets high-profile people, their families and associates to gain lasting access to their accounts. Instead of stealing passwords, attackers trick victims — often under the pretext of reviewing a draft article — into approving an OAuth consent request that grants a malicious app access to their Microsoft or Google account. Because the victim willingly clicks 'approve', this technique sidesteps both passwords and multi-factor authentication. The FBI urges scrutinizing messages from unknown contacts and only authorizing apps you fully trust.",
+   "beginnerTip": "<strong>Consent phishing</strong> tricks you into clicking 'Allow' on a real Google or Microsoft permission screen, so the attacker gets ongoing access without ever needing your password or MFA code. Before approving any app, read exactly what access it is asking for and who is asking."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "UK moves to block high-risk tech suppliers from critical infrastructure",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/uk-moves-to-block-high-risk-tech-suppliers-from-critical-infrastructure/",
+   "tags": [
+    {
+     "label": "UK CSRB",
+     "type": "a"
+    },
+    {
+     "label": "Supply Chain",
+     "type": "a"
+    },
+    {
+     "label": "Legislation",
+     "type": "a"
+    }
+   ],
+   "body": "The UK government tabled late amendments to its Cyber Security and Resilience Bill that would let ministers ban technology vendors deemed a national-security risk from supplying critical-sector organizations. The powers reach beyond telecoms into managed service providers, data centers, energy, water, transport and health. The move followed a reported Iran-linked attack that took a small UK energy facility offline for four days, and it adapts the framework once used to strip Huawei from 5G networks — but with fewer transparency safeguards, meaning ministers would not have to publicly name a vendor before acting.",
+   "beginnerTip": "A <strong>supply-chain attack</strong> compromises a trusted supplier to reach its many customers at once, which is why governments increasingly regulate who can sell technology into essential services like power and water."
+  },
+  {
+   "headline": "CISA to stop offering six free cybersecurity assessments to critical infrastructure",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/cisa-cybersecurity-assessments-ending/829371/",
+   "tags": [
+    {
+     "label": "CISA",
+     "type": "w"
+    },
+    {
+     "label": "Policy Change",
+     "type": "w"
+    }
+   ],
+   "body": "CISA's regional staff will stop performing six free assessments long offered to critical-infrastructure operators, including Cyber Resilience Reviews, Ransomware Readiness Assessments, Incident Management Reviews and Cyber Infrastructure Surveys. These voluntary check-ups helped smaller utilities and operators — who often lack in-house security teams — measure their defenses at no cost. Critics see the cut as a retreat from CISA's core mission of helping secure US infrastructure, and affected organizations may now need to pay private firms for equivalent reviews.",
+   "beginnerTip": "A <strong>risk assessment</strong> is a structured review of where an organization is exposed and how bad an incident could be. Losing free government versions matters most for small operators — like rural water or power utilities — that can least afford commercial consultants."
+  },
+  {
+   "headline": "Senator Wyden presses NSA for updated guidance on commercial VPN use",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/wyden-nsa-commercial-vpn-security-guidance/",
+   "tags": [
+    {
+     "label": "VPN Policy",
+     "type": "a"
+    },
+    {
+     "label": "Oversight",
+     "type": "a"
+    }
+   ],
+   "body": "Senator Ron Wyden is asking the NSA to update its security guidance on commercial VPN services, arguing that many consumers turn to VPN apps for privacy without a clear way to judge which providers are trustworthy or where their traffic actually goes. Consumer VPNs route your internet traffic through a provider's servers, so a poorly run or malicious provider can see or mishandle that data. Updated federal guidance would aim to help ordinary users and organizations pick VPNs on security grounds rather than marketing claims.",
+   "beginnerTip": "A <strong>VPN (Virtual Private Network)</strong> encrypts your internet traffic and routes it through the provider's server, hiding it from your local network or ISP — but you are trusting that provider with everything you browse, so the provider's own security and honesty matter a lot."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "OpenAI's Astra becomes first model to cross 'Critical' cyber capability threshold",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/openais-astra-becomes-first-model-to-cross-critical-cybersecurity-threshold/",
+   "tags": [
+    {
+     "label": "AI & Security",
+     "type": "a"
+    },
+    {
+     "label": "Offensive AI",
+     "type": "a"
+    }
+   ],
+   "body": "OpenAI says its new model, Astra, is the first to reach the 'Critical' cybersecurity level in its Preparedness Framework — a tier reached when a model can independently find and exploit zero-day vulnerabilities across well-defended systems or run a full attack from only a high-level instruction. In testing, Astra scored perfectly on a benchmark that turns known bugs into working exploits and discovered two zero-days as part of an exploit chain. The classification triggers extra safeguards before release, and OpenAI plans limited access first, expanding defensive use through its Daybreak program.",
+   "beginnerTip": "A <strong>zero-day</strong> is a flaw no fix exists for yet. AI that can find these on its own cuts both ways: defenders can patch faster, but attackers could too — which is why labs gate release behind safety controls."
+  },
+  {
+   "headline": "'GitSpawn' flaws let malicious repositories run code through AI coding agents",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html",
+   "tags": [
+    {
+     "label": "AI Agents",
+     "type": "w"
+    },
+    {
+     "label": "Code Execution",
+     "type": "w"
+    },
+    {
+     "label": "Supply Chain",
+     "type": "w"
+    }
+   ],
+   "body": "Researchers at Manifold Security disclosed eight flaws (dubbed GitSpawn) across seven command-line AI coding agents where a repository's own Git configuration can name a command the agent then runs on the developer's machine — as the user, outside the agent's sandbox and without an approval prompt. Fixes shipped for goose, Claude Code and Cursor, while some agents were still executing repository-supplied commands on retest, and OpenAI issued three CVEs covering the same class in Codex. On several tools the payload fired before the trust prompt was even accepted. The advised mitigation: inspect a project's .git/config before opening a repo you received as raw files rather than by cloning.",
+   "beginnerTip": "AI coding assistants can run commands on your computer, so a booby-trapped project can turn that power against you. Treat code from strangers as untrusted — review what an agent is about to execute, especially with repos you did not clone yourself."
+  },
+  {
+   "headline": "Palo Alto Networks acquires AI agent platform Console",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/palo-alto-networks-acquires-ai-agent-platform-console/",
+   "tags": [
+    {
+     "label": "M&A",
+     "type": "a"
+    },
+    {
+     "label": "AI Security",
+     "type": "a"
+    }
+   ],
+   "body": "Palo Alto Networks announced it is acquiring Console, an AI agent platform, as major security vendors race to build and secure the autonomous 'agentic AI' tools that increasingly act on their own inside enterprises. The deal reflects a broader industry trend: as companies deploy AI agents that can take actions, securing and governing those agents becomes its own product category. Consolidation like this signals that AI-agent security is moving from research curiosity toward mainstream enterprise tooling.",
+   "beginnerTip": "<strong>Agentic AI</strong> refers to AI that doesn't just answer questions but takes actions — running commands, calling other software, making changes. That autonomy is powerful and risky, which is why securing it is becoming a distinct market."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "Krebs on Security",
+   "sourceUrl": "https://krebsonsecurity.com",
+   "text": "The FBI opened an inquiry after a dark-web service called Nexus began selling digital scans of 153M+ US and Canadian driver's licenses, apparently siphoned from identity-verification firm IDScan.net; the site has since gone offline."
+  },
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "text": "Aesto Health disclosed a data breach affecting more than 9.5 million patients, one of the year's larger healthcare exposures."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "text": "Attackers breached Dropbox accounts by abusing a flaw in Lenovo's email-verification process, showing how one vendor's weakness can cascade into another's accounts."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "text": "GeoNetwork patched an unauthenticated RCE chain affecting government geoportal backends — the map servers many agencies run publicly."
+  },
+  {
+   "color": "accent",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "text": "Rockwell Automation patched over a dozen vulnerabilities across its industrial products; operational-technology fixes often need scheduled downtime, so plan patch windows now."
+  }
+ ],
+ "analystFooter": "Patch the internet-facing, actively-exploited targets first — SonicWall SMA1000, JFrog Artifactory and Langflow are all being hit right now, and public exploits exist for Cleo Harmony — then rotate any API keys that lived on exploitable systems and warn your team that OAuth 'consent phishing' can bypass their MFA with a single approval click."
+}

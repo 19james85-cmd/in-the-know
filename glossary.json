@@ -174,6 +174,12 @@
   "e": "The Hugging Face attacker used \"self-migrating\" C2 staged on public services, so blocking one address didn't stop it."
  },
  {
+  "t": "Consent Phishing",
+  "c": "Threat/Actor",
+  "d": "A scam that tricks you into clicking 'Allow' on a genuine Google or Microsoft permission screen, granting a malicious app ongoing access to your account. Because you willingly approve it, this bypasses your password and multi-factor authentication.",
+  "e": "In September 2026, the FBI warned that attackers were using consent phishing — often disguised as a request to review a draft article — to hijack the accounts of prominent people."
+ },
+ {
   "t": "Container Escape",
   "c": "General",
   "d": "When an attacker breaks out of a container — a lightweight, isolated box that is supposed to keep an application separate from the host machine and its neighbors — and gains access to the underlying server. It turns a foothold in one confined app into control over everything running on that host.",
@@ -654,6 +660,12 @@
   "e": "CVE-2026-15410 is a path traversal in SonicWall's remove_hotfix workflow — the step that turned non-root access into root (July 2026)."
  },
  {
+  "t": "Peer-to-Peer (P2P)",
+  "c": "Network",
+  "d": "A network design where computers connect directly to each other instead of relying on one central server. Malware authors use P2P so their botnet has no single point that defenders can shut down.",
+  "e": "The Sality botnet, disrupted in 2026, used a peer-to-peer design so each infected machine kept a list of other bots rather than phoning home to one command server."
+ },
+ {
   "t": "Persistence",
   "c": "Threat/Actor",
   "d": "Anything an attacker sets up so their access survives a reboot or a password change — a modified startup script, a scheduled task, a new service.",
@@ -904,6 +916,12 @@
   "c": "Vulnerability",
   "d": "In application security, the dangerous end-point where attacker-controlled data finally gets used — e.g. passed to a code evaluator or a database query. The entry point is the \"source\".",
   "e": "Attackers targeted the same pre-auth sink (/assessment_thanks.do) that the original researchers documented."
+ },
+ {
+  "t": "Sinkhole",
+  "c": "Network",
+  "d": "A defensive technique where security teams reroute traffic meant for an attacker's servers to servers they control instead. It is a common way to cut a botnet's operators off from the machines they've infected without needing to fix each victim's computer.",
+  "e": "In August 2026, law enforcement and CrowdStrike ran a sinkhole operation to sever the 23-year-old Sality botnet's operators from roughly 15,000 still-infected systems."
  },
  {
   "t": "Smart Contract",
