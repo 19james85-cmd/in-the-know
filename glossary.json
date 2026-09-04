@@ -96,6 +96,12 @@
   "e": "Attackers used automated tools to try millions of password combinations per second against an online banking portal."
  },
  {
+  "t": "Business Email Compromise (BEC)",
+  "c": "Threat/Actor",
+  "d": "A scam where an attacker impersonates an executive, vendor, or partner over email or messaging to trick an employee into sending money or sensitive data. It relies on deception and authority rather than malware, so technical defenses often miss it.",
+  "e": "In September 2026 the 'Phantom Deal' campaign posed as executives arranging fake merger deals to trick enterprise staff into wiring large sums to attacker accounts."
+ },
+ {
   "t": "BYOVD",
   "c": "Malware",
   "d": "Short for Bring Your Own Vulnerable Driver. An attacker installs a real, properly signed device driver that happens to contain a known flaw, then abuses that flaw to get deep kernel-level control of Windows and switch off security software. Windows loads it willingly because the signature is genuine.",
@@ -402,6 +408,12 @@
   "e": "Kaspersky explicitly kept a false flag on the table when tentatively attributing HelloNet to a Chinese-speaking group in July 2026."
  },
  {
+  "t": "FIDO2",
+  "c": "Network",
+  "d": "The open standard behind passkeys that lets you log in with a cryptographic key on your device instead of a password, resisting phishing. The math is strong, but the surrounding steps (recovery, sync, help desk) can still be attacked.",
+  "e": "In September 2026 researchers cataloged 39 ways to compromise passkey logins by attacking the systems around FIDO2 rather than breaking its cryptography."
+ },
+ {
   "t": "Fileless Malware",
   "c": "Malware",
   "d": "Running malicious code entirely in RAM without writing it to disk, so file-scanning antivirus has nothing to find and a reboot erases the evidence.",
@@ -454,6 +466,12 @@
   "c": "General",
   "d": "Hacking back means going on the offensive against an attacker's own systems - for example to disrupt or destroy their infrastructure - rather than only defending your own network. It is legally restricted for private companies in most countries because of the risk of hitting the wrong target.",
   "e": "In August 2026, a White House memo proposed letting vetted U.S. security firms hack back against foreign cybercrime gangs under government oversight."
+ },
+ {
+  "t": "Harvest Now, Decrypt Later",
+  "c": "Cryptography",
+  "d": "An attack strategy where adversaries copy and store encrypted data today, planning to decrypt it years later once quantum computers can break current encryption. It puts long-lived secrets at risk even though they look safe right now.",
+  "e": "In September 2026 the G7 warned organizations that 'Harvest Now, Decrypt Later' collection makes financial records and patient data worth protecting with post-quantum encryption today."
  },
  {
   "t": "Heap Buffer Overflow",
