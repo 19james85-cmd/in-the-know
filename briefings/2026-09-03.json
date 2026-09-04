@@ -1,0 +1,194 @@
+{
+  "leadStory": {
+    "headline": "CISA adds seven actively exploited flaws to KEV as attackers drop reverse shells and crypto miners",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+    "tags": [
+      {"label": "KEV Catalog", "type": "d"},
+      {"label": "Actively Exploited", "type": "d"},
+      {"label": "CVSS up to 10.0", "type": "d"},
+      {"label": "AI Infrastructure", "type": "w"}
+    ],
+    "body": "CISA added seven vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog after confirming they are being used in real attacks, formally putting federal agencies on the clock to patch them. The list spans the two SonicWall SMA 1000 zero-days now chained for unauthenticated Remote Code Execution (CVE-2026-83548, a CVSS 10.0 Server-Side Request Forgery, and CVE-2026-83549, a CVSS 7.8 OS command injection), an SQL injection in Sangoma Switchvox (CVE-2026-9586, CVSS 9.3), and four flaws in AI and developer tooling: Starlette, Kestra, LiteLLM and JFrog Artifactory. Microsoft reported that the Kestra flaw (CVE-2026-49869) was likely abused in late June 2026 to open a reverse shell, map out a Docker container environment, evade defenses, and deploy a cryptocurrency miner. Attackers are using this cluster of bugs to gain admin access, run commands, steal credentials, and increasingly target AI infrastructure for follow-on attacks.",
+    "beginnerTip": "The <strong>KEV</strong> (Known Exploited Vulnerabilities) catalog is CISA's curated list of flaws it has confirmed are being exploited right now, not just theoretically dangerous. It is the single best patch-priority list on the internet: if a CVE lands on KEV, treat it as urgent regardless of its CVSS score, because attackers are already using it."
+  },
+  "cves": [
+    {
+      "headline": "Critical Cisco Nexus 9000 flaw lets unauthenticated attackers run code as root",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+      "tags": [
+        {"label": "CVE-2026-20212 (CVSS 9.8)", "type": "d"},
+        {"label": "Unauthenticated RCE", "type": "d"},
+        {"label": "Patch Available", "type": "a"}
+      ],
+      "body": "Cisco patched a critical flaw, CVE-2026-20212 (CVSS 9.8), in Nexus 9000 data-center switches that use a Silicon One ASIC, which lets an unauthenticated remote attacker execute arbitrary code with root (full administrator) privileges. The bug exists because two TCP ports (43210 and 43211) are reachable through the default routing configuration; crafted input sent to that hidden service is executed as code as root. Cisco found the issue while resolving a support case and said it was not aware of exploitation at publication. Admins should upgrade to a fixed NX-OS release, or, as a stopgap, use access control lists to block traffic to those two ports.",
+      "beginnerTip": "<strong>Root</strong> is the most powerful account on a Unix-style system; code running as root can do anything. A CVSS 9.8 unauthenticated-to-root bug means an attacker needs no password and gets total control, so even though there is no known exploitation yet, this is a patch-now situation before someone writes an exploit."
+    },
+    {
+      "headline": "Critical Elementor Pro flaw exploited to plant web shells on WordPress sites",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-elementor-pro-flaw-exploited-to-take-over-wordpress-sites/",
+      "tags": [
+        {"label": "CVE-2026-32475 (CVSS 9.0)", "type": "d"},
+        {"label": "Actively Exploited", "type": "d"},
+        {"label": "6M+ Installs", "type": "w"}
+      ],
+      "body": "A critical flaw in Elementor Pro (CVE-2026-32475, CVSS 9.0), a website-builder plugin with over 6 million WordPress installs, is being exploited to upload a Web Shell and run arbitrary commands on the server. The bug comes from faulty validation of file-upload arrays in Elementor forms: by submitting an empty file as the first array element and a malicious PHP file as the second, an attacker tricks the plugin into skipping validation on the rest. Wordfence saw exploitation begin on August 19, 2026, the same day the 4.2.2 fix shipped, and blocked more than 190,000 attempts through August 23. Admins should update to 4.2.2 or later and inspect the uploads/elementor/forms/ folder for unexpected PHP files.",
+      "beginnerTip": "A <strong>Web Shell</strong> is a small malicious script an attacker uploads to a web server that gives them a remote command prompt through the browser. Because attacks started the very day the patch was released, this is a reminder that publishing a fix also tells attackers exactly where the hole is, so patch windows should be short."
+    },
+    {
+      "headline": "Hackers exploit Sangoma Switchvox SQL injection to deploy reverse shells",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/",
+      "tags": [
+        {"label": "CVE-2026-9586 (CVSS 9.3)", "type": "d"},
+        {"label": "SQL Injection", "type": "d"},
+        {"label": "On KEV", "type": "d"}
+      ],
+      "body": "Attackers are exploiting an SQL injection flaw (CVE-2026-9586, CVSS 9.3) in Sangoma Switchvox, an IP phone (VoIP) system used by businesses, to gain a foothold and deploy Reverse Shells. The flaw was one of the seven CISA just added to the KEV catalog. A SQL Injection lets an attacker sneak database commands into a web form or URL, which here can be leveraged to run code and open a connection back to the attacker. Organizations running Switchvox should apply Sangoma's updates and treat internet-exposed phone systems as high-value targets.",
+      "beginnerTip": "A <strong>Reverse Shell</strong> is a trick where the victim's machine dials out to the attacker rather than the attacker connecting in, which sidesteps firewalls that block inbound traffic but allow outbound. Phone systems and other 'boring' infrastructure are often forgotten at patch time, which is exactly why attackers hunt for them."
+    },
+    {
+      "headline": "Plex urges users to patch security vulnerabilities immediately",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/plex-warns-users-to-patch-security-vulnerabilities-immediately/",
+      "tags": [
+        {"label": "Media Server", "type": "w"},
+        {"label": "Patch Available", "type": "a"}
+      ],
+      "body": "Plex is urging users of its popular media-server software to update immediately after disclosing security vulnerabilities in the Plex Media Server. Plex Media Server is often exposed to the internet so users can stream their libraries remotely, which makes any flaw in it an attractive target. Plex has released a fixed version and is advising all self-hosting users to upgrade without delay. As with any internet-facing service, reducing exposure and staying current on patches is the core defense.",
+      "beginnerTip": "Plex is a common example of a self-hosted service that people deliberately open to the internet for convenience. Any such service becomes part of your <strong>Attack Surface</strong>, the total set of points an attacker could probe, so keeping it patched and limiting who can reach it matters as much as it does for a corporate server."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "Manchester Airports Group data on 8.8 million people leaked after ransom refusal",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/manchester-airports-group-data-on-8-8-million-people-leaked-after-ransom-refusal/",
+      "tags": [
+        {"label": "Data Breach", "type": "d"},
+        {"label": "Extortion", "type": "d"},
+        {"label": "8.8M Affected", "type": "w"}
+      ],
+      "body": "An extortion group calling itself FulcrumSec published data on roughly 8.8 million people after Manchester Airports Group (MAG) refused to pay a ransom. The stolen records, taken from a third-party database, include email addresses, phone numbers, vehicle registrations and postcodes tied to car parking, lounge, Fast Track and in-airport Wi-Fi sign-ups at Manchester, London Stansted and East Midlands airports. FulcrumSec says it grabbed the data using airport-specific API credentials that were exposed in client-side JavaScript, and has now posted the files on its Leak Site. This is a classic data-Exfiltration extortion play: no encryption of MAG's systems, just theft plus the threat of publication.",
+      "beginnerTip": "When a company refuses to pay, extortion crews publish the stolen files on a <strong>Leak Site</strong> to pressure the victim and to prove they had the data. Note the root cause here: secret API keys were left inside JavaScript that any visitor's browser downloads, so treat anything shipped to the client side as public."
+    },
+    {
+      "headline": "'Breeze Comet' drains Brazilian and global financial systems via payment fraud",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/threat-intelligence/breeze-comet-brazilian-global-financial-systems",
+      "tags": [
+        {"label": "Financially Motivated", "type": "d"},
+        {"label": "Payment Fraud", "type": "w"},
+        {"label": "AI-Assisted", "type": "w"}
+      ],
+      "body": "A financially motivated Threat Actor tracked as Breeze Comet (formerly UNC5669) has been breaking into Brazilian banks, retailers and e-commerce firms since 2024 and initiating fraudulent transfers to itself through payment rails like Pix and Boleto, sometimes tens of thousands of dollars at a time. The group gains access with password spraying, Vishing (voice phishing) and abused remote-management tools, and has since branched into compromised government websites and rogue hardware. Researchers say Breeze Comet appears to be using generative AI to help build malware, which could speed up and scale its operations. Infrastructure clues suggest it is expanding toward other countries in Latin America and Africa.",
+      "beginnerTip": "A <strong>Threat Actor Tracking Name</strong> like 'Breeze Comet' is a label vendors assign to a set of related intrusions before the real people behind them are known. Rather than breaking encryption, this group abuses legitimate business permissions to move money, a reminder that fraud often rides on trusted, authorized access."
+    },
+    {
+      "headline": "Global takedown ends the Russia-based Sality botnet's 23-year run",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/sality-botnet-dismantled/",
+      "tags": [
+        {"label": "Botnet Takedown", "type": "g"},
+        {"label": "Law Enforcement", "type": "g"},
+        {"label": "Sinkhole", "type": "a"}
+      ],
+      "body": "The U.S. Justice Department, FBI and Defense Criminal Investigative Service, working with CrowdStrike and partners in Bulgaria, Hungary and Romania, disrupted Sality, a Russia-based Botnet that had operated since 2003. Investigators seized domain names and ran a Sinkhole operation that severed infected machines from the network by attacking the peer list each bot uses to find others. Sality had powered spam, credential theft, DDoS attacks and malicious proxy networks across more than 15,000 infected machines; for the past eight years its main payload, EggJagger, swapped cryptocurrency wallet addresses copied to a victim's clipboard to steal funds.",
+      "beginnerTip": "A <strong>Sinkhole</strong> redirects a botnet's traffic to servers the good guys control, so infected machines phone home to law enforcement instead of the criminals. This is a rare good-news item: takedowns like this cut off the operator's control without needing to clean every infected computer individually."
+    }
+  ],
+  "regulatory": [
+    {
+      "headline": "Maine juvenile becomes first US minor federally detained over the '764' extremist network",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/maine-teenager-first-underage-detained-764/",
+      "tags": [
+        {"label": "Law Enforcement", "type": "a"},
+        {"label": "Online Harm", "type": "w"}
+      ],
+      "body": "A 17-year-old from Maine is the first juvenile in the United States to be federally charged, adjudicated and detained for acts tied to the '764' network, a loose set of online groups that the FBI classifies as nihilistic violent extremists. According to the FBI, the teen conspired to sexually exploit a child, distributed child sexual abuse material, sent interstate threats, cyberstalked victims and committed identity theft. These networks target minors and other vulnerable people on mainstream platforms and coerce them into escalating harm. The FBI says it is now investigating more than 500 subjects nationwide tied to 764.",
+      "beginnerTip": "Not every cybersecurity story is about software bugs; a large part of the field is protecting people from online coercion and abuse. This case is notable legally because it applies federal juvenile-delinquency law to online extremist activity for the first time, signaling how authorities intend to handle these networks. This item touches on child exploitation, which is a heavy topic."
+    },
+    {
+      "headline": "FCC wants consumers to grade their carriers' anti-robocall protections",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/the-fcc-wants-consumers-to-rate-their-telecoms-anti-robocall-protections/",
+      "tags": [
+        {"label": "FCC", "type": "a"},
+        {"label": "Consumer Protection", "type": "a"}
+      ],
+      "body": "The U.S. Federal Communications Commission is proposing a system that would let consumers rate how well their phone carriers block robocalls and spoofed numbers, using public feedback to pressure telecoms into doing better. Robocalls are frequently the delivery mechanism for scams and Vishing (voice phishing), so blocking them at the network level is a meaningful defense for ordinary people. The proposal reflects a broader regulatory trend of using transparency and public reporting, rather than only fines, to nudge companies toward stronger security.",
+      "beginnerTip": "Regulators increasingly use <strong>transparency</strong> as a tool: forcing companies to publish security-relevant information so customers can compare them and vote with their wallets. For you, the practical takeaway is that carrier-level call filtering exists and is worth turning on, since stopping a scam call before it rings is easier than spotting it live."
+    },
+    {
+      "headline": "CISA issues 'Preparing for the Post-Quantum Era' call to action",
+      "source": "CISA",
+      "sourceUrl": "https://www.cisa.gov",
+      "url": "https://www.cisa.gov/resources-tools/resources/preparing-post-quantum-era-call-action",
+      "tags": [
+        {"label": "Post-Quantum", "type": "a"},
+        {"label": "Guidance", "type": "a"}
+      ],
+      "body": "CISA published a call to action urging organizations to start preparing now for Post-Quantum Cryptography, the shift to new encryption algorithms designed to resist attacks from future quantum computers. The core worry is 'harvest now, decrypt later': adversaries can steal encrypted data today and simply wait until a powerful enough quantum computer can crack it. CISA's guidance emphasizes building a cryptographic inventory, knowing where and how your systems use encryption, so that migrating to quantum-resistant algorithms later is manageable rather than chaotic.",
+      "beginnerTip": "<strong>Post-Quantum Cryptography</strong> is a set of new encryption methods NIST has standardized to withstand quantum computers. Even though large quantum computers do not exist yet, the 'harvest now, decrypt later' threat means sensitive data with a long shelf life needs protecting today, which is why regulators are pushing early planning."
+    }
+  ],
+  "trends": [
+    {
+      "headline": "Google, Anthropic and OpenAI unveil cyber-focused AI models and defender access programs",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
+      "tags": [
+        {"label": "AI Security", "type": "a"},
+        {"label": "Industry Trend", "type": "a"}
+      ],
+      "body": "The three leading AI labs each rolled out cybersecurity-focused models and safeguards. Google introduced Gemini 3.8 Flash Cyber and a 'Fairwind' program giving high-priority defenders such as governments, hospitals and telecoms early access, with over 650 partners so far. Anthropic launched new models plus 'Enterprise Frontier Safeguards' that pair zero data retention with misuse detection, and OpenAI described 'Private Safety Processing' and said its Astra model meets a 'Critical' cybersecurity threshold under its Preparedness Framework. The common thread: giving defenders powerful AI while adding guardrails to keep the same capabilities from helping attackers.",
+      "beginnerTip": "<strong>AI Guardrails</strong> are the built-in limits that stop a model from doing dangerous things, like writing working malware or walking someone through an attack. The industry is racing to hand these tools to defenders first, because the same model that finds and fixes a vulnerability could also help an attacker exploit it."
+    },
+    {
+      "headline": "AI gives attackers a dangerous time advantage, compressing a two-week attack to 10 hours",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-machine-speed-2-week-attack-10-hours",
+      "tags": [
+        {"label": "AI Threats", "type": "w"},
+        {"label": "Automation", "type": "w"}
+      ],
+      "body": "Researchers demonstrated that AI-assisted tooling can carry out at 'machine speed' an intrusion that would normally take a skilled human roughly two weeks, completing it in about 10 hours. By automating Reconnaissance, exploitation and Lateral Movement (spreading from the first compromised machine to others), AI shrinks the window defenders have to notice and respond. The takeaway is not that attacks are unstoppable but that detection and response must get faster and more automated to keep pace with adversaries who are automating their side.",
+      "beginnerTip": "<strong>Lateral Movement</strong> is how an attacker spreads from their first foothold to more valuable systems inside a network. When AI compresses the whole attack timeline into hours, the old assumption that defenders have days to catch an intruder breaks down, which is why automated detection is becoming essential rather than optional."
+    },
+    {
+      "headline": "AI's vulnerability surge may be more manageable than first feared",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/application-security/ai-vulnerability-surge-manageable-than-first-feared",
+      "tags": [
+        {"label": "AI Security", "type": "g"},
+        {"label": "Analysis", "type": "a"}
+      ],
+      "body": "Amid fears that AI would unleash an unmanageable flood of new software vulnerabilities, analysts argue the surge may be more controllable than expected. The same AI tools that help attackers and researchers find bugs faster also help defenders triage, prioritize and fix them at scale, and many AI-discovered issues turn out to be low-severity or duplicates. The measured message is that AI changes the volume and speed of vulnerability discovery but does not automatically tip the balance toward attackers, provided defenders adopt the tooling too.",
+      "beginnerTip": "<strong>Triage</strong> in security means sorting a pile of reported vulnerabilities by how serious and exploitable they really are, so teams fix the dangerous ones first. This story is a useful counterweight to hype: more bugs found is not automatically a disaster if defenders can also sort and patch them faster."
+    }
+  ],
+  "quickHits": [
+    {"color": "danger", "source": "The Hacker News", "sourceUrl": "https://thehackernews.com/2026/09/pegasus-zero-click-spyware-exploit.html", "text": "A Pegasus zero-click Spyware exploit infected the iPhone of a Serbian student-movement member, needing no tap or click from the victim."},
+    {"color": "danger", "source": "SecurityWeek", "sourceUrl": "https://www.securityweek.com/153-million-driver-license-images-offered-on-dark-web/", "text": "Around 153 million driver's license images are being offered for sale on the dark web, a major identity-theft risk."},
+    {"color": "warn", "source": "The Hacker News", "sourceUrl": "https://thehackernews.com/2026/09/shai-huluds-reach-just-grew-to-469.html", "text": "The Shai-Hulud npm supply-chain worm has now spread to 469 credential locations, escalating risk for JavaScript developers."},
+    {"color": "warn", "source": "SecurityWeek", "sourceUrl": "https://www.securityweek.com/over-3-million-wordpress-sites-affected-by-migration-plugin-vulnerability/", "text": "A flaw in a popular migration plugin exposes over 3 million WordPress sites to attack; admins should update immediately."},
+    {"color": "accent", "source": "Dark Reading", "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/threat-gang-springs-vishing-attacks-microsoft-teams-users", "text": "A threat gang dubbed 'Springs' is running Vishing (voice-phishing) attacks against Microsoft Teams users to gain access."}
+  ],
+  "analystFooter": "Patch priority today: anything on CISA's newly expanded KEV list (SonicWall SMA 1000, Sangoma Switchvox), then Cisco Nexus 9000 (CVE-2026-20212) and Elementor Pro (CVE-2026-32475) if you run them; internet-facing appliances and web plugins are where active exploitation is landing."
+}

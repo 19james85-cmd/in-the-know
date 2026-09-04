@@ -372,6 +372,12 @@
   "e": "In August 2026, thousands of water-system controllers were found reachable over the public internet via EtherNet/IP, letting outsiders potentially read or change their configuration."
  },
  {
+  "t": "Exfiltration",
+  "c": "General",
+  "d": "The unauthorized copying of data out of a system to somewhere the attacker controls. It is the theft step of a breach, separate from any damage or encryption.",
+  "e": "In September 2026, attackers exfiltrated email addresses, phone numbers and postcodes from a Manchester Airports Group database before demanding a ransom."
+ },
+ {
   "t": "Exploit",
   "c": "Vulnerability",
   "d": "A piece of software, code, or technique that takes advantage of a vulnerability in a system to cause unintended behavior — usually to gain unauthorized access.",
@@ -538,6 +544,12 @@
   "c": "Network",
   "d": "Lightweight Directory Access Protocol — the protocol corporate systems use to check usernames and passwords against a central directory such as Active Directory. If it travels unencrypted, anyone watching the wire sees the logins.",
   "e": "On a compromised SonicWall appliance, UTA0533 ran tcpdump against unencrypted LDAP traffic to harvest usernames and passwords (July 2026)."
+ },
+ {
+  "t": "Leak Site",
+  "c": "Threat/Actor",
+  "d": "A website, usually on the dark web, where an extortion or ransomware group publishes data it stole to pressure a victim into paying and to prove the breach was real.",
+  "e": "In September 2026, the FulcrumSec group posted data on 8.8 million people to its leak site after Manchester Airports Group refused to pay the ransom."
  },
  {
   "t": "Living off the Land",
@@ -952,6 +964,12 @@
   "c": "Regulatory",
   "d": "The DoD system where contractors post their self-assessed NIST 800-171 score. During the CMMC pause, that self-reported number is the verification mechanism.",
   "e": "An inflated SPRS score is now the thing a prosecutor would cite, with no assessor standing in between."
+ },
+ {
+  "t": "Spyware",
+  "c": "Malware",
+  "d": "Software secretly installed on a device to monitor its owner, capturing messages, calls, location and camera or microphone data and sending them to whoever deployed it.",
+  "e": "In September 2026, the Pegasus spyware infected a Serbian student activist's iPhone through a zero-click exploit that required no action from the victim."
  },
  {
   "t": "SQL Injection",

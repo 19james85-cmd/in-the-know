@@ -4306,5 +4306,687 @@
    }
   ],
   "analystFooter": "Patch priority order today: the three actively-exploited KEV flaws (Ray CVE-2025-62593 by the Aug 20 federal deadline, Windows Task Host CVE-2025-60710, and SAP Commerce Cloud CVE-2026-58231), then the pre-auth criticals in GitLab, Forminator, and AD CS before public PoCs mature into mass exploitation."
+ },
+ "2026-08-19": {
+  "leadStory": {
+   "headline": "CISA adds four actively exploited critical flaws to KEV — macOS, SharePoint, VMware vCenter, and Windows IKE — federal fix due Aug 21",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+   "tags": [
+    {
+     "label": "CVE-2026-33824",
+     "type": "d"
+    },
+    {
+     "label": "CVE-2026-59310",
+     "type": "d"
+    },
+    {
+     "label": "CVE-2026-65400",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 9.8",
+     "type": "d"
+    },
+    {
+     "label": "KEV",
+     "type": "d"
+    },
+    {
+     "label": "Double Free",
+     "type": "d"
+    }
+   ],
+   "body": "On August 18, 2026, CISA added four vulnerabilities it has confirmed are being exploited in the wild to its Known Exploited Vulnerabilities (KEV) catalog — the government's authoritative list of flaws attackers are actually using — and gave federal agencies until August 21 to patch. The four are a Double Free bug in the Windows Internet Key Exchange (IKE) service that allows Remote Code Execution (CVE-2026-33824), a weak-authentication flaw in Microsoft SharePoint (CVE-2026-55040, CVSS 9.1), a Path Traversal flaw in Broadcom VMware vCenter that permits arbitrary code execution (CVE-2026-59310, CVSS 9.8), and an Improper Authentication flaw in Apple macOS that lets an attacker on the network log into Screen Sharing with no valid credentials (CVE-2026-65400, CVSS 9.8). The vCenter bug is the most alarming: researchers assess a suspected China-nexus APT (a well-resourced, long-term state-linked attacker) has used it to plant a backdoor and, in at least one case, deploy Babuk-derived ransomware.",
+   "beginnerTip": "A KEV listing means the danger is real and present, not theoretical. A <strong>Double Free</strong> is a memory-corruption bug where a program frees the same block of memory twice, which a skilled attacker can turn into full control of the system — so treat these four as drop-everything patches if you run any of the affected products."
+  },
+  "cves": [
+   {
+    "headline": "Attackers weaponize MLflow SSRF (CVE-2026-64849, CVSS 9.3) within hours to steal cloud credentials; FUXA SCADA flaw (CVE-2026-25895) enables RCE",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html",
+    "tags": [
+     {
+      "label": "CVE-2026-64849",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 9.3",
+      "type": "d"
+     },
+     {
+      "label": "SSRF",
+      "type": "d"
+     },
+     {
+      "label": "CVE-2026-25895",
+      "type": "d"
+     },
+     {
+      "label": "SCADA",
+      "type": "w"
+     }
+    ],
+    "body": "MLflow, a popular open-source platform for managing AI and machine-learning projects, has an unauthenticated Server-Side Request Forgery (SSRF) flaw — a bug that tricks a server into making web requests on the attacker's behalf — tracked as CVE-2026-64849 (CVSS 9.3). Attackers abuse it to reach internal cloud 'metadata' endpoints and harvest credentials, API tokens, and secrets; honeypots detected scanning within hours of the CVE being published. A separate critical flaw, CVE-2026-25895 (CVSS 9.5), affects FUXA, web-based SCADA/HMI software used to monitor and control industrial equipment, and lets an unauthenticated attacker write files and run code on the server. Update MLflow to 3.15.0 or later.",
+    "beginnerTip": "SSRF is dangerous in cloud environments because internal services often trust requests that appear to come from inside the network. <strong>SCADA</strong> systems run physical infrastructure like water, power, and factories, so a code-execution flaw there can have real-world safety consequences, not just data loss."
+   },
+   {
+    "headline": "Oracle's August 2026 Critical Patch Update ships 943 fixes covering more than 1,000 vulnerabilities",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/943-patches-rolled-out-with-oracles-august-2026-security-update/",
+    "tags": [
+     {
+      "label": "Critical Patch Update",
+      "type": "a"
+     },
+     {
+      "label": "460+ remote",
+      "type": "w"
+     },
+     {
+      "label": "Patch Management",
+      "type": "a"
+     }
+    ],
+    "body": "Oracle's quarterly Critical Patch Update (CPU) — its scheduled bundle of security fixes released four times a year — addressed over 1,000 vulnerabilities across roughly two dozen product families this cycle, delivered as 943 patches. More than 460 of the flaws are remotely exploitable without authentication, meaning an attacker could target them over the network with no login. Because Oracle software underpins many enterprise databases and business applications, administrators should prioritize the internet-facing and highest-severity items first.",
+    "beginnerTip": "A vendor's regular <strong>Patch Management</strong> cycle (like Oracle's quarterly CPU or Microsoft's monthly Patch Tuesday) is your best routine defense: apply the critical, remotely-exploitable fixes fast, since attackers reverse-engineer patches to build exploits within days."
+   },
+   {
+    "headline": "Varonis discloses one-click data-exfiltration flaws in Microsoft Copilot Personal",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
+    "tags": [
+     {
+      "label": "AI Security",
+      "type": "a"
+     },
+     {
+      "label": "Data Exfiltration",
+      "type": "w"
+     },
+     {
+      "label": "Phishing",
+      "type": "w"
+     }
+    ],
+    "body": "Varonis Threat Labs reported three vulnerabilities in Microsoft Copilot Personal that, chained together, could let a single click on a crafted link silently pull data from a user's connected apps and other information the assistant can access. The technique is a form of data exfiltration — secretly moving sensitive data out of a system — triggered without the victim realizing anything happened. It highlights a growing risk class where AI assistants with broad access to your accounts become a single point of failure if they can be manipulated by a malicious link.",
+    "beginnerTip": "As AI assistants gain access to your email, files, and apps, a flaw in the assistant can expose everything it can see. Be cautious clicking links that promise to 'open in' or 'connect to' an AI tool — this is a modern twist on <strong>Phishing</strong>."
+   },
+   {
+    "headline": "Chrome and Firefox updates patch dozens of vulnerabilities, including code-execution and sandbox-escape bugs",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/chrome-firefox-updates-patch-dozens-of-vulnerabilities/",
+    "tags": [
+     {
+      "label": "Browser Security",
+      "type": "a"
+     },
+     {
+      "label": "Sandbox Escape",
+      "type": "w"
+     },
+     {
+      "label": "Privilege Escalation",
+      "type": "w"
+     }
+    ],
+    "body": "Google and Mozilla shipped updates fixing dozens of flaws in Chrome and Firefox that could enable code execution, privilege escalation (gaining higher system rights than intended), information disclosure, and sandbox escape — breaking out of the browser's isolated container that is meant to keep web pages from touching the rest of your computer. Browser bugs are heavily targeted because a booby-trapped web page can trigger them with no other user action. Restart your browser to ensure the update is applied.",
+    "beginnerTip": "Your browser is one of the most exposed programs on your device. A <strong>Sandbox Escape</strong> is especially serious because it lets a malicious website break past the browser's safety walls — update promptly and fully close/reopen the browser so the patch takes effect."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "Cl0p names 40+ victims — Shell, Philips, Fiserv among them — in PTC Windchill data-theft campaign (CVE-2026-12569)",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/cl0p-ransomware-group-names-over-40-victims-of-ptc-windchill-campaign/",
+    "tags": [
+     {
+      "label": "Cl0p",
+      "type": "d"
+     },
+     {
+      "label": "CVE-2026-12569",
+      "type": "d"
+     },
+     {
+      "label": "CVSS 9.8",
+      "type": "d"
+     },
+     {
+      "label": "Web Shell",
+      "type": "w"
+     }
+    ],
+    "body": "The Cl0p ransomware group has publicly listed more than 40 organizations — including Shell, Philips, Fiserv, Zebra, and Largan Precision — that it claims to have hit by exploiting CVE-2026-12569 (CVSS 9.8), a critical remote code execution flaw in PTC's Windchill and FlexPLM product-lifecycle-management software. Cl0p likely used the bug as a zero-day (a flaw exploited before a patch existed) starting in early June 2026, deploying a custom JSP web shell — a malicious script planted on a web server to give attackers remote control — built specifically to decrypt credentials and steal engineering data. Cl0p runs a data-theft-and-extortion model, naming victims on its leak site to pressure payment rather than always encrypting files.",
+    "beginnerTip": "Cl0p specializes in finding one critical flaw in a widely-used enterprise product and exploiting it against many companies at once — a <strong>Supply Chain</strong>-style mass campaign. If you run internet-facing enterprise apps like Windchill, assume you are a target and patch high-severity RCE bugs immediately."
+   },
+   {
+    "headline": "FBI, CISA and HHS: Medusa ransomware has now hit over 500 critical-infrastructure organizations",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/",
+    "tags": [
+     {
+      "label": "Medusa",
+      "type": "d"
+     },
+     {
+      "label": "RaaS",
+      "type": "w"
+     },
+     {
+      "label": "Living off the Land",
+      "type": "w"
+     }
+    ],
+    "body": "An updated joint advisory from the FBI, CISA, and HHS says the Medusa ransomware operation has now impacted more than 500 victims across critical-infrastructure sectors since June 2021 — up from about 300 in the previous count. Medusa runs as ransomware-as-a-service (RaaS), where core developers rent their malware to affiliates who carry out the attacks. The advisory details how affiliates gain entry through phishing, access brokers, and unpatched internet-facing flaws, then use legitimate system tools (a stealthy tactic called living off the land) and Remote Desktop Protocol to move through networks while avoiding detection.",
+    "beginnerTip": "Healthcare and public-health organizations remain a favorite Medusa target. Because the group relies on <strong>Living off the Land</strong> — using tools already on your systems rather than obvious malware — defenders should watch for unusual use of legitimate admin utilities, not just known-bad files."
+   },
+   {
+    "headline": "'StopAndProtect' campaign hijacks nearly 2,000 WordPress sites as malware and stolen-data infrastructure",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
+    "tags": [
+     {
+      "label": "Botnet",
+      "type": "w"
+     },
+     {
+      "label": "WordPress",
+      "type": "w"
+     },
+     {
+      "label": "Malware",
+      "type": "w"
+     }
+    ],
+    "body": "Researchers flagged a global cybercrime operation, dubbed StopAndProtect, that has compromised nearly 2,000 WordPress websites and repurposed them as infrastructure — using the hacked sites to distribute malware, control infected machines, and store stolen documents and screenshots. Turning legitimate hacked sites into a distributed backbone makes the operation resilient and harder to take down, since there is no single server to seize. WordPress sites are a frequent target because outdated plugins and weak credentials are common.",
+    "beginnerTip": "If you run a WordPress site, an unpatched plugin can quietly turn your server into part of a criminal <strong>Botnet</strong> — a network of hijacked machines controlled by attackers. Keep plugins and themes updated, remove unused ones, and use strong admin passwords with multi-factor authentication."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "DOJ unseals superseding indictment charging 17 Iranians in Mabna Institute; $10M rewards for five at large",
+    "source": "Cybersecurity Dive",
+    "sourceUrl": "https://www.cybersecuritydive.com",
+    "url": "https://www.cybersecuritydive.com/news/doj-charges-17-iran-hacking-campaign-us-university/828212/",
+    "tags": [
+     {
+      "label": "Indictment",
+      "type": "a"
+     },
+     {
+      "label": "Nation-State",
+      "type": "w"
+     },
+     {
+      "label": "IRGC",
+      "type": "w"
+     }
+    ],
+    "body": "The U.S. Justice Department unsealed a 14-count superseding indictment charging 17 members of the Tehran-based Mabna Institute, which prosecutors say ran cyber-intrusion operations on behalf of Iran's Islamic Revolutionary Guard Corps (IRGC) since at least 2013. The campaign allegedly breached 144 U.S. and 178 foreign universities plus dozens of companies and government agencies, stealing more than 31 terabytes of research and intellectual property. The State Department's Rewards for Justice program is offering up to $10 million for information locating five defendants who remain at large.",
+    "beginnerTip": "Indictments like this rarely put foreign state hackers in a U.S. courtroom, but they matter: they publicly attribute attacks, impose travel and financial constraints, and warn organizations which <strong>Nation-State</strong> groups are targeting their sector — here, academic and research institutions."
+   },
+   {
+    "headline": "CareCloud healthcare data breach balloons to 3.7 million people on HHS tracker",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/carecloud-data-breach-impact-grows-to-3-7-million-individuals/",
+    "tags": [
+     {
+      "label": "Data Breach",
+      "type": "w"
+     },
+     {
+      "label": "HIPAA",
+      "type": "a"
+     },
+     {
+      "label": "PII",
+      "type": "w"
+     }
+    ],
+    "body": "A data breach at healthcare technology firm CareCloud, first thought to affect around 350,000 people, is now listed on the U.S. Department of Health and Human Services breach portal as impacting roughly 3.7 million individuals. Healthcare providers and their vendors must report breaches of protected health information to HHS under HIPAA, the federal law governing medical-data privacy, which is why the revised, much larger figure became public. Breaches of this size typically expose personally identifiable information (PII) that fuels identity theft and targeted phishing.",
+    "beginnerTip": "The HHS 'breach portal' is a public record of large healthcare breaches. Under <strong>HIPAA</strong>, incidents affecting 500+ people must be reported, so these disclosures are a useful early-warning source if you or your organization work with a named healthcare vendor."
+   },
+   {
+    "headline": "Reminder: Windows 11 24H2 Home and Pro reach end of support in two months",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-2-months/",
+    "tags": [
+     {
+      "label": "End of Support",
+      "type": "a"
+     },
+     {
+      "label": "Patch Management",
+      "type": "a"
+     }
+    ],
+    "body": "Microsoft is reminding customers that the Home and Pro editions of Windows 11 version 24H2 will stop receiving updates in about two months. Once a version reaches end of support, it no longer gets security patches, so any newly discovered flaw stays permanently open on that system — a growing compliance and risk problem for organizations that must run supported software. Affected users should plan to update to a newer feature release before the deadline.",
+    "beginnerTip": "Running an <strong>End of Support</strong> operating system is one of the most common ways organizations fail security audits, because unpatched known flaws accumulate over time. Track the support end-dates of your OS and key software and upgrade before they lapse."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "Dark Reading: China-linked operator ran a near-autonomous AI-driven attack on government targets in APAC",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-linked-hacker-ai-capabilities-apac-attack",
+    "tags": [
+     {
+      "label": "AI Security",
+      "type": "a"
+     },
+     {
+      "label": "Nation-State",
+      "type": "w"
+     },
+     {
+      "label": "APT",
+      "type": "w"
+     }
+    ],
+    "body": "Researchers describe what they call the first purported near-autonomous cyberattack on a nation-state: a Chinese-language operator used a complex AI framework to plan and carry out much of an intrusion against government agencies, likely in Taiwan, with limited human direction. The significance is the shift from AI merely assisting hackers to AI executing multi-step attack tasks on its own, which could dramatically increase the speed and scale of state-linked operations. It signals a trend defenders will need to counter with equally automated detection.",
+    "beginnerTip": "This is an early example of 'agentic' AI being used offensively — software that chains together steps toward a goal with minimal human input. Expect the same <strong>AI Security</strong> arms race on defense, where automated systems are needed to keep up with automated attacks."
+   },
+   {
+    "headline": "'CoSnitch' technique tricks Microsoft Copilot into revealing its own security architecture",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/cosnitch-attack-copilot-mapping-out-architecture",
+    "tags": [
+     {
+      "label": "Prompt Injection",
+      "type": "w"
+     },
+     {
+      "label": "AI Security",
+      "type": "a"
+     }
+    ],
+    "body": "Researchers demonstrated a 'meta-hacking' technique, dubbed CoSnitch, that manipulates Microsoft Copilot into disclosing details about its own internal architecture and security weaknesses. By carefully crafting inputs, an attacker can get the AI to map out information that would normally help defenders keep it locked down — effectively using the assistant against itself. It is part of a broader wave of research probing how large-language-model assistants can be coaxed past their guardrails.",
+    "beginnerTip": "This is related to <strong>Prompt Injection</strong>, where attackers embed instructions in text an AI reads so it behaves in unintended ways. As companies bolt AI assistants onto sensitive systems, how those assistants can be tricked becomes a genuine security question, not a novelty."
+   },
+   {
+    "headline": "Picus 'Blue Report 2026': controls that block known attacks often miss the same goal achieved a quieter way",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/your-controls-block-known-attacks-what-about-the-behavior/",
+    "tags": [
+     {
+      "label": "Threat Detection",
+      "type": "a"
+     },
+     {
+      "label": "Defense in Depth",
+      "type": "a"
+     }
+    ],
+    "body": "Picus Security's Blue Report 2026 argues that many defenses reliably block a familiar attack method while missing alternative techniques that reach the same objective more quietly. The data shows prevention rates varying dramatically depending on the specific technique used, which is why the report pushes for behavior-based detection — spotting suspicious activity by what it does rather than by matching a known-bad signature. The takeaway for defenders is to test controls against a range of techniques, not just the obvious ones.",
+    "beginnerTip": "Signature-based tools catch attacks that look like something already on a blocklist. <strong>Defense in Depth</strong> — layering multiple, overlapping controls including behavior-based detection — helps catch the quieter variations that slip past any single defense."
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "ok",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "text": "Microsoft fixed a bug that caused Windows Defender to crash with 0xc0000005 access-violation errors after a recent security update."
+   },
+   {
+    "color": "warn",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "text": "A vigilante-style group called 'Ransom Busters' is emailing ransomware victims and claiming it will delete their stolen data for fees up to $60,000 — effectively a new extortion layer."
+   },
+   {
+    "color": "warn",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "text": "Microsoft Defender Experts linked more than 30 rotating web domains to 'MacSync Stealer,' a macOS information-stealing malware."
+   },
+   {
+    "color": "accent",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "text": "Comcast is promoting WiFi-based motion detection in its new Xfinity Shield platform, letting routers sense movement in a home without cameras — a convenience with clear privacy questions."
+   },
+   {
+    "color": "accent",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "text": "Prevalent AI raised $22 million to expand its data-fabric platform for securely operating AI agents at scale."
+   }
+  ],
+  "analystFooter": "Top priority today: patch the four new CISA KEV flaws (Windows IKE, SharePoint, vCenter, macOS) before the Aug 21 federal deadline and update MLflow to 3.15.0 — all are under active exploitation right now."
+ },
+ "2026-08-20": {
+  "leadStory": {
+   "headline": "US agencies warn of active, AI-assisted attacks on internet-exposed Siemens S7 PLCs",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/ai-hackers-siemens-s7-devices-cisa-fbi/828321/",
+   "tags": [
+    {
+     "label": "Active Threat",
+     "type": "d"
+    },
+    {
+     "label": "ICS/OT",
+     "type": "d"
+    },
+    {
+     "label": "Joint Advisory",
+     "type": "a"
+    }
+   ],
+   "body": "The NSA, CISA, FBI, Department of Energy, and EPA issued a joint advisory (AA26-231A) warning that a threat actor is actively conducting reconnaissance and capability development against U.S. Siemens S7-series Programmable Logic Controllers (PLC) that are exposed to the internet and running outdated firmware. The attackers are pairing internet-scanning services with open-source automation libraries (python-snap7) and AI coding assistants to generate exploitation scripts disguised as legitimate monitoring tools. The agencies name Water and Wastewater, Energy, Critical Manufacturing, Chemical, Food and Agriculture, and Commercial Facilities as the most-targeted sectors, and stress this is not a theoretical risk. Recommended actions: inventory all S7 PLCs, apply Siemens patches, remove the controllers from the public internet, tighten access controls, and monitor for suspicious commands.",
+   "beginnerTip": "A <strong>Programmable Logic Controller (PLC)</strong> is a small, rugged industrial computer that physically operates equipment like pumps, valves, and motors in a water plant or factory. If one is reachable from the open internet, an attacker who reaches it can potentially manipulate real-world machinery, so the single most effective fix is to make sure these devices are never directly exposed online."
+  },
+  "cves": [
+   {
+    "headline": "CISA adds critical MLflow SSRF flaw (CVE-2026-64849) to KEV as cloud-credential theft spreads",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/",
+    "tags": [
+     {
+      "label": "CVSS 9.3",
+      "type": "d"
+     },
+     {
+      "label": "KEV",
+      "type": "d"
+     },
+     {
+      "label": "Exploited",
+      "type": "d"
+     }
+    ],
+    "body": "CVE-2026-64849 is an unauthenticated Server-Side Request Forgery (SSRF) bug (CVSS 9.3) in the MLflow machine-learning platform that lets a remote attacker force the server to make HTTP requests to internal targets, including cloud metadata endpoints on AWS, GCP, and Azure. Because those endpoints hand out temporary access keys, attackers have used the flaw to steal cloud credentials and, in several confirmed cases, take over accounts. Exploitation began within hours of the CVE being assigned, and researcher honeypot sensors have captured live attacks in the wild. CISA added it to the Known Exploited Vulnerabilities (KEV) catalog on August 19 with a two-week federal patching deadline; all MLflow versions before 3.15.0 are affected.",
+    "beginnerTip": "Cloud servers have a hidden internal address (the <strong>metadata endpoint</strong>) that hands out temporary login keys. An SSRF bug tricks a server into visiting that address on the attacker's behalf and leaking the keys, so patch MLflow to 3.15.0 and block outbound access to metadata endpoints."
+   },
+   {
+    "headline": "Critical Zimbra command-injection RCE (CVE-2026-73570) now exploited in the wild",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/",
+    "tags": [
+     {
+      "label": "CVSS 8.9",
+      "type": "d"
+     },
+     {
+      "label": "RCE",
+      "type": "d"
+     },
+     {
+      "label": "Exploited",
+      "type": "d"
+     }
+    ],
+    "body": "Attackers are actively exploiting CVE-2026-73570 (CVSS 8.9), an OS command-injection flaw in the SNMP monitoring feature of Zimbra Collaboration that lets an unauthenticated attacker run arbitrary commands as the 'zimbra' user via specially crafted SMTP requests. Only deployments with the optional zimbra-snmp package installed, SNMP notifications enabled, and the swatchdog service running are vulnerable. Zimbra fixed it in version 10.1.20, released July 20, 2026, but Shadowserver still tracks more than 12,100 exposed Zimbra servers, most in Europe and Asia. Admins should patch immediately and inspect /var/log/zimbra.log for unexpected service-status changes.",
+    "beginnerTip": "<strong>Command injection</strong> means an application passes attacker-supplied text straight to the underlying operating system as a command. Email servers like Zimbra are prime targets because they are internet-facing by design, so updating to 10.1.20 is urgent."
+   },
+   {
+    "headline": "Citrix patches critical NetScaler authentication bypass (CVE-2026-19490); exploitation expected",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/exploitation-expected-for-critical-authentication-bypass-patched-in-citrix-netscaler/",
+    "tags": [
+     {
+      "label": "CVSS 9.3",
+      "type": "d"
+     },
+     {
+      "label": "Auth Bypass",
+      "type": "d"
+     },
+     {
+      "label": "Patch Now",
+      "type": "w"
+     }
+    ],
+    "body": "Citrix released fixes for CVE-2026-19490 (CVSS 9.3), an authentication bypass in NetScaler ADC and Gateway appliances configured as a gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server, allowing a remote, unauthenticated attacker to reach protected services without valid credentials. The same update also fixes CVE-2026-19489 (CVSS 8.8), a memory-overflow issue. No confirmed exploitation has been reported yet, but NetScaler gateways are perennial targets and researchers expect attacks soon, so Citrix is urging admins to patch immediately. Fixed builds include 14.1-73.32 and 13.1-63.21.",
+    "beginnerTip": "An <strong>authentication bypass</strong> lets an attacker skip the login check entirely rather than guessing a password. NetScaler devices sit at the edge of corporate networks, so a bypass here is effectively a front-door key -- patch before a public exploit lands."
+   },
+   {
+    "headline": "Critical GitLab GraphQL code-injection flaw (CVE-2026-19478) exploited days after disclosure",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com",
+    "url": "https://www.securityweek.com/critical-gitlab-flaw-exploited-shortly-after-disclosure/",
+    "tags": [
+     {
+      "label": "CVSS 9.4",
+      "type": "d"
+     },
+     {
+      "label": "Code Injection",
+      "type": "d"
+     },
+     {
+      "label": "Exploited",
+      "type": "d"
+     }
+    ],
+    "body": "CVE-2026-19478 (CVSS 9.4) is a code-injection flaw in a GitLab GraphQL directive that lets an unauthenticated attacker remotely modify or delete public projects and user data without any credentials or user interaction. GitLab patched it on August 17 in Community and Enterprise editions 19.2.4, 19.1.6, 19.0.8, and 18.11.11, and WatchTowr reports its honeypots caught the first in-the-wild exploitation roughly two days after disclosure. Organizations that cannot patch immediately should restrict unauthenticated access to the /api/graphql endpoint and hunt web logs for requests containing '@gl_introduced'.",
+    "beginnerTip": "<strong>GraphQL</strong> is a popular way for apps to expose a single flexible API endpoint that clients query for exactly the data they need. Its power is also its risk: one exposed GraphQL endpoint can reach a lot of functionality, so an injection bug there is high-impact."
+   }
+  ],
+  "threatActors": [
+   {
+    "headline": "'Ransom Busters' rogue affiliate poses as a recovery firm to hijack ransom payments",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-ransomware-affiliate-ransom-busters-poses-as-recovery-firm/",
+    "tags": [
+     {
+      "label": "Ransomware",
+      "type": "w"
+     },
+     {
+      "label": "Extortion",
+      "type": "w"
+     }
+    ],
+    "body": "Researchers at GuidePoint's GRIT team say an entity calling itself 'Ransom Busters' is contacting ransomware victims before their breaches become public, offering to supply decryption keys and delete stolen data for up to $60,000. The tell: it knew about the attacks before anyone else did. GRIT concluded Ransom Busters is not a legitimate recovery service but a rogue Ransomware-as-a-Service (RaaS) affiliate abusing insider access to admin panels to divert payments away from the criminal groups it works with, tied to DragonForce, Settra, and Anubis activity. It is a reminder that even self-described 'recovery firms' reaching out unprompted can be part of the attack.",
+    "beginnerTip": "In the <strong>Ransomware-as-a-Service (RaaS)</strong> model, one group builds the malware and rents it to 'affiliates' who carry out attacks and split the profits. Here an affiliate turned on its own partners -- so never trust an unsolicited 'recovery' offer after a breach; verify any responder independently."
+   },
+   {
+    "headline": "Clop's PTC Windchill zero-day (CVE-2026-12569) hit 43 firms including Shell, GE, and Philips",
+    "source": "CyberScoop",
+    "sourceUrl": "https://cyberscoop.com",
+    "url": "https://cyberscoop.com/clop-zero-day-attacks-ptc-windchill-flexplm/",
+    "tags": [
+     {
+      "label": "CVSS 9.8",
+      "type": "d"
+     },
+     {
+      "label": "Zero-Day",
+      "type": "d"
+     },
+     {
+      "label": "Data Theft",
+      "type": "w"
+     }
+    ],
+    "body": "The long tail of Clop's latest mass-hack is coming into focus: the group exploited CVE-2026-12569 (CVSS 9.8), a deserialization flaw in PTC Windchill and FlexPLM product-lifecycle-management software, as a Zero-Day to breach at least 43 organizations, among them Shell, GE, and Philips. Attackers chained a pre-auth information leak to a login-servlet flaw for unauthenticated Remote Code Execution (RCE), planted JSP Web Shells, and exfiltrated engineering blueprints and intellectual property for double-extortion. Ransom-ISAC assesses the intrusions began as early as June, weeks before the July extortion emails, so more victims are likely to surface. PTC fixed the flaw in releases from 11.0 M030.",
+    "beginnerTip": "A <strong>Zero-Day</strong> is a flaw attackers exploit before the vendor has a patch, giving defenders no lead time. Clop specializes in quietly exploiting one zero-day across many companies at once, then extorting them all -- so watch for vendor advisories on any file-transfer or engineering software you run."
+   },
+   {
+    "headline": "SilkParasite espionage campaign hits Central Asian governments with five new RATs",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/threat-intelligence/silkparasite-central-asian-orgs-flurry-rats",
+    "tags": [
+     {
+      "label": "Espionage",
+      "type": "a"
+     },
+     {
+      "label": "China-Nexus",
+      "type": "a"
+     }
+    ],
+    "body": "A cyber-espionage operation dubbed SilkParasite is targeting government bodies across Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan, and Kazakhstan using seven Remote Access Trojan (RAT) families -- five of them never seen before, including DriveSilkRAT, NomadRAT, and GoginRAT. Researchers assess with medium confidence that it is a China-nexus cluster with links to the known FamousSparrow and ShadowPad ecosystems, delivered via spear-phishing lures tailored to specific ministries. Notably, the code shows traces of AI-assisted development woven through otherwise expert work, and analysts read the campaign as China expanding influence in a region where Russia's has been receding.",
+    "beginnerTip": "A <strong>Remote Access Trojan (RAT)</strong> is malware that gives an attacker hands-on remote control of an infected machine -- reading files, logging keys, and running commands as if sitting at the keyboard. Espionage crews favor RATs because they enable quiet, long-term surveillance."
+   }
+  ],
+  "regulatory": [
+   {
+    "headline": "DOJ charges 17 Iranians tied to IRGC over 31TB academic and IP theft",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/",
+    "tags": [
+     {
+      "label": "Indictment",
+      "type": "a"
+     },
+     {
+      "label": "Nation-State",
+      "type": "a"
+     }
+    ],
+    "body": "A 14-count superseding indictment unsealed August 19 charges 17 members of the Iran-based Mabna Institute with a years-long cyber-theft campaign run on behalf of the Islamic Revolutionary Guard Corps (IRGC). Prosecutors say the group stole more than 31 terabytes of data from 144 U.S. universities, 178 foreign universities, dozens of companies, and five U.S. federal and state agencies; the $3.4 billion figure reflects what victim universities spent to procure or re-access the stolen material. The State Department is offering rewards of up to $10 million for information leading to five of the defendants. Indictments like this rarely put hackers in a U.S. courtroom, but they impose sanctions exposure and constrain the accused's travel.",
+    "beginnerTip": "An <strong>indictment</strong> is a formal criminal charge -- here used as a diplomatic and deterrence tool against state-sponsored hackers who are unlikely to be arrested. The public naming also helps defenders by tying specific techniques to a known group."
+   },
+   {
+    "headline": "CareCloud confirms breach of 3.7M+ patients in HHS filing",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/healthtech-firm-carecloud-data-breach-impacts-37-million-patients/",
+    "tags": [
+     {
+      "label": "Healthcare",
+      "type": "w"
+     },
+     {
+      "label": "HIPAA",
+      "type": "w"
+     }
+    ],
+    "body": "Electronic-health-record provider CareCloud told the U.S. Department of Health and Human Services (HHS) that a March intrusion into one of its AWS cloud environments -- lasting from March 10 to 16 -- exposed the records of more than 3.75 million patients, making it one of 2026's largest health-data thefts. Stolen data reportedly includes names, Social Security numbers, government ID numbers, payment-card details, and medical and insurance information. Under HIPAA breach-notification rules, providers must report incidents affecting 500+ individuals to HHS and notify those affected, which is why the scope became public months after the breach.",
+    "beginnerTip": "<strong>HIPAA</strong> is the U.S. law governing protection of health information; its Breach Notification Rule forces healthcare organizations to publicly disclose large breaches to regulators and patients, which is how numbers like these come to light."
+   },
+   {
+    "headline": "'Shady AI' emerges as the next governance headache for security teams",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/08/why-shady-ai-is-securitys-next-big.html",
+    "tags": [
+     {
+      "label": "AI Governance",
+      "type": "a"
+     },
+     {
+      "label": "Compliance",
+      "type": "a"
+     }
+    ],
+    "body": "Security teams have spent two years worrying about Shadow AI -- unsanctioned tools used outside the organization's visibility -- but analysts now warn about 'Shady AI': approved AI tools used in unapproved or poorly governed ways, which is harder to spot because it happens inside sanctioned systems. The article cites a March 2026 Meta 'Sev 1' incident in which an approved internal AI agent posted a response publicly without approval, exposing sensitive data to unauthorized employees for over two hours. The takeaway for compliance: approving a tool is no longer the same as approving every use of it. A July 2026 SANS survey found 76% of security teams now have a formal role in governing enterprise AI.",
+    "beginnerTip": "<strong>Shadow AI</strong> is any AI tool employees use without IT approval or oversight; 'Shady AI' is the trickier cousin -- an approved tool behaving in ways nobody signed off on. Both mean governance now has to cover how AI is used, not just which tools are allowed."
+   }
+  ],
+  "trends": [
+   {
+    "headline": "Password-spraying attacks surged 155x in H1 2026 as attackers exploit MFA gaps",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/password-spraying-attacks-surge-155x-as-hackers-exploit-mfa-gaps/",
+    "tags": [
+     {
+      "label": "Identity",
+      "type": "a"
+     },
+     {
+      "label": "MFA",
+      "type": "a"
+     }
+    ],
+    "body": "Huntress reports a 155x increase in Password Spraying during the first half of 2026, including one campaign that fired more than 81 million login attempts in two weeks against Microsoft Azure CLI. Attackers leaned on the legacy Resource Owner Password Credentials (ROPC) OAuth grant, which bypasses MFA and single sign-on entirely. Of 23 affected organizations Huntress analyzed, 15 had MFA misconfigured and 8 had no MFA policy at all -- underscoring that turning MFA on is not enough if legacy authentication paths remain open. Disabling legacy auth and enforcing MFA on every login flow are the core defenses.",
+    "beginnerTip": "<strong>Password spraying</strong> tries one common password against many accounts, avoiding the lockouts that classic brute-forcing triggers. It thrives on old 'legacy' sign-in methods that skip MFA, so closing those paths matters as much as enabling MFA."
+   },
+   {
+    "headline": "Ransomware's real target is the mid-market, not the enterprise, Black Kite finds",
+    "source": "Cybersecurity Dive",
+    "sourceUrl": "https://www.cybersecuritydive.com",
+    "url": "https://www.cybersecuritydive.com/news/ransomware-mid-market-firms-black-kite/828257/",
+    "tags": [
+     {
+      "label": "Ransomware",
+      "type": "a"
+     },
+     {
+      "label": "Research",
+      "type": "a"
+     }
+    ],
+    "body": "Black Kite's analysis of 13,336 ransomware incidents with verifiable revenue (January 2023 to June 2026) found that 73% struck mid-market organizations earning between $10M and $1B a year -- a share that has stayed remarkably steady even as total incidents rose 44%. Manufacturing was the most-hit sector at over 25% of victims, and nearly 30% of affected mid-market firms had at least one Known Exploited Vulnerability. These companies often sit in the middle of supply chains as both supplier and customer, so a hit strains their partner relationships as much as their own operations.",
+    "beginnerTip": "The <strong>mid-market</strong> -- companies too large to be casual targets but often lacking enterprise-grade security budgets -- is ransomware's sweet spot. If you supply larger firms, your security posture is part of their risk too."
+   },
+   {
+    "headline": "Agentic AI creates a new kind of insider-threat model for organizations",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/agentic-ai-new-insider-threat-model",
+    "tags": [
+     {
+      "label": "Agentic AI",
+      "type": "a"
+     },
+     {
+      "label": "Insider Risk",
+      "type": "a"
+     }
+    ],
+    "body": "As organizations deploy Agentic AI -- systems that take actions on their own rather than just answering questions -- security teams are being forced to treat these agents like a new class of insider. An agent with access to email, code, or cloud consoles can be manipulated (for example, via Prompt Injection) or simply act unpredictably, producing the same damage as a malicious or careless employee but at machine speed and scale. The recommended framing is to give each agent a scoped identity, least-privilege access, and full auditing, exactly as you would a human insider with sensitive permissions.",
+    "beginnerTip": "<strong>Agentic AI</strong> refers to AI that can take real actions -- send messages, run commands, change settings -- not just generate text. Because it acts with real permissions, it needs the same least-privilege limits and monitoring you would apply to a trusted employee."
+   }
+  ],
+  "quickHits": [
+   {
+    "color": "danger",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-crosswork-secure-workload-vulnerabilities/",
+    "text": "Cisco patched critical flaws in Crosswork and Secure Workload, including three rated a maximum CVSS 10.0 that allow unauthenticated remote code execution -- update to the fixed builds now."
+   },
+   {
+    "color": "warn",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html",
+    "text": "Researchers found 40 malicious Firefox extensions posing as Web3 and crypto-wallet tools that steal wallet secrets and seed phrases; remove any you cannot verify."
+   },
+   {
+    "color": "warn",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-compromise-14-500-dahua-web-cameras-in-35-day-campaign/",
+    "text": "A 35-day campaign compromised roughly 14,500 internet-exposed Dahua web cameras -- another reminder to keep IoT devices off the public internet and change default credentials."
+   },
+   {
+    "color": "accent",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
+    "text": "A new Spectre-style side-channel attack on Cloudflare Workers can leak a JWT from a co-located worker at about 12 bits per second, showing serverless tenant isolation is still hard."
+   },
+   {
+    "color": "ok",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/atlassian-splunk-patch-dozens-of-critical-high-severity-vulnerabilities/",
+    "text": "Atlassian and Splunk each shipped patches for dozens of critical and high-severity vulnerabilities this week -- a good prompt to schedule maintenance windows for both."
+   }
+  ],
+  "analystFooter": "Priority order today: patch the actively exploited, KEV-listed items first -- MLflow (CVE-2026-64849), Zimbra (CVE-2026-73570), and GitLab (CVE-2026-19478) -- then NetScaler (CVE-2026-19490) before a public exploit lands; ICS and water-sector operators should treat getting internet-exposed Siemens S7 PLCs offline as an emergency."
  }
 }
