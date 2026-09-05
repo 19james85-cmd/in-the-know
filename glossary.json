@@ -36,6 +36,18 @@
   "e": "Hugging Face's forensic analysis was blocked by guardrails on the hosted models it first tried, while the attacker's model had no usage policy at all."
  },
  {
+  "t": "Arbitrary File Upload",
+  "c": "Vulnerability",
+  "d": "A flaw that lets an attacker upload a file the web server will treat as code and run, rather than just storing it as a harmless attachment. It often leads directly to full control of the site.",
+  "e": "In August 2026, attackers exploited an Arbitrary File Upload bug in the Elementor Pro WordPress plugin (CVE-2026-32475) to drop a PHP web shell and take over sites."
+ },
+ {
+  "t": "ASCII Smuggling",
+  "c": "Threat/Actor",
+  "d": "A trick that hides invisible or special characters in text so that computers read something people cannot see. Attackers use it to sneak content past email filters or into AI systems.",
+  "e": "In a campaign Microsoft detailed in September 2026, phishing emails used invisible Unicode tag characters to split lure words so filters could not detect them."
+ },
+ {
   "t": "ASLR",
   "c": "General",
   "d": "A defense that shuffles where a program's code and data sit in memory each time it runs, so an attacker who overflows a buffer cannot reliably predict where to jump. It turns many crashes into just crashes instead of takeovers.",
@@ -94,6 +106,12 @@
   "c": "Threat/Actor",
   "d": "A trial-and-error method to gain access by trying every possible combination of passwords or keys until the correct one is found, usually with automated tools.",
   "e": "Attackers used automated tools to try millions of password combinations per second against an online banking portal."
+ },
+ {
+  "t": "Buffer Overflow",
+  "c": "Vulnerability",
+  "d": "A bug where a program writes more data than the memory space it reserved, spilling into nearby memory. Attackers can shape that overflow to overwrite data or run their own code.",
+  "e": "In September 2026, HPE patched a critical Buffer Overflow in ArubaOS-CX switches (CVE-2026-73749) that allowed unauthenticated remote code execution."
  },
  {
   "t": "Business Email Compromise (BEC)",
