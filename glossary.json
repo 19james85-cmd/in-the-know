@@ -288,6 +288,12 @@
   "e": "A CVSS score of 9.8 on a Microsoft Exchange vulnerability prompted emergency patching across thousands of organizations."
  },
  {
+  "t": "Cyber Resilience Act (CRA)",
+  "c": "Regulatory",
+  "d": "An EU law that requires companies to build security into hardware and software products sold in Europe and to report serious security incidents quickly.",
+  "e": "Under the Cyber Resilience Act, an EU-based vendor now has just 24 hours to report an actively exploited flaw in one of its products."
+ },
+ {
   "t": "DDoS",
   "c": "Threat/Actor",
   "d": "Distributed Denial of Service — an attack that floods a website or service with so much traffic from many sources that it becomes unavailable to legitimate users.",
@@ -414,6 +420,12 @@
   "e": "Wp2shell chains a REST API routing bug with a SQL injection to get from anonymous request to code execution."
  },
  {
+  "t": "Exploit Kit",
+  "c": "Malware",
+  "d": "A ready-made toolkit that bundles several exploits together so an attacker can automatically try each one against a target until something works.",
+  "e": "The BlueMoon exploit kit combined a Windows flaw with a Chrome zero-day so victims could be compromised just by visiting a malicious webpage."
+ },
+ {
   "t": "False Claims Act",
   "c": "Regulatory",
   "d": "A US law making it fraud to submit false claims to the government. Under DOJ's Civil Cyber-Fraud Initiative it's applied to contractors who misrepresent their security posture.",
@@ -424,6 +436,12 @@
   "c": "Threat/Actor",
   "d": "Deliberately leaving clues that point at someone else — a foreign language string, another group's tooling — so investigators blame the wrong party.",
   "e": "Kaspersky explicitly kept a false flag on the table when tentatively attributing HelloNet to a Chinese-speaking group in July 2026."
+ },
+ {
+  "t": "Federal Civilian Executive Branch (FCEB)",
+  "c": "Regulatory",
+  "d": "The group of non-military U.S. federal agencies that CISA can legally order to patch specific vulnerabilities by a set deadline.",
+  "e": "CISA's Known Exploited Vulnerabilities catalog gave Federal Civilian Executive Branch agencies until September 12 to patch the Cisco, Citrix, and Fortinet flaws."
  },
  {
   "t": "FIDO2",
