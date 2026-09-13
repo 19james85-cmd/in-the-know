@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-12T15:47:37.836340+00:00",
+ "generated": "2026-09-13T16:36:03.798934+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,7 +11,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 4,
+   "count": 1,
    "error": null
   },
   {
@@ -23,19 +23,19 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 4,
+   "count": 1,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 7,
+   "count": 2,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 3,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 5,
+   "count": 1,
    "error": null
   },
   {
@@ -80,150 +80,24 @@
   },
   {
    "source": "BleepingComputer",
-   "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
-   "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
-   "published": "2026-09-12T14:14:32+00:00",
-   "summary": "The Dutch Nationaal Cyber Security Centrum (NCSC) is warning of imminent exploitation of two critical flaws in Check Point VPN tracked as CVE-2026-85102 and CVE-2026-85103. [...]"
+   "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
+   "published": "2026-09-13T14:26:32+00:00",
+   "summary": "Threat actors linked to a China-aligned espionage group are exploiting a critical vulnerability (CVE-2026-51990) in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor. [...]"
   },
   {
    "source": "SecurityWeek",
-   "title": "BlueMoon Exploit Kit Chains Recent Chrome, Windows Zero-Days",
-   "url": "https://www.securityweek.com/bluemoon-exploit-kit-chains-recent-chrome-windows-zero-days/",
-   "published": "2026-09-12T11:10:00+00:00",
-   "summary": "Multiple espionage-motivated threat actors have adopted BlueMoon in opportunistic, rushed deployments. The post BlueMoon Exploit Kit Chains Recent Chrome, Windows Zero-Days appeared first on SecurityWeek ."
+   "title": "Anthropic CEO Dario Amodei Says AI Industry Needs to Give Safety Measures Time to Catch Up",
+   "url": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
+   "published": "2026-09-13T13:27:25+00:00",
+   "summary": "Dario Amodei warned that within six to 12 months AI could be capable of leading a swarm of agents that could take over the entire internet. The post Anthropic CEO Dario Amodei Says AI Industry Needs to Give Safety Measures Time to Catch Up appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "When the Whole Company Adopts AI: What It Does to Your SOC",
-   "url": "https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html",
-   "published": "2026-09-12T10:24:44+00:00",
-   "summary": "Over the past year, we watched a new class of alert appear in enterprise security operations centers and grow faster than anything else in the stream: alerts that were triggered by AI tools and agents. Not attacks against AI, but the ordinary, everyday footprint of an organization using it, from developers running coding agents and non-technical staff signing consumer AI tools into corporate"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "OpenAI Agents Linked to RubyGems Campaign That Gained RCE on RubyDoc Servers",
-   "url": "https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html",
-   "published": "2026-09-12T09:07:56+00:00",
-   "summary": "The \"major malicious attack\" that targeted RubyGems in May 2026 was the work of a swarm of OpenAI agents, according to a new report published by researchers Spencer Kitts, Thomas Larsen, and Sydney Von Arx. On May 12, Maciej Mensfeld, senior product manager for software supply chain security at Mend.io, disclosed details of a coordinated cyber attack that targeted the package manager for the"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Users in Houthi-Held Yemen Tried to Develop Advanced Weapons With AI, Anthropic Says",
-   "url": "https://www.securityweek.com/users-in-houthi-held-yemen-tried-to-develop-advanced-weapons-with-ai-anthropic-says/",
-   "published": "2026-09-12T01:50:53+00:00",
-   "summary": "Anthropic said the users did not succeed in “fielding an operational device” but did carry out a failed test of a guided rocket. The post Users in Houthi-Held Yemen Tried to Develop Advanced Weapons With AI, Anthropic Says appeared first on SecurityWeek ."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Researchers say OpenAI agents were behind May hacking campaign targeting RubyGems",
-   "url": "https://cyberscoop.com/openai-agents-malicious-rubygems-packages/",
-   "published": "2026-09-12T01:50:30+00:00",
-   "summary": "OpenAI confirmed their agents were behind a campaign in May that researchers say flooded the popular online code repository with malicious software packages. The post Researchers say OpenAI agents were behind May hacking campaign targeting RubyGems appeared first on CyberScoop ."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal",
-   "url": "https://cyberscoop.com/dot-rule-airline-cyberattack-flight-delays/",
-   "published": "2026-09-11T21:26:23+00:00",
-   "summary": "A Department of Transportation rule published last week says that airlines complying with cybersecurity regulations will have reduced customer obligations in the event of an attack. The post Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal appeared first on CyberScoop ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers abused Claude to extract secrets from 1.8M Android apps",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
-   "published": "2026-09-11T20:19:09+00:00",
-   "summary": "Anthropic says multiple threat groups, including the financially motivated and state-sponsored espionage groups linked to Russia and China, tried to abuse its Claude AI model for malicious purposes. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
-   "published": "2026-09-11T19:21:08+00:00",
-   "summary": "Cybercriminals behind malicious email campaigns no longer have to compromise volume for credibility, or vice versa, thanks to AI."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Florida confirms DMV database breached via stolen police account",
-   "url": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
-   "published": "2026-09-11T19:00:29+00:00",
-   "summary": "The Florida Department of Highway Safety and Motor Vehicles (FLHSMV) has confirmed that its DAVID driver database suffered a data breach, saying the attackers gained access using credentials belonging to a police department employee. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "CISA Calls for More Guidance, Less Spin, as Cyber Outages Escalate",
-   "url": "https://www.darkreading.com/cyber-risk/cisa-calls-for-more-guidance-less-spin-as-cyber-outages-escalate",
-   "published": "2026-09-11T18:44:03+00:00",
-   "summary": "A new joint government advisory signals a regulatory shift, pressing organizations to adopt more transparent breach notification and incident response protocols."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "GitLab’s critical flaw is already drawing internet-wide probes",
-   "url": "https://cyberscoop.com/gitlab-critical-flaws-path-traversal-scans/",
-   "published": "2026-09-11T18:41:52+00:00",
-   "summary": "One flaw allows an unauthenticated attacker to read files from the server. GitLab urged operators of self-managed installations to upgrade immediately. The post GitLab's critical flaw is already drawing internet-wide probes appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Why AI Is So Good at Scamming Humans",
-   "url": "https://www.darkreading.com/cyber-risk/ai-scamming-humans",
-   "published": "2026-09-11T18:14:06+00:00",
-   "summary": "Fred Heiding of Menlo Park Intelligence talks with the Dark Reading News Desk about his research on frontier models, and their ability to influence human behavior and create emotional dependency."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
-   "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
-   "published": "2026-09-11T17:26:50+00:00",
-   "summary": "Microsoft says threat actors linked to ShinyHunters, Helix, and other extortion gangs are using passkey and single sign-on-themed social engineering attacks to compromise corporate Microsoft accounts and steal data from Microsoft 365 services. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Phishing Research Challenges Conventional Security Awareness Testing",
-   "url": "https://www.securityweek.com/phishing-research-challenges-conventional-security-awareness-testing/",
-   "published": "2026-09-11T17:23:36+00:00",
-   "summary": "Analysis of 2.47 million simulated attacks shows why organizations should measure credential leaks and reporting, not just clicks. The post Phishing Research Challenges Conventional Security Awareness Testing appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "AI Governance Can't Wait",
-   "url": "https://www.darkreading.com/cyber-risk/ai-governance-cannot-wait",
-   "published": "2026-09-11T17:10:56+00:00",
-   "summary": "Adversaries can manipulate AI defensive reasoning to silently compromise target networks."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
-   "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
-   "published": "2026-09-11T16:30:18+00:00",
-   "summary": "GitLab has released patches to address multiple flaws, including a maximum-severity security vulnerability that has witnessed in-the-wild probes within hours of public disclosure. The vulnerability in question is CVE-2026-85706 (CVSS score: 10.0), a path traversal issue in the repository commits API that could allow an unauthenticated user to read arbitrary files from the GitLab server under"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Artifactory flaws chained in attacks deploying backdoor malware",
-   "url": "https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/",
-   "published": "2026-09-11T16:29:44+00:00",
-   "summary": "Threat actors are exploiting critical and high-severity vulnerabilities in JFrog Artifactory to bypass authentication, gain administrative privileges, and deploy a Rust backdoor on vulnerable self-hosted servers. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Anthropic Says Seven China-Based AI Labs Ran Industrial-Scale Claude Distillation Attacks",
-   "url": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html",
-   "published": "2026-09-11T16:15:29+00:00",
-   "summary": "Anthropic on Thursday said it identified and disrupted industrial-scale illicit distillation attacks against Claude from seven labs based in China, including Alibaba, Moonshot, DeepSeek, Z.ai (aka Zhipu), and MiniMax. Knowledge distillation by itself is a legitimate training method. It refers to a machine learning technique where a large, powerful AI model assumes the role of a \"teacher\" to"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "GitLab Vulnerability Exploited One Day After Disclosure",
-   "url": "https://www.securityweek.com/gitlab-vulnerability-exploited-one-day-after-disclosure/",
-   "published": "2026-09-11T16:11:08+00:00",
-   "summary": "The critical-severity path traversal flaw allows unauthenticated attackers to read arbitrary files from the GitLab server. The post GitLab Vulnerability Exploited One Day After Disclosure appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Papercut AI Swarm Attack Heralds Changes for Cyber Kill Chain",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/papercut-ai-swarm-attack-cyber-kill-chain",
-   "published": "2026-09-11T15:48:27+00:00",
-   "summary": "From creating lab environments for staging and testing agentic attacks to reconnaissance to lateral movement and exfiltration, the most innovative attackers are widely incorporating AI."
+   "title": "Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data",
+   "url": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
+   "published": "2026-09-13T10:11:48+00:00",
+   "summary": "Microsoft has disclosed details of two campaigns in which threat actors are abusing third-party email delivery infrastructure to blast financial fraud scam messages and using passkey-themed social engineering to breach cloud environments. The first campaign, per the tech giant, involved sending over a million scam emails between August 3 and 5, 2026, by masquerading as chief executive officers"
   }
  ]
 }
