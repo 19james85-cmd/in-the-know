@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T16:36:03.798934+00:00",
+ "generated": "2026-09-14T18:09:52.837095+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,25 +11,25 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 1,
+   "count": 6,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 0,
+   "count": 4,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 1,
+   "count": 9,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 1,
+   "count": 7,
    "error": null
   },
   {
@@ -79,25 +79,193 @@
    "summary": ""
   },
   {
-   "source": "BleepingComputer",
-   "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
-   "published": "2026-09-13T14:26:32+00:00",
-   "summary": "Threat actors linked to a China-aligned espionage group are exploiting a critical vulnerability (CVE-2026-51990) in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Anthropic CEO Dario Amodei Says AI Industry Needs to Give Safety Measures Time to Catch Up",
-   "url": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
-   "published": "2026-09-13T13:27:25+00:00",
-   "summary": "Dario Amodei warned that within six to 12 months AI could be capable of leading a swarm of agents that could take over the entire internet. The post Anthropic CEO Dario Amodei Says AI Industry Needs to Give Safety Measures Time to Catch Up appeared first on SecurityWeek ."
+   "source": "The Hacker News",
+   "title": "New DDRop Attack Breaks Intel TDX and AMD SEV-SNP Confidential Computing",
+   "url": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
+   "published": "2026-09-14T16:58:42+00:00",
+   "summary": "Researchers have disclosed a new hardware attack, called DDRop, that breaks the memory protection in Intel and AMD confidential computing by silently dropping writes to a server's memory, so the processor keeps reading old encrypted data as if it were current. The attack requires an attacker who already controls the server's software and can briefly access the machine to insert a small circuit"
   },
   {
    "source": "The Hacker News",
-   "title": "Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data",
-   "url": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
-   "published": "2026-09-13T10:11:48+00:00",
-   "summary": "Microsoft has disclosed details of two campaigns in which threat actors are abusing third-party email delivery infrastructure to blast financial fraud scam messages and using passkey-themed social engineering to breach cloud environments. The first campaign, per the tech giant, involved sending over a million scam emails between August 3 and 5, 2026, by masquerading as chief executive officers"
+   "title": "Red Heron Exploits Gitea RCE to Compromise 13 Organizations Across Six Countries",
+   "url": "https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html",
+   "published": "2026-09-14T16:56:30+00:00",
+   "summary": "A Chinese threat actor tracked as Red Heron has been attributed to the rapid exploitation of a recently disclosed security vulnerability in Gitea to compromise internet-facing instances as part of a multi-national campaign. \"Red Heron scanned 1,386 Gitea instances across seven countries and maintained a separate dataset of 477 Taiwan-based systems,\" Acronis Threat Research Unit (TRU) said in an"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Anthropic CEO: Time to Shift From Improving to Controlling AI",
+   "url": "https://www.darkreading.com/cyber-risk/anthropic-ceo-shift-from-improving-to-controlling-ai",
+   "published": "2026-09-14T16:41:10+00:00",
+   "summary": "Dario Amodei says it's time to slow the pace of frontier AI improvements so that security and risk prevention efforts can catch up. What does this mean for enterprises?"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Hackers target exposed Vite dev servers to steal AWS, Azure secrets",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-target-exposed-vite-dev-servers-to-steal-aws-azure-secrets/",
+   "published": "2026-09-14T16:15:58+00:00",
+   "summary": "A mass-scanning campaign targeting internet-exposed Vite development servers is attempting to steal cloud credentials and configurations from AWS and Azure deployments. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "WordPress Adds Automated Plugin Reviews to Block High-Risk Updates Before Distribution",
+   "url": "https://thehackernews.com/2026/09/wordpress-adds-automated-plugin-reviews.html",
+   "published": "2026-09-14T16:00:04+00:00",
+   "summary": "WordPress has announced it's launching an automated security review for every release of a plugin before it's distributed through the WordPress.org update API so as to analyze it for potential security issues and ensure there are no risks involved. \"New plugins are reviewed before they enter the directory, but updates ship continuously after that,\" David Perez, WordPress Official Plugin"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Security teams increasingly outflanked by AI agents",
+   "url": "https://www.cybersecuritydive.com/news/security-teams-increasingly-outflanked-by-ai-agents/830290/",
+   "published": "2026-09-14T15:20:22+00:00",
+   "summary": "A report warns that non-human identities are growing beyond the ability of existing systems to track."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Malicious actors already using critical GitLab flaw, CISA and others warn",
+   "url": "https://www.cybersecuritydive.com/news/gitlab-vulnerability-exploitation-cisa-kev/830278/",
+   "published": "2026-09-14T14:46:01+00:00",
+   "summary": "The vulnerability could let unauthenticated users access sensitive files from software-development environments."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "⚡ Weekly Recap: Rogue AI Agents, WeChat Worm, PaperCut Attacks, AI Espionage, and Rootkits",
+   "url": "https://thehackernews.com/2026/09/weekly-recap-rogue-ai-agents-wechat.html",
+   "published": "2026-09-14T14:40:34+00:00",
+   "summary": "AI keeps showing up in the wrong places. Attackers are using it to speed up exploits, test defenses, and automate more of the job. Some models are also crossing lines on their own. That is not a great combination. The rest of the week is more familiar: old bugs still working, fresh exploit chains, exposed systems, weak defaults, and simple paths that should have been harder to abuse. A few of"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Beijing Hits Back at Anthropic CEO’s Call to Curb China’s AI Development",
+   "url": "https://www.securityweek.com/beijing-hits-back-at-anthropic-ceos-call-to-curb-chinas-ai-development/",
+   "published": "2026-09-14T14:28:26+00:00",
+   "summary": "China’s Ministry of Foreign Affairs responded to a question about Amodei’s essay by saying that all parties should work together on AI. The post Beijing Hits Back at Anthropic CEO’s Call to Curb China’s AI Development appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Why Patch Automation Needs Brakes, Not Just an Accelerator",
+   "url": "https://www.bleepingcomputer.com/news/security/why-patch-automation-needs-brakes-not-just-an-accelerator/",
+   "published": "2026-09-14T14:01:11+00:00",
+   "summary": "Patch automation can help IT teams keep pace with growing update volumes, but deploying faster also means bad updates can spread faster. Action1 explains how update rings, predefined success criteria, and human oversight can make automated patching faster without sacrificing control. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "New Warnings About the Risks of AI to Humanity Revive a Long-Running Debate",
+   "url": "https://www.securityweek.com/new-warnings-about-the-risks-of-ai-to-humanity-revive-a-long-running-debate/",
+   "published": "2026-09-14T13:31:15+00:00",
+   "summary": "Concerns over the potential risks of the technology are rising as new AI models become more powerful, heightening both the potential for misuse by people with criminal aims. The post New Warnings About the Risks of AI to Humanity Revive a Long-Running Debate appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Personal, Financial Info Exposed in Revolut Data Breach",
+   "url": "https://www.securityweek.com/personal-financial-info-exposed-in-revolut-data-breach/",
+   "published": "2026-09-14T13:03:35+00:00",
+   "summary": "The company unintentionally disclosed users’ information to a third party impersonating a government agency. The post Personal, Financial Info Exposed in Revolut Data Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "The Race to Control AI and Protect What Makes Us Human",
+   "url": "https://www.securityweek.com/the-race-to-control-ai-and-protect-what-makes-us-human/",
+   "published": "2026-09-14T13:00:00+00:00",
+   "summary": "As researchers warn that misaligned AI could threaten human survival, even beneficial systems may erode the critical thinking that defines our humanity. The post The Race to Control AI and Protect What Makes Us Human appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Webinar: How malicious OAuth apps can lead to Google Workspace breaches",
+   "url": "https://www.bleepingcomputer.com/news/security/webinar-how-malicious-oauth-apps-can-lead-to-google-workspace-breaches/",
+   "published": "2026-09-14T12:15:23+00:00",
+   "summary": "Attackers can combine social engineering with malicious OAuth applications to gain access to Google Workspace data without relying solely on stolen passwords. This webinar examines two attacks to show how these breaches unfold and which security controls can help stop them. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "AI Changed the Exposure Problem. Validation Needs to Change With It.",
+   "url": "https://thehackernews.com/2026/09/ai-changed-exposure-problem-validation.html",
+   "published": "2026-09-14T11:58:00+00:00",
+   "summary": "There's a lot of noise around AI and cybersecurity right now. What’s actually important is far simpler, if often lost in the hubbub. Vulnerability discovery is getting faster and happening at a much greater scale, while defenders still have to work out which findings actually deserve their action. In the first half of 2026, a whopping 35,853 CVEs were published, roughly 49% more than in the"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Chinese Hackers Exploit Critical Tencent Software Flaw for One-Click Code Execution",
+   "url": "https://www.securityweek.com/chinese-hackers-exploit-critical-tencent-software-flaw-for-one-click-code-execution/",
+   "published": "2026-09-14T11:51:29+00:00",
+   "summary": "The Chinese-language input method editor for Windows can allow attackers to execute arbitrary code remotely. The post Chinese Hackers Exploit Critical Tencent Software Flaw for One-Click Code Execution appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "CISOs Race to Control AI Agents Without Destroying Their Value",
+   "url": "https://www.securityweek.com/cisos-race-to-control-ai-agents-without-destroying-their-value/",
+   "published": "2026-09-14T10:30:00+00:00",
+   "summary": "Security leaders are struggling to modernize cyber hygiene and prevent over-privileged agents from causing unintended harm. The post CISOs Race to Control AI Agents Without Destroying Their Value appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Telus Warns Customers of Account Breaches",
+   "url": "https://www.securityweek.com/telus-warns-customers-of-account-breaches/",
+   "published": "2026-09-14T09:56:57+00:00",
+   "summary": "Stolen credentials were used in a multi-month campaign to access subscriber personal data and billing records. The post Telus Warns Customers of Account Breaches appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft: September updates cause RDS failures on Windows Server",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-updates-cause-rds-failures-on-windows-server/",
+   "published": "2026-09-14T09:50:25+00:00",
+   "summary": "Microsoft has confirmed reports that the September 2026 security updates cause Remote Desktop Services (RDS) failures on Windows Server systems. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Three JFrog Artifactory Flaws Exploited for Backdoor Deployment",
+   "url": "https://www.securityweek.com/three-jfrog-artifactory-flaws-exploited-for-backdoor-deployment/",
+   "published": "2026-09-14T09:27:29+00:00",
+   "summary": "The vulnerabilities can allow attackers to bypass authentication and elevate their privileges to administrator. The post Three JFrog Artifactory Flaws Exploited for Backdoor Deployment appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Zero trust is the future. But enterprises still need their VPNs.",
+   "url": "https://www.cybersecuritydive.com/spons/zero-trust-is-the-future-but-enterprises-still-need-their-vpns/829864/",
+   "published": "2026-09-14T09:00:00+00:00",
+   "summary": "Zero trust shouldn't mean sacrificing the stability and flexibility enterprises still depend on."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Security teams are adopting AI faster than they trust it",
+   "url": "https://www.cybersecuritydive.com/spons/security-teams-are-adopting-ai-faster-than-they-trust-it/829748/",
+   "published": "2026-09-14T09:00:00+00:00",
+   "summary": "New survey data reveals a widening gap between AI adoption and AI trust."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Revolut discloses data breach exposing financial info, passports",
+   "url": "https://www.bleepingcomputer.com/news/security/revolut-discloses-data-breach-exposing-financial-info-passports/",
+   "published": "2026-09-14T08:48:24+00:00",
+   "summary": "Fintech company Revolut has disclosed a data breach after sharing data from an undisclosed number of customers with a threat actor impersonating a government agency. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks",
+   "url": "https://www.securityweek.com/connectwise-patches-screenconnect-vulnerability-exploited-in-worm-like-attacks/",
+   "published": "2026-09-14T08:25:14+00:00",
+   "summary": "The flaw allows attackers to send files and execute them without authorization through an active remote session. The post ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft: September updates break audio on some Windows PCs",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-updates-break-audio-on-some-windows-pcs/",
+   "published": "2026-09-14T08:08:16+00:00",
+   "summary": "Microsoft has confirmed that USB audio devices may fail on some Windows systems after installing the KB5124008and KB5124012 September 2026 security updates. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Malicious Twitch Browser Extension Leaks OAuth Tokens From Nearly 31,000 Users",
+   "url": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
+   "published": "2026-09-14T07:24:39+00:00",
+   "summary": "A malicious cross-store Twitch browser extension has leaked OAuth tokens associated with nearly 31,000 users to proxy servers operated by a Russian commercial bot service. The extension, named \"Twitch Enhanced Viewer | JeetBot,\" lists HISHIMIRO/jeetbot.cc as its developer and has the following identifiers on the Google Chrome Web Store and Mozilla Firefox Add-Ons store - Chrome -"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "CISA: Hackers now exploit max severity GitLab flaw in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-max-severity-gitlab-flaw-in-attacks/",
+   "published": "2026-09-14T07:06:27+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned that hackers are now exploiting a maximum-severity GitLab vulnerability in attacks. [...]"
   }
  ]
 }
