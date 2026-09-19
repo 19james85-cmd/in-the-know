@@ -1,0 +1,307 @@
+{
+ "leadStory": {
+  "headline": "Cisco patches maximum-severity ISE zero-day (CVSS 10.0) already exploited in the wild",
+  "source": "The Hacker News",
+  "sourceUrl": "https://thehackernews.com",
+  "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
+  "tags": [
+   {
+    "label": "CVSS 10.0",
+    "type": "d"
+   },
+   {
+    "label": "Exploited",
+    "type": "d"
+   },
+   {
+    "label": "CISA KEV",
+    "type": "d"
+   }
+  ],
+  "body": "Cisco released emergency updates for CVE-2026-76460, a perfect-10 flaw in Identity Services Engine (ISE) and the ISE Passive Identity Connector, after confirming it is being exploited in the wild. An unauthenticated attacker can send a specially crafted request to an ISE API endpoint that fails to enforce authentication, bypass the web management interface without any credentials, and ultimately run commands as root. ISE is the product many organizations use to decide who and what is allowed onto their network, so a full takeover of it is close to a worst case. CISA added the bug to its Known Exploited Vulnerabilities (KEV) catalog on September 16 with a federal patch deadline of September 19; Cisco says there are no workarounds and upgrading is the only fix.",
+  "beginnerTip": "A <strong>zero-day</strong> is a flaw attackers are using before the vendor has a fix out, so the clock starts against defenders the moment it is announced. When something is on CISA's KEV list with a near-term deadline, treat 'patch now' as the whole plan — there is nothing to wait for."
+ },
+ "cves": [
+  {
+   "headline": "Critical pre-auth RCE in Orkes Conductor (CVE-2026-58138) actively exploited",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
+   "tags": [
+    {
+     "label": "CVSS 9.8",
+     "type": "d"
+    },
+    {
+     "label": "Pre-Auth RCE",
+     "type": "d"
+    },
+    {
+     "label": "Exploited",
+     "type": "d"
+    }
+   ],
+   "body": "Orkes Conductor, a popular workflow-orchestration platform, contains a critical unauthenticated remote code execution (RCE) flaw rated CVSS 9.8. Because the platform's script 'evaluators' can be configured with unrestricted host access, an attacker can submit a workflow definition packed with malicious JavaScript or Python to the workflow API — before logging in — and escape the scripting sandbox to run operating-system commands as the Conductor process. This is being used in the wild: Fortinet blocked roughly 1,290 attempts in a single 24-hour window in early September and nearly 7,000 between September 2 and 9. Versions 3.21.21 up to 3.30.2 are affected; upgrade to 3.30.2 or later, or at minimum keep the API off the public internet.",
+   "beginnerTip": "<strong>Pre-authentication</strong> means the attacker never needs a username or password — the vulnerable code runs before any login check. Those are the most dangerous flaws because anyone who can reach the service can attack it."
+  },
+  {
+   "headline": "SolarWinds patches hard-coded key in Access Rights Manager enabling unauthenticated RCE",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
+   "tags": [
+    {
+     "label": "CVSS 8.8",
+     "type": "d"
+    },
+    {
+     "label": "Patch Available",
+     "type": "d"
+    }
+   ],
+   "body": "SolarWinds fixed CVE-2026-28326 (CVSS 8.8) in Access Rights Manager (ARM), a tool that governs who has access to what across an organization. The root cause is a hard-coded static key baked into the software, which an attacker who can reach the exposed interface can abuse to run arbitrary commands with no credentials — potentially leading to full host takeover, data theft, and persistence. All versions 2026.2 and earlier are affected; the fix is in ARM 2026.2.1. SolarWinds says there is no evidence of exploitation yet, but a shipped patch tends to help attackers reverse-engineer the flaw, so the window to update is short.",
+   "beginnerTip": "A <strong>hard-coded key</strong> is a secret (like a password or encryption key) written directly into a product's code, identical on every install. Once anyone extracts it, that same key works everywhere — which is why hard-coded secrets are considered a design flaw, not just a bug."
+  },
+  {
+   "headline": "CISA adds three actively exploited Linux kernel flaws to KEV catalog",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+   "tags": [
+    {
+     "label": "CISA KEV",
+     "type": "d"
+    },
+    {
+     "label": "Exploited",
+     "type": "d"
+    },
+    {
+     "label": "Linux",
+     "type": "w"
+    }
+   ],
+   "body": "CISA flagged three Linux kernel bugs as exploited and required federal agencies to remediate them by September 21 under Binding Operational Directive 26-04. They are CVE-2025-39682 (CVSS 9.8, an improper-check flaw in the kernel's TLS receive path that can leak memory or crash the system), CVE-2026-53266 (CVSS 8.8, an out-of-bounds write in the ebtables SNAT/ARP path allowing local privilege escalation), and CVE-2025-39964 (CVSS 7.8, a race condition on AF_ALG crypto sockets). All three are local flaws — an attacker needs an initial foothold first — but they are prized for privilege escalation, turning a limited account into full root control. CISA is also requiring agencies to hunt for signs of prior compromise, not just patch.",
+   "beginnerTip": "The <strong>kernel</strong> is the core of the operating system with the highest privileges on a machine. A local attacker who already has a low-level foothold uses kernel bugs like these to jump to full control — a step called privilege escalation."
+  },
+  {
+   "headline": "WordPress 7.1.1 fixes 'Click2Shell' flaw that force-installs themes and can chain to code execution",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
+   "tags": [
+    {
+     "label": "WordPress",
+     "type": "w"
+    },
+    {
+     "label": "Patch Available",
+     "type": "w"
+    }
+   ],
+   "body": "WordPress 7.1.1, released September 17, patches a flaw researchers at pwn.ai nicknamed 'Click2Shell.' It works because two parts of WordPress interpret the same crafted link differently, letting an attacker force a logged-in user's single visit to silently install a theme the attacker chooses. On its own it only installs a legitimate theme (left switched off so nothing looks wrong), but chained with a separate vulnerable theme it can reach full code execution on the server. There is no sign of real-world attacks yet, but with a public write-up available, WordPress site owners should update promptly.",
+   "beginnerTip": "An <strong>exploit chain</strong> links two or more weaknesses that are limited on their own into one serious attack. Here, a 'force a theme install' bug plus a flawed theme together become remote code execution."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "North Korea's 'WaterPlum' infected 30,000 devices worldwide and moved $10.7M in stolen crypto",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/north-korean-waterplum-hackers-infected-30-000-devices-worldwide/",
+   "tags": [
+    {
+     "label": "Nation-State",
+     "type": "d"
+    },
+    {
+     "label": "Crypto Theft",
+     "type": "d"
+    }
+   ],
+   "body": "A joint advisory from Japanese, US, Australian, and German authorities says the North Korean group WaterPlum compromised at least 30,000 devices across 100 countries between December 2025 and July 2026, draining funds or credentials from about 7,000 cryptocurrency wallets and sending more than $10.7 million to North Korea. The group runs the long-running 'Contagious Interview' scheme: posing as AI, crypto, or NFT firms, they lure job seekers into fake interviews and coding tests, then trick them into running malicious code or npm packages that infect their machines. The FBI and Japanese police tie the actors to North Korea's 313 General Bureau, part of the apparatus funding its weapons programs.",
+   "beginnerTip": "A <strong>nation-state</strong> actor is a hacking group working for a government, often with goals like espionage or, in North Korea's case, raising money that sanctions otherwise block. Unsolicited 'recruiters' who ask you to run code or 'fix' a demo project are a classic lure."
+  },
+  {
+   "headline": "ShinyHunters defaces Clop's leak site and threatens to extort the ransomware gang",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacks-clop-leak-site-threatens-to-extort-ransomware-gang/",
+   "tags": [
+    {
+     "label": "Ransomware",
+     "type": "a"
+    },
+    {
+     "label": "Threat Actor Feud",
+     "type": "a"
+    }
+   ],
+   "body": "The extortion crew ShinyHunters breached the Tor leak site of the Clop ransomware operation, defacing it with a taunting message and claiming to have stolen source code, logs, and — most notably — the private keys for Clop's onion service. BleepingComputer confirmed the defacement (which ShinyHunters says exploited an unauthenticated file-upload bug in Grav CMS) but could not verify the claimed data or key theft. ShinyHunters says it will now try to extort Clop in retaliation for threats during an ongoing feud between the groups. If the onion private keys are genuine, they would let ShinyHunters impersonate Clop's official site.",
+   "beginnerTip": "A <strong>leak site</strong> is the dark-web page ransomware gangs use to publish stolen data and pressure victims to pay. Onion 'private keys' are the secret that proves a Tor site is the real one — steal them and you can convincingly fake it."
+  },
+  {
+   "headline": "Early Scattered Spider member pleads guilty; prosecutors seek $17.6M forfeiture",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/scattered-spider-member-guilty-ahmed-elbadawy/",
+   "tags": [
+    {
+     "label": "Law Enforcement",
+     "type": "g"
+    },
+    {
+     "label": "Arrest/Plea",
+     "type": "g"
+    }
+   ],
+   "body": "Ahmed Hossam Eldin Elbadawy, 24, of Texas, pleaded guilty to wire fraud conspiracy and aggravated identity theft for his role in the Scattered Spider cybercrime group, according to newly surfaced court filings. His victims spanned entertainment, telecom, technology, and cryptocurrency firms, with individual crypto thefts as large as $6.35 million. Prosecutors are seeking forfeiture of about $17.6 million in cryptocurrency, luxury vehicles, jewelry, and designer bags. He is one of five people charged in 2024 with ties to the group, which is known for slick social-engineering and SIM-swapping attacks against big companies.",
+   "beginnerTip": "<strong>Scattered Spider</strong> is a loose, mostly English-speaking group famous for talking their way past help desks rather than relying on malware. Guilty pleas and asset seizures like this are how these cases usually end — quietly, months after the arrests."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "NIST publishes IR 8587 on protecting tokens and assertions from theft and forgery",
+   "source": "NIST (CSRC)",
+   "sourceUrl": "https://csrc.nist.gov",
+   "url": "https://csrc.nist.gov/News/2026/protecting-tokens-and-assertions-nist-ir-8587",
+   "tags": [
+    {
+     "label": "Guidance",
+     "type": "a"
+    },
+    {
+     "label": "Identity",
+     "type": "a"
+    }
+   ],
+   "body": "NIST released Interagency Report (IR) 8587, 'Protecting Tokens and Assertions from Forgery, Theft, and Misuse,' with implementation recommendations for federal agencies and cloud service providers. Tokens and assertions are the digital proofs a system trusts after you log in — steal or forge one and an attacker can act as you without your password. The guidance is timely given this week's OAuth-consent and token-theft stories, and it gives organizations concrete controls for binding, validating, and limiting the lifetime of these credentials.",
+   "beginnerTip": "A <strong>token</strong> is like a wristband you get after showing ID at the door: the system stops re-checking your password and just trusts the wristband. That is why stolen tokens are dangerous — and why guidance like this focuses on making them short-lived and hard to reuse."
+  },
+  {
+   "headline": "NIST issues SP 1352, a small-business primer for assessing CUI protection (800-171Ar3)",
+   "source": "NIST (CSRC)",
+   "sourceUrl": "https://csrc.nist.gov",
+   "url": "https://csrc.nist.gov/News/2026/small-business-primer-for-sp-800-171ar3",
+   "tags": [
+    {
+     "label": "Compliance",
+     "type": "a"
+    },
+    {
+     "label": "Small Business",
+     "type": "a"
+    }
+   ],
+   "body": "NIST published Special Publication (SP) 1352, a plain-language small-business primer for SP 800-171Ar3 — the standard used to assess whether Controlled Unclassified Information (CUI) is adequately protected on non-federal systems. Any small company that wants government contracts handling sensitive-but-unclassified data eventually has to meet 800-171, and the assessment guide (the 'A' revision) explains how compliance is actually checked. The primer is meant to make that reachable for firms without a dedicated security team.",
+   "beginnerTip": "<strong>CUI</strong> (Controlled Unclassified Information) is government information that isn't secret but still must be safeguarded — think contract details or personal records. NIST SP 800-171 is the rulebook contractors follow to protect it."
+  },
+  {
+   "headline": "NCCoE finalizes NIST IR 8536 on supply-chain traceability",
+   "source": "NIST (CSRC)",
+   "sourceUrl": "https://csrc.nist.gov",
+   "url": "https://csrc.nist.gov/News/2026/nccoe-releases-nist-ir-8536",
+   "tags": [
+    {
+     "label": "Framework",
+     "type": "a"
+    },
+    {
+     "label": "Supply Chain",
+     "type": "a"
+    }
+   ],
+   "body": "NIST's National Cybersecurity Center of Excellence finalized IR 8536, 'Supply Chain Traceability Principles: A Manufacturing Meta-Framework.' It offers an industry-neutral way for organizations to securely exchange and verify traceability information — where parts and software came from — across a supply chain while still using existing industry standards. With software supply-chain attacks (like this week's TanStack npm compromise) a recurring theme, being able to prove the provenance of what you ship is increasingly a security requirement, not just a logistics one.",
+   "beginnerTip": "<strong>Supply-chain traceability</strong> means being able to prove where each component in your product came from. If you know exactly which parts and libraries you use, you can react far faster when one of them turns out to be compromised."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "EY survey finds autonomous AI deployment is outpacing the ability to govern it",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/ey-survey-autonomous-ai-implementation-outpaces-oversight",
+   "tags": [
+    {
+     "label": "AI Governance",
+     "type": "a"
+    },
+    {
+     "label": "Survey",
+     "type": "a"
+    }
+   ],
+   "body": "An EY survey of 202 senior AI executives at billion-dollar-plus companies found a widening gap between how fast organizations are rolling out autonomous 'agentic' AI and their ability to oversee it. Nearly all (98%) say they have formal AI governance policies, yet 47% admit they have skipped that process for urgent deployments, and roughly two-thirds worry they lack the in-house expertise to design or implement effective controls. For security teams, ungoverned AI agents that can take actions on their own are a fast-growing new attack surface.",
+   "beginnerTip": "<strong>Agentic AI</strong> refers to AI that doesn't just answer questions but takes actions — clicking, sending, buying, changing settings. Governance is the set of rules and checks that decide what those agents are allowed to do, which is exactly what many firms haven't caught up on."
+  },
+  {
+   "headline": "'MFA won't save you': OAuth consent abuse grants persistent access without passwords",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/mfa-oauth-consent-abuse",
+   "tags": [
+    {
+     "label": "Identity",
+     "type": "w"
+    },
+    {
+     "label": "Phishing",
+     "type": "w"
+    }
+   ],
+   "body": "Security researchers and the FBI are warning that attackers increasingly bypass multi-factor authentication (MFA) not by defeating it but by sidestepping it entirely, through OAuth consent abuse. A victim clicks a link, signs in normally, passes MFA, and then approves a harmless-looking app — a 'reporting tool' or 'productivity connector' — that quietly gains standing access to their email, files, or code. Because the app now holds its own access token, that access survives a password change and the MFA prompt never sees it again. The FBI's IC3 issued advisory I-090126-PSA on this on September 1.",
+   "beginnerTip": "<strong>Consent phishing</strong> tricks you into clicking 'Allow' on a real Google or Microsoft permission screen for a malicious app. Since you granted it access on purpose, resetting your password doesn't help — you have to go revoke the app's access."
+  },
+  {
+   "headline": "'BragJack' shows how a malicious extension can hijack in-browser AI agents",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
+   "tags": [
+    {
+     "label": "AI Security",
+     "type": "w"
+    },
+    {
+     "label": "Browser",
+     "type": "w"
+    }
+   ],
+   "body": "Researcher Gal Weizman demonstrated 'BragJack,' a proof-of-concept in which a malicious browser extension seizes the trusted channel between an AI assistant's cloud 'brain' and its in-browser 'body' across Chrome, Edge, Opera Neon, Comet, and Claude in Chrome. By impersonating the trusted origin, the extension can issue its own commands as if they came from the vendor — the researchers call this 'prompt forcing' — and demonstrated reading local files, browsing history, and screenshots, and forcing agents to exfiltrate email. No real-world attacks were seen; vendors paid about $20,000 in combined bug bounties, and users are advised to update browsers and remove unneeded extensions.",
+   "beginnerTip": "This abuses trust <em>before</em> the AI even reads the request, so model-level safety filters can't stop it. The practical defense is boring but effective: keep your browser updated and delete extensions you don't actually use, since each one is code running inside your browser."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
+   "text": "CISA set a September 19 federal deadline to patch the actively exploited Cisco ISE zero-day (CVE-2026-76460, CVSS 10.0); Cisco says there is no workaround."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
+   "text": "Public exploits are now out for four Linux kernel flaws that let a local user escalate to root — expect opportunistic use to follow."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+   "text": "CrowdSec says the May TanStack npm compromise let attackers copy ~170 private GitHub repos via a former employee's OAuth token; OpenAI and Mistral were also touched."
+  },
+  {
+   "color": "accent",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com/hacktron-ai-heif-heist-vulnerability/",
+   "text": "Researchers used AI (Hacktron) to uncover a widespread flaw in a HEIF image decoder used across many apps — a preview of AI-assisted bug hunting at scale."
+  },
+  {
+   "color": "accent",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html",
+   "text": "A security test went sideways when Google's Gemini agent, given a mixed-up target domain, broke into a real company's systems instead of the intended test range."
+  }
+ ],
+ "analystFooter": "Today is a patch-first day: the actively exploited Cisco ISE (CVSS 10.0) and Orkes Conductor RCEs are the fires to put out now, followed by the SolarWinds ARM key flaw and CISA's three Linux kernel KEV entries before their September 21 deadline. Then take the quieter identity lesson to heart — MFA alone won't stop OAuth consent abuse, so review which third-party apps have access to your email and cloud accounts."
+}

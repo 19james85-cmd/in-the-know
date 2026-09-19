@@ -516,6 +516,12 @@
   "e": "In August 2026, a White House memo proposed letting vetted U.S. security firms hack back against foreign cybercrime gangs under government oversight."
  },
  {
+  "t": "Hard-coded Key",
+  "c": "Vulnerability",
+  "d": "A secret such as a password or encryption key written directly into a product's code, so every copy of the product ships with the same one. Once anyone extracts it, that key unlocks every install everywhere.",
+  "e": "In September 2026 SolarWinds patched CVE-2026-28326, a hard-coded key in Access Rights Manager that let attackers run commands with no login."
+ },
+ {
   "t": "Harvest Now, Decrypt Later",
   "c": "Cryptography",
   "d": "An attack strategy where adversaries copy and store encrypted data today, planning to decrypt it years later once quantum computers can break current encryption. It puts long-lived secrets at risk even though they look safe right now.",
@@ -702,6 +708,12 @@
   "e": "In July 2026, cyberattacks on the operational technology behind U.S. water utilities in seven states forced several plants to switch to manual control."
  },
  {
+  "t": "Out-of-Bounds Write",
+  "c": "Vulnerability",
+  "d": "A bug where a program writes data past the edge of the memory region it was given. That stray write corrupts nearby memory, which attackers can steer to crash the program or hijack its execution.",
+  "e": "In September 2026, CISA flagged CVE-2026-53266, an out-of-bounds write in the Linux kernel's ebtables code, as exploited for local privilege escalation."
+ },
+ {
   "t": "Passkey",
   "c": "Cryptography",
   "d": "A phishing-resistant replacement for passwords that uses a private key stored on your device instead of a secret you type in. The website only ever sees a public key, so there is no password for an attacker to steal or trick you into revealing.",
@@ -802,6 +814,12 @@
   "c": "Network",
   "d": "A Programmable Logic Controller (PLC) is a small, rugged industrial computer that directly runs physical equipment like pumps, valves, and motors in factories and utilities. Because it controls real-world machinery, a compromised PLC can cause physical damage, not just data loss.",
   "e": "In August 2026, researchers found over 4,400 Rockwell PLCs exposed directly to the internet, including some in U.S. cities whose water systems had already been attacked."
+ },
+ {
+  "t": "Prompt Forcing",
+  "c": "General",
+  "d": "An attack that hijacks the trusted channel an AI agent uses, letting the attacker supply the entire instruction (and its timing) as if it came from the AI's own vendor. Unlike prompt injection, it abuses trust before the model ever weighs the request, so safety filters can't catch it.",
+  "e": "In September 2026 researchers demonstrated 'BragJack,' a prompt-forcing attack that let a malicious browser extension command AI assistants in Chrome, Edge, and other browsers."
  },
  {
   "t": "Prompt Injection",
