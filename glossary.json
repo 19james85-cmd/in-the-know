@@ -96,6 +96,12 @@
   "e": "In August 2026 researchers found over 24,000 internet-exposed BMCs leaking password hashes through a 2013 IPMI flaw (CVE-2013-4786), letting attackers log in within minutes."
  },
  {
+  "t": "Booter",
+  "c": "Network",
+  "d": "A booter (also called a stresser) is a rent-a-service that launches DDoS attacks on demand — you pay, pick a target, and it floods that target with junk traffic to knock it offline. They are marketed as legitimate \"stress-testing\" tools but are overwhelmingly used to attack others, which is illegal.",
+  "e": "In September 2026 the FBI seized NightmareStresser, a booter service with nearly a million users that could launch 3,000–4,000 attacks per hour."
+ },
+ {
   "t": "Botnet",
   "c": "Malware",
   "d": "A network of private computers infected with malicious software and controlled as a group without the owners' knowledge, used to send spam or carry out attacks.",
@@ -292,6 +298,12 @@
   "c": "Regulatory",
   "d": "An EU law that requires companies to build security into hardware and software products sold in Europe and to report serious security incidents quickly.",
   "e": "Under the Cyber Resilience Act, an EU-based vendor now has just 24 hours to report an actively exploited flaw in one of its products."
+ },
+ {
+  "t": "Data Breach",
+  "c": "General",
+  "d": "A data breach is an incident where attackers gain access to and steal information they were not supposed to see, such as user names, emails, or password hashes. The stolen data is often sold or leaked, and reused passwords make one breach spill over into other accounts.",
+  "e": "In September 2026 a flaw in Gyazo’s server was exploited to steal 23.6 million user records including emails and password hashes."
  },
  {
   "t": "DDoS",
@@ -970,6 +982,12 @@
   "c": "Threat/Actor",
   "d": "A form of blackmail where an attacker threatens to share sexual images or messages of a victim unless they pay money or provide more content. It frequently targets teenagers and children.",
   "e": "In August 2026 a member of the cybercrime group The Com was sentenced to two years in prison for sextortion against nearly 120 victims worldwide."
+ },
+ {
+  "t": "SHA Pinning",
+  "c": "Cryptography",
+  "d": "SHA pinning is a security check that locks a piece of software to one exact version by recording its cryptographic hash (a unique fingerprint), so that if the code changes even slightly the fingerprint no longer matches and the swap is rejected. It is meant to stop attackers from quietly substituting malicious code for reviewed code.",
+  "e": "In September 2026 the “Plugin4Shell” technique bypassed SHA pinning in several AI coding agents, letting a repository owner swap in malicious code without changing the recorded fingerprint."
  },
  {
   "t": "Shadow AI",

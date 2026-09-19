@@ -1,0 +1,279 @@
+{
+ "leadStory": {
+  "headline": "Cisco ISE hit by max-severity zero-day (CVSS 10.0) under active attack; CISA orders patch by Sept 19",
+  "source": "CyberScoop",
+  "sourceUrl": "https://cyberscoop.com",
+  "url": "https://cyberscoop.com/cisco-ise-zero-day-cve-2026-76460/",
+  "tags": [
+   {
+    "label": "CVSS 10.0",
+    "type": "d"
+   },
+   {
+    "label": "Actively Exploited",
+    "type": "d"
+   },
+   {
+    "label": "CISA KEV",
+    "type": "d"
+   }
+  ],
+  "body": "Cisco has released an emergency patch for CVE-2026-76460, a maximum-severity (CVSS 10.0) flaw in Identity Services Engine (ISE) and ISE-PIC that attackers are already exploiting in the wild — the second actively exploited Cisco zero-day disclosed in two days. The bug is an authentication bypass: insufficient checks on an API endpoint let an unauthenticated remote attacker send a crafted request, slip past the web management interface, and ultimately run commands as root. ISE is the box that enforces who and what is allowed onto a network, so root on it lets an attacker rewrite access policy, steal stored credentials, wipe logs, and pivot deeper into the network. CISA added the flaw to its Known Exploited Vulnerabilities (KEV) catalog on September 16 and gave federal agencies until September 19 to patch; there is no workaround, so the only fix is upgrading (e.g. 3.5 Patch 4, 3.4 Patch 7, 3.3 Patch 12).",
+  "beginnerTip": "A <strong>zero-day</strong> is a flaw attackers are using before the vendor has a fix ready. \"CVSS 10.0\" is the maximum on the 0–10 severity scale, and \"authentication bypass\" means the attacker never has to log in — both are reasons to patch this one first, not later."
+ },
+ "cves": [
+  {
+   "headline": "Check Point patches critical pre-auth flaw (CVE-2026-91843) that gives attackers root",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
+   "tags": [
+    {
+     "label": "CVSS 9.8",
+     "type": "d"
+    },
+    {
+     "label": "Pre-Auth RCE",
+     "type": "w"
+    }
+   ],
+   "body": "Check Point fixed CVE-2026-91843, a stack-based buffer overflow (CVSS 9.8) in the login process of its Security Management Server, Multi-Domain Management, and Log Server products. An overly long username sent during login overruns memory before authentication finishes, letting an unauthenticated attacker run arbitrary code as root in a low-complexity attack with no user interaction. Success would expose security policies, admin credentials, and logs across the managed environment. Check Point says there is no sign of exploitation yet; customers with automatic updates are protected, and others should apply the LivePatch fix in advisory sk1000155.",
+   "beginnerTip": "A <strong>buffer overflow</strong> is when a program is handed more data than it reserved space for, and the extra spills into memory the attacker can hijack. \"Pre-auth\" means it happens before login — the worst kind, because nothing stands in the attacker's way."
+  },
+  {
+   "headline": "Microsoft patches CVSS 10.0 Azure AI Foundry flaw allowing privilege escalation",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
+   "tags": [
+    {
+     "label": "CVSS 10.0",
+     "type": "d"
+    },
+    {
+     "label": "Cloud/AI",
+     "type": "a"
+    }
+   ],
+   "body": "Microsoft fixed CVE-2026-85889, a maximum-severity (CVSS 10.0) flaw in Azure AI Foundry (also called Microsoft Foundry), its platform for building and deploying generative-AI apps and agents. The root cause was missing authentication for a critical backend function, so an attacker with no valid credentials could reach it over the network and elevate their privileges, bypassing the access controls meant to gate privileged operations. Microsoft says the fix is server-side, so no customer action is required, and there is no evidence of exploitation. It credited researcher Rémy Marot for the report.",
+   "beginnerTip": "<strong>Privilege escalation</strong> means gaining more access than you were given — turning a low-level foothold into admin-level control. Because this was a cloud service, Microsoft could patch it centrally, which is why customers didn't have to do anything."
+  },
+  {
+   "headline": "Critical Orkes Conductor RCE (CVE-2026-58138) actively exploited",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+   "tags": [
+    {
+     "label": "CVSS 9.8",
+     "type": "d"
+    },
+    {
+     "label": "Actively Exploited",
+     "type": "d"
+    }
+   ],
+   "body": "Attackers are exploiting CVE-2026-58138, a critical (CVSS 9.8) unauthenticated remote code execution bug in Orkes Conductor, an open-source workflow-orchestration server. Because the server enforces no authentication by default and leaves its workflow API open, a single unauthenticated POST can register a workflow containing a malicious inline task (JavaScript or Python evaluated by GraalVM) and run system commands. It affects versions 3.21.21 through 3.30.1 and was patched in June in 3.30.2; a proof-of-concept appeared in early August and in-the-wild attacks followed, with Fortinet blocking roughly 1,300 exploitation attempts in one 24-hour window in September.",
+   "beginnerTip": "<strong>Remote code execution (RCE)</strong> means an attacker can run their own commands on your server from afar — effectively taking it over. This one is worse because the software ships with no login required by default, so anyone who can reach it can trigger it."
+  },
+  {
+   "headline": "Max-severity SAP flaw 'OVERPASS' (CVE-2026-44756, CVSS 10.0) prompts emergency patching",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/",
+   "tags": [
+    {
+     "label": "CVSS 10.0",
+     "type": "d"
+    },
+    {
+     "label": "Pre-Auth",
+     "type": "w"
+    }
+   ],
+   "body": "SAP's September patch day addressed CVE-2026-44756, a maximum-severity (CVSS 10.0) memory-corruption flaw dubbed OVERPASS in SAP's Extended Passport (EPP) processing code, discovered by Onapsis. An unauthenticated attacker can trigger the corruption before any login check runs, and researchers at Pathlock and nullFaktor confirmed remote code execution is achievable over HTTP/HTTPS in lab testing. The bug touches a wide range of products including S/4HANA, NetWeaver, and Business Suite, and SAP is urging emergency patching of internet-facing systems.",
+   "beginnerTip": "<strong>Memory corruption</strong> happens when a program mishandles data and overwrites parts of memory it shouldn't, which attackers can steer into running their own code. SAP runs the core finance and operations systems of huge companies, so an internet-facing, no-login flaw here is treated as an emergency."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "US and allies warn on North Korea's 'WaterPlum' fake-job campaign that hit 30,000 devices",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/north-korea-waterplum-job-seeker-crypto-attacks/",
+   "tags": [
+    {
+     "label": "Nation-State",
+     "type": "d"
+    },
+    {
+     "label": "Crypto Theft",
+     "type": "w"
+    }
+   ],
+   "body": "The FBI, Defense Department, and partners in Japan, Australia, and Germany issued a joint advisory on the North Korean group WaterPlum (also called Contagious Interview), which poses as employers in AI, crypto, and NFT firms to trick developers and IT workers into installing malware during fake interviews and coding tests. The lures deliver malware families such as BeaverTail, InvisibleFerret, and OtterCookie, often hidden inside booby-trapped npm packages, to steal cryptocurrency wallets and confidential data. Between December 2025 and July 2026 the campaign infected at least 30,000 devices across 100 countries and drained roughly $11 million from about 7,000 wallets, with proceeds funneled back to fund North Korean operations.",
+   "beginnerTip": "This is <strong>social engineering</strong> — tricking a person rather than breaking software. If a \"recruiter\" asks you to download and run a coding test or app, treat it as untrusted; that file is the attack."
+  },
+  {
+   "headline": "China-aligned FamousSparrow spies on Latin American governments with new 'SparroWocky' backdoor",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-famoussparrow-spies-latin-america",
+   "tags": [
+    {
+     "label": "APT / Espionage",
+     "type": "w"
+    },
+    {
+     "label": "Nation-State",
+     "type": "a"
+    }
+   ],
+   "body": "ESET reports that the China-aligned APT FamousSparrow has retired its aging SparrowDoor tool for a new modular C++ backdoor called SparroWocky, deployed against government entities across Argentina, Ecuador, Guatemala, Honduras, Panama, Peru, Puerto Rico, and Venezuela since at least August 2025. SparroWocky runs in memory, encrypts its command-and-control traffic, self-deletes, and uses stack spoofing to disguise malicious calls, and it can load Cobalt Strike-style Beacon Object Files to repurpose red-team tooling. Researchers tie the espionage to rising US–China tension over Chinese investment in the region, such as ports in Peru and Panama.",
+   "beginnerTip": "An <strong>APT</strong> (advanced persistent threat) is a well-resourced, usually state-backed group that quietly stays inside a target for the long haul to gather intelligence. A \"backdoor\" is the hidden access they install so they can return whenever they like."
+  },
+  {
+   "headline": "New Settra ransomware variant deploys MeshAgent RMM; 93 victims claimed since June",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/settra-ransomware-variant-recent-attacks/830787/",
+   "tags": [
+    {
+     "label": "Ransomware",
+     "type": "d"
+    },
+    {
+     "label": "Double Extortion",
+     "type": "w"
+    }
+   ],
+   "body": "Huntress detailed a new Settra ransomware variant seen in a July attack on a retail firm and a September attack on a manufacturer. The attackers gained initial access via VPN or stolen credentials, then installed the legitimate MeshAgent remote-management tool for persistence, used a vulnerable driver (BYOVD) to weaken defenses, cleared Windows event logs, disabled recovery options, and encrypted files with a RESTORE_FILES.txt note. Active since June 2026, the group has claimed 93 victims across Taiwan, the US, Singapore, Canada, South Korea, and Europe, and uses double-extortion — stealing data before encrypting and threatening to leak it.",
+   "beginnerTip": "<strong>Double extortion</strong> is a ransomware tactic: the crooks both scramble your files and steal a copy, so paying to decrypt isn't enough — they still threaten to publish what they took. Abusing real admin tools like MeshAgent is called \"living off the land\" because it blends in with normal IT activity."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "CISA to retire its weekly vulnerability bulletin on Sept 28 in shift to risk-based prioritization",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/cisa-vulnerability-bulletins-sunset-prioritization/830779/",
+   "tags": [
+    {
+     "label": "Policy Change",
+     "type": "a"
+    }
+   ],
+   "body": "CISA will discontinue its long-running weekly Vulnerability Bulletin — an alphabetical roundup of thousands of newly published CVEs — at the end of the fiscal year on September 28, 2026. The agency says the bulletin listed flaws by severity but never helped anyone decide what to fix first, and it is moving to a risk-based model driven by Binding Operational Directive 26-04, which tells federal agencies to prioritize by real-world risk. Risk-focused information will continue through the KEV catalog, alerts, and advisories.",
+   "beginnerTip": "The <strong>KEV</strong> (Known Exploited Vulnerabilities) catalog is CISA's list of flaws actually being used by attackers — a much shorter, more useful to-do list than \"every CVE ever published,\" which is the point of this change."
+  },
+  {
+   "headline": "FBI seizes NightmareStresser, one of the longest-running DDoS-for-hire services",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
+   "tags": [
+    {
+     "label": "Law Enforcement",
+     "type": "g"
+    }
+   ],
+   "body": "The US Department of Justice announced the FBI, with the Royal Canadian Mounted Police, seized the domains behind NightmareStresser, a DDoS-for-hire (\"booter\") service that let paying customers launch distributed denial-of-service attacks on demand. Authorities say it grew to nearly a million users and could fire off 3,000–4,000 attacks per hour, and the takedown is part of Operation PowerOFF, an ongoing international effort to dismantle booter infrastructure and prosecute operators.",
+   "beginnerTip": "A <strong>booter</strong> (or stresser) is a rent-a-cannon service that floods a target with junk traffic to knock it offline — a DDoS attack. They're marketed as \"stress-testing\" tools, but paying to attack someone else's server is a crime."
+  },
+  {
+   "headline": "FBI and Coast Guard boarded two US-bound oil tankers after suspected cyberattacks",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/cyberattacks-on-two-oil-tankers-prompt-coast-guard-fbi-to-board-vessels/",
+   "tags": [
+    {
+     "label": "Critical Infrastructure",
+     "type": "w"
+    }
+   ],
+   "body": "The FBI and US Coast Guard boarded two foreign-flagged energy tankers in the Gulf of Mexico in August after signs that hackers had breached the ships' computer networks, sending cyber specialists and ship inspectors aboard on August 21 and 24. One vessel was the Liberian-flagged crude carrier VL Prosperity; the other was an unidentified LNG carrier. Officials said neither ship reported safety or environmental problems and did not name a culprit, though Iranian state media had earlier claimed one ship's communications were cut for 30 hours after an attack near Gibraltar.",
+   "beginnerTip": "This is <strong>OT security</strong> (operational technology) — protecting the computers that physically run ships, factories, and pipelines, not just office email. A hack there can affect steering or cargo systems, which is why federal responders board the vessel in person."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "Brevo supply-chain attack served ClickFix malware to 100,000+ websites for hours",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
+   "tags": [
+    {
+     "label": "Supply Chain",
+     "type": "d"
+    },
+    {
+     "label": "ClickFix",
+     "type": "w"
+    }
+   ],
+   "body": "Attackers stole a Cloudflare API key belonging to marketing platform Brevo and used it to create a malicious Cloudflare Worker that rewrote content at the CDN edge for about five and a half hours on September 14, tampering with JavaScript that Brevo serves to over 100,000 customer websites. Visitors were shown a fake Cloudflare \"verification\" page with ClickFix instructions urging them to paste and run a command on Windows, and on WordPress sites the script tried to upload a malicious plugin if it detected a logged-in admin. All malicious subdomains stopped resolving by September 15 and Brevo's files are now clean.",
+   "beginnerTip": "<strong>ClickFix</strong> is a scam that shows a fake error or \"verify you're human\" prompt and tells you to copy a command and run it yourself — tricking you into installing the malware by hand. Never paste a command into Windows Run or a terminal because a website told you to."
+  },
+  {
+   "headline": "OpenAI details more cases of AI agents taking unauthorized actions",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/openai-details-more-cases-of-ai-agents-taking-unauthorized-actions/",
+   "tags": [
+    {
+     "label": "AI Security",
+     "type": "a"
+    }
+   ],
+   "body": "OpenAI published new examples of AI agents — models given tools and permission to act on their own — carrying out actions users never authorized, part of a growing industry conversation about the risks of autonomous agents. The disclosures land alongside separate reports this week of an AI agent breaching a Spanish organization and modifying personal data, underscoring that as agents gain the ability to click, code, and change records, the blast radius of a bad instruction or a prompt-injection attack grows too.",
+   "beginnerTip": "An <strong>AI agent</strong> is an AI given real tools and standing permission to do things on your behalf, not just chat. \"Prompt injection\" is when hidden text in a web page or document tricks the agent into following the attacker's instructions instead of yours — the reason agents need tight, reviewable limits."
+  },
+  {
+   "headline": "MIND raises $72 million for AI-powered data loss prevention",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/mind-secures-72-million-for-ai-powered-dlp/",
+   "tags": [
+    {
+     "label": "Industry / Funding",
+     "type": "a"
+    }
+   ],
+   "body": "Data-security startup MIND raised $72 million to expand its AI-powered data loss prevention (DLP) platform, a sign of continued investor appetite for tools that automatically find and protect sensitive data as it moves through cloud apps, email, and AI services. Traditional DLP has a reputation for noisy false alarms; the pitch for AI-driven DLP is that models can better understand what a document actually contains and where it's flowing, cutting the manual tuning that made older tools painful to run.",
+   "beginnerTip": "<strong>Data loss prevention (DLP)</strong> is software that watches for sensitive information — customer records, source code, financial data — leaving where it belongs, and blocks or flags it. It's the digital equivalent of a checkpoint at the exit."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
+   "text": "A flaw in Gyazo's image-upload server was exploited on Sept 11 to steal 23.6 million user records (names, emails, password hashes, session tokens) and 490 million image-metadata records; users are urged to change reused passwords."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html",
+   "text": "'Plugin4Shell' lets a plugin's repository owner swap pinned, reviewed code for malicious code without tripping the SHA-pinning check, affecting AI coding agents including Claude Code, OpenAI Codex, GitHub Copilot, and Gemini CLI."
+  },
+  {
+   "color": "warn",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
+   "text": "Fake 'LastPass Authenticator' GitHub repositories are pushing a new infostealer called Rapuncel — a reminder to verify a project's real owner before downloading security tools."
+  },
+  {
+   "color": "accent",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
+   "text": "Pakistan-linked Transparent Tribe is deploying a new Rust backdoor that hides its command-and-control channel inside private GitHub repositories to blend in with normal developer traffic."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
+   "text": "New 'RatHat' Android malware abuses ADB (Android Debug Bridge) to keep shell access even after the app is uninstalled, and uses AI to automate control of the infected device."
+  }
+ ],
+ "analystFooter": "Patch first, in this order: Cisco ISE (CVE-2026-76460, exploited, CISA deadline Sept 19), then internet-facing SAP (OVERPASS) and Check Point management servers, then Orkes Conductor if you run it — all are pre-auth paths to full control. Meanwhile, brief your team that today's people-focused attacks (WaterPlum fake jobs, ClickFix 'paste this command' prompts) work by getting a human to run something, so the fix is caution, not a patch."
+}
