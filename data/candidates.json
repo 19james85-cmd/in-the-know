@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T13:07:51.111623+00:00",
+ "generated": "2026-09-21T18:18:37.999638+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,31 +11,31 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 2,
+   "count": 7,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 6,
+   "count": 10,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 2,
+   "count": 6,
    "error": null
   },
   {
@@ -70,6 +70,125 @@
    "url": "https://www.darkreading.com/events/virtual-event-cybersecurity-outlook-2027",
    "published": "2026-12-03T16:00:00+00:00",
    "summary": ""
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft to retire Microsoft 365 Companion apps in December",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-retire-microsoft-365-companion-apps-in-december/",
+   "published": "2026-09-21T17:54:49+00:00",
+   "summary": "Microsoft will retire the Calendar, People, and Files Microsoft 365 companion apps on December 16 and has asked admins to remove them from managed devices. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Fake LastPass Authenticator Installer Abuses Microsoft-Signed Driver to Kill Antivirus and EDR",
+   "url": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
+   "published": "2026-09-21T17:31:01+00:00",
+   "summary": "A fake LastPass Authenticator installer offered on GitHub installs a Windows kernel driver that shuts off antivirus and other security software before a password stealer runs if a victim downloads and runs it, researchers at LastPass and Delphos Labs said on September 17. Microsoft's own hardware-compatibility program signs the driver, scored zero detections on VirusTotal when researchers"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Google Hit With $463 Million Fine for EU Location Data Rule Breach",
+   "url": "https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/",
+   "published": "2026-09-21T17:19:53+00:00",
+   "summary": "Google has been fined 403 million euros ($463 million) for breaching the European Union’s strict privacy rules because it mishandled users’ location data. The post Google Hit With $463 Million Fine for EU Location Data Rule Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
+   "url": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
+   "published": "2026-09-21T17:19:00+00:00",
+   "summary": "The North Korean threat actors behind the Contagious Interview campaign have compromised at least 30,000 devices located in more than 100 countries and siphoned funds or account credentials from over 7,000 cryptocurrency wallets, according to a new joint cybersecurity advisory. The primary targets of the campaign are individual web designers, engineers, and specialists in cryptocurrency,"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Google Fined €403 Million Over GDPR Violations Tied to Location Data",
+   "url": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
+   "published": "2026-09-21T16:57:31+00:00",
+   "summary": "Google has been fined €403 million for breaking the EU's data protection law, the GDPR, in the way three of its features handled people's location data from May 2018 to February 2020. Ireland's Data Protection Commission (DPC), Google's lead regulator in the EU, also ordered the company to make its processing comply with the law within 6 months. The DPC has not said publicly which"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Dems seek top-to-bottom assessment of CISA workforce",
+   "url": "https://cyberscoop.com/house-democrats-cisa-force-structure-assessment-act/",
+   "published": "2026-09-21T16:05:51+00:00",
+   "summary": "After the exit of around 1,000 CISA workers, legislation from three top House Democrats orders a force structure assessment like that more common to military branches. The post Dems seek top-to-bottom assessment of CISA workforce appeared first on CyberScoop ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Fake LastPass Installers Push Kernel-Level EDR Killer, ‘Rapuncel’ Stealer",
+   "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
+   "published": "2026-09-21T15:46:58+00:00",
+   "summary": "The attackers impersonate at least 40 companies and disable 145 security products to deploy infostealer malware. The post Fake LastPass Installers Push Kernel-Level EDR Killer, ‘Rapuncel’ Stealer appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Google fined €403 million over location data privacy violations",
+   "url": "https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/",
+   "published": "2026-09-21T15:41:22+00:00",
+   "summary": "Ireland's Data Protection Commission (DPC) has fined Google €403 million ($463M) for multiple GDPR violations related to processing users' location data. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "China-nexus actor steals thousands of documents in monthslong exploitation campaign",
+   "url": "https://www.cybersecuritydive.com/news/china-nexus-steals-thousands-documents-exploitation/830902/",
+   "published": "2026-09-21T15:19:50+00:00",
+   "summary": "Researchers suspect the hacker employed LLMs to develop custom tools."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Rogue Behavior: OpenAI Reveals More Model Misalignment Incidents",
+   "url": "https://www.darkreading.com/cyber-risk/rogue-behavior-openai-more-model-misalignment-incidents",
+   "published": "2026-09-21T14:47:19+00:00",
+   "summary": "The AI giant disclosed six examples of concerning model activity and published a new framework for investigating and disclosing such incidents."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft fixes broken Excel copy and paste for all Office users",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-excel-copy-and-paste-for-all-office-users/",
+   "published": "2026-09-21T14:42:37+00:00",
+   "summary": "Microsoft has fixed a known issue that causes copy-and-paste failures for Excel users after installing the September 2026 security updates. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "CISO Conversations: Noopur Davis – The Accidental Global CISO at Comcast",
+   "url": "https://www.securityweek.com/ciso-conversations-noopur-davis-the-accidental-global-ciso-at-comcast/",
+   "published": "2026-09-21T14:30:00+00:00",
+   "summary": "Noopur Davis never planned a career in cybersecurity. She was a developer at Intergraph, and for many years that was all she wanted to be. The post CISO Conversations: Noopur Davis – The Accidental Global CISO at Comcast appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
+   "url": "https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html",
+   "published": "2026-09-21T14:24:13+00:00",
+   "summary": "A browser. A plugin. A package. A login screen. Normal stuff. That is basically the problem this week. The trouble keeps showing up inside things people already trust: code that takes a bad turn, old payloads coming back, exposed systems, weak checks, fake fixes, and attack paths that look almost too easy. Even the research side is getting messy, with more findings, more automation, and not"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data",
+   "url": "https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html",
+   "published": "2026-09-21T14:15:40+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a new campaign dubbed TASK#STOMP that delivers a PowerShell backdoor designed to harvest sensitive data from compromised hosts. The backdoor \"automatically harvests and exfiltrates business documents, watches the filesystem for new files in real time, steals Wi-Fi passwords and clipboard contents, takes screenshots, and accepts arbitrary"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "FBI's CJIS v6.1: What Security Teams Need to Know.",
+   "url": "https://www.bleepingcomputer.com/news/security/fbis-cjis-v61-what-security-teams-need-to-know/",
+   "published": "2026-09-21T14:02:12+00:00",
+   "summary": "The FBI's CJIS Security Policy v6.1 strengthens requirements around encryption and vulnerability scanning while continuing the shift toward more continuous security assessment. Specops explains what changed and how agencies can address password, MFA, and identity requirements as they prepare for upcoming audits. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Dragos Completes NetRise and runZero Acquisitions Following Accenture Deal",
+   "url": "https://www.securityweek.com/dragos-completes-netrise-and-runzero-acquisitions-following-accenture-deal/",
+   "published": "2026-09-21T14:00:13+00:00",
+   "summary": "The transaction is part of the $4.1 billion deal in which Accenture acquired a majority stake in Dragos in an OT cybersecurity push. The post Dragos Completes NetRise and runZero Acquisitions Following Accenture Deal appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft reminds admins to migrate Entra ID users to passkeys",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-admins-to-migrate-entra-id-users-to-passkeys/",
+   "published": "2026-09-21T13:16:20+00:00",
+   "summary": "Microsoft has reminded admins to migrate Entra ID users to phishing-resistant authentication methods to avoid sign-in disruptions after it retires SMS first-factor sign-in starting in February 2027. [...]"
   },
   {
    "source": "SecurityWeek",
@@ -147,13 +266,6 @@
    "url": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html",
    "published": "2026-09-21T06:06:44+00:00",
    "summary": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based \"much smaller organization\" in the information technology (IT) services industry, once again highlighting how the adversary continues to target developers to breach target networks. Cybersecurity company SentinelOne, which disclosed details of the activity, said it involved the use of Apple"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Malicious npm packages evade install-script defenses at runtime",
-   "url": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/",
-   "published": "2026-09-20T14:11:21+00:00",
-   "summary": "An ongoing npm malware campaign involving the 'indexed-btree' package shows how threat actors bypass supply chain defenses by hiding malicious code in a package's normal runtime behavior rather than in installation scripts. [...]"
   }
  ]
 }
