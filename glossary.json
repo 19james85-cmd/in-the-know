@@ -30,6 +30,12 @@
   "e": "The Hugging Face intruder executed many thousands of individual actions across a swarm of short-lived sandboxes with no human driving each step."
  },
  {
+  "t": "AI Agent",
+  "c": "General",
+  "d": "An AI agent is software built on an AI model that can take actions on its own, such as browsing the web, running commands, or probing systems, instead of just answering questions.",
+  "e": "An AI agent given the wrong target information mistakenly attacked a real company instead of the test environment it was supposed to probe."
+ },
+ {
   "t": "AI Guardrails",
   "c": "General",
   "d": "Restrictions built into a hosted AI model that make it refuse certain requests. Useful in general, but they can also block legitimate defensive work.",
@@ -696,6 +702,12 @@
   "e": "A contractor reporting a perfect score claims all 110 controls are fully implemented."
  },
  {
+  "t": "npm",
+  "c": "General",
+  "d": "npm is the default package manager and public registry for JavaScript, letting developers pull in and share reusable code libraries as dependencies.",
+  "e": "Researchers found a malicious npm package that hid its harmful code in normal runtime behavior instead of the install script, letting it slip past scanners that only check installation."
+ },
+ {
   "t": "OAuth",
   "c": "Network",
   "d": "OAuth is the technology behind 'Sign in with Google/Microsoft' buttons: it lets one app access your account by issuing it a limited access token, so the app never sees your actual password.",
@@ -1102,6 +1114,12 @@
   "c": "Cryptography",
   "d": "The opening negotiation of an encrypted (HTTPS) connection, where client and server agree on keys before any real data flows. Handshake messages are processed before the server trusts you, so bugs there are reachable by anyone.",
   "e": "HollowByte abuses a length field in a TLS handshake message: OpenSSL believed the attacker's declared size and reserved up to 131 KB for a body that never arrived (July 2026)."
+ },
+ {
+  "t": "Trojan",
+  "c": "Malware",
+  "d": "A Trojan is malware disguised as legitimate or useful software so a victim installs it themselves; unlike a virus, it doesn't spread on its own.",
+  "e": "The RatHat Android Trojan poses as a normal app but secretly gives an attacker remote control of the phone."
  },
  {
   "t": "TTP",
