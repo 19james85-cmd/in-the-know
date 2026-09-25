@@ -1,0 +1,212 @@
+{
+  "leadStory": {
+    "headline": "CISA adds actively-exploited SharePoint and MikroTik flaws to KEV, sets Sept 28 patch deadline",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "tags": [
+      {"label": "Actively exploited", "type": "d"},
+      {"label": "CVSS 8.8", "type": "d"},
+      {"label": "KEV", "type": "a"}
+    ],
+    "body": "CISA added two more actively-exploited bugs to its Known Exploited Vulnerabilities (KEV) catalog on September 25: CVE-2026-65660, a code injection flaw in on-premises Microsoft SharePoint Server 2016, 2019 and Subscription Edition that leads to Remote Code Execution (CVSS 8.8), and CVE-2026-67279, an SSH workflow flaw in MikroTik RouterOS that lets an unauthenticated attacker tamper with router configuration files. This lands just a day after CISA flagged separate actively-exploited flaws in WSO2 and Adobe Commerce, making it a heavy week for known exploitation. Federal agencies must patch or stop using the affected products by September 28, and CISA urges every organization to treat KEV entries as top-priority fixes.",
+    "beginnerTip": "The <strong>KEV catalog</strong> is CISA's public list of vulnerabilities that criminals are already using in real attacks. If a product you run appears on it, patching that flaw should jump to the front of your to-do list because the theoretical risk has become an active one."
+  },
+  "cves": [
+    {
+      "headline": "WSO2 authentication-bypass flaw exploited since mid-September, now in CISA KEV",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/",
+      "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+      "tags": [
+        {"label": "Actively exploited", "type": "d"},
+        {"label": "Auth bypass", "type": "d"}
+      ],
+      "body": "CVE-2026-5430 is an authentication bypass affecting multiple WSO2 products, including WSO2 API Manager. It stems from improper verification of JWT signatures: the software accepts an unsupported signing algorithm, letting an attacker forge a valid-looking token and take over accounts without valid credentials. Researchers at watchTowr reported in-the-wild exploitation attempts against their honeypots since at least September 13, and CISA added the bug to KEV on September 24 alongside an Adobe Commerce authorization flaw (CVE-2026-71362).",
+      "beginnerTip": "A <strong>JWT</strong> (JSON Web Token) is a signed digital pass an app hands you after login so it can recognize you on later requests. If the app doesn't check the signature properly, an attacker can hand it a fake pass and walk in as someone else."
+    },
+    {
+      "headline": "Roundcube pre-auth SQL injection exploited four months after the patch shipped",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/",
+      "url": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
+      "tags": [
+        {"label": "Actively exploited", "type": "d"},
+        {"label": "CVSS 8.1", "type": "d"}
+      ],
+      "body": "The Canadian Centre for Cyber Security warned that CVE-2026-48842, a pre-authentication SQL injection in the virtuser_query plugin of Roundcube Webmail (CVSS 8.1), is being exploited in the wild. Because it is pre-authentication, an attacker needs no login to inject malicious database commands and steal data from the mail server's database. Fixes shipped back on May 24 in versions 1.6.16 and 1.7.1, so this is a case of attackers cashing in on servers that were never updated; self-hosted Roundcube admins should patch immediately.",
+      "beginnerTip": "<strong>SQL injection</strong> is when an attacker sneaks database commands into an input field that the app forgets to sanitize, tricking it into running them. Pre-authentication makes it worse: the attacker can pull this off before ever logging in."
+    },
+    {
+      "headline": "'SalesBleed': three Salesforce Agentforce flaws enabled zero-click data theft via AI agents",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com/",
+      "url": "https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/",
+      "tags": [
+        {"label": "AI agents", "type": "d"},
+        {"label": "Zero-click", "type": "d"}
+      ],
+      "body": "Zenity Labs disclosed SalesBleed, a set of three now-fixed vulnerabilities in Salesforce Agentforce. Attackers planted hidden instructions inside public Web-to-Lead forms; when a trusted Agentforce AI agent later processed that record as routine work, the smuggled instructions hijacked its behavior in an indirect prompt injection. Two of the flaws allowed zero-click exfiltration of CRM data to attacker infrastructure with no employee action, and the third let attackers abuse a trusted Slack agent's identity to send phishing from inside the company. Salesforce confirmed all three fixed by September 21.",
+      "beginnerTip": "<strong>Indirect prompt injection</strong> is when an AI assistant reads attacker-planted text from a document, web form, or email and mistakes it for instructions from its owner. Because the AI acts with the company's own trusted access, it can leak data or send messages no outsider should be able to."
+    },
+    {
+      "headline": "Unpatched OnePlus flaws let any installed app gain root with no permissions",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/",
+      "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
+      "tags": [
+        {"label": "Unpatched", "type": "w"},
+        {"label": "Privilege escalation", "type": "w"}
+      ],
+      "body": "Researcher Rasmus Moorats chained two flaws in OnePlus's own OxygenOS software to gain root, the highest level of control over an Android phone, on a OnePlus 15 running the latest firmware. A malicious app the owner installs can pull this off while asking for no special permissions, making it hard to spot as dangerous. OnePlus had not shipped a fix at the time of disclosure, so the practical defense for now is to install apps only from trusted sources.",
+      "beginnerTip": "<strong>Rooting</strong> means gaining full administrator control over a phone, bypassing the limits Android normally puts on apps. A rooted device can be made to read any app's data, so an attacker who quietly roots your phone effectively owns everything on it."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "Suspected North Korean hackers steal $351.6M from Bitget after backend compromise",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com/",
+      "url": "https://www.securityweek.com/north-korea-suspected-in-351-million-bitget-crypto-heist/",
+      "tags": [
+        {"label": "Nation-state", "type": "d"},
+        {"label": "Crypto theft", "type": "d"}
+      ],
+      "body": "Cryptocurrency exchange Bitget said suspected North Korean threat actors stole about $351.6 million after compromising its backend systems and draining a limited number of hot and warm wallets. Bitget's monitoring caught the unauthorized transfers at 18:31 UTC on September 24, and some wallet addresses linked to the attacker have since been frozen. North Korea's state-backed crews, such as the Lazarus Group, have repeatedly targeted exchanges to fund the regime, making this consistent with a long-running pattern.",
+      "beginnerTip": "A <strong>hot wallet</strong> is a crypto wallet kept connected to the internet so an exchange can move funds quickly, convenient but a prime target. Serious operators keep the bulk of holdings in offline cold storage that attackers can't reach remotely."
+    },
+    {
+      "headline": "Rydox marketplace admin pleads guilty, faces up to 22 years",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/",
+      "url": "https://www.bleepingcomputer.com/news/security/rydox-marketplace-admin-pleads-guilty-faces-22-years-in-prison/",
+      "tags": [
+        {"label": "Law enforcement", "type": "g"},
+        {"label": "Cybercrime", "type": "a"}
+      ],
+      "body": "Ardit Kutleshi, a Kosovar national, pleaded guilty in U.S. court to creating and operating Rydox, an illegal marketplace that sold stolen personal information, login credentials, credit card details, and cybercrime tools. He faces up to 22 years in prison. The takedown and prosecution are a reminder that the operators behind these criminal storefronts increasingly face real consequences, even when based abroad.",
+      "beginnerTip": "A criminal <strong>marketplace</strong> is an online shop where crooks buy and sell stolen data and hacking tools. Shutting one down disrupts many downstream attacks at once, because it removes a supplier that thousands of lower-skilled criminals relied on."
+    },
+    {
+      "headline": "New 'Carbonato' malware weaponizes AI agents to hijack exposed Docker hosts",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/",
+      "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
+      "tags": [
+        {"label": "Botnet", "type": "w"},
+        {"label": "AI abuse", "type": "w"}
+      ],
+      "body": "A new botnet malware called Carbonato targets internet-exposed Docker daemons, installing an AI agent framework (Hermes Agent) to take control of compromised hosts. Using AI agents to automate the attack is a notable evolution: the malware can reason about and adapt its actions on each machine rather than following a fixed script. The root cause is familiar, a Docker management interface left reachable from the internet without authentication.",
+      "beginnerTip": "A <strong>botnet</strong> is a network of infected machines an attacker controls remotely, often to mine cryptocurrency or launch further attacks. Exposing a Docker daemon to the internet without a password is like leaving the keys in a running car; automated scanners find it within minutes."
+    }
+  ],
+  "regulatory": [
+    {
+      "headline": "CISA election-security plan flags patching barriers and voter-database attacks",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com/",
+      "url": "https://www.securityweek.com/cisa-election-security-plan-flags-patching-barriers-voter-database-attacks/",
+      "tags": [
+        {"label": "Election security", "type": "a"},
+        {"label": "Policy", "type": "a"}
+      ],
+      "body": "CISA released an election-security plan, tasked by Homeland Security Secretary Markwayne Mullin in July, that highlights persistent barriers to patching election systems and the threat of attacks on voter-registration databases. The plan reflects the practical reality that election infrastructure is often hard to update quickly, leaving known flaws open longer than in typical enterprise environments.",
+      "beginnerTip": "<strong>Patching</strong> means applying vendor updates that fix security holes. Election systems are notoriously slow to patch because changes must be re-certified for accuracy, so defenders lean heavily on isolation and monitoring to compensate."
+    },
+    {
+      "headline": "Bipartisan bill would designate biotech as critical infrastructure for CISA to defend",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com/",
+      "url": "https://cyberscoop.com/biotech-critical-infrastructure-cybersecurity-legislation/",
+      "tags": [
+        {"label": "Legislation", "type": "a"},
+        {"label": "Critical infrastructure", "type": "a"}
+      ],
+      "body": "A bipartisan group of House and Senate lawmakers proposed legislation to have CISA step up cyber defenses for the biotechnology sector. Biotech currently lacks its own critical-infrastructure designation, and the bill aims to give it protections similar to sectors like energy and finance, reflecting concern that valuable research and manufacturing data is an attractive espionage target.",
+      "beginnerTip": "<strong>Critical infrastructure</strong> is the set of sectors a country considers essential, such as power, water, healthcare and finance. Getting a formal designation unlocks government threat intelligence, coordination, and funding that unlisted industries don't receive."
+    },
+    {
+      "headline": "New bill proposes a federal investigative board for AI-driven cyberattacks",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com/",
+      "url": "https://cyberscoop.com/new-bill-would-create-federal-investigative-body-for-ai-driven-hacks/",
+      "tags": [
+        {"label": "Legislation", "type": "a"},
+        {"label": "AI governance", "type": "a"}
+      ],
+      "body": "A new Democratic bill would create a federal Cybersecurity and AI Board of Investigations to provide independent oversight of cyberattacks carried out by AI agents, following recent incidents involving models from companies such as Anthropic, OpenAI and Meta. The idea mirrors bodies like the National Transportation Safety Board, an independent group that investigates incidents and publishes lessons learned rather than assigning blame in court.",
+      "beginnerTip": "<strong>AI governance</strong> refers to the rules and oversight bodies meant to keep AI systems accountable and safe. As attackers begin using autonomous AI agents, lawmakers are grappling with who investigates, and who is legally responsible, when the attacker is partly a machine."
+    }
+  ],
+  "trends": [
+    {
+      "headline": "Enterprises expand AI's role in cyber defense as comfort grows, survey finds",
+      "source": "Cybersecurity Dive",
+      "sourceUrl": "https://www.cybersecuritydive.com/",
+      "url": "https://www.cybersecuritydive.com/news/ai-cybersecurity-maturity-agents-kpmg/831385/",
+      "tags": [
+        {"label": "AI defense", "type": "a"},
+        {"label": "Survey", "type": "a"}
+      ],
+      "body": "A new KPMG survey found companies are broadening how they use AI in cybersecurity as familiarity with the technology grows, but a maturity gap remains: organizations still experimenting were far less likely than established users to deploy advanced AI-powered defenses. The takeaway is that AI security capability is becoming a dividing line between mature and immature security programs rather than a universal baseline.",
+      "beginnerTip": "AI is now on both sides of the fight: defenders use it to spot anomalies faster, while attackers use it to scale up. The gap between organizations that have operationalized AI defense and those still piloting it is widening."
+    },
+    {
+      "headline": "As AI agents proliferate, SOC 2 audits may need to adapt or lose relevance",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/",
+      "url": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
+      "tags": [
+        {"label": "Compliance", "type": "a"},
+        {"label": "AI agents", "type": "a"}
+      ],
+      "body": "Security firm Token Security argues that SOC 2, a widely used audit standard for how companies handle data, is straining under the rise of AI agents. Because agents often act through human credentials, existing controls can't always tell an agent's actions apart from a person's, creating blind spots in accountability. The piece calls for SOC 2 to evolve toward treating agent identities as first-class entities to audit.",
+      "beginnerTip": "<strong>SOC 2</strong> is a report that proves a company follows sound controls for security and privacy, often required before enterprises will buy software. When AI agents act using a human's login, auditors lose the clear person-to-action trail those controls assume."
+    },
+    {
+      "headline": "Autonomous AI hacks raise thorny questions of legal accountability",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com/",
+      "url": "https://www.securityweek.com/autonomous-ai-hacks-raise-thorny-questions-of-legal-accountability/",
+      "tags": [
+        {"label": "AI governance", "type": "a"},
+        {"label": "Legal", "type": "a"}
+      ],
+      "body": "As AI systems begin carrying out attacks with less human direction, legal experts say accountability is far from settled. Civil lawsuits are possible, but any criminal investigation would face an extremely high burden of proof in tying a specific person to an autonomous system's actions. The uncertainty is spurring the legislative proposals seen elsewhere in today's briefing.",
+      "beginnerTip": "When a human commits a crime, the law knows who to charge. Autonomous AI blurs that: if a model chose the target and method with little human input, prosecutors must still prove a person intended and directed the harm, a genuinely hard legal problem."
+    }
+  ],
+  "quickHits": [
+    {
+      "color": "danger",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+      "text": "Adobe Commerce/Magento flaw CVE-2026-71362, which lets unauthenticated attackers hijack customer sessions, was added to CISA KEV alongside the WSO2 bug."
+    },
+    {
+      "color": "ok",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
+      "text": "Cloudflare fixed a flaw in its Containers service that let one customer read leftover disk data other customers' containers had discarded on the same server."
+    },
+    {
+      "color": "warn",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/macsync-malware-uses-public-icloud-calendars-to-deliver-new-payloads/",
+      "text": "A new MacSync macOS malware variant abuses public iCloud calendar events as a channel to deliver additional native payloads."
+    },
+    {
+      "color": "warn",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
+      "text": "The SectopRAT remote access trojan has returned, hiding inside a legitimate application, a reminder to watch application behavior, not just reputation."
+    },
+    {
+      "color": "warn",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
+      "text": "Russia's hybrid cyber-physical campaign against European nations backing Ukraine is intensifying, blending cyber sabotage, disinformation and drone attacks."
+    }
+  ],
+  "analystFooter": "Priority today: if you run on-prem SharePoint, MikroTik RouterOS, WSO2, Adobe Commerce/Magento, or self-hosted Roundcube, patch now; all are actively exploited and on CISA's KEV list with deadlines this week."
+}
