@@ -1,0 +1,269 @@
+{
+ "leadStory": {
+  "headline": "Citrix confirms two actively-exploited NetScaler zero-days; CISA sets Sept 30 federal deadline",
+  "source": "BleepingComputer",
+  "sourceUrl": "https://www.bleepingcomputer.com/",
+  "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+  "tags": [
+   {
+    "label": "Actively exploited",
+    "type": "d"
+   },
+   {
+    "label": "CVSS 9.5",
+    "type": "d"
+   },
+   {
+    "label": "Zero-Day RCE",
+    "type": "d"
+   },
+   {
+    "label": "KEV",
+    "type": "a"
+   }
+  ],
+  "body": "Citrix confirmed on September 27 that two critical NetScaler ADC and NetScaler Gateway vulnerabilities — CVE-2026-88771 and CVE-2026-88772, both rated CVSSv4 9.5 — have been exploited as zero-days in the wild, in some cases for weeks before disclosure. CVE-2026-88771 is a remote code execution (RCE) flaw caused by improper input validation that affects all deployments including default configurations, while CVE-2026-88772 is a memory-overflow bug that requires DTLS, which is enabled by default on VPN virtual servers. Citrix has released fixes — upgrade to 14.1-73.37 or 13.1-64.23 (plus the matching FIPS builds) — and CISA added both to its Known Exploited Vulnerabilities (KEV) catalog, ordering federal civilian agencies to patch and run forensic triage by September 30.",
+  "beginnerTip": "A <strong>zero-day</strong> is a flaw attackers are already exploiting before the vendor has a patch, so defenders start the race a step behind. Because NetScaler sits at the internet edge, assume any exposed, unpatched box may already be breached — patch first, then hunt for signs of intrusion."
+ },
+ "cves": [
+  {
+   "headline": "Microsoft SharePoint code-injection flaw CVE-2026-65660 now exploited in the wild",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
+   "tags": [
+    {
+     "label": "Actively exploited",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 8.8",
+     "type": "d"
+    },
+    {
+     "label": "KEV",
+     "type": "a"
+    }
+   ],
+   "body": "CVE-2026-65660 is a code-injection flaw in on-premises Microsoft SharePoint Server that lets a low-privileged, authenticated attacker execute arbitrary code (CVSS 8.8); chained with a separate authentication-bypass weakness it yields full unauthenticated remote code execution (RCE). Microsoft shipped a fix in its August 2026 Patch Tuesday, but researchers observed in-the-wild attacks — including webshell backdoor creation — beginning around September 24. CISA added it to the KEV catalog on September 25 with a federal patching deadline of September 28.",
+   "beginnerTip": "<strong>Code injection</strong> means an attacker slips their own commands into input a program trusts, tricking the server into running them. On-prem SharePoint often stores sensitive internal documents, so an unpatched server is a high-value target."
+  },
+  {
+   "headline": "Cisco ships emergency patch for actively-exploited ISE authentication bypass (CVSS 10)",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/active-exploitation-triggers-emergency-patch-for-cisco-ise-zero-day/",
+   "tags": [
+    {
+     "label": "Actively exploited",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 10",
+     "type": "d"
+    },
+    {
+     "label": "Auth bypass",
+     "type": "d"
+    }
+   ],
+   "body": "Cisco released an emergency patch for CVE-2026-76460, a maximum-severity (CVSS 10) authentication-bypass flaw in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector that is being exploited in the wild. An API endpoint lacking sufficient authentication controls lets a remote, unauthenticated attacker skip access checks entirely. Fixed releases include ISE 3.5 Patch 4, 3.4 Patch 7, 3.3 Patch 12, 3.2 Patch 11 and 3.1 Patch 12.",
+   "beginnerTip": "An <strong>authentication bypass</strong> lets an attacker skip the login step altogether, so no stolen password is even needed. ISE decides who and what is allowed onto a network, which makes it an especially dangerous thing to leave unpatched."
+  },
+  {
+   "headline": "Cloudflare fixes Containers flaw that leaked other tenants' residual disk data",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
+   "tags": [
+    {
+     "label": "Cross-tenant",
+     "type": "w"
+    },
+    {
+     "label": "Fixed",
+     "type": "g"
+    },
+    {
+     "label": "No malicious abuse found",
+     "type": "g"
+    }
+   ],
+   "body": "Cloudflare fixed a cross-tenant data-exposure flaw in its Containers and Sandboxes platform that let customers on a Workers Paid plan recover leftover disk data from other customers' workloads sharing the same physical host. The issue stemmed from Linux device-mapper thin provisioning with block-zeroing disabled: writing tiny 4 KiB blocks allocated 64 KiB physical blocks whose remaining space still held prior tenants' data. Reported through HackerOne on September 4, Cloudflare deployed a fix within about eight hours and finished cleanup by September 19, and it found no evidence of malicious exploitation — though a researcher recovered residual data across 18 of 24 test placements.",
+   "beginnerTip": "<strong>Cross-tenant</strong> leakage is when one customer on shared cloud infrastructure can reach another customer's data — the digital equivalent of finding the previous tenant's mail in your new apartment. Multi-tenancy is efficient, but it demands strict isolation to keep tenants apart."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "ShinyHunters revives Oracle PeopleSoft attacks with a WAF-bypass trick",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+   "tags": [
+    {
+     "label": "Active exploitation",
+     "type": "d"
+    },
+    {
+     "label": "WAF bypass",
+     "type": "d"
+    },
+    {
+     "label": "Unauth RCE",
+     "type": "w"
+    }
+   ],
+   "body": "The ShinyHunters extortion gang has resumed mass exploitation of Oracle PeopleSoft flaw CVE-2026-35273 by defeating the WAF rules many organizations relied on as mitigation. The trick abuses a URL-normalization mismatch: a WAF checks the literal request path (for example blocking /PSEMHUB/), while Oracle WebLogic decodes URL-encoded characters first, so a request for /%50SEMHUB/ — where %50 is the letter 'P' — slips past the filter and reaches the vulnerable endpoint. Mandiant reports the attackers then drop JSP web shells, Neo-reGeorg tunneling tools and the SIDEEYE backdoor. Oracle patched the flaw on June 11, but many systems remain unpatched.",
+   "beginnerTip": "A <strong>WAF</strong> (web application firewall) filters malicious web requests before they reach an app, but it is a safety net, not a substitute for patching. This attack shows why: a clever encoding fooled the filter, so only applying Oracle's June update truly closes the hole."
+  },
+  {
+   "headline": "Lunex Stealer abuses a vulnerable AMD driver to blind EDR and steal credentials",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+   "tags": [
+    {
+     "label": "Info-stealer",
+     "type": "w"
+    },
+    {
+     "label": "BYOVD",
+     "type": "d"
+    },
+    {
+     "label": "MaaS",
+     "type": "a"
+    }
+   ],
+   "body": "Researchers at Ontinue detailed Lunex, a Malware-as-a-Service (MaaS) platform whose payload — dubbed Psychedelic Stealer — uses a Bring-Your-Own-Vulnerable-Driver (BYOVD) technique: it loads a legitimate but flawed AMD Radeon driver (PDFWKRNL.sys, tied to CVE-2023-20598) to gain kernel access and blind endpoint detection and response (EDR) tools while keeping them running. The stealer harvests credentials, cookies and session data from seven browsers plus cryptocurrency wallets, and spreads through compromised Ukrainian websites showing ClickFix-style fake CAPTCHA pages that push malicious MSI installers. By September 2026, 28 command-and-control panels were tracked across 13 countries.",
+   "beginnerTip": "<strong>BYOVD</strong> (bring your own vulnerable driver) means attackers install a real, signed-but-buggy driver so their code can run deep inside Windows and switch off security tools. Maintaining a blocklist of known-vulnerable drivers is a key defense."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "CISA's CIRCIA breach-reporting rule heads toward a final September 2026 deadline",
+   "source": "CISA",
+   "sourceUrl": "https://www.cisa.gov/",
+   "url": "https://www.cisa.gov/topics/cyber-threats-and-advisories/information-sharing/cyber-incident-reporting-critical-infrastructure-act-2022-circia",
+   "tags": [
+    {
+     "label": "Regulation",
+     "type": "a"
+    },
+    {
+     "label": "Critical infrastructure",
+     "type": "a"
+    }
+   ],
+   "body": "Under the Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA), covered critical-infrastructure entities will have to report significant cyber incidents to CISA within 72 hours and ransomware payments within 24 hours. CISA missed its statutory October 2025 deadline and is now targeting a final rule in September 2026, after gathering input from more than 1,200 stakeholders. Covered organizations should start building the internal processes needed to meet those tight reporting clocks before the rule takes effect.",
+   "beginnerTip": "<strong>CIRCIA</strong> is a US law meant to give the government fast visibility into attacks on essential services like power, water and hospitals. Mandatory reporting helps defenders spot campaigns early — but it also means affected companies must have an incident-response plan ready to act within hours."
+  },
+  {
+   "headline": "US and China agree to establish an AI-safety communication channel",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
+   "tags": [
+    {
+     "label": "AI policy",
+     "type": "a"
+    },
+    {
+     "label": "International",
+     "type": "a"
+    }
+   ],
+   "body": "The United States and China agreed to set up a communication mechanism for artificial-intelligence-related incidents, alongside continued trade and military talks. The channel is intended to reduce the risk of miscalculation as AI is woven into critical and military systems. Details remain limited, but the move signals growing recognition that AI safety and security increasingly require coordination even between rival powers.",
+   "beginnerTip": "Governments are starting to treat <strong>AI safety</strong> like other high-stakes fields — such as nuclear weapons or aviation — where even adversaries keep open lines of communication to prevent accidents from spiraling. Think of it as a diplomatic hotline for AI mishaps."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "Anthropic launches a Claude marketplace with 2,000+ plugins and connectors",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/",
+   "tags": [
+    {
+     "label": "AI ecosystem",
+     "type": "a"
+    },
+    {
+     "label": "Supply chain",
+     "type": "w"
+    }
+   ],
+   "body": "Anthropic launched a Claude Marketplace that gathers more than 2,000 plugins, connectors, agents and service partners in one place, making it far easier to wire Claude into third-party tools and data. For security teams the convenience cuts both ways: every connector is new attack surface and a supply-chain dependency, so vetting what a plugin can access matters as much as what it can do. Expect governance of AI agents and their integrations to become a fast-growing concern.",
+   "beginnerTip": "A <strong>connector</strong> lets an AI assistant reach into another app — email, code, files — to act on your behalf. That power is useful, but each connection is also a door, so grant only the access a task actually needs."
+  },
+  {
+   "headline": "Non-human identities are outpacing security teams, IDC report warns",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com/",
+   "url": "https://www.cybersecuritydive.com/news/security-teams-increasingly-outflanked-by-ai-agents/830290/",
+   "tags": [
+    {
+     "label": "AI risk",
+     "type": "w"
+    },
+    {
+     "label": "Identity",
+     "type": "a"
+    }
+   ],
+   "body": "An IDC and GuidePoint Security report finds that machine and AI-agent accounts — a Non-Human Identity in security terms — now outnumber human accounts by as much as 75 to 1 in some environments, and served as the initial entry point in 19% of confirmed incidents, matching phishing and stolen credentials. Yet only 18% of organizations enforce least-privilege access with automatic remediation for AI agents, and more than four in ten cite inventory or ownership gaps as a top challenge. The findings draw on surveys of over 2,500 respondents.",
+   "beginnerTip": "A <strong>Non-Human Identity</strong> is a login used by software — an API key, service account or AI agent — rather than a person. These often have broad, long-lived access and little oversight, which is exactly why attackers increasingly target them."
+  },
+  {
+   "headline": "Data-breach costs climb to a $5M average as 'shadow AI' spreads",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com/",
+   "url": "https://www.cybersecuritydive.com/news/data-breach-costs-ai-governance-ibm/826463/",
+   "tags": [
+    {
+     "label": "Report",
+     "type": "a"
+    },
+    {
+     "label": "Shadow AI",
+     "type": "w"
+    }
+   ],
+   "body": "IBM's 2026 Cost of a Data Breach report puts the global average breach at about $5 million, up 12% year over year, and finds that incidents involving 'shadow AI' — unsanctioned AI tools used without IT approval — more than doubled to 43% of breaches. Attacks that target AI systems directly, such as prompt-injection, cost roughly $6 million on average, and 92% of organizations breached through their AI models had failed to properly control access to them. The report analyzed 602 breached organizations across 17 industries.",
+   "beginnerTip": "<strong>Shadow AI</strong> is employees using AI tools their company hasn't vetted, often pasting in sensitive data. It's convenient but invisible to the security team — and you can't protect data you don't know is leaving."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+   "text": "CISA added both Citrix NetScaler zero-days (CVE-2026-88771, CVE-2026-88772) to its KEV catalog and ordered federal agencies to patch and run forensic triage by September 30."
+  },
+  {
+   "color": "danger",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
+   "text": "September 28 is the CISA KEV deadline for on-prem SharePoint flaw CVE-2026-65660, which is being exploited to plant webshells."
+  },
+  {
+   "color": "accent",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
+   "text": "Cloudflare closed its Containers cross-tenant data-exposure flaw within about eight hours of the HackerOne report and found no signs of malicious abuse."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+   "text": "Lunex Stealer loads a vulnerable AMD driver (CVE-2023-20598) to disable EDR, then steals credentials from seven browsers plus crypto wallets."
+  },
+  {
+   "color": "accent",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/",
+   "text": "Anthropic opened a Claude Marketplace with 2,000+ plugins and connectors, expanding both AI capability and third-party attack surface."
+  }
+ ],
+ "analystFooter": "Top priority today is Citrix NetScaler: treat any internet-facing ADC or Gateway as potentially compromised, upgrade to 14.1-73.37 or 13.1-64.23 immediately and hunt for webshells — then confirm SharePoint CVE-2026-65660 and Cisco ISE CVE-2026-76460 are patched, as both are under active exploitation with CISA deadlines."
+}
