@@ -1,41 +1,41 @@
 {
- "generated": "2026-09-28T19:48:55.646044+00:00",
+ "generated": "2026-09-29T18:13:52.965036+00:00",
  "window_hours": 24,
  "feeds": [
   {
    "source": "CISA",
    "ok": true,
-   "count": 0,
+   "count": 7,
    "error": null
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 8,
+   "count": 10,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 9,
+   "count": 10,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 4,
+   "count": 8,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 4,
    "error": null
   },
   {
@@ -47,13 +47,13 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 7,
+   "count": 12,
    "error": null
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -73,7 +73,343 @@
   },
   {
    "source": "BleepingComputer",
-   "title": "Misconfigured Supabase apps expose data in over 16,000 databases",
+   "title": "Former US Air Force members sent to prison over BEC attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/former-us-air-force-members-sent-to-prison-over-bec-attacks/",
+   "published": "2026-09-29T18:09:39+00:00",
+   "summary": "Two former members of the United States Air Force were sentenced to a combined 189 months in federal prison for their roles in a multi-year series of business email compromise (BEC) scams and phishing campaigns. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Windows 11 2026 Update released, here's everything you need to know",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-2026-update-released-heres-everything-you-need-to-know/",
+   "published": "2026-09-29T17:37:40+00:00",
+   "summary": "Microsoft has started rolling out Windows 11 26H2 to everyone, and while it's this year's big annual feature update, you probably won't notice a massive difference after installing it. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "DARPA Selects Xint to Use AI in Securing Military Messaging Apps",
+   "url": "https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/",
+   "published": "2026-09-29T17:24:04+00:00",
+   "summary": "The AIxCC competition winner will analyze messaging app code and compiled binaries for vulnerabilities, with technology that could also help commercial customers secure their software. The post DARPA Selects Xint to Use AI in Securing Military Messaging Apps appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "New Spectre v2 attack variant leaks Linux root password hash in minutes",
+   "url": "https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/",
+   "published": "2026-09-29T17:10:11+00:00",
+   "summary": "A new Branch Target Reuse (BTR) attack has been devised that can recover root password hashes on Intel computers running Linux in 3-5 minutes on average. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Cloudflare Announces Public Certificate Authority for the Post-Quantum Web",
+   "url": "https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web",
+   "published": "2026-09-29T17:02:16+00:00",
+   "summary": "Automated certificates for everyone, built for today, and hardened for the era of quantum computing."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New Spectre-v2 BTR Attack Leaks Linux Memory Despite Existing Defenses",
+   "url": "https://thehackernews.com/2026/09/new-spectre-v2-btr-attack-leaks-linux.html",
+   "published": "2026-09-29T17:00:00+00:00",
+   "summary": "A group of academics from VUSec and Scuola Superiore Sant'Anna have disclosed details of a new Spectre CPU vulnerability variant that affects Just-In-Time (JIT) engines present in web browsers, language runtimes, and the operating system kernel, across multiple CPU vendors. The new Spectre-v2 variant has been codenamed Branch Target Reuse (BTR). \"The key insight is that, while modern CPUs"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "New Spectre v2 Variant Exposes Intel, AMD, Arm CPUs to Data Leaks",
+   "url": "https://www.securityweek.com/new-spectre-v2-variant-exposes-intel-amd-arm-cpus-to-data-leaks/",
+   "published": "2026-09-29T17:00:00+00:00",
+   "summary": "Branch Target Reuse (BTR) is a new Spectre v2 attack targeting JIT compilers in web browsers, language runtimes, and the operating system kernel The post New Spectre v2 Variant Exposes Intel, AMD, Arm CPUs to Data Leaks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Automated AI agent used to breach cybersecurity nonprofit DIVD",
+   "url": "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/",
+   "published": "2026-09-29T15:39:19+00:00",
+   "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) suffered an AI-driven cyberattack that the organization described as \"loud and very, very messy.\" [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Alleged ShinyHunters leader arrested in the Netherlands",
+   "url": "https://cyberscoop.com/shinyhunters-alleged-leader-arrested-netherlands/",
+   "published": "2026-09-29T15:32:19+00:00",
+   "summary": "The arrest of a 24-year-old man in Amsterdam, which occurred a week before ShinyHunters hacked the FBI, marks a major turning point for law enforcement’s push to track down the group’s members. The post Alleged ShinyHunters leader arrested in the Netherlands appeared first on CyberScoop ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "'NeedyMantis' Provides Long-Term Access to Compromised Networks",
+   "url": "https://www.darkreading.com/threat-intelligence/needymantis-long-term-access-compromised-networks",
+   "published": "2026-09-29T15:12:39+00:00",
+   "summary": "Microsoft observed a China-based actor using a previously unidentified malware framework in targeted intrusions against telcos, universities, medical, and government-related organizations."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Citrix NetScaler exploitation began days before public notification",
+   "url": "https://www.cybersecuritydive.com/news/citrix-netscaler-exploitation-days-before-notification/831634/",
+   "published": "2026-09-29T15:06:19+00:00",
+   "summary": "Customers need to check systems for compromise prior to patching, because the security upgrade may not fully resolve an infected system."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Dotted Line: How construction is dealing with cybersecurity in the age of AI",
+   "url": "https://www.cybersecuritydive.com/news/construction-cybersecurity-AI/831637/",
+   "published": "2026-09-29T15:00:00+00:00",
+   "summary": "Contractors rank cybersecurity low on their priority lists. But lawyers say being prepared is critical when the inevitable breach occurs."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "GAO report spotlights industry’s concerns about overlapping cybersecurity regulations",
+   "url": "https://www.cybersecuritydive.com/news/cybersecurity-regulation-industry-feedback-harmonization-gao/831619/",
+   "published": "2026-09-29T14:51:00+00:00",
+   "summary": "Representatives of three critical infrastructure sectors identified the conflicting and redundant rules that they said made their jobs much more difficult."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "RemoteThreat Launches With $7 Million for Offensive Operations Platform",
+   "url": "https://www.securityweek.com/remotethreat-launches-with-7-million-for-offensive-operations-platform/",
+   "published": "2026-09-29T14:38:07+00:00",
+   "summary": "The company emerged from stealth mode with pre-seed funding from Osage University Partners and DataTribe. The post RemoteThreat Launches With $7 Million for Offensive Operations Platform appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Dual NetScaler Zero-Days Trigger Chaos for Citrix Customers",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/netscaler-zero-days-chaos-citrix",
+   "published": "2026-09-29T14:19:43+00:00",
+   "summary": "The critical vulnerabilities, which impact default configurations of NetScaler products, essentially give attackers a skeleton key to customers' networks."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Kiteworks Fixes Critical Flaw Found During Nine-Hour Precautionary Shutdown",
+   "url": "https://thehackernews.com/2026/09/kiteworks-fixes-critical-flaw-found.html",
+   "published": "2026-09-29T14:13:20+00:00",
+   "summary": "Kiteworks on Monday said it worked with federal intelligence authorities over the weekend as it identified and addressed a critical security vulnerability during the scheduled precautionary shutdown. \"During the shutdown, this activity led to the discovery of a previously unknown critical vulnerability confined to a capability that is enabled for less than 1% of the customer base,\" the company"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Kiteworks lifts shutdown advisory after ‘credible threat intelligence’ from federal authorities",
+   "url": "https://cyberscoop.com/kiteworks-lifts-shutdown-advisory-after-credible-threat-intelligence-from-federal-authorities/",
+   "published": "2026-09-29T14:11:43+00:00",
+   "summary": "The company said it found and patched a previously unknown critical vulnerability in one product during the weekend shutdown, and has no indication it was exploited. The post Kiteworks lifts shutdown advisory after credible threat intelligence' from federal authorities appeared first on CyberScoop ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Catch threats before they escalate with real-time Identity Telemetry",
+   "url": "https://www.bleepingcomputer.com/news/security/catch-threats-before-they-escalate-with-real-time-identity-telemetry/",
+   "published": "2026-09-29T14:01:11+00:00",
+   "summary": "Identity governance helps control who should have access, but periodic reviews alone may not reveal attacks as they happen. tenfold Software explains how real-time identity telemetry can help security teams investigate suspicious activity before it escalates. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "101 Malicious npm Packages Add Developers' WhatsApp Accounts to Groups Without Consent",
+   "url": "https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html",
+   "published": "2026-09-29T13:45:10+00:00",
+   "summary": "Cybersecurity researchers have identified a cluster of 101 npm packages that are used to trap developers into a WhatsApp group subscriber campaign dubbed PhantomSub. \"The malicious packages abuse the 'Baileys' WhatsApp open source project to add the victims to groups without their consent,\" OX Security researchers Nir Zadok, Moshe Siman Tov Bustan, and Vitalii Chepurko said in a technical"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Reco Raises $55 Million for Agentic Security",
+   "url": "https://www.securityweek.com/reco-raises-55-million-for-agentic-security/",
+   "published": "2026-09-29T13:20:53+00:00",
+   "summary": "The company will use the funds to expand its sales, partnerships, channels, and customer support teams. The post Reco Raises $55 Million for Agentic Security appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Hackers Use ChatGPT Custom GPTs in ClickFix Attacks",
+   "url": "https://www.securityweek.com/hackers-use-chatgpt-custom-gpts-in-clickfix-attacks/",
+   "published": "2026-09-29T13:03:35+00:00",
+   "summary": "The personalized versions of ChatGPT were used to impersonate legitimate products and trick users into executing PowerShell commands. The post Hackers Use ChatGPT Custom GPTs in ClickFix Attacks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Pentagon Personnel Agency Data Breach Impacts 3 Million People",
+   "url": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/",
+   "published": "2026-09-29T12:25:12+00:00",
+   "summary": "The data breach affects the Defense Manpower Data Center (DMDC), which maintains personnel records for the Department of Defense. The post Pentagon Personnel Agency Data Breach Impacts 3 Million People appeared first on SecurityWeek ."
+  },
+  {
+   "source": "CISA",
+   "title": "Baicells Nova 430H",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-04",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to inject malformed messages which may lead to a denial-of-service condition. The following versions of Baicells Nova 430H are affected: Nova 430H eNodeB (model pBS3101SH) <=BaiBLQ_3.0.12 (CVE-2026-96274) CVSS Vendor Equipment Vulnerabilities v3 7.4 Baicells Technologies Baicells Nova 430H Uncaught Exception Background Critical Infrastructure Sectors: Communications, Information Technology Countries/Areas Dep"
+  },
+  {
+   "source": "CISA",
+   "title": "MikroTik RouterOS",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-06",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to achieve remote code execution or cause a denial of service. The following versions of MikroTik RouterOS are affected: RouterOS <7.24 (CVE-2026-84411) CVSS Vendor Equipment Vulnerabilities v3 9.8 MikroTik MikroTik RouterOS Integer Underflow (Wrap or Wraparound) Background Critical Infrastructure Sectors: Communications, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location"
+  },
+  {
+   "source": "CISA",
+   "title": "VIVOTEK Camera Firmware",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-03",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability may allow attackers to achieve remote command execution on affected devices, potentially with root privileges, leading to full compromise of the camera system. The following versions of VIVOTEK Camera Firmware are affected: V Series model_FD9187 (CVE-2026-22755) V Series model_FD9189 (CVE-2026-22755) V Series model_FD9365 (CVE-2026-22755) V Series model_FD9387 (CVE-2026-22755) V Series model_FD9389 (CVE-2026-22755) V Series model_FD"
+  },
+  {
+   "source": "CISA",
+   "title": "Anjvision YSSD-RTMP-H5",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-05",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to access sensitive information, access user accounts, execute OS-level commands, or take full control over the device. The following versions of Anjvision YSSD-RTMP-H5 are affected: YSSD-RTMP-H5 firmware 3.3.2.4_build_2024-12-26 (CVE-2026-100291, CVE-2026-100292, CVE-2026-100293, CVE-2026-100294, CVE-2026-100295, CVE-2026-100296, CVE-2026-100297, CVE-2026-100298, CVE-2026-100299) CVSS Vendor Equipment Vul"
+  },
+  {
+   "source": "CISA",
+   "title": "Viidure Dashcam Android Application",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow attackers to access, modify, or delete sensitive user data and critical system files, potentially compromising the operation of the entire platform. The following versions of Viidure Dashcam Android Application are affected: Dashcam Android Application <=3.3.1.260403 (CVE-2026-94204, CVE-2026-96587) CVSS Vendor Equipment Vulnerabilities v3 10 Viidure Viidure Dashcam Android Application Incorrect Permission Assignment "
+  },
+  {
+   "source": "CISA",
+   "title": "Toptech TMS7 and TopHAT",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-02",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to access critical data or execute arbitrary code. The following versions of Toptech TMS7 and TopHAT are affected: TMS7 7.6.3 (CVE-2026-71379, CVE-2026-70356, CVE-2026-72510, CVE-2026-63713, CVE-2026-68954, CVE-2026-68068, CVE-2026-72507, CVE-2026-71302, CVE-2026-69662, CVE-2026-71189) TopHAT 7.6.3 (CVE-2026-71379, CVE-2026-70356, CVE-2026-72510, CVE-2026-63713, CVE-2026-68954, CVE-2026-68068, CVE-2026-725"
+  },
+  {
+   "source": "CISA",
+   "title": "Lantronix G520 Series Cellular Gateway",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-01",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to replace software and execute arbitrary code with root privileges. The following versions of Lantronix G520 Series Cellular Gateway are affected: G520 Series 2.6.0.4R6_stable (CVE-2026-84409, CVE-2026-91191) CVSS Vendor Equipment Vulnerabilities v3 7.5 Lantronix Lantronix G520 Series Cellular Gateway Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'), Improper Verificati"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Rig Security Emerges From Stealth With $12M to Tackle Agentic AI Identity Risks",
+   "url": "https://www.securityweek.com/rig-security-emerges-from-stealth-with-12m-to-tackle-agentic-ai-identity-risks/",
+   "published": "2026-09-29T12:00:00+00:00",
+   "summary": "Rig provides an identity dependencies graph to distinguish between legitimate users and rogue AI agents The post Rig Security Emerges From Stealth With $12M to Tackle Agentic AI Identity Risks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Vietnamese man charged in $16 million 'pig butchering' crypto scam",
+   "url": "https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/",
+   "published": "2026-09-29T11:41:53+00:00",
+   "summary": "A Vietnamese national was charged with money laundering for his role in a massive \"pig butchering\" scam, which defrauded a victim out of $16 million worth of cryptocurrency. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Four Cyber Threats Harboring Big Plans for the Future",
+   "url": "https://www.securityweek.com/four-cyber-threats-harboring-big-plans-for-the-future/",
+   "published": "2026-09-29T11:30:00+00:00",
+   "summary": "- AI, supply-chain exposure, quantum computing and geopolitical conflict are testing security programs. Preparing for disruption must become part of day-to-day operations. The post Four Cyber Threats Harboring Big Plans for the Future appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "OpenAI Calls Off GPT-6.1 Astra Launch, Details Safety Cases for Frontier Training",
+   "url": "https://www.securityweek.com/openai-calls-off-gpt-6-1-astra-launch-details-safety-cases-for-frontier-training/",
+   "published": "2026-09-29T11:15:59+00:00",
+   "summary": "The GPT-6.1 Astra model was slated to debut in ChatGPT and Codex in October, but it fell short of expectations. The post OpenAI Calls Off GPT-6.1 Astra Launch, Details Safety Cases for Frontier Training appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Dutch Police Arrest Convicted Hacker in ShinyHunters Investigation",
+   "url": "https://www.securityweek.com/dutch-police-arrest-convicted-hacker-in-shinyhunters-investigation/",
+   "published": "2026-09-29T11:01:55+00:00",
+   "summary": "Pepijn van der Stap was convicted in 2023 for hacking multiple organizations, stealing their data, and extorting them. The post Dutch Police Arrest Convicted Hacker in ShinyHunters Investigation appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Kiteworks patches critical flaw, brings customer systems online",
+   "url": "https://www.bleepingcomputer.com/news/security/kiteworks-lifts-shutdown-warning-after-patching-critical-flaw/",
+   "published": "2026-09-29T09:04:06+00:00",
+   "summary": "American tech company Kiteworks has lifted a precautionary advisory asking customers to shut down systems after patching a critical vulnerability. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Dutch Police Arrest 24-Year-Old Amsterdam Man in ShinyHunters Investigation",
+   "url": "https://thehackernews.com/2026/09/dutch-police-arrest-24-year-old.html",
+   "published": "2026-09-29T08:35:10+00:00",
+   "summary": "Dutch authorities have confirmed that they arrested a 24-year-old man from Amsterdam in connection with the ShinyHunters group. \"It is true that this month a 24-year-old man from Amsterdam was arrested in an investigation into the hacker group ShinyHunters,\" the Politie Landelijke Opsporing en Interventies said in an X post Monday. Police said the individual is expected to appear before the"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Apple patches CoreGraphics zero-day flaw exploited in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/",
+   "published": "2026-09-29T07:33:12+00:00",
+   "summary": "Apple released security updates to fix a zero-day vulnerability exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials",
+   "url": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
+   "published": "2026-09-29T06:08:25+00:00",
+   "summary": "A malicious MCP server could trick an application built on the official MCP Python SDK into handing over the OAuth credentials it uses to log in to a real service, the SDK's maintainers said in a security advisory. Affected versions sent the client secret, the authorization code, and the PKCE proof key to a token endpoint the attacker controlled. The fix is in versions 1.30.0 and"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "OpenAI Shelves GPT-6.1 Astra After Tests Find Deception and Unauthorized Actions",
+   "url": "https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html",
+   "published": "2026-09-29T05:12:32+00:00",
+   "summary": "OpenAI on Monday shelved plans to release GPT-6.1 Astra, a next-generation artificial intelligence (AI) model that was planned for an October launch, after it failed internal safety and alignment audits. The development was first reported by The Wall Street Journal. The move \"marks a rare case of a major AI developer ditching a new release because of safety concerns,\" the news publication said."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "OpenAI Pauses Tool Use After Agent Bypasses Internet Controls to Reach External Chatbot",
+   "url": "https://thehackernews.com/2026/09/openai-pauses-tool-use-after-agent.html",
+   "published": "2026-09-29T04:45:20+00:00",
+   "summary": "OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its internet-access restrictions. \"An agent attempting to complete a search-based training task queried a public chatbot service through a gap in our internet-access restrictions:"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Citrix patches actively exploited NetScaler zero-days after a weekend of unofficial warnings",
+   "url": "https://cyberscoop.com/citrix-zero-days-delayed-disclosure/",
+   "published": "2026-09-29T00:58:15+00:00",
+   "summary": "The vendor’s products are a common, recurring target for attackers, yet the official warning for some Citrix NetScaler customers was too late. The post Citrix patches actively exploited NetScaler zero-days after a weekend of unofficial warnings appeared first on CyberScoop ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Nvidia Launches AI Agent Safety Platform to Prevent Rogue Activities",
+   "url": "https://www.darkreading.com/cyber-risk/nvidia-launches-ai-agent-safety-platform-prevent-rogue-activities",
+   "published": "2026-09-28T22:02:46+00:00",
+   "summary": "The Open Agent Safety Platform relies on both hardware and software components to monitor agent activities and quarantine unruly agents before they cause harm."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "One Packet Can Crash OT Servers in Industrial Sectors",
+   "url": "https://www.darkreading.com/ics-ot-security/one-packet-crash-servers-tdengine",
+   "published": "2026-09-28T21:13:04+00:00",
+   "summary": "A high-severity zero-day vulnerability affects the TDengine time-series database used across industrial, IoT, energy, and automotive environments."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Japan's Keio confirms ransomware attack disrupted business systems",
+   "url": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/",
+   "published": "2026-09-28T20:56:47+00:00",
+   "summary": "Keio Corporation (Keio), a major private railway operator in Japan, said its network was hit by a ransomware attack over the weekend, disrupting some of its business systems. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Times Car confirms data breach affecting 6.6 million user accounts",
+   "url": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/",
+   "published": "2026-09-28T20:31:16+00:00",
+   "summary": "Japanese car-sharing service Times Car has confirmed that approximately 6.6 million user accounts were compromised in a cyberattack disclosed late last week. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Carbonato Botnet Puts an AI Agent on Hacked Docker Hosts",
+   "url": "https://www.darkreading.com/identity-access-management-security/carbonato-botnet-ai-agent-hacked-docker-hosts",
+   "published": "2026-09-28T20:23:58+00:00",
+   "summary": "The botnet uses the open source Hermes Agent AI framework to execute commands via Telegram and steal AI API keys from exposed Docker hosts."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Dutch police confirm arrest in ShinyHunters hacking investigation",
+   "url": "https://www.bleepingcomputer.com/news/security/dutch-police-confirm-arrest-in-shinyhunters-hacking-investigation/",
+   "published": "2026-09-28T19:49:10+00:00",
+   "summary": "Dutch police have confirmed that a 24-year-old Amsterdam man arrested earlier this month was detained as part of an investigation into the ShinyHunters hacking group. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Apple Patches CoreGraphics Flaw Possibly Exploited in Targeted Attacks",
+   "url": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html",
+   "published": "2026-09-28T19:18:01+00:00",
+   "summary": "Apple has released security updates to address a vulnerability in older versions of iOS, iPadOS, and macOS that it said may have been exploited in targeted attacks. The vulnerability, tracked as CVE-2026-86950, refers to an out-of-bounds write impacting the CoreGraphics component that could lead to arbitrary code execution when processing a maliciously crafted file. The iPhone maker said the"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Over 16,000 Supabase databases expose PII, passwords, auth tokens",
    "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
    "published": "2026-09-28T18:50:59+00:00",
    "summary": "Researchers found more than 16,000 misconfigured Supabase databases exposing readable tables with personally identifiable information, passwords, or authentication tokens. [...]"
@@ -84,6 +420,13 @@
    "url": "https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access",
    "published": "2026-09-28T18:44:22+00:00",
    "summary": "Enterprises regularly rigorously monitor human employees, while autonomous AI agents quietly operate with broad privileges that could turn them into the next generation of insider threats."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Hackers Use NeedyMantis to Maintain Long-Term Access in Breached Networks",
+   "url": "https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html",
+   "published": "2026-09-28T18:35:42+00:00",
+   "summary": "Hackers have used a malware family called NeedyMantis to maintain long-term access to networks they had already breached, Microsoft said in a technical analysis. The malware has been seen in a small number of targeted intrusions at telecommunications organizations, universities, medical nonprofits, intergovernmental organizations, and government contractors. Its use goes back to at least"
   },
   {
    "source": "CyberScoop",
@@ -98,230 +441,6 @@
    "url": "https://thehackernews.com/2026/09/iam-for-ai-agent.html",
    "published": "2026-09-28T18:20:38+00:00",
    "summary": "What is IAM for AI agents? AI agents authenticate, invoke tools, and act across enterprise systems with delegated authority. IAM for AI Agents is the identity-control architecture that governs those actors. This guide covers the limits of conventional provisioning, the components that matter, how to evaluate framework choices, and what runtime evidence proves an agent behaved as intended."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Bitget Says Attacker Exploited Third-Party Security Product Flaw to Steal $388M",
-   "url": "https://thehackernews.com/2026/09/bitget-says-attacker-exploited-third.html",
-   "published": "2026-09-28T17:42:18+00:00",
-   "summary": "The attacker who stole about $388 million from the cryptocurrency exchange Bitget gained access through a vulnerability in a third-party security product the exchange used, Bitget said on Monday. The attacker exploited the flaw to obtain high-level internal credentials and then, on September 24, used them to send fraudulent withdrawal commands to Bitget's wallet system. Exchanges keep most"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "RatHat Android Malware Console Uses Gemini to Identify Higher-Value Victims",
-   "url": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
-   "published": "2026-09-28T17:38:33+00:00",
-   "summary": "RatHat's operators build and publish the Android banking trojan and control infected phones from a web console, according to security company Cleafy. Cleafy has traced nearly 100 deployments of that console since April 2026. It said this fits a malware-as-a-service model, in which each customer runs a separate copy. The console stores what the malware collects from each phone,"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Modulate Raises $25 Million to Advance Deepfake Detection",
-   "url": "https://www.securityweek.com/modulate-raises-25-million-to-advance-deepfake-detection/",
-   "published": "2026-09-28T17:30:00+00:00",
-   "summary": "The misuse and abuse of AI-generated voice is growing. Modulate’s intention is to allow real time detection and intervention. The post Modulate Raises $25 Million to Advance Deepfake Detection appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Chrome Store Hosts 'Poper Blocker' Spyware Downloaded by Millions",
-   "url": "https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions",
-   "published": "2026-09-28T16:51:25+00:00",
-   "summary": "A purported ad-blocker exfiltrates reams of sensitive information and benefits from having Google's stamp of approval despite researcher warnings."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "JadePuffer agentic AI attacks target Azure, destroy cloud resources",
-   "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/",
-   "published": "2026-09-28T15:49:27+00:00",
-   "summary": "The JadePuffer ransomware operator is targeting Azure tenants with agent-driven attacks that conduct reconnaissance, steal credentials, and destroy core components. [...]"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Kiteworks lifts advisory after precautionary warning for customers to shut down systems",
-   "url": "https://www.cybersecuritydive.com/news/kiteworks-lifts-advisory-warning-shut-zero-day/831508/",
-   "published": "2026-09-28T15:46:24+00:00",
-   "summary": "The firm had received information from law enforcement of a possible attack."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack",
-   "url": "https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack",
-   "published": "2026-09-28T15:33:21+00:00",
-   "summary": "The agentic threat actor may have used exposed credentials to access resources and delete cloud-based storage, applications, and databases."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Citrix urges immediate upgrades of NetScaler amid widespread exploitation attempts",
-   "url": "https://www.cybersecuritydive.com/news/citrix-upgrades-netscaler-exploitation/831502/",
-   "published": "2026-09-28T15:20:27+00:00",
-   "summary": "Security teams received urgent calls to disconnect servers before authorities confirmed critical zero-day flaws."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Call for Presentations Open for 2026 CISO Forum Virtual Summit",
-   "url": "https://www.securityweek.com/call-for-presentations-open-for-2026-ciso-forum-virtual-summit/",
-   "published": "2026-09-28T15:15:00+00:00",
-   "summary": "SecurityWeek seeks original, vendor-neutral presentations that help cybersecurity leaders navigate emerging threats, strengthen resilience, and address the strategic challenges facing today’s enterprise security programs. The post Call for Presentations Open for 2026 CISO Forum Virtual Summit appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Niche AI tools pose major cybersecurity risk to infrastructure operators",
-   "url": "https://www.cybersecuritydive.com/news/ai-apps-niche-cybersecurity-risk-trendai/831486/",
-   "published": "2026-09-28T15:14:00+00:00",
-   "summary": "Security vetting tools and processes weren't designed with obscure AI services in mind, according to TrendAI."
-  },
-  {
-   "source": "Krebs on Security",
-   "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
-   "url": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
-   "published": "2026-09-28T15:08:57+00:00",
-   "summary": "Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attacks, stealing highly sensitive data from the FBI and extorting the Russian ransomware group Cl0p."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "ShinyHunters trades financial extortion for a reckless war of ego with the FBI",
-   "url": "https://cyberscoop.com/fbi-data-breach-shinyhunters-agent-safety-risk/",
-   "published": "2026-09-28T14:47:10+00:00",
-   "summary": "Cybercrime experts are stunned as ShinyHunters risks agent safety and intense federal heat in a bizarre attempt to force the retraction of an agency advisory. The post ShinyHunters trades financial extortion for a reckless war of ego with the FBI appeared first on CyberScoop ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "⚡ Weekly Recap: $387M Crypto Hack, Citrix Exploits, AI Agents Go Off-Script, and More Threats",
-   "url": "https://thehackernews.com/2026/09/weekly-recap-387m-crypto-hack-citrix.html",
-   "published": "2026-09-28T14:00:53+00:00",
-   "summary": "A domain used as harmless placeholder text showed up in roughly 1,700 repositories. Then somebody registered it and started serving malicious lures. That is the kind of week this was: forgotten assumptions turning into live attack surface. Elsewhere, weak service accounts, old bugs, exposed systems, phishing kits, and strangely easy exploit paths kept doing useful work for attackers. Nothing"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
-   "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
-   "published": "2026-09-28T14:00:10+00:00",
-   "summary": "Infostealer logs exposed AI account credentials and sessions tied to more than 80,000 corporate domains, creating risks ranging from stolen conversations to LLMjacking. SOCRadar examines the growing market for stolen AI logins and how organizations can identify their exposure. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Prison Sentence for Former US Soldier Who Hacked AT&T and Verizon",
-   "url": "https://www.securityweek.com/prison-sentence-for-former-us-soldier-who-hacked-att-and-verizon/",
-   "published": "2026-09-28T12:36:16+00:00",
-   "summary": "Cameron John Wagenius was sentenced to 70 months in prison for stealing information from the wireless carriers. The post Prison Sentence for Former US Soldier Who Hacked AT T and Verizon appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Webinar: How to Govern AI Agents, Reduce Excessive Access, and Control Shadow AI",
-   "url": "https://thehackernews.com/2026/09/webinar-how-to-govern-ai-agents-reduce.html",
-   "published": "2026-09-28T11:58:00+00:00",
-   "summary": "AI agents are moving into production faster than security teams can govern them. They are connecting to apps, handling data, calling APIs, and acting across business systems—often without the same controls applied to human users. According to Okta’s Global CISO Insights 2026 report, only 47% of CISOs are confident they can identify every AI agent in their environment. Even among those who feel"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Carbonato Botnet Compromises Docker Hosts to Deploy Telegram-Controlled Hermes AI Agent",
-   "url": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html",
-   "published": "2026-09-28T11:46:00+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a new botnet malware called Carbonato that's targeting exposed Docker daemons to deploy an open-source artificial intelligence (AI) agent framework called Hermes Agent. \"The implant installs the framework unchanged, then overwrites its SOUL.md persona file,\" ThreatDown said. \"The 39-line prompt directs it to execute tasks received through"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "DC Health Agency Exposes 400,000 Beneficiary Records",
-   "url": "https://www.securityweek.com/dc-health-agency-exposes-400000-beneficiary-records/",
-   "published": "2026-09-28T11:29:29+00:00",
-   "summary": "The Medicaid IDs and other information of Medicaid and DC Healthcare Alliance beneficiaries were exposed. The post DC Health Agency Exposes 400,000 Beneficiary Records appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Google Warns of ShinyHunters’ Fresh Oracle PeopleSoft Campaign",
-   "url": "https://www.securityweek.com/google-warns-of-shinyhunters-fresh-oracle-peoplesoft-campaign/",
-   "published": "2026-09-28T10:56:46+00:00",
-   "summary": "The extortion group has modified its exploit in new attacks targeting the PeopleSoft vulnerability CVE-2026-35273. The post Google Warns of ShinyHunters' Fresh Oracle PeopleSoft Campaign appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "New Mexico Jury Finds Facebook Liable for Deceiving Users About Privacy Protections",
-   "url": "https://www.securityweek.com/new-mexico-jury-finds-facebook-liable-for-deceiving-users-about-privacy-protections/",
-   "published": "2026-09-28T10:40:01+00:00",
-   "summary": "A New Mexico jury has found Facebook liable for deceiving users about privacy protections on the platform. The post New Mexico Jury Finds Facebook Liable for Deceiving Users About Privacy Protections appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Nvidia Unveils AI Agent Safety Platform With Hardware-Based Watchdog",
-   "url": "https://www.securityweek.com/nvidia-unveils-ai-agent-safety-platform-with-hardware-based-watchdog/",
-   "published": "2026-09-28T10:27:01+00:00",
-   "summary": "The platform combines open source software and a reference system design to keep AI agents within set boundaries. The post Nvidia Unveils AI Agent Safety Platform With Hardware-Based Watchdog appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Kiteworks Urges Server Shutdown, Finds Advanced Forms Vulnerability",
-   "url": "https://www.securityweek.com/kiteworks-urges-server-shutdown-finds-advanced-forms-vulnerability/",
-   "published": "2026-09-28T09:44:27+00:00",
-   "summary": "The company says the measure was precautionary and that it has no evidence of Kiteworks or customer systems being compromised. The post Kiteworks Urges Server Shutdown, Finds Advanced Forms Vulnerability appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Bitget resumes Bitcoin withdrawals after $387.5 million crypto heist",
-   "url": "https://www.bleepingcomputer.com/news/security/bitget-resumes-bitcoin-withdrawals-after-3875-million-crypto-heist/",
-   "published": "2026-09-28T09:25:29+00:00",
-   "summary": "Cryptocurrency exchange Bitget has resumed Bitcoin withdrawals suspended after suspected North Korean hackers breached its systems last week and stole over $350 million. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "JADEPUFFER-Linked Attackers Used Compromised Service Principals to Delete Azure Resources",
-   "url": "https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html",
-   "published": "2026-09-28T09:08:21+00:00",
-   "summary": "The threat actor known as JADEPUFFER has been observed orchestrating destructive actions within a Microsoft Azure environment using compromised service principals. Microsoft, which is tracking the activity under the name Storm-3168, has called it an evolution of the threat actor's tradecraft. The attack took place in early June 2026 over a period of about 18 hours. \"The destructive operations"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Context matters when it comes to cybersecurity’s agentic operating model",
-   "url": "https://www.cybersecuritydive.com/spons/context-matters-when-it-comes-to-cybersecuritys-agentic-operating-model/830973/",
-   "published": "2026-09-28T09:00:00+00:00",
-   "summary": "AI agents need context-aware security beyond traditional models. Workflow data provides the governance guardrails that make AI safe and scalable."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Security testing has to keep pace with AI-driven attackers",
-   "url": "https://www.cybersecuritydive.com/spons/security-testing-has-to-keep-pace-with-ai-driven-attackers/830603/",
-   "published": "2026-09-28T09:00:00+00:00",
-   "summary": "AI attackers move at machine speed. Security validation needs to follow every meaningful change."
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "Your attack surface is bigger than you think… and hackers know that",
-   "url": "https://www.cybersecuritydive.com/spons/your-attack-surface-is-bigger-than-you-think-and-hackers-know-that/830809/",
-   "published": "2026-09-28T09:00:00+00:00",
-   "summary": "Cyberattacks are exploiting trusted access points like compromised credentials and session cookies. Discover how organizations are gaining visibility beyond their perimeter to stay ahead of threats."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "US soldier gets 70 months in prison for extorting 10 tech, telecom firms",
-   "url": "https://www.bleepingcomputer.com/news/security/us-soldier-gets-70-months-in-prison-for-extorting-10-tech-telecom-firms/",
-   "published": "2026-09-28T07:30:15+00:00",
-   "summary": "A former U.S. Army soldier has been sentenced to 70 months in prison for hacking and extorting at least 10 U.S. technology and telecommunications companies between April 2023 and December 2024. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Citrix Confirms 2 NetScaler Zero-Days After Admins Pulled the Plug",
-   "url": "https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/",
-   "published": "2026-09-28T07:29:51+00:00",
-   "summary": "Citrix has released patches for the critical NetScaler vulnerabilities tracked as CVE-2026-88771 and CVE-2026-88772. The post Citrix Confirms 2 NetScaler Zero-Days After Admins Pulled the Plug appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally",
-   "url": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
-   "published": "2026-09-28T07:21:49+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Sunday added two critical Citrix NetScaler ADC and Gateway flaws to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerabilities are listed below - CVE-2026-88771 (CVSS score: 9.5) - An improper input validation vulnerability that could allow an unauthenticated attacker to"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "CISA orders feds to patch exploited Citrix flaws by Wednesday",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/",
-   "published": "2026-09-28T06:24:19+00:00",
-   "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) has ordered U.S. government agencies over the weekend to secure their systems against attacks exploiting two critical Citrix NetScaler vulnerabilities. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "OpenAI is preparing “o,” an always-on ChatGPT assistant that could handle email",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-preparing-o-an-always-on-chatgpt-assistant-that-could-handle-email/",
-   "published": "2026-09-27T23:40:39+00:00",
-   "summary": "OpenAI is testing a new always-on assistant called \"o\", and references to the unannounced feature briefly showed up on the company's website. [...]"
   }
  ]
 }
