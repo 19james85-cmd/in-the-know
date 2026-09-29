@@ -1,0 +1,285 @@
+{
+ "leadStory": {
+  "headline": "CISA confirms global exploitation of two Citrix NetScaler zero-days as federal patch deadline hits Sept 30",
+  "source": "The Hacker News",
+  "sourceUrl": "https://thehackernews.com/",
+  "url": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
+  "tags": [
+   {
+    "label": "Actively exploited",
+    "type": "d"
+   },
+   {
+    "label": "CVSS 9.5",
+    "type": "d"
+   },
+   {
+    "label": "Zero-Day RCE",
+    "type": "d"
+   },
+   {
+    "label": "KEV",
+    "type": "a"
+   }
+  ],
+  "body": "CISA says attackers are now exploiting two critical Citrix NetScaler flaws — CVE-2026-88771 and CVE-2026-88772, both rated CVSS 9.5 — globally, after Citrix confirmed them as zero-days and shipped fixed builds on September 27 (bulletin CTX697096). A zero-day is a flaw attackers are already abusing before the vendor has a patch out; both are remote code execution (RCE) bugs, meaning an attacker can run their own commands on the appliance over the network without logging in. GreyNoise traced the earliest exploitation to September 24, and Palo Alto Networks Unit 42 counted more than 50,000 internet-exposed NetScaler instances still potentially vulnerable as of September 27. CISA added both to its Known Exploited Vulnerabilities (KEV) catalog and gave U.S. federal civilian agencies until September 30 to patch.",
+  "beginnerTip": "NetScaler ADC and Gateway are appliances that sit at the edge of a network to broker remote access, so a break-in there hands attackers a foothold into everything behind them. Because these were exploited before a fix existed, patching alone isn't enough — admins should assume a device may already be compromised and hunt for <strong>webshells</strong> (hidden backdoor scripts) left behind."
+ },
+ "cves": [
+  {
+   "headline": "Kiteworks lifts emergency shutdown advisory after patching severe Advanced Forms flaw",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/kiteworks-urges-server-shutdown-finds-advanced-forms-vulnerability/",
+   "tags": [
+    {
+     "label": "Zero-Day",
+     "type": "w"
+    },
+    {
+     "label": "Patch available",
+     "type": "g"
+    }
+   ],
+   "body": "Secure file-transfer vendor Kiteworks (formerly Accellion) took the unusual step of telling customers to physically power down affected servers for several hours over the weekend of September 26 after receiving credible threat intelligence from federal authorities about an imminent attack. The company then identified a severe vulnerability in its Advanced Forms product, which it says affects fewer than 1% of customers, and released version 9.5.1 to fix all known issues. Kiteworks lifted the shutdown advisory on September 27 and says it has found no evidence that any systems were actually compromised.",
+   "beginnerTip": "Kiteworks' predecessor Accellion was at the center of a massive 2021 breach wave, so vendors in this space treat file-transfer flaws as high-stakes. A precautionary <strong>shutdown advisory</strong> — telling customers to turn systems off rather than wait for a patch — is rare and signals the vendor believed active exploitation was hours away."
+  },
+  {
+   "headline": "Over 16,000 misconfigured Supabase databases found exposing passwords and personal data",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
+   "tags": [
+    {
+     "label": "Misconfiguration",
+     "type": "w"
+    },
+    {
+     "label": "Data exposure",
+     "type": "d"
+    }
+   ],
+   "body": "Security firm UpGuard found 16,326 Supabase databases with publicly readable tables, more than half showing signs of personally identifiable information (PII) and some containing plaintext passwords, authentication tokens, and even credit card data. The root cause was missing or ineffective Row-Level Security (RLS) policies — the database rule that decides which rows each user is allowed to see — combined with misused public keys. UpGuard links much of the pattern to apps built quickly by AI coding agents, where developers never realized their database was left open to the world.",
+   "beginnerTip": "Supabase is a popular backend that gives apps an instant cloud database. This is a <strong>misconfiguration</strong>, not a software bug: the platform ships secure defaults, but developers turned protections off (or never turned them on), leaving anyone who found the address able to read the data directly."
+  },
+  {
+   "headline": "Google warns ShinyHunters is bypassing WAF rules in fresh Oracle PeopleSoft campaign",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/google-warns-of-shinyhunters-fresh-oracle-peoplesoft-campaign/",
+   "tags": [
+    {
+     "label": "Actively exploited",
+     "type": "d"
+    },
+    {
+     "label": "WAF bypass",
+     "type": "w"
+    }
+   ],
+   "body": "Google's threat intelligence team warns that the ShinyHunters extortion crew is exploiting CVE-2026-35273 in Oracle PeopleSoft, the widely used HR, payroll and benefits platform. The attackers use a URL-encoding trick to slip past web application firewall (WAF) rules — the filtering layer that is supposed to block malicious web requests — that were meant to mitigate the flaw. Because PeopleSoft holds sensitive employee records for large organizations, a successful breach exposes payroll and personal data at scale.",
+   "beginnerTip": "A <strong>WAF</strong> (web application firewall) inspects incoming web traffic and blocks requests that match known attack patterns. Encoding a payload (rewriting the same characters in an alternate form) is a classic way to disguise it so the filter waves it through — which is why patching the underlying flaw matters more than relying on a WAF rule."
+  }
+ ],
+ "threatActors": [
+  {
+   "headline": "Bitget blames third-party product flaw for $388M heist; pattern points to Lazarus Group",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/09/bitget-says-attacker-exploited-third.html",
+   "tags": [
+    {
+     "label": "Crypto theft",
+     "type": "d"
+    },
+    {
+     "label": "Supply chain",
+     "type": "w"
+    }
+   ],
+   "body": "Crypto exchange Bitget says an attacker exploited a vulnerability in a third-party security product to obtain high-level internal credentials, then on September 24 used them to push fraudulent withdrawal commands and drain about $388 million from its hot and warm wallets. The attacker first ran two small test transfers below Bitget's risk-control threshold, waited, then moved the large sums while disguising the activity as routine admin work. Cold wallets and private keys were unaffected, and Bitget says its $464 million User Protection Fund will cover the entire loss; the laundering pattern and reused wallet infrastructure have led analysts to attribute the theft to North Korea's Lazarus Group.",
+   "beginnerTip": "Exchanges keep funds in 'hot' wallets (connected to the internet for fast withdrawals) and 'cold' wallets (kept offline for safety). This was a <strong>supply chain</strong> attack — the weak link wasn't Bitget's own code but a security tool it trusted, a reminder that your defenses are only as strong as the vendors you rely on."
+  },
+  {
+   "headline": "Dutch police arrest 'reformed' hacker as ShinyHunters escalates into reckless FBI feud",
+   "source": "Krebs on Security",
+   "sourceUrl": "https://krebsonsecurity.com/",
+   "url": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+   "tags": [
+    {
+     "label": "Extortion",
+     "type": "d"
+    },
+    {
+     "label": "Arrest",
+     "type": "g"
+    }
+   ],
+   "body": "Dutch police arrested 24-year-old Amsterdam resident Pepijn van der Stap — previously caught and 'reformed' after a 2023 case — in the ongoing ShinyHunters investigation, with a Rotterdam court appearance set for September 29. Rather than deter the group, the arrest appears to have provoked its remaining members, who escalated to compromising the FBI's job-application site and stealing data on more than 5,000 federal officials. ShinyHunters is a data-theft and extortion crew that steals corporate databases and then threatens to leak or sell them unless paid.",
+   "beginnerTip": "<strong>Extortion</strong> groups like ShinyHunters make money by stealing data and demanding payment to keep it private — increasingly without even bothering to encrypt anything. This case shows arrests of individual members rarely dismantle a loose crew, and can even trigger retaliation."
+  },
+  {
+   "headline": "Microsoft ties 'JadePuffer' AI actor to 7-minute destruction of a victim's Azure tenant",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/",
+   "url": "https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html",
+   "tags": [
+    {
+     "label": "Agentic AI",
+     "type": "d"
+    },
+    {
+     "label": "Cloud",
+     "type": "w"
+    }
+   ],
+   "body": "Microsoft (which tracks the actor as Storm-3168) detailed how JadePuffer-linked attackers used two compromised service principals — the non-human identities apps and automation use to log into Azure — to spend over 15 hours quietly mapping a victim's cloud, then wipe it in about seven minutes. The destructive burst hit more than 100 storage accounts plus Key Vaults, Function Apps and virtual machines, and even removed backup and recovery locks to make restoration harder. JadePuffer, first documented by Sysdig, is described as the first ransomware operation run end-to-end with the help of a large language model (LLM).",
+   "beginnerTip": "A <strong>service principal</strong> is like a login account for software rather than a person; because these run automatically, a stolen one lets an attacker act at machine speed and volume. Guarding non-human identities — and keeping backups that attackers can't reach or delete — is now as important as protecting employee passwords."
+  }
+ ],
+ "regulatory": [
+  {
+   "headline": "New Mexico jury finds Facebook liable for 43M+ consumer-protection violations over privacy deception",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/new-mexico-jury-finds-facebook-liable-for-deceiving-users-about-privacy-protections/",
+   "tags": [
+    {
+     "label": "Litigation",
+     "type": "a"
+    },
+    {
+     "label": "Privacy",
+     "type": "a"
+    }
+   ],
+   "body": "A Santa Fe jury found Meta's Facebook liable for deceiving users about privacy protections, tallying more than 43 million violations of New Mexico's consumer-protection law after a two-week trial centered on the Cambridge Analytica scandal, in which a third-party quiz harvested data from roughly 87 million profiles. State attorneys are seeking the maximum $5,000 penalty per violation, which could theoretically exceed $200 billion; a judge will decide the actual penalty at an October 1 hearing. Jurors sided with the defense on one count, finding the state hadn't proven Facebook made false claims about removing harmful content.",
+   "beginnerTip": "This is a civil liability verdict, not a criminal case — the jury decided the company broke consumer-protection rules, and a judge now sets the financial penalty. The theoretical maximum here dwarfs any realistic figure, but it signals how costly <strong>privacy</strong> misrepresentation can become under state law."
+  },
+  {
+   "headline": "DC health agency exposed ~400,000 Medicaid beneficiaries' data through hidden report fields",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/dc-health-agency-exposes-400000-beneficiary-records/",
+   "tags": [
+    {
+     "label": "Data exposure",
+     "type": "w"
+    },
+    {
+     "label": "Healthcare",
+     "type": "a"
+    }
+   ],
+   "body": "The DC Department of Health Care Finance disclosed that two public reports on its website contained hidden underlying personal data on nearly 400,000 Medicaid and DC Healthcare Alliance beneficiaries enrolled between 2023 and 2026. Exposed fields included Medicaid IDs, dates of birth, race, gender, ethnicity and ward, but not Social Security numbers, names, or financial data. This was an accidental data exposure rather than a hack; the agency removed the reports on discovery in July and notified affected individuals and the U.S. Department of Health and Human Services.",
+   "beginnerTip": "A <strong>data exposure</strong> is when sensitive information is left accessible by mistake, versus a breach where an attacker actively breaks in. Summary reports can leak the detailed records behind them if the underlying data is embedded in the file rather than stripped out — a common and easily overlooked oversight."
+  },
+  {
+   "headline": "Former US soldier 'Kiberphant0m' gets 70 months for AT&T, Verizon and Snowflake extortions",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/prison-sentence-for-former-us-soldier-who-hacked-att-and-verizon/",
+   "tags": [
+    {
+     "label": "Enforcement",
+     "type": "g"
+    },
+    {
+     "label": "Sentencing",
+     "type": "a"
+    }
+   ],
+   "body": "Cameron John Wagenius, a 22-year-old former US Army soldier who used the handle 'Kiberphant0m,' was sentenced to 70 months in federal prison and ordered to pay nearly $300,000 in restitution for hacking at least 10 telecom and tech firms. Working with co-conspirators, he pulled data from Snowflake customers that had exposed credentials and no multi-factor authentication (MFA), including call and text metadata for over 100 million AT&T customers, then extorted the victims. The 2024 Snowflake campaign was one of the year's largest data-theft sprees; two alleged accomplices still face charges.",
+   "beginnerTip": "The Snowflake thefts succeeded because victims reused stolen passwords and hadn't enabled <strong>multi-factor authentication (MFA)</strong> — the second login step (like a code from your phone) that would have blocked attackers even with a valid password. This sentence shows that even skilled, distributed crews eventually face prosecution."
+  }
+ ],
+ "trends": [
+  {
+   "headline": "Report: 80,000+ organizations had employee AI logins stolen, fueling 'LLMjacking'",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
+   "tags": [
+    {
+     "label": "AI security",
+     "type": "a"
+    },
+    {
+     "label": "Credential theft",
+     "type": "w"
+    }
+   ],
+   "body": "A SOCRadar report found infostealer malware logs exposing AI-service credentials and sessions tied to more than 80,000 corporate domains, with captured ChatGPT/OpenAI sessions appearing for about 74% of the major enterprises studied. Researchers argue stolen AI sessions are more dangerous than stolen passwords because they bundle conversation history, replayable session cookies that bypass MFA, standing OAuth grants for automation, and billable API keys that get resold or abused — a practice known as LLMjacking, where criminals run up charges on someone else's AI account. Much of this stems from 'shadow AI,' employees using AI tools outside IT's visibility.",
+   "beginnerTip": "An <strong>infostealer</strong> is malware that quietly scrapes saved passwords, cookies and tokens off an infected PC. Because a live session token lets an attacker skip the login entirely, revoking sessions and rotating API keys after any infection matters as much as changing the password."
+  },
+  {
+   "headline": "Nvidia unveils AI agent safety platform with a hardware-based watchdog",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com/",
+   "url": "https://www.securityweek.com/nvidia-unveils-ai-agent-safety-platform-with-hardware-based-watchdog/",
+   "tags": [
+    {
+     "label": "AI security",
+     "type": "a"
+    },
+    {
+     "label": "Defense",
+     "type": "g"
+    }
+   ],
+   "body": "Nvidia introduced a platform aimed at securing autonomous AI agents, including a hardware-based watchdog designed to monitor and constrain what agents are allowed to do. The move responds to a fast-growing worry — underscored by this week's JadePuffer Azure attack — that AI agents act with real privileges and can cause damage at machine speed if hijacked or misbehaving. Vendors are racing to add guardrails, auditing and kill-switches around agentic systems before they become a standard part of enterprise infrastructure.",
+   "beginnerTip": "As companies hand AI agents the ability to take actions (not just answer questions), those agents effectively become powerful users that need their own security controls. A <strong>watchdog</strong> is a monitoring component that watches for unsafe behavior and can halt it — here, enforced in hardware so a compromised agent can't simply switch it off."
+  },
+  {
+   "headline": "AI agents are becoming privileged users — and almost no one is auditing their access",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com/",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access",
+   "tags": [
+    {
+     "label": "AI security",
+     "type": "a"
+    },
+    {
+     "label": "Identity",
+     "type": "a"
+    }
+   ],
+   "body": "A growing theme across the industry this week: AI agents increasingly hold the same standing access as privileged human accounts — reading data, calling APIs and taking actions — yet most organizations have no process to review or audit what those agents can reach. Security leaders are pushing to extend identity and access management (IAM), the discipline of controlling who (and now what) can access which systems, to cover non-human identities. Nvidia's new agent-safety platform and the JadePuffer cloud attack are two sides of the same shift.",
+   "beginnerTip": "<strong>IAM</strong> (identity and access management) is the practice of giving each user only the access they truly need and reviewing it regularly. The new challenge is that 'users' now include software agents and service accounts, which often accumulate broad permissions that nobody revisits."
+  }
+ ],
+ "quickHits": [
+  {
+   "color": "danger",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/",
+   "text": "CISA ordered federal agencies to patch the two exploited Citrix NetScaler flaws (CVE-2026-88771, CVE-2026-88772) by September 30 — treat any internet-facing appliance as a priority."
+  },
+  {
+   "color": "warn",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions",
+   "text": "A Chrome Web Store extension, 'Poper Blocker,' was caught acting as spyware after being downloaded by millions of users."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
+   "text": "New 'RatHat' Android malware uses Google's Gemini AI to sift through stolen data and flag higher-value victims for its operators."
+  },
+  {
+   "color": "warn",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html",
+   "text": "The 'Carbonato' botnet is compromising exposed Docker hosts to deploy a Telegram-controlled AI agent called Hermes."
+  },
+  {
+   "color": "ok",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitget-resumes-bitcoin-withdrawals-after-3875-million-crypto-heist/",
+   "text": "Bitget resumed Bitcoin withdrawals after the $387.5M heist, saying its User Protection Fund will cover all affected users."
+  }
+ ],
+ "analystFooter": "Patch internet-facing Citrix NetScaler today and hunt for webshells — assume compromise, not just exposure, ahead of the September 30 federal deadline. Then confirm Kiteworks Advanced Forms is on 9.5.1 and Oracle PeopleSoft is patched against CVE-2026-35273, and review who — and what non-human identities — can reach your cloud and AI accounts."
+}

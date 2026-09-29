@@ -642,6 +642,12 @@
   "e": "In August 2026, the TWINLOOT Python implant hid all of its command-and-control traffic inside trusted Microsoft SharePoint and Teams, a textbook living-off-the-land technique."
  },
  {
+  "t": "LLMjacking",
+  "c": "Threat/Actor",
+  "d": "LLMjacking is when attackers use stolen AI-service credentials or API keys to run their own AI workloads on someone else’s account, sticking the victim with the bill. It turns a hijacked AI login into a resource that criminals resell or abuse.",
+  "e": "In September 2026, a SOCRadar report tied stolen AI logins across 80,000+ organizations to LLMjacking, where crooks racked up charges on victims’ ChatGPT and API accounts."
+ },
+ {
   "t": "Load Balancer",
   "c": "Network",
   "d": "A load balancer is a device or service that spreads incoming network traffic across multiple servers so no single server gets overwhelmed. Because it sits at the network edge and inspects traffic, a flaw in one can hand attackers a foothold into the network.",
@@ -972,6 +978,12 @@
   "e": "In August 2026, North Korean hackers exploited a Windows WinSock zero-day (CVE-2026-68820) to install a kernel-mode rootkit for persistent SYSTEM-level control."
  },
  {
+  "t": "Row-Level Security",
+  "c": "General",
+  "d": "Row-Level Security (RLS) is a database rule that controls which individual rows each user is allowed to see or change, so people only access their own records. If it is missing or misconfigured, anyone who reaches the database can read everyone’s data.",
+  "e": "In September 2026, researchers found 16,326 Supabase databases exposing personal data because Row-Level Security policies were missing or ineffective."
+ },
+ {
   "t": "Sandbox",
   "c": "General",
   "d": "A restricted environment where untrusted code is allowed to run but is walled off from the rest of the system.",
@@ -1018,6 +1030,12 @@
   "c": "Vulnerability",
   "d": "A flaw that tricks a server into making network requests chosen by the attacker. Because the request comes from the trusted server, it can reach internal systems the attacker could never contact directly.",
   "e": "In July 2026, CVE-2026-15409 in SonicWall SMA1000 appliances — rated CVSS 10.0 — let unauthenticated attackers force the appliance to send requests to unintended internal locations."
+ },
+ {
+  "t": "Service Principal",
+  "c": "Network",
+  "d": "A service principal is a login identity for software — an app, script, or automation — rather than a human, used so programs can authenticate to cloud services like Azure. Because they run automatically, a stolen service principal lets an attacker act at machine speed.",
+  "e": "In the September 2026 JadePuffer attack, intruders used two compromised Azure service principals to map a victim’s cloud and then delete over 100 storage accounts in about seven minutes."
  },
  {
   "t": "Session Cookie",
