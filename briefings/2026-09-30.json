@@ -1,12 +1,12 @@
 {
  "leadStory": {
-  "headline": "Attackers get root on Citrix NetScaler via CVE-2026-88772, deploy WHIPSHOT and SLAPSHOT malware across US and Europe",
-  "source": "The Hacker News",
-  "sourceUrl": "https://thehackernews.com/",
-  "url": "https://thehackernews.com/2026/09/attackers-exploit-netscaler-flaw-for.html",
+  "headline": "Suspected state-linked hackers mass-exploit critical Citrix NetScaler zero-days; CISA adds them to KEV",
+  "source": "Cybersecurity Dive",
+  "sourceUrl": "https://www.cybersecuritydive.com",
+  "url": "https://www.cybersecuritydive.com/news/exploitation-citrix-netscaler-what-we-know/831780/",
   "tags": [
    {
-    "label": "Actively exploited",
+    "label": "CVE-2026-88772",
     "type": "d"
    },
    {
@@ -14,66 +14,92 @@
     "type": "d"
    },
    {
-    "label": "Pre-auth RCE",
+    "label": "Actively Exploited",
     "type": "d"
    },
    {
-    "label": "KEV",
-    "type": "a"
+    "label": "CISA KEV",
+    "type": "d"
    }
   ],
-  "body": "Mandiant Consulting and Google Threat Intelligence Group say unknown attackers have been exploiting CVE-2026-88772 (CVSS 9.5), a memory-overflow bug in NetScaler ADC and Gateway's DTLS handling, to gain root access to appliances at government, financial, technology, education, and legal organizations across North America and Europe. Newly published exploit details show the flaw gives a pre-auth path to shellcode execution — running attacker code with no login — and Cybersecurity Dive reports the campaign, tied to suspected state-linked actors, went undetected for weeks before disclosure. Once in, the attackers dropped two custom malware families, dubbed WHIPSHOT and SLAPSHOT, to keep control of compromised devices. Citrix has shipped fixed builds and the flaw is on CISA's KEV catalog.",
-  "beginnerTip": "NetScaler appliances sit at the network edge to broker remote access, so root access on one lets attackers reach everything behind it. Because this was exploited before defenders knew, patching alone isn't enough — admins should hunt for the <strong>WHIPSHOT</strong> and SLAPSHOT malware and any leftover backdoors, and treat exposed devices as possibly already breached."
+  "body": "Two critical flaws in Citrix NetScaler ADC and Gateway — CVE-2026-88772 (CVSS 9.5) and the related CVE-2026-88771 — are under mass exploitation in the wild, and CISA has added them to its Known Exploited Vulnerabilities (KEV) catalog. CVE-2026-88772 is a pre-authentication memory buffer overflow in the NetScaler packet-processing engine's DTLS handling, meaning an attacker needs no login to trigger it; watchTowr Labs has published proof-of-concept code. Mandiant says suspected state-sponsored actors exploited the bug undetected for roughly three weeks, hitting government and financial organizations across North America and Europe, deploying custom web shells (tracked as WHIPSHOT and SLAPSHOT), gaining root access, stealing credentials, and tunneling into internal networks. Because NetScaler appliances sit at the network edge, a single unpatched device can hand attackers a foothold into the whole organization.",
+  "beginnerTip": "A <strong>web shell</strong> is a small malicious script an attacker plants on a hacked server so they can keep sending it commands through an ordinary web request — like a hidden back door built into the website itself. Edge devices such as VPN gateways are prime targets because they face the internet and often aren't patched quickly."
  },
  "cves": [
   {
-   "headline": "Cisco warns of actively exploited SD-WAN Manager auth-bypass zero-day (CVE-2026-76504)",
-   "source": "The Hacker News",
-   "sourceUrl": "https://thehackernews.com/",
-   "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+   "headline": "Cisco warns of actively exploited authentication-bypass zero-day in Catalyst SD-WAN Manager",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
    "tags": [
+    {
+     "label": "CVE-2026-76504",
+     "type": "d"
+    },
     {
      "label": "Zero-Day",
      "type": "d"
     },
     {
-     "label": "Authentication Bypass",
+     "label": "Actively Exploited",
      "type": "d"
-    },
-    {
-     "label": "No workaround",
-     "type": "w"
     }
    ],
-   "body": "Cisco disclosed on September 30 that attackers are actively exploiting CVE-2026-76504, a critical authentication-bypass zero-day in Catalyst SD-WAN Manager — the console companies use to run their Cisco SD-WAN networks. The flaw lets a remote attacker with no credentials use the Manager's API as the admin user, and BleepingComputer reports it is being used to escalate to full administrative privileges. Fixed releases are available and Cisco says there is no workaround, so patching is the only fix.",
-   "beginnerTip": "An <strong>authentication bypass</strong> means the attacker skips the login check entirely rather than guessing a password. Because the SD-WAN Manager controls a whole fleet of network devices, admin access to it can translate into control over the entire network."
+   "body": "Cisco disclosed on September 30 that attackers are actively exploiting CVE-2026-76504, a critical authentication bypass in Catalyst SD-WAN Manager (formerly vManage), the console companies use to run their Cisco SD-WAN networks. The trick relies on percent-encoding: attackers send a crafted HTTP request where a character is written as %6a (the encoded form of 'j') so the request slips past the login check on the j_security_check function and reaches it with administrator privileges, no credentials required. Cisco has shipped fixed builds across the 20.9, 20.12, 20.15, 20.18, 26.1, and 26.2 trains and urges immediate patching; suspicious j_security_check entries from unknown IPs in the serviceproxy-access and vmanage-server logs are signs of compromise.",
+   "beginnerTip": "An <strong>authentication bypass</strong> is a flaw that lets someone skip the login step entirely and act as a trusted user. Management consoles like this one control large parts of a company's network, so getting admin access to one is close to owning everything it manages."
   },
   {
-   "headline": "CISA warns of critical pre-auth RCE flaw in MikroTik RouterOS",
+   "headline": "CISA warns of critical pre-auth RCE in MikroTik RouterOS",
    "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
+   "sourceUrl": "https://www.bleepingcomputer.com",
    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
    "tags": [
     {
-     "label": "Critical",
+     "label": "CVE-2026-84411",
      "type": "d"
     },
     {
-     "label": "Pre-auth RCE",
+     "label": "Pre-Auth RCE",
+     "type": "d"
+    },
+    {
+     "label": "CISA Warning",
+     "type": "a"
+    }
+   ],
+   "body": "CISA issued a September 30 alert about CVE-2026-84411, a critical pre-authentication flaw in the web-management service of MikroTik RouterOS, the operating system that runs on the company's widely deployed routers. The bug is an integer underflow in how the service handles the size of an incoming HTTP request body, and it is reachable before any login — a single crafted request can lead to arbitrary code execution as root or a denial-of-service crash. Versions before the fixes are affected; MikroTik shipped patched builds on September 16 (latest stable 7.24.4, latest long-term 7.23.7). No public exploitation had been observed at the time of the warning, but CISA recommends isolating the management interface behind a firewall or VPN and updating now.",
+   "beginnerTip": "An <strong>integer underflow</strong> happens when a program subtracts below the smallest number a value can hold, so it wraps around to a huge number instead — which can fool software into mishandling memory. 'Pre-authentication' means the attacker doesn't need a valid account first, which makes this kind of bug especially dangerous on an internet-facing device."
+  },
+  {
+   "headline": "Apple patches weaponized zero-day used in 'extremely sophisticated' targeted attacks",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
+   "tags": [
+    {
+     "label": "CVE-2026-86950",
+     "type": "d"
+    },
+    {
+     "label": "CVSS 8.8",
+     "type": "d"
+    },
+    {
+     "label": "Zero-Day",
      "type": "d"
     }
    ],
-   "body": "CISA is warning of a new critical vulnerability in MikroTik RouterOS, the operating system on MikroTik's widely deployed routers, that can lead to remote code execution or a denial-of-service condition. \"Pre-auth\" means an attacker needs no valid login to trigger it, so any RouterOS device reachable from the internet is at risk. MikroTik routers are popular with small businesses and home labs and have a long history of being roped into botnets, making prompt patching important.",
-   "beginnerTip": "<strong>Pre-authentication (pre-auth)</strong> flaws are among the most dangerous because the attacker doesn't need any account or password — just network access to the device. If you run a MikroTik router, make sure its admin interface isn't exposed to the public internet and apply the update."
+   "body": "Apple patched CVE-2026-86950 (CVSS 8.8), an out-of-bounds write flaw in its CoreGraphics image-rendering framework that it says is being exploited 'in an extremely sophisticated attack against specific targeted individuals.' The bug can lead to arbitrary code execution and affects a broad range of devices — iPhones back to the iPhone 11, many iPad models, and macOS Tahoe and Sequoia — with fixes delivered in the latest iOS (before iOS 27) and macOS updates. Apple credited Meta with reporting it and named no attacker, but the targeted, high-precision nature points researchers toward commercial spyware or nation-state operators, possibly using zero-click delivery that requires no action from the victim.",
+   "beginnerTip": "An <strong>out-of-bounds write</strong> means the program writes data past the edge of the memory space it was given, corrupting nearby memory an attacker can steer toward running their own code. 'Extremely sophisticated, targeted' attacks like this usually mean journalists, activists, or officials are the targets — but everyone should still install the update, since the fix is now public and others will study it."
   },
   {
-   "headline": "Attackers exploit Zimbra flaw (CVE-2026-73570) to plant web shells and steal secrets",
+   "headline": "Attackers exploit patched Zimbra flaw to drop web shells and steal mailboxes",
    "source": "The Hacker News",
-   "sourceUrl": "https://thehackernews.com/",
+   "sourceUrl": "https://thehackernews.com",
    "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
    "tags": [
     {
-     "label": "Actively exploited",
+     "label": "CVE-2026-73570",
      "type": "d"
     },
     {
@@ -81,97 +107,109 @@
      "type": "d"
     },
     {
-     "label": "Patch available",
-     "type": "g"
-    }
-   ],
-   "body": "Microsoft's Security Research team found threat actors weaponizing CVE-2026-73570 (CVSS 8.9), a now-patched unauthenticated OS command-injection flaw in Zimbra Collaboration Suite that can lead to remote code execution via SNMP handling. Attackers used it to deploy web shells — hidden backdoor scripts on the mail server — and to access mailbox data and authentication secrets. Zimbra servers hold email for many organizations, so a foothold there exposes sensitive internal communications.",
-   "beginnerTip": "<strong>Command injection</strong> is when an app passes attacker-supplied text straight into an operating-system command, letting the attacker run their own commands on the server. Once in, attackers often drop a web shell so they can come back even after the original hole is patched — so cleanup means hunting for those, not just updating."
-  },
-  {
-   "headline": "OpenSSL patches high-severity DTLS flaw that can leak heap memory unencrypted",
-   "source": "The Hacker News",
-   "sourceUrl": "https://thehackernews.com/",
-   "url": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
-   "tags": [
-    {
-     "label": "High severity",
+     "label": "Web Shells",
      "type": "w"
-    },
-    {
-     "label": "Patch available",
-     "type": "g"
     }
    ],
-   "body": "OpenSSL, the cryptographic library that underpins encryption for a huge share of the internet, released fixes on September 29 for a high-severity DTLS flaw that can leak heap memory to the other side of a connection or crash the program. DTLS is the version of TLS used for UDP traffic, and it resends a handshake message if no reply arrives in time; the bug can trigger when such a resend starts while a larger handshake message is only partly sent. SecurityWeek notes roughly a dozen vulnerabilities were also patched the same week in OpenSSL and the WolfSSL library.",
-   "beginnerTip": "A <strong>memory leak</strong> like this can spill fragments of whatever data happened to be in the program's memory — potentially keys or other secrets — to an attacker, echoing the infamous 2014 Heartbleed bug. Because OpenSSL is embedded in countless products, expect a wave of downstream vendor updates."
+   "body": "Microsoft's security researchers say threat actors weaponized CVE-2026-73570 (CVSS 8.9), an unauthenticated command-injection flaw in Zimbra Collaboration Suite, to break into mail servers and harvest data. Exploitation works through specially crafted SMTP requests when the optional zimbra-snmp package and SNMP notifications are enabled, and needs no login. Once in, attackers plant JSP web shells and reverse shells, install a remote-access agent dubbed Zimclient2 for interactive shell and file access, extract Zimbra service-account credentials from config files, and exfiltrate entire mailbox databases. Zimbra fixed the bug in version 10.1.20 (released July 2026); observed exploitation ran from July 20 to August 13, so unpatched servers should be treated as potentially already compromised.",
+   "beginnerTip": "<strong>Command injection</strong> is when an attacker sneaks operating-system commands into an input field the server carelessly passes to its underlying shell, so the server runs the attacker's commands as if they were its own. Mail servers hold enormous amounts of sensitive data, which is why they're such a prized target."
   }
  ],
  "threatActors": [
   {
-   "headline": "Russia's Star Blizzard swaps ClickFix for new 'RedFlick' chain to widen phishing",
-   "source": "Dark Reading",
-   "sourceUrl": "https://www.darkreading.com/",
-   "url": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
+   "headline": "Russia's Star Blizzard swaps ClickFix for new 'RedFlick' chain to widen its phishing net",
+   "source": "CyberScoop",
+   "sourceUrl": "https://cyberscoop.com",
+   "url": "https://cyberscoop.com/microsoft-star-blizzard-redflick-phishing-campaigns/",
    "tags": [
     {
-     "label": "APT",
+     "label": "Star Blizzard",
      "type": "a"
+    },
+    {
+     "label": "Russian APT",
+     "type": "d"
     },
     {
      "label": "Phishing",
      "type": "w"
     }
    ],
-   "body": "Star Blizzard, a Russian state-linked advanced persistent threat (APT) group, has dropped its earlier ClickFix lures for a new infection chain dubbed RedFlick, according to Microsoft and researchers cited by Dark Reading and CyberScoop. The group is targeting Ukrainian-linked NGOs, think tanks, and journalists to deploy a backdoor called CosmicPulse for long-term espionage access. The shift shows how quickly APTs retool their delivery methods once a technique gets widely detected.",
-   "beginnerTip": "An <strong>APT</strong> is a well-resourced attacker, usually a nation-state, that plays the long game — quiet, persistent access for spying rather than a quick smash-and-grab. Their phishing is highly tailored to specific people, so awareness training and hardware security keys matter more than generic spam filters."
+   "body": "Microsoft reports that Star Blizzard, a Russian state-sponsored advanced persistent threat (APT) group, has retired its ClickFix lures in favor of a new infection chain dubbed RedFlick that deploys a backdoor called CosmicPulse. The group has broadened its targeting beyond Ukraine-linked NGOs, think tanks, and journalists to hit organizations in the US and UK, leaning on sheer volume of phishing messages and needing only a single victim interaction to succeed. CosmicPulse gives the attackers persistent remote access for espionage.",
+   "beginnerTip": "An <strong>advanced persistent threat (APT)</strong> is a well-resourced hacking group — often backed by a government — that targets specific organizations and stays hidden for a long time to spy or steal. A 'backdoor' is malware that quietly keeps a way back in after the first break-in."
   },
   {
-   "headline": "ShinyHunters stays defiant after FBI urges members to turn themselves in",
+   "headline": "ShinyHunters stays defiant after FBI calls on members to surrender",
    "source": "SecurityWeek",
-   "sourceUrl": "https://www.securityweek.com/",
+   "sourceUrl": "https://www.securityweek.com",
    "url": "https://www.securityweek.com/shinyhunters-defiant-after-fbi-calls-on-members-to-come-forward/",
    "tags": [
     {
-     "label": "Cybercrime",
+     "label": "ShinyHunters",
      "type": "a"
     },
     {
-     "label": "Data extortion",
+     "label": "Extortion",
      "type": "w"
+    },
+    {
+     "label": "Arrest",
+     "type": "g"
     }
    ],
-   "body": "After the arrest of a suspected leader, the data-extortion group ShinyHunters publicly brushed off an FBI call for its members to come forward, claiming it never intended to publish data stolen from the bureau. ShinyHunters is known for stealing large customer databases and pressuring victims to pay to prevent leaks. The exchange highlights the cat-and-mouse dynamic between law enforcement and loosely organized extortion crews.",
-   "beginnerTip": "<strong>Data extortion</strong> groups don't always encrypt files like classic ransomware — many now just steal data and threaten to publish it unless paid. That means strong backups aren't enough on their own; preventing the theft in the first place is what counts."
+   "body": "After Dutch police arrested a man the FBI describes as one of its alleged leaders, the data-extortion group ShinyHunters publicly urged its members not to come forward and claimed it never intended to publish data it stole from the FBI. The bureau had called on members to turn themselves in following the arrest. ShinyHunters is known for breaching corporate cloud and SaaS environments, stealing large datasets, and extorting victims with the threat of publication on leak sites.",
+   "beginnerTip": "An <strong>extortion</strong> group makes money by stealing data and demanding payment to not leak it — a twist on ransomware that skips the file-encryption step. A 'leak site' is the public webpage these groups use to pressure victims by posting stolen files."
   },
   {
-   "headline": "Bitget says $387.5M heist began with a zero-day in third-party security products",
-   "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
-   "url": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
+   "headline": "South Africa seeks help after cyberattack hits air traffic control systems",
+   "source": "Dark Reading",
+   "sourceUrl": "https://www.darkreading.com",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
    "tags": [
     {
-     "label": "Zero-Day",
+     "label": "Ransomware",
      "type": "d"
     },
     {
-     "label": "Supply chain",
+     "label": "Aviation",
      "type": "w"
+    },
+    {
+     "label": "Critical Infrastructure",
+     "type": "a"
     }
    ],
-   "body": "Cryptocurrency exchange Bitget revealed that the attackers who stole $387.5 million last week got in by exploiting a zero-day flaw in third-party security products the exchange relied on. It is a stark example of supply-chain risk: the tools meant to protect the environment became the way in. Crypto exchanges remain prime targets because stolen funds can be moved and laundered quickly.",
-   "beginnerTip": "A <strong>supply-chain attack</strong> compromises a trusted vendor or tool to reach that vendor's many customers. Even a well-defended organization can be breached through software it didn't write, which is why vetting and monitoring third-party products matters."
+   "body": "South Africa has asked for outside assistance after a cyberattack targeted its air traffic control systems, with investigators finding a ransomware toolkit installed on at least one operational network. The incident is part of a wider pattern of attacks on aviation infrastructure, where disruption can ripple into flight safety and scheduling. Air traffic control is a textbook example of critical infrastructure — systems whose failure causes real-world, physical harm rather than just data loss.",
+   "beginnerTip": "<strong>Ransomware</strong> is malware that locks up or threatens to leak an organization's data until a ransom is paid. When it lands on 'critical infrastructure' like air traffic control, power, or water systems, the stakes jump from lost files to public safety."
   }
  ],
  "regulatory": [
   {
-   "headline": "Trump says top tech firms signed an accord to 'self-police' AI development",
+   "headline": "National cyber director defends private-sector 'hack back' program, urges focus on the basics",
+   "source": "Cybersecurity Dive",
+   "sourceUrl": "https://www.cybersecuritydive.com",
+   "url": "https://www.cybersecuritydive.com/news/oncd-white-house-sean-cairncross-regulation-deterrence-ai/831768/",
+   "tags": [
+    {
+     "label": "ONCD",
+     "type": "a"
+    },
+    {
+     "label": "Policy",
+     "type": "a"
+    }
+   ],
+   "body": "National Cyber Director Sean Cairncross defended a plan to let businesses help the government deter cybercriminals, arguing it would benefit all Americans, while pressing organizations to get the security fundamentals right first. The idea of enlisting the private sector in active deterrence — sometimes loosely called 'hack back' — is contentious because offensive actions can misfire, hit the wrong targets, or escalate. Cairncross framed strong basic defenses as the foundation any deterrence strategy has to rest on.",
+   "beginnerTip": "The Office of the National Cyber Director (ONCD) is a White House office that sets US cybersecurity strategy. '<strong>Hack back</strong>' means a victim striking back at their attacker's systems — appealing in theory, but legally and practically risky, which is why it stays controversial."
+  },
+  {
+   "headline": "Trump says top tech firms signed accord to 'self-police' AI development",
    "source": "SecurityWeek",
-   "sourceUrl": "https://www.securityweek.com/",
+   "sourceUrl": "https://www.securityweek.com",
    "url": "https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/",
    "tags": [
     {
-     "label": "AI policy",
+     "label": "AI Governance",
      "type": "a"
     },
     {
@@ -179,51 +217,33 @@
      "type": "a"
     }
    ],
-   "body": "President Trump said leading technology companies have signed an accord to voluntarily 'self-police' their AI development, centered on four voluntary steps and leaving the door open to future formal regulation. Voluntary commitments like this set expectations but carry no legal enforcement on their own. Security teams should watch whether the steps translate into concrete requirements around AI safety testing and disclosure.",
-   "beginnerTip": "A <strong>voluntary accord</strong> is a pledge, not a law — companies agree to standards without a regulator forcing or penalizing them. These often precede binding rules, so they're worth tracking as an early signal of where compliance requirements may head."
+   "body": "President Trump said leading technology companies have signed an accord to voluntarily 'self-police' their AI development, centered on four voluntary steps rather than binding rules. Officials framed it as leaving the door open to future regulation while relying for now on industry commitments. Voluntary frameworks like this are common early in a technology's life, but critics note they carry no enforcement teeth if a company falls short.",
+   "beginnerTip": "'Self-policing' or <strong>voluntary</strong> commitments mean companies agree to follow certain practices without a law forcing them to. They can move faster than legislation, but because there's no penalty for breaking them, their real-world strength depends entirely on whether firms actually follow through."
   },
   {
-   "headline": "National cyber director: US wants AI woven into critical-infrastructure defense",
-   "source": "Cybersecurity Dive",
-   "sourceUrl": "https://www.cybersecuritydive.com/",
-   "url": "https://www.cybersecuritydive.com/news/oncd-white-house-sean-cairncross-regulation-deterrence-ai/831768/",
+   "headline": "Anthropic flags AI-agent liability risks as OpenAI faces a hacking lawsuit",
+   "source": "SecurityWeek",
+   "sourceUrl": "https://www.securityweek.com",
+   "url": "https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/",
    "tags": [
     {
-     "label": "Policy",
+     "label": "AI Liability",
      "type": "a"
     },
     {
-     "label": "Critical infrastructure",
-     "type": "a"
+     "label": "Legal",
+     "type": "w"
     }
    ],
-   "body": "National Cyber Director Sean Cairncross defended the administration's private-sector hacking-deterrence program and urged organizations to master security basics, while pushing to weave AI into the defense of critical infrastructure. He cautioned that CEOs need to understand how AI is actually being used in their environments. The remarks signal where federal cyber priorities — and eventual expectations for infrastructure operators — are heading.",
-   "beginnerTip": "<strong>Critical infrastructure</strong> means the systems society depends on — power, water, transport, finance. Governments increasingly expect the private companies that run these to meet baseline security standards, so policy talk here often becomes tomorrow's compliance rules."
-  },
-  {
-   "headline": "Two former US Air Force members sentenced to a combined 189 months over BEC scams",
-   "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
-   "url": "https://www.bleepingcomputer.com/news/security/former-us-air-force-members-sent-to-prison-over-bec-attacks/",
-   "tags": [
-    {
-     "label": "Enforcement",
-     "type": "g"
-    },
-    {
-     "label": "BEC",
-     "type": "a"
-    }
-   ],
-   "body": "Two former members of the US Air Force were sentenced to a combined 189 months (about 15.75 years) in federal prison for running a multi-year series of business email compromise (BEC) scams and phishing campaigns. BEC fraud tricks organizations into wiring money or handing over data by impersonating executives or trusted partners. The sentences underscore that these frauds carry serious criminal consequences, not just financial loss for victims.",
-   "beginnerTip": "<strong>Business email compromise (BEC)</strong> relies on deception rather than malware — a convincing fake email from the 'CEO' asking finance to pay an invoice. The best defense is a verification step (like a phone call) for any unusual payment or account-change request."
+   "body": "As autonomous AI agents move from research demos into real deployments, hard legal questions are following them into court: who is responsible when an AI agent causes harm? Anthropic has publicly flagged the liability risks of agentic AI, and the issue is now concrete as OpenAI faces a lawsuit tied to alleged hacking activity. Courts and regulators have little precedent for assigning blame among the AI vendor, the operator who deployed the agent, and the user who directed it.",
+   "beginnerTip": "<strong>Agentic AI</strong> refers to AI systems that don't just answer questions but take actions on their own — browsing, running code, sending requests — to reach a goal. Because they act with some independence, it's genuinely unsettled law who is at fault when one does something harmful."
   }
  ],
  "trends": [
   {
    "headline": "Google: AI is changing the pace and profile of vulnerability discovery",
    "source": "SecurityWeek",
-   "sourceUrl": "https://www.securityweek.com/",
+   "sourceUrl": "https://www.securityweek.com",
    "url": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/",
    "tags": [
     {
@@ -231,81 +251,77 @@
      "type": "a"
     },
     {
-     "label": "Trend",
+     "label": "Vuln Research",
      "type": "a"
     }
    ],
-   "body": "Google reports that AI tools are speeding up how quickly software vulnerabilities are found and shifting the kinds of bugs that surface. Faster discovery cuts both ways: defenders can find and fix flaws sooner, but so can attackers looking for their next foothold. The trend raises the stakes on patching quickly once a fix is available.",
-   "beginnerTip": "A <strong>vulnerability</strong> is a weakness in software that an attacker could abuse. As AI helps surface these faster, the window between a flaw becoming public and being exploited shrinks — making prompt patching more important than ever."
+   "body": "Google analysis finds that AI tools are not only speeding up how quickly security flaws are found but also shifting what kind of flaws surface — AI-discovered vulnerabilities are more likely to enable remote code execution, the most serious class of bug. That cuts both ways: defenders can find and fix issues faster, but attackers gain the same acceleration. The finding underscores that AI is becoming a standard part of both offensive and defensive security work.",
+   "beginnerTip": "<strong>Remote code execution (RCE)</strong> is the most dangerous kind of vulnerability — it lets an attacker run their own programs on a target machine over the network. The worry here is that AI makes these high-severity bugs faster to find for whoever is looking, defender or attacker."
   },
   {
-   "headline": "Water sector's WaterISAC reckons with a range of threats after a summer of attacks",
-   "source": "CyberScoop",
-   "sourceUrl": "https://cyberscoop.com/",
-   "url": "https://cyberscoop.com/water-utility-cyberattacks-waterisac-cyware-threat-intelligence/",
+   "headline": "AI coding agents leaked 13,000 internal images — including billing records — to public GitHub",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
    "tags": [
     {
-     "label": "Critical infrastructure",
-     "type": "a"
+     "label": "Data Exposure",
+     "type": "w"
     },
     {
-     "label": "OT security",
+     "label": "AI",
      "type": "a"
     }
    ],
-   "body": "After a summer of cyberattacks on water utilities, WaterISAC — the sector's information-sharing hub — is weighing threats from internet-exposed equipment, programmable logic controllers (PLCs), outside integrators, and gaps in internal defenses. Water systems often run older operational technology that was never designed to be online. The reckoning reflects a broader push to secure operational technology across critical services.",
-   "beginnerTip": "<strong>Operational technology (OT)</strong> is the computers that run physical equipment — pumps, valves, industrial controllers — as opposed to office IT. It's harder to secure because it can't always be patched or taken offline, yet a breach can have real-world safety consequences."
+   "body": "Security firm Glow found that AI coding agents asked to share screenshots of their code changes for human review ended up posting more than 13,000 internal company images into public GitHub repositories, spanning developers at hundreds of organizations. The exposed images included sensitive material such as billing records. The case is a reminder that handing autonomous tools access to internal systems can create data-leak paths nobody explicitly intended.",
+   "beginnerTip": "<strong>Data exposure</strong> is when sensitive information is left somewhere it can be seen by people who shouldn't — often through a misconfiguration rather than a break-in. When an AI agent operates with real access, the safest assumption is that anything it can see, it might accidentally share."
   },
   {
-   "headline": "Signal completes rollout of encrypted local backups across all platforms",
-   "source": "BleepingComputer",
-   "sourceUrl": "https://www.bleepingcomputer.com/",
-   "url": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
+   "headline": "Most breaches now start — and often stay — in the browser",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com",
+   "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
    "tags": [
     {
-     "label": "Privacy",
-     "type": "g"
-    },
-    {
-     "label": "Encryption",
-     "type": "g"
+     "label": "Browser Security",
+     "type": "a"
     }
    ],
-   "body": "Signal released version 8.30, finishing the rollout of its secure backups feature across Android, iOS, Linux, macOS, and Windows. The backups are encrypted, so message history can be restored without exposing it to Signal or anyone who intercepts the file. It's a rare good-news item and a model of how end-to-end encryption should extend to stored data, not just messages in transit.",
-   "beginnerTip": "<strong>End-to-end encryption</strong> means only you and your intended recipient can read the content — not the service in the middle. Extending it to backups closes a common gap where stored copies of otherwise-private messages sit unprotected."
+   "body": "With most business applications now accessed through a web browser, attackers have followed: analysts say the majority of breaches today begin in a browser session, and increasingly the entire attack chain — from initial lure to data theft — never leaves it. Techniques like consent phishing, malicious extensions, and session-cookie theft let attackers operate inside the browser where traditional endpoint tools have limited visibility. Defenders are being urged to treat the browser as a primary security battleground, not an afterthought.",
+   "beginnerTip": "A <strong>session cookie</strong> is the small token your browser holds after you log in that keeps you signed in. If an attacker steals it, they can often walk straight into your account without needing your password or even your multi-factor code."
   }
  ],
  "quickHits": [
   {
-   "color": "danger",
-   "source": "Dark Reading",
-   "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-   "text": "Apple is patching CVE-2026-86950, an out-of-bounds write zero-day being exploited in 'extremely sophisticated' targeted attacks — update iPhones, iPads, and Macs now."
-  },
-  {
-   "color": "danger",
-   "source": "SecurityWeek",
-   "sourceUrl": "https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/",
-   "text": "WatchGuard patched 15 flaws in Fireware OS, including a critical code-injection bug — update affected firewalls promptly."
-  },
-  {
    "color": "warn",
    "source": "BleepingComputer",
    "sourceUrl": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
-   "text": "TeamViewer is urging customers to immediately patch high-severity flaws in its client and host remote-access software."
+   "text": "TeamViewer urged customers to immediately patch a set of high-severity vulnerabilities in its client and host remote-access software."
   },
   {
    "color": "warn",
    "source": "SecurityWeek",
    "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
-   "text": "Chrome and Firefox updates fix 100+ vulnerabilities, some allowing remote code execution or sandbox escape — restart your browser to apply them."
+   "text": "Chrome and Firefox shipped updates fixing over 100 vulnerabilities combined, some allowing remote code execution or sandbox escape — update your browser."
   },
   {
    "color": "danger",
-   "source": "Dark Reading",
-   "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
-   "text": "South Africa is seeking help after a cyberattack hit air traffic control, with a ransomware toolkit found on at least one operational network."
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
+   "text": "Crypto exchange Bitget says attackers who stole $387.5 million last week got in by exploiting a zero-day in third-party security products."
+  },
+  {
+   "color": "accent",
+   "source": "The Hacker News",
+   "sourceUrl": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
+   "text": "OpenSSL fixed a high-severity DTLS flaw that could leak heap memory unencrypted to the other side of a connection or crash the program."
+  },
+  {
+   "color": "ok",
+   "source": "BleepingComputer",
+   "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
+   "text": "Signal completed the rollout of encrypted local backups across iOS, desktop, and all supported platforms in version 8.30 — a win for user privacy."
   }
  ],
- "analystFooter": "Today is a patch-and-hunt day for edge devices: prioritize internet-facing Citrix NetScaler (CVE-2026-88772), Cisco SD-WAN Manager (CVE-2026-76504), MikroTik RouterOS, and Zimbra — and where they were exposed, hunt for web shells and the WHIPSHOT/SLAPSHOT malware rather than assuming a patch is enough. Then roll out the OpenSSL, Apple, WatchGuard, TeamViewer, and Chrome/Firefox updates."
+ "analystFooter": "Patch internet-facing gear first: Citrix NetScaler (CVE-2026-88772) and Cisco SD-WAN Manager (CVE-2026-76504) are under active attack right now, with MikroTik and Zimbra close behind — then push the Apple and browser updates out to every endpoint."
 }

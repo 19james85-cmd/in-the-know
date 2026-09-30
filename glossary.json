@@ -252,6 +252,12 @@
   "e": "Hugging Face users were told to rotate their access tokens because cloud and cluster credentials were stolen."
  },
  {
+  "t": "Critical Infrastructure",
+  "c": "General",
+  "d": "Critical infrastructure means the physical and digital systems a society depends on to function — power grids, water treatment, hospitals, finance, transportation, and air traffic control. A cyberattack on these systems can cause real-world harm beyond lost data, which makes them a top priority for attackers and defenders alike.",
+  "e": "In September 2026, South Africa asked for outside help after a cyberattack, including a ransomware toolkit, hit systems tied to its air traffic control — a clear case of critical infrastructure under threat."
+ },
+ {
   "t": "Cross-Site Scripting (XSS)",
   "c": "Vulnerability",
   "d": "A web flaw where a site runs attacker-supplied code (usually JavaScript) because it displayed untrusted input without cleaning it first. The malicious code then runs in the victim's browser with the trust of that site.",
@@ -606,6 +612,12 @@
   "e": "In August 2026, the sentenced Ransom Cartel operator was described as working with initial access brokers who supplied ready-made access to victim corporate networks."
  },
  {
+  "t": "Integer Underflow",
+  "c": "Vulnerability",
+  "d": "An integer underflow happens when a program subtracts below the smallest value a number can hold, so the value wraps around to a very large number instead of going negative. Attackers use this to fool software into mishandling memory — for example treating a tiny input as an enormous one — which can lead to crashes or code execution.",
+  "e": "In September 2026, CISA warned that MikroTik RouterOS contained a pre-authentication integer underflow in how it sized incoming web requests, letting an attacker run code as root with a single crafted request."
+ },
+ {
   "t": "IOC",
   "c": "Threat/Actor",
   "d": "Indicators of Compromise — evidence a system has been breached, such as suspicious IP addresses, unusual file hashes, or abnormal network traffic patterns used to detect and investigate attacks.",
@@ -802,6 +814,12 @@
   "c": "Network",
   "d": "A network design where computers connect directly to each other instead of relying on one central server. Malware authors use P2P so their botnet has no single point that defenders can shut down.",
   "e": "The Sality botnet, disrupted in 2026, used a peer-to-peer design so each infected machine kept a list of other bots rather than phoning home to one command server."
+ },
+ {
+  "t": "Percent-Encoding",
+  "c": "Network",
+  "d": "Percent-encoding is a standard way of writing special characters in a web address using a percent sign plus two hex digits — for example %6a stands for the letter 'j'. It is normal and harmless in URLs, but attackers sometimes use it to disguise text so a security check reads a request differently than the system that finally processes it.",
+  "e": "In September 2026, attackers bypassed the login on Cisco Catalyst SD-WAN Manager by percent-encoding a character (%6a) so their request slipped past the authentication check and reached a protected function with admin rights."
  },
  {
   "t": "Persistence",
