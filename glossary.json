@@ -390,6 +390,12 @@
   "e": "In August 2026, CISA added CVE-2026-33824, a Double Free flaw in the Windows IKE service, to its Known Exploited Vulnerabilities catalog after attackers used it for remote code execution."
  },
  {
+  "t": "DTLS",
+  "c": "Network",
+  "d": "DTLS (Datagram Transport Layer Security) is the version of TLS encryption used for fast, connectionless UDP traffic instead of ordinary TCP connections. It secures things like VPN tunnels and video calls where speed matters and a few lost packets are acceptable.",
+  "e": "In September 2026, both a Citrix NetScaler flaw (CVE-2026-88772) and an OpenSSL bug were traced to mistakes in how DTLS handshakes were handled."
+ },
+ {
   "t": "ELF Binary",
   "c": "General",
   "d": "Executable and Linkable Format — the standard file format for programs on Linux and Unix, the equivalent of a .exe on Windows. Finding an unexpected ELF file on an appliance is a strong sign of compromise.",
@@ -706,6 +712,12 @@
   "c": "Vulnerability",
   "d": "An N-day is a vulnerability that has already been publicly disclosed and has a patch available - the opposite of a zero-day. Attackers love them because plenty of organizations take weeks or years to apply fixes.",
   "e": "In August 2026, an NSA and FBI advisory said the China-nexus group QTFY used both zero-day and N-day flaws, including a 2024 Check Point bug (CVE-2024-24919) that had been patched for over a year."
+ },
+ {
+  "t": "NETCONF",
+  "c": "Network",
+  "d": "NETCONF is a protocol network administrators use to remotely configure and manage routers, switches, and other network gear in a standardized way. Because it grants deep control over devices, gaining access to it is a powerful foothold for an attacker.",
+  "e": "In September 2026, attackers exploiting a Cisco SD-WAN flaw abused the NETCONF service to issue commands to compromised appliances."
  },
  {
   "t": "NIST",
@@ -1072,6 +1084,12 @@
   "c": "General",
   "d": "AI tools that employees use for work without approval or oversight from their IT or security team, creating blind spots for data protection and compliance. A stricter cousin, 'Shady AI', is when approved tools are used in unapproved or poorly governed ways.",
   "e": "In a July 2026 SANS survey, 76% of security teams said they now have a formal role in governing enterprise AI, largely to rein in Shadow AI."
+ },
+ {
+  "t": "Shellcode",
+  "c": "Malware",
+  "d": "Shellcode is a small piece of attacker-supplied machine code that runs the moment a vulnerability is triggered, typically to hand the attacker control of the system. The name comes from its classic goal of opening a command shell.",
+  "e": "In September 2026, published exploit details for the Citrix NetScaler CVE-2026-88772 flaw showed a pre-authentication path to shellcode execution."
  },
  {
   "t": "Sink",
