@@ -1,41 +1,41 @@
 {
- "generated": "2026-10-01T18:33:23.745624+00:00",
+ "generated": "2026-10-02T18:00:21.256841+00:00",
  "window_hours": 24,
  "feeds": [
   {
    "source": "CISA",
    "ok": true,
-   "count": 7,
+   "count": 0,
    "error": null
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 11,
+   "count": 7,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 10,
+   "count": 7,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 4,
+   "count": 7,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -65,305 +65,242 @@
  ],
  "items": [
   {
-   "source": "SecurityWeek",
-   "title": "Zero Trust Creator Says Model Holds Firm Against AI-Assisted Attacks",
-   "url": "https://www.securityweek.com/zero-trust-creator-says-model-holds-firm-against-ai-assisted-attacks/",
-   "published": "2026-10-01T18:00:00+00:00",
-   "summary": "Fifteen years after coining the framework, John Kindervag insists zero trust still works in the AI era—if you get the implementation right. The post Zero Trust Creator Says Model Holds Firm Against AI-Assisted Attacks appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Osavul Lands $10 Million to Spot Hostile Intent Across Cyber, Physical Domains",
-   "url": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
-   "published": "2026-10-01T17:16:41+00:00",
-   "summary": "Hybrid risk intelligence company Osavul has raised $10 million in a Series A funding round led by 33N Ventures. The post Osavul Lands $10 Million to Spot Hostile Intent Across Cyber, Physical Domains appeared first on SecurityWeek ."
+   "source": "CyberScoop",
+   "title": "The legal questions raised by agentic AI hacks",
+   "url": "https://cyberscoop.com/ai-agent-hacks-legal-liability-cfaa/",
+   "published": "2026-10-02T17:47:54+00:00",
+   "summary": "Experts and policymakers want AI companies to face consequences for agentic hacks. There may not be a clear-cut answer under existing laws and regulations. The post The legal questions raised by agentic AI hacks appeared first on CyberScoop ."
   },
   {
    "source": "The Hacker News",
-   "title": "Police Arrest 16-Year-Old Suspected of Running KillSec, Seize Ransomware Leak Site and Servers",
-   "url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-   "published": "2026-10-01T16:55:57+00:00",
-   "summary": "Police in Spain have arrested a 16-year-old whom investigators suspect of running the KillSec ransomware group. KillSec is accused of stealing data from organizations and threatening to publish it on its leak site unless they paid. The 16-year-old was one of 3 people arrested on September 30, when police also took control of that site. Investigators identified him as KillSec's suspected"
+   "title": "GitLab Patches Critical 9.9 AI Gateway Flaw Allowing Command Execution on Self-Hosted Servers",
+   "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+   "published": "2026-10-02T17:33:31+00:00",
+   "summary": "A critical flaw in GitLab's AI Gateway could let a logged-in user with Duo Agent Platform access run commands on the gateway under certain conditions, GitLab said in an advisory. The gateway is the service that connects a GitLab instance to AI models, and only organizations that host their own gateway need to act. The flaw is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. The flaw"
   },
   {
    "source": "The Hacker News",
-   "title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
-   "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-   "published": "2026-10-01T16:45:38+00:00",
-   "summary": "This week, the useful words are boring ones: inspect, cache, compile, store, trust. Each sounds harmless. Each can become an attack path when a system does a little more than people expect. A model check can run code. A cache can mix up requests. A public secret can stay useful for years. That is the lesson running through the list. Attackers do not always need a brilliant new trick. They can"
+   "title": "Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign",
+   "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+   "published": "2026-10-02T17:33:16+00:00",
+   "summary": "Government and policy organizations across Asia have become the target of a new campaign orchestrated by a China-nexus threat actor. The activity, which has targeted government and policy organizations in Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar, involves the deployment of a previously undocumented backdoor codenamed Antino. Cisco Talos is tracking the cluster"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+   "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+   "published": "2026-10-02T17:02:12+00:00",
+   "summary": "Dell has released security updates to address multiple critical security flaws in Dell Container Storage Modules (CSM) that could be exploited by bad actors to take over susceptible systems. The vulnerabilities are listed below - CVE-2026-63688 (CVSS score: 10.0) - A missing authentication for critical function vulnerability in the csm-authorization-storage gRPC server that an"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Kiteworks & Citrix Incidents Show Challenges of Zero-Day Response",
+   "url": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+   "published": "2026-10-02T16:56:30+00:00",
+   "summary": "One company told customers to power down its data-protection platform during a nine-hour window, while the other remained mum on reported attacks prior to releasing a patch for its product."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "SWIFT Banking & Government Middleware Enables RCE",
+   "url": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
+   "published": "2026-10-02T16:27:54+00:00",
+   "summary": "Patch middleware vulnerabilities now to avoid hardware-based MFA exploits in ultra-sensitive environments."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "GitLab warns of critical RCE vulnerability in AI Gateway service",
+   "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/",
+   "published": "2026-10-02T16:20:05+00:00",
+   "summary": "GitLab warned customers today to immediately patch a critical AI Gateway vulnerability that could let attackers run arbitrary commands on vulnerable instances. [...]"
   },
   {
    "source": "Cybersecurity Dive",
-   "title": "SOC staffers generally pleased with AI’s impact, but worries remain",
-   "url": "https://www.cybersecuritydive.com/news/ai-security-operations-centers-careers-skills-swimlane/831882/",
-   "published": "2026-10-01T15:10:00+00:00",
-   "summary": "AI is likely to eliminate some entry-level SOC roles, a survey found, but it is also creating opportunities to develop more strategic skills."
+   "title": "Defending against AI-fueled cyberattacks requires focus on identity, data governance, Microsoft says",
+   "url": "https://www.cybersecuritydive.com/news/ai-cyberattacks-automation-identity-data-microsoft-report/832020/",
+   "published": "2026-10-02T16:15:00+00:00",
+   "summary": "Dive Brief: Businesses need to prepare for the ways in which AI is changing the cyberattack landscape, Microsoft warned on Thursday. AI is speeding up attacks, making advanced techniques easier and putting stress on systems that organizations have long overlooked, the company said in its ..."
   },
   {
-   "source": "The Hacker News",
-   "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
-   "url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-   "published": "2026-10-01T14:37:35+00:00",
-   "summary": "Cybersecurity researchers have shed light on a WordPress compromise in which threat actors deployed multiple persistence mechanisms to ensure that the final payload kept returning without having to infect the site again. The backdoor has been codenamed SC after the \"SC_\" markers present in the injected content. Sucuri has described the malware as a \"self-healing mesh\" that's"
+   "source": "Dark Reading",
+   "title": "Is Your Organization Ready for 2027's AI Accountability Era?",
+   "url": "https://www.darkreading.com/cybersecurity-operations/is-your-organization-ready-for-2027-s-ai-accountability-era-",
+   "published": "2026-10-02T16:01:22+00:00",
+   "summary": "Organizations may face an artificial intelligence (AI) reckoning over the next year. Omdia and Gartner weigh in on how to tackle the governance, security, and value challenges ahead."
   },
   {
-   "source": "SecurityWeek",
-   "title": "Hacker Conversations: Rob Juncker, a Knock at the Door and a Moral Compass",
-   "url": "https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/",
-   "published": "2026-10-01T14:30:00+00:00",
-   "summary": "Rob Juncker is chief product and technology officer at Mimecast. Is he a hacker? “Unequivocally yes,” he says. The post Hacker Conversations: Rob Juncker, a Knock at the Door and a Moral Compass appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Enterprises Struggle to Prepare for AI and Quantum Threats, PwC Says",
-   "url": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
-   "published": "2026-10-01T14:30:00+00:00",
-   "summary": "PwC’s survey found that only 22% of leaders would use fully autonomous AI for cyber defense, while just 21% are implementing quantum-resistant security measures. The post Enterprises Struggle to Prepare for AI and Quantum Threats, PwC Says appeared first on SecurityWeek ."
+   "source": "Dark Reading",
+   "title": "Is It Fair to Blame 'Rogue' AI for Security Failures?",
+   "url": "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures",
+   "published": "2026-10-02T15:51:33+00:00",
+   "summary": "Rogue AI terminology anthropomorphizes LLMs and shifts risk responsibility from vendors. Defenders should treat agents as untrusted, nondeterministic software systems, not sentient beings with malicious intent."
   },
   {
    "source": "BleepingComputer",
-   "title": "Police dismantle KillSec ransomware gang allegedly led by 16-year-old",
-   "url": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
-   "published": "2026-10-01T14:25:14+00:00",
-   "summary": "An international law enforcement operation dubbed \"Operation KillSwitch\" seized the KillSec ransomware gang's data leak site and servers, led to three arrests, and identified a 16-year-old as the group's alleged administrator. [...]"
+   "title": "US sanctions Tren de Aragua gang members in ATM hacks crackdown",
+   "url": "https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/",
+   "published": "2026-10-02T15:20:53+00:00",
+   "summary": "The U.S. Treasury Department has sanctioned eight members of the Venezuelan gang Tren de Aragua (TdA) for their role in the theft of millions of dollars in ATM jackpotting attacks across the United States. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Fortinet warns that critical flaw in FortiMail is facing exploitation",
+   "url": "https://www.cybersecuritydive.com/news/fortinet-critical-flaw-fortimail-exploitation/832017/",
+   "published": "2026-10-02T14:56:00+00:00",
+   "summary": "Security researchers warn that attackers can gain access to credentials, stored mail and other connected systems."
   },
   {
    "source": "SecurityWeek",
-   "title": "Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader",
-   "url": "https://www.securityweek.com/police-shut-down-killsec-ransomware-identify-alleged-teen-leader/",
-   "published": "2026-10-01T14:17:07+00:00",
-   "summary": "Police took control of KillSec’s leak site and secured at least 110 terabytes of data stolen from victims. The post Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader appeared first on SecurityWeek ."
+   "title": "In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
+   "url": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
+   "published": "2026-10-02T14:30:00+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: Kiteworks patches over 100 vulnerabilities, Microsoft publishes 2026 Digital Defense Report, AI finds 24 Android app flaws. The post In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
+   "url": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
+   "published": "2026-10-02T14:00:10+00:00",
+   "summary": "Browser-based attacks can steal sessions, abuse extensions, or manipulate users without creating the endpoint artifacts EDR is designed to detect. NordLayer explains three ways attacks can evade endpoint telemetry and why browser-level controls can help close the gap. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Vulnerability Backlogs Are an Ownership Problem",
+   "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
+   "published": "2026-10-02T14:00:00+00:00",
+   "summary": "Organizations don't need better vulnerability scanners; they need to know who owns their assets and has the authority and capacity to actually fix them."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor",
+   "url": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
+   "published": "2026-10-02T13:15:00+00:00",
+   "summary": "The dropper “carries a complete universal Mach-O inside itself, roughly 756 KB in the development build, and extracts it at runtime. The post macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Malicious Linux Implants Mimic Asian Mail Security Products",
+   "url": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
+   "published": "2026-10-02T13:00:00+00:00",
+   "summary": "A trio of newly discovered backdoors walk and quack like legitimate edge solutions, so it's hard to tell they're not."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Dell asks admins to patch max severity CSM flaws as soon as possible",
+   "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
+   "published": "2026-10-02T12:37:40+00:00",
+   "summary": "Dell has patched two maximum severity vulnerabilities in the Container Storage Modules (CSM) that connect Dell enterprise storage arrays to Kubernetes environments. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
+   "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
+   "published": "2026-10-02T12:23:15+00:00",
+   "summary": "OpenAI has parted ways with three members of its safety team after they leaked private information in violation of company policies, The Wall Street Journal reported. \"We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information,\" a spokesperson for the company was quoted as saying. \"Our investigation confirmed that these"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Crypto Scammers Hijack Microsoft’s Official X Account",
+   "url": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
+   "published": "2026-10-02T11:46:10+00:00",
+   "summary": "Hackers used the account, which has 13 million followers, to amplify a Clippy-themed cryptocurrency account. The post Crypto Scammers Hijack Microsoft's Official X Account appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Why CISOs Struggle to Answer the Board's Three Hardest Questions, and How to Fix the Report",
+   "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
+   "published": "2026-10-02T11:30:00+00:00",
+   "summary": "The quarterly board meeting is two weeks out. The security team is pulling exports from the identity provider, the cloud posture tool, the vulnerability scanner, the SIEM and the EDR console. Someone is building a spreadsheet to reconcile them. Someone else is turning that spreadsheet into slides. Then a board member asks three questions: How secure is the organization, overall? What is"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "In Rare Move, Alleged Iranian State Hacker Extradited to US",
+   "url": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
+   "published": "2026-10-02T11:14:34+00:00",
+   "summary": "Amir Barati, an alleged member of the Mabna Institute, was indicted for targeting universities, private organizations, and government entities in the US and abroad. The post In Rare Move, Alleged Iranian State Hacker Extradited to US appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks",
+   "url": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
+   "published": "2026-10-02T09:34:41+00:00",
+   "summary": "The China-based hacking group has been exploiting SharePoint vulnerabilities since July 2025. The post Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft’s X account hacked in crypto pump-and-dump scheme",
+   "url": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/",
+   "published": "2026-10-02T09:29:56+00:00",
+   "summary": "On Thursday, unknown attackers hijacked the official Microsoft account on X, which has over 13 million followers, in what appeared to be a pump-and-dump scheme promoting a crypto token. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "AI Agents Aimed SQL Injection at US and Canadian Government Sites",
+   "url": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
+   "published": "2026-10-02T08:38:46+00:00",
+   "summary": "The attacks targeted the US Department of Education and Library and Archives Canada, and researchers linked some agents to OpenAI. The post AI Agents Aimed SQL Injection at US and Canadian Government Sites appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action",
+   "url": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+   "published": "2026-10-02T08:07:33+00:00",
+   "summary": "CVE-2026-104286 is a critical-severity path traversal vulnerability that could allow attackers to write arbitrary files to the system. The post Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Android 17 Advanced Protection Locks Accessibility Services to Verified Accessibility Tools",
+   "url": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+   "published": "2026-10-02T08:01:30+00:00",
+   "summary": "Google has announced a new security measure that limits access to Android's accessibility services to verified applications classified as Accessibility Tools when Advanced Protection is enabled. With malicious Android applications abusing the API serving as the main conduit for malware and financial fraud, the tech giant said the move would block a major attack pathway. Advanced Protection is a"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
+   "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+   "published": "2026-10-02T05:49:50+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added a critical security flaw impacting Fortinet FortiMail to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-2026-104286 (CVSS score: 9.8), allows unauthenticated attackers to write arbitrary files on the underlying system. \"An improper"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+   "published": "2026-10-01T22:42:49+00:00",
+   "summary": "Fortinet is warning customers of a critical FortiMail vulnerability, tracked as CVE-2026-104286, that is being actively exploited in zero-day attacks to execute unauthorized code or commands on vulnerable devices. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Alleged KillSec Ransomware Mastermind a 16-Year-Old",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
+   "published": "2026-10-01T21:37:50+00:00",
+   "summary": "Law enforcement from multiple countries collaborated to disrupt a cybercrime operation that has claimed some 500 victims worldwide in the past two years."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Autonomous AI agents tried to hack US, Canadian government websites",
+   "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+   "published": "2026-10-01T20:52:50+00:00",
+   "summary": "Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. [...]"
   },
   {
    "source": "CyberScoop",
-   "title": "AI policy circles targeted in China-linked phishing operation",
-   "url": "https://cyberscoop.com/china-cyber-espionage-ta419-phishing-us-ai-policy-experts/",
-   "published": "2026-10-01T14:06:19+00:00",
-   "summary": "Cybersecurity firm Proofpoint said TA419 impersonated officials and AI industry figures in an effort to gain access to cloud accounts held by U.S. think tank, university and legal-sector experts. The post AI policy circles targeted in China-linked phishing operation appeared first on CyberScoop ."
+   "title": "Authorities seize KillSec extortion group infrastructure, arrest 3 alleged members",
+   "url": "https://cyberscoop.com/killsec-ransomware-group-arrests-operation-killswitch/",
+   "published": "2026-10-01T19:44:43+00:00",
+   "summary": "The teenager-run cybercrime group victimized roughly 500 organizations in less than two years. The post Authorities seize KillSec extortion group infrastructure, arrest 3 alleged members appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "The Day-One Hole in Zero Trust Architecture",
-   "url": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
-   "published": "2026-10-01T14:01:11+00:00",
-   "summary": "Zero Trust can verify users once they are established, but onboarding creates a gap where organizations must decide who to trust before strong authentication exists. Specops explains why identity verification should begin before credentials, MFA methods, and access are issued. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Kiteworks patches max severity code injection vulnerability",
-   "url": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/",
-   "published": "2026-10-01T13:51:08+00:00",
-   "summary": "Secure file-sharing software company Kiteworks has released security updates to address 126 vulnerabilities, including a max-severity flaw affecting its Email Protection Gateway (EPG) security solution. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "AI Has Changed Attack Speed, Not Security Fundamentals",
-   "url": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
-   "published": "2026-10-01T13:15:00+00:00",
-   "summary": "As AI accelerates vulnerability discovery and exploitation, so-called virtual patching still comes down to defense-in-depth and strong application security fundamentals. The post AI Has Changed Attack Speed, Not Security Fundamentals appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Warlock Ransomware Hits Large Spanish, Portuguese Orgs",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
-   "published": "2026-10-01T13:00:00+00:00",
-   "summary": "A year-old Chinese threat actor looks like a cybercrime gang, acts like a state-associated APT, and attacks organizations in unexpected places."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Zimbra Vulnerability Exploited in the Wild Prior to Public Disclosure",
-   "url": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
-   "published": "2026-10-01T12:55:57+00:00",
-   "summary": "Under certain conditions, CVE-2026-73570 can be exploited via specially crafted emails without user interaction. The post Zimbra Vulnerability Exploited in the Wild Prior to Public Disclosure appeared first on SecurityWeek ."
-  },
-  {
-   "source": "CISA",
-   "title": "Armatura LLC Armatura One",
-   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01",
-   "published": "2026-10-01T12:00:00+00:00",
-   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access to the database, execute arbitrary code on the host with the highest level of privilege, or gain control of the physical access-control system. The following versions of Armatura LLC Armatura One are affected: Armatura One <4.7.2 (CVE-2023-46604, CVE-2026-94591, CVE-2026-94592, CVE-2026-94593, CVE-2026-94594) Armatura One (USA) <4.6.1 (CVE-2023-46604, CVE-2026-94591, CVE-2026-94"
-  },
-  {
-   "source": "CISA",
-   "title": "Monta monta.app",
-   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02",
-   "published": "2026-10-01T12:00:00+00:00",
-   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control over vulnerable charging stations or disrupt charging services through denial-of-service attacks. The following versions of Monta monta.app are affected: monta.app vers:all/* (CVE-2026-95102, CVE-2026-97363, CVE-2026-97212, CVE-2026-93474) CVSS Vendor Equipment Vulnerabilities v3 9.4 Monta Monta monta.app Missing Authentication for Critical Function, Improper Rest"
-  },
-  {
-   "source": "CISA",
-   "title": "Johnson Controls EasyIO Neo Series EC and CW Controllers",
-   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-04",
-   "published": "2026-10-01T12:00:00+00:00",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to gain access to sensitive information that could be used to conduct further attacks against the system. The following versions of Johnson Controls EasyIO Neo Series EC and CW Controllers are affected: EasyIO Neo Series EC Controllers V3.3b63 (CVE-2026-64892) EasyIO Neo Series EC Controllers V3.3b62 (CVE-2026-64892) EasyIO Neo Series CW Controllers V3.3b25 (CVE-2026-64892) EasyIO Neo Series CW Controllers V3"
-  },
-  {
-   "source": "CISA",
-   "title": "Meari IoT Cloud Platform OpenAPI Service",
-   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
-   "published": "2026-10-01T12:00:00+00:00",
-   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow attackers to manipulate device configurations, trigger unauthorized behaviors, and access sensitive information such as device credentials, owner details, and network data without proper authorization. The following versions of Meari IoT Cloud Platform OpenAPI Service are affected: IoT Cloud Platform OpenAPI Service vers:all/* (CVE-2026-101104, CVE-2026-96613) CVSS Vendor Equipment Vulnerabilities v3 7.7 Meari Meari I"
-  },
-  {
-   "source": "CISA",
-   "title": "ABB Protection and Control IED Manager PCM600",
-   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
-   "published": "2026-10-01T12:00:00+00:00",
-   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to escalate privileges or overwrite files. The following versions of ABB Protection and Control IED Manager PCM600 are affected: Protection and Control IED Manager PCM600 <=2.14 (CVE-2026-15952, CVE-2026-15953) CVSS Vendor Equipment Vulnerabilities v3 6.4 ABB ABB Protection and Control IED Manager PCM600 Incorrect Permission Assignment for Critical Resource, Improper Limitation of a Pathname to a Restricte"
-  },
-  {
-   "source": "CISA",
-   "title": "Johnson Controls EasyIO Neo Series EC and CW Controllers",
-   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
-   "published": "2026-10-01T12:00:00+00:00",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker tointercept and read sensitive information, including credentials andsession data. The following versions of Johnson Controls EasyIO Neo Series EC and CW Controllers are affected: EasyIO Neo Series EC Controllers V3.3b62 (CVE-2026-64893) EasyIO Neo Series EC Controllers V3.3b63 (CVE-2026-64893) EasyIO Neo Series CW Controllers V3.3b24 (CVE-2026-64893) EasyIO Neo Series CW Controllers V3.3b25 (CVE-2026-64893) "
-  },
-  {
-   "source": "CISA",
-   "title": "CISA Malcolm",
-   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-254-01",
-   "published": "2026-10-01T12:00:00+00:00",
-   "summary": "View CSAF Summary The following versions of CISA Malcolm are affected: Malcolm CVSS Vendor Equipment Vulnerabilities v3 8.8 CISA CISA Malcolm Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'), Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), Server-Side Request Forgery (SSRF), Authentication Bypass by Spoofing, Missing Authorization, Missin"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "How Financial Services Companies Can Modernize Their Software Supply Chain",
-   "url": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
-   "published": "2026-10-01T11:45:00+00:00",
-   "summary": "Every security leader at a bank, insurer, or asset manager has had a version of this conversation: Security wants to eliminate a class of vulnerabilities. Engineering explains what it would take to upgrade the platform where they live. Somebody prices out the regression testing. Somebody else raises the change-freeze calendar. The finding gets an exception, a compensating control, and a date"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Kevin Mandia’s Armadin Raises $255 Million at $2.5 Billion Valuation",
-   "url": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
-   "published": "2026-10-01T11:40:51+00:00",
-   "summary": "The Series B brings the AI-powered offensive security startup’s total funding to roughly $445 million only seven months after its public launch. The post Kevin Mandia’s Armadin Raises $255 Million at $2.5 Billion Valuation appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft enables Windows settings backup by default for orgs",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enables-windows-settings-backup-by-default-for-orgs/",
-   "published": "2026-10-01T11:14:28+00:00",
-   "summary": "Microsoft announced that Windows settings backup and restore is now enabled by default on all Microsoft Entra-joined or Microsoft Entra hybrid-joined enterprise systems upgraded to Windows 11 26H2. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Treasury Blacklists Most-Wanted ATM Malware Developer and His Network",
-   "url": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
-   "published": "2026-10-01T10:51:39+00:00",
-   "summary": "The US government continues its crackdown on Tren de Aragua over its ATM jackpotting scheme. The post Treasury Blacklists Most-Wanted ATM Malware Developer and His Network appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Zammad Zero-Days Exploited in AI-Powered DIVD Hack",
-   "url": "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
-   "published": "2026-10-01T10:42:49+00:00",
-   "summary": "The flaws were chained to hijack sessions, achieve remote code execution, and elevate privileges to root. The post Zammad Zero-Days Exploited in AI-Powered DIVD Hack appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates",
-   "url": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
-   "published": "2026-10-01T10:42:36+00:00",
-   "summary": "OpenAI on Wednesday said it identified and disrupted a coordinated distillation campaign that was designed to illicitly extract protected reasoning from its artificial intelligence (AI) models. A \"core cluster of the activity,\" going back to the first week of July, has been attributed to individuals associated with Moonshot AI, a Chinese AI company based in Beijing. It did not cite any"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-   "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-   "published": "2026-10-01T10:33:16+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a critical authentication bypass flaw impacting Cisco Catalyst SD-WAN Manager to its Known Exploited Vulnerabilities (KEV), following reports of active exploitation. The vulnerability, tracked as CVE-2026-76504 (CVSS score: 9.8), could allow an unauthenticated, remote attacker to access an affected system with"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Hackers stole Pentagon personnel records of over 3 million people",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
-   "published": "2026-10-01T09:44:28+00:00",
-   "summary": "The Pentagon's Defense Manpower Data Center (DMDC) is notifying millions of military service members that hackers stole their data after breaching the Pentagon's human resources management system in October 2025. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Google Rolls Out Gemini 4 Argon to Trusted Cyber Defenders, Plans Guardrail-Free Version",
-   "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html",
-   "published": "2026-10-01T07:49:36+00:00",
-   "summary": "Google on Wednesday announced its latest frontier artificial intelligence (AI) model, Gemini 4 Argon, that it said is being rolled out to a set of trusted cyber defenders through its Fairwind Program. \"It delivers frontier performance in complex workflows across real-world software engineering, enterprise knowledge work like legal and finance, and cybersecurity defense,\" Koray Kavukcuoglu,"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Metamask discloses security incident affecting its infrastructure",
-   "url": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/",
-   "published": "2026-10-01T07:33:57+00:00",
-   "summary": "On Thursday, cryptocurrency wallet provider MetaMask has disclosed an ongoing infrastructure security incident affecting some of its infrastructure. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
-   "url": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-   "published": "2026-10-01T05:54:41+00:00",
-   "summary": "Security researchers have published the first public proof-of-concept for CVE-2026-86950, an Apple CoreGraphics flaw Apple says may have been used in attacks against specific targeted individuals. The trigger is a malicious PDF with a crafted embedded font that crashes unpatched iPhones and Macs. The code causes a crash, not an execution error. Turning the memory corruption into a working"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
-   "url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-   "published": "2026-10-01T05:21:10+00:00",
-   "summary": "Cryptocurrency exchange Bitget on Wednesday confirmed that attackers who stole $387.5 million last week exploited a zero-day flaw in third-party security products, citing ongoing investigation findings from SlowMist. \"Their investigation identified malicious activity involving third-party security products, including a zero-day vulnerability, and recovered a customized tool used by the attacker"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "MetaMask Security Incident Prompts Exit of Affected Ethereum Validators",
-   "url": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
-   "published": "2026-10-01T05:10:09+00:00",
-   "summary": "MetaMask on Thursday said it's responding to what it described as an \"ongoing security incident\" impacting part of its infrastructure. \"We are actively addressing and remediating the issue internally, in coordination with external partners and security advisors,\" the software cryptocurrency wallet maker said. \"At this time, we have identified no immediate threat to MetaMask wallets.\" MetaMask"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Citrix NetScaler Post-Exploitation Payload Creates Superuser, Maps Web Shell to CSS-Like URLs",
-   "url": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-   "published": "2026-10-01T04:35:34+00:00",
-   "summary": "Threat actors have been observed exploiting a critical pre-authentication command injection vulnerability in Citrix NetScaler ADC and NetScaler Gateway to drop web shells and attempt theft of configuration data. LevelBlue's Threat Hunt Operations & Research (THOR) team, which analyzed the exploitation activity across multiple customer environments, said it identified malicious NetScaler"
+   "title": "Microsoft says threat actors are ahead in the early AI race",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
+   "published": "2026-10-01T19:32:47+00:00",
+   "summary": "Microsoft says cyberattackers are currently benefiting from artificial intelligence faster than defenders, allowing threat actors to speed up vulnerability discovery, malware development, and post-compromise activity while security teams struggle to keep pace. [...]"
   },
   {
    "source": "CyberScoop",
-   "title": "OpenAI reveals ‘novel’ encryption bypass used in distillation attack",
-   "url": "https://cyberscoop.com/openai-moonshot-ai-model-distillation-attack/",
-   "published": "2026-09-30T22:17:34+00:00",
-   "summary": "The company said individuals associated with Chinese company MoonshotAI were behind parts of the attack, but did not offer hard evidence for the claim. The post OpenAI reveals ‘novel’ encryption bypass used in distillation attack appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Malicious Custom GPTs Turn ChatGPT Into RAT Delivery Lure",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/malicious-custom-gpts-chatgpt-rat-delivery-lure",
-   "published": "2026-09-30T21:25:47+00:00",
-   "summary": "In yet another ClickFix-style campaign, threat actors abuse legitimate domains from OpenAI and Google to fool unsuspecting users."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Trump, Tech Giants Strike Voluntary AI Safety Accord",
-   "url": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord",
-   "published": "2026-09-30T20:51:15+00:00",
-   "summary": "The new White House Accord on so-called Super Intelligence calls on companies to implement greater controls and oversight over AI safety."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Russian state hackers use new RedFlick technique to push malware",
-   "url": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
-   "published": "2026-09-30T20:34:01+00:00",
-   "summary": "The Russian state actor Star Blizzard has been using a new malware installation tactic dubbed \"RedFlick\" to deploy its signature CosmicPulse backdoor. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "DIVD says Zammad zero-days enabled AI-driven network breach",
-   "url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
-   "published": "2026-09-30T19:49:15+00:00",
-   "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) says that the breach of its network was possible by exploiting a chain of two zero-day vulnerabilities in the open-source Zammad ticketing system. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "As AI Reshapes the SOC Career Ladder, Satisfaction Rises for 91%, but Entry Gets Harder for Nearly Half",
-   "url": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
-   "published": "2026-09-30T18:56:56+00:00",
-   "summary": "New Swimlane research underscores a paradox: While AI detection and response is essential to giving defenders an edge, one in four security pros say AI limits their skill development."
+   "title": "National cyber director: Government-industry collaboration vital to managing AI risks, competition with nations",
+   "url": "https://cyberscoop.com/sean-cairncross-ai-security-china-industry-collaboration/",
+   "published": "2026-10-01T19:21:37+00:00",
+   "summary": "Sean Cairncross talked about regulations, China, pilot projects and more Thursday. The post National cyber director: Government-industry collaboration vital to managing AI risks, competition with nations appeared first on CyberScoop ."
   }
  ]
 }
