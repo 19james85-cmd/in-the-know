@@ -156,6 +156,12 @@
   "e": "In July 2026, the 'Certighost' flaw (CVE-2026-54121) let an ordinary domain user fool an enterprise Certificate Authority into issuing a certificate that impersonated a Domain Controller."
  },
  {
+  "t": "CFAA",
+  "c": "Regulatory",
+  "d": "The Computer Fraud and Abuse Act is the main U.S. anti-hacking law. It makes it a crime to access a computer or network without authorization, or beyond the access you were granted.",
+  "e": "In October 2026, experts debated how the CFAA should apply when an autonomous AI agent, not a person, carries out an unauthorized intrusion."
+ },
+ {
   "t": "CI/CD Pipeline",
   "c": "General",
   "d": "A CI/CD (continuous integration / continuous delivery) pipeline is the automated system that builds, tests and ships software. Compromising it lets attackers slip malicious code into everything the team releases.",
@@ -870,6 +876,12 @@
   "e": "Many of the flaws in the July 2026 Microsoft Patch Tuesday were elevation-of-privilege bugs that let a low-level foothold become domain admin."
  },
  {
+  "t": "Privileged Access Management",
+  "c": "General",
+  "d": "Tools and practices that control, monitor, and secure accounts with elevated rights, such as system administrators. Because these accounts can change almost anything, protecting them is a high priority.",
+  "e": "In October 2026, Fortra patched a critical flaw (CVE-2026-9862) in its BoKS privileged access management product that allowed unauthenticated command execution."
+ },
+ {
   "t": "PRNG",
   "c": "Cryptography",
   "d": "A PRNG (pseudorandom number generator) is a formula that produces numbers that look random but are actually calculated from a starting value called a seed. If the seed is guessable or the generator is weak, an attacker can reproduce the exact same 'random' numbers — catastrophic when those numbers are used to create secret keys.",
@@ -1144,6 +1156,12 @@
   "c": "Network",
   "d": "SOCKS5 is a proxy protocol that forwards a user's network traffic through an intermediary machine, masking where the traffic really originates. Attackers hijack devices into SOCKS5 relays to anonymize their own activity behind someone else's IP address.",
   "e": "In August 2026, the Evooo1Bot Linux botnet turned infected routers into SOCKS5 relay nodes to launder criminal traffic."
+ },
+ {
+  "t": "Spear-Phishing",
+  "c": "Threat/Actor",
+  "d": "A targeted phishing attack aimed at a specific person or organization, using personalized details to look convincing. Unlike mass spam, it is researched and tailored to its victim.",
+  "e": "In September 2025, a China-nexus group used spear-phishing emails against Taiwan's think-tank community to plant the Antino backdoor."
  },
  {
   "t": "SPRS",

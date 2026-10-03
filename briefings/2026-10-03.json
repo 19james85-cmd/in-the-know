@@ -1,0 +1,173 @@
+{
+  "leadStory": {
+    "headline": "Warlock exploits SharePoint flaws to disable defenses and ransom water, telecom operators",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+    "tags": [
+      {"label": "Active Exploitation", "type": "d"},
+      {"label": "Critical Infrastructure", "type": "d"},
+      {"label": "Ransomware", "type": "d"}
+    ],
+    "body": "The suspected China-linked group Warlock (tracked by Microsoft as Storm-2603) is still weaponizing on-premises Microsoft SharePoint Server flaws, hitting at least four victims in the past two months — a water utility, a telecommunications provider, a regional government body, and a university across Portuguese- and Spanish-speaking regions. The attackers drop a Web Shell to steal the SharePoint farm's ASP.NET Machine Key, then use that stolen key to forge validly signed requests and achieve Remote Code Execution (RCE) inside the SharePoint application pool. Once inside, they use the BYOVD technique — abusing the vulnerable K7RKScan.sys driver (CVE-2025-1055) — to disable security software, pushing the kill tool to roughly 40 hosts in two hours before deploying Warlock Ransomware on at least 33 machines via the domain's SYSVOL share. Organizations running internet-facing SharePoint Server should treat this as active exploitation and verify their July 2025 \"ToolShell\" patches are applied and their Machine Keys rotated.",
+    "beginnerTip": "A <strong>Machine Key</strong> is the secret value SharePoint uses to sign and verify data so it knows a request is genuine. If attackers steal it, they can forge their own \"trusted\" requests — which is why rotating (changing) the key after patching matters as much as the patch itself."
+  },
+  "cves": [
+    {
+      "headline": "GitLab patches critical 9.9 AI Gateway flaw allowing command execution on self-hosted servers",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+      "tags": [
+        {"label": "CVE-2026-1868", "type": "d"},
+        {"label": "CVSS 9.9", "type": "d"}
+      ],
+      "body": "GitLab disclosed CVE-2026-1868, a CVSS 9.9 “critical” flaw in the Duo Workflow Service component of its AI Gateway, the service that connects a self-hosted GitLab instance to an AI model. The bug is an insecure template expansion of user-supplied input in crafted Duo Agent Platform flow definitions, which an authenticated user could abuse to trigger denial of service or achieve arbitrary code execution — potentially full compromise of the gateway. Affected AI Gateway builds are fixed in versions 18.6.2, 18.7.1, and 18.8.1; only self-hosted GitLab Duo deployments are at risk.",
+      "beginnerTip": "<strong>Template Injection</strong> happens when software treats user-supplied text as part of its own code instead of as plain data. Here, a specially crafted AI “flow” could smuggle in commands the server then runs — so patch any self-hosted GitLab Duo setup promptly."
+    },
+    {
+      "headline": "Dell Container Storage Modules flaws enable unauthenticated access and root on Kubernetes nodes",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+      "tags": [
+        {"label": "CVE-2026-40710", "type": "d"},
+        {"label": "CVE-2026-40711", "type": "d"}
+      ],
+      "body": "Dell released fixes for multiple critical flaws in its Container Storage Modules (CSM), used to connect Dell storage to Kubernetes clusters. CVE-2026-40710 is a hard-coded credentials bug — a secret password baked into the public code — that a remote, unauthenticated attacker can use for information disclosure. CVE-2026-40711 is an OS Command Injection flaw in the CSI drivers (csi-powerstore, csi-unity, csi-powerflex, csi-powermax) that lets an authenticated remote attacker run arbitrary commands and gain root on the Kubernetes nodes running those drivers. Admins should apply Dell's updated Operator and Helm chart releases as soon as possible.",
+      "beginnerTip": "<strong>Hard-coded Key</strong> credentials are passwords or secrets written directly into software. Because anyone who reads the code can find them, they are a well-known weakness — the fix is to patch to a version where the secret is removed or made configurable."
+    },
+    {
+      "headline": "Fortra patches critical unauthenticated command-execution flaws in BoKS privileged access manager",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
+      "tags": [
+        {"label": "CVE-2026-9862", "type": "d"},
+        {"label": "CVSS 9.8", "type": "d"}
+      ],
+      "body": "Fortra patched critical bugs in Core Privileged Access Manager (BoKS), a product that controls and brokers admin access across servers. CVE-2026-9862 (CVSS 9.8) is an OS Command Injection flaw in the boks_autoregisterd service — which listens on TCP port 6507 by default — that lets an unauthenticated remote attacker run arbitrary commands with no user interaction, enabling authentication bypass, shell command execution, and lateral movement. A companion flaw, CVE-2026-9863, allows code execution on the BoKS Master through its legacy client-upgrade tooling. Because a Privileged Access Management system holds the keys to an entire fleet, these should be patched urgently; as a stopgap, restrict network access to the vulnerable service.",
+      "beginnerTip": "<strong>Command Injection</strong> is when attacker-supplied text is passed straight to the operating system as a command. A flaw like this in a Privileged Access Management tool is especially dangerous because that tool already has elevated rights across many machines."
+    },
+    {
+      "headline": "Kiteworks and Citrix incidents expose how hard zero-day response really is",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+      "tags": [
+        {"label": "Zero-Day", "type": "w"},
+        {"label": "Incident Response", "type": "w"}
+      ],
+      "body": "Two recent vendor incidents show the messy reality of responding to a Zero-Day — a flaw being exploited before a fix exists. Kiteworks reportedly told customers to power down its data-protection platform during a roughly nine-hour window while it prepared a response, while Citrix stayed quiet about reported attacks until it shipped a patch. The contrast highlights the trade-off defenders face between disruptive emergency mitigation and waiting for an official fix.",
+      "beginnerTip": "A <strong>Zero-Day</strong> is a vulnerability attackers are using before the vendor has a patch, leaving defenders “zero days” to prepare. When one hits, temporary steps like taking a system offline can be the only protection until an update arrives."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "Rust-based 'Antino' backdoor abuses Outlook and OneDrive for stealthy C2 in China-nexus espionage",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+      "tags": [
+        {"label": "Espionage", "type": "w"},
+        {"label": "China-nexus", "type": "a"}
+      ],
+      "body": "Cisco Talos detailed a previously undocumented Rust backdoor named Antino, used by a China-nexus cluster it tracks as UAT-11587 against government and policy organizations in Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar. First seen in September 2025 via Spear-Phishing against Taiwan's academic and think-tank community, the campaign has grown to at least 16 victims across eight countries. Antino handles reconnaissance, shell and PowerShell execution, file transfer, and in-memory shellcode loading, and — notably — runs its entire Command-and-Control (C2) through Microsoft 365, using the Microsoft Graph API to pass commands via Outlook and OneDrive so the traffic blends in with normal cloud activity. Talos assesses the group as China-based with high confidence, citing Simplified Chinese metadata and a UTC+08:00 time zone in the lures.",
+      "beginnerTip": "Using legitimate cloud services as <strong>Command-and-Control (C2)</strong> channels is a growing stealth tactic: because traffic to Outlook and OneDrive looks normal, defenders can't simply block it, making the malware far harder to spot."
+    },
+    {
+      "headline": "Danish university DTU breach exposes data of up to 200,000 people",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+      "tags": [
+        {"label": "Data Breach", "type": "w"},
+        {"label": "IAM Compromise", "type": "w"}
+      ],
+      "body": "The Technical University of Denmark (DTU) said data belonging to up to 200,000 people may have been exposed after attackers broke into its identity and access management (IAM) system and downloaded a large volume of records. IAM is the system that stores who is allowed to access what, so a compromise there can expose accounts across the whole organization. DTU is investigating the scope and notifying affected users.",
+      "beginnerTip": "<strong>IAM</strong> (Identity and Access Management) is the digital gatekeeper that decides which users can reach which systems. Breaching it is especially serious because it can hand attackers a directory of accounts and permissions all at once."
+    },
+    {
+      "headline": "Frontline Education breach exposes school district employee data via third-party flaw",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
+      "tags": [
+        {"label": "Data Breach", "type": "w"},
+        {"label": "Supply Chain", "type": "w"}
+      ],
+      "body": "Education software provider Frontline Education is notifying school districts of a data breach after attackers exploited a vulnerability in third-party software to reach its systems and steal employee information, including Social Security numbers. The incident is another example of a supply-chain breach, where attackers compromise one vendor to reach the many customers who depend on it. Affected districts are being advised to warn staff about potential identity-theft and phishing follow-on risks.",
+      "beginnerTip": "A <strong>Supply Chain Attack</strong> targets a trusted vendor or software component instead of the final victim directly. Breaking one supplier can expose dozens of downstream organizations at once, which is why vetting third-party software matters."
+    }
+  ],
+  "regulatory": [
+    {
+      "headline": "Agentic AI hacks raise thorny liability questions under the CFAA",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/ai-agent-hacks-legal-liability-cfaa/",
+      "tags": [
+        {"label": "AI Policy", "type": "a"},
+        {"label": "Legal", "type": "a"}
+      ],
+      "body": "As AI agents gain the ability to act on their own, experts and policymakers are debating who is legally responsible when one of them carries out a hack. The core problem is that existing laws — chiefly the U.S. Computer Fraud and Abuse Act (CFAA), which criminalizes unauthorized computer access — were written for human actors, so attributing intent and liability for an autonomous agent's actions has no clear answer yet. The discussion is pushing toward making AI companies, not just end users, accountable for agentic misuse.",
+      "beginnerTip": "The <strong>CFAA</strong> (Computer Fraud and Abuse Act) is the main U.S. anti-hacking law, making it illegal to access a computer without authorization. The open question is how it applies when the thing doing the “accessing” is an autonomous AI agent rather than a person."
+    },
+    {
+      "headline": "MI5 warns China's MSS funded research involving 100+ UK-linked academics",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+      "tags": [
+        {"label": "Research Security", "type": "a"},
+        {"label": "State-Sponsored", "type": "w"}
+      ],
+      "body": "The UK's domestic intelligence agency MI5 issued a “Security Service Espionage Alert” warning that more than 100 academics helped China's Ministry of State Security (MSS) advance its intelligence-gathering, often via funded research with hidden state ties. The alert is aimed at tightening research-security practices at universities and institutions, which face growing pressure to vet funding sources and foreign collaborations for compliance and national-security risk.",
+      "beginnerTip": "<strong>State-Sponsored</strong> threats are backed by a government rather than ordinary criminals, and they often pursue long-term goals like stealing research. Alerts like this push universities to screen partnerships and funding more carefully."
+    }
+  ],
+  "trends": [
+    {
+      "headline": "The state of cybersecurity in 2026: cloud, AI, and sprawling identities reshape defense",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
+      "tags": [
+        {"label": "Industry Trend", "type": "a"}
+      ],
+      "body": "An industry overview argues that cybersecurity in 2026 is being reshaped by the rapid expansion of cloud infrastructure, AI, and distributed systems, which multiply the number of identities, devices, and internet-facing services organizations must defend. The result is a larger attack surface — the total set of ways an attacker could get in — and growing emphasis on managing identities and exposure rather than just perimeter defense.",
+      "beginnerTip": "<strong>Attack Surface</strong> means all the possible entry points an attacker could target. The more cloud services, devices, and user accounts an organization adds, the bigger that surface grows — and the more there is to protect."
+    },
+    {
+      "headline": "doxx.net raises $38M to keep autonomous AI agents from going off the rails online",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
+      "tags": [
+        {"label": "Funding", "type": "a"},
+        {"label": "Agentic AI", "type": "a"}
+      ],
+      "body": "Security startup doxx.net raised $38 million for an “ADN” platform meant to keep AI agents acting within bounds while they operate on a user's behalf online. The funding reflects a fast-growing market category: securing Agentic AI — software that can take actions autonomously — so that an agent can't be tricked or wander into harmful behavior while wielding a user's permissions.",
+      "beginnerTip": "<strong>Agentic AI</strong> refers to AI that doesn't just answer questions but takes actions on its own, like browsing, buying, or sending data. Because it acts with real authority, keeping it inside safe limits is becoming its own security field."
+    },
+    {
+      "headline": "RemoteThreat bets security teams need to test what happens after defenses fail",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
+      "tags": [
+        {"label": "Red Teaming", "type": "a"}
+      ],
+      "body": "Offensive-security startup RemoteThreat is pitching an evolution of red teaming — the practice of simulating real attackers to test defenses — arguing teams should rehearse what happens after an attacker is already inside, not just whether they can break in. The approach reflects a broader shift toward assuming breach and validating detection and response, rather than trusting that prevention alone will hold.",
+      "beginnerTip": "<strong>Red Teaming</strong> is a friendly, authorized simulated attack used to find weaknesses before real criminals do. “Assume breach” testing goes a step further by checking how well you'd detect and contain an intruder who already got in."
+    }
+  ],
+  "quickHits": [
+    {"color": "danger", "source": "The Hacker News", "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html", "text": "GitLab fixed CVE-2026-1868 (CVSS 9.9), a template-injection flaw letting an authenticated user run code on self-hosted AI Gateway — patch to 18.6.2 / 18.7.1 / 18.8.1."},
+    {"color": "danger", "source": "SecurityWeek", "sourceUrl": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/", "text": "Fortra patched CVE-2026-9862 (CVSS 9.8), an unauthenticated OS command-injection bug in BoKS privileged access manager reachable on TCP 6507."},
+    {"color": "danger", "source": "The Hacker News", "sourceUrl": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html", "text": "Dell patched hard-coded-credential and command-injection flaws (CVE-2026-40710 / 40711) in Container Storage Modules that could give root on Kubernetes nodes."},
+    {"color": "warn", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/", "text": "Denmark's DTU says a breach of its IAM system may have exposed data on up to 200,000 people."},
+    {"color": "warn", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/", "text": "Frontline Education is alerting school districts that employee data, including Social Security numbers, was stolen via a third-party software flaw."}
+  ],
+  "analystFooter": "Top priority today: assume active exploitation and patch internet-facing SharePoint (rotate Machine Keys), GitLab AI Gateway (CVE-2026-1868), Fortra BoKS (CVE-2026-9862), and Dell CSM (CVE-2026-40711) — then review identity and third-party exposure, the common thread behind today's breaches."
+}
