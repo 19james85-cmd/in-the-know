@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T16:41:00.931533+00:00",
+ "generated": "2026-10-04T16:59:24.990988+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,7 +11,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 6,
+   "count": 2,
    "error": null
   },
   {
@@ -23,19 +23,19 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -65,102 +65,46 @@
  ],
  "items": [
   {
-   "source": "The Hacker News",
-   "title": "MI5 Says China’s MSS Funded Research Involving 100+ U.K.-Linked Academics",
-   "url": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
-   "published": "2026-10-03T14:38:46+00:00",
-   "summary": "The U.K.'s domestic intelligence and security agency has warned that more than 100 academics have helped China boost its intelligence gathering efforts on behalf of Beijing's state security service. In a \"Security Service Espionage Alert\" issued on September 30, 2026, MI5 said the \"primary purpose of the China General Technology Research Institute (CGTRI) 中国通用技术研究院 is to fund research that"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
-   "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
-   "published": "2026-10-03T14:36:33+00:00",
-   "summary": "The suspected China-linked threat actor known as Warlock is still continuing to weaponize Microsoft SharePoint vulnerabilities, likely both old and new, in attacks targeting organizations in Portuguese- and Spanish-speaking countries. The activity, observed by the Symantec and Carbon Black Threat Hunter Team, has hit critical infrastructure, government, and education organizations. \"In the"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Danish university DTU breach exposes data of up to 200,000 people",
-   "url": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
-   "published": "2026-10-03T14:35:20+00:00",
-   "summary": "The Technical University of Denmark (DTU) says information belonging to up to 200,000 users may have been exposed after hackers accessed its identity and access management system and downloaded a large amount of data. [...]"
-  },
-  {
    "source": "SecurityWeek",
-   "title": "doxx.net Raises $38 Million to Prevent AI Agent-on-the-Internet Misadventures",
-   "url": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
-   "published": "2026-10-03T11:45:00+00:00",
-   "summary": "doxx.net’s new ADN platform prevents agentic misadventure while the agent is operating under the user’s authority. The post doxx.net Raises $38 Million to Prevent AI Agent-on-the-Internet Misadventures appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Fortra Patches Critical Vulnerabilities in BoKS",
-   "url": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
-   "published": "2026-10-03T11:34:00+00:00",
-   "summary": "The bugs could lead to authentication bypass, shell command execution, and memory corruption. The post Fortra Patches Critical Vulnerabilities in BoKS appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "The State of Cybersecurity in 2026: Key Segments, Insights, and Innovations",
-   "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
-   "published": "2026-10-03T11:00:00+00:00",
-   "summary": "Featuring: Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, distributed systems, and increasingly complex digital environments. As organizations manage more identities, devices, data, and internet-facing infrastructure, security is shifting toward continuous visibility, control, and the ability to respond to risk at scale. This report examines how core areas of"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "RemoteThreat Bets Security Teams Need to Test What Happens After Defenses Fail",
-   "url": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
-   "published": "2026-10-02T20:18:37+00:00",
-   "summary": "The offensive cyber operations startup looks to evolve red teaming beyond traditional methods to simulate attackers' increasingly advanced capabilities."
+   "title": "Trump Names National Intelligence Director Jay Clayton to Lead a New Federal AI Task Force",
+   "url": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
+   "published": "2026-10-04T14:57:25+00:00",
+   "summary": "The announcement comes after Trump hosted top executives of AI companies at the White House last week. The post Trump Names National Intelligence Director Jay Clayton to Lead a New Federal AI Task Force appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Frontline Education breach exposes school district employee data",
-   "url": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
-   "published": "2026-10-02T19:01:40+00:00",
-   "summary": "Frontline Education is notifying school districts of a data breach after attackers exploited a vulnerability in third-party software to gain unauthorized access to its systems and steal employee information, including Social Security numbers. [...]"
+   "title": "Anthropic asks Claude users to share voice data for AI model training",
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+   "published": "2026-10-04T10:53:21+00:00",
+   "summary": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
+   "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+   "published": "2026-10-04T07:22:05+00:00",
+   "summary": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter. Rey, whose real name is Saif ‌al-Din Khader, is said to have been brought into custody on September 29, 2026, cooperating with the U.S. Federal Bureau of Investigation (FBI) and"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+   "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+   "published": "2026-10-04T07:20:32+00:00",
+   "summary": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations. The campaigns have impersonated prominent economists and AI policymakers, as well as a prominent Anthropic employee, to single out an AI policy expert at a"
   },
   {
    "source": "BleepingComputer",
-   "title": "Warlock ransomware breach SharePoint in water, telecom operator attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
-   "published": "2026-10-02T18:33:01+00:00",
-   "summary": "The China-linked ransomware group Warlock targeted a water utility, a telecom provider, a regional government body, and a university by exploiting SharePoint vulnerabilities to gain initial access. [...]"
+   "title": "Google Gemini could soon get full access to your Mac’s files, apps and the web",
+   "url": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+   "published": "2026-10-03T23:12:34+00:00",
+   "summary": "Google's Gemini could soon access any file on your macOS device, open apps, browse the web, and perform actions without asking for permission every time. [...]"
   },
   {
-   "source": "CyberScoop",
-   "title": "The legal questions raised by agentic AI hacks",
-   "url": "https://cyberscoop.com/ai-agent-hacks-legal-liability-cfaa/",
-   "published": "2026-10-02T17:47:54+00:00",
-   "summary": "Experts and policymakers want AI companies to face consequences for agentic hacks. There may not be a clear-cut answer under existing laws and regulations. The post The legal questions raised by agentic AI hacks appeared first on CyberScoop ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "GitLab Patches Critical 9.9 AI Gateway Flaw Allowing Command Execution on Self-Hosted Servers",
-   "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
-   "published": "2026-10-02T17:33:31+00:00",
-   "summary": "A critical flaw in GitLab's AI Gateway could let a logged-in user with Duo Agent Platform access run commands on the gateway under certain conditions, GitLab said in an advisory. The gateway is the service that connects a GitLab instance to AI models, and only organizations that host their own gateway need to act. The flaw is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. The flaw"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign",
-   "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
-   "published": "2026-10-02T17:33:16+00:00",
-   "summary": "Government and policy organizations across Asia have become the target of a new campaign orchestrated by a China-nexus threat actor. The activity, which has targeted government and policy organizations in Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar, involves the deployment of a previously undocumented backdoor codenamed Antino. Cisco Talos is tracking the cluster"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
-   "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
-   "published": "2026-10-02T17:02:12+00:00",
-   "summary": "Dell has released security updates to address multiple critical security flaws in Dell Container Storage Modules (CSM) that could be exploited by bad actors to take over susceptible systems. The vulnerabilities are listed below - CVE-2026-63688 (CVSS score: 10.0) - A missing authentication for critical function vulnerability in the csm-authorization-storage gRPC server that an"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Kiteworks & Citrix Incidents Show Challenges of Zero-Day Response",
-   "url": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
-   "published": "2026-10-02T16:56:30+00:00",
-   "summary": "One company told customers to power down its data-protection platform during a nine-hour window, while the other remained mum on reported attacks prior to releasing a patch for its product."
+   "source": "BleepingComputer",
+   "title": "ShinyHunters hacker reportedly detained in Jordan, aiding FBI",
+   "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
+   "published": "2026-10-03T19:09:38+00:00",
+   "summary": "A suspected ShinyHunters hacking group member known online as \"Rey\" has reportedly been detained in Jordan and is cooperating with the FBI to help locate other members of the extortion group. [...]"
   }
  ]
 }
