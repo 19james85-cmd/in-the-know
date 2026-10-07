@@ -42,6 +42,12 @@
   "e": "Hugging Face's forensic analysis was blocked by guardrails on the hosted models it first tried, while the attacker's model had no usage policy at all."
  },
  {
+  "t": "Arbitrary File Read",
+  "c": "Vulnerability",
+  "d": "A flaw that lets an attacker read files on a server they should not have access to, such as configuration files or stored secrets. It does not run code by itself, but the leaked information often fuels a bigger attack.",
+  "e": "In October 2026, Atlassian patched CVE-2026-21589, an arbitrary file read flaw (CVSS 9.3) that let unauthenticated attackers read known files across eight Data Center products including Jira and Confluence."
+ },
+ {
   "t": "Arbitrary File Upload",
   "c": "Vulnerability",
   "d": "A flaw that lets an attacker upload a file the web server will treat as code and run, rather than just storing it as a harmless attachment. It often leads directly to full control of the site.",
@@ -124,6 +130,12 @@
   "c": "Vulnerability",
   "d": "A bug where a program writes more data than the memory space it reserved, spilling into nearby memory. Attackers can shape that overflow to overwrite data or run their own code.",
   "e": "In September 2026, HPE patched a critical Buffer Overflow in ArubaOS-CX switches (CVE-2026-73749) that allowed unauthenticated remote code execution."
+ },
+ {
+  "t": "Bug Bounty",
+  "c": "General",
+  "d": "A program where a company pays outside security researchers for responsibly reporting real vulnerabilities in its software. It rewards people for finding bugs quietly instead of exploiting or leaking them.",
+  "e": "In October 2026, Google temporarily paused cash rewards in its open-source bug bounty program after being flooded with low-quality, AI-generated reports of flaws that did not exist."
  },
  {
   "t": "Business Email Compromise (BEC)",
@@ -1288,6 +1300,12 @@
   "c": "Network",
   "d": "A Web Application Firewall (WAF) sits in front of a website or app and inspects incoming web traffic, blocking requests that match known attack patterns. It is a useful filter, but it can be bypassed and does not replace fixing the underlying flaw.",
   "e": "In September 2026, the ShinyHunters gang bypassed WAF rules protecting Oracle PeopleSoft by URL-encoding a character (writing %50 instead of 'P') so the filter did not recognize the blocked path."
+ },
+ {
+  "t": "Watermark",
+  "c": "General",
+  "d": "A hidden signal embedded in content so software can later detect where it came from. For AI text, the mark lives in subtle statistical patterns of word choice rather than any visible label.",
+  "e": "In October 2026, OpenAI said it would add invisible, machine-readable watermarks to ChatGPT and Codex text for EU users to comply with the EU AI Act's transparency rules."
  },
  {
   "t": "Web Shell",
