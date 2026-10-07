@@ -1,0 +1,213 @@
+{
+  "leadStory": {
+    "headline": "FBI and Secret Service warn FortiBleed credential campaign is still active, 86,644 Fortinet devices harvested",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+    "tags": [
+      {"label": "Active Campaign", "type": "d"},
+      {"label": "Fortinet", "type": "d"},
+      {"label": "Ransomware Link", "type": "w"}
+    ],
+    "body": "The FBI and U.S. Secret Service issued a joint warning that the FortiBleed campaign remains an active threat to internet-facing Fortinet FortiGate firewalls and SSL VPN gateways, with validated credentials now harvested from roughly 86,644 unique devices worldwide. Rather than exploiting a single software bug, the operators abuse reused or leaked credentials and Fortinet's legacy SHA-256 password storage to crack admin and VPN logins offline, then reuse them to break back in. Cybersecurity Dive reports an initial access broker is selling that access onward to multiple ransomware groups, and victims are being locked out of their own firewalls. Because this is credential harvesting and not a patchable flaw, no single update closes it.",
+    "beginnerTip": "There is no patch here because the attackers are using <strong>stolen passwords</strong>, not a software hole. The fix is to rotate every firewall and VPN credential, turn on multi-factor authentication, and stop reusing passwords across devices."
+  },
+  "cves": [
+    {
+      "headline": "Atlassian CVE-2026-21589 exploited within two hours of public details",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/atlassian-data-center-flaw-draws.html",
+      "tags": [
+        {"label": "CVSS 9.3", "type": "d"},
+        {"label": "Actively Exploited", "type": "d"},
+        {"label": "No Auth", "type": "d"}
+      ],
+      "body": "Attackers began probing a newly disclosed Atlassian Data Center flaw within two hours of the technical details and a public proof-of-concept going live. Tracked as CVE-2026-21589 (CVSS 9.3), it is an arbitrary file access bug that lets an unauthenticated attacker read sensitive files in the web application root directory across eight products, including Bitbucket, Confluence, Jira Software, and Jira Service Management Data Center. Atlassian has shipped fixes, and exploitation attempts that require no login are already underway.",
+      "beginnerTip": "A <strong>proof-of-concept</strong> is sample attack code researchers publish to prove a bug is real. As this shows, it can turn into live attacks in hours, so internet-facing Atlassian servers should be patched the same day a critical fix lands."
+    },
+    {
+      "headline": "SonicWall patches CVSS 10.0 pre-auth SSRF in SMA1000 remote-access gateways",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-max-severity-ssrf-flaw-in-sma1000-gateways/",
+      "tags": [
+        {"label": "CVSS 10.0", "type": "d"},
+        {"label": "Pre-Auth", "type": "d"}
+      ],
+      "body": "SonicWall released hotfixes for four flaws in its SMA1000 appliances, the gateways that give remote workers access to corporate networks and applications. The most serious carries the maximum CVSS score of 10.0: a pre-authentication Server-Side Request Forgery flaw that lets an attacker with no login send requests through the appliance and reach internal functions. SonicWall says it has no evidence yet that any of the four flaws has been exploited, but given the severity, affected gateways should be upgraded immediately.",
+      "beginnerTip": "<strong>Pre-authentication</strong> means an attacker does not need any username or password to trigger the bug, which is the most dangerous kind. Edge devices like VPN gateways sit directly on the internet, so a 10.0 flaw in one is a top-priority patch."
+    },
+    {
+      "headline": "Unpatched critical LMCache flaw lets unauthenticated attackers run code on LLM cache servers",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
+      "tags": [
+        {"label": "Critical RCE", "type": "d"},
+        {"label": "No Fix Yet", "type": "w"}
+      ],
+      "body": "A critical vulnerability in LMCache, open-source software that speeds up large language model servers such as vLLM, lets an attacker run code on the cache server without logging in, and no fixed version is available. The flaw lives in LMCache's multiprocess mode, where the cache runs as a standalone server that LLM workers reach over the ZeroMQ messaging library; a single crafted network message is enough to achieve remote code execution. Until a patch ships, operators should keep LMCache's internal ports off the public internet and restricted to trusted hosts.",
+      "beginnerTip": "<strong>Remote code execution (RCE)</strong> means an attacker can run their own commands on your machine over the network, the worst outcome for a server. When no patch exists, the defence is to make sure the vulnerable service simply cannot be reached from the internet."
+    },
+    {
+      "headline": "Chrome 155 ships fixes for 247 vulnerabilities, including four critical use-after-free bugs",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/chrome-155-update-patches-247-vulnerabilities/",
+      "tags": [
+        {"label": "Browser Patch", "type": "a"},
+        {"label": "247 Fixes", "type": "w"}
+      ],
+      "body": "Google's Chrome 155 update resolves 247 vulnerabilities, an unusually large batch, among them four critical-severity use-after-free defects in the Chromecast, Browser, Navigation, and Track components. Use-after-free bugs happen when a program keeps using a chunk of memory after it has been freed, which attackers can manipulate to run their own code. There is no report of active exploitation, but browsers are a constant target, so the update is worth installing promptly.",
+      "beginnerTip": "Chrome usually updates itself, but it only finishes when you <strong>fully close and reopen</strong> the browser. Check the version under the menu to confirm you are on 155 or later."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "Qilin ransomware suspect arrested in Japan, extradited to Germany",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/",
+      "tags": [
+        {"label": "Law Enforcement", "type": "g"},
+        {"label": "Qilin", "type": "w"}
+      ],
+      "body": "A suspect tied to the Qilin ransomware operation, one of the most active extortion crews of the past two years, was detained in Japan in May and has now been extradited to Germany to face hacking charges. Qilin runs a ransomware-as-a-service model, renting its malware to affiliates who carry out intrusions and split the proceeds. International cooperation that moves a suspect across borders is a meaningful win against a group that has hit organisations worldwide.",
+      "beginnerTip": "<strong>Ransomware-as-a-service</strong> works like a criminal franchise: a core group builds the malware and 'affiliates' rent it to attack victims. Arresting even one operator can disrupt the whole network's trust and tooling."
+    },
+    {
+      "headline": "PoeLLM malware builds a 3,400-server cryptomining botnet from exposed AI infrastructure",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
+      "tags": [
+        {"label": "Botnet", "type": "w"},
+        {"label": "Cryptojacking", "type": "w"}
+      ],
+      "body": "Researchers are tracking a new malware family, PoeLLM, that hunts for exposed AI and large language model servers and turns them into cryptocurrency miners, in a financially motivated campaign dubbed Canto Incognito. More than 3,400 servers have been compromised, and the malware notably hides the coordinates of its command infrastructure inside the text of a poem to evade detection. Infected machines are also used as scanners and launchpads to find and compromise the next victims, expanding the botnet.",
+      "beginnerTip": "<strong>Cryptojacking</strong> is when attackers secretly use your servers' computing power to mine cryptocurrency for themselves. The warning signs are machines running hot and slow for no clear reason while someone else pockets the coins."
+    },
+    {
+      "headline": "Eight malicious npm packages delivered Overlord RAT and stealers in long-running supply chain campaign",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+      "tags": [
+        {"label": "Supply Chain", "type": "w"},
+        {"label": "RAT", "type": "w"}
+      ],
+      "body": "Researchers at CloudSEK and Checkmarx detailed a long-running npm supply chain campaign, codenamed MALFEX, that pushed information stealers and the Overlord remote access trojan onto developer machines. The activity is pinned to a lone threat actor who published 12 packages since August 2023, eight of which were downloaded 40,767 times in total. Because developers install packages with deep system access, a single poisoned dependency can hand an attacker remote control of a build machine.",
+      "beginnerTip": "A <strong>supply chain attack</strong> hides malware inside software you trust and install on purpose, like an open-source code package. Pin dependencies to known-good versions and be wary of packages with odd names or sudden ownership changes."
+    }
+  ],
+  "regulatory": [
+    {
+      "headline": "FBI and French authorities seize deepfake CSAM-for-sale websites",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/fbi-french-authorities-seize-deepfake-csam-websites/",
+      "tags": [
+        {"label": "Enforcement", "type": "g"},
+        {"label": "Deepfake", "type": "w"}
+      ],
+      "body": "The FBI and French authorities seized a group of websites selling deepfake child sexual abuse material, some of it built from recorded or stolen video of minors taken through interactions on social platforms such as Snapchat, TikTok, Instagram, and Facebook. The takedown reflects growing law-enforcement focus on synthetic-media abuse and the legal exposure of services that host or monetise it. It also underlines why platforms face rising pressure to detect manipulated imagery.",
+      "beginnerTip": "A <strong>deepfake</strong> is fake audio, image, or video generated by AI to look real. Beyond this kind of abuse, the same technique powers scams, so treat an unexpected video or voice 'from' someone you know with the same caution as a suspicious email."
+    },
+    {
+      "headline": "Georgia Power and Alabama Power breach exposes data on 400,000 accounts",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/georgia-power-alabama-power-data-breach-hits-400000-accounts/",
+      "tags": [
+        {"label": "Data Breach", "type": "w"},
+        {"label": "Notification", "type": "a"}
+      ],
+      "body": "Southern Company is notifying roughly 400,000 customers of its Georgia Power and Alabama Power utilities that hackers accessed their account information. Breach notifications like this are a legal obligation in most U.S. states once personal data is exposed, which is why affected customers are being contacted directly. Utility customer databases are attractive targets because they combine names, contact details, and billing information useful for follow-on fraud.",
+      "beginnerTip": "A <strong>breach notification</strong> is the letter or email a company must send when your data is exposed. Treat these as real but verify independently, since scammers also send fake 'breach' messages to harvest more of your details."
+    },
+    {
+      "headline": "California wiretapping-law change sparks a major online-privacy fight",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/california-cipa-pen-register-privacy-lawsuit-bill/",
+      "tags": [
+        {"label": "Legislation", "type": "a"},
+        {"label": "Privacy", "type": "a"}
+      ],
+      "body": "An update to California's Invasion of Privacy Act (CIPA) would end private lawsuits over certain forms of internet tracking and surveillance, setting businesses against privacy groups and unions. Much of the dispute centres on whether modern web tracking tools count as 'pen registers', a legal term for devices that record who you communicate with. The outcome will shape how companies can be sued over online tracking, a question with national ripple effects given California's size.",
+      "beginnerTip": "A <strong>pen register</strong> originally meant a device that logged the phone numbers you dialled, not the call's contents. Courts are now debating whether website trackers that record your browsing activity fall under the same rules."
+    }
+  ],
+  "trends": [
+    {
+      "headline": "Anthropic expands Claude access for vetted cyber teams as Project Glasswing reports 129,000 flaws found",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
+      "tags": [
+        {"label": "AI Security", "type": "a"},
+        {"label": "Trend", "type": "a"}
+      ],
+      "body": "Anthropic is expanding a program that lets vetted cybersecurity professionals use its most capable AI models with reduced safeguards, folding it into a new three-tier Cyber Verification Program. The company says its Project Glasswing initiative uncovered at least 129,000 verified software vulnerabilities between April and July 2026. The move highlights a broader shift: defenders are increasingly using AI to find bugs at scale, while vendors try to gate that same power away from attackers through identity verification.",
+      "beginnerTip": "AI is now a double-edged tool in security, helping defenders find flaws faster but also lowering the bar for attackers. <strong>Verification programs</strong> are one attempt to let trusted professionals use powerful AI while keeping casual misuse out."
+    },
+    {
+      "headline": "Pwn2Own Ireland 2026 opens with 32 zero-days and $388,500 paid out on day one",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+      "tags": [
+        {"label": "Research", "type": "a"},
+        {"label": "Zero-Day", "type": "a"}
+      ],
+      "body": "On the first day of the Pwn2Own Ireland 2026 contest, researchers demonstrated 32 previously unknown zero-day vulnerabilities and earned $388,500, including two successful hacks of Samsung's Galaxy S26. At these events, vendors are notified immediately and get a window to patch before any details go public, so the bugs are disclosed responsibly rather than sold to criminals. Competitions like this are a major pipeline for finding and fixing serious flaws in widely used devices.",
+      "beginnerTip": "A <strong>zero-day</strong> is a flaw the vendor does not yet know about, so there are zero days of warning. Contests like Pwn2Own are a 'good guy' way to surface them, paying researchers to report bugs instead of letting criminals exploit them."
+    },
+    {
+      "headline": "Study of 2.5 million devices finds healthcare far from quantum-ready",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready",
+      "tags": [
+        {"label": "Post-Quantum", "type": "a"},
+        {"label": "Healthcare", "type": "a"}
+      ],
+      "body": "A study of 2.5 million devices across 50 healthcare organisations found the sector has a long way to go before it is ready for the post-quantum cryptography era. The concern is 'harvest now, decrypt later', where attackers steal encrypted data today and bank on future quantum computers to crack it. For long-lived, sensitive records like medical histories, that future risk is a present-day data-protection problem.",
+      "beginnerTip": "<strong>Post-quantum cryptography</strong> refers to new encryption designed to resist future quantum computers. It matters now because data stolen today could be unlocked years later once those computers mature."
+    }
+  ],
+  "quickHits": [
+    {
+      "color": "danger",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/ninja-forms-plugin-flaw-exploited-to-hack-wordpress-sites/",
+      "text": "Hackers are actively exploiting stored XSS flaws in the Ninja Forms and WPC Product Bundles WordPress plugins to plant backdoors and create rogue admin accounts."
+    },
+    {
+      "color": "warn",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com/androids-october-2026-updates-patch-25-vulnerabilities/",
+      "text": "Android's October 2026 security updates fix 25 vulnerabilities, including a critical privilege-escalation flaw in the System component."
+    },
+    {
+      "color": "warn",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/advantest-confirms-personal-information-stolen-in-ransomware-attack/",
+      "text": "Chip-test-equipment maker Advantest confirmed that a ransomware attack earlier this year stole personally identifiable information, months after the incident."
+    },
+    {
+      "color": "warn",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
+      "text": "ClickFix social-engineering attacks are evolving, now hiding payloads in DNS TXT records and browser cache pre-fetching to slip past early detection."
+    },
+    {
+      "color": "ok",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/musician-gets-18-months-in-prison-for-10-million-streaming-fraud-using-ai-bots/",
+      "text": "A North Carolina musician was sentenced to 18 months in prison for using AI-generated songs and bots to fake streams and collect over $10 million in royalties."
+    }
+  ],
+  "analystFooter": "Patch the actively exploited items first: the unauthenticated Atlassian flaw (CVE-2026-21589) and the SonicWall SMA1000 10.0 gateway bug are internet-facing and already drawing attack traffic. Then tackle FortiBleed as a credential problem, not a patch, by rotating firewall and VPN logins and enforcing MFA everywhere."
+}
