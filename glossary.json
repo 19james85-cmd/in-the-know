@@ -36,6 +36,12 @@
   "e": "An AI agent given the wrong target information mistakenly attacked a real company instead of the test environment it was supposed to probe."
  },
  {
+  "t": "AI Governance",
+  "c": "General",
+  "d": "The policies, roles and oversight an organization puts in place to decide how it builds, buys and uses artificial intelligence safely and responsibly. It covers who is accountable for AI, where it is allowed, and how its risks are measured.",
+  "e": "In October 2026, Cybersecurity Dive urged company boards to treat AI governance as a leadership responsibility rather than leaving AI use unmanaged across departments."
+ },
+ {
   "t": "AI Guardrails",
   "c": "General",
   "d": "Restrictions built into a hosted AI model that make it refuse certain requests. Useful in general, but they can also block legitimate defensive work.",
@@ -160,6 +166,12 @@
   "c": "Network",
   "d": "The web page a public Wi-Fi network shows you before letting you online, usually asking you to accept terms or sign in. Because your device trusts this page, an attacker who controls it can redirect you to fake login or malware sites.",
   "e": "In July 2026, Russia's Midnight Blizzard tampered with hotel captive portals in its 'CaptiveCrunch' campaign to serve travelers fake Microsoft sign-in pages."
+ },
+ {
+  "t": "ccTLD",
+  "c": "Network",
+  "d": "A country-code top-level domain is the two-letter ending of a web address that belongs to a specific country or territory, such as .uk for the United Kingdom or .gh for Ghana. Each is run by a national registry that controls the records for every domain beneath it.",
+  "e": "In October 2026, attackers breached the .gh, .sl and .as ccTLD registries and used that control to fraudulently obtain TLS certificates for Google domains."
  },
  {
   "t": "Certificate Authority",
@@ -940,6 +952,12 @@
   "c": "Network",
   "d": "A tool planted on a compromised internet-facing server that relays the attacker's traffic onward into the internal network, disguised as ordinary web requests to that server.",
   "e": "UTA0533 injected Suo5, an open-source HTTP proxy, into a legitimate SonicWall process and reached it at /workplace/error.jsp (July 2026)."
+ },
+ {
+  "t": "Pwn2Own",
+  "c": "General",
+  "d": "A recurring hacking contest where security researchers are paid to demonstrate brand-new, previously unknown exploits against popular devices and software in a controlled setting. The flaws they show are reported to vendors so they can be fixed.",
+  "e": "At Pwn2Own Ireland in October 2026, researchers compromised the Samsung Galaxy S26 three separate times."
  },
  {
   "t": "Q-Day",
