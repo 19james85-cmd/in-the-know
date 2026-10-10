@@ -762,6 +762,12 @@
   "e": "In August 2026, researchers showed a malicious Model Context Protocol (MCP) server could split a harmful request into innocent-looking steps to make an AI coding agent leak SSH keys and secrets."
  },
  {
+  "t": "Money Mule",
+  "c": "Threat/Actor",
+  "d": "A money mule is a person who moves stolen or illegal funds on behalf of criminals, often by receiving money into their own account and forwarding it on, sometimes knowingly and sometimes after being tricked. Mules help launder proceeds and hide the trail back to the real criminals.",
+  "e": "In October 2026, a man admitted to running a network of roughly 15,000 money mules used to launder funds for cybercriminals."
+ },
+ {
   "t": "N-Day",
   "c": "Vulnerability",
   "d": "An N-day is a vulnerability that has already been publicly disclosed and has a patch available - the opposite of a zero-day. Attackers love them because plenty of organizations take weeks or years to apply fixes.",
@@ -1020,6 +1026,12 @@
   "e": "A pre-authentication RCE flaw in a load balancer let attackers run arbitrary commands on the device without ever logging in."
  },
  {
+  "t": "Residential Proxy",
+  "c": "Network",
+  "d": "A residential proxy routes someone else's internet traffic through an ordinary home device (like a phone or router) so their online activity appears to come from that home connection. Criminals rent these networks to disguise fraud and attacks as normal household browsing.",
+  "e": "In October 2026, researchers found budget Android phones in 150+ countries shipped pre-infected with malware that secretly enrolled them into a residential proxy network."
+ },
+ {
   "t": "REST API",
   "c": "Network",
   "d": "A standard machine-to-machine web interface: programs send structured HTTP requests to defined \"routes\" (URLs) instead of clicking through pages.",
@@ -1066,6 +1078,12 @@
   "c": "General",
   "d": "Row-Level Security (RLS) is a database rule that controls which individual rows each user is allowed to see or change, so people only access their own records. If it is missing or misconfigured, anyone who reaches the database can read everyone’s data.",
   "e": "In September 2026, researchers found 16,326 Supabase databases exposing personal data because Row-Level Security policies were missing or ineffective."
+ },
+ {
+  "t": "SAML",
+  "c": "Network",
+  "d": "SAML (Security Assertion Markup Language) is a standard that lets a single login work across many separate applications, so one identity provider can vouch for you to other services. It is the plumbing behind most 'single sign-on' systems.",
+  "e": "In October 2026, Citrix's NetScaler flaw CVE-2026-88779 could only be triggered on appliances configured to use SAML for single sign-on."
  },
  {
   "t": "Sandbox",
