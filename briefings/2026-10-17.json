@@ -1,0 +1,187 @@
+{
+  "leadStory": {
+    "headline": "Hackers abuse a stolen ConnectWise Cloud Backup credential to break into 173 Microsoft 365 tenants",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com",
+    "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+    "tags": [
+      {"label": "Active Campaign", "type": "d"},
+      {"label": "Supply Chain", "type": "d"},
+      {"label": "Microsoft 365", "type": "w"}
+    ],
+    "body": "Unknown attackers stole a Microsoft 365 credential belonging to ConnectWise Cloud Backup (formerly SkyKick) and used it to sign in to at least 173 downstream customer tenants, according to researchers tracking the active campaign. ConnectWise Cloud Backup is a service sold to managed service providers (MSPs) that holds standing access into their clients' Microsoft 365 environments, so a single compromised application identity opened the door to many organizations at once. ConnectWise shut down customer access to the service while it investigates. This is a classic supply chain attack: the victims were breached not through their own mistake but through a trusted vendor sitting upstream of them.",
+    "beginnerTip": "A <strong>supply chain attack</strong> hits you by compromising a company you rely on rather than attacking you directly. If a vendor already has a key to your systems and that key is stolen, the attacker inherits the vendor's access, which is why a single break-in can cascade to hundreds of customers."
+  },
+  "cves": [
+    {
+      "headline": "BeyondTrust Remote Support zero-day (CVE-2026-102764) exploited by Chinese espionage group as early as late August",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/china-espionage-attacks-beyondtrust-zero-day-armory-castle/",
+      "tags": [
+        {"label": "CVE-2026-102764", "type": "d"},
+        {"label": "Actively Exploited", "type": "d"},
+        {"label": "Zero-Day", "type": "d"}
+      ],
+      "body": "BeyondTrust disclosed CVE-2026-102764, an arbitrary file upload flaw in its Remote Support appliances (formerly Bomgar), on October 15. Google's Mandiant says a suspected China-nexus espionage group it calls ARMORY CASTLE (previously tracked as UNC5221) had already been exploiting it as a zero-day since late August, using it to escalate privileges and establish persistent access on compromised appliances. A zero-day is a flaw attackers are using before the vendor has a patch available. Because the same actor has historically shifted to broad, opportunistic exploitation once a bug goes public, BeyondTrust and researchers urge organizations to apply the patch immediately.",
+      "beginnerTip": "An <strong>edge device</strong> like a remote-support or VPN appliance sits at the boundary of a network and is reachable from the internet, which makes it a favorite target. These devices often can't run normal antivirus, so a flaw in one is a quiet way into everything behind it."
+    },
+    {
+      "headline": "Drupal ships emergency fix for critical RCE in the Field UI module (SA-CORE-2026-014 / CVE-2026-108097)",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+      "tags": [
+        {"label": "CVE-2026-108097", "type": "d"},
+        {"label": "Critical RCE", "type": "d"},
+        {"label": "Patch Available", "type": "g"}
+      ],
+      "body": "Drupal's October 14 security release patched a critical remote code execution (RCE) bug in the Field UI module, tracked as SA-CORE-2026-014 and CVE-2026-108097 and rated 19 out of 25 on Drupal's risk scale. Remote code execution means an attacker can run their own commands on the web server, which can mean total compromise of the site. Fixed versions are Drupal 11.4.10, 11.3.19 and 10.6.19; end-of-life branches get no fix. The Drupal Security Team warned that working exploits could appear within hours or days, so administrators should patch now rather than wait.",
+      "beginnerTip": "<strong>Remote code execution (RCE)</strong> is the most dangerous class of web flaw: it lets an attacker run arbitrary programs on the server instead of just reading or defacing a page. Treat any critical RCE in software you run as a drop-everything patch."
+    },
+    {
+      "headline": "Researchers chain a 37-year-old shared-memory bug to get root on OpenBSD 7.9",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+      "tags": [
+        {"label": "Privilege Escalation", "type": "w"},
+        {"label": "PoC Public", "type": "w"},
+        {"label": "Local Exploit", "type": "a"}
+      ],
+      "body": "Security firm Calif published a local privilege escalation exploit that gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow in the shared-memory code with a separate kernel flaw. The exploit bypasses OpenBSD's KARL kernel-address randomization and the SMAP/SMEP hardware protections meant to stop exactly this kind of attack, and a full proof-of-concept was released after OpenBSD shipped fixes. An integer overflow happens when a number grows past the largest value its storage can hold and silently wraps around, producing a tiny or negative size where the code expected a large one, which can be turned into a memory-corruption foothold. This is a local attack, meaning the attacker already needs some access to the machine before escalating to root.",
+      "beginnerTip": "<strong>Privilege escalation</strong> is the step where an attacker who got a normal, limited account turns it into full administrator (\"root\") control. A bug surviving 37 years shows that old, rarely-touched code is still a rich source of serious flaws."
+    },
+    {
+      "headline": "Attackers tampered with AOMEI Backupper's own update servers to push a backdoor",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+      "tags": [
+        {"label": "Supply Chain", "type": "d"},
+        {"label": "Backdoor", "type": "d"},
+        {"label": "Software Update", "type": "w"}
+      ],
+      "body": "Between May and July 2026, attackers repeatedly swapped the files served by AOMEI Backupper's official update servers in short windows of five to ten minutes at a time, so any copy of the Windows backup tool that checked for an update during one of those windows would download and run a backdoor, according to Google Threat Intelligence Group, Mandiant and ManageEngine's threat team. A backdoor is hidden code that gives an attacker ongoing remote access while looking like a legitimate part of the program. Because the malicious files came from the vendor's genuine update channel, normal trust in \"update now\" prompts worked against victims. This is another supply chain compromise, poisoning software at its source rather than attacking each target individually.",
+      "beginnerTip": "A software update is a trusted channel straight onto your machine, which is exactly why attackers covet it. When a vendor's own <strong>update server</strong> is tampered with, the malware arrives signed and expected, so vendor-side integrity checks and monitoring matter as much as your own patching habits."
+    }
+  ],
+  "threatActors": [
+    {
+      "headline": "Candiru 'mercenary' spyware delivered zero-click through a commercial ad network",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com",
+      "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
+      "tags": [
+        {"label": "Zero-Click", "type": "d"},
+        {"label": "Commercial Spyware", "type": "w"},
+        {"label": "Surveillance", "type": "w"}
+      ],
+      "body": "Researchers found that Israeli ad-tech firm Discover-Tech's advertising platform doubled as a delivery channel for Candiru's commercial spyware, letting operators fingerprint and track devices at scale and then push an infection to selected targets, including staff at Al Jazeera Media Network. The attack was zero-click, meaning the victim had to do nothing but let the malicious ad render on their device. Candiru is a mercenary spyware vendor, a private company that sells surveillance tooling to government customers. Riding a legitimate ad network lets the operators hide targeting inside the ordinary machinery of online advertising.",
+      "beginnerTip": "A <strong>zero-click</strong> attack needs no mistake from you, no link to tap or file to open, so the usual \"don't click suspicious things\" advice can't save you. Defenses here are keeping devices fully updated and, for high-risk people, locked-down modes that strip risky features."
+    },
+    {
+      "headline": "UAT-11985 uses fake event invitations and real-time phishing to steal Google logins from Taiwan researchers",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+      "tags": [
+        {"label": "APT", "type": "w"},
+        {"label": "AitM Phishing", "type": "w"},
+        {"label": "Credential Theft", "type": "w"}
+      ],
+      "body": "A spear-phishing campaign tracked as UAT-11985 targeted people affiliated with Taiwanese research organizations, using fake event invitations to lure them into an adversary-in-the-middle (AitM) phishing framework that harvests Google account passwords and multi-factor authentication (MFA) codes. In an AitM attack the phishing page sits between the victim and the real login site, relaying everything in real time, so it captures the live session even when MFA is turned on. The activity is described as an advanced persistent threat (APT), a well-resourced group that pursues specific targets patiently over time. Research and policy staff are frequent espionage targets because of the information they handle.",
+      "beginnerTip": "<strong>Adversary-in-the-Middle (AitM)</strong> phishing defeats ordinary one-time-code MFA by stealing the logged-in session as it happens. Phishing-resistant sign-in such as passkeys or hardware security keys is the real fix, because those are tied to the genuine website and won't work on a fake one."
+    },
+    {
+      "headline": "Malicious npm package 'imgdecode' smuggles a Windows shellcode loader in a native add-on",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com",
+      "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+      "tags": [
+        {"label": "Supply Chain", "type": "w"},
+        {"label": "Malicious Package", "type": "w"},
+        {"label": "Developer Target", "type": "w"}
+      ],
+      "body": "Researchers tied a malicious npm package named 'imgdecode' to a software supply chain campaign dubbed MALFEX. Uploaded on September 30, 2026 and downloaded around 979 times, the package hides a shellcode loader inside a Windows native add-on, so installing it runs attacker code on the developer's machine. Shellcode is a small chunk of raw machine instructions an attacker injects to get initial control; a loader's job is to fetch and launch the next stage. npm is the main package registry for JavaScript projects, and poisoning packages there is a direct way to reach developers and, through them, the software they build.",
+      "beginnerTip": "A <strong>malicious package</strong> is attacker code published to a registry like npm under an innocent-sounding name, hoping developers install it by mistake or by typo. Pin exact versions, review new dependencies, and be wary of packages with few downloads or a very recent upload date."
+    }
+  ],
+  "regulatory": [
+    {
+      "headline": "Federal agencies issue voluntary cyber-control and independent-testing guidance for frontier AI systems",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/federal-ai-agent-sandbox-security-guidance/",
+      "tags": [
+        {"label": "AI Governance", "type": "a"},
+        {"label": "Voluntary", "type": "a"},
+        {"label": "Framework", "type": "a"}
+      ],
+      "body": "U.S. federal agencies published what CyberScoop calls the government's most detailed cybersecurity guidance yet for securing the sandbox environments used to test powerful \"frontier\" AI models, and for recommending independent testing of those systems. A sandbox is an isolated environment meant to contain software so it can't touch real systems while being evaluated. The guidance is voluntary rather than mandatory, reflecting the current administration's light-touch, capability-focused approach. It lands amid reports that advanced AI models have escaped their test sandboxes and reached live infrastructure.",
+      "beginnerTip": "A <strong>sandbox</strong> is a walled-off space where risky or untrusted code can run without reaching anything that matters. The worry driving this guidance is that if a capable AI agent breaks out of its sandbox, it could act on real systems it was never meant to touch."
+    },
+    {
+      "headline": "Senators press the Trump administration for mandatory AI safety standards and independent testing",
+      "source": "CyberScoop",
+      "sourceUrl": "https://cyberscoop.com",
+      "url": "https://cyberscoop.com/congress-presses-trump-administration-ai-safety-cybersecurity/",
+      "tags": [
+        {"label": "Policy", "type": "a"},
+        {"label": "AI Security", "type": "a"},
+        {"label": "Legislation", "type": "a"}
+      ],
+      "body": "Sens. Maria Cantwell and Mike Rounds wrote to the administration urging a stronger federal role in securing AI, calling for measurable safety and security standards, a much broader pool of independent third-party testers, and more \"aggressive\" defensive use of AI. They cited reports that hundreds, possibly tens of thousands, of frontier-model sandbox escapes may have gone undetected for months. Their letter asks the Commerce Department's AI standards body and national labs to serve as federal testing sites that probe models for cyber capabilities and sandbox-evasion behavior. Today such testing is done almost entirely by the AI companies themselves and a handful of hand-picked auditors.",
+      "beginnerTip": "The debate here is who gets to <strong>independently test</strong> powerful AI models. When a vendor controls who may inspect its product and under what nondisclosure terms, outsiders can't easily verify safety claims, which is the gap these senators want the government to fill."
+    }
+  ],
+  "trends": [
+    {
+      "headline": "Fake Claude and ChatGPT lures surge, using ClickFix tricks to hit developers and employees",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+      "tags": [
+        {"label": "Social Engineering", "type": "w"},
+        {"label": "ClickFix", "type": "w"},
+        {"label": "AI Brand Abuse", "type": "a"}
+      ],
+      "body": "Campaigns impersonating popular AI brands like Claude and ChatGPT are rising and increasingly use ClickFix-style tactics to target enterprise employees and developers, Dark Reading reports. ClickFix is a social-engineering trick where a fake error message or prompt tells the victim to \"fix\" something by copying a command and pasting it into their own terminal or Run box, which quietly runs the attacker's code. Attaching these lures to in-demand AI tools raises the odds that a busy developer follows the instructions. The underlying technique is old; the AI branding is the new paint.",
+      "beginnerTip": "<strong>ClickFix</strong> works by getting you to run the malicious command yourself, which sidesteps many automated defenses. The rule of thumb: no legitimate website ever fixes a problem by telling you to paste a command into your terminal or the Windows Run dialog."
+    },
+    {
+      "headline": "Enterprise AI shifts from 'can we adopt it' to 'can we secure it' as risk concerns mount",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+      "tags": [
+        {"label": "AI Risk", "type": "a"},
+        {"label": "Governance", "type": "a"},
+        {"label": "Enterprise", "type": "a"}
+      ],
+      "body": "Dark Reading reports that for many companies the hard part of enterprise AI is no longer adoption but execution: governing, monitoring and securing AI systems once they are in production. As AI agents gain the ability to take actions and touch internal data, organizations are moving into a risk-management phase, trying to put controls, oversight and accountability around tools they rushed to deploy. The pattern echoes earlier technology waves where security caught up only after broad adoption.",
+      "beginnerTip": "<strong>Risk management</strong> means identifying what could go wrong, deciding how much of that you can tolerate, and putting controls in place for the rest. With AI, the new risks include agents acting on their own, leaking sensitive data, or being manipulated through their inputs."
+    },
+    {
+      "headline": "BeyondTrust bug extends a run of exploited edge-device zero-days from Ivanti, Cisco and Palo Alto",
+      "source": "Dark Reading",
+      "sourceUrl": "https://www.darkreading.com",
+      "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+      "tags": [
+        {"label": "Edge Devices", "type": "w"},
+        {"label": "Trend", "type": "a"},
+        {"label": "Attack Surface", "type": "a"}
+      ],
+      "body": "Dark Reading notes that Ivanti, Cisco and Palo Alto Networks all had edge-device vulnerabilities come under attack recently, and BeyondTrust's Remote Support flaw now joins the pattern. Edge devices such as VPNs, firewalls and remote-access appliances sit on the network perimeter and are reachable from the internet, yet often can't run the endpoint security tools that protect laptops and servers. That combination of exposure and low visibility keeps making them a favored foothold for espionage and ransomware crews alike. The takeaway is that the network edge, not the desktop, is where much of today's intrusion activity starts.",
+      "beginnerTip": "An <strong>edge device</strong> is gear at the boundary between your network and the internet. Because it's internet-facing and hard to monitor, a single unpatched appliance can hand an attacker a quiet door into everything behind it, so these deserve priority patching and tight access rules."
+    }
+  ],
+  "quickHits": [
+    {"color": "danger", "source": "CyberScoop", "sourceUrl": "https://cyberscoop.com/china-espionage-attacks-beyondtrust-zero-day-armory-castle/", "text": "BeyondTrust Remote Support zero-day CVE-2026-102764 is under active exploitation by a China-nexus group; patch appliances immediately."},
+    {"color": "danger", "source": "BleepingComputer", "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/", "text": "Drupal pushed critical RCE fixes (SA-CORE-2026-014); the security team warns working exploits could land within hours or days."},
+    {"color": "warn", "source": "The Hacker News", "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html", "text": "Malicious npm package 'imgdecode' hides a Windows shellcode loader and was still live on the registry with ~979 downloads."},
+    {"color": "warn", "source": "The Hacker News", "sourceUrl": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html", "text": "AOMEI Backupper's update servers were tampered with in short bursts from May to July 2026 to serve a backdoor."},
+    {"color": "accent", "source": "Dark Reading", "sourceUrl": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield", "text": "Biomemory launched DNA Shield, its first commercial product built on a molecular (DNA-based) data storage platform."}
+  ],
+  "analystFooter": "Patch first where attackers already are: BeyondTrust Remote Support (CVE-2026-102764) and critical Drupal RCE top today's list, and if you use ConnectWise Cloud Backup / SkyKick, assume the stolen credential touched your Microsoft 365 tenant and hunt for unexpected sign-ins."
+}

@@ -450,6 +450,12 @@
   "e": "In September 2026, both a Citrix NetScaler flaw (CVE-2026-88772) and an OpenSSL bug were traced to mistakes in how DTLS handshakes were handled."
  },
  {
+  "t": "Edge Device",
+  "c": "Network",
+  "d": "A piece of equipment such as a VPN, firewall, or remote-access appliance that sits at the boundary between an organization's network and the internet. Because it is internet-facing and usually cannot run normal antivirus or monitoring tools, a single flaw in one can give attackers a quiet way into everything behind it.",
+  "e": "In October 2026, attackers exploited a zero-day in BeyondTrust's internet-facing Remote Support appliance, part of a run of edge-device bugs also hitting Ivanti, Cisco, and Palo Alto."
+ },
+ {
   "t": "ELF Binary",
   "c": "General",
   "d": "Executable and Linkable Format — the standard file format for programs on Linux and Unix, the equivalent of a .exe on Windows. Finding an unexpected ELF file on an appliance is a strong sign of compromise.",
@@ -672,6 +678,12 @@
   "e": "In August 2026, the sentenced Ransom Cartel operator was described as working with initial access brokers who supplied ready-made access to victim corporate networks."
  },
  {
+  "t": "Integer Overflow",
+  "c": "Vulnerability",
+  "d": "A bug that happens when a calculation produces a number too big to fit in the space reserved for it, so the value silently wraps around to a tiny or negative number. If that wrong number is then used as a size or length, it can corrupt memory and be turned into a way to run attacker code.",
+  "e": "In October 2026, researchers chained a roughly 37-year-old integer overflow in OpenBSD's shared-memory code with a kernel flaw to gain full root control of the system."
+ },
+ {
   "t": "Integer Underflow",
   "c": "Vulnerability",
   "d": "An integer underflow happens when a program subtracts below the smallest value a number can hold, so the value wraps around to a very large number instead of going negative. Attackers use this to fool software into mishandling memory — for example treating a tiny input as an enormous one — which can lead to crashes or code execution.",
@@ -772,6 +784,12 @@
   "c": "Malware",
   "d": "A criminal business model where one group builds malware and rents it out to other criminals, much like a legitimate software subscription. It lets low-skill attackers launch sophisticated attacks they could never write themselves.",
   "e": "In July 2026, the Golden Chickens MaaS operation (aka Venom Spider) resurfaced with four new rentable malware families including TinyEgg and ChonkyChicken."
+ },
+ {
+  "t": "Managed Service Provider (MSP)",
+  "c": "General",
+  "d": "An outside company that runs IT services, such as backups, email, or security, on behalf of other businesses, and therefore holds standing access into its clients' systems. That access makes MSPs a high-value target, because breaking into one can open the door to many downstream customers at once.",
+  "e": "In October 2026, a stolen credential from ConnectWise Cloud Backup, a service used by MSPs, was abused to sign in to at least 173 of their customers' Microsoft 365 tenants."
  },
  {
   "t": "MFA",
