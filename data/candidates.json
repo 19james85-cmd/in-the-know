@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T15:54:05.830131+00:00",
+ "generated": "2026-10-18T16:06:26.436981+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,7 +11,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 5,
+   "count": 1,
    "error": null
   },
   {
@@ -29,13 +29,13 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 5,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 4,
+   "count": 1,
    "error": null
   },
   {
@@ -66,122 +66,24 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-   "published": "2026-10-17T15:18:51+00:00",
-   "summary": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
-   "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
-   "published": "2026-10-17T14:32:48+00:00",
-   "summary": "Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
-   "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-   "published": "2026-10-17T11:11:56+00:00",
-   "summary": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user named \"malfexteste8.\" It has been downloaded 979 times as of writing and is still available on npm as of writing. The latest version of"
+   "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+   "published": "2026-10-18T14:23:16+00:00",
+   "summary": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]"
   },
   {
    "source": "SecurityWeek",
-   "title": "Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel",
-   "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-   "published": "2026-10-17T11:00:00+00:00",
-   "summary": "Israeli company Discover-Tech’s ads allow threat actors to fingerprint and track devices at scale and infect selected targets. The post Israeli Ad Firm Doubled as Candiru's Zero-Click Spyware Delivery Channel appeared first on SecurityWeek ."
+   "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
+   "url": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
+   "published": "2026-10-18T11:00:00+00:00",
+   "summary": "CyberSN’s Cybersecurity Jobs Report provides visibility into the US cybersecurity job market. It’s a mixed bag. The post US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-   "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-   "published": "2026-10-17T06:16:46+00:00",
-   "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments. ConnectWise Cloud Backup is a cloud-based backup and recovery service built for managed service providers (MSPs"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Federal agencies recommend cyber controls, independent testing for frontier AI systems",
-   "url": "https://cyberscoop.com/federal-ai-agent-sandbox-security-guidance/",
-   "published": "2026-10-17T00:34:02+00:00",
-   "summary": "While voluntary, the document marks the federal government’s most detailed cybersecurity guidance for securing sandbox environments during AI model tests. The post Federal agencies recommend cyber controls, independent testing for frontier AI systems appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-   "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-   "published": "2026-10-16T20:34:37+00:00",
-   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
-   "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-   "published": "2026-10-16T20:00:59+00:00",
-   "summary": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
-   "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-   "published": "2026-10-16T19:49:30+00:00",
-   "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
-   "url": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
-   "published": "2026-10-16T19:22:12+00:00",
-   "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
-   "url": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
-   "published": "2026-10-16T19:13:59+00:00",
-   "summary": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
-   "url": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
-   "published": "2026-10-16T18:37:50+00:00",
-   "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
-   "url": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
-   "published": "2026-10-16T17:48:45+00:00",
-   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and reported the flaws, published a detailed writeup and full proof-of-concept code after OpenBSD shipped"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-   "published": "2026-10-16T17:20:03+00:00",
-   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Prolific Chinese espionage group exploits BeyondTrust zero-day",
-   "url": "https://cyberscoop.com/china-espionage-attacks-beyondtrust-zero-day-armory-castle/",
-   "published": "2026-10-16T17:09:09+00:00",
-   "summary": "Researchers said the first known attack by Armory Castle, also known as UNC5221, occurred almost seven weeks ago. The threat group previously compromised Ivanti and Citrix customers. The post Prolific Chinese espionage group exploits BeyondTrust zero-day appeared first on CyberScoop ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
-   "url": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
-   "published": "2026-10-16T16:43:39+00:00",
-   "summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and run a backdoor. Google Threat Intelligence Group, Mandiant, and ManageEngine's Threat Analysis"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
-   "url": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
-   "published": "2026-10-16T16:16:44+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google account credentials and multi-factor authentication (MFA) codes. The activity is being tracked by"
+   "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
+   "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+   "published": "2026-10-18T08:23:02+00:00",
+   "summary": "ConnectWise on Saturday said it has disabled seven ConnectWise application identities as it continues its investigation into an incident in which unknown threat actors obtained unauthorized access to the application identities and compromised Microsoft 365 tenants. The disabled identities are listed below - ConnectWise Cloud Backup - 506e08f9-6e9a-4da4-942b-a099a03644ae ConnectWise"
   }
  ]
 }
