@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T16:12:59.440361+00:00",
+ "generated": "2026-10-25T16:46:44.759642+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,31 +11,31 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 8,
+   "count": 1,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 3,
+   "count": 0,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 5,
+   "count": 1,
    "error": null
   },
   {
@@ -66,129 +66,24 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
-   "url": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
-   "published": "2026-10-24T14:17:32+00:00",
-   "summary": "A new UEFI bootkit named BlackX, deployed in an espionage campaign in early 2026, exploited the old Baton Drop vulnerability to bypass Secure Boot and load a malicious driver designed to interfere with security solutions from Kaspersky and Avast. [...]"
+   "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+   "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+   "published": "2026-10-25T15:49:38+00:00",
+   "summary": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
+   "url": "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
+   "published": "2026-10-25T11:00:00+00:00",
+   "summary": "Founded in 2025 by Unit 8200 alumni, Tel Aviv-based Mave uses AI agents to investigate alerts across existing security stacks. The post Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave appeared first on SecurityWeek ."
   },
   {
    "source": "The Hacker News",
-   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-   "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-   "published": "2026-10-24T11:09:29+00:00",
-   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite past the end of a buffer and corrupt a program's memory, potentially"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
-   "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
-   "published": "2026-10-24T11:03:33+00:00",
-   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to push a malicious version of the popular Python package. \"On May 27, 2026, a configuration file was committed to the public LiteLLM-Labs/lite-harness repository which inadvertently contained the master key to a deployment of"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
-   "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
-   "published": "2026-10-24T10:36:33+00:00",
-   "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve targeted ads to users based on their activity on other connected Google services. \"You may choose to allow certain Google services, including services like Search or Gemini Apps, to access data from other Google services you use,"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
-   "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
-   "published": "2026-10-24T09:04:24+00:00",
-   "summary": "Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine. The updater belongs to Time4Popcorn, an abandoned copy of Popcorn Time, a free app that streamed pirated films and TV over BitTorrent. Popcorn Time was"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-   "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-   "published": "2026-10-24T06:25:57+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerabilities (KEV), citing reports of active exploitation in the wild. The critical-severity vulnerabilities are listed below - CVE-2026-110447 (CVSS score: 9.2) - An operating"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
-   "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
-   "published": "2026-10-23T20:57:56+00:00",
-   "summary": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from artificial intelligence."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
-   "published": "2026-10-23T20:55:05+00:00",
-   "summary": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
-   "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
-   "published": "2026-10-23T19:41:23+00:00",
-   "summary": "Fixing the critical PHP flaws is not as simple as clicking Update. Here's how to assess your risk, and what you can do to protect yourself."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
-   "published": "2026-10-23T18:54:41+00:00",
-   "summary": "Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
-   "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
-   "published": "2026-10-23T18:50:13+00:00",
-   "summary": "Diplomatic organizations in Central Asia have been targeted by a sophisticated new Unified Extensible Firmware Interface (UEFI) bootkit called BlackX. The activity, which singled out diplomatic entities in Tajikistan, Uzbekistan, and Turkmenistan in early 2026, is suspected to be orchestrated by a China-linked state-sponsored hacking group known as APT41, Kaspersky said in a technical report"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
-   "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
-   "published": "2026-10-23T17:54:08+00:00",
-   "summary": "Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four critical security flaws that GitLab patched over the past month. GitLab found that a specially crafted pattern could corrupt memory while Ruby compiles it, potentially leading to code execution on its own servers. Ruby says any"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
-   "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
-   "published": "2026-10-23T17:50:47+00:00",
-   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to be Russian-speaking and functions both as an intrusion and data-extortion operator, as well as an"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "AI Tools Are Generating Massive Attacks for Little Cost",
-   "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
-   "published": "2026-10-23T17:26:59+00:00",
-   "summary": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft: Windows Server 2016 reaches end of support in January",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-   "published": "2026-10-23T17:05:07+00:00",
-   "summary": "Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027. [...]"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "PHP exploitation moves at slower-than-expected pace, but millions remain at risk",
-   "url": "https://www.cybersecuritydive.com/news/php-exploitation-slower-than-expected/833855/",
-   "published": "2026-10-23T16:46:00+00:00",
-   "summary": "Security researchers flag botnet activity, but successful compromises have yet to break through."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Quest Diagnostics confirms data breach exposed patient records",
-   "url": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-   "published": "2026-10-23T16:40:07+00:00",
-   "summary": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system. [...]"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Senators say targeted ads are a security risk. Ad groups say the critics are off base.",
-   "url": "https://cyberscoop.com/targeted-ads-spyware-government-threat/",
-   "published": "2026-10-23T16:23:06+00:00",
-   "summary": "Citizen Lab’s AdFection findings have senators pushing for industry improvements, while IAB Europe and Google defend their vetting practices. The post Senators say targeted ads are a security risk. Ad groups say the critics are off base. appeared first on CyberScoop ."
+   "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+   "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+   "published": "2026-10-25T06:54:29+00:00",
+   "summary": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models. \"Based on the current state of alignment research, monitoring systems, and the security of internet infrastructure, we believe the responsible approach is to conduct frontier model training with no"
   }
  ]
 }
