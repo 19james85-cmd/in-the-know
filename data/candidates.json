@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T18:03:53.111287+00:00",
+ "generated": "2026-11-02T21:54:15.161460+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,31 +11,31 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 4,
+   "count": 8,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 0,
+   "count": 4,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 1,
+   "count": 9,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 0,
+   "count": 3,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 2,
+   "count": 10,
    "error": null
   },
   {
@@ -66,52 +66,255 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
-   "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
-   "published": "2026-11-01T15:11:21+00:00",
-   "summary": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [...]"
+   "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+   "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+   "published": "2026-11-02T21:40:14+00:00",
+   "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Business groups mount fresh campaign for long-term renewal of information sharing law",
+   "url": "https://cyberscoop.com/business-groups-cisa-2015-renewal-ndaa-cybersecurity/",
+   "published": "2026-11-02T21:04:42+00:00",
+   "summary": "Their target for extending CISA 2015 is the annual “must-pass” defense authorization bill, but a more than year-long standoff persists. The post Business groups mount fresh campaign for long-term renewal of information sharing law appeared first on CyberScoop ."
   },
   {
    "source": "BleepingComputer",
-   "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
-   "published": "2026-11-01T13:53:11+00:00",
-   "summary": "OpenAI has just confirmed that it's rolling out ChatGPT Work capabilities directly into regular Chat, while also combining usage allowances across ChatGPT and Codex. [...]"
+   "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+   "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+   "published": "2026-11-02T19:00:45+00:00",
+   "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
+   "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+   "published": "2026-11-02T18:16:34+00:00",
+   "summary": "Google and industry partners have dismantled the XCPE malware botnet consisting of more than 1.3 million Android TV streaming TV boxes that Google says its manufacturer intentionally infected with malware to generate revenue through cybercrime activities. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+   "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+   "published": "2026-11-02T16:57:56+00:00",
+   "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+   "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+   "published": "2026-11-02T15:50:26+00:00",
+   "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+   "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+   "published": "2026-11-02T15:03:07+00:00",
+   "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]"
   },
   {
    "source": "SecurityWeek",
-   "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
-   "url": "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/",
-   "published": "2026-11-01T11:15:00+00:00",
-   "summary": "The startup maps how identities, assets and vulnerabilities connect, and uses AI agents to find and fix risky combinations of issues. The post Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations appeared first on SecurityWeek ."
+   "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
+   "url": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
+   "published": "2026-11-02T15:01:11+00:00",
+   "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. The post Cybersecurity M A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+   "url": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+   "published": "2026-11-02T15:01:11+00:00",
+   "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Microsoft's AI Risk Report Misses This Key Detail",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+   "published": "2026-11-02T15:00:00+00:00",
+   "summary": "The latest Digital Defense Report identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs."
   },
   {
    "source": "The Hacker News",
-   "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
-   "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
-   "published": "2026-11-01T08:51:31+00:00",
-   "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that client, with access to the cluster and its virtual machines. If the impersonated account is"
+   "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+   "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+   "published": "2026-11-02T14:46:05+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk",
+   "url": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
+   "published": "2026-11-02T14:44:18+00:00",
+   "summary": "The Florida Department of Education says SSNs and other personal data may have been exposed in a breach of its financial aid website. The post Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Hackers disrupt refrigeration systems at European supermarkets",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+   "published": "2026-11-02T14:28:39+00:00",
+   "summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Agentic pen-testing tool employed in multiple espionage campaigns around the globe",
+   "url": "https://www.cybersecuritydive.com/news/agentic-pen-testing-tool-espionage-campaigns/873427/",
+   "published": "2026-11-02T14:13:27+00:00",
+   "summary": "Researchers have tracked the increased use of Artex and other frameworks in order to automate and speed up attack methods."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
+   "published": "2026-11-02T14:00:00+00:00",
+   "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft fixes Smart App Control broken by October Windows update",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
+   "published": "2026-11-02T13:57:29+00:00",
+   "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Revolve Data Breach Impacts at Least 180,000 People",
+   "url": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
+   "published": "2026-11-02T13:35:21+00:00",
+   "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 180,000 People appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward",
+   "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+   "published": "2026-11-02T13:25:11+00:00",
+   "summary": "The top payout is for high-impact architectural research demonstrating full administrative control. The post Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "As the White House touts its AI task force, CISA is conspicuously missing",
+   "url": "https://www.cybersecuritydive.com/news/cisa-white-house-ai-task-force-missing-trump/873338/",
+   "published": "2026-11-02T13:00:00+00:00",
+   "summary": "Without the cybersecurity agency, experts said, the new group could stumble as it tries to work with critical infrastructure operators on AI security."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+   "published": "2026-11-02T12:47:00+00:00",
+   "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]"
   },
   {
    "source": "The Hacker News",
-   "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
-   "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
-   "published": "2026-11-01T07:25:40+00:00",
-   "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says it is refunding about $2.7 million to 726 affected wallets. Blockchain records show crypto worth about $2.64 million reached"
+   "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+   "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+   "published": "2026-11-02T11:50:00+00:00",
+   "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0. Neither flaw is in CISA's Known"
   },
   {
    "source": "The Hacker News",
-   "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
-   "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-   "published": "2026-11-01T07:03:00+00:00",
-   "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI), said it"
+   "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+   "url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+   "published": "2026-11-02T11:30:00+00:00",
+   "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decision is whether their own SOC is ready. AI SOC readiness has two parts: whether a SOC has the"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
+   "url": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/",
+   "published": "2026-11-02T11:29:39+00:00",
+   "summary": "The extension performed host reconnaissance and attempted to create a reverse SSH tunnel. The post Malicious Claude Code Extension Served in Cursor Supply Chain Attack appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+   "url": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+   "published": "2026-11-02T11:28:42+00:00",
+   "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]"
   },
   {
    "source": "The Hacker News",
-   "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
-   "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-   "published": "2026-11-01T07:02:58+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and involves the deployment of a previously undocumented .NET assembly-loading framework codenamed"
+   "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+   "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+   "published": "2026-11-02T11:08:45+00:00",
+   "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said in a report that it investigated two such intrusions, one of which resulted in company"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Could Nick Andersen’s leadership outlast the clock on his acting role?",
+   "url": "https://cyberscoop.com/nick-andersen-cisa-acting-director-nomination/",
+   "published": "2026-11-02T11:00:00+00:00",
+   "summary": "He has won praise for his leadership of CISA as acting director, and there’s talk of keeping him in the role beyond his current deadline. With no nominee yet in sight, he might be the White House’s best option. The post Could Nick Andersen's leadership outlast the clock on his acting role? appeared first on CyberScoop ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+   "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+   "published": "2026-11-02T10:49:59+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the moniker CL-UNK-1211, where \"CL\" refers to cluster and \"UNK\" stands for unknown"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
+   "url": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
+   "published": "2026-11-02T10:27:49+00:00",
+   "summary": "The attackers used offensive agentic techniques to access the company’s systems and internal tools. The post Chainalysis Discloses Data Breach Following AI-Driven Cyberattack appeared first on SecurityWeek ."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Protecting OT, IoT and medical devices without disrupting operations",
+   "url": "https://www.cybersecuritydive.com/spons/protecting-ot-iot-and-medical-devices-without-disrupting-operations/833813/",
+   "published": "2026-11-02T10:00:00+00:00",
+   "summary": "A smarter OT security strategy starts with visibility, context and prioritization."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "3 questions for securing AI agents",
+   "url": "https://www.cybersecuritydive.com/spons/3-questions-for-securing-ai-agents/873054/",
+   "published": "2026-11-02T10:00:00+00:00",
+   "summary": "Are your AI agents leaking sensitive data? Ask these three essential questions."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+   "published": "2026-11-02T09:33:26+00:00",
+   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+   "url": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
+   "published": "2026-11-02T09:33:15+00:00",
+   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+   "url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+   "published": "2026-11-02T08:40:36+00:00",
+   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600 Addresses Tied to North Korea's Binance Heist appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
+   "url": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+   "published": "2026-11-02T07:57:49+00:00",
+   "summary": "CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks. The post Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+   "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+   "published": "2026-11-02T05:51:07+00:00",
+   "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from Chromium-based web browsers; data from Outlook profiles and Slack workspaces;"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Federal court tosses Trump lawsuit challenging Alaska Senate certification",
+   "url": "https://cyberscoop.com/judge-dismisses-alaska-senate-lawsuit-peltola-sullivan/",
+   "published": "2026-11-01T22:47:26+00:00",
+   "summary": "The government claimed voters would be confused by two candidates with the same name. A federal judge said the executive branch has no constitutional role in the matter. The post Federal court tosses Trump lawsuit challenging Alaska Senate certification appeared first on CyberScoop ."
   }
  ]
 }
