@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T17:50:26.377246+00:00",
+ "generated": "2026-11-08T18:03:14.949045+00:00",
  "window_hours": 24,
  "feeds": [
   {
@@ -11,7 +11,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -23,13 +23,13 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 6,
+   "count": 1,
    "error": null
   },
   {
@@ -66,80 +66,17 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "Hackers pull off $133 million French bank heist via service provider",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
-   "published": "2026-11-07T15:25:35+00:00",
-   "summary": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
-   "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
-   "published": "2026-11-07T14:10:19+00:00",
-   "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without delivering the promised rewards. [...]"
+   "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+   "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+   "published": "2026-11-08T15:43:08+00:00",
+   "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]"
   },
   {
    "source": "SecurityWeek",
-   "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
-   "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
-   "published": "2026-11-07T10:16:23+00:00",
-   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
-   "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
-   "published": "2026-11-07T06:44:17+00:00",
-   "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file. Software security company Apiiro said yesterday that 1,122 public"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-   "published": "2026-11-07T00:00:55+00:00",
-   "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
-   "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
-   "published": "2026-11-06T22:27:25+00:00",
-   "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]"
-  },
-  {
-   "source": "Dark Reading",
-   "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-   "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-   "published": "2026-11-06T21:27:36+00:00",
-   "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
-   "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
-   "published": "2026-11-06T20:24:19+00:00",
-   "summary": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Fake security tools on GitHub push backdoors and infostealers",
-   "url": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
-   "published": "2026-11-06T18:46:52+00:00",
-   "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks",
-   "url": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
-   "published": "2026-11-06T18:28:41+00:00",
-   "summary": "The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompting uneasiness across Japan. The post Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks appeared first on SecurityWeek ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "AI Gave Your Incident Archive a Second Job",
-   "url": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
-   "published": "2026-11-06T18:27:30+00:00",
-   "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises."
+   "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+   "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+   "published": "2026-11-08T12:14:00+00:00",
+   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek ."
   }
  ]
 }
