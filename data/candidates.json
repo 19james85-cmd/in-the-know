@@ -1,41 +1,41 @@
 {
- "generated": "2026-11-08T18:03:14.949045+00:00",
+ "generated": "2026-11-09T22:40:10.715764+00:00",
  "window_hours": 24,
  "feeds": [
   {
    "source": "CISA",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 0,
+   "count": 11,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 0,
+   "count": 4,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 1,
+   "count": 8,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 0,
+   "count": 6,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 1,
+   "count": 11,
    "error": null
   },
   {
@@ -66,17 +66,297 @@
  "items": [
   {
    "source": "BleepingComputer",
-   "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
-   "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-   "published": "2026-11-08T15:43:08+00:00",
-   "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]"
+   "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
+   "url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+   "published": "2026-11-09T22:09:33+00:00",
+   "summary": "Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+   "published": "2026-11-09T21:38:20+00:00",
+   "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+   "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+   "published": "2026-11-09T21:26:25+00:00",
+   "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "York University breach exposed personal information dating to 2007",
+   "url": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+   "published": "2026-11-09T21:22:31+00:00",
+   "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
+   "url": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
+   "published": "2026-11-09T21:12:24+00:00",
+   "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
+   "url": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+   "published": "2026-11-09T20:19:56+00:00",
+   "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+   "url": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+   "published": "2026-11-09T18:32:42+00:00",
+   "summary": "France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers, saying the attacks caused food losses and sparked at least 15 fires. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
+   "url": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
+   "published": "2026-11-09T18:08:30+00:00",
+   "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+   "published": "2026-11-09T17:51:21+00:00",
+   "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those credentials has not been disclosed. Qubole, a data lake platform owned by Idera,"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+   "url": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+   "published": "2026-11-09T17:50:32+00:00",
+   "summary": "A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+   "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+   "published": "2026-11-09T17:36:28+00:00",
+   "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the stored password that unlocks it. The code is also built to install a backdoor"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "PwC's CISO on AI, Robots & What's Next for Security",
+   "url": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
+   "published": "2026-11-09T17:17:23+00:00",
+   "summary": "As AI accelerates change across the enterprise, PwC's James Shira explains why security teams must rethink their approach to risk and adapt their strategies."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Binance denies data breach after alleged ShinyHunters claims",
+   "url": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
+   "published": "2026-11-09T16:12:39+00:00",
+   "summary": "Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
+   "published": "2026-11-09T16:04:57+00:00",
+   "summary": "Hackers are actively exploiting the \"SSHole\" vulnerability (CVE-2026-123158) in OpenSSH to execute commands, steal credentials, and establish persistent access. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Financially motivated threat cluster uses AI-enabled tools against banking sector",
+   "url": "https://www.cybersecuritydive.com/news/financially-motivated-threat-ai-tools-banking-artex/874116/",
+   "published": "2026-11-09T15:50:58+00:00",
+   "summary": "The campaign is the latest in a wave of attacks using Artex and other pen-testing tools to automate cyberattacks."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Cybersecurity education in the AI era: What’s new, what’s different",
+   "url": "https://www.cybersecuritydive.com/news/cybersecurity-training-workforce-education-ai/874118/",
+   "published": "2026-11-09T15:46:26+00:00",
+   "summary": "Businesses are trying new ways to keep employees vigilant, and colleges are debuting curriculum to prepare tomorrow's AI workers."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "NIST: Solo Shouldn't Mean Less Secure",
+   "url": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
+   "published": "2026-11-09T15:46:10+00:00",
+   "summary": "New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.",
+   "url": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+   "published": "2026-11-09T15:05:15+00:00",
+   "summary": "AI agents are taking over routine governance, risk, and compliance tasks, forcing GRC professionals to rethink the skills needed to stay relevant. Anecdotes examines three essential skills for the AI-driven GRC workplace: data literacy, agent governance, and communication. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "FBI agent stole $2.5 million in crypto from hackers under investigation",
+   "url": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
+   "published": "2026-11-09T14:34:03+00:00",
+   "summary": "A former FBI agent has pleaded guilty to stealing nearly $2.5 million from the wallets of fraud victims and nation-state hackers under investigation. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+   "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+   "published": "2026-11-09T14:31:29+00:00",
+   "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said. \"Its capabilities include command execution, file"
   },
   {
    "source": "SecurityWeek",
-   "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
-   "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
-   "published": "2026-11-08T12:14:00+00:00",
-   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek ."
+   "title": "Revolve Puts Data Breach Victim Count at 1.5 Million",
+   "url": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/",
+   "published": "2026-11-09T14:08:08+00:00",
+   "summary": "Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals. The post Revolve Puts Data Breach Victim Count at 1.5 Million appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "US bans MEXC crypto exchange over sanctions evasion, cybercrime links",
+   "url": "https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/",
+   "published": "2026-11-09T13:28:56+00:00",
+   "summary": "The US Department of the Treasury has cut off the MEXC Global crypto exchange from the US financial system over sanctions evasion and links with cybercrime gangs. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
+   "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+   "published": "2026-11-09T13:28:25+00:00",
+   "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic, stealing credentials from network devices, and finding new uses for exposed"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Plex2Shell Exploited Against QNAP NAS Users",
+   "url": "https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/",
+   "published": "2026-11-09T13:13:28+00:00",
+   "summary": "Threat actors are exploiting the four-flaw chain to hack the Plex Media Server application on QNAP NAS devices. The post Plex2Shell Exploited Against QNAP NAS Users appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Iris Plaza Breach May Have Exposed Data of 7.7 Million Customers",
+   "url": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/",
+   "published": "2026-11-09T12:41:27+00:00",
+   "summary": "Hackers compromised an external cloud service used by the shopping platform and may have stolen personal information from it. The post Iris Plaza Breach May Have Exposed Data of 7.7 Million Customers appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web",
+   "url": "https://www.securityweek.com/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web/",
+   "published": "2026-11-09T12:22:12+00:00",
+   "summary": "Italian Foreign Minister Antonio Tajani said Saturday that his personal data had been disseminated on the dark web. The post Italy's Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister's Data on the Dark Web appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Ukraine dismantles crypto scam network that stole €4.3 million",
+   "url": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
+   "published": "2026-11-09T12:16:13+00:00",
+   "summary": "Ukrainian law enforcement arrested four suspects in a case involving the theft of more than €4.3 million using a network of cryptocurrency investment scam call centers. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH",
+   "url": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/",
+   "published": "2026-11-09T12:13:32+00:00",
+   "summary": "The initial exploitation attempts are attributed to botnets and crypto miners, but other threat actors are expected to follow suit. The post Hackers Exploiting SSHole' Authentication Bypass in OpenSSH appeared first on SecurityWeek ."
+  },
+  {
+   "source": "CISA",
+   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-09T12:00:00+00:00",
+   "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-102895 GPUStack Improper Authentication Vulnerability CVE-2026-116779 SignalWire FreeSwitch Code Injection Vulnerability CVE-2026-123158 OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability CVE-2026-123218 IBM Aspera Faspex Incorrect Authorization Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cy"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+   "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+   "published": "2026-11-09T11:27:53+00:00",
+   "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now part of Ping Identity, and on those servers the researchers reached an"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Amplifon Americas Data Breach Impacts 1.3 Million",
+   "url": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/",
+   "published": "2026-11-09T11:20:09+00:00",
+   "summary": "Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems. The post Amplifon Americas Data Breach Impacts 1.3 Million appeared first on SecurityWeek ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "AI doesn’t have to go rogue to break the world",
+   "url": "https://cyberscoop.com/ai-hacking-risks-loopholes-bruce-schneier-defcon-keynote-op-ed/",
+   "published": "2026-11-09T11:00:00+00:00",
+   "summary": "AI systems are learning to exploit loopholes in everything from software to tax law. The biggest threat may not be malicious intent, but machines doing exactly what we ask. The post AI doesn’t have to go rogue to break the world appeared first on CyberScoop ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+   "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+   "published": "2026-11-09T10:56:25+00:00",
+   "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used the attacker's own route to empty other at-risk wallets before the attacker"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Over 3 Million People Hit by Frontline Education Data Breach",
+   "url": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
+   "published": "2026-11-09T10:09:02+00:00",
+   "summary": "Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students. The post Over 3 Million People Hit by Frontline Education Data Breach appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+   "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+   "published": "2026-11-09T10:01:21+00:00",
+   "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to withdraw 2,285,545 satoshis, about 0.023 bitcoin, from his server before he could"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "5 critical steps organizations should take to secure AI",
+   "url": "https://www.cybersecuritydive.com/spons/5-critical-steps-organizations-should-take-to-secure-ai/873682/",
+   "published": "2026-11-09T10:00:00+00:00",
+   "summary": "Close the AI security gap with five practical steps to improve visibility, governance and control."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Improving incident response with AI agents",
+   "url": "https://www.cybersecuritydive.com/spons/improving-incident-response-with-ai-agents/872988/",
+   "published": "2026-11-09T10:00:00+00:00",
+   "summary": "AI-driven incident response reduces workflow delays while keeping analysts in control."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+   "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+   "published": "2026-11-09T09:01:50+00:00",
+   "summary": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week. The agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video footage, without a login. The researchers are highly confident that the attacker is a single person"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack",
+   "url": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
+   "published": "2026-11-09T08:35:50+00:00",
+   "summary": "Working with cryptographers, DeepMind’s AI agents cut the cost of forging RSA-1024 signatures and found a cheaper way to factor keys. The post Google DeepMind's AI Agents Make 1024-Bit RSA Keys Cheaper to Attack appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+   "url": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
+   "published": "2026-11-09T07:05:48+00:00",
+   "summary": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty. According to reports from Bloomberg and CNBC, Saudi national Abdulrahman Alfozan made an appearance in San Francisco federal court on Friday, where he entered the plea. His next hearing is scheduled for November 17, 2026. If proven guilty, the"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+   "url": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+   "published": "2026-11-09T06:15:10+00:00",
+   "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory. \"The actors may exploit vulnerabilities or weaknesses in unpatched or internet-accessible controllers to remotely alter settings and force units into continuous heating"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+   "published": "2026-11-09T06:05:24+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks. The vulnerability, tracked as CVE-2026-19868 (CVSS score: 7.1 / 7.5), has been described as an authentication reinforcement"
   }
  ]
 }
