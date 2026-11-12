@@ -1,29 +1,29 @@
 {
- "generated": "2026-11-11T19:50:03.446643+00:00",
+ "generated": "2026-11-12T20:23:39.447013+00:00",
  "window_hours": 24,
  "feeds": [
   {
    "source": "CISA",
    "ok": true,
-   "count": 0,
+   "count": 5,
    "error": null
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 10,
+   "count": 15,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
@@ -35,7 +35,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -47,13 +47,13 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 10,
+   "count": 14,
    "error": null
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -65,298 +65,361 @@
  ],
  "items": [
   {
-   "source": "Krebs on Security",
-   "title": "Who Runs the Ransomware Group Qilin?",
-   "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-   "published": "2026-11-11T18:06:01+00:00",
-   "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
-   "url": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
-   "published": "2026-11-11T16:29:42+00:00",
-   "summary": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise. The post Today: CISO Forum Virtual Summit 2026 Day 2 Join Cybersecurity Leaders Online appeared first on SecurityWeek ."
+   "source": "BleepingComputer",
+   "title": "Massive Microsoft 365 outage disrupts Outlook, Teams, Copilot worldwide",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
+   "published": "2026-11-12T20:15:16+00:00",
+   "summary": "Microsoft is investigating a widespread outage affecting multiple Microsoft 365 services, including Outlook, Microsoft Teams, and Copilot, as users report connectivity problems worldwide. [...]"
   },
   {
    "source": "BleepingComputer",
-   "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-   "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
-   "published": "2026-11-11T16:24:18+00:00",
-   "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]"
+   "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
+   "url": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+   "published": "2026-11-12T19:51:16+00:00",
+   "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
+   "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
+   "published": "2026-11-12T19:12:55+00:00",
+   "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE). [...]"
   },
   {
    "source": "The Hacker News",
-   "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-   "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-   "published": "2026-11-11T16:12:46+00:00",
-   "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated user to conduct an escalation of privilege via"
+   "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+   "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+   "published": "2026-11-12T18:07:15+00:00",
+   "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
+   "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
+   "published": "2026-11-12T18:02:51+00:00",
+   "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be. AI is helping them build attacks faster, while"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+   "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+   "published": "2026-11-12T17:50:27+00:00",
+   "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privileged process opens a prepared log, using path redirection to take control of"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Don’t put Section 702 spying law renewal in defense bill, groups urge Hill leaders",
+   "url": "https://cyberscoop.com/section-702-reauthorization-ndaa-debate/",
+   "published": "2026-11-12T17:00:00+00:00",
+   "summary": "CyberScoop is exclusively reporting on the letter to the Hill on the controversial snooping authorities under the Foreign Intelligence Surveillance Act. The post Don’t put Section 702 spying law renewal in defense bill, groups urge Hill leaders appeared first on CyberScoop ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "International operation dismantles malware networks, exposes 6.4 million stolen credentials",
+   "url": "https://cyberscoop.com/operation-endgame-malware-takedown-gootloader-stealc-europol/",
+   "published": "2026-11-12T16:55:34+00:00",
+   "summary": "The Operation Endgame action dismantled the loaders, remote access trojans and infostealers that give ransomware gangs their way into corporate networks. The post International operation dismantles malware networks, exposes 6.4 million stolen credentials appeared first on CyberScoop ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+   "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+   "published": "2026-11-12T16:27:01+00:00",
+   "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The company has released fixed builds for eight Quay"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
+   "url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+   "published": "2026-11-12T16:04:00+00:00",
+   "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+   "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+   "published": "2026-11-12T15:38:49+00:00",
+   "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-2026-120868 (CVSS score: 9.3) - A memory overflow vulnerability in Packet"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
+   "url": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+   "published": "2026-11-12T15:38:31+00:00",
+   "summary": "The mod_http2 race condition, CVE-2026-119618, could let unauthenticated attackers execute code on servers with HTTP/2 enabled. The post Apache Patches Critical HTTP Server RCE Found by Anthropic, Google appeared first on SecurityWeek ."
   },
   {
    "source": "Cybersecurity Dive",
-   "title": "N-able issues hotfix after researcher dumps PoCs in disclosure spat",
-   "url": "https://www.cybersecuritydive.com/news/n-able-hotfix-researcher-pocs-zero-days/874388/",
-   "published": "2026-11-11T16:02:52+00:00",
-   "summary": "The company briefly disabled access to its RMM platform after an independent researcher warned of critical flaws."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
-   "url": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
-   "published": "2026-11-11T15:42:47+00:00",
-   "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in Attacks appeared first on SecurityWeek ."
+   "title": "AI found widespread IoT vulnerabilities more quickly and cheaply than humans could",
+   "url": "https://www.cybersecuritydive.com/news/ai-vulnerabilities-critical-infrastructure-embedded-software/874499/",
+   "published": "2026-11-12T15:30:18+00:00",
+   "summary": "The newly discovered vulnerabilities illustrate AI's growing power as well as critical infrastructure's continuing weaknesses."
   },
   {
    "source": "The Hacker News",
-   "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
-   "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-   "published": "2026-11-11T15:34:27+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against"
-  },
-  {
-   "source": "Cybersecurity Dive",
-   "title": "CISA sets operational priorities for partnerships, risk assessments and systemic action",
-   "url": "https://www.cybersecuritydive.com/news/cisa-priorities-memo-risks-partnerships/874381/",
-   "published": "2026-11-11T15:28:39+00:00",
-   "summary": "An internal memo from CISA's acting chief instructs senior leaders to keep the new priorities in mind with every choice they make."
+   "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
+   "url": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+   "published": "2026-11-12T15:15:40+00:00",
+   "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches. This delivery pattern has been codenamed TypoPrompting by Island. \"AI-app lookalikes that turn an attempt to reach a familiar tool into a prompt to verify,"
   },
   {
    "source": "BleepingComputer",
-   "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
-   "published": "2026-11-11T15:12:59+00:00",
-   "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]"
+   "title": "Police dismantle Gootloader, CastleRAT, StealC malware infrastructure",
+   "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
+   "published": "2026-11-12T15:07:20+00:00",
+   "summary": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]"
   },
   {
    "source": "BleepingComputer",
-   "title": "eBPF Rootkits: Why Underground Actors Are Taking Notice",
-   "url": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
-   "published": "2026-11-11T15:01:11+00:00",
-   "summary": "Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems. [...]"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-   "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-   "published": "2026-11-11T14:01:00+00:00",
-   "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes. The activity has been found to share some"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Asus, Zoom Release Security Patches",
-   "url": "https://www.securityweek.com/asus-zoom-release-security-patches/",
-   "published": "2026-11-11T13:58:38+00:00",
-   "summary": "Attackers could exploit them for command execution, memory overwrites, and privilege escalation. The post Asus, Zoom Release Security Patches appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-   "url": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
-   "published": "2026-11-11T13:37:19+00:00",
-   "summary": "Attackers could exploit the bugs to tamper with certificate entries, achieve remote code execution, and compromise hosts. The post Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities appeared first on SecurityWeek ."
+   "title": "Your Endpoint Management Platform Could Be Your Biggest Security Risk",
+   "url": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
+   "published": "2026-11-12T15:00:10+00:00",
+   "summary": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations. [...]"
   },
   {
    "source": "BleepingComputer",
-   "title": "N-able releases security hotfixes for zero-day vulnerabilities",
-   "url": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
-   "published": "2026-11-11T12:32:27+00:00",
-   "summary": "N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [...]"
+   "title": "Apify rotates API tokens, prompts 2FA resets after breach",
+   "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
+   "published": "2026-11-12T14:36:47+00:00",
+   "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]"
   },
   {
    "source": "SecurityWeek",
-   "title": "Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices",
-   "url": "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/",
-   "published": "2026-11-11T12:24:33+00:00",
-   "summary": "The Series C round will fund international expansion and more autonomous features for the firm’s device security platform. The post Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
-   "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
-   "published": "2026-11-11T12:19:40+00:00",
-   "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps were games, landing pages, and calculators, but about 1 in 10 contained internal business or"
+   "title": "Chrome, Firefox Updates Patch Over 180 Vulnerabilities",
+   "url": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
+   "published": "2026-11-12T13:42:09+00:00",
+   "summary": "Google fixed 83 flaws with a new Chrome 157 release, and Mozilla addressed 99 bugs in Firefox 160. The post Chrome, Firefox Updates Patch Over 180 Vulnerabilities appeared first on SecurityWeek ."
   },
   {
    "source": "SecurityWeek",
-   "title": "Fortinet Patches Nearly 100 Vulnerabilities",
-   "url": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
-   "published": "2026-11-11T12:10:14+00:00",
-   "summary": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
-   "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
-   "published": "2026-11-11T12:01:59+00:00",
-   "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default. This helped us think through how such agents should be defended. When a browser agent acts inside a user’s authenticated"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-   "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-   "published": "2026-11-11T12:00:53+00:00",
-   "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs compromised in October had a different problem: a single line in the script"
+   "title": "Attacker Targets 60,000 GitHub Repositories in Credential Theft Campaign",
+   "url": "https://www.securityweek.com/attacker-targets-60000-github-repositories-in-credential-theft-campaign/",
+   "published": "2026-11-12T13:39:03+00:00",
+   "summary": "Using thousands of hijacked accounts, the wfx-loot campaign planted a CI secret stealer that ran in over 1,800 GitHub repositories. The post Attacker Targets 60,000 GitHub Repositories in Credential Theft Campaign appeared first on SecurityWeek ."
   },
   {
    "source": "SecurityWeek",
-   "title": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
-   "url": "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/",
-   "published": "2026-11-11T11:30:00+00:00",
-   "summary": "Founded by three ex-IDF Unit 8200 intelligence officers, Bay is launched to provide a control plane for AI agents. The post Bay Raises $50 Million to Control What Enterprise AI Agents Can Do appeared first on SecurityWeek ."
+   "title": "Daylight Lands $80 Million for AI-Powered Security Operations",
+   "url": "https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations/",
+   "published": "2026-11-12T13:12:11+00:00",
+   "summary": "The company plans to accelerate product development, hire new talent, expand its US presence, and enter new markets. The post Daylight Lands $80 Million for AI-Powered Security Operations appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
+   "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+   "published": "2026-11-12T13:08:28+00:00",
+   "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the recovered attacker toolkit exploits CVE-2026-84869 (CVSS score: 9.9), an"
   },
   {
    "source": "BleepingComputer",
-   "title": "Microsoft fixes audio issues caused by September security updates",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
-   "published": "2026-11-11T11:18:36+00:00",
-   "summary": "Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September. [...]"
+   "title": "Microsoft: Recent Windows updates cause SQL Server performance issues",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-sql-server-performance-issues/",
+   "published": "2026-11-12T12:11:11+00:00",
+   "summary": "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+   "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+   "published": "2026-11-12T12:09:14+00:00",
+   "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel. The affected"
+  },
+  {
+   "source": "CISA",
+   "title": "Siemens Desigo, Gridscale",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Siemens has released new versions for the "
+  },
+  {
+   "source": "CISA",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-109618, CVE-2026-109619) CVSS Vendor Equip"
+  },
+  {
+   "source": "CISA",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Sieme"
+  },
+  {
+   "source": "CISA",
+   "title": "Siemens Building Automation and Energy Products",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of impact of various Siemens software products. As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices i"
+  },
+  {
+   "source": "CISA",
+   "title": "Siemens Industrial Edge Management",
+   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM software stack, the affected functionality is not used or exposed. The same applies to IEDK. - Management Applications installed: Follow the specific mitigations until a fix is available. - Device Applicatio"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+   "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+   "published": "2026-11-12T11:51:43+00:00",
+   "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet,\" N-able said in a new advisory. \"Legacy API is"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
+   "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+   "published": "2026-11-12T11:51:31+00:00",
+   "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and has since taken down hundreds of attacker domains in an effort the team calls Operation CloudFire."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+   "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+   "published": "2026-11-12T11:33:15+00:00",
+   "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of improper input validation and deserialization of untrusted data that could result in"
   },
   {
    "source": "SecurityWeek",
-   "title": "Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks",
-   "url": "https://www.securityweek.com/dreeze-emerges-from-stealth-with-33m-to-rebuild-cloud-apps-after-cyberattacks/",
-   "published": "2026-11-11T11:16:40+00:00",
-   "summary": "Created by Zerto and Kashya veterans, the startup has launched a platform designed to recover whole cloud applications. The post Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks appeared first on SecurityWeek ."
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-   "url": "https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/",
-   "published": "2026-11-11T10:35:15+00:00",
-   "summary": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure appeared first on SecurityWeek ."
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
-   "published": "2026-11-11T10:12:08+00:00",
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [...]"
-  },
-  {
-   "source": "BleepingComputer",
-   "title": "Microsoft fixes Exchange sign-ins broken by Windows Server updates",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
-   "published": "2026-11-11T09:07:27+00:00",
-   "summary": "Microsoft has fixed Outlook sign-in and mail delivery issues on Exchange Server systems after installing the October 2026 Windows Server security updates. [...]"
-  },
-  {
-   "source": "SecurityWeek",
-   "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-   "url": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-   "published": "2026-11-11T09:01:07+00:00",
-   "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities appeared first on SecurityWeek ."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
-   "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-   "published": "2026-11-11T08:17:53+00:00",
-   "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint Server. The patches also include 165 non-Microsoft-issued CVE identifiers."
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
-   "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
-   "published": "2026-11-11T07:49:04+00:00",
-   "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them. The company builds and runs apps for its customers and stores their secrets, such as API keys and database"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
-   "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
-   "published": "2026-11-11T07:21:05+00:00",
-   "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions. The attacker must be able to change the model's weights. The team tested the method on"
-  },
-  {
-   "source": "The Hacker News",
-   "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
-   "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-   "published": "2026-11-11T06:04:02+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity"
-  },
-  {
-   "source": "CyberScoop",
-   "title": "CISA director pick already drawing concern from Hill Dems over Palantir connection",
-   "url": "https://cyberscoop.com/michael-losapio-cisa-director-nomination-palantir-scrutiny/",
-   "published": "2026-11-10T22:38:16+00:00",
-   "summary": "Others touted Michael LoSapio as a fit for the job due to his technical credentials as CISO for the company. The post CISA director pick already drawing concern from Hill Dems over Palantir connection appeared first on CyberScoop ."
+   "title": "Notion Customer Data Compromised in Fireworks AI Hack",
+   "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/",
+   "published": "2026-11-12T11:08:52+00:00",
+   "summary": "The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable. The post Notion Customer Data Compromised in Fireworks AI Hack appeared first on SecurityWeek ."
   },
   {
    "source": "Dark Reading",
-   "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
-   "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
-   "published": "2026-11-10T22:26:51+00:00",
-   "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast."
+   "title": "Inside an AI Attack Against a US Retailer",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+   "published": "2026-11-12T11:00:00+00:00",
+   "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
+   "url": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
+   "published": "2026-11-12T10:39:34+00:00",
+   "summary": "The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication. The post Hackers Deploy Malware in Fresh ScreenConnect Campaign appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Railway breach leads to $740,000 in fraudulent AI charges",
-   "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
-   "published": "2026-11-10T22:20:19+00:00",
-   "summary": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000 in fraudulent AI usage, potentially exposing credentials for up to 100,000 workspaces. [...]"
+   "title": "Microsoft confirms Windows security updates installation issues",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+   "published": "2026-11-12T10:24:07+00:00",
+   "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update. [...]"
   },
   {
-   "source": "Krebs on Security",
-   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-   "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-   "published": "2026-11-10T21:55:03+00:00",
-   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "The US wants its quantum lead to turn into factories and supply chains",
-   "url": "https://cyberscoop.com/us-quantum-computing-industry-manufacturing-push/",
-   "published": "2026-11-10T21:50:46+00:00",
-   "summary": "There’s bipartisan support for further investment in the U.S. quantum industry, along with worries that America’s industrial capacity won’t keep up with demand. The post The US wants its quantum lead to turn into factories and supply chains appeared first on CyberScoop ."
-  },
-  {
-   "source": "CyberScoop",
-   "title": "Microsoft fixes over 1,000 vulnerabilities in November Patch Tuesday",
-   "url": "https://cyberscoop.com/microsoft-patch-tuesday-november-2026/",
-   "published": "2026-11-10T21:47:01+00:00",
-   "summary": "Microsoft's November security update addresses roughly 1,090 vulnerabilities across Windows, Office, Azure and the company's other product lines, the second consecutive monthly release to exceed the totals of all previous years. The release formally lists 1,094 CVEs, with Windows accounting for 726 and Office 174. A smaller number of patches went to SQL Server, Exchange [ ] The post Microsoft fixes over 1,000 vulnerabilities in November Patch Tuesday appeared first on CyberScoop ."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
-   "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
-   "published": "2026-11-10T21:01:14+00:00",
-   "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries."
+   "source": "SecurityWeek",
+   "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
+   "url": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
+   "published": "2026-11-12T09:39:55+00:00",
+   "summary": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days as N-able Rushes Patches appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
-   "url": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
-   "published": "2026-11-10T20:54:55+00:00",
-   "summary": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer records. [...]"
+   "title": "Hackers plant GSocket on Linux servers for persistent access",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/",
+   "published": "2026-11-12T09:38:00+00:00",
+   "summary": "Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+   "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+   "published": "2026-11-12T09:25:00+00:00",
+   "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released fixed versions earlier this week. The affected servers are members of a replica"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
+   "url": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
+   "published": "2026-11-12T09:23:21+00:00",
+   "summary": "Attackers could exploit a critical Red Hat Quay flaw to steal private container images, overwrite repositories and maintain persistent access. The post Critical Red Hat Quay Vulnerability Could Expose Private Container Images appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "Maersk Confirms Data Theft Amid $5 Million Extortion Attempt",
+   "url": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
+   "published": "2026-11-12T08:38:47+00:00",
+   "summary": "The WhiteArmor ransomware group claims it stole 100GB of data from the shipping giant’s systems. The post Maersk Confirms Data Theft Amid $5 Million Extortion Attempt appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+   "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+   "published": "2026-11-12T08:20:37+00:00",
+   "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1. The crash"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+   "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+   "published": "2026-11-12T06:42:47+00:00",
+   "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+   "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+   "published": "2026-11-12T05:12:26+00:00",
+   "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux. An attacker who can reach the"
   },
   {
    "source": "Dark Reading",
-   "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
-   "url": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
-   "published": "2026-11-10T20:41:45+00:00",
-   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene."
+   "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+   "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+   "published": "2026-11-12T01:00:00+00:00",
+   "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite."
   },
   {
    "source": "Dark Reading",
-   "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
-   "url": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
-   "published": "2026-11-10T20:35:34+00:00",
-   "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development."
-  },
-  {
-   "source": "Dark Reading",
-   "title": "How to Assess OT Incident Response Preparedness",
-   "url": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
-   "published": "2026-11-10T20:18:43+00:00",
-   "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response."
+   "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+   "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+   "published": "2026-11-12T00:00:00+00:00",
+   "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers."
   },
   {
    "source": "BleepingComputer",
-   "title": "Microsoft releases Windows 10 KB5131096 extended security update",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
-   "published": "2026-11-10T20:04:36+00:00",
-   "summary": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes. [...]"
+   "title": "Baker Tilly notifies clients of data breach at third-party provider",
+   "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+   "published": "2026-11-11T23:01:31+00:00",
+   "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+   "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+   "published": "2026-11-11T22:56:21+00:00",
+   "summary": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
+   "url": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
+   "published": "2026-11-11T21:44:04+00:00",
+   "summary": "Researchers dubbed an attack chain Greeter after discovering that attackers deliberately covered their trail by leaving hello messages in logs."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "eMudhra revokes 8 more CA certificates after private key mishap",
+   "url": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+   "published": "2026-11-11T21:27:40+00:00",
+   "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "AI Raises the Stakes for Cyber Resilience",
+   "url": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
+   "published": "2026-11-11T21:20:41+00:00",
+   "summary": "An organization's ability to quickly recover from a business disruption will be a competitive advantage in an era of AI-driven threats and business enablement."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
+   "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+   "published": "2026-11-11T20:54:20+00:00",
+   "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]"
   }
  ]
 }
