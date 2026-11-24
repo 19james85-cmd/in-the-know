@@ -1,41 +1,41 @@
 {
- "generated": "2026-11-22T19:56:38.188419+00:00",
+ "generated": "2026-11-24T00:17:48.885573+00:00",
  "window_hours": 24,
  "feeds": [
   {
    "source": "CISA",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "count": 2,
+   "count": 8,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "count": 0,
+   "count": 6,
    "error": null
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "count": 1,
+   "count": 8,
    "error": null
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "count": 0,
+   "count": 5,
    "error": null
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "count": 0,
+   "count": 6,
    "error": null
   },
   {
@@ -47,7 +47,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "count": 4,
+   "count": 10,
    "error": null
   },
   {
@@ -65,53 +65,312 @@
  ],
  "items": [
   {
-   "source": "BleepingComputer",
-   "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-   "published": "2026-11-22T18:45:37+00:00",
-   "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]"
+   "source": "Dark Reading",
+   "title": "Industrial Serial Gateways Broadcast That They're Insecure",
+   "url": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+   "published": "2026-11-23T22:02:46+00:00",
+   "summary": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Virginia, Oregon hit SpaceX with fresh lawsuits over Grok-created CSAM",
+   "url": "https://cyberscoop.com/virginia-oregon-sue-spacex-grok-deepfakes/",
+   "published": "2026-11-23T21:32:33+00:00",
+   "summary": "The lawsuit alleges that weak safeguards around nudification were a primary selling point for Musk’s business strategy to differentiate Grok and other competing AI models. The post Virginia, Oregon hit SpaceX with fresh lawsuits over Grok-created CSAM appeared first on CyberScoop ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
+   "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+   "published": "2026-11-23T21:21:42+00:00",
+   "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents."
   },
   {
    "source": "BleepingComputer",
-   "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-   "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-   "published": "2026-11-22T15:43:04+00:00",
-   "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]"
+   "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+   "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+   "published": "2026-11-23T20:54:51+00:00",
+   "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]"
+  },
+  {
+   "source": "Dark Reading",
+   "title": "US Cyber Director Pick Signals Shift Toward Expertise",
+   "url": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+   "published": "2026-11-23T20:13:48+00:00",
+   "summary": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions."
   },
   {
    "source": "BleepingComputer",
-   "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
-   "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
-   "published": "2026-11-22T15:15:25+00:00",
-   "summary": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]"
+   "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+   "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+   "published": "2026-11-23T20:00:20+00:00",
+   "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+   "published": "2026-11-23T19:42:20+00:00",
+   "summary": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "US intelligence chief gets additional role as acting national cyber director",
+   "url": "https://www.cybersecuritydive.com/news/national-cyber-director-acting-jay-clayton/875499/",
+   "published": "2026-11-23T19:13:00+00:00",
+   "summary": "The White House previously tapped Pentagon CIO Kirsten Davies to temporarily lead the office, but now it's hoping the Senate will confirm her to the permanent position."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+   "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+   "published": "2026-11-23T18:38:40+00:00",
+   "summary": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]"
+  },
+  {
+   "source": "CyberScoop",
+   "title": "Indicted Kosovo credit card theft suspect extradited to US",
+   "url": "https://cyberscoop.com/hektor-avdyli-kosovo-credit-card-fraud-extradition/",
+   "published": "2026-11-23T18:37:00+00:00",
+   "summary": "Authorities say a hard drive in the possession of Hektor Avdyli contained millions of payment card numbers. The post Indicted Kosovo credit card theft suspect extradited to US appeared first on CyberScoop ."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
+   "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+   "published": "2026-11-23T17:45:52+00:00",
+   "summary": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source."
   },
   {
    "source": "The Hacker News",
-   "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
-   "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-   "published": "2026-11-22T05:06:55+00:00",
-   "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored. OpenRouter, a gateway that routes customers' AI requests to a pool of"
+   "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+   "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+   "published": "2026-11-23T17:45:15+00:00",
+   "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\""
   },
   {
-   "source": "The Hacker News",
-   "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-   "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-   "published": "2026-11-22T05:03:41+00:00",
-   "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm pwn.ai showed this week that ordinary upload,"
+   "source": "CyberScoop",
+   "title": "Kirsten Davies to become national cyber director nominee, Jay Clayton takes acting director job",
+   "url": "https://cyberscoop.com/kirsten-davies-jay-clayton-national-cyber-director/",
+   "published": "2026-11-23T16:59:03+00:00",
+   "summary": "After a brief stint as acting director, Davies will become the pick to succeed Sean Cairncross and National Cyber Director Clayton will do double duty. The post Kirsten Davies to become national cyber director nominee, Jay Clayton takes acting director job appeared first on CyberScoop ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+   "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+   "published": "2026-11-23T16:50:01+00:00",
+   "summary": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Water utilities in 26 states getting free cybersecurity help",
+   "url": "https://www.cybersecuritydive.com/news/water-cybersecurity-watch-center-initial-support/875486/",
+   "published": "2026-11-23T16:27:10+00:00",
+   "summary": "Rural water utilities are some of the nation's most vulnerable critical infrastructure operators. A new group is helping them access resources."
+  },
+  {
+   "source": "Dark Reading",
+   "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
+   "published": "2026-11-23T16:17:21+00:00",
+   "summary": "A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "CrowdStrike agrees to buy Zscaler for $43.9 billion in network security expansion",
+   "url": "https://cyberscoop.com/crowdstrike-to-acquire-zscaler/",
+   "published": "2026-11-23T16:15:50+00:00",
+   "summary": "The deal would bring device protection and network access controls under one roof as CrowdStrike seeks a larger role in how companies secure AI agents. The post CrowdStrike agrees to buy Zscaler for $43.9 billion in network security expansion appeared first on CyberScoop ."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "CrowdStrike to acquire Zscaler for $43.9 billion amid turbulent threat environment",
+   "url": "https://www.cybersecuritydive.com/news/crowdstrike-acquire-zscaler-439-billion-turbulent-threat/875477/",
+   "published": "2026-11-23T15:51:35+00:00",
+   "summary": "The companies have partnered for years, but now will provide even stronger competition to compete for consolidated security customers."
   },
   {
    "source": "SecurityWeek",
-   "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
-   "url": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
-   "published": "2026-11-22T00:53:02+00:00",
-   "summary": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek ."
+   "title": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+   "url": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
+   "published": "2026-11-23T15:47:40+00:00",
+   "summary": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+   "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+   "published": "2026-11-23T15:10:48+00:00",
+   "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+   "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
+   "published": "2026-11-23T15:06:49+00:00",
+   "summary": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack appeared first on SecurityWeek ."
   },
   {
    "source": "BleepingComputer",
-   "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
-   "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-   "published": "2026-11-21T22:59:58+00:00",
-   "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]"
+   "title": "AI Agents Are Creating a Shared Responsibility Gap",
+   "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+   "published": "2026-11-23T15:00:10+00:00",
+   "summary": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
+   "url": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+   "published": "2026-11-23T13:58:07+00:00",
+   "summary": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE. The post phpAfterShell Vulnerability Revives PHP2Shell's Attack Path appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
+   "published": "2026-11-23T13:28:45+00:00",
+   "summary": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
+   "url": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
+   "published": "2026-11-23T13:26:22+00:00",
+   "summary": "Attackers abused a flaw in the GoodCloud remote management service to push malware to devices, and cleaning them requires new firmware. The post GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw appeared first on SecurityWeek ."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+   "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+   "published": "2026-11-23T13:22:20+00:00",
+   "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+   "published": "2026-11-23T12:41:04+00:00",
+   "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host. \"On November 12, 2026, we observed one managed service"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+   "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+   "published": "2026-11-23T12:28:09+00:00",
+   "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
+   "url": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+   "published": "2026-11-23T12:16:20+00:00",
+   "summary": "Dragos uncovered undetected intrusions at three AI inference providers using nearly two million prompts sent to AI services. The post AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos appeared first on SecurityWeek ."
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+   "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+   "published": "2026-11-23T12:02:23+00:00",
+   "summary": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]"
+  },
+  {
+   "source": "CISA",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-23T12:00:00+00:00",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizin"
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+   "url": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+   "published": "2026-11-23T11:44:18+00:00",
+   "summary": "Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies. The post BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+   "url": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+   "published": "2026-11-23T11:35:15+00:00",
+   "summary": "Threat actors could exploit them to leak or modify server information and to execute commands as root. The post SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks appeared first on SecurityWeek ."
+  },
+  {
+   "source": "SecurityWeek",
+   "title": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
+   "url": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+   "published": "2026-11-23T11:31:44+00:00",
+   "summary": "CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue. The post CrowdStrike to Acquire Zscaler in $43.9 Billion Deal appeared first on SecurityWeek ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.",
+   "url": "https://cyberscoop.com/finding-software-vulnerability-with-ai-wordpress-patchstack/",
+   "published": "2026-11-23T11:00:00+00:00",
+   "summary": "With help from two free AI models, I found and reported a real flaw in a WordPress plugin used by more than 40,000 sites. The unnerving part wasn’t just that it worked — it was how little experience I needed to get there. The post I’ve never hunted for a software vulnerability before. AI helped me find one in six hours. appeared first on CyberScoop ."
+  },
+  {
+   "source": "CyberScoop",
+   "title": "WPIDE ≤ 3.6.4 — CSRF Nonce Bypass Leading to Unauthenticated RCE (CVE-2026-124251)",
+   "url": "https://cyberscoop.com/wpide-csrf-vulnerability-cve-2026-124251/",
+   "published": "2026-11-23T11:00:00+00:00",
+   "summary": "Summary This technical report has been generated with the help of GLM-5.3-Flash. WPIDE's 3.6.0 release attempted to remediate CVE-2026-57766 (unauthenticated CSRF, ≤ 3.5.6) by introducing a nonce check, but the check is scoped too narrowly: a security service validates the nonce only when the page URL parameter equals wpide exactly (App/Services/Security/Security.php). The plugin registers seven [ ] The post WPIDE ≤ 3.6.4 — CSRF Nonce Bypass Leading to Unauthenticated RCE (CVE-2026-124251) appea"
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "AI and post-quantum security: Why the future of cyber resilience depends on both",
+   "url": "https://www.cybersecuritydive.com/spons/ai-and-post-quantum-security-why-the-future-of-cyber-resilience-depends-on/874716/",
+   "published": "2026-11-23T10:00:00+00:00",
+   "summary": "AI and PQC are competing for enterprise budgets. Discover why they belong on the same roadmap, and how they are essential to future-proofing enterprise security."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Rethinking enterprise security in the age of AI and quantum",
+   "url": "https://www.cybersecuritydive.com/spons/rethinking-enterprise-security-in-the-age-of-ai-and-quantum/874843/",
+   "published": "2026-11-23T10:00:00+00:00",
+   "summary": "Explore the five critical shifts explaining why organizations must act now to establish AI accountability and prepare for post-quantum security."
+  },
+  {
+   "source": "Cybersecurity Dive",
+   "title": "Stop asking whether AI can run an entire attack",
+   "url": "https://www.cybersecuritydive.com/spons/stop-asking-whether-ai-can-run-an-entire-attack/875150/",
+   "published": "2026-11-23T10:00:00+00:00",
+   "summary": "The question for security leaders is where AI gives adversaries enough leverage to change the cost, speed, or scale of an intrusion."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+   "published": "2026-11-23T09:11:56+00:00",
+   "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+   "published": "2026-11-23T09:11:15+00:00",
+   "summary": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]"
+  },
+  {
+   "source": "The Hacker News",
+   "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+   "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+   "published": "2026-11-23T09:04:08+00:00",
+   "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route."
+  },
+  {
+   "source": "The Hacker News",
+   "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+   "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+   "published": "2026-11-23T08:24:15+00:00",
+   "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers"
+  },
+  {
+   "source": "BleepingComputer",
+   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "published": "2026-11-23T07:44:19+00:00",
+   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]"
   }
  ]
 }
